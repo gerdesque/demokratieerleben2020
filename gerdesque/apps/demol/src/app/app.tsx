@@ -1,24 +1,11 @@
 import React from 'react';
-
+import { Admin } from 'react-admin';
+import jsonServerProvider from 'ra-data-json-server';
 import './app.scss';
 
-import { ReactComponent as Logo } from './logo.svg';
-
+const dataProvider = jsonServerProvider('http://localhost:3000');
 export const App = () => {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./app.scss file.
-   */
-  return (
-    <div className="app">
-      <header className="flex">
-        <Logo width="75" height="75" />
-        <h1>Demokratie erleben</h1>
-      </header>
-      <main></main>
-    </div>
-  );
+  return <Admin dataProvider={dataProvider} />;
 };
 
 export default App;
