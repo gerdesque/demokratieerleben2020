@@ -1,19 +1,19 @@
 {
-  "posts": [
+  "chapter": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Intro",
+      "path": "/"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Familie",
+      "path": "/family"
+    },
+    {
+      "id": 3,
+      "name": "Ortsgruppe",
+      "path": "/localgroup"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
