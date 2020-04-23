@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@gerdesque/home": ["libs/home/src/index.ts"]
+      "@gerdesque/home": ["libs/home/src/index.ts"],
+      "@gerdesque/adminui": ["libs/adminui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

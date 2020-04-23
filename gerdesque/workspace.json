@@ -146,6 +146,46 @@
           }
         }
       }
+    },
+    "adminui": {
+      "root": "libs/adminui",
+      "sourceRoot": "libs/adminui/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/adminui/.eslintrc",
+            "tsConfig": [
+              "libs/adminui/tsconfig.lib.json",
+              "libs/adminui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/adminui/**"]
+          }
+        },
+        "build": {
+          "builder": "@nrwl/web:package",
+          "options": {
+            "outputPath": "dist/libs/adminui",
+            "tsConfig": "libs/adminui/tsconfig.lib.json",
+            "project": "libs/adminui/package.json",
+            "entryFile": "libs/adminui/src/index.ts",
+            "external": ["react", "react-dom"],
+            "babelConfig": "@nrwl/react/plugins/bundle-babel",
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup"
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/adminui/jest.config.js",
+            "tsConfig": "libs/adminui/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -28,6 +28,9 @@
     },
     "home": {
       "tags": []
+    },
+    "adminui": {
+      "tags": []
     }
   }
 }
