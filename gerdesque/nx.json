@@ -25,6 +25,9 @@
     "demol-e2e": {
       "tags": [],
       "implicitDependencies": ["demol"]
+    },
+    "home": {
+      "tags": []
     }
   }
 }
