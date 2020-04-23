@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
 import { Adminui } from '@gerdesque/adminui';
+import { ChapterLink } from '@gerdesque/ui';
 
 import './app.scss';
 
@@ -13,8 +14,11 @@ export const App = () => {
           <ul>
             <li>
               <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/adminui">Admin UI</Link>
             </li>
+            <ChapterLink />
           </ul>
         </nav>
         <div className="app-content">
