@@ -5,6 +5,7 @@ module.exports = async ({ config, mode }) => {
   
   config.resolve.extensions.push('.tsx');
   config.resolve.extensions.push('.ts');
+  config.resolve.extensions.push('.scss');
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     loader: require.resolve('babel-loader'),
@@ -15,6 +16,10 @@ module.exports = async ({ config, mode }) => {
         '@babel/preset-typescript'
       ]
     }
+  },
+  {
+    test: /\.scss$/,
+    use: ["style-loader", "css-loader", "sass-loader"]
   });
   return config;
 };

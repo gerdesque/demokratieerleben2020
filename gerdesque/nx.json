@@ -30,17 +30,15 @@
     },
     "demol-e2e": {
       "tags": [],
-      "implicitDependencies": ["demol"]
+      "implicitDependencies": [
+        "demol"
+      ]
     },
     "home": {
       "tags": []
     },
     "adminui": {
       "tags": []
-    },
-    "home-e2e": {
-      "tags": [],
-      "implicitDependencies": ["home"]
     },
     "ui": {
       "tags": []
