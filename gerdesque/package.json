@@ -1,6 +1,7 @@
 {
   "name": "gerdesque",
   "version": "0.0.0",
+  "homepage": "https://gerdesque.github.io/demokratieerleben2020/",
   "license": "MIT",
   "scripts": {
     "nx": "nx",
@@ -24,7 +25,9 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist/apps/demol"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +44,11 @@
   "devDependencies": {
     "@angular/forms": "*",
     "@babel/core": "7.8.3",
+    "@babel/plugin-transform-react-display-name": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/plugin-transform-react-jsx-development": "^7.9.0",
+    "@babel/plugin-transform-react-jsx-self": "^7.9.0",
+    "@babel/plugin-transform-react-jsx-source": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
     "@nrwl/cypress": "9.2.3",
     "@nrwl/eslint-plugin-nx": "9.2.3",
@@ -68,6 +76,7 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.17.0",
     "eslint-plugin-react-hooks": "2.3.0",
+    "gh-pages": "^2.2.0",
     "jest": "25.2.3",
     "prettier": "1.19.1",
     "ts-jest": "25.2.1",

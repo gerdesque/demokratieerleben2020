@@ -8,7 +8,7 @@ import './app.scss';
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/demokratieerleben2020">
       <div className="app">
         <Nav path="/" />
         <div className="app-content">

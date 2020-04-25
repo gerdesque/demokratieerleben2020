@@ -13,6 +13,6 @@ describe('Demokratie erleben', () => {
 
   it('should display chapter', () => {
     // Function helper example, see `../support/app.po.ts` file
-    getChapter().should(t => expect(t.length).equal(3));
+    getChapter().should(t => expect(t.length).equal(5));
   });
 });
