@@ -2,7 +2,7 @@ import React from 'react';
 import { text } from "@storybook/addon-knobs";
 import { Title } from './title';
 
-export default { title: 'Title' };
+export default { title: 'Design System/Atoms/Title' };
 
 export const intro = () => (
   <Title text={["Demokratie ", <i>er</i>,"leben"]} />
