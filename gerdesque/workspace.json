@@ -16,9 +16,15 @@
             "polyfills": "apps/demol/src/polyfills.ts",
             "tsConfig": "apps/demol/tsconfig.app.json",
             "assets": ["apps/demol/src/favicon.ico", "apps/demol/src/assets"],
-            "styles": ["apps/demol/src/styles.scss"],
+            "styles": [
+              "apps/demol/src/styles.scss", 
+              "libs/ui/src/lib/title/title.scss",
+              "libs/ui/src/lib/nav/nav.scss",
+              "libs/ui/src/lib/chapter/chapter.scss"
+            ],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "baseHref": "/demokratieerleben2020/"
           },
           "configurations": {
             "production": {
