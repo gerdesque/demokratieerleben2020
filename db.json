@@ -3,17 +3,17 @@
     {
       "id": 1,
       "name": "Intro",
-      "path": "/intro"
+      "path": "intro"
     },
     {
       "id": 2,
       "name": "Familie",
-      "path": "/family"
+      "path": "family"
     },
     {
       "id": 3,
       "name": "Ortsgruppe",
-      "path": "/localgroup"
+      "path": "localgroup"
     }
   ]
 }

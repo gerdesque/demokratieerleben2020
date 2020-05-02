@@ -46,7 +46,7 @@ html {
 body {
   background-image: url(./background.webp);
   color: darkred;
-  font-size: calc(10px + 2vmin);
+  font-size: #{'clamp(1em, 1em + 2vw, 3em)'};
   font-family: FundamentalBrigade, arial, sans-serif;
   font-weight: normal;
   height: 100%;

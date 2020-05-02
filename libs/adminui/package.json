@@ -1,7 +1,13 @@
 {
   "name": "@gerdesque/adminui",
   "version": "0.0.1",
-  "dependencies": {
+  "devDependencies": {
+    "ra-data-json-server": "^3.4.1",
+    "react-admin": "^3.4.2",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2"
+  },
+  "peerDependencies": {
     "ra-data-json-server": "^3.4.1",
     "react-admin": "^3.4.2",
     "react-router": "^5.1.2",
