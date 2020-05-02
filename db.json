@@ -3,7 +3,17 @@
     {
       "id": 1,
       "name": "Intro",
-      "path": "intro"
+      "path": "intro",
+      "content": [
+        {
+          "type": "text",
+          "value": "Es ist 1927. Irgendwo im Ruhrgebiet leben zwei Kinder: Anna und Karl. Die Eltern der beiden gehören zur großen Arbeiterschaft, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten."
+        },
+        {
+          "type": "text",
+          "value": "Anna und Karl machen sich Gedanken über ihre Zukunft, denn sie sind 13 Jahre alt und ihr letztes Schuljahr steht bald bevor. Begleite sie dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der sozialistischen Arbeiterjugend finden und was sie dort erleben."
+        }
+      ]
     },
     {
       "id": 2,

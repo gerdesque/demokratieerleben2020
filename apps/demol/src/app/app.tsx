@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
 import { Adminui } from '@gerdesque/adminui';
-import { Nav, Chapter, Title } from '@gerdesque/ui';
+import { Nav, Chapter } from '@gerdesque/ui';
 
 import './app.scss';
 
@@ -19,13 +19,7 @@ export const App = () => {
   const renderChapter = (routerProps) => {
     const chapterId = parseInt(routerProps.match.params.id)
     const chapter = chapters.find(chapterObj => chapterObj.id === chapterId)
-    return (chapter && 
-      <Chapter class={chapter.name}>
-        <Title text={chapter.name} />
-        <div className='box'>
-          <p>{chapter.path}</p>
-        </div>
-      </Chapter>)
+    return (chapter && <Chapter name={chapter.name} content={chapter.content} />)
   }
 
   return (
