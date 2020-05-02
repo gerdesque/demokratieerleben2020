@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
 /***/ "../../../dist/libs/adminui/adminui.esm.js":
-/*!********************************************************************************************************!*\
-  !*** /home/gm/Development/playground/demokratieerleben2020/gerdesque/dist/libs/adminui/adminui.esm.js ***!
-  \********************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/dist/libs/adminui/adminui.esm.js ***!
+  \**********************************************************************************************/
 /*! exports provided: Adminui */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -674,9 +674,9 @@ var Adminui = function Adminui(props) {
 /***/ }),
 
 /***/ "../../../dist/libs/home/home.esm.js":
-/*!**************************************************************************************************!*\
-  !*** /home/gm/Development/playground/demokratieerleben2020/gerdesque/dist/libs/home/home.esm.js ***!
-  \**************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/dist/libs/home/home.esm.js ***!
+  \****************************************************************************************/
 /*! exports provided: Home */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -688,16 +688,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gerdesque/ui */ "../../../dist/libs/ui/ui.esm.js");
 
 
-var introText = "Es ist 1927. Irgendwo im Ruhrgebiet leben zwei Kinder: Anna und Karl. Die Eltern der beiden gehören zur großen Arbeiterschaft, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten.";
+var content = [{
+  "type": _gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Text,
+  "value": "Natürlich besteht die Kinderrepublik nicht nur aus Karl, Anna und Gerda. Damit ihr mit den beiden dieses Abenteuer erleben könnt, hat Florian eine Website entworfen, die Gerd umgesetzt hat. Anne hat dafür unter dem Einsatz von Felix‘ Sprecherstimme Trickfilme produziert."
+}, {
+  "type": _gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Text,
+  "value": "Unsere Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können."
+}];
 
 var Home = function Home(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__["Chapter"], {
-    "class": "intro"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__["Title"], {
-    text: ["Demokratie ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "er"), "leben"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'box'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, introText)));
+    name: ["Demokratie ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "er"), "leben"],
+    content: content
+  });
 };
 
 
@@ -705,15 +708,17 @@ var Home = function Home(props) {
 /***/ }),
 
 /***/ "../../../dist/libs/ui/ui.esm.js":
-/*!**********************************************************************************************!*\
-  !*** /home/gm/Development/playground/demokratieerleben2020/gerdesque/dist/libs/ui/ui.esm.js ***!
-  \**********************************************************************************************/
-/*! exports provided: Chapter, Nav, Title, Ui */
+/*!************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/dist/libs/ui/ui.esm.js ***!
+  \************************************************************************************/
+/*! exports provided: Chapter, ContentType, Footer, Nav, Title, Ui */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Chapter", function() { return Chapter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentType", function() { return ContentType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return Footer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nav", function() { return Nav; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return Title; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ui", function() { return Ui; });
@@ -723,75 +728,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(n);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
+var Footer = function Footer(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Footer"));
+};
 
 var Nav = function Nav(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      chapter = _useState2[0],
-      setChapter = _useState2[1];
+  var renderChapterNav = function renderChapterNav() {
+    return props.chapters.map(function (chapter, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: 'navigation--item',
+        key: index
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/chapter/".concat(chapter.id)
+      }));
+    });
+  };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    fetch('http://localhost:3000/chapter').then(function (_) {
-      return _.json();
-    }).then(setChapter);
-  }, []);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "app-nav"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
@@ -800,21 +752,13 @@ var Nav = function Nav(props) {
     className: 'navigation--item'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     exact: true,
-    to: props.path
+    to: "/"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: 'navigation--item'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     exact: true,
     to: "/adminui"
-  })), chapter.map(function (c, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      className: 'navigation--item',
-      key: index
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-      exact: true,
-      to: c.path
-    }));
-  })));
+  })), renderChapterNav()));
 };
 
 var Title = function Title(props) {
@@ -823,57 +767,53 @@ var Title = function Title(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.text));
 };
 
+var ContentType;
+
+(function (ContentType) {
+  ContentType["Text"] = "text";
+  ContentType["Video"] = "video";
+  ContentType["Image"] = "image";
+})(ContentType || (ContentType = {}));
+
 var Chapter = function Chapter(props) {
+  var renderText = function renderText(value) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: 'box'
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, value));
+  };
+
+  var renderVideo = function renderVideo(value) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: 'box'
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, value));
+  };
+
+  var renderImage = function renderImage(value) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: 'box'
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, value));
+  };
+
+  var renderChapterContent = function renderChapterContent() {
+    return props.content.map(function (content) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: 'parallax__group'
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: 'parallax__layer parallax__layer--base'
+      }, content.type === ContentType.Text && renderText(content.value), content.type === ContentType.Video && renderVideo(content.value), content.type === ContentType.Image && renderImage(content.value)));
+    });
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "parallax ".concat(props["class"])
-  }, props.children[0] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "parallax ".concat(props.name)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: 'header',
     className: 'parallax__group'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'parallax__layer parallax__layer--base'
-  }, props.children[0])), props.children[1] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: 'group2',
-    className: 'parallax__group'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--base'
-  }, props.children[1]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--deep'
-  })), props.children[2] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: 'group3',
-    className: 'parallax__group'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--base'
-  }, props.children[2]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--back'
-  })), props.children[3] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: 'group4',
-    className: 'parallax__group'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--fore'
-  }, props.children[3])), props.children[4] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: 'group5',
-    className: 'parallax__group'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--fore'
-  }, props.children[4]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--base'
-  })), props.children[5] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: 'group6',
-    className: 'parallax__group'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--back'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--base'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--fore'
-  }, props.children[5])), props.children[6] && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: 'group7',
-    className: 'parallax__group'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--fore'
-  }, props.children[6]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__layer parallax__layer--back'
-  })));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+    text: props.name
+  }))), renderChapterContent());
 };
 
 var Ui = function Ui(props) {
@@ -885,20 +825,20 @@ var Ui = function Ui(props) {
 /***/ }),
 
 /***/ "../../../node_modules/postcss-loader/src/index.js?!../../../node_modules/sass-loader/lib/loader.js?!./app/app.scss":
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** /home/gm/Development/playground/demokratieerleben2020/gerdesque/node_modules/postcss-loader/src??embedded!/home/gm/Development/playground/demokratieerleben2020/gerdesque/node_modules/sass-loader/lib/loader.js??ref--5-oneOf-3-2!./app/app.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/node_modules/postcss-loader/src??embedded!/home/gm/Development/playground/demokratieerleben2020/node_modules/sass-loader/lib/loader.js??ref--5-oneOf-3-2!./app/app.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@font-face {\n  font-family: \"FundamentalBrigade\";\n  font-display: swap;\n  src: url('Fundamental_Brigade_Schlank.ttf') format(\"truetype\");\n}\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n/* Remove default padding */\nul[class],\nol[class] {\n  padding: 0;\n  list-style: none;\n}\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nul[class],\nol[class],\nli,\nfigure,\nfigcaption,\nblockquote,\ndl,\ndd {\n  margin: 0;\n}\nhtml {\n  overflow: hidden;\n  min-height: 100vh;\n  scroll-behavior: smooth;\n  text-rendering: optimizeSpeed;\n  line-height: 1.6;\n}\nbody {\n  background-image: url('background.webp');\n  color: darkred;\n  font-size: calc(10px + 2vmin);\n  font-family: FundamentalBrigade, arial, sans-serif;\n  font-weight: normal;\n  height: 100%;\n  overflow-x: hidden;\n  padding: 0;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2dtL0RldmVsb3BtZW50L3BsYXlncm91bmQvZGVtb2tyYXRpZWVybGViZW4yMDIwL2dlcmRlc3F1ZS9hcHBzL2RlbW9sL3NyYy9hcHAvYXBwLnNjc3MiLCJhcHBzL2RlbW9sL3NyYy9hcHAvYXBwLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsOERBQUE7QUNDRjtBREVBOzs7RUFHRSxzQkFBQTtBQ0FGO0FER0EsMkJBQUE7QUFDQTs7RUFFRSxVQUFBO0VBQ0EsZ0JBQUE7QUNBRjtBREdBLDBCQUFBO0FBQ0E7Ozs7Ozs7Ozs7Ozs7O0VBY0UsU0FBQTtBQ0FGO0FER0E7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsdUJBQUE7RUFDQSw2QkFBQTtFQUNBLGdCQUFBO0FDQUY7QURHQTtFQUNFLHdDQUFBO0VBQ0EsY0FBQTtFQUNBLDZCQUFBO0VBQ0Esa0RBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7RUFDQSx3QkFBQTtVQUFBLGdCQUFBO0VBQ0Esb0NBQUE7VUFBQSw0QkFBQTtBQ0FGIiwiZmlsZSI6ImFwcHMvZGVtb2wvc3JjL2FwcC9hcHAuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0Z1bmRhbWVudGFsQnJpZ2FkZSc7XG4gIGZvbnQtZGlzcGxheTogc3dhcDtcbiAgc3JjOiB1cmwoJy4vRnVuZGFtZW50YWxfQnJpZ2FkZV9TY2hsYW5rLnR0ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbn1cblxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuLyogUmVtb3ZlIGRlZmF1bHQgcGFkZGluZyAqL1xudWxbY2xhc3NdLFxub2xbY2xhc3NdIHtcbiAgcGFkZGluZzogMDtcbiAgbGlzdC1zdHlsZTogbm9uZTtcbn1cblxuLyogUmVtb3ZlIGRlZmF1bHQgbWFyZ2luICovXG5ib2R5LFxuaDEsXG5oMixcbmgzLFxuaDQsXG5wLFxudWxbY2xhc3NdLFxub2xbY2xhc3NdLFxubGksXG5maWd1cmUsXG5maWdjYXB0aW9uLFxuYmxvY2txdW90ZSxcbmRsLFxuZGQge1xuICBtYXJnaW46IDA7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS42O1xufVxuXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vYmFja2dyb3VuZC53ZWJwKTtcbiAgY29sb3I6IGRhcmtyZWQ7XG4gIGZvbnQtc2l6ZTogY2FsYygxMHB4ICsgMnZtaW4pO1xuICBmb250LWZhbWlseTogRnVuZGFtZW50YWxCcmlnYWRlLCBhcmlhbCwgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG4gIHBhZGRpbmc6IDA7XG4gIHBlcnNwZWN0aXZlOiAxcHg7XG4gIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XG59IiwiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIkZ1bmRhbWVudGFsQnJpZ2FkZVwiO1xuICBmb250LWRpc3BsYXk6IHN3YXA7XG4gIHNyYzogdXJsKFwiLi9GdW5kYW1lbnRhbF9CcmlnYWRlX1NjaGxhbmsudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xufVxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuLyogUmVtb3ZlIGRlZmF1bHQgcGFkZGluZyAqL1xudWxbY2xhc3NdLFxub2xbY2xhc3NdIHtcbiAgcGFkZGluZzogMDtcbiAgbGlzdC1zdHlsZTogbm9uZTtcbn1cblxuLyogUmVtb3ZlIGRlZmF1bHQgbWFyZ2luICovXG5ib2R5LFxuaDEsXG5oMixcbmgzLFxuaDQsXG5wLFxudWxbY2xhc3NdLFxub2xbY2xhc3NdLFxubGksXG5maWd1cmUsXG5maWdjYXB0aW9uLFxuYmxvY2txdW90ZSxcbmRsLFxuZGQge1xuICBtYXJnaW46IDA7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS42O1xufVxuXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vYmFja2dyb3VuZC53ZWJwKTtcbiAgY29sb3I6IGRhcmtyZWQ7XG4gIGZvbnQtc2l6ZTogY2FsYygxMHB4ICsgMnZtaW4pO1xuICBmb250LWZhbWlseTogRnVuZGFtZW50YWxCcmlnYWRlLCBhcmlhbCwgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG4gIHBhZGRpbmc6IDA7XG4gIHBlcnNwZWN0aXZlOiAxcHg7XG4gIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XG59Il19 */"
+module.exports = "@font-face {\n  font-family: \"FundamentalBrigade\";\n  font-display: swap;\n  src: url('Fundamental_Brigade_Schlank.ttf') format(\"truetype\");\n}\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n/* Remove default padding */\nul[class],\nol[class] {\n  padding: 0;\n  list-style: none;\n}\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nul[class],\nol[class],\nli,\nfigure,\nfigcaption,\nblockquote,\ndl,\ndd {\n  margin: 0;\n}\nhtml {\n  overflow: hidden;\n  min-height: 100vh;\n  scroll-behavior: smooth;\n  text-rendering: optimizeSpeed;\n  line-height: 1.6;\n}\nbody {\n  background-image: url('background.webp');\n  color: darkred;\n  font-size: clamp(1em, 1em + 2vw, 3em);\n  font-family: FundamentalBrigade, arial, sans-serif;\n  font-weight: normal;\n  height: 100%;\n  overflow-x: hidden;\n  padding: 0;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2dtL0RldmVsb3BtZW50L3BsYXlncm91bmQvZGVtb2tyYXRpZWVybGViZW4yMDIwL2FwcHMvZGVtb2wvc3JjL2FwcC9hcHAuc2NzcyIsImFwcHMvZGVtb2wvc3JjL2FwcC9hcHAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlDQUFBO0VBQ0Esa0JBQUE7RUFDQSw4REFBQTtBQ0NGO0FERUE7OztFQUdFLHNCQUFBO0FDQUY7QURHQSwyQkFBQTtBQUNBOztFQUVFLFVBQUE7RUFDQSxnQkFBQTtBQ0FGO0FER0EsMEJBQUE7QUFDQTs7Ozs7Ozs7Ozs7Ozs7RUFjRSxTQUFBO0FDQUY7QURHQTtFQUNFLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSx1QkFBQTtFQUNBLDZCQUFBO0VBQ0EsZ0JBQUE7QUNBRjtBREdBO0VBQ0Usd0NBQUE7RUFDQSxjQUFBO0VBQ0EscUNBQUE7RUFDQSxrREFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHdCQUFBO1VBQUEsZ0JBQUE7RUFDQSxvQ0FBQTtVQUFBLDRCQUFBO0FDQUYiLCJmaWxlIjoiYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnRnVuZGFtZW50YWxCcmlnYWRlJztcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xuICBzcmM6IHVybCgnLi9GdW5kYW1lbnRhbF9CcmlnYWRlX1NjaGxhbmsudHRmJykgZm9ybWF0KCd0cnVldHlwZScpO1xufVxuXG4qLFxuKjo6YmVmb3JlLFxuKjo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG4vKiBSZW1vdmUgZGVmYXVsdCBwYWRkaW5nICovXG51bFtjbGFzc10sXG5vbFtjbGFzc10ge1xuICBwYWRkaW5nOiAwO1xuICBsaXN0LXN0eWxlOiBub25lO1xufVxuXG4vKiBSZW1vdmUgZGVmYXVsdCBtYXJnaW4gKi9cbmJvZHksXG5oMSxcbmgyLFxuaDMsXG5oNCxcbnAsXG51bFtjbGFzc10sXG5vbFtjbGFzc10sXG5saSxcbmZpZ3VyZSxcbmZpZ2NhcHRpb24sXG5ibG9ja3F1b3RlLFxuZGwsXG5kZCB7XG4gIG1hcmdpbjogMDtcbn1cblxuaHRtbCB7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplU3BlZWQ7XG4gIGxpbmUtaGVpZ2h0OiAxLjY7XG59XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9iYWNrZ3JvdW5kLndlYnApO1xuICBjb2xvcjogZGFya3JlZDtcbiAgZm9udC1zaXplOiAjeydjbGFtcCgxZW0sIDFlbSArIDJ2dywgM2VtKSd9O1xuICBmb250LWZhbWlseTogRnVuZGFtZW50YWxCcmlnYWRlLCBhcmlhbCwgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG4gIHBhZGRpbmc6IDA7XG4gIHBlcnNwZWN0aXZlOiAxcHg7XG4gIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XG59IiwiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIkZ1bmRhbWVudGFsQnJpZ2FkZVwiO1xuICBmb250LWRpc3BsYXk6IHN3YXA7XG4gIHNyYzogdXJsKFwiLi9GdW5kYW1lbnRhbF9CcmlnYWRlX1NjaGxhbmsudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xufVxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuLyogUmVtb3ZlIGRlZmF1bHQgcGFkZGluZyAqL1xudWxbY2xhc3NdLFxub2xbY2xhc3NdIHtcbiAgcGFkZGluZzogMDtcbiAgbGlzdC1zdHlsZTogbm9uZTtcbn1cblxuLyogUmVtb3ZlIGRlZmF1bHQgbWFyZ2luICovXG5ib2R5LFxuaDEsXG5oMixcbmgzLFxuaDQsXG5wLFxudWxbY2xhc3NdLFxub2xbY2xhc3NdLFxubGksXG5maWd1cmUsXG5maWdjYXB0aW9uLFxuYmxvY2txdW90ZSxcbmRsLFxuZGQge1xuICBtYXJnaW46IDA7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS42O1xufVxuXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vYmFja2dyb3VuZC53ZWJwKTtcbiAgY29sb3I6IGRhcmtyZWQ7XG4gIGZvbnQtc2l6ZTogY2xhbXAoMWVtLCAxZW0gKyAydncsIDNlbSk7XG4gIGZvbnQtZmFtaWx5OiBGdW5kYW1lbnRhbEJyaWdhZGUsIGFyaWFsLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgcGFkZGluZzogMDtcbiAgcGVyc3BlY3RpdmU6IDFweDtcbiAgdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbn0iXX0= */"
 
 /***/ }),
 
 /***/ "../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /home/gm/Development/playground/demokratieerleben2020/gerdesque/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \******************************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1240,15 +1180,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = () => {
+  var [chapters, setChapters] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    fetch('http://localhost:3000/chapter').then(_ => _.json()).then(setChapters);
+  }, []);
+
+  var renderChapter = routerProps => {
+    var chapterId = parseInt(routerProps.match.params.id);
+    var chapter = chapters.find(chapterObj => chapterObj.id === chapterId);
+    return chapter && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_4__["Chapter"], {
+      name: chapter.name,
+      content: chapter.content
+    });
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
     basename: "/demokratieerleben2020"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
-    path: "/"
+    chapters: chapters
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/",
     exact: true,
     component: _gerdesque_home__WEBPACK_IMPORTED_MODULE_2__["Home"]
@@ -1256,7 +1210,10 @@ var App = () => {
     path: "/adminui",
     exact: true,
     component: _gerdesque_adminui__WEBPACK_IMPORTED_MODULE_3__["Adminui"]
-  }))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/chapter/:id",
+    render: renderChapter
+  })))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
@@ -1290,7 +1247,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/gm/Development/playground/demokratieerleben2020/gerdesque/apps/demol/src/main.tsx */"./main.tsx");
+module.exports = __webpack_require__(/*! /home/gm/Development/playground/demokratieerleben2020/apps/demol/src/main.tsx */"./main.tsx");
 
 
 /***/ })
