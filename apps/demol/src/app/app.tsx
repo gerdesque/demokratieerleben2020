@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
 import { Adminui } from '@gerdesque/adminui';
-import { Footer, Nav, Chapter, Title } from '@gerdesque/ui';
+import { Nav, Chapter, Title } from '@gerdesque/ui';
 
 import './app.scss';
 
