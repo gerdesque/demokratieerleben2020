@@ -19,9 +19,6 @@ export const Nav = (props: NavProps) => {
         <li className='navigation--item'>
           <NavLink exact to="/" />
         </li>
-        <li className='navigation--item'>
-          <NavLink exact to="/adminui" />
-        </li>
         {renderChapterNav()}
     </ul>
   </nav>

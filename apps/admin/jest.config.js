@@ -1,9 +1,10 @@
 module.exports = {
-  name: 'adminui',
+  name: 'admin',
   preset: '../../jest.config.js',
   transform: {
+    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
     '^.+\\.[tj]sx?$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../coverage/libs/adminui'
+  coverageDirectory: '../../coverage/apps/admin'
 };

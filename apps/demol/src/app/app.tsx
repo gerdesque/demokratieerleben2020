@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
-import { Adminui } from '@gerdesque/adminui';
 import { Nav, ChapterComponent } from '@gerdesque/ui';  
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { API_URL } from '@gerdesque/data';
@@ -31,7 +30,6 @@ export const App = () => {
         <div className="app-content">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/adminui" exact component={Adminui} />
             <Route path="/chapter/:id" render={renderChapter} />
           </Switch>
         </div>

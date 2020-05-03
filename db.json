@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Intro",
-      "path": "intro",
+      "link": "intro",
       "content": [
         {
           "type": "text",
@@ -18,12 +18,38 @@
     {
       "id": 2,
       "name": "Familie",
-      "path": "family"
+      "link": "family"
     },
     {
       "id": 3,
       "name": "Ortsgruppe",
-      "path": "localgroup"
+      "link": "localgroup"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Dummy"
+        }
+      ],
+      "name": "Essen",
+      "link": "essen",
+      "id": 4
+    },
+    {
+      "name": "abendbrot",
+      "link": "kueche",
+      "content": [
+        {
+          "type": "text",
+          "value": "Ich habe Hunger hunger hunger..."
+        },
+        {
+          "type": "text",
+          "value": "wirklich hunger"
+        }
+      ],
+      "id": 5
     }
   ]
 }
