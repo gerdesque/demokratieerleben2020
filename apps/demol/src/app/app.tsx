@@ -2,16 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
 import { Adminui } from '@gerdesque/adminui';
-import { Nav, Chapter } from '@gerdesque/ui';
+import { Nav, ChapterComponent } from '@gerdesque/ui';  
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+import { API_URL } from '@gerdesque/data';
 
 import './app.scss';
 
 export const App = () => {
-
+  
   const [chapters, setChapters] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/chapter')
+    fetch(`${API_URL}/chapter`)
       .then(_ => _.json())
       .then(setChapters);
   }, []);
@@ -19,7 +21,7 @@ export const App = () => {
   const renderChapter = (routerProps) => {
     const chapterId = parseInt(routerProps.match.params.id)
     const chapter = chapters.find(chapterObj => chapterObj.id === chapterId)
-    return (chapter && <Chapter name={chapter.name} content={chapter.content} />)
+    return (chapter && <ChapterComponent {...chapter} />)
   }
 
   return (
