@@ -35,21 +35,6 @@
       "name": "Essen",
       "link": "essen",
       "id": 4
-    },
-    {
-      "name": "abendbrot",
-      "link": "kueche",
-      "content": [
-        {
-          "type": "text",
-          "value": "Ich habe Hunger hunger hunger..."
-        },
-        {
-          "type": "text",
-          "value": "wirklich hunger"
-        }
-      ],
-      "id": 5
     }
   ]
 }
