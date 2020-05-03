@@ -17,7 +17,7 @@
             "tsConfig": "apps/demol/tsconfig.app.json",
             "assets": ["apps/demol/src/favicon.ico", "apps/demol/src/assets"],
             "styles": [
-              "apps/demol/src/styles.scss", 
+              "apps/demol/src/styles.scss",
               "libs/ui/src/lib/title/title.scss",
               "libs/ui/src/lib/nav/nav.scss",
               "libs/ui/src/lib/chapter/chapter.scss"
@@ -289,6 +289,46 @@
             "ci": {
               "quiet": true
             }
+          }
+        }
+      }
+    },
+    "data": {
+      "root": "libs/data",
+      "sourceRoot": "libs/data/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/data/.eslintrc",
+            "tsConfig": [
+              "libs/data/tsconfig.lib.json",
+              "libs/data/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/data/**"]
+          }
+        },
+        "build": {
+          "builder": "@nrwl/web:package",
+          "options": {
+            "outputPath": "dist/libs/data",
+            "tsConfig": "libs/data/tsconfig.lib.json",
+            "project": "libs/data/package.json",
+            "entryFile": "libs/data/src/index.ts",
+            "external": ["react", "react-dom"],
+            "babelConfig": "@nrwl/react/plugins/bundle-babel",
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup"
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/data/jest.config.js",
+            "tsConfig": "libs/data/tsconfig.spec.json",
+            "passWithNoTests": true
           }
         }
       }

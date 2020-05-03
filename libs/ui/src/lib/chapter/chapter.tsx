@@ -1,21 +1,11 @@
 import React from 'react';
 import Title from '../title/title';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+import { Chapter, ContentType } from '@gerdesque/data';
 
 import './chapter.scss';
 
-export enum ContentType {
-  Text = "text",
-  Video = "video",
-  Image = "image"
-}
-
-/* eslint-disable-next-line */
-export interface ChapterProps {
-  name: any
-  content: { type: ContentType, value: string }[]
-}
-
-export const Chapter = (props: ChapterProps) => {
+export const ChapterComponent = (props: Chapter) => {
   
   const renderText = (value) => {
     return <div className='box'><p>{value}</p></div>
