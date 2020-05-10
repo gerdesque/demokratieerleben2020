@@ -1,6 +1,9 @@
 import React from 'react';
 import { Admin as ReactAdmin, Resource } from 'react-admin';
-import { ChapterList, ChapterEdit, ChapterCreate } from './chapter';
+
+import chapters from './chapters';
+import images from './images';
+
 import jsonServerProvider from 'ra-data-json-server';
 import { API_URL } from '@gerdesque/data';
 
@@ -10,14 +13,11 @@ const dataProvider = jsonServerProvider(API_URL);
 
 export const Admin = () => {
   return (
-    <ReactAdmin dataProvider={dataProvider}>
-      <Resource
-        name="chapter"
-        options={{ label: 'Kapitel' }}
-        list={ChapterList}
-        edit={ChapterEdit}
-        create={ChapterCreate}
-      />
+    <ReactAdmin 
+      title="Demokratie erLeben Admin"
+      dataProvider={dataProvider}>
+      <Resource name="chapters" {...chapters} />
+      <Resource name="images" {...images} />
     </ReactAdmin>
   );
 };

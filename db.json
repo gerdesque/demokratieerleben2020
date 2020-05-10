@@ -1,5 +1,5 @@
 {
-  "chapter": [
+  "chapters": [
     {
       "id": 1,
       "name": "Intro",
@@ -35,6 +35,43 @@
       "name": "Essen",
       "link": "essen",
       "id": 4
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "url": "anna",
+      "desc": "Anna",
+      "tags": [
+        {
+          "name": "essen"
+        },
+        {
+          "name": "freizeit"
+        },
+        {
+          "name": "sport"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "gerda",
+      "desc": "Gerda",
+      "tags": [
+        {
+          "name": "freizeit"
+        },
+        {
+          "name": "sport"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "karl",
+      "desc": "Karl",
+      "tags": []
     }
   ]
 }
