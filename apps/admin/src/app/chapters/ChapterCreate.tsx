@@ -12,7 +12,7 @@ import { ContentType } from '@gerdesque/data';
 const ChapterCreate = props => (
   <Create {...props}>
     <SimpleForm>
-    <TextInput label="Name" source="name" />
+    < TextInput source="name" />
       <TextInput label="Pfad" source="link" />
       <ArrayInput label="Inhalt" source="content">
         <SimpleFormIterator>

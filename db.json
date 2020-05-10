@@ -41,37 +41,87 @@
     {
       "id": 1,
       "url": "anna",
-      "desc": "Anna",
+      "title": "Anna",
       "tags": [
-        {
-          "name": "essen"
-        },
-        {
-          "name": "freizeit"
-        },
-        {
-          "name": "sport"
-        }
+        1,
+        2,
+        3
       ]
     },
     {
       "id": 2,
       "url": "gerda",
-      "desc": "Gerda",
+      "title": "Gerda",
       "tags": [
-        {
-          "name": "freizeit"
-        },
-        {
-          "name": "sport"
-        }
+        1,
+        3
       ]
     },
     {
       "id": 3,
       "url": "karl",
-      "desc": "Karl",
+      "title": "Karl",
       "tags": []
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "url": "Anna_Arbeitsgruppe",
+      "title": "Anna in der Arbeitsgruppe",
+      "tagIds": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "url": "Anna_Dialekte",
+      "title": "Anna und die Dialekte",
+      "tagIds": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "url": "Karl_Ortsgruppe",
+      "title": "Karl in der Ortsgruppe",
+      "tagIds": []
+    },
+    {
+      "title": "Karl und sein Vater",
+      "url": "Karl_Vater",
+      "tagIds": [
+        2
+      ],
+      "id": 4
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "TicTacToe",
+      "desc": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren."
+    },
+    {
+      "id": 2,
+      "title": "Memory",
+      "desc": "Setze den Stadtplan richtig zusammen, indem du die einzelnen Kartenausschnitte auf die entsprechende vorgezeichnete Stelle des leeren Planes ziehst. Wenn du das Puzzle richtig gelöst hast, kommst du weiter zur Ortgruppe."
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Essen"
+    },
+    {
+      "id": 2,
+      "name": "Freizeit"
+    },
+    {
+      "id": 3,
+      "name": "Sport"
     }
   ]
 }

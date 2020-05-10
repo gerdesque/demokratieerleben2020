@@ -13,7 +13,7 @@ export const ChapterEdit = props => (
   <Edit {...props}>
     <SimpleForm>
       <TextInput disabled source="id" />
-      <TextInput label="Name" source="name" />
+      <TextInput source="name" />
       <TextInput label="Pfad" source="link" />
       <ArrayInput label="Inhalt" source="content">
         <SimpleFormIterator>

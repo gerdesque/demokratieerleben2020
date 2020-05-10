@@ -12,7 +12,7 @@ import {
 const ChapterList = props => (
   <List {...props}>
     <Datagrid rowClick="edit">
-      <TextField label="Name" source="name" />
+      <TextField source="name" />
       <TextField label="Pfad" source="link" />
       <ArrayField label="Inhalt" source="content">
         <SingleFieldList>
