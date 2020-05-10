@@ -1,5 +1,11 @@
 export const API_URL = 'http://localhost:3000';
 
+export enum Layer {
+  Fore = "fore",
+  Base = "base",
+  Back = "back"
+}
+
 export enum ContentType {
   Text = "text",
   Video = "video",

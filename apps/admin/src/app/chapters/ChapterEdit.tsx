@@ -5,16 +5,17 @@ import {
   TextInput,
   ArrayInput,
   SimpleFormIterator,
-  RadioButtonGroupInput
+  RadioButtonGroupInput,
+  required
 } from 'react-admin';
-import { ContentType } from '@gerdesque/data';
+import { ContentType, Layer } from '@gerdesque/data';
 
 export const ChapterEdit = props => (
   <Edit {...props}>
     <SimpleForm>
       <TextInput disabled source="id" />
       <TextInput source="name" />
-      <TextInput label="Pfad" source="link" />
+      <TextInput label="Pfad" source="link" validate={required()}/>
       <ArrayInput label="Inhalt" source="content">
         <SimpleFormIterator>
           <RadioButtonGroupInput fullWidth="true" label="Typ" source="type" choices={[
@@ -23,6 +24,11 @@ export const ChapterEdit = props => (
             { id: ContentType.Image, name: 'Bild' },
             { id: ContentType.Game, name: 'Spiel' },
             { id: ContentType.Misc, name: 'Sonstiges' },
+          ]} />
+          <RadioButtonGroupInput label="Ebene" source="layer" choices={[
+            { id: Layer.Fore, name: 'Front' },
+            { id: Layer.Base, name: 'Mitte' },
+            { id: Layer.Back, name: 'Hinten' },
           ]} />
           <TextInput multiline label="Wert" fullWidth="true" source="value" />
         </SimpleFormIterator>
