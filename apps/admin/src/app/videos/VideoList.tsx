@@ -3,10 +3,9 @@ import {
   List,
   Datagrid,
   TextField,
-  SingleFieldList,
   ChipField,
   EditButton,
-  ReferenceArrayField
+  ReferenceField
 } from 'react-admin';
 
 const VideoList = props => (
@@ -14,11 +13,9 @@ const VideoList = props => (
     <Datagrid rowClick="edit">
       <TextField label="Titel" source="title" />
       <TextField label="URL" source="url" />
-      <ReferenceArrayField source="tagIds" reference="tags">
-        <SingleFieldList>
-          <ChipField source="name" />
-        </SingleFieldList>
-      </ReferenceArrayField>
+      <ReferenceField source="tagId" reference="tags">
+        <ChipField source="name" />
+      </ReferenceField>
       <EditButton />
     </Datagrid>
   </List>

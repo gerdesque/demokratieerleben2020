@@ -3,8 +3,8 @@ import {
   SimpleForm,
   TextInput,
   Create,
-  ReferenceArrayInput,
-  SelectArrayInput
+  ReferenceInput,
+  SelectInput
 } from 'react-admin';
 
 const VideoCreate = props => (
@@ -12,9 +12,9 @@ const VideoCreate = props => (
     <SimpleForm>
     <TextInput label="Titel" source="title" />
       <TextInput label="URL" source="url" />
-      <ReferenceArrayInput source="tagIds" reference="tags">
-        <SelectArrayInput label="Tags" optionText="name" />
-      </ReferenceArrayInput>
+      <ReferenceInput source="tagId" reference="tags">
+        <SelectInput label="Tags" optionText="name" />
+      </ReferenceInput>
     </SimpleForm>
   </Create>
 );

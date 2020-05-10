@@ -12,10 +12,10 @@ export const ImageEdit = props => (
   <Edit {...props}>
     <SimpleForm>
       <Poster {...props}/>
-      <TextInput source="url" fullWidth />
-      {/* <ReferenceInput source="tag_id" reference="tags">
-        <SelectInput source="name" />
-      </ReferenceInput> */}
+      <TextInput label="URL" source="url"/>
+      <ReferenceInput source="tagId" reference="tags">
+        <SelectInput label="Tags" optionText="name" />
+      </ReferenceInput>
     </SimpleForm>
   </Edit>
 );

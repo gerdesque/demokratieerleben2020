@@ -6,10 +6,13 @@ import {
   EditButton,
 } from 'react-admin';
 
+import LinkToRelatedImages from './LinkToRelatedImages';
+
 const TagList = props => (
   <List {...props}>
-    <Datagrid rowClick="edit">
+    <Datagrid>
       <TextField source="name" />
+      <LinkToRelatedImages {...props}/>
       <EditButton />
     </Datagrid>
   </List>
