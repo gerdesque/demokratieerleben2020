@@ -1,3 +1,10 @@
+:root {
+  --color-text: darkred;
+  --color-title: chocolate;
+  --color-link: mediumblue;
+  --color-link-highlighted: #E3000F;
+}
+
 @font-face {
   font-family: 'FundamentalBrigade';
   font-display: swap;
@@ -45,7 +52,7 @@ html {
 
 body {
   background-image: url(./background.webp);
-  color: darkred;
+  color: var(--color-text);
   font-size: #{'clamp(1em, 1em + 2vw, 3em)'};
   font-family: FundamentalBrigade, arial, sans-serif;
   font-weight: normal;
