@@ -4,7 +4,7 @@ import {
   SimpleForm,
   TextInput,
   ReferenceInput,
-  SelectInput
+  AutocompleteInput
 } from 'react-admin';
 import Poster from './Poster';
 
@@ -14,7 +14,7 @@ export const ImageEdit = props => (
       <Poster {...props}/>
       <TextInput label="URL" source="url"/>
       <ReferenceInput source="tagId" reference="tags">
-        <SelectInput label="Tags" optionText="name" />
+        <AutocompleteInput label="Tags" optionText="name" />
       </ReferenceInput>
     </SimpleForm>
   </Edit>
