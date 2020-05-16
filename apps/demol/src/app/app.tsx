@@ -12,7 +12,7 @@ export const App = () => {
   const [chapters, setChapters] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/chapter`)
+    fetch(`${API_URL}/chapters`)
       .then(_ => _.json())
       .then(setChapters);
   }, []);

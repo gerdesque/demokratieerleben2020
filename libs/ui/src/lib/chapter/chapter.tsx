@@ -20,8 +20,8 @@ export const ChapterComponent = (props: Chapter) => {
   }
 
   const renderChapterContent = () => {
-    return props.content.map((content) => 
-      <div className='parallax__group'>
+    return props.content.map((content, index) => 
+      <div key={index} className='parallax__group'>
         <div className='parallax__layer parallax__layer--base'>
           {content.type === ContentType.Text && renderText(content.value)}
           {content.type === ContentType.Video && renderVideo(content.value)}
@@ -37,7 +37,7 @@ export const ChapterComponent = (props: Chapter) => {
         <Title text={props.name} />
         </div>
       </div>
-      {renderChapterContent()}
+      {props.content && renderChapterContent()}
         {/* <div id='group2' className='parallax__group'>
           <div className='parallax__layer parallax__layer--base'></div>
           <div className='parallax__layer parallax__layer--deep'></div>

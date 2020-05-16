@@ -23,5 +23,5 @@ export interface Chapter {
   id?: number
   name: (string | JSX.Element)[]
   link?: string
-  content: Content[]
+  content?: Content[]
 }
