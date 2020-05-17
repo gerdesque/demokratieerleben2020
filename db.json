@@ -25,6 +25,11 @@
               "type": "text",
               "value": "Anna und Karl machen sich Gedanken über ihre Zukunft, denn sie sind 13 Jahre alt und ihr letztes Schuljahr steht bald bevor. Begleite sie dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der sozialistischen Arbeiterjugend finden und was sie dort erleben.",
               "layer": "base"
+            },
+            {
+              "type": "video",
+              "value": "Anna_Großvater",
+              "layer": "back"
             }
           ]
         }

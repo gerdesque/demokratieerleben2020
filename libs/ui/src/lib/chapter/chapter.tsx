@@ -27,9 +27,9 @@ export const ChapterComponent = (props: Chapter) => {
   }
 
   const renderChapterContent = (contentList) => {
-    return contentList.map((content, index) => 
+    return contentList.map((content, index) =>
       <div key={index} className='parallax__group'>
-        <div className='parallax__layer parallax__layer--base'>
+        <div className={`parallax__layer parallax__layer--${content.layer}`}>
           {content.type === ContentType.Text && <Text value={content.value} />}
           {content.type === ContentType.Video && <Video value={content.value} />}
           {content.type === ContentType.Image && <Image value={content.value} />}

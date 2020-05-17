@@ -1,4 +1,5 @@
 import React from 'react';
+import { API_URL, VIDEO_SUFFIX } from '@gerdesque/data';
 
 import './video.scss';
 
@@ -8,11 +9,19 @@ export interface VideoProps {
 }
 
 export const Video = (props: VideoProps) => {
+  // const playVideo = () => {
+  //   this.setState({ hasVideoStarted: true });
+  //   this.refs.video.play();
+  // };
+
   return (
-    <div>
-      <h1>Welcome to video component!</h1>
-    </div>
-  );
+    <div className="video">
+      <video>
+        <source type='video/mp4' src={API_URL+"/movies/"+props.value+VIDEO_SUFFIX}></source>
+        Your browser does not support the video tag.
+      </video>
+      {/* <button className={`play ${this.state.hasVideoStarted && 'hide'}`} onClick={this.playVideo} /> */}
+    </div>);
 };
 
 export default Video;
