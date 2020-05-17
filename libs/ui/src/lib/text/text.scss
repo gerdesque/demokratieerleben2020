@@ -1,0 +1,12 @@
+.box {
+  display: flex;
+  text-align: center;
+  width: 75%;
+  margin: 30% auto 0;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.column {
+  flex-direction: column;
+}

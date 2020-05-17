@@ -4,7 +4,7 @@ import './title.scss';
 
 /* eslint-disable-next-line */
 export interface TitleProps {
-  text: any
+  text: string
 }
 
 export const Title = (props: TitleProps) => {

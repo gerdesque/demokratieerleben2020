@@ -1,5 +1,6 @@
 export const API_URL = 'http://localhost:3000';
 export const IMAGE_SUFFIX = '.webp';
+export const IMAGE_SUFFIX_ALTERNATE = '.png';
 
 export enum Layer {
   Fore = "fore",
