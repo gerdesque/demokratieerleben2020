@@ -1,12 +1,21 @@
 import React from 'react';
 import Title from '../title/title';
+import { makeStyles } from '@material-ui/core/styles';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Chapter, ContentType } from '@gerdesque/data';
+import { API_URL, IMAGE_SUFFIX } from '@gerdesque/data';
 
 import './chapter.scss';
 
 export const ChapterComponent = (props: Chapter) => {
-  
+  const useStyles = makeStyles(() => ({
+    chapter: {
+      backgroundImage: `url(${API_URL+"/"+props.link+IMAGE_SUFFIX})`,
+      boxShadow: '0 0 8px 8px #dcd5cc inset',
+      },
+  }));
+  const classes = useStyles();
+
   const renderText = (value) => {
     return <div className='box'><p>{value}</p></div>
   }
@@ -31,10 +40,10 @@ export const ChapterComponent = (props: Chapter) => {
   }
 
   return (
-    <div className={`parallax ${props.name}`}>
-      <div id='header' className='parallax__group'>
-        <div className='parallax__layer parallax__layer--base'>
-        <Title text={props.name} />
+    <div className='parallax'>
+      <div className='parallax__group'>
+        <div className={`parallax__layer parallax__layer--base ${classes.chapter}`}>
+          <Title text={props.name} />
         </div>
       </div>
       {props.content && renderChapterContent()}

@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'FundamentalBrigade';
   font-display: swap;
-  src: url('./Fundamental_Brigade_Schlank.ttf') format('truetype');
+  src: url('../assets/fonts/Fundamental_Brigade_Schlank.ttf') format('truetype');
 }
 
 *,
@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  background-image: url(./background.webp);
+  background-image: url(../assets/background.webp);
   color: var(--color-text);
   font-size: #{'clamp(1em, 1em + 2vw, 3em)'};
   font-family: FundamentalBrigade, arial, sans-serif;

@@ -1,4 +1,5 @@
 export const API_URL = 'http://localhost:3000';
+export const IMAGE_SUFFIX = '.webp';
 
 export enum Layer {
   Fore = "fore",
@@ -21,7 +22,7 @@ export interface Content {
 
 export interface Chapter {
   id?: number
-  name: (string | JSX.Element)[]
-  link?: string
+  name?: string
+  link: string
   content?: Content[]
 }

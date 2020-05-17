@@ -8,7 +8,7 @@ import './home.scss';
 export interface HomeProps {}
 
 const home = {
-  name: ["Demokratie ", <i key="home">er</i>,"leben"],
+  link: "home",
   content: [
   {
     "type": ContentType.Text,

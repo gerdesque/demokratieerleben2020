@@ -26,18 +26,6 @@
       "id": 3,
       "name": "Ortsgruppe",
       "link": "localgroup"
-    },
-    {
-      "content": [
-        {
-          "type": "text",
-          "value": "Dummy",
-          "layer": "back"
-        }
-      ],
-      "name": "Essen",
-      "link": "essen",
-      "id": 4
     }
   ],
   "images": [

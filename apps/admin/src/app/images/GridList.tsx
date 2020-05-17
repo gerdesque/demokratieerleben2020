@@ -6,12 +6,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import withWidth from '@material-ui/core/withWidth';
 import { Link } from 'react-router-dom';
 import { linkToRecord } from 'ra-core';
-import { API_URL } from '@gerdesque/data';
+import { API_URL, IMAGE_SUFFIX } from '@gerdesque/data';
 
-//const IMAGE_URL = "https://github.com/gerdesque/demokratieerleben/raw/master/src/assets/fallback/"
-const IMAGE_SUFFIX = ".png"
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
