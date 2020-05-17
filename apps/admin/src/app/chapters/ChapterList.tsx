@@ -14,9 +14,9 @@ const ChapterList = props => (
     <Datagrid rowClick="edit">
       <TextField source="name" />
       <TextField label="Pfad" source="link" />
-      <ArrayField label="Inhalt" source="content">
+      <ArrayField label="Inhaltsgruppen" source="groups">
         <SingleFieldList>
-          <ChipField source="type" />
+          <ChipField source="id" />
         </SingleFieldList>
       </ArrayField>
       <EditButton />

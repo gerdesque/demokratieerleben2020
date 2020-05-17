@@ -21,9 +21,13 @@ export interface Content {
   value: string
 }
 
+export interface Group {
+  content: Content[]
+}
+
 export interface Chapter {
   id?: number
   name?: string
   link: string
-  content?: Content[]
+  groups?: Group[]
 }

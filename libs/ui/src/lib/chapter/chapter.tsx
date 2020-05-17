@@ -19,8 +19,15 @@ export const ChapterComponent = (props: Chapter) => {
   }));
   const classes = useStyles();
 
-  const renderChapterContent = () => {
-    return props.content.map((content, index) => 
+  const renderChapterGroups = () => {
+    return props.groups.map((group, index) => 
+    <div key={index} className='parallax__group'>
+      {group.content && renderChapterContent(group.content)}
+    </div>)
+  }
+
+  const renderChapterContent = (contentList) => {
+    return contentList.map((content, index) => 
       <div key={index} className='parallax__group'>
         <div className='parallax__layer parallax__layer--base'>
           {content.type === ContentType.Text && <Text value={content.value} />}
@@ -37,7 +44,7 @@ export const ChapterComponent = (props: Chapter) => {
           <Title text={props.name} />
         </div>
       </div>
-      {props.content && renderChapterContent()}
+      {props.groups && renderChapterGroups()}
       </div>
   );
 };
