@@ -8,7 +8,11 @@ export default { title: 'Design System/Atoms/Navigation' };
 export const sidebar = () => (
   <BrowserRouter>
       <div className="app">
-        <Nav path="/" />
+        <Nav chapters={[
+          {"link": "intro"},
+          {"link": "family"},
+          {"link": "localgroup"}
+        ]} />
       </div>
     </BrowserRouter>
 );

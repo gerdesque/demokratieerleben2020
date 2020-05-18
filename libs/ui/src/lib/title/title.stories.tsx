@@ -4,8 +4,8 @@ import { Title } from './title';
 
 export default { title: 'Design System/Atoms/Title' };
 
-export const intro = () => (
-  <Title text={["Demokratie ", <i>er</i>,"leben"]} />
+export const home = () => (
+  <Title text="Demokratie erLeben" />
 );
 
 export const specialChars = () => (

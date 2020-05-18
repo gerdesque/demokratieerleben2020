@@ -29,7 +29,8 @@
     "predeploy": "yarn run build --prod",
     "deploy": "gh-pages -d dist/apps/demol",
     "release": "standard-version",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "storybook": "nx run ui:storybook"
   },
   "private": true,
   "dependencies": {
