@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/gerdesque/demokratieerleben2020/compare/v0.2.4...v0.2.5) (2020-06-12)
+
+
+### Features
+
+* **chapter:** add icon scroll animation ([d460b7e](https://github.com/gerdesque/demokratieerleben2020/commit/d460b7e5f89aa177996c18a1ce8b07fe995f0a3a))
+* **decission:** add decission component ([d9154b2](https://github.com/gerdesque/demokratieerleben2020/commit/d9154b2d90211a0ad0da4617e3266fe708d73cda))
+* **decission:** add decission handling for chapter ([b3a4e7e](https://github.com/gerdesque/demokratieerleben2020/commit/b3a4e7e585e8d4daf888631ac6abcc83f227fef2))
+* **ui:** add local chapter content ([4dfbb4a](https://github.com/gerdesque/demokratieerleben2020/commit/4dfbb4af62f3857b72e4fc243dc67f47b5c3ec1f))
+
+
+### Bug Fixes
+
+* **ui:** adjust width/height of ui components ([6892eea](https://github.com/gerdesque/demokratieerleben2020/commit/6892eea70c8e9badbad8650d3da9dd02617d5bfa))
+
 ### [0.2.4](https://github.com/gerdesque/demokratieerleben2020/compare/v0.2.3...v0.2.4) (2020-05-18)
 
 ### 0.2.3 (2020-05-18)
