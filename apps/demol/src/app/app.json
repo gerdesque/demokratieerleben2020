@@ -1,0 +1,182 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "name": "Zu Hause",
+      "link": "daheim",
+      "groups": [
+        {
+          "grouped": false,
+          "content": [
+            {
+              "type": "text",
+              "value": "Es ist 1928. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "misc",
+              "layer": "base",
+              "value": "smokingpit"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei."
+            },
+            {
+              "type": "image",
+              "layer": "fore",
+              "value": "daheim_kinder"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": true,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Wen möchtest du auf diesem Weg begleiten?"
+            },
+            {
+              "type": "image",
+              "layer": "fore",
+              "value": "daheim_karl"
+            },
+            {
+              "layer": "fore",
+              "type": "image",
+              "value": "daheim_gerda"
+            },
+            {
+              "type": "image",
+              "layer": "fore",
+              "value": "daheim_anna"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "value": "Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.",
+              "type": "text",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "base",
+              "value": "daheim_familie"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": true,
+          "content": [
+            {
+              "value": "Worüber möchtest du mehr erfahren?",
+              "type": "text",
+              "layer": "fore"
+            },
+            {
+              "type": "video",
+              "layer": "fore",
+              "value": "Anna_Großvater",
+              "title": "Annas Alltag"
+            },
+            {
+              "type": "video",
+              "layer": "fore",
+              "value": "Anna_Großvater",
+              "title": "Annas Lebensumfeld"
+            },
+            {
+              "type": "video",
+              "layer": "fore",
+              "value": "Anna_Großvater",
+              "title": "Annas Familie"
+            },
+            {
+              "type": "video",
+              "layer": "fore",
+              "value": "Anna_Großvater",
+              "title": "Annas Großvater"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_familie2"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie von einem Verein namens 'Sozialistische Arbeiterjugend' sind. Gemeinsam mit der Reichsarbeitsgemeinschaft der Kinderfreunde haben diese eine Ortsgruppe ins Leben gerufen."
+            },
+            {
+              "type": "image",
+              "layer": "base",
+              "value": "daheim_werbung"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel."
+            },
+            {
+              "type": "game",
+              "layer": "base",
+              "value": "puzzle"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Du kennst eine Abkürzung und gehst direkt mit Anna zur Ortsgruppe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

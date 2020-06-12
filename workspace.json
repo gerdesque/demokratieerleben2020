@@ -15,7 +15,9 @@
             "main": "apps/demol/src/main.tsx",
             "polyfills": "apps/demol/src/polyfills.ts",
             "tsConfig": "apps/demol/tsconfig.app.json",
-            "assets": ["apps/demol/src/favicon.ico", "apps/demol/src/assets"],
+            "assets": ["apps/demol/src/favicon.ico",
+              { "glob": "**/*", "input": "apps/demol/src/assets/", "output": "./assets/" },
+              { "glob": "**/*", "input": "libs/shared-assets/", "output": "./assets/" }],
             "styles": [
               "apps/demol/src/styles.scss",
               "libs/ui/src/lib/title/title.scss",

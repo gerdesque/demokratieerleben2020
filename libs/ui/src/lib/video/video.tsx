@@ -1,5 +1,5 @@
 import React from 'react';
-import { API_URL, VIDEO_SUFFIX } from '@gerdesque/data';
+import { VIDEO_SUFFIX } from '@gerdesque/data';
 
 import './video.scss';
 
@@ -17,7 +17,7 @@ export const Video = (props: VideoProps) => {
   return (
     <div className="video">
       <video>
-        <source type='video/mp4' src={API_URL+"/movies/"+props.value+VIDEO_SUFFIX}></source>
+        <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>
         Your browser does not support the video tag.
       </video>
       {/* <button className={`play ${this.state.hasVideoStarted && 'hide'}`} onClick={this.playVideo} /> */}

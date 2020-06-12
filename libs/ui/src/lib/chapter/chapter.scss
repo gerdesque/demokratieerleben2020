@@ -28,6 +28,15 @@
     &--fore {
       transform: translateZ(90px) scale(.7);
       z-index: 1;
+
+      picture {
+        width: 75%;
+        display: flex;
+      }
+
+      &.row > * {
+        width: 25%;
+      }
     }
 
     &--base {
@@ -35,11 +44,21 @@
       z-index: 4;
       background: 50% 50% / cover;
       filter: saturate(.8);
+
+      picture {
+        display: flex;
+        margin-top: 50%;
+      }
     }
 
     &--back {
       transform: translateZ(-300px) scale(2);
       z-index: 3;
+
+      picture {
+        display: flex;
+        margin-top: -25%;
+      }
     }
 
     &--deep {

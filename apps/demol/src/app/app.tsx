@@ -1,32 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
 import { Nav, ChapterComponent } from '@gerdesque/ui';  
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { API_URL } from '@gerdesque/data';
 
 import './app.scss';
 
-export const App = () => {
-  
-  const [chapters, setChapters] = useState([]);
+import app from './app.json';
 
-  useEffect(() => {
-    fetch(`${API_URL}/chapters`)
-      .then(_ => _.json())
-      .then(setChapters);
-  }, []);
+export const App = () => {
 
   const renderChapter = (routerProps) => {
     const chapterId = parseInt(routerProps.match.params.id)
-    const chapter = chapters.find(chapterObj => chapterObj.id === chapterId)
+    const chapter = app.chapters.find(chapterObj => chapterObj.id === chapterId)
     return (chapter && <ChapterComponent {...chapter} />)
   }
 
   return (
     <BrowserRouter basename="/demokratieerleben2020">
       <div className="app">
-        <Nav chapters = {chapters}/>
+        <Nav chapters = {app.chapters}/>
         <div className="app-content">
           <Switch>
             <Route path="/" exact component={Home} />

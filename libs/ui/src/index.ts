@@ -1,3 +1,4 @@
+export * from './lib/smokingpit/smokingpit';
 export * from './lib/decission/decission';
 export * from './lib/image/image';
 export * from './lib/video/video';

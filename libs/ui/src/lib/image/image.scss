@@ -1,4 +1,6 @@
-img {
+.chapter_picture {
   max-width: 100%;
   display: block;
+  filter: saturate(.8);
+  opacity: .9;
 }

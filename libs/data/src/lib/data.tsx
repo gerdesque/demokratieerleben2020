@@ -14,7 +14,8 @@ export enum ContentType {
   Video = "video",
   Image = "image",
   Game = "game",
-  Misc = "misc"
+  Misc = "misc",
+  Decission = "decission"
 }
 
 export interface Content {
@@ -24,6 +25,8 @@ export interface Content {
 
 export interface Group {
   content: Content[]
+  grouped: boolean
+  row: boolean
 }
 
 export interface Chapter {
