@@ -2,14 +2,14 @@
   "chapters": [
     {
       "id": 1,
-      "name": "Intro",
-      "link": "intro",
+      "name": "Daheim",
+      "link": "daheim",
       "groups": [
         {
           "content": [
             {
               "type": "text",
-              "value": "Es ist 1927. Irgendwo im Ruhrgebiet leben zwei Kinder: Anna und Karl. Die Eltern der beiden gehören zur großen Arbeiterschaft, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten.",
+              "value": "Es ist 1928. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda. Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.",
               "layer": "fore"
             },
             {
@@ -22,28 +22,32 @@
         {
           "content": [
             {
-              "type": "text",
-              "value": "Anna und Karl machen sich Gedanken über ihre Zukunft, denn sie sind 13 Jahre alt und ihr letztes Schuljahr steht bald bevor. Begleite sie dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der sozialistischen Arbeiterjugend finden und was sie dort erleben.",
-              "layer": "base"
+              "type": "image",
+              "layer": "base",
+              "value": "15"
             },
             {
-              "type": "video",
-              "value": "Anna_Großvater",
-              "layer": "back"
+              "type": "text",
+              "layer": "fore",
+              "value": "Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben."
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "type": "image",
+              "layer": "base",
+              "value": "16"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Wen möchtest du auf diesem Weg begleiten?"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 2,
-      "name": "Familie",
-      "link": "family"
-    },
-    {
-      "id": 3,
-      "name": "Ortsgruppe",
-      "link": "localgroup"
     }
   ],
   "images": [
