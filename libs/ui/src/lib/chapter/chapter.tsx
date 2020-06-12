@@ -40,6 +40,7 @@ export const ChapterComponent = (props: Chapter) => {
       <div className='parallax__group parallax__header'>
         <div className={`parallax__layer parallax__layer--base ${classes.chapter}`}>
           <Title text={props.name} />
+          <div className='icon-scroll'></div>
         </div>
       </div>
       {props.groups && renderChapterGroups()}
