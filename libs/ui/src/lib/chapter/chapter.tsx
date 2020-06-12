@@ -3,6 +3,7 @@ import Title from '../title/title';
 import Video from '../video/video';
 import Image from '../image/image';
 import Text from '../text/text';
+import Decission from '../decission/decission';
 import { makeStyles } from '@material-ui/core/styles';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Chapter, ContentType } from '@gerdesque/data';
@@ -32,6 +33,7 @@ export const ChapterComponent = (props: Chapter) => {
           {content.type === ContentType.Text && <Text value={content.value} />}
           {content.type === ContentType.Video && <Video value={content.value} />}
           {content.type === ContentType.Image && <Image value={content.value} />}
+          {content.type === ContentType.Misc && <Decission value={content.value} />}
         </div>)
   }
 

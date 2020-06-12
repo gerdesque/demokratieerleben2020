@@ -37,13 +37,23 @@
           "content": [
             {
               "type": "image",
-              "layer": "base",
-              "value": "16"
+              "layer": "fore",
+              "value": "22"
             },
             {
-              "type": "text",
+              "type": "image",
               "layer": "fore",
-              "value": "Wen möchtest du auf diesem Weg begleiten?"
+              "value": "35"
+            },
+            {
+              "layer": "fore",
+              "type": "image",
+              "value": "46"
+            },
+            {
+              "value": "Wen möchtest du auf diesem Weg begleiten?",
+              "type": "text",
+              "layer": "fore"
             }
           ]
         }
