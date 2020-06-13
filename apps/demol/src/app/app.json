@@ -7,6 +7,7 @@
       "groups": [
         {
           "grouped": false,
+          "row": false,
           "content": [
             {
               "type": "text",
@@ -73,6 +74,8 @@
           ]
         },
         {
+          "grouped": false,
+          "row": false,
           "content": [
             {
               "value": "Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.",
@@ -98,25 +101,25 @@
             {
               "type": "video",
               "layer": "fore",
-              "value": "Anna_Großvater",
+              "value": "3_Annas_Alltag",
               "title": "Annas Alltag"
             },
             {
               "type": "video",
               "layer": "fore",
-              "value": "Anna_Großvater",
+              "value": "4_Annas_Zuhause",
               "title": "Annas Lebensumfeld"
             },
             {
               "type": "video",
               "layer": "fore",
-              "value": "Anna_Großvater",
+              "value": "2_Anna_Familie",
               "title": "Annas Familie"
             },
             {
               "type": "video",
               "layer": "fore",
-              "value": "Anna_Großvater",
+              "value": "1_Anna_Großvater",
               "title": "Annas Großvater"
             },
             {
@@ -133,6 +136,7 @@
         },
         {
           "grouped": true,
+          "row": false,
           "content": [
             {
               "type": "text",
@@ -153,6 +157,7 @@
         },
         {
           "grouped": true,
+          "row": false,
           "content": [
             {
               "type": "text",

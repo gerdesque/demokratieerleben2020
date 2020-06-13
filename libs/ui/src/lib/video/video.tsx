@@ -5,7 +5,8 @@ import './video.scss';
 
 /* eslint-disable-next-line */
 export interface VideoProps {
-  value: string
+  value: string,
+  title: string
 }
 
 export const Video = (props: VideoProps) => {
@@ -16,6 +17,7 @@ export const Video = (props: VideoProps) => {
 
   return (
     <div className="video">
+      <p>{props.title}</p>
       <video>
         <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>
         Your browser does not support the video tag.

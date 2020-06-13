@@ -35,7 +35,7 @@ export const ChapterComponent = (props: Chapter) => {
         {contentList.map((content) =>
           <>
             {content.type === ContentType.Text && <Text value={content.value} />}
-            {content.type === ContentType.Video && <Video value={content.value} />}
+            {content.type === ContentType.Video && <Video value={content.value} title={content.title} />}
             {content.type === ContentType.Image && <Image value={content.value} />}
             {content.type === ContentType.Decission && <Decission value={content.value} />}
             {content.type === ContentType.Misc && <Smokingpit value={content.value} />}
@@ -47,7 +47,7 @@ export const ChapterComponent = (props: Chapter) => {
       contentList.map((content, index) =>
         <div key={index} className={`parallax__layer parallax__layer--${content.layer}`}>
           {content.type === ContentType.Text && <Text value={content.value} />}
-          {content.type === ContentType.Video && <Video value={content.value} />}
+          {content.type === ContentType.Video && <Video value={content.value} title={content.title} />}
           {content.type === ContentType.Image && <Image value={content.value} />}
           {content.type === ContentType.Decission && <Decission value={content.value} />}
           {content.type === ContentType.Misc && <Smokingpit value={content.value} />}
@@ -55,10 +55,6 @@ export const ChapterComponent = (props: Chapter) => {
 
     return grouped ? chapterGroupContent : chapterContent
   }
-
-  const setAudioRef = element => {
-    this.audio = element;
-  };
 
   return (
     <div className='parallax'>

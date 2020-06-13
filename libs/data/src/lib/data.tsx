@@ -19,14 +19,15 @@ export enum ContentType {
 }
 
 export interface Content {
-  type: ContentType
+  type: string
+  layer: string
   value: string
 }
 
 export interface Group {
-  content: Content[]
   grouped: boolean
   row: boolean
+  content: Content[]
 }
 
 export interface Chapter {
