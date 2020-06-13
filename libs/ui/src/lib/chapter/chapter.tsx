@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Title from '../title/title';
 import Video from '../video/video';
 import Image from '../image/image';
 import Text from '../text/text';
 import Decission from '../decission/decission';
 import Smokingpit from '../smokingpit/smokingpit';
+import Puzzle from '../puzzle/puzzle';
+import Scrollicon from '../scrollicon/scrollicon';
 import { makeStyles } from '@material-ui/core/styles';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Chapter, ContentType } from '@gerdesque/data';
@@ -28,32 +30,33 @@ export const ChapterComponent = (props: Chapter) => {
     </div>)
   }
 
+  const renderContent = (content, index) => {
+    return <Fragment key={index}>
+      {content.type === ContentType.Text && <Text value={content.value} />}
+      {content.type === ContentType.Video && <Video value={content.value} width={content.layer} title={content.title} />}
+      {content.type === ContentType.Image && <Image value={content.value} width={content.layer}/>}
+      {content.type === ContentType.Decission && <Decission value={content.value} />}
+      {content.type === ContentType.SmokingPit && <Smokingpit value={content.value} />}
+      {content.type === ContentType.Puzzle && <Puzzle/>}
+    </Fragment>
+  }
+
   const renderChapterContent = ({content : contentList, grouped, row}) => {
 
-    const chapterGroupContent = 
-      <div className={`parallax__layer parallax__layer--fore grouped ${row ? 'row' : 'column'}`}>
-        {contentList.map((content) =>
-          <>
-            {content.type === ContentType.Text && <Text value={content.value} />}
-            {content.type === ContentType.Video && <Video value={content.value} title={content.title} />}
-            {content.type === ContentType.Image && <Image value={content.value} />}
-            {content.type === ContentType.Decission && <Decission value={content.value} />}
-            {content.type === ContentType.Misc && <Smokingpit value={content.value} />}
-          </>
+    const chapterGroupedContent = 
+      <div className={`parallax__layer parallax__layer--base grouped ${row ? 'row' : 'column'}`}>
+        {contentList.map((content, index) =>
+          renderContent(content, index)
         )}
       </div>;
 
     const chapterContent = 
       contentList.map((content, index) =>
         <div key={index} className={`parallax__layer parallax__layer--${content.layer}`}>
-          {content.type === ContentType.Text && <Text value={content.value} />}
-          {content.type === ContentType.Video && <Video value={content.value} title={content.title} />}
-          {content.type === ContentType.Image && <Image value={content.value} />}
-          {content.type === ContentType.Decission && <Decission value={content.value} />}
-          {content.type === ContentType.Misc && <Smokingpit value={content.value} />}
+          {renderContent(content, index)}
         </div>);
 
-    return grouped ? chapterGroupContent : chapterContent
+    return grouped ? chapterGroupedContent : chapterContent
   }
 
   return (
@@ -64,7 +67,7 @@ export const ChapterComponent = (props: Chapter) => {
           <audio controls loop>
             <source src={"./assets/sounds/daheim.mp3"} type='audio/mpeg' />
           </audio>
-          <div className='icon-scroll'></div>
+          <Scrollicon/>
         </div>
       </div>
       {props.groups && renderChapterGroups()}

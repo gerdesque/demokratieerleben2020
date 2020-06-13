@@ -1,3 +1,5 @@
+export * from './lib/scrollicon/scrollicon';
+export * from './lib/puzzle/puzzle';
 export * from './lib/smokingpit/smokingpit';
 export * from './lib/decission/decission';
 export * from './lib/image/image';
