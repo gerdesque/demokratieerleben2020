@@ -14,7 +14,8 @@ export enum ContentType {
   Video = "video",
   Image = "image",
   Game = "game",
-  Misc = "misc",
+  SmokingPit = "smokingpit",
+  Puzzle = "puzzle",
   Decission = "decission"
 }
 

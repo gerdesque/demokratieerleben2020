@@ -20,7 +20,7 @@
               "value": "daheim_karte"
             },
             {
-              "type": "misc",
+              "type": "smokingpit",
               "layer": "base",
               "value": "smokingpit"
             }
@@ -37,7 +37,7 @@
             },
             {
               "type": "image",
-              "layer": "fore",
+              "layer": "first",
               "value": "daheim_kinder"
             },
             {
@@ -58,17 +58,17 @@
             },
             {
               "type": "image",
-              "layer": "fore",
+              "layer": "third",
               "value": "daheim_karl"
             },
             {
-              "layer": "fore",
               "type": "image",
+              "layer": "third",
               "value": "daheim_gerda"
             },
             {
               "type": "image",
-              "layer": "fore",
+              "layer": "third",
               "value": "daheim_anna"
             }
           ]
@@ -84,7 +84,7 @@
             },
             {
               "type": "image",
-              "layer": "base",
+              "layer": "first",
               "value": "daheim_familie"
             }
           ]
@@ -100,32 +100,27 @@
             },
             {
               "type": "video",
-              "layer": "fore",
+              "layer": "fourth",
               "value": "3_Annas_Alltag",
               "title": "Annas Alltag"
             },
             {
               "type": "video",
-              "layer": "fore",
+              "layer": "fourth",
               "value": "4_Annas_Zuhause",
               "title": "Annas Lebensumfeld"
             },
             {
               "type": "video",
-              "layer": "fore",
+              "layer": "fourth",
               "value": "2_Anna_Familie",
               "title": "Annas Familie"
             },
             {
               "type": "video",
-              "layer": "fore",
+              "layer": "fourth",
               "value": "1_Anna_Großvater",
               "title": "Annas Großvater"
-            },
-            {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_familie2"
             },
             {
               "type": "text",
@@ -145,7 +140,7 @@
             },
             {
               "type": "image",
-              "layer": "base",
+              "layer": "first",
               "value": "daheim_werbung"
             },
             {
@@ -170,7 +165,7 @@
               "value": "Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel."
             },
             {
-              "type": "game",
+              "type": "puzzle",
               "layer": "base",
               "value": "puzzle"
             },

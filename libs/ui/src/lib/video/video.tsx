@@ -6,6 +6,7 @@ import './video.scss';
 /* eslint-disable-next-line */
 export interface VideoProps {
   value: string,
+  width: string
   title: string
 }
 
@@ -16,7 +17,7 @@ export const Video = (props: VideoProps) => {
   // };
 
   return (
-    <div className="video">
+    <div className={`chapter_video ${props.width}`}>
       <p>{props.title}</p>
       <video>
         <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>
