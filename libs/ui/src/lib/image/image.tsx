@@ -16,6 +16,9 @@ export const Image = (props: ImageProps) => {
       <img draggable="false" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.value} />
     </picture>
   )
+
+  // <button type='button' className='link-button' key={avatar} onMouseOut={() => this.setState({ isHover: false })} onMouseOver={() => this.setState({ isHover: avatar })} onClick={() => this.setState({ avatar: avatar })}>{avatar}</button>)}
+
 };
 
 export default Image;

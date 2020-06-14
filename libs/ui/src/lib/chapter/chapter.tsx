@@ -7,7 +7,9 @@ import Decission from '../decission/decission';
 import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
 import Scrollicon from '../scrollicon/scrollicon';
+import Redirect from '../redirect/redirect';
 import { makeStyles } from '@material-ui/core/styles';
+import Chip from '@material-ui/core/Chip';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Chapter, ContentType } from '@gerdesque/data';
 import { IMAGE_SUFFIX } from '@gerdesque/data';
@@ -19,9 +21,18 @@ export const ChapterComponent = (props: Chapter) => {
     chapter: {
       backgroundImage: `url(${"./assets/"+ props.link+IMAGE_SUFFIX})`,
       boxShadow: '0 0 8px 8px #dcd5cc inset',
+      flexDirection: 'column',
       },
   }));
   const classes = useStyles();
+
+  const [volume, setVolume] = React.useState(false);
+
+  const audio = new Audio(`./assets/sounds/${props.link}.mp3`)
+  const startAudio = () => {
+    setVolume(!volume);
+    volume ? audio.pause() : audio.play();
+  }
 
   const renderChapterGroups = () => {
     return props.groups.map((group, index) => 
@@ -33,6 +44,7 @@ export const ChapterComponent = (props: Chapter) => {
   const renderContent = (content, index) => {
     return <Fragment key={index}>
       {content.type === ContentType.Text && <Text value={content.value} />}
+      {content.type === ContentType.Redirect && <Redirect value={content.value} />}
       {content.type === ContentType.Video && <Video value={content.value} width={content.layer} title={content.title} />}
       {content.type === ContentType.Image && <Image value={content.value} width={content.layer}/>}
       {content.type === ContentType.Decission && <Decission value={content.value} />}
@@ -64,9 +76,7 @@ export const ChapterComponent = (props: Chapter) => {
       <div className='parallax__group parallax__header'>
         <div className={`parallax__layer parallax__layer--base ${classes.chapter}`}>
           <Title text={props.name} />
-          <audio controls loop>
-            <source src={"./assets/sounds/daheim.mp3"} type='audio/mpeg' />
-          </audio>
+          <Chip onClick={() => startAudio()} label={volume ? "Ton aus" : "Ton an"} />
           <Scrollicon/>
         </div>
       </div>
@@ -74,3 +84,4 @@ export const ChapterComponent = (props: Chapter) => {
       </div>
   );
 };
+export default ChapterComponent;

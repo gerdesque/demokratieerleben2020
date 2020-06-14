@@ -1,24 +1,6 @@
-// .puzzleBox {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// .puzzleBox .description {
-//   width: 75vw;
-//   margin: auto;
-//   text-align: center;
-// }
-
-// .puzzle{
-//   display: flex;
-//   flex-flow: row wrap;
-// }
-
-// .puzzle > * {
-//   flex: 1 50%;
-// }
+.puzzle {
+  display: flex;
+}
 
 .puzzle__solved-board{
   position: relative;

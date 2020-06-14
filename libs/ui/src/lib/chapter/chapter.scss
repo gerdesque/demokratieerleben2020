@@ -29,6 +29,7 @@
     &--fore {
       transform: translateZ(90px) scale(.7);
       z-index: 1;
+      align-content: baseline;
     }
 
     &--base {
@@ -41,6 +42,7 @@
     &--back {
       transform: translateZ(-300px) scale(2);
       z-index: 3;
+      align-content: baseline;
     }
 
     &--deep {

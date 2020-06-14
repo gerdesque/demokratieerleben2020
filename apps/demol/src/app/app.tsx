@@ -2,16 +2,17 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
 import { Nav, ChapterComponent } from '@gerdesque/ui';  
-
+import { Chapter } from '@gerdesque/data';
 import './app.scss';
 
 import app from './app.json';
+
 
 export const App = () => {
 
   const renderChapter = (routerProps) => {
     const chapterId = parseInt(routerProps.match.params.id)
-    const chapter = app.chapters.find(chapterObj => chapterObj.id === chapterId)
+    const chapter: Chapter = app.chapters.find(chapterObj => chapterObj.id === chapterId)
     return (chapter && <ChapterComponent {...chapter} />)
   }
 

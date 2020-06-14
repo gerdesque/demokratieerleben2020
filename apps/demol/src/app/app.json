@@ -37,7 +37,7 @@
             },
             {
               "type": "image",
-              "layer": "first",
+              "layer": "third",
               "value": "daheim_kinder"
             },
             {
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "grouped": false,
+          "grouped": true,
           "row": false,
           "content": [
             {
@@ -84,7 +84,7 @@
             },
             {
               "type": "image",
-              "layer": "first",
+              "layer": "primary",
               "value": "daheim_familie"
             }
           ]
@@ -92,6 +92,7 @@
         {
           "grouped": true,
           "row": true,
+          "background": "daheim_familie2",
           "content": [
             {
               "value": "Worüber möchtest du mehr erfahren?",
@@ -108,7 +109,7 @@
               "type": "video",
               "layer": "fourth",
               "value": "4_Annas_Zuhause",
-              "title": "Annas Lebensumfeld"
+              "title": "Annas Umfeld"
             },
             {
               "type": "video",
@@ -123,8 +124,8 @@
               "title": "Annas Großvater"
             },
             {
-              "type": "text",
-              "layer": "fore",
+              "type": "redirect",
+              "layer": "republic",
               "value": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
             }
           ]
@@ -140,7 +141,7 @@
             },
             {
               "type": "image",
-              "layer": "first",
+              "layer": "third",
               "value": "daheim_werbung"
             },
             {
@@ -170,8 +171,8 @@
               "value": "puzzle"
             },
             {
-              "type": "text",
-              "layer": "fore",
+              "type": "redirect",
+              "layer": "family",
               "value": "Du kennst eine Abkürzung und gehst direkt mit Anna zur Ortsgruppe"
             }
           ]

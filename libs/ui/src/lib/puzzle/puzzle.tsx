@@ -47,15 +47,13 @@ class Puzzle extends Component {
 
   render() {
     return (
-      <div className='puzzleBox'>
-        <div className='puzzle'>
-          <ul className='puzzle__shuffled-board'>
-            {this.state.shuffled.map((piece, i) => this.renderPieceContainer(piece, i, "shuffled"))}
-          </ul>
-          <ol className='puzzle__solved-board' style={{ backgroundImage: `url(./assets/daheim_puzzle.webp)` }}>
-            {this.state.solved.map((piece, i) => this.renderPieceContainer(piece, i, "solved"))}
-          </ol>
-        </div>
+      <div className='puzzle'>
+        <ul className='puzzle__shuffled-board'>
+          {this.state.shuffled.map((piece, i) => this.renderPieceContainer(piece, i, "shuffled"))}
+        </ul>
+        <ol className='puzzle__solved-board' style={{ backgroundImage: `url(./assets/daheim_puzzle.webp)` }}>
+          {this.state.solved.map((piece, i) => this.renderPieceContainer(piece, i, "solved"))}
+        </ol>
       </div>
     );
   }
