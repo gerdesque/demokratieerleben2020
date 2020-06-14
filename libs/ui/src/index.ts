@@ -1,3 +1,4 @@
+export * from './lib/redirect/redirect';
 export * from './lib/scrollicon/scrollicon';
 export * from './lib/puzzle/puzzle';
 export * from './lib/smokingpit/smokingpit';

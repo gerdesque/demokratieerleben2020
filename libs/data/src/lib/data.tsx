@@ -11,6 +11,7 @@ export enum Layer {
 
 export enum ContentType {
   Text = "text",
+  Redirect = "redirect",
   Video = "video",
   Image = "image",
   Game = "game",
@@ -23,11 +24,13 @@ export interface Content {
   type: string
   layer: string
   value: string
+  title?: string
 }
 
 export interface Group {
   grouped: boolean
   row: boolean
+  background?: string
   content: Content[]
 }
 
