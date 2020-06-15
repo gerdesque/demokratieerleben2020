@@ -36,7 +36,10 @@ export const ChapterComponent = (props: Chapter) => {
 
   const renderChapterGroups = () => {
     return props.groups.map((group, index) => 
-    <div key={index} className='parallax__group'>
+    <div key={index} className={`parallax__group ${group.background ? 'back' : ''}`}>
+      {group.background && <div className={`parallax__layer parallax__layer--back`}>
+        <Image value={group.background} width={'bg'}/>
+      </div>}
       {group.content && renderChapterContent(group)}
     </div>)
   }
@@ -74,7 +77,7 @@ export const ChapterComponent = (props: Chapter) => {
   return (
     <div className='parallax'>
       <div className='parallax__group parallax__header'>
-        <div className={`parallax__layer parallax__layer--base ${classes.chapter}`}>
+        <div className={`parallax__layer parallax__layer--base fade-in-scale ${classes.chapter}`}>
           <Title text={props.name} />
           <Chip onClick={() => startAudio()} label={volume ? "Ton aus" : "Ton an"} />
           <Scrollicon/>

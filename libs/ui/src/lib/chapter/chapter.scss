@@ -36,7 +36,6 @@
       transform: translateZ(0);
       z-index: 4;
       background: 50% 50% / cover;
-      filter: saturate(.8);
     }
 
     &--back {
@@ -49,5 +48,25 @@
       transform: translateZ(-600px) scale(3);
       z-index: 2;
     }
+  }
+}
+
+.back {
+  z-index: -1;
+}
+
+.fade-in-scale {
+  animation: fade-in-scale-down 5s linear 1;
+}
+
+@keyframes fade-in-scale-down {
+  0% {
+    scale: 1.2;
+    filter: blur(7px) brightness(2) grayscale(1);
+  }
+
+  100% {
+    scale: 1;
+    filter: blur(0) brightness(1) grayscale(0);
   }
 }
