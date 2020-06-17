@@ -10,7 +10,7 @@ export interface TextProps {
 export const Text = (props: TextProps) => {
   return (
     <div className='box'>
-      <Fade bottom>
+      <Fade bottom duration={5000}>
         <p>{props.value}</p>
       </Fade>
     </div>

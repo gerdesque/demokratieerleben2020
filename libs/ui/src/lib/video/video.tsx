@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { VIDEO_SUFFIX } from '@gerdesque/data';
 
 import './video.scss';
@@ -11,19 +11,20 @@ export interface VideoProps {
 }
 
 export const Video = (props: VideoProps) => {
-  // const playVideo = () => {
-  //   this.setState({ hasVideoStarted: true });
-  //   this.refs.video.play();
-  // };
+  
+  const [isPlaying, setPlaying] = useState(false);
+
+  const playVideo = (playing) => {
+    setPlaying(playing);
+  };
 
   return (
-    <div className={`chapter_video ${props.width}`}>
+    <div className={`chapter_video ${props.width} ${isPlaying ? 'theater' : ''}` }>
       <p>{props.title}</p>
-      <video>
+      <video controls onPlaying={() => playVideo(true)} onPause={() => playVideo(false)}>
         <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>
         Your browser does not support the video tag.
       </video>
-      {/* <button className={`play ${this.state.hasVideoStarted && 'hide'}`} onClick={this.playVideo} /> */}
     </div>);
 };
 
