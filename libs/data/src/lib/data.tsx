@@ -31,6 +31,7 @@ export interface Group {
   grouped: boolean
   row: boolean
   background?: string
+  character?: string
   content: Content[]
 }
 

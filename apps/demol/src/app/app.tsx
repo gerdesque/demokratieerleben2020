@@ -1,7 +1,7 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
-import { Nav, ChapterComponent } from '@gerdesque/ui';  
+import { Nav, ChapterComponent, AppContext } from '@gerdesque/ui';  
 import { Chapter } from '@gerdesque/data';
 import './app.scss';
 
@@ -9,6 +9,7 @@ import app from './app.json';
 
 
 export const App = () => {
+  const [character, setCharacter] = useState('default');
 
   const renderChapter = (routerProps) => {
     const chapterId = parseInt(routerProps.match.params.id)
@@ -17,6 +18,7 @@ export const App = () => {
   }
 
   return (
+    <AppContext.Provider value={[character, setCharacter]}>
     <BrowserRouter basename="/demokratieerleben2020">
       <div className="app">
         <Nav chapters = {app.chapters}/>
@@ -28,6 +30,7 @@ export const App = () => {
         </div>
       </div>
     </BrowserRouter>
+    </AppContext.Provider>
   );
 };
 

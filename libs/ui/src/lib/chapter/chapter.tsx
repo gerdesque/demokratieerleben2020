@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import Title from '../title/title';
 import Video from '../video/video';
 import Image from '../image/image';
@@ -8,6 +8,7 @@ import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
 import Scrollicon from '../scrollicon/scrollicon';
 import Redirect from '../redirect/redirect';
+import {AppContext } from '../chapter/context';
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
@@ -17,6 +18,9 @@ import { IMAGE_SUFFIX } from '@gerdesque/data';
 import './chapter.scss';
 
 export const ChapterComponent = (props: Chapter) => {
+
+  const [character, setCharacter] = useContext(AppContext);
+
   const useStyles = makeStyles(() => ({
     chapter: {
       backgroundImage: `url(${"./assets/"+ props.link+IMAGE_SUFFIX})`,
@@ -36,12 +40,15 @@ export const ChapterComponent = (props: Chapter) => {
 
   const renderChapterGroups = () => {
     return props.groups.map((group, index) => 
-    <div key={index} className={`parallax__group ${group.background ? 'back' : ''}`}>
-      {group.background && <div className={`parallax__layer parallax__layer--back`}>
-        <Image value={group.background} width={'bg'}/>
-      </div>}
-      {group.content && renderChapterContent(group)}
-    </div>)
+      <Fragment key={index}>
+        {(!group.character || group.character === character) && <div key={index} className={`parallax__group ${group.background ? 'back' : ''}`}>
+          {group.background && <div className={`parallax__layer parallax__layer--back`}>
+            <Image value={group.background} width={'bg'}/>
+          </div>}
+          {group.content && renderChapterContent(group)}
+        </div>}
+      </Fragment>
+    )
   }
 
   const renderContent = (content, index) => {
@@ -49,7 +56,7 @@ export const ChapterComponent = (props: Chapter) => {
       {content.type === ContentType.Text && <Text value={content.value} />}
       {content.type === ContentType.Redirect && <Redirect value={content.value} />}
       {content.type === ContentType.Video && <Video value={content.value} width={content.layer} title={content.title} />}
-      {content.type === ContentType.Image && <Image value={content.value} width={content.layer}/>}
+      {content.type === ContentType.Image && <Image value={content.value} width={content.layer} title={content.title}/>}
       {content.type === ContentType.Decission && <Decission value={content.value} />}
       {content.type === ContentType.SmokingPit && <Smokingpit value={content.value} />}
       {content.type === ContentType.Puzzle && <Puzzle/>}
