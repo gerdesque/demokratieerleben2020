@@ -138,24 +138,41 @@
           ]
         },
         {
-          "grouped": true,
+          "grouped": false,
           "row": false,
           "character": "anna",
           "content": [
             {
               "type": "text",
+              "layer": "base",
+              "value": "Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie von einem Verein namens 'Sozialistische Arbeiterjugend' sind. Gemeinsam mit der Reichsarbeitsgemeinschaft der Kinderfreunde haben diese eine Ortsgruppe ins Leben gerufen."
+            }
+          ]
+        },        {
+          "grouped": false,
+          "row": false,
+          "character": "anna",
+          "content": [
+            {
+              "type": "image",
               "layer": "fore",
+              "value": "daheim_werbung"
+            }
+          ]
+        },        {
+          "grouped": false,
+          "row": false,
+          "character": "anna",
+          "content": [
+            {
+              "type": "text",
+              "layer": "base",
               "value": "Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie von einem Verein namens 'Sozialistische Arbeiterjugend' sind. Gemeinsam mit der Reichsarbeitsgemeinschaft der Kinderfreunde haben diese eine Ortsgruppe ins Leben gerufen."
             },
             {
               "type": "image",
-              "layer": "third",
-              "value": "daheim_werbung"
-            },
-            {
-              "type": "text",
-              "layer": "fore",
-              "value": "Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen."
+              "layer": "deep",
+              "value": "daheim_karte"
             }
           ]
         },

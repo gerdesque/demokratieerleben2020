@@ -42,7 +42,7 @@ export const ChapterComponent = (props: Chapter) => {
   const renderChapterGroups = () => {
     return props.groups.map((group, index) => 
       <Fragment key={index}>
-        {(!group.character || group.character === character) && <div key={index} className={`parallax__group ${group.background ? 'back' : ''}`}>
+        {(!group.character || group.character === character) && <div key={index} style={{ zIndex: props.groups.length - index }} className={`parallax__group ${group.background ? 'back' : ''}`}>
           {group.background && <div className={`parallax__layer parallax__layer--back`}>
             <Image value={group.background} width={'bg'}/>
           </div>}
