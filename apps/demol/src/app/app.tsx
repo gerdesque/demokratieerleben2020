@@ -1,8 +1,8 @@
 import React , {useState} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from '@gerdesque/home';
-import { Nav, ChapterComponent, AppContext } from '@gerdesque/ui';  
-import { Chapter } from '@gerdesque/data';
+import { Nav, Chapter, AppContext } from '@gerdesque/ui';  
+import { ChapterProps } from '@gerdesque/data';
 import './app.scss';
 
 import app from './app.json';
@@ -13,8 +13,8 @@ export const App = () => {
 
   const renderChapter = (routerProps) => {
     const chapterId = parseInt(routerProps.match.params.id)
-    const chapter: Chapter = app.chapters.find(chapterObj => chapterObj.id === chapterId)
-    return (chapter && <ChapterComponent {...chapter} />)
+    const chapter: ChapterProps = app.chapters.find(chapterObj => chapterObj.id === chapterId)
+    return (chapter && <Chapter {...chapter} />)
   }
 
   return (

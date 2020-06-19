@@ -13,7 +13,7 @@ import './header.scss';
 /* eslint-disable-next-line */
 export interface HeaderProps {
   link: string
-  name: string
+  name?: string
 }
 
 export const Header = (props: HeaderProps) => {
@@ -36,13 +36,13 @@ export const Header = (props: HeaderProps) => {
   const classes = useStyles();
 
   return (
-    <div className='parallax__group parallax__header'>
-    <div className={`parallax__layer parallax__layer--base fade-in-scale ${classes.chapter}`}>
-      <Title text={props.name} />
-      <Chip onClick={() => startAudio()} label={volume ? "Ton aus" : "Ton an"} />
-      <Scrollicon/>
-    </div>
-  </div>
+    <section className='parallax__group parallax__header'>
+      <div className={`parallax__layer parallax__layer--base fade-in-scale ${classes.chapter}`}>
+        <Title text={props.name} />
+        <Chip onClick={() => startAudio()} label={volume ? "Ton aus" : "Ton an"} />
+        <Scrollicon/>
+      </div>
+    </section>
   );
 };
 

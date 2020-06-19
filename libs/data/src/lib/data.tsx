@@ -27,7 +27,7 @@ export interface Content {
   title?: string
 }
 
-export interface Group {
+export interface GroupProps {
   grouped: boolean
   row: boolean
   info?: string
@@ -36,9 +36,9 @@ export interface Group {
   content: Content[]
 }
 
-export interface Chapter {
+export interface ChapterProps {
   id?: number
   name?: string
   link: string
-  groups?: Group[]
+  groups?: GroupProps[]
 }

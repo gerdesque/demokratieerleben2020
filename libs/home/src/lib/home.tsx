@@ -1,13 +1,9 @@
 import React from 'react';
-import { ChapterComponent } from '@gerdesque/ui';
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { Chapter } from '@gerdesque/data';
+import { Chapter } from '@gerdesque/ui';
+import { ChapterProps } from '@gerdesque/data';
 import './home.scss';
 
-/* eslint-disable-next-line */
-export interface HomeProps {}
-
-const home:Chapter = {
+const home:ChapterProps = {
   link: "home",
   groups: [
   {
@@ -29,10 +25,10 @@ const home:Chapter = {
   ]
 };
 
-export const Home = (props: HomeProps) => {
+export const Home = () => {
 
   return (
-    <ChapterComponent {...home} />
+    <Chapter {...home} />
   );
 };
 
