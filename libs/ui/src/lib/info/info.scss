@@ -1,0 +1,39 @@
+.infoLink {
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  background: url(./info.svg) no-repeat 0 0 transparent;
+  opacity: 1;
+  transition: opacity .6s ease, margin-top .6s ease;
+
+  .infoText {
+    position: absolute;
+    top: -20%;
+    right: auto;
+    margin: 50px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 11;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background: url(./info_highlighted.svg) no-repeat 0 0 transparent;
+
+    .infoText {
+      padding: 8px;
+      opacity: 1;
+      transition: opacity .5s ease;
+    }
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

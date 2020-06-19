@@ -30,6 +30,7 @@ export interface Content {
 export interface Group {
   grouped: boolean
   row: boolean
+  info?: string
   background?: string
   character?: string
   content: Content[]

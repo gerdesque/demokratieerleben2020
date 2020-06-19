@@ -8,6 +8,7 @@ import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
 import Scrollicon from '../scrollicon/scrollicon';
 import Redirect from '../redirect/redirect';
+import Info from '../info/info';
 import {AppContext } from '../chapter/context';
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
@@ -63,10 +64,11 @@ export const ChapterComponent = (props: Chapter) => {
     </Fragment>
   }
 
-  const renderChapterContent = ({content : contentList, grouped, row}) => {
+  const renderChapterContent = ({content : contentList, grouped, row, info = null}) => {
 
     const chapterGroupedContent = 
       <div className={`parallax__layer parallax__layer--base grouped ${row ? 'row' : 'column'}`}>
+        {info && <Info value={info} />}
         {contentList.map((content, index) =>
           renderContent(content, index)
         )}
@@ -75,6 +77,7 @@ export const ChapterComponent = (props: Chapter) => {
     const chapterContent = 
       contentList.map((content, index) =>
         <div key={index} className={`parallax__layer parallax__layer--${content.layer}`}>
+          {info && content.layer === 'fore' && <Info value={info} />}
           {renderContent(content, index)}
         </div>);
 

@@ -8,6 +8,7 @@
         {
           "grouped": false,
           "row": false,
+          "info": "<p>Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/events/westfalen-ruhrgebiet/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Westfalen-Ruhrgebiet</a> von Oktober bis Dezember 2019. Wir danken dem <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>, welches die Fotografien und Bildkärtchen unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt hat.</p>",
           "content": [
             {
               "type": "text",
@@ -29,6 +30,7 @@
         {
           "grouped": true,
           "row": false,
+          "info": "<a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>",
           "content": [
             {
               "type": "text",
