@@ -1,43 +1,24 @@
 import React, { Fragment, useContext } from 'react';
-import Title from '../title/title';
+
+import Header from '../header/header';
 import Video from '../video/video';
 import Image from '../image/image';
 import Text from '../text/text';
 import Decission from '../decission/decission';
 import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
-import Scrollicon from '../scrollicon/scrollicon';
 import Redirect from '../redirect/redirect';
 import Info from '../info/info';
 import {AppContext } from '../chapter/context';
-import { makeStyles } from '@material-ui/core/styles';
-import Chip from '@material-ui/core/Chip';
+
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Chapter, ContentType } from '@gerdesque/data';
-import { IMAGE_SUFFIX } from '@gerdesque/data';
 
 import './chapter.scss';
 
 export const ChapterComponent = (props: Chapter) => {
 
   const [character, setCharacter] = useContext(AppContext);
-
-  const useStyles = makeStyles(() => ({
-    chapter: {
-      backgroundImage: `url(${"./assets/"+ props.link+IMAGE_SUFFIX})`,
-      boxShadow: '0 0 8px 8px #dcd5cc inset',
-      flexDirection: 'column',
-      },
-  }));
-  const classes = useStyles();
-
-  const [volume, setVolume] = React.useState(false);
-
-  const audio = new Audio(`./assets/sounds/${props.link}.mp3`)
-  const startAudio = () => {
-    setVolume(!volume);
-    volume ? audio.pause() : audio.play();
-  }
 
   const renderChapterGroups = () => {
     return props.groups.map((group, index) => 
@@ -50,18 +31,6 @@ export const ChapterComponent = (props: Chapter) => {
         </div>}
       </Fragment>
     )
-  }
-
-  const renderContent = (content, index) => {
-    return <Fragment key={index}>
-      {content.type === ContentType.Text && <Text value={content.value} />}
-      {content.type === ContentType.Redirect && <Redirect value={content.value} />}
-      {content.type === ContentType.Video && <Video value={content.value} width={content.layer} title={content.title} />}
-      {content.type === ContentType.Image && <Image value={content.value} width={content.layer} title={content.title}/>}
-      {content.type === ContentType.Decission && <Decission value={content.value} />}
-      {content.type === ContentType.SmokingPit && <Smokingpit value={content.value} />}
-      {content.type === ContentType.Puzzle && <Puzzle/>}
-    </Fragment>
   }
 
   const renderChapterContent = ({content : contentList, grouped, row, info = null}) => {
@@ -84,17 +53,23 @@ export const ChapterComponent = (props: Chapter) => {
     return grouped ? chapterGroupedContent : chapterContent
   }
 
+  const renderContent = (content, index) => {
+    return <Fragment key={index}>
+      {content.type === ContentType.Text && <Text value={content.value} />}
+      {content.type === ContentType.Redirect && <Redirect value={content.value} />}
+      {content.type === ContentType.Video && <Video value={content.value} width={content.layer} title={content.title} />}
+      {content.type === ContentType.Image && <Image value={content.value} width={content.layer} title={content.title}/>}
+      {content.type === ContentType.Decission && <Decission value={content.value} />}
+      {content.type === ContentType.SmokingPit && <Smokingpit value={content.value} />}
+      {content.type === ContentType.Puzzle && <Puzzle/>}
+    </Fragment>
+  }
+
   return (
     <div className='parallax'>
-      <div className='parallax__group parallax__header'>
-        <div className={`parallax__layer parallax__layer--base fade-in-scale ${classes.chapter}`}>
-          <Title text={props.name} />
-          <Chip onClick={() => startAudio()} label={volume ? "Ton aus" : "Ton an"} />
-          <Scrollicon/>
-        </div>
-      </div>
+      <Header link={props.link} name={props.name}/>
       {props.groups && renderChapterGroups()}
-      </div>
+    </div>
   );
 };
 export default ChapterComponent;

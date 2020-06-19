@@ -1,3 +1,5 @@
+export * from './lib/header/header';
+export * from './lib/group/group';
 export * from './lib/info/info';
 export * from './lib/redirect/redirect';
 export * from './lib/scrollicon/scrollicon';
