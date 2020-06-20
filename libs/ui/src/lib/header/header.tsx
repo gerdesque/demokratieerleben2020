@@ -6,7 +6,6 @@ import Scrollicon from '../scrollicon/scrollicon';
 import { IMAGE_SUFFIX } from '@gerdesque/data';
 
 import { makeStyles } from '@material-ui/core/styles';
-import Chip from '@material-ui/core/Chip';
 
 import './header.scss';
 
@@ -17,14 +16,6 @@ export interface HeaderProps {
 }
 
 export const Header = (props: HeaderProps) => {
-
-  const [volume, setVolume] = React.useState(false);
-
-  const audio = new Audio(`./assets/sounds/${props.link}.mp3`)
-  const startAudio = () => {
-    setVolume(!volume);
-    volume ? audio.pause() : audio.play();
-  }
 
   const useStyles = makeStyles(() => ({
     chapter: {
@@ -39,7 +30,6 @@ export const Header = (props: HeaderProps) => {
     <section className='parallax__group parallax__header'>
       <div className={`parallax__layer parallax__layer--base fade-in-scale ${classes.chapter}`}>
         <Title text={props.name} />
-        <Chip onClick={() => startAudio()} label={volume ? "Ton aus" : "Ton an"} />
         <Scrollicon/>
       </div>
     </section>
