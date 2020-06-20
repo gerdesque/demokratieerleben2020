@@ -6,7 +6,7 @@ import './video.scss';
 /* eslint-disable-next-line */
 export interface VideoProps {
   value: string,
-  width: string
+  layer: string
   title: string
 }
 
@@ -19,7 +19,7 @@ export const Video = (props: VideoProps) => {
   };
 
   return (
-    <div className={`chapter_video ${props.width} ${isPlaying ? 'theater' : ''}` }>
+    <div className={`chapter_video ${props.layer} ${isPlaying ? 'theater' : ''}` }>
       <p>{props.title}</p>
       <video controls onPlaying={() => playVideo(true)} onPause={() => playVideo(false)}>
         <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>

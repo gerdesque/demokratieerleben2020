@@ -3,6 +3,7 @@
   display: block;
   filter: saturate(.8);
   opacity: .9;
+  transition: all 0.50s;
 }
 
 .primary {
@@ -20,4 +21,10 @@ img {
 
 .bg {
   opacity: 0.3;
+}
+
+.highlighted {
+  transition: all 0.50s;
+  filter: brightness(110%);
+  transform: scale(1.1);
 }

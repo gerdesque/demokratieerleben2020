@@ -1,4 +1,5 @@
 import React, { Fragment, useContext} from 'react';
+import { InView } from 'react-intersection-observer'
 
 import Header from '../header/header';
 import Group from '../group/group';
@@ -16,10 +17,13 @@ export const Chapter = (props: ChapterProps) => {
     return props.groups.map((group, index) =>
     <Fragment key={index}>
       {(!group.character || group.character === character) && 
-        <section key={index} style={{ zIndex: props.groups.length - index }}
-          className={`parallax__group ${group.background ? 'back' : ''}`}>
-        <Group {...group} />
-      </section>}
+      <InView>
+        {({ inView, ref, entry }) => (
+          <section ref={ref} key={index} className={`parallax__group ${group.background ? 'back' : ''} ${inView ? 'active' : ''}`}>
+            <Group {...group} />
+          </section>
+        )}
+      </InView>}
     </Fragment>
     )
   }

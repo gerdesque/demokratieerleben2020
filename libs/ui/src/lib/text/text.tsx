@@ -2,7 +2,6 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import './text.scss';
 
-/* eslint-disable-next-line */
 export interface TextProps {
   value: string
 }

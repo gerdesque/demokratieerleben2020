@@ -22,7 +22,7 @@ export const Group = ({
 
   const renderBackground = () => {
     return <div className={`parallax__layer parallax__layer--back`}>
-      <Image value={background} width={'bg'}/>
+      <Image value={background} layer={'bg'}/>
     </div>
   }
 
