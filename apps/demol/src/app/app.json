@@ -13,7 +13,8 @@
             {
               "type": "text",
               "value": "Es ist 1928. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.",
-              "layer": "fore"
+              "layer": "fore",
+              "title": "reveal"
             },
             {
               "type": "image",
