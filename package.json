@@ -90,6 +90,7 @@
     "husky": "^4.2.5",
     "jest": "25.2.3",
     "prettier": "1.19.1",
+    "react-drag-drop-container": "^6.1.1",
     "react-intersection-observer": "^8.26.2",
     "react-reveal": "^1.2.2",
     "standard-version": "^8.0.0",

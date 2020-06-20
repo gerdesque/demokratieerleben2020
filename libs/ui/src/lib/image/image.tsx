@@ -20,7 +20,7 @@ export const Image = (props: ImageProps) => {
   }
 
   return (
-    <picture className={`chapter_picture ${props.layer} ${hover ? 'highlighted' : ''}`} onMouseOut={() => setHover(false)} onMouseOver={() => setHover(true)} onClick={() => chooseCharacter()}>
+    <picture className={`chapter_picture ${props.layer} ${props.title && hover ? 'highlighted' : ''}`} onMouseOut={() => setHover(false)} onMouseOver={() => setHover(true)} onClick={() => chooseCharacter()}>
       <source srcSet={"./assets/"+props.value+IMAGE_SUFFIX} type='image/webp' />
       <source srcSet={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} type='image/png' />
       <img draggable="false" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.value} />

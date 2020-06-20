@@ -1,3 +1,4 @@
+export * from './lib/suitcase/suitcase';
 export * from './lib/header/header';
 export * from './lib/group/group';
 export * from './lib/info/info';

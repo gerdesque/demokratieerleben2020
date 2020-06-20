@@ -17,6 +17,7 @@ export enum ContentType {
   Game = "game",
   SmokingPit = "smokingpit",
   Puzzle = "puzzle",
+  Suitcase = "suitcase",
   Decission = "decission"
 }
 
