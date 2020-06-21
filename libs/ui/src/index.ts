@@ -1,3 +1,4 @@
+export * from './lib/daily/daily';
 export * from './lib/tictactoe/tictactoe';
 export * from './lib/suitcase/suitcase';
 export * from './lib/header/header';

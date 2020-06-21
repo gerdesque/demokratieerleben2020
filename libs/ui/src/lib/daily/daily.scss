@@ -1,0 +1,59 @@
+.daily {
+  display: flex;
+  flex-direction: column;
+
+  .description {
+    flex: 1 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .ddcontainer:hover {
+      transition: background-color 0.5s ease;
+      font-weight: bold;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .item p {
+      letter-spacing:0.1em;
+      cursor: grab;
+    }
+  }
+
+  .component_box {
+    background-size: contain;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: auto;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 0;
+    justify-content: center;
+    display: flex;
+    max-height: 66vh;
+  }
+
+   .show {
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 600px) {
+  .daily .component_box {
+    height: 45vh;
+  }
+}
