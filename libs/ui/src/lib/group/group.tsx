@@ -12,9 +12,22 @@ import Daily from '../daily/daily';
 import Redirect from '../redirect/redirect';
 import Info from '../info/info';
 
-import { GroupProps, ContentType } from '@gerdesque/data';
+import { GroupProps } from '@gerdesque/data';
 
 import './group.scss';
+
+const ContentType  = {
+  text: Text,
+  redirect: Redirect,
+  video: Video,
+  image: Image,
+  smokingpit: Smokingpit,
+  puzzle: Puzzle,
+  suitcase: Suitcase,
+  tictactoe: TicTacToe,
+  daily: Daily,
+  decission: Decission
+}
 
 export const Group = ({
   grouped,
@@ -51,16 +64,7 @@ export const Group = ({
 
   const renderContent = (content, index) => {
     return <Fragment key={index}>
-      {content.type === ContentType.Text && <Text {...content} />}
-      {content.type === ContentType.Redirect && <Redirect {...content} />}
-      {content.type === ContentType.Video && <Video {...content} />}
-      {content.type === ContentType.Image && <Image {...content}/>}
-      {content.type === ContentType.Decission && <Decission {...content} />}
-      {content.type === ContentType.SmokingPit && <Smokingpit {...content} />}
-      {content.type === ContentType.Puzzle && <Puzzle/>}
-      {content.type === ContentType.Suitcase && <Suitcase/>}
-      {content.type === ContentType.TicTacToe && <TicTacToe/>}
-      {content.type === ContentType.Daily && <Daily/>}
+      {React.createElement(ContentType[content.type], {...content})}
     </Fragment>
   }
 
