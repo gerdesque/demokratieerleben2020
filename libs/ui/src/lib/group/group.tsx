@@ -7,6 +7,7 @@ import Decission from '../decission/decission';
 import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
 import Suitcase from '../suitcase/suitcase';
+import TicTacToe from '../tictactoe/tictactoe';
 import Redirect from '../redirect/redirect';
 import Info from '../info/info';
 
@@ -57,6 +58,7 @@ export const Group = ({
       {content.type === ContentType.SmokingPit && <Smokingpit {...content} />}
       {content.type === ContentType.Puzzle && <Puzzle/>}
       {content.type === ContentType.Suitcase && <Suitcase/>}
+      {content.type === ContentType.TicTacToe && <TicTacToe/>}
     </Fragment>
   }
 
