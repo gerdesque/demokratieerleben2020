@@ -23,7 +23,7 @@ export const Chapter = (props: ChapterProps) => {
     return props.groups.map((group, index) =>
     <Fragment key={index}>
       {(!group.character || group.character === character) && 
-      <InView>
+      <InView threshold={0.5}>
         {({ inView, ref, entry }) => (
           <section ref={ref} key={index} className={`parallax__group ${group.background ? 'back' : ''} ${inView ? 'active' : ''}`}>
             <Group {...group} />

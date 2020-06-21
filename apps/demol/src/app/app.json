@@ -91,7 +91,7 @@
             },
             {
               "type": "image",
-              "layer": "primary",
+              "layer": "second",
               "value": "daheim_familie"
             }
           ]
@@ -193,9 +193,9 @@
               "value": "Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel."
             },
             {
-              "type": "suitcase",
+              "type": "puzzle",
               "layer": "base",
-              "value": "suitcase"
+              "value": "puzzle"
             },
             {
               "type": "redirect",
