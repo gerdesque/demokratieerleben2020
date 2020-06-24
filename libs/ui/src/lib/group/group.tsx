@@ -6,6 +6,7 @@ import Text from '../text/text';
 import Decission from '../decission/decission';
 import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
+import Memory from '../memory/memory';
 import Suitcase from '../suitcase/suitcase';
 import TicTacToe from '../tictactoe/tictactoe';
 import Daily from '../daily/daily';
@@ -23,6 +24,7 @@ const ContentType  = {
   image: Image,
   smokingpit: Smokingpit,
   puzzle: Puzzle,
+  memory: Memory,
   suitcase: Suitcase,
   tictactoe: TicTacToe,
   daily: Daily,
