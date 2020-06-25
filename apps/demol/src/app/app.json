@@ -262,7 +262,7 @@
             }
           ]
         },  
-         {
+        {
           "grouped": false,
           "row": false,
           "character": "Karl",
@@ -282,7 +282,7 @@
             {
               "type": "text",
               "layer": "base",
-              "value": "Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend dabei und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden."
+              "value": "Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden."
             }
           ]
         },   
@@ -382,7 +382,7 @@
             }
           ]
         },
-         {
+        {
           "grouped": false,
           "row": false,
           "character": "Anna",
@@ -488,10 +488,10 @@
           ]
         }
       ]
-    },
-   {
+        },
+        {
      "id": 2,
-     "name": "Ortsgruppe",
+     "name": "Die Ortsgruppe",
      "link": "ortsgruppe",
      "groups": [
       {
@@ -587,16 +587,16 @@
           {
             "value": "In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.",
             "type": "text",
-            "layer": "fore"
+            "layer": "base"
           },
           {
             "type": "image",
-            "layer": "back",
+            "layer": "deep",
             "value": "02_1455_(68)"
           },
           {
             "type": "image",
-            "layer": "third",
+            "layer": "back",
             "value": "02_84_(2)"
           },
           {
@@ -688,6 +688,1026 @@
         ]
       }
      ]
+        },
+        {
+      "id": 3,
+      "name": "Die Arbeit der Ortsgruppe",
+      "link": "gruppenvorbereitung",
+      "groups": [
+       {
+         "grouped": true,
+         "row": false,
+         "character": "Anna",
+         "info": "Hier könnte ein Link sein.",
+         "content": [
+           {
+             "type": "text",
+             "value": "Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken. ",
+             "layer": "fore",
+             "title": "reveal"
+            },
+           {
+             "type": "image",
+             "layer": "back",
+             "value": "daheim_karte"
+            },
+           {
+             "type": "image",
+             "layer": "second",
+             "value": "2_31_g"
+            },
+           {
+            "value": "Als Rote Falken werden alle 12- bis 14-Jährigen im Verband der Kinderfreunde genannt.",
+            "type": "text",
+            "layer": "second"
+            },
+           {
+            "value": "Anna ist stolz, ein 'Roter Falke' zu sein und ein blaues Hemd zu tragen. Endlich hat sie einen Ort gefunden, wo sie sich zugehörig und verstanden fühlt.",
+            "type": "text",
+            "layer": "third"
+           },
+           {
+            "type": "image",
+            "layer": "back",
+            "value": "02_1455_(14)"
+           },
+           {
+           "value": "Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. ",
+           "type": "text",
+           "layer": "fore"
+           },
+           {
+            "type": "image",
+            "layer": "deep",
+            "value": "02_1455_(21)"
+           },
+           {
+           "value": "Die Ausstellung kann gegen einen Eintritt von 10 Pfennig besucht werden. Neben einigen Leuten von der örtlichen Presse kommen auch viele Eltern vorbei. Einige der Ausstellungsobjekte spendet die Ortsgruppe der Arbeiterwohlfahrt.",
+           "type": "text",
+           "layer": "fourth"
+           },
+           {
+            "type": "image",
+            "layer": "back",
+            "value": "02_1455_(49)"
+           },
+           {
+           "value": "Die Bildungsabende beschäftigen sich neben politischen auch mit praktischen Themen, wie zum Beispiel der Hygiene.",
+           "type": "text",
+           "layer": "fifth"
+           },
+           {
+            "type": "image",
+            "layer": "deep",
+            "value": "2_30_2"
+           },
+           {
+           "value": "Anna lernt während eines Vortrags, dass das Elend der Arbeiterklasse oft durch mangelnde Sauberkeit und schlecht versorgte Wunden und Krankheiten verschärft wird. Die Sauberkeit des eigenen Körpers und des eigenen Heims sind dabei besonders wichtig. Auch der Umgang mit ansteckenden Krankheiten in der eigenen Familien wird dabei angesprochen.",
+           "type": "text",
+           "layer": "fore"
+           },
+           {
+            "type": "image",
+            "layer": "back",
+            "value": "2_31_h"
+           },
+           {
+           "value": "Inzwischen ist Anna schon über ein halbes Jahr regelmäßig zu den Treffen der Roten Falken gegangen. Für den Sommer ist ein großes Zeltlager unter dem Titel 'Kinderrepublik' geplant. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren. ",
+           "type": "text",
+           "layer": "fore"
+           },
+           {
+            "type": "image",
+            "layer": "deep",
+            "value": "02_1455_(58)"
+           },
+           {
+           "value": "Das kostet natürlich viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
+           "type": "text",
+           "layer": "fore"
+           },
+           {
+           "value": "Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
+           "type": "text",
+           "layer": "fore"
+           },
+           {
+            "type": "image",
+            "layer": "deep",
+            "value": "02_1455_(72)"
+           },
+           {
+           "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
+           "type": "text",
+           "layer": "fore"
+           },
+           {
+            "type": "image",
+            "layer": "back",
+            "value": "Karte_Weimarer_Republik"
+           },
+           {
+            "type": "redirect",
+            "layer": "probezeltlager",
+            "value": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+           }
+          ]
+         },
+         {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "character": "Karl",
+          "content": [
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "daheim_karte"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "2_31_g"
+            }
+           ]
+          },
+         {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+            {
+              "type": "text",
+              "value": "Karl gehört in seiner Ortsgruppe der Kinderfreunde zu den 'Roten Falken'. Diese Bezeichnung wird für alle 12- bis 14-jährigen Mitglieder verwendet.",
+              "layer": "base",
+              "title": "reveal"
+             },
+            {
+             "value": "Karls Falkengruppe trifft sich mehrmals die Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.",
+             "type": "text",
+             "layer": "second"
+             },
+            {
+             "value": "Im Moment besteht die Hauptaufgabe der Gruppe darin, sich auf die bevorstehende 'Kinderrepublik', das große Zeltlager im Sommer, vorzubereiten. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren.",
+             "type": "text",
+             "layer": "third"
+            },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_1455_(14)"
+            }
+          ]
+         },
+         {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+           {
+            "value": "Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. ",
+            "type": "text",
+            "layer": "fore"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(21)"
+            },
+            {
+            "value": "Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
+            "type": "text",
+            "layer": "fourth"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(49)"
+            }
+          ]
+         },
+         {
+           "grouped": true,
+           "row": false,
+           "character": "Karl",
+           "content": [
+             {
+             "value": "Auch Karl beteiligt sich emsig und zieht mit einigen Freunden von Haus zu Haus, um Unterstützer*innen für die Kasse der 'Kinderrepublik' zu finden. Am Ende können sie 27 RM zum Guthaben der Ortsgruppe beisteuern.",
+             "type": "text",
+             "layer": "base"
+             },
+             {
+             "type": "image",
+             "layer": "base",
+             "value": "2_30_2"
+             },
+             {
+             "value": "Inzwischen steht fest, an welchem Ort das Lager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Karls Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
+             "type": "text",
+             "layer": "fore"
+             },
+             {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(72)"
+            }
+           ]
+          },
+          {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+            {
+            "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
+            "type": "text",
+            "layer": "fore"
+            },
+            {
+             "type": "image",
+             "layer": "base",
+             "value": "Karte_Weimarer_Republik"
+            },
+            {
+             "type": "redirect",
+             "layer": "probezeltlager",
+             "value": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "character": "Gerda",
+          "content": [
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "daheim_karte"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "2_31_g"
+            }
+           ]
+          },
+         {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gerda hat noch nie die Aktivitäten einer Kindergruppe organisiert. Um ihre Aufgaben besser zu kennen liest sie das Buch 'Im Zeltlager - ein technisches Handbuch für rote Falkenführer von Hermann Neddermayer. Das Buch wurde gerade erst herausgegeben und sammelt wertvolle Erfahrungen aus den bisherigen Zeltlagern der Kinderfreunde. ",
+              "layer": "base",
+              "title": "reveal"
+             },
+             {
+              "type": "image",
+              "layer": "third",
+              "value": "2_214_Seite142"
+             },
+            {
+             "value": "Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.",
+             "type": "text",
+             "layer": "base"
+             },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_1455_(14)"
+            },
+            {
+              "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
+              "type": "text",
+              "layer": "base"
+             }
+          ]
+         },
+         {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+           {
+            "value": "Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.",
+            "type": "text",
+            "layer": "fore"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(21)"
+            },
+            {
+            "value": "Gerda sieht darin eine tiefgreifende Auseinandersetzung mit einem anderen Ort. Diese Methode wird sich daher auch gut für die Kinderrepublik eignen.",
+            "type": "text",
+            "layer": "fourth"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(49)"
+            }
+          ]
+         },
+         {
+           "grouped": true,
+           "row": false,
+           "character": "Gerda",
+           "content": [
+             {
+             "value": "Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. ",
+             "type": "text",
+             "layer": "base"
+             },
+             {
+             "type": "image",
+             "layer": "base",
+             "value": "2_30_2"
+             },
+             {
+             "value": "Gerda nimmt an einer Wanderung teil, zu der alle Helfer*innen aus ihrer Stadt eingeladen sind. Am Ende sind sie immerhin 16 Jugendliche, die alle zwischen 15 und 18 Jahre alt sind. Die meisten von ihnen werden ebenfalls als Helfer*innen bei der 'Kinderrepublik' dabei sein. Gerda freut sich darauf, mit ihnen gemeinsam dorthin zu fahren.",
+             "type": "text",
+             "layer": "fore"
+             },
+             {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(72)"
+            }
+           ]
+          },
+          {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+           {
+            "type": "video",
+            "layer": "base",
+            "value": "18_Gerda_Vorbereitung"
+           },
+           {
+            "value": "Inzwischen steht auch fest, an welchem Ort das Zeltlager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Gerdas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben",
+            "type": "text",
+            "layer": "fore"
+            },
+            {
+            "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
+            "type": "text",
+            "layer": "fore"
+            },
+            {
+             "type": "image",
+             "layer": "base",
+             "value": "Karte_Weimarer_Republik"
+            },
+            {
+             "type": "redirect",
+             "layer": "probezeltlager",
+             "value": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+           {
+            "value": "Wenige Wochen bevor die 'Kinderrepublik' stattfindet, haben die Kinderfreunde begonnen, eine Zeltlagerzeitung herauszugeben. Auch Gerdas Gruppe hat sich mit Artikeln und Bildern daran beteiligt. Die Zeitung soll alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten.",
+            "type": "text",
+            "layer": "base"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_12_(9)"
+            },
+            {
+              "value": "Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
+              "type": "text",
+              "layer": "fore"
+              },
+            {
+             "type": "redirect",
+             "layer": "probezeltlager",
+             "value": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+            }
+          ]
+        }
+      ]
+        },
+        { 
+          "id": 4,
+          "name": "Das Probezeltlager",
+          "link": "probezeltlager",
+          "groups": [
+          {
+           "grouped": true,
+           "row": false,
+           "info": "Hier könnte ein Link sein.",
+           "content": [
+             {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+             },
+             {
+              "type": "image",
+              "layer": "second",
+              "value": "02_45_(5)"
+             }
+            ]
+          },
+          {
+            "grouped": true,
+            "row": false,
+            "character": "Anna",
+            "content": [
+            {
+            "type": "video",
+            "layer": "fore",
+            "value": "15_Anna_Probezeltlager"
+            },
+            {
+            "type": "text",
+            "value": "Das Probezeltlager von Annas Ortsgruppe hat gut geklappt. Alle haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht. Nun fiebern alle der 'Kinderrepublik' entgegen.",
+            "layer": "second"
+            },
+            {
+            "type": "image",
+            "layer": "back",
+            "value": "daheim_karte"
+            },
+            {
+            "type": "image",
+            "layer": "third",
+            "value": "02_2480_(1)"
+            },
+            {
+            "type": "text",
+            "layer": "fourth",
+            "value": "Vor einigen Wochen haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem soll sie dazu dienen, Bauern und Bäcker zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle geben wird. Schließlich soll kein Kind während des Zeltlagers hungern müssen."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_278_(7)"
+            },
+            {
+            "type": "text",
+            "layer": "base",
+            "value": "Nun steht die Abreise endlich bevor. Anna muss ihre Sachen packen, damit sie die nächsten drei Wochen alles dabei hat, was sie braucht."
+            },
+            {
+              "type": "text",
+              "layer": "second",
+              "value": "Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
+            },
+             {
+            "type": "text",
+            "layer": "base",
+            "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+            }, 
+            {
+            "type": "suitcase",
+            "layer": "base",
+            "value": "rucksack"
+            },
+            {
+            "type": "redirect",
+            "layer": "ankunft",
+            "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik."
+            }
+           ]
+          },
+          {
+            "grouped": true,
+            "row": false,
+            "character": "Karl",
+            "content": [
+            {
+            "type": "video",
+            "layer": "fore",
+            "value": "16_Karl_Probezeltlager"
+            },
+            {
+            "type": "text",
+            "value": "Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.",
+            "layer": "base"
+            },
+            {
+            "type": "image",
+            "layer": "deep",
+            "value": "daheim_karte"
+            },
+            {
+            "type": "image",
+            "layer": "second",
+            "value": "02_2480_(1)"
+            },
+            {
+            "type": "text",
+            "layer": "base",
+            "value": "Nur Kurt war mit wenig Interesse dabei, hat sich vor der Arbeit gedrückt und oft von der Gruppe entfernt. Die Gruppe hat daher einstimmig entschieden, dass Kurt nicht mehr an den Unternehmungen der Gruppe teilnehmen darf, wenn er nicht bereit ist, sich einzubringen."
+            }
+           ]
+          }, 
+           {
+             "grouped": true,
+               "row": false,
+               "character": "Karl",
+               "content": [
+               {
+               "type": "text",
+               "value": "Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
+               "layer": "third"
+               },
+               {
+               "type": "text",
+               "layer": "base",
+               "value": "Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht."
+               }
+            ] 
+          },
+          {
+            "grouped": true,
+            "row": false,
+            "character": "Karl",
+            "content": [
+            {
+              "type": "text",
+              "layer": "base",
+              "value": "Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?"
+              },
+              {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_2424_(1)"
+              },
+              {
+              "type": "text",
+              "layer": "base",
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              }, 
+              {
+              "type": "suitcase",
+              "layer": "base",
+              "value": "rucksack"
+              },
+              {
+              "type": "redirect",
+              "layer": "ankunft",
+              "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+          {
+          "type": "video",
+          "layer": "fore",
+          "value": "17_Gerda_Probezeltlager"
+          },
+          {
+          "type": "text",
+          "value": "Das Probezeltlager von Gerdas Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.",
+          "layer": "fore"
+          },
+          {
+          "type": "image",
+          "layer": "deep",
+          "value": "daheim_karte"
+          },
+          {
+          "type": "image",
+          "layer": "second",
+          "value": "02_2480_(1)"
+          },
+          {
+          "type": "text",
+          "layer": "base",
+          "value": "Gerda fand es trotzdem aufregend, da sie als Helferin auch die Verantwortung für das Wohlergehen der Kinder hatte. Zum Glück haben sich alle vorbildlich verhalten, niemand hat sich verletzt und es gab keinen Ärger zwischen den Kindern und Helfer*innen."
+          }
+         ]
+        }, 
+         {
+           "grouped": true,
+             "row": false,
+             "character": "Gerda",
+             "content": [
+             {
+             "type": "text",
+             "value": "Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab.",
+             "layer": "fore"
+             },
+             {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(49)"
+             },
+             {
+             "type": "text",
+             "layer": "base",
+             "value": "Ihre Sachen hat Gerda auch noch nicht gepackt. 3 Wochen sind eine lange Zeit."
+             }
+          ] 
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+          {
+            "type": "text",
+            "layer": "base",
+            "value": "Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
+            },
+            {
+            "type": "image",
+            "layer": "back",
+            "value": "02_2424_(1)"
+            },
+            {
+            "type": "text",
+            "layer": "base",
+            "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+            }, 
+            {
+            "type": "suitcase",
+            "layer": "base",
+            "value": "rucksack"
+            },
+            {
+            "type": "redirect",
+            "layer": "ankunft",
+            "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik."
+            }
+          ]
+        }  
+          ]    
+        },
+        { 
+         "id": 5,
+         "name": "Der Weg zur Kinderrepublik",
+         "link": "reise",
+         "groups": [
+           {
+            "grouped": true,
+            "row": false,
+            "info": "Hier könnte ein Link sein.",
+            "content": [
+             {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+             },
+             {
+              "type": "image",
+              "layer": "base",
+              "value": "02_1455_(69)"
+             }
+            ]
+           },
+           {
+             "grouped": true,
+             "row": false,
+             "character": "Anna",
+             "content": [
+             {
+              "type": "text",
+              "value": "Nachdem Anna fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Ihre Eltern und ihr Großvater sind etwas traurig, denn Anna war noch nie länger von zu Hause weg - und schon gar nicht allein.",
+              "layer": "second"
+             },
+             {
+              "type": "image",
+              "layer": "third",
+              "value": "02_1455_(56)"
+             },
+             {
+              "type": "text",
+              "layer": "fourth",
+              "value": "Mit 35 anderen Kindern und einigen Helfer*innen als Begleitung fährt Anna im Zug Richtung Norden."
+             },
+             {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_2453_(1)"
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Anna möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
+             }
+            ]
+           },
+           {
+            "grouped": true,
+            "row": false,
+            "character": "Anna",
+            "content": [
+             {
+              "type": "text",
+              "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.",
+              "layer": "second"
+             },
+             {
+              "type": "tictactoe",
+              "layer": "base",
+              "value": "Drei gewinnt"
+             },
+             {
+              "type": "image",
+              "layer": "third",
+              "value": "02_278_(3)"
+             },
+             {
+               "type": "text",
+               "layer": "fourth",
+               "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
+              }
+            ]
+           },
+           {
+            "grouped": true,
+            "row": false,
+            "character": "Anna",
+            "content": [
+             {
+              "type": "text",
+              "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.",
+              "layer": "second"
+             },
+             {
+              "type": "image",
+              "layer": "third",
+              "value": "02_1455_(61)"
+             },
+             {
+              "type": "text",
+              "layer": "fourth",
+              "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
+             },
+             {
+              "type": "redirect",
+              "layer": "ankunft",
+              "value": "Betrete die Kinderrepublik!"
+            }
+          ]
+        },
+        {
+           "grouped": true,
+           "row": false,
+           "character": "Karl",
+           "content": [
+            {
+             "type": "text",
+             "value": "Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein.",
+             "layer": "second"
+            },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_1455_(56)"
+            },
+            {
+             "type": "text",
+             "layer": "fourth",
+             "value": "Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten."
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_2453_(1)"
+            },
+            {
+             "type": "text",
+             "layer": "fore",
+             "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
+            }
+          ]
+        },
+        {
+           "grouped": true,
+           "row": false,
+           "character": "Karl",
+           "content": [
+            {
+             "type": "text",
+             "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.",
+             "layer": "second"
+            },
+            {
+             "type": "tictactoe",
+             "layer": "base",
+             "value": "Drei gewinnt"
+            },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_278_(3)"
+            },
+            {
+             "type": "text",
+             "layer": "fourth",
+             "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
+            }
+          ]
+        },
+        {
+           "grouped": true,
+           "row": false,
+           "character": "Karl",
+           "content": [
+            {
+             "type": "text",
+             "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.",
+             "layer": "second"
+            },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_1455_(61)"
+            },
+            {
+             "type": "text",
+             "layer": "fourth",
+             "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
+            },
+            {
+             "type": "redirect",
+             "layer": "ankunft",
+             "value": "Betrete die Kinderrepublik!"
+            }
+          ] 
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+           {
+            "type": "text",
+            "value": "Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.",
+            "layer": "second"
+           },
+           {
+            "type": "image",
+            "layer": "third",
+            "value": "2_1590_Seite_138"
+           },
+           {
+            "type": "text",
+            "layer": "fourth",
+            "value": "Aber ihre Mutter hat ihr versichert, dass sie es schon schaffen wird. Und im Moment hat sie einen sehr höflichen und ordentlichen Schlafburschen, der ihr auch ab und zu im Haushalt zur Hand geht."
+           },
+           {
+            "type": "image",
+            "layer": "deep",
+            "value": "02_2453_(1)"
+           }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Nun sitzt Gerda mit 28 Kindern und einigen anderen Helfer*innen im Zug, der sich langsam Richtung Norden bewegt."
+             },
+           {
+            "type": "text",
+            "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Gerda hat dafür keine Zeit, denn sie muss ein Auge darauf haben, dass niemand sich zu weit aus dem Fenster lehnt und herausfällt.",
+            "layer": "second"
+           },
+           {
+            "type": "image",
+            "layer": "third",
+            "value": "02_1455_(51)" 
+           },
+           {
+            "type": "text",
+            "layer": "fourth",
+            "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
+           },
+           {
+            "type": "image",
+            "layer": "third",
+            "value": "02_278_(3)"
+           }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [
+           {
+            "type": "text",
+            "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.",
+            "layer": "second"
+           },
+           {
+            "type": "image",
+            "layer": "third",
+            "value": "02_1455_(61)"
+           },
+           {
+            "type": "text",
+            "layer": "fourth",
+            "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
+           },
+           {
+            "type": "redirect",
+            "layer": "ankunft",
+            "value": "Betrete die Kinderrepublik!"
+           }
+          ] 
+        }  
+      ]
+        },
+        { 
+          "id": 6,
+          "name": "Die Kinderrepublik",
+          "link": "ankunft",
+          "groups": [
+           {
+             "grouped": true,
+             "row": false,
+             "info": "Hier könnte ein Link sein.",
+             "content": [
+                {
+                "type": "image",
+                "layer": "back",
+                "value": "daheim_karte"
+               },
+               {
+               "type": "image",
+               "layer": "base",
+               "value": "02_1455_(1)"
+               }
+              ]
+            },
+            {
+             "grouped": true,
+             "row": false,
+             "character": "Anna",
+             "content": [
+              {
+              "type": "text",
+              "value": "Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.",
+              "layer": "fore"
+              },
+              {
+              "type": "video",
+              "layer": "base",
+              "value": "32_Anna_Zeltobfrau"
+              },
+              {
+              "type": "image",
+              "layer": "third",
+              "value": "02_1455_(75)"
+              },
+              {
+              "type": "text",
+              "layer": "fourth",
+              "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "row": false,
+            "character": "Anna",
+            "content": [
+              {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_167_(4)"
+              },
+              {
+              "type": "text",
+              "layer": "fore",
+              "value": "In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?"
+             },
+             {
+              "type": "redirect",
+              "layer": "ankunft",
+              "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik."
+              }
+          ]
+        }
+      ]
     }
-  ]  
+  ]
 }
