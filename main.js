@@ -91,24 +91,28 @@ var Home = function Home() {
 /*!***********************************************************************************!*\
   !*** /Users/gerdmueller/Development/demokratieerleben2020/dist/libs/ui/ui.esm.js ***!
   \***********************************************************************************/
-/*! exports provided: AppContext, Chapter, Decission, Footer, Group, Header, Image, Info, Nav, Redirect, Scrollicon, Smokingpit, Text, Title, Ui, Video */
+/*! exports provided: AppContext, Chapter, Daily, Decission, Footer, Group, Header, Image, Info, Memory, Nav, Redirect, Scrollicon, Smokingpit, Suitcase, Text, TicTacToe, Title, Ui, Video */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppContext", function() { return AppContext; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Chapter", function() { return Chapter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Daily", function() { return Daily; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Decission", function() { return Decission; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return Footer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Group", function() { return Group; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Image", function() { return Image; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Info", function() { return Info; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Memory", function() { return Memory; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nav", function() { return Nav; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return Redirect; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollicon", function() { return Scrollicon; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Smokingpit", function() { return Smokingpit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Suitcase", function() { return Suitcase; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Text", function() { return Text; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TicTacToe", function() { return TicTacToe; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return Title; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ui", function() { return Ui; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Video", function() { return Video; });
@@ -129,16 +133,354 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Title = function Title(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.text));
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function () {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+var AppContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])([]);
+
+var Image = function Image(props) {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
+      _useContext2 = _slicedToArray(_useContext, 2),
+      character = _useContext2[0],
+      setCharacter = _useContext2[1];
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      hover = _useState2[0],
+      setHover = _useState2[1]; //const [source, setSource] = useState(props.value);
+
+
+  var chooseCharacter = function chooseCharacter() {
+    props.title && setCharacter(props.title);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
+    className: "chapter_picture ".concat(props.layer, " ").concat(props.title && hover ? 'highlighted' : ''),
+    onMouseOut: function onMouseOut() {
+      return setHover(false);
+    },
+    onMouseOver: function onMouseOver() {
+      return setHover(true);
+    },
+    onClick: function onClick() {
+      return chooseCharacter();
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+    srcSet: "./assets/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX"],
+    type: 'image/webp'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+    srcSet: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
+    type: 'image/png'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    draggable: "false",
+    src: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
+    alt: props.value
+  }));
 };
 
-var Scrollicon = function Scrollicon(props) {
+var items = ['abfahrt', 'abmarsch', 'kochen', 'lagerstruktur', 'morgen', 'schlafen', 'tanzen', 'waschen'];
+
+var Memory = function Memory(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      list = _useState2[0],
+      setList = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      visibleItems = _useState4[0],
+      setVisibleItems = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      finishedItems = _useState6[0],
+      setFinishedItems = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState8 = _slicedToArray(_useState7, 2),
+      winner = _useState8[0],
+      setWinner = _useState8[1];
+
+  var checkItems = function checkItems(firstIndex, secondIndex) {
+    if (firstIndex !== secondIndex && list[firstIndex].name === list[secondIndex].name) {
+      setFinishedItems([].concat(_toConsumableArray(finishedItems), [firstIndex, secondIndex]));
+    } else {
+      setTimeout(function () {
+        setVisibleItems([]);
+      }, 600);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setList(items.concat(items).map(function (name, i) {
+      return {
+        name: name,
+        id: i
+      };
+    }).sort(function () {
+      return 0.5 - Math.random();
+    }));
+  }, []);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (finishedItems.length > 0 && finishedItems.length === list.length) {
+      setWinner(true);
+    }
+  }, [finishedItems, list]);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Grid, {
+    list: list,
+    visibleItems: visibleItems,
+    setVisibleItems: setVisibleItems,
+    finishedItems: finishedItems,
+    checkItems: checkItems
+  }), winner && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "You Win !", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
+};
+
+var Grid = function Grid(props) {
+  var list = props.list,
+      visibleItems = props.visibleItems,
+      setVisibleItems = props.setVisibleItems,
+      finishedItems = props.finishedItems,
+      checkItems = props.checkItems;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'icon-scroll'
-  });
+    className: "memory"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "description"
+  }, "In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Diese bestehen aus einer Zeichnung und dem dazu passenden Foto. Klicke einfach auf die K\xE4rtchen, um zu sehen, was sich auf der R\xFCckseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards"
+  }, list.map(function (item, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Card, {
+      key: item.id,
+      className: "card ".concat(visibleItems.includes(index) ? "grid-card-show" : "", " ").concat(finishedItems.includes(index) ? "grid-card-show grid-card-finished" : ""),
+      onClick: function onClick() {
+        if (!finishedItems.includes(index)) {
+          switch (visibleItems.length) {
+            case 0:
+              setVisibleItems([index]);
+              break;
+
+            case 1:
+              if (visibleItems[0] !== index) {
+                setVisibleItems(visibleItems.concat(index));
+                checkItems(visibleItems[0], index);
+              }
+
+              break;
+
+            case 2:
+              setVisibleItems([index]);
+              break;
+
+            default:
+              setVisibleItems([]);
+          }
+        }
+      },
+      name: item.name
+    });
+  })));
+};
+
+Grid.defaultProps = {
+  list: []
+};
+
+var Card = function Card(props) {
+  var name = props.name,
+      className = props.className,
+      onClick = props.onClick;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "".concat(className),
+    onClick: onClick
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: "memory_".concat(name)
+  }));
 };
 /* eslint-disable no-use-before-define */
 
@@ -369,7 +711,7 @@ function lighten(color, coefficient) {
   return recomposeColor(color);
 }
 
-function _defineProperty(obj, key, value) {
+function _defineProperty$1(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -491,7 +833,7 @@ var specialProperty = "exact-prop: \u200B";
 function exactProp(propTypes) {
   if (false) {}
 
-  return _extends({}, propTypes, _defineProperty({}, specialProperty, function (props) {
+  return _extends({}, propTypes, _defineProperty$1({}, specialProperty, function (props) {
     var unsupportedProps = Object.keys(props).filter(function (prop) {
       return !propTypes.hasOwnProperty(prop);
     });
@@ -660,16 +1002,16 @@ function createMixins(breakpoints, spacing, mixins) {
       return _extends({
         paddingLeft: spacing(2),
         paddingRight: spacing(2)
-      }, styles, _defineProperty({}, breakpoints.up('sm'), _extends({
+      }, styles, _defineProperty$1({}, breakpoints.up('sm'), _extends({
         paddingLeft: spacing(3),
         paddingRight: spacing(3)
       }, styles[breakpoints.up('sm')])));
     },
     toolbar: (_toolbar = {
       minHeight: 56
-    }, _defineProperty(_toolbar, "".concat(breakpoints.up('xs'), " and (orientation: landscape)"), {
+    }, _defineProperty$1(_toolbar, "".concat(breakpoints.up('xs'), " and (orientation: landscape)"), {
       minHeight: 48
-    }), _defineProperty(_toolbar, breakpoints.up('sm'), {
+    }), _defineProperty$1(_toolbar, breakpoints.up('sm'), {
       minHeight: 64
     }), _toolbar)
   }, mixins);
@@ -1117,7 +1459,7 @@ var shape = {
 };
 var responsivePropType =  true ? prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array]) : undefined;
 
-function _arrayLikeToArray(arr, len) {
+function _arrayLikeToArray$1(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -1127,29 +1469,29 @@ function _arrayLikeToArray(arr, len) {
   return arr2;
 }
 
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+function _arrayWithoutHoles$1(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray$1(arr);
 }
 
-function _iterableToArray(iter) {
+function _iterableToArray$1(iter) {
   if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
 }
 
-function _unsupportedIterableToArray(o, minLen) {
+function _unsupportedIterableToArray$1(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(n);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
 }
 
-function _nonIterableSpread() {
+function _nonIterableSpread$1() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+function _toConsumableArray$1(arr) {
+  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$1(arr) || _nonIterableSpread$1();
 }
 
 function merge(acc, item) {
@@ -1208,11 +1550,11 @@ function handleBreakpoints(props, propValue, styleFromPropValue) {
   return output;
 }
 
-function _arrayWithHoles(arr) {
+function _arrayWithHoles$1(arr) {
   if (Array.isArray(arr)) return arr;
 }
 
-function _iterableToArrayLimit(arr, i) {
+function _iterableToArrayLimit$1(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
@@ -1239,12 +1581,12 @@ function _iterableToArrayLimit(arr, i) {
   return _arr;
 }
 
-function _nonIterableRest() {
+function _nonIterableRest$1() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+function _slicedToArray$1(arr, i) {
+  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
 }
 
 function memoize(fn) {
@@ -1290,7 +1632,7 @@ var getCssProperties = memoize(function (prop) {
   }
 
   var _prop$split = prop.split(''),
-      _prop$split2 = _slicedToArray(_prop$split, 2),
+      _prop$split2 = _slicedToArray$1(_prop$split, 2),
       a = _prop$split2[0],
       b = _prop$split2[1];
 
@@ -1627,7 +1969,7 @@ function createMuiTheme() {
         } else if (pseudoClasses.indexOf(key) !== -1 && Object.keys(child).length > 0) {
           if (true) {
             console.error(["Material-UI: the `".concat(parentKey, "` component increases ") + "the CSS specificity of the `".concat(key, "` internal state."), 'You can not override it like this: ', JSON.stringify(node, null, 2), '', 'Instead, you need to use the $ruleName syntax:', JSON.stringify({
-              root: _defineProperty({}, "&$".concat(key), child)
+              root: _defineProperty$1({}, "&$".concat(key), child)
             }, null, 2), '', 'https://material-ui.com/r/pseudo-classes-guide'].join('\n'));
           } // Remove the style to prevent global conflicts.
 
@@ -1649,7 +1991,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 
-function _assertThisInitialized(self) {
+function _assertThisInitialized$1(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
@@ -1752,7 +2094,7 @@ var _typeof$1 = typeof Symbol === "function" && typeof Symbol.iterator === "symb
 
 var isBrowser = (typeof window === "undefined" ? "undefined" : _typeof$1(window)) === "object" && (typeof document === "undefined" ? "undefined" : _typeof$1(document)) === 'object' && document.nodeType === 9;
 
-function _defineProperties(target, props) {
+function _defineProperties$1(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
     descriptor.enumerable = descriptor.enumerable || false;
@@ -1762,9 +2104,9 @@ function _defineProperties(target, props) {
   }
 }
 
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
+function _createClass$1(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties$1(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties$1(Constructor, staticProps);
   return Constructor;
 }
 
@@ -2013,7 +2355,7 @@ var StyleRule = /*#__PURE__*/function (_BaseStyleRule) {
     if (selector) {
       _this.selectorText = selector;
     } else if (scoped !== false) {
-      _this.id = generateId(_assertThisInitialized(_assertThisInitialized(_this)), sheet);
+      _this.id = generateId(_assertThisInitialized$1(_assertThisInitialized$1(_this)), sheet);
       _this.selectorText = "." + escape(_this.id);
     }
 
@@ -2075,7 +2417,7 @@ var StyleRule = /*#__PURE__*/function (_BaseStyleRule) {
     return toCss(this.selectorText, this.style, opts);
   };
 
-  _createClass(StyleRule, [{
+  _createClass$1(StyleRule, [{
     key: "selector",
     set: function set(selector) {
       if (selector === this.selectorText) return;
@@ -3162,7 +3504,7 @@ var SheetsRegistry = /*#__PURE__*/function () {
     return css;
   };
 
-  _createClass(SheetsRegistry, [{
+  _createClass$1(SheetsRegistry, [{
     key: "index",
 
     /**
@@ -4901,7 +5243,7 @@ var propertyDetectors = plugins$1.filter(function (p) {
 var noPrefill = plugins$1.filter(function (p) {
   return p.noPrefill;
 }).reduce(function (a, p) {
-  a.push.apply(a, _toConsumableArray(p.noPrefill));
+  a.push.apply(a, _toConsumableArray$1(p.noPrefill));
   return a;
 }, []);
 var el;
@@ -5708,283 +6050,252 @@ function makeStyles$1(stylesOrCreator) {
   }, options));
 }
 
-var Header = function Header(props) {
+var dailyItems = ["Waschen und Baden", "Frühstück", "Wanderungen machen", "Sprechstunde des Lagerarztes", "Lagerruhe - Post- und Zeitungsausgabe", "Tagung des Lagerparlaments", "Gemeinsame Veranstaltungen", "Zeltruhe"];
+var schedule = ["6 Uhr", "8 Uhr", "8 ½ – 12 Uhr ", "8 ½ – 9 ½", "12 ½ – 14 ½ ", "18 – 19 Uhr", "19 ½ – 21 Uhr", "21 Uhr"];
+var description = "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.";
+
+var Daily = function Daily(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      result = _useState2[0],
+      setResult = _useState2[1];
+
+  var handleClick = function handleClick() {
+    setResult(true); //props.onCheckDaily();
+  };
+
+  var getItems = function getItems() {
+    if (result) return;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "items"
+    }, dailyItems.map(function (item, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        key: index,
+        className: "item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item));
+    }));
+  };
+
+  var showStatus = function showStatus() {
+    if (result) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+        value: 'daily_result'
+      });
+    }
+
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Box, {
+      targetKey: "box"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      type: 'button',
+      className: 'link-button show',
+      onClick: function onClick() {
+        return handleClick();
+      }
+    }, "Tagesplan anzeigen!"));
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "daily"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "description"
+  }, description), getItems(), showStatus());
+};
+
+var Box = function Box(props) {
   var useStyles = makeStyles$1(function () {
     return {
-      chapter: {
-        backgroundImage: "url(".concat("./assets/" + props.link + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX"], ")"),
-        boxShadow: '0 0 8px 8px #dcd5cc inset',
-        flexDirection: 'column'
+      box: {
+        background: 'url(./assets/daily.webp) no-repeat center center'
       }
     };
   });
   var classes = useStyles();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: 'parallax__group parallax__header'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "parallax__layer parallax__layer--base fade-in-scale ".concat(classes.chapter)
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
-    text: props.name
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Scrollicon, null)));
-};
 
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      boxItems = _useState4[0],
+      setBoxItems = _useState4[1];
 
-function _defineProperties$1(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
+  var swap = function swap(fromIndex, toIndex, dragData) {
+    var items = boxItems.slice();
+    var item = {
+      label: dragData.label
+    };
+    items.splice(toIndex, 0, item);
+    setBoxItems(items);
+  };
 
-function _createClass$1(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties$1(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties$1(Constructor, staticProps);
-  return Constructor;
-}
-
-function _defineProperty$1(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
+  var kill = function kill(uid) {
+    var items = boxItems.slice();
+    var index = items.findIndex(function (item) {
+      return item.uid === uid;
     });
-  } else {
-    obj[key] = value;
-  }
 
-  return obj;
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
+    if (index !== -1) {
+      items.splice(index, 1);
     }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
 
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
+    setBoxItems(items);
   };
 
-  return _setPrototypeOf(o, p);
-}
+  return (// <DropTarget
+    //   onHit={handleDrop}
+    //   targetKey={props.targetKey}
+    //   dropData={{name: props.name}}>
+    //   <DropTarget
+    //     onHit={handleDrop}
+    //     targetKey="boxItem"
+    //     dropData={{name: props.name}}>
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "component_box ".concat(classes.box)
+    }, boxItems.map(function (item, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BoxItem, {
+        key: item.uid,
+        uid: item.uid,
+        kill: kill,
+        index: index,
+        swap: swap
+      }, item.label);
+    })) //   </DropTarget>
+    // </DropTarget>
 
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-
-  try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-function _assertThisInitialized$1(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (typeof call === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized$1(self);
-}
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = _isNativeReflectConstruct();
-
-  return function () {
-    var Super = _getPrototypeOf(Derived),
-        result;
-
-    if (hasNativeReflectConstruct) {
-      var NewTarget = _getPrototypeOf(this).constructor;
-
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-
-    return _possibleConstructorReturn(this, result);
-  };
-}
-
-function _slicedToArray$1(arr, i) {
-  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
-}
-
-function _toConsumableArray$1(arr) {
-  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$1(arr) || _nonIterableSpread$1();
-}
-
-function _arrayWithoutHoles$1(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$1(arr);
-}
-
-function _arrayWithHoles$1(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArray$1(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
-}
-
-function _iterableToArrayLimit$1(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray$1(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
-}
-
-function _arrayLikeToArray$1(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-
-function _nonIterableSpread$1() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-function _nonIterableRest$1() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-var Video = function Video(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray$1(_useState, 2),
-      isPlaying = _useState2[0],
-      setPlaying = _useState2[1];
-
-  var playVideo = function playVideo(playing) {
-    setPlaying(playing);
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter_video ".concat(props.layer, " ").concat(isPlaying ? 'theater' : '')
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-    controls: true,
-    onPlaying: function onPlaying() {
-      return playVideo(true);
-    },
-    onPause: function onPause() {
-      return playVideo(false);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    type: 'video/mp4',
-    src: "./assets/movies/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["VIDEO_SUFFIX"]
-  }), "Your browser does not support the video tag."));
+  );
 };
 
-var AppContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])([]);
+var BoxItem = function BoxItem(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "box_item_component"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "outer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "grabber"
+  }, "\u2237"), schedule[props.index], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u2003"), props.children)));
+};
 
-var Image = function Image(props) {
+var Square = function Square(_ref) {
+  var value = _ref.value,
+      onClick = _ref.onClick;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    role: "button",
+    tabIndex: 0,
+    className: 'square',
+    onClick: onClick
+  }, value);
+};
+
+var lines = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+var userSymbol = "X";
+var computerSymbol = "O";
+
+var TicTacToe = function TicTacToe(props) {
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
-      _useContext2 = _slicedToArray$1(_useContext, 2),
+      _useContext2 = _slicedToArray(_useContext, 2),
       character = _useContext2[0],
       setCharacter = _useContext2[1];
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray$1(_useState, 2),
-      hover = _useState2[0],
-      setHover = _useState2[1]; //const [source, setSource] = useState(props.value);
+  var status = "Um zu spielen, setze dein Kreuz in eines der K\xE4stchen, indem du dort hinein klickst. Danach ist ".concat(character, " dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.");
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Array(9).fill(null)),
+      _useState2 = _slicedToArray(_useState, 2),
+      squares = _useState2[0],
+      setSquares = _useState2[1];
 
-  var chooseCharacter = function chooseCharacter() {
-    props.title && setCharacter(props.title);
-  };
+  var winner = calculateWinner(squares);
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
-    className: "chapter_picture ".concat(props.layer, " ").concat(props.title && hover ? 'highlighted' : ''),
-    onMouseOut: function onMouseOut() {
-      return setHover(false);
-    },
-    onMouseOver: function onMouseOver() {
-      return setHover(true);
-    },
-    onClick: function onClick() {
-      return chooseCharacter();
+  function getStatus() {
+    if (winner) {
+      document.querySelector('.result').scrollIntoView({
+        behavior: 'smooth'
+      });
+      return winner === "X" ? "Du hast gewonnen!" : "Es ist ja nur ein Spiel!";
+    } else if (isBoardFull(squares)) {
+      document.querySelector('.result').scrollIntoView({
+        behavior: 'smooth'
+      });
+      return "Ein solidarisches Remis!";
+    } else {
+      return '';
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "./assets/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX"],
-    type: 'image/webp'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
-    type: 'image/png'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    draggable: "false",
-    src: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
-    alt: props.value
-  }));
+  }
+
+  function renderSquare(i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+      value: squares[i],
+      key: i,
+      onClick: function onClick() {
+        if (squares[i] != null || winner != null) {
+          return;
+        }
+
+        var nextSquares = squares.slice();
+        nextSquares[i] = userSymbol;
+        setSquares(nextSquares);
+
+        if (!calculateWinner(nextSquares)) {
+          setTimeout(function () {
+            var generatedSquares = nextSquares.slice();
+            var generatedSquare = setGeneratedSquare(generatedSquares);
+
+            if (generatedSquare != null) {
+              generatedSquares[generatedSquare] = computerSymbol;
+              setSquares(generatedSquares);
+            }
+          }, 300);
+        }
+      }
+    });
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'game'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'status'
+  }, status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'board'
+  }, squares.map(function (value, index) {
+    return renderSquare(index);
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'result'
+  }, getStatus()));
 };
+
+function setGeneratedSquare(squares) {
+  for (var i = 0; i < squares.length; i++) {
+    if (squares[i] == null) {
+      return i;
+    }
+  }
+
+  return null;
+}
+
+function calculateWinner(squares) {
+  // go over all possibly winning lines and check if they consist of only X's/only O's
+  for (var i = 0; i < lines.length; i++) {
+    var _lines$i = _slicedToArray(lines[i], 3),
+        a = _lines$i[0],
+        b = _lines$i[1],
+        c = _lines$i[2];
+
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+
+  return null;
+}
+
+function isBoardFull(squares) {
+  for (var i = 0; i < squares.length; i++) {
+    if (squares[i] == null) {
+      return false;
+    }
+  }
+
+  return true;
+}
 
 function unwrapExports(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
@@ -6608,6 +6919,291 @@ var wrap_1 = createCommonjsModule(function (module, exports) {
   module.exports = exports.default;
 });
 unwrapExports(wrap_1);
+var Shake_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function _objectWithoutProperties(e, r) {
+    var o = {};
+
+    for (var t in e) {
+      r.indexOf(t) >= 0 || Object.prototype.hasOwnProperty.call(e, t) && (o[t] = e[t]);
+    }
+
+    return o;
+  }
+
+  function make() {
+    return name || (name = (0, globals.animation)(rule));
+  }
+
+  function Shake() {
+    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
+        r = e.children,
+        o = (e.out, e.timeout),
+        t = e.duration,
+        a = void 0 === t ? globals.defaults.duration : t,
+        n = e.delay,
+        u = void 0 === n ? globals.defaults.delay : n,
+        p = e.count,
+        l = void 0 === p ? globals.defaults.count : p,
+        i = e.forever,
+        s = _objectWithoutProperties(e, ["children", "out", "timeout", "duration", "delay", "count", "forever"]),
+        d = {
+      make: make,
+      duration: void 0 === o ? a : o,
+      delay: u,
+      forever: i,
+      count: l,
+      style: {
+        animationFillMode: "both"
+      }
+    };
+
+    return (0, _wrap2.default)(s, d, !1, r, !0);
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _wrap2 = _interopRequireDefault(wrap_1),
+      propTypes = {
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      rule = "\nfrom, to {\n    transform: translate3d(0, 0, 0);\n  }\n\n  10%, 30%, 50%, 70%, 90% {\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  20%, 40%, 60%, 80% {\n    transform: translate3d(10px, 0, 0);\n}\n",
+      name = !1;
+
+  Shake.propTypes = propTypes, exports.default = Shake, module.exports = exports.default;
+});
+var Shake = unwrapExports(Shake_1);
+var Jump_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function _objectWithoutProperties(e, r) {
+    var t = {};
+
+    for (var n in e) {
+      r.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+    }
+
+    return t;
+  }
+
+  function make() {
+    return name || (name = (0, globals.animation)(rule));
+  }
+
+  function Jump() {
+    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
+        r = e.children,
+        t = (e.out, e.timeout),
+        n = e.duration,
+        o = void 0 === n ? globals.defaults.duration : n,
+        a = e.delay,
+        i = void 0 === a ? globals.defaults.delay : a,
+        u = e.count,
+        p = void 0 === u ? globals.defaults.count : u,
+        l = e.forever,
+        s = _objectWithoutProperties(e, ["children", "out", "timeout", "duration", "delay", "count", "forever"]),
+        d = {
+      make: make,
+      duration: void 0 === t ? o : t,
+      delay: i,
+      forever: l,
+      count: p,
+      style: {
+        animationFillMode: "both"
+      }
+    };
+
+    return (0, _wrap2.default)(s, d, !1, r, !0);
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _wrap2 = _interopRequireDefault(wrap_1),
+      propTypes = {
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      rule = "\n from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n}\n",
+      name = !1;
+
+  Jump.propTypes = propTypes, exports.default = Jump, module.exports = exports.default;
+});
+var Jump = unwrapExports(Jump_1);
+
+var Suitcase = function Suitcase(props) {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
+      _useContext2 = _slicedToArray(_useContext, 2),
+      character = _useContext2[0],
+      setCharacter = _useContext2[1];
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      drag = _useState2[0],
+      setDrag = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      bagCounter = _useState4[0],
+      setBagCounter = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState6 = _slicedToArray(_useState5, 2),
+      showResult = _useState6[0],
+      setShowResult = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState8 = _slicedToArray(_useState7, 2),
+      falseCounter = _useState8[0],
+      setFalseCounter = _useState8[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'suitcase'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'items'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: 'ein Hemd',
+    image: 'suitcase_hemd'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: 'eine Feldflasche',
+    image: 'suitcase_feldflasche'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'ein Radio',
+    image: 'suitcase_radio'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: 'eine Seife',
+    image: 'suitcase_seife'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'ein Smartphone',
+    image: 'suitcase_smartphone'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: "eine Zahnb\xFCrste",
+    image: "suitcase_zahnb\xFCrste"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'eine Karaffe',
+    image: 'suitcase_karaffe'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'eine Topfpflanze',
+    image: 'suitcase_topfpflanze'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: "einen L\xF6ffel",
+    image: "suitcase_l\xF6ffel"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'einen Hammer',
+    image: 'suitcase_hammer'
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Jump, {
+    spy: bagCounter
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shake, {
+    spy: falseCounter
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'bag'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: 'suitcase'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'dragText'
+  }, drag)))));
+};
+
+var Items = function Items(props) {
+  // return (
+  //   <DragDropContainer
+  //     targetKey={props.targetKey}
+  //     dragData={{ label: props.label }}
+  //     render={() => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: props.image
+  }); //     }}
+  //   />
+  // );
+};
+
+var Title = function Title(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.text));
+};
+
+var Scrollicon = function Scrollicon(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'icon-scroll'
+  });
+};
+
+var Header = function Header(props) {
+  var useStyles = makeStyles$1(function () {
+    return {
+      chapter: {
+        backgroundImage: "url(".concat("./assets/" + props.link + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX"], ")"),
+        boxShadow: '0 0 8px 8px #dcd5cc inset',
+        flexDirection: 'column'
+      }
+    };
+  });
+  var classes = useStyles();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: 'parallax__group parallax__header'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "parallax__layer parallax__layer--base fade-in-scale ".concat(classes.chapter)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+    text: props.name
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Scrollicon, null)));
+};
+
+var Video = function Video(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isPlaying = _useState2[0],
+      setPlaying = _useState2[1];
+
+  var playVideo = function playVideo(playing) {
+    setPlaying(playing);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter_video ".concat(props.layer, " ").concat(isPlaying ? 'theater' : '')
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+    controls: true,
+    onPlaying: function onPlaying() {
+      return playVideo(true);
+    },
+    onPause: function onPause() {
+      return playVideo(false);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+    type: 'video/mp4',
+    src: "./assets/movies/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["VIDEO_SUFFIX"]
+  }), "Your browser does not support the video tag."));
+};
+
 var Fade_1 = createCommonjsModule(function (module, exports) {
   function _interopRequireDefault(o) {
     return o && o.__esModule ? o : {
@@ -6895,10 +7491,10 @@ var Puzzle = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass$1(Puzzle, [{
+  _createClass(Puzzle, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var pieces = _toConsumableArray$1(Array(16)).map(function (_, i) {
+      var pieces = _toConsumableArray(Array(16)).map(function (_, i) {
         return {
           img: "daheim_puzzle_".concat(("0" + (i + 1)).substr(-2), ".webp"),
           order: i,
@@ -6909,7 +7505,7 @@ var Puzzle = /*#__PURE__*/function (_Component) {
       this.setState({
         pieces: pieces,
         shuffled: this.shufflePieces(pieces),
-        solved: _toConsumableArray$1(Array(16))
+        solved: _toConsumableArray(Array(16))
       });
     }
   }, {
@@ -6929,7 +7525,7 @@ var Puzzle = /*#__PURE__*/function (_Component) {
       origin[origin.indexOf(pieceData)] = undefined;
       target[index] = pieceData;
       pieceData.board = targetName;
-      this.setState((_this$setState = {}, _defineProperty$1(_this$setState, pieceData.board, origin), _defineProperty$1(_this$setState, targetName, target), _this$setState));
+      this.setState((_this$setState = {}, _defineProperty(_this$setState, pieceData.board, origin), _defineProperty(_this$setState, targetName, target), _this$setState));
     }
   }, {
     key: "handleDragStart",
@@ -6983,7 +7579,7 @@ var Puzzle = /*#__PURE__*/function (_Component) {
   }, {
     key: "shufflePieces",
     value: function shufflePieces(pieces) {
-      var shuffled = _toConsumableArray$1(pieces);
+      var shuffled = _toConsumableArray(pieces);
 
       for (var i = shuffled.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -6998,598 +7594,6 @@ var Puzzle = /*#__PURE__*/function (_Component) {
 
   return Puzzle;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-var items = ['abfahrt', 'abmarsch', 'kochen', 'lagerstruktur', 'morgen', 'schlafen', 'tanzen', 'waschen'];
-
-var Memory = function Memory(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState2 = _slicedToArray$1(_useState, 2),
-      list = _useState2[0],
-      setList = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState4 = _slicedToArray$1(_useState3, 2),
-      visibleItems = _useState4[0],
-      setVisibleItems = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState6 = _slicedToArray$1(_useState5, 2),
-      finishedItems = _useState6[0],
-      setFinishedItems = _useState6[1];
-
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState8 = _slicedToArray$1(_useState7, 2),
-      winner = _useState8[0],
-      setWinner = _useState8[1];
-
-  var checkItems = function checkItems(firstIndex, secondIndex) {
-    if (firstIndex !== secondIndex && list[firstIndex].name === list[secondIndex].name) {
-      setFinishedItems([].concat(_toConsumableArray$1(finishedItems), [firstIndex, secondIndex]));
-    } else {
-      setTimeout(function () {
-        setVisibleItems([]);
-      }, 600);
-    }
-  };
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setList(items.concat(items).map(function (name, i) {
-      return {
-        name: name,
-        id: i
-      };
-    }).sort(function () {
-      return 0.5 - Math.random();
-    }));
-  }, []);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (finishedItems.length > 0 && finishedItems.length === list.length) {
-      setWinner(true);
-    }
-  }, [finishedItems, list]);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Grid, {
-    list: list,
-    visibleItems: visibleItems,
-    setVisibleItems: setVisibleItems,
-    finishedItems: finishedItems,
-    checkItems: checkItems
-  }), winner && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "You Win !", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
-};
-
-var Grid = function Grid(props) {
-  var list = props.list,
-      visibleItems = props.visibleItems,
-      setVisibleItems = props.setVisibleItems,
-      finishedItems = props.finishedItems,
-      checkItems = props.checkItems;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "memory"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "description"
-  }, "In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Diese bestehen aus einer Zeichnung und dem dazu passenden Foto. Klicke einfach auf die K\xE4rtchen, um zu sehen, was sich auf der R\xFCckseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards"
-  }, list.map(function (item, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Card, {
-      key: item.id,
-      className: "card ".concat(visibleItems.includes(index) ? "grid-card-show" : "", " ").concat(finishedItems.includes(index) ? "grid-card-show grid-card-finished" : ""),
-      onClick: function onClick() {
-        if (!finishedItems.includes(index)) {
-          switch (visibleItems.length) {
-            case 0:
-              setVisibleItems([index]);
-              break;
-
-            case 1:
-              if (visibleItems[0] !== index) {
-                setVisibleItems(visibleItems.concat(index));
-                checkItems(visibleItems[0], index);
-              }
-
-              break;
-
-            case 2:
-              setVisibleItems([index]);
-              break;
-
-            default:
-              setVisibleItems([]);
-          }
-        }
-      },
-      name: item.name
-    });
-  })));
-};
-
-Grid.defaultProps = {
-  list: []
-};
-
-var Card = function Card(props) {
-  var name = props.name,
-      className = props.className,
-      onClick = props.onClick;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "".concat(className),
-    onClick: onClick
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-    value: "memory_".concat(name)
-  }));
-};
-
-var Shake_1 = createCommonjsModule(function (module, exports) {
-  function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-      default: e
-    };
-  }
-
-  function _objectWithoutProperties(e, r) {
-    var o = {};
-
-    for (var t in e) {
-      r.indexOf(t) >= 0 || Object.prototype.hasOwnProperty.call(e, t) && (o[t] = e[t]);
-    }
-
-    return o;
-  }
-
-  function make() {
-    return name || (name = (0, globals.animation)(rule));
-  }
-
-  function Shake() {
-    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
-        r = e.children,
-        o = (e.out, e.timeout),
-        t = e.duration,
-        a = void 0 === t ? globals.defaults.duration : t,
-        n = e.delay,
-        u = void 0 === n ? globals.defaults.delay : n,
-        p = e.count,
-        l = void 0 === p ? globals.defaults.count : p,
-        i = e.forever,
-        s = _objectWithoutProperties(e, ["children", "out", "timeout", "duration", "delay", "count", "forever"]),
-        d = {
-      make: make,
-      duration: void 0 === o ? a : o,
-      delay: u,
-      forever: i,
-      count: l,
-      style: {
-        animationFillMode: "both"
-      }
-    };
-
-    return (0, _wrap2.default)(s, d, !1, r, !0);
-  }
-
-  Object.defineProperty(exports, "__esModule", {
-    value: !0
-  });
-
-  var _wrap2 = _interopRequireDefault(wrap_1),
-      propTypes = {
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
-  },
-      rule = "\nfrom, to {\n    transform: translate3d(0, 0, 0);\n  }\n\n  10%, 30%, 50%, 70%, 90% {\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  20%, 40%, 60%, 80% {\n    transform: translate3d(10px, 0, 0);\n}\n",
-      name = !1;
-
-  Shake.propTypes = propTypes, exports.default = Shake, module.exports = exports.default;
-});
-var Shake = unwrapExports(Shake_1);
-var Jump_1 = createCommonjsModule(function (module, exports) {
-  function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-      default: e
-    };
-  }
-
-  function _objectWithoutProperties(e, r) {
-    var t = {};
-
-    for (var n in e) {
-      r.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
-    }
-
-    return t;
-  }
-
-  function make() {
-    return name || (name = (0, globals.animation)(rule));
-  }
-
-  function Jump() {
-    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
-        r = e.children,
-        t = (e.out, e.timeout),
-        n = e.duration,
-        o = void 0 === n ? globals.defaults.duration : n,
-        a = e.delay,
-        i = void 0 === a ? globals.defaults.delay : a,
-        u = e.count,
-        p = void 0 === u ? globals.defaults.count : u,
-        l = e.forever,
-        s = _objectWithoutProperties(e, ["children", "out", "timeout", "duration", "delay", "count", "forever"]),
-        d = {
-      make: make,
-      duration: void 0 === t ? o : t,
-      delay: i,
-      forever: l,
-      count: p,
-      style: {
-        animationFillMode: "both"
-      }
-    };
-
-    return (0, _wrap2.default)(s, d, !1, r, !0);
-  }
-
-  Object.defineProperty(exports, "__esModule", {
-    value: !0
-  });
-
-  var _wrap2 = _interopRequireDefault(wrap_1),
-      propTypes = {
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
-  },
-      rule = "\n from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n}\n",
-      name = !1;
-
-  Jump.propTypes = propTypes, exports.default = Jump, module.exports = exports.default;
-});
-var Jump = unwrapExports(Jump_1);
-
-var Suitcase = function Suitcase(props) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
-      _useContext2 = _slicedToArray$1(_useContext, 2),
-      character = _useContext2[0],
-      setCharacter = _useContext2[1];
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
-      _useState2 = _slicedToArray$1(_useState, 2),
-      drag = _useState2[0],
-      setDrag = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      _useState4 = _slicedToArray$1(_useState3, 2),
-      bagCounter = _useState4[0],
-      setBagCounter = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState6 = _slicedToArray$1(_useState5, 2),
-      showResult = _useState6[0],
-      setShowResult = _useState6[1];
-
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      _useState8 = _slicedToArray$1(_useState7, 2),
-      falseCounter = _useState8[0],
-      setFalseCounter = _useState8[1];
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'suitcase'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'items'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'bag',
-    label: 'ein Hemd',
-    image: 'suitcase_hemd'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'bag',
-    label: 'eine Feldflasche',
-    image: 'suitcase_feldflasche'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'negative',
-    label: 'ein Radio',
-    image: 'suitcase_radio'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'bag',
-    label: 'eine Seife',
-    image: 'suitcase_seife'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'negative',
-    label: 'ein Smartphone',
-    image: 'suitcase_smartphone'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'bag',
-    label: "eine Zahnb\xFCrste",
-    image: "suitcase_zahnb\xFCrste"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'negative',
-    label: 'eine Karaffe',
-    image: 'suitcase_karaffe'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'negative',
-    label: 'eine Topfpflanze',
-    image: 'suitcase_topfpflanze'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'bag',
-    label: "einen L\xF6ffel",
-    image: "suitcase_l\xF6ffel"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
-    targetKey: 'negative',
-    label: 'einen Hammer',
-    image: 'suitcase_hammer'
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Jump, {
-    spy: bagCounter
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shake, {
-    spy: falseCounter
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'bag'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-    value: 'suitcase'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'dragText'
-  }, drag)))));
-};
-
-var Items = function Items(props) {
-  // return (
-  //   <DragDropContainer
-  //     targetKey={props.targetKey}
-  //     dragData={{ label: props.label }}
-  //     render={() => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-    value: props.image
-  }); //     }}
-  //   />
-  // );
-};
-
-var Square = function Square(_ref) {
-  var value = _ref.value,
-      onClick = _ref.onClick;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    role: "button",
-    tabIndex: 0,
-    className: 'square',
-    onClick: onClick
-  }, value);
-};
-
-var lines = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
-var userSymbol = "X";
-var computerSymbol = "O";
-
-var TicTacToe = function TicTacToe(props) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
-      _useContext2 = _slicedToArray$1(_useContext, 2),
-      character = _useContext2[0],
-      setCharacter = _useContext2[1];
-
-  var status = "Um zu spielen, setze dein Kreuz in eines der K\xE4stchen, indem du dort hinein klickst. Danach ist ".concat(character, " dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.");
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Array(9).fill(null)),
-      _useState2 = _slicedToArray$1(_useState, 2),
-      squares = _useState2[0],
-      setSquares = _useState2[1];
-
-  var winner = calculateWinner(squares);
-
-  function getStatus() {
-    if (winner) {
-      document.querySelector('.result').scrollIntoView({
-        behavior: 'smooth'
-      });
-      return winner === "X" ? "Du hast gewonnen!" : "Es ist ja nur ein Spiel!";
-    } else if (isBoardFull(squares)) {
-      document.querySelector('.result').scrollIntoView({
-        behavior: 'smooth'
-      });
-      return "Ein solidarisches Remis!";
-    } else {
-      return '';
-    }
-  }
-
-  function renderSquare(i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-      value: squares[i],
-      key: i,
-      onClick: function onClick() {
-        if (squares[i] != null || winner != null) {
-          return;
-        }
-
-        var nextSquares = squares.slice();
-        nextSquares[i] = userSymbol;
-        setSquares(nextSquares);
-
-        if (!calculateWinner(nextSquares)) {
-          setTimeout(function () {
-            var generatedSquares = nextSquares.slice();
-            var generatedSquare = setGeneratedSquare(generatedSquares);
-
-            if (generatedSquare != null) {
-              generatedSquares[generatedSquare] = computerSymbol;
-              setSquares(generatedSquares);
-            }
-          }, 300);
-        }
-      }
-    });
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'game'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'status'
-  }, status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'board'
-  }, squares.map(function (value, index) {
-    return renderSquare(index);
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'result'
-  }, getStatus()));
-};
-
-function setGeneratedSquare(squares) {
-  for (var i = 0; i < squares.length; i++) {
-    if (squares[i] == null) {
-      return i;
-    }
-  }
-
-  return null;
-}
-
-function calculateWinner(squares) {
-  // go over all possibly winning lines and check if they consist of only X's/only O's
-  for (var i = 0; i < lines.length; i++) {
-    var _lines$i = _slicedToArray$1(lines[i], 3),
-        a = _lines$i[0],
-        b = _lines$i[1],
-        c = _lines$i[2];
-
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
-    }
-  }
-
-  return null;
-}
-
-function isBoardFull(squares) {
-  for (var i = 0; i < squares.length; i++) {
-    if (squares[i] == null) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-var dailyItems = ["Waschen und Baden", "Frühstück", "Wanderungen machen", "Sprechstunde des Lagerarztes", "Lagerruhe - Post- und Zeitungsausgabe", "Tagung des Lagerparlaments", "Gemeinsame Veranstaltungen", "Zeltruhe"];
-var schedule = ["6 Uhr", "8 Uhr", "8 ½ – 12 Uhr ", "8 ½ – 9 ½", "12 ½ – 14 ½ ", "18 – 19 Uhr", "19 ½ – 21 Uhr", "21 Uhr"];
-var description = "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.";
-
-var Daily = function Daily(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray$1(_useState, 2),
-      result = _useState2[0],
-      setResult = _useState2[1];
-
-  var handleClick = function handleClick() {
-    setResult(true); //props.onCheckDaily();
-  };
-
-  var getItems = function getItems() {
-    if (result) return;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "items"
-    }, dailyItems.map(function (item, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        key: index,
-        className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item));
-    }));
-  };
-
-  var showStatus = function showStatus() {
-    if (result) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-        value: 'daily_result'
-      });
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Box, {
-      targetKey: "box"
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      type: 'button',
-      className: 'link-button show',
-      onClick: function onClick() {
-        return handleClick();
-      }
-    }, "Tagesplan anzeigen!"));
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "daily"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "description"
-  }, description), getItems(), showStatus());
-};
-
-var Box = function Box(props) {
-  var useStyles = makeStyles$1(function () {
-    return {
-      box: {
-        background: 'url(./assets/daily.webp) no-repeat center center'
-      }
-    };
-  });
-  var classes = useStyles();
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState4 = _slicedToArray$1(_useState3, 2),
-      boxItems = _useState4[0],
-      setBoxItems = _useState4[1];
-
-  var swap = function swap(fromIndex, toIndex, dragData) {
-    var items = boxItems.slice();
-    var item = {
-      label: dragData.label
-    };
-    items.splice(toIndex, 0, item);
-    setBoxItems(items);
-  };
-
-  var kill = function kill(uid) {
-    var items = boxItems.slice();
-    var index = items.findIndex(function (item) {
-      return item.uid === uid;
-    });
-
-    if (index !== -1) {
-      items.splice(index, 1);
-    }
-
-    setBoxItems(items);
-  };
-
-  return (// <DropTarget
-    //   onHit={handleDrop}
-    //   targetKey={props.targetKey}
-    //   dropData={{name: props.name}}>
-    //   <DropTarget
-    //     onHit={handleDrop}
-    //     targetKey="boxItem"
-    //     dropData={{name: props.name}}>
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "component_box ".concat(classes.box)
-    }, boxItems.map(function (item, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BoxItem, {
-        key: item.uid,
-        uid: item.uid,
-        kill: kill,
-        index: index,
-        swap: swap
-      }, item.label);
-    })) //   </DropTarget>
-    // </DropTarget>
-
-  );
-};
-
-var BoxItem = function BoxItem(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "box_item_component"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "outer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "item"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "grabber"
-  }, "\u2237"), schedule[props.index], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u2003"), props.children)));
-};
 
 var Redirect = function Redirect(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -8072,7 +8076,7 @@ _defineProperty$2(InView, "defaultProps", {
 
 var Chapter = function Chapter(props) {
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
-      _useContext2 = _slicedToArray$1(_useContext, 2),
+      _useContext2 = _slicedToArray(_useContext, 2),
       character = _useContext2[0],
       setCharacter = _useContext2[1];
 
