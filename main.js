@@ -37,6 +37,9 @@ var ContentType;
   ContentType["Game"] = "game";
   ContentType["SmokingPit"] = "smokingpit";
   ContentType["Puzzle"] = "puzzle";
+  ContentType["Suitcase"] = "suitcase";
+  ContentType["TicTacToe"] = "tictactoe";
+  ContentType["Daily"] = "daily";
   ContentType["Decission"] = "decission";
 })(ContentType || (ContentType = {}));
 
@@ -57,23 +60,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gerdesque/ui */ "../../../dist/libs/ui/ui.esm.js");
-/* harmony import */ var _gerdesque_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @gerdesque/data */ "../../../dist/libs/data/data.esm.js");
-
 
 
 var home = {
   link: "home",
-  content: [{
-    "type": _gerdesque_data__WEBPACK_IMPORTED_MODULE_2__["ContentType"].Text,
-    "value": "Natürlich besteht die Kinderrepublik nicht nur aus Karl, Anna und Gerda. Damit ihr mit den beiden dieses Abenteuer erleben könnt, hat Florian eine Website entworfen, die Gerd umgesetzt hat. Anne hat dafür unter dem Einsatz von Felix‘ Sprecherstimme Trickfilme produziert."
-  }, {
-    "type": _gerdesque_data__WEBPACK_IMPORTED_MODULE_2__["ContentType"].Text,
-    "value": "Unsere Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können."
+  groups: [{
+    "grouped": true,
+    "row": false,
+    "content": [{
+      "type": "text",
+      "value": "Natürlich besteht die Kinderrepublik nicht nur aus Karl, Anna und Gerda. Damit ihr mit den beiden dieses Abenteuer erleben könnt, hat Florian eine Website entworfen, die Gerd umgesetzt hat. Anne hat dafür unter dem Einsatz von Felix‘ Sprecherstimme Trickfilme produziert.",
+      "layer": "fore"
+    }, {
+      "type": "text",
+      "value": "Unsere Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können.",
+      "layer": "fore"
+    }]
   }]
 };
 
-var Home = function Home(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__["ChapterComponent"], Object.assign({}, home));
+var Home = function Home() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_1__["Chapter"], Object.assign({}, home));
 };
 
 
@@ -84,16 +91,19 @@ var Home = function Home(props) {
 /*!***********************************************************************************!*\
   !*** /Users/gerdmueller/Development/demokratieerleben2020/dist/libs/ui/ui.esm.js ***!
   \***********************************************************************************/
-/*! exports provided: AppContext, ChapterComponent, Decission, Footer, Image, Nav, Redirect, Scrollicon, Smokingpit, Text, Title, Ui, Video */
+/*! exports provided: AppContext, Chapter, Decission, Footer, Group, Header, Image, Info, Nav, Redirect, Scrollicon, Smokingpit, Text, Title, Ui, Video */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppContext", function() { return AppContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChapterComponent", function() { return ChapterComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Chapter", function() { return Chapter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Decission", function() { return Decission; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return Footer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Group", function() { return Group; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Image", function() { return Image; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Info", function() { return Info; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nav", function() { return Nav; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return Redirect; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollicon", function() { return Scrollicon; });
@@ -107,11 +117,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gerdesque/data */ "../../../dist/libs/data/data.esm.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "../../../node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-is */ "../../../node_modules/react-is/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dom */ "../../../node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "../../../node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "../../../node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 
@@ -119,1190 +129,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Redirect = function Redirect(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: 'button',
-    className: 'link-button redirect'
-  }, props.value);
+var Title = function Title(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.text));
 };
 
 var Scrollicon = function Scrollicon(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'icon-scroll'
   });
-};
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-
-  try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (typeof call === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = _isNativeReflectConstruct();
-
-  return function () {
-    var Super = _getPrototypeOf(Derived),
-        result;
-
-    if (hasNativeReflectConstruct) {
-      var NewTarget = _getPrototypeOf(this).constructor;
-
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-
-    return _possibleConstructorReturn(this, result);
-  };
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
-}
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
-}
-
-function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-var Puzzle = /*#__PURE__*/function (_Component) {
-  _inherits(Puzzle, _Component);
-
-  var _super = _createSuper(Puzzle);
-
-  function Puzzle() {
-    var _this;
-
-    _classCallCheck(this, Puzzle);
-
-    _this = _super.apply(this, arguments);
-    _this.state = {
-      pieces: [],
-      shuffled: [],
-      solved: []
-    };
-    return _this;
-  }
-
-  _createClass(Puzzle, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var pieces = _toConsumableArray(Array(16)).map(function (_, i) {
-        return {
-          img: "daheim_puzzle_".concat(("0" + (i + 1)).substr(-2), ".webp"),
-          order: i,
-          board: "shuffled"
-        };
-      });
-
-      this.setState({
-        pieces: pieces,
-        shuffled: this.shufflePieces(pieces),
-        solved: _toConsumableArray(Array(16))
-      });
-    }
-  }, {
-    key: "handleDrop",
-    value: function handleDrop(e, index, targetName) {
-      var _this$setState;
-
-      e.preventDefault();
-      var target = this.state[targetName];
-      if (target[index]) return;
-      var pieceOrder = e.dataTransfer.getData("text");
-      var pieceData = this.state.pieces.find(function (p) {
-        return p.order === +pieceOrder;
-      });
-      var origin = this.state[pieceData.board];
-      if (targetName === pieceData.board) target = origin;
-      origin[origin.indexOf(pieceData)] = undefined;
-      target[index] = pieceData;
-      pieceData.board = targetName;
-      this.setState((_this$setState = {}, _defineProperty(_this$setState, pieceData.board, origin), _defineProperty(_this$setState, targetName, target), _this$setState));
-    }
-  }, {
-    key: "handleDragStart",
-    value: function handleDragStart(e, order) {
-      var dt = e.dataTransfer;
-      dt.setData("text/plain", order);
-      dt.effectAllowed = "move";
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: 'puzzle'
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: 'puzzle__shuffled-board'
-      }, this.state.shuffled.map(function (piece, i) {
-        return _this2.renderPieceContainer(piece, i, "shuffled");
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-        className: 'puzzle__solved-board',
-        style: {
-          backgroundImage: "url(./assets/daheim_puzzle.webp)"
-        }
-      }, this.state.solved.map(function (piece, i) {
-        return _this2.renderPieceContainer(piece, i, "solved");
-      })));
-    }
-  }, {
-    key: "renderPieceContainer",
-    value: function renderPieceContainer(piece, index, boardName) {
-      var _this3 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        key: index,
-        onDragOver: function onDragOver(e) {
-          return e.preventDefault();
-        },
-        onDrop: function onDrop(e) {
-          return _this3.handleDrop(e, index, boardName);
-        }
-      }, piece && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        draggable: true,
-        alt: "",
-        onDragStart: function onDragStart(e) {
-          return _this3.handleDragStart(e, piece.order);
-        },
-        src: "./assets/".concat(piece.img)
-      }));
-    }
-  }, {
-    key: "shufflePieces",
-    value: function shufflePieces(pieces) {
-      var shuffled = _toConsumableArray(pieces);
-
-      for (var i = shuffled.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var _ref = [shuffled[j], shuffled[i]];
-        shuffled[i] = _ref[0];
-        shuffled[j] = _ref[1];
-      }
-
-      return shuffled;
-    }
-  }]);
-
-  return Puzzle;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-var AppContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])([]);
-
-var Image = function Image(props) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
-      _useContext2 = _slicedToArray(_useContext, 2),
-      character = _useContext2[0],
-      setCharacter = _useContext2[1];
-
-  var chooseCharacter = function chooseCharacter() {
-    setCharacter(props.title);
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
-    className: "chapter_picture ".concat(props.width),
-    onClick: function onClick() {
-      return chooseCharacter();
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "./assets/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX"],
-    type: 'image/webp'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
-    type: 'image/png'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    draggable: "false",
-    src: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
-    alt: props.value
-  })); // <button type='button' className='link-button' key={avatar} onMouseOut={() => this.setState({ isHover: false })} onMouseOver={() => this.setState({ isHover: avatar })} onClick={() => this.setState({ avatar: avatar })}>{avatar}</button>)}
-};
-
-var Smokingpit = function Smokingpit(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'smokingPit'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-    value: 'daheim_arbeiterschaft'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'smoke'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's0'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's1'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's2'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's3'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's4'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's5'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's6'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's7'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's8'
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: 's9'
-  })));
-};
-
-var Decission = function Decission(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'box'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value), "!");
-};
-
-var Video = function Video(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      isPlaying = _useState2[0],
-      setPlaying = _useState2[1];
-
-  var playVideo = function playVideo(playing) {
-    setPlaying(playing);
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter_video ".concat(props.width, " ").concat(isPlaying ? 'theater' : '')
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-    controls: true,
-    onPlaying: function onPlaying() {
-      return playVideo(true);
-    },
-    onPause: function onPause() {
-      return playVideo(false);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    type: 'video/mp4',
-    src: "./assets/movies/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["VIDEO_SUFFIX"]
-  }), "Your browser does not support the video tag."));
-};
-
-function unwrapExports(x) {
-  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
-
-function createCommonjsModule(fn, module) {
-  return module = {
-    exports: {}
-  }, fn(module, module.exports), module.exports;
-}
-
-var globals = createCommonjsModule(function (module, exports) {
-  function insertRule(e) {
-    try {
-      return sheet.insertRule(e, sheet.cssRules.length);
-    } catch (e) {
-      console.warn("react-reveal - animation failed");
-    }
-  }
-
-  function cascade(e, n, t, o, r) {
-    var s = Math.log(o),
-        i = Math.log(r),
-        a = (i - s) / (t - n);
-    return Math.exp(s + a * (e - n));
-  }
-
-  function animation(e) {
-    if (!sheet) return "";
-    var n = "@keyframes " + (name + counter) + "{" + e + "}",
-        t = effectMap[e];
-    return t ? "" + name + t : (sheet.insertRule(n, sheet.cssRules.length), effectMap[e] = counter, "" + name + counter++);
-  }
-
-  function hideAll() {
-    globalHide || (exports.globalHide = globalHide = !0, window.removeEventListener("scroll", hideAll, !0), insertRule("." + namespace + " { opacity: 0; }"), window.removeEventListener("orientationchange", hideAll, !0), window.document.removeEventListener("visibilitychange", hideAll));
-  }
-
-  function config(e) {
-    var n = e.ssrFadeout;
-    exports.fadeOutEnabled = fadeOutEnabled = n;
-  }
-
-  Object.defineProperty(exports, "__esModule", {
-    value: !0
-  }), exports.insertRule = insertRule, exports.cascade = cascade, exports.animation = animation, exports.hideAll = hideAll, exports.default = config;
-
-  var namespace = exports.namespace = "react-reveal",
-      defaults = exports.defaults = {
-    duration: 1e3,
-    delay: 0,
-    count: 1
-  },
-      ssr = exports.ssr = !0,
-      observerMode = exports.observerMode = !1,
-      raf = exports.raf = function (e) {
-    return window.setTimeout(e, 66);
-  },
-      disableSsr = exports.disableSsr = function () {
-    return exports.ssr = ssr = !1;
-  },
-      fadeOutEnabled = exports.fadeOutEnabled = !1,
-      ssrFadeout = exports.ssrFadeout = function () {
-    var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    return exports.fadeOutEnabled = fadeOutEnabled = e;
-  },
-      globalHide = exports.globalHide = !1,
-      ie10 = exports.ie10 = !1,
-      collapseend = exports.collapseend = void 0,
-      counter = 1,
-      effectMap = {},
-      sheet = !1,
-      name = namespace + "-" + Math.floor(1e15 * Math.random()) + "-";
-
-  if ("undefined" != typeof window && "nodejs" !== window.name && window.document && "undefined" != typeof navigator) {
-    exports.observerMode = observerMode = "IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype && /\{\s*\[native code\]\s*\}/.test("" + IntersectionObserver), exports.raf = raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || raf, exports.ssr = ssr = window.document.querySelectorAll("div[data-reactroot]").length > 0, -1 !== navigator.appVersion.indexOf("MSIE 10") && (exports.ie10 = ie10 = !0), ssr && "performance" in window && "timing" in window.performance && "domContentLoadedEventEnd" in window.performance.timing && window.performance.timing.domLoading && Date.now() - window.performance.timing.domLoading < 300 && (exports.ssr = ssr = !1), ssr && window.setTimeout(disableSsr, 1500), observerMode || (exports.collapseend = collapseend = document.createEvent("Event"), collapseend.initEvent("collapseend", !0, !0));
-    var element = document.createElement("style");
-    document.head.appendChild(element), element.sheet && element.sheet.cssRules && element.sheet.insertRule && (sheet = element.sheet, window.addEventListener("scroll", hideAll, !0), window.addEventListener("orientationchange", hideAll, !0), window.document.addEventListener("visibilitychange", hideAll));
-  }
-});
-unwrapExports(globals);
-var globals_1 = globals.globalHide;
-var globals_2 = globals.fadeOutEnabled;
-var globals_3 = globals.insertRule;
-var globals_4 = globals.cascade;
-var globals_5 = globals.animation;
-var globals_6 = globals.hideAll;
-var globals_7 = globals.namespace;
-var globals_8 = globals.defaults;
-var globals_9 = globals.ssr;
-var globals_10 = globals.observerMode;
-var globals_11 = globals.raf;
-var globals_12 = globals.disableSsr;
-var globals_13 = globals.ssrFadeout;
-var globals_14 = globals.ie10;
-var globals_15 = globals.collapseend;
-var RevealBase_1 = createCommonjsModule(function (module, exports) {
-  function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-      default: e
-    };
-  }
-
-  function _defineProperty(e, t, i) {
-    return t in e ? Object.defineProperty(e, t, {
-      value: i,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
-    }) : e[t] = i, e;
-  }
-
-  function _classCallCheck(e, t) {
-    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
-  }
-
-  function _possibleConstructorReturn(e, t) {
-    if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    return !t || "object" != typeof t && "function" != typeof t ? e : t;
-  }
-
-  function _inherits(e, t) {
-    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-    e.prototype = Object.create(t && t.prototype, {
-      constructor: {
-        value: e,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
-      }
-    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t);
-  }
-
-  Object.defineProperty(exports, "__esModule", {
-    value: !0
-  });
-
-  var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) {
-    return typeof e;
-  } : function (e) {
-    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
-  },
-      _slicedToArray = function () {
-    function e(e, t) {
-      var i = [],
-          s = !0,
-          o = !1,
-          n = void 0;
-
-      try {
-        for (var r, a = e[Symbol.iterator](); !(s = (r = a.next()).done) && (i.push(r.value), !t || i.length !== t); s = !0) {
-          ;
-        }
-      } catch (e) {
-        o = !0, n = e;
-      } finally {
-        try {
-          !s && a.return && a.return();
-        } finally {
-          if (o) throw n;
-        }
-      }
-
-      return i;
-    }
-
-    return function (t, i) {
-      if (Array.isArray(t)) return t;
-      if (Symbol.iterator in Object(t)) return e(t, i);
-      throw new TypeError("Invalid attempt to destructure non-iterable instance");
-    };
-  }(),
-      _extends = Object.assign || function (e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var i = arguments[t];
-
-      for (var s in i) {
-        Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
-      }
-    }
-
-    return e;
-  },
-      _createClass = function () {
-    function e(e, t) {
-      for (var i = 0; i < t.length; i++) {
-        var s = t[i];
-        s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s);
-      }
-    }
-
-    return function (t, i, s) {
-      return i && e(t.prototype, i), s && e(t, s), t;
-    };
-  }(),
-      _react2 = _interopRequireDefault(react__WEBPACK_IMPORTED_MODULE_0___default.a),
-      inOut = (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape)({
-    make: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
-    style: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
-    reverse: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
-  }),
-      propTypes = {
-    collapse: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    collapseEl: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element,
-    cascade: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    wait: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    force: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    disabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    appear: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    enter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    exit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    fraction: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    refProp: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-    onReveal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-    unmountOnExit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    mountOnEnter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    inEffect: inOut.isRequired,
-    outEffect: (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType)([inOut, (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf)([!1])]).isRequired,
-    ssrReveal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    collapseOnly: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    ssrFadeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
-  },
-      defaultProps = {
-    fraction: .2,
-    refProp: "ref"
-  },
-      contextTypes = {
-    transitionGroup: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
-  },
-      RevealBase = function (e) {
-    function t(e, i) {
-      _classCallCheck(this, t);
-
-      var s = _possibleConstructorReturn(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e, i));
-
-      return s.isOn = void 0 === e.when || !!e.when, s.state = {
-        collapse: e.collapse ? t.getInitialCollapseStyle(e) : void 0,
-        style: {
-          opacity: s.isOn && !e.ssrReveal || !e.outEffect ? void 0 : 0
-        }
-      }, s.savedChild = !1, s.isShown = !1, globals.observerMode ? s.handleObserve = s.handleObserve.bind(s) : (s.revealHandler = s.makeHandler(s.reveal), s.resizeHandler = s.makeHandler(s.resize)), s.saveRef = s.saveRef.bind(s), s;
-    }
-
-    return _inherits(t, e), _createClass(t, [{
-      key: "saveRef",
-      value: function value(e) {
-        this.childRef && this.childRef(e), this.props.innerRef && this.props.innerRef(e), this.el !== e && (this.el = e && "offsetHeight" in e ? e : void 0, this.observe(this.props, !0));
-      }
-    }, {
-      key: "invisible",
-      value: function value() {
-        this && this.el && (this.savedChild = !1, this.isShown || (this.setState({
-          hasExited: !0,
-          collapse: this.props.collapse ? _extends({}, this.state.collapse, {
-            visibility: "hidden"
-          }) : null,
-          style: {
-            opacity: 0
-          }
-        }), !globals.observerMode && this.props.collapse && window.document.dispatchEvent(globals.collapseend)));
-      }
-    }, {
-      key: "animationEnd",
-      value: function value(e, t, i) {
-        var s = this,
-            o = i.forever,
-            n = i.count,
-            r = i.delay,
-            a = i.duration;
-
-        if (!o) {
-          var l = function l() {
-            s && s.el && (s.animationEndTimeout = void 0, e.call(s));
-          };
-
-          this.animationEndTimeout = window.setTimeout(l, r + (a + (t ? a : 0) * n));
-        }
-      }
-    }, {
-      key: "getDimensionValue",
-      value: function value() {
-        return this.el.offsetHeight + parseInt(window.getComputedStyle(this.el, null).getPropertyValue("margin-top"), 10) + parseInt(window.getComputedStyle(this.el, null).getPropertyValue("margin-bottom"), 10);
-      }
-    }, {
-      key: "collapse",
-      value: function value(e, t, i) {
-        var s = i.duration + (t.cascade ? i.duration : 0),
-            o = this.isOn ? this.getDimensionValue() : 0,
-            n = void 0,
-            r = void 0;
-        if (t.collapseOnly) n = i.duration / 3, r = i.delay;else {
-          var a = s >> 2,
-              l = a >> 1;
-          n = a, r = i.delay + (this.isOn ? 0 : s - a - l), e.style.animationDuration = s - a + (this.isOn ? l : -l) + "ms", e.style.animationDelay = i.delay + (this.isOn ? a - l : 0) + "ms";
-        }
-        return e.collapse = {
-          height: o,
-          transition: "height " + n + "ms ease " + r + "ms",
-          overflow: t.collapseOnly ? "hidden" : void 0
-        }, e;
-      }
-    }, {
-      key: "animate",
-      value: function value(e) {
-        if (this && this.el && (this.unlisten(), this.isShown !== this.isOn)) {
-          this.isShown = this.isOn;
-          var t = !this.isOn && e.outEffect,
-              i = e[t ? "outEffect" : "inEffect"],
-              s = "style" in i && i.style.animationName || void 0,
-              o = void 0;
-          e.collapseOnly ? o = {
-            hasAppeared: !0,
-            hasExited: !1,
-            style: {
-              opacity: 1
-            }
-          } : ((e.outEffect || this.isOn) && i.make && (s = i.make), o = {
-            hasAppeared: !0,
-            hasExited: !1,
-            collapse: void 0,
-            style: _extends({}, i.style, {
-              animationDuration: i.duration + "ms",
-              animationDelay: i.delay + "ms",
-              animationIterationCount: i.forever ? "infinite" : i.count,
-              opacity: 1,
-              animationName: s
-            }),
-            className: i.className
-          }), this.setState(e.collapse ? this.collapse(o, e, i) : o), t ? (this.savedChild = _react2.default.cloneElement(this.getChild()), this.animationEnd(this.invisible, e.cascade, i)) : this.savedChild = !1, this.onReveal(e);
-        }
-      }
-    }, {
-      key: "onReveal",
-      value: function value(e) {
-        e.onReveal && this.isOn && (this.onRevealTimeout && (this.onRevealTimeout = window.clearTimeout(this.onRevealTimeout)), e.wait ? this.onRevealTimeout = window.setTimeout(e.onReveal, e.wait) : e.onReveal());
-      }
-    }, {
-      key: "componentWillUnmount",
-      value: function value() {
-        this.unlisten(), globals.ssr && (0, globals.disableSsr)();
-      }
-    }, {
-      key: "handleObserve",
-      value: function value(e, t) {
-        _slicedToArray(e, 1)[0].intersectionRatio > 0 && (t.disconnect(), this.observer = null, this.reveal(this.props, !0));
-      }
-    }, {
-      key: "observe",
-      value: function value(e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-
-        if (this.el && globals.observerMode) {
-          if (this.observer) {
-            if (!t) return;
-            this.observer.disconnect();
-          } else if (t) return;
-
-          this.observer = new IntersectionObserver(this.handleObserve, {
-            threshold: e.fraction
-          }), this.observer.observe(this.el);
-        }
-      }
-    }, {
-      key: "reveal",
-      value: function value(e) {
-        var t = this,
-            i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        globals.globalHide || (0, globals.hideAll)(), this && this.el && (e || (e = this.props), globals.ssr && (0, globals.disableSsr)(), this.isOn && this.isShown && void 0 !== e.spy ? (this.isShown = !1, this.setState({
-          style: {}
-        }), window.setTimeout(function () {
-          return t.reveal(e);
-        }, 200)) : i || this.inViewport(e) || e.force ? this.animate(e) : globals.observerMode ? this.observe(e) : this.listen());
-      }
-    }, {
-      key: "componentDidMount",
-      value: function value() {
-        var e = this;
-
-        if (this.el && !this.props.disabled) {
-          this.props.collapseOnly || ("make" in this.props.inEffect && this.props.inEffect.make(!1, this.props), void 0 !== this.props.when && this.props.outEffect && "make" in this.props.outEffect && this.props.outEffect.make(!0, this.props));
-          var i = this.context.transitionGroup,
-              s = i && !i.isMounting ? !("enter" in this.props && !1 === this.props.enter) : this.props.appear;
-          return this.isOn && ((void 0 !== this.props.when || void 0 !== this.props.spy) && !s || globals.ssr && !globals.fadeOutEnabled && !this.props.ssrFadeout && this.props.outEffect && !this.props.ssrReveal && t.getTop(this.el) < window.pageYOffset + window.innerHeight) ? (this.isShown = !0, this.setState({
-            hasAppeared: !0,
-            collapse: this.props.collapse ? {
-              height: this.getDimensionValue()
-            } : this.state.collapse,
-            style: {
-              opacity: 1
-            }
-          }), void this.onReveal(this.props)) : globals.ssr && (globals.fadeOutEnabled || this.props.ssrFadeout) && this.props.outEffect && t.getTop(this.el) < window.pageYOffset + window.innerHeight ? (this.setState({
-            style: {
-              opacity: 0,
-              transition: "opacity 1000ms 1000ms"
-            }
-          }), void window.setTimeout(function () {
-            return e.reveal(e.props, !0);
-          }, 2e3)) : void (this.isOn && (this.props.force ? this.animate(this.props) : this.reveal(this.props)));
-        }
-      }
-    }, {
-      key: "cascade",
-      value: function value(e) {
-        var t = this,
-            i = void 0;
-        i = "string" == typeof e ? e.split("").map(function (e, t) {
-          return _react2.default.createElement("span", {
-            key: t,
-            style: {
-              display: "inline-block",
-              whiteSpace: "pre"
-            }
-          }, e);
-        }) : _react2.default.Children.toArray(e);
-        var s = this.props[this.isOn || !this.props.outEffect ? "inEffect" : "outEffect"],
-            o = s.duration,
-            n = s.reverse,
-            r = i.length,
-            a = 2 * o;
-        this.props.collapse && (a = parseInt(this.state.style.animationDuration, 10), o = a / 2);
-        var l = n ? r : 0;
-        return i = i.map(function (e) {
-          return "object" === (void 0 === e ? "undefined" : _typeof(e)) && e ? _react2.default.cloneElement(e, {
-            style: _extends({}, e.props.style, t.state.style, {
-              animationDuration: Math.round((0, globals.cascade)(n ? l-- : l++, 0, r, o, a)) + "ms"
-            })
-          }) : e;
-        });
-      }
-    }, {
-      key: "componentWillReceiveProps",
-      value: function value(e) {
-        if (void 0 !== e.when && (this.isOn = !!e.when), e.fraction !== this.props.fraction && this.observe(e, !0), !this.isOn && e.onExited && "exit" in e && !1 === e.exit) return void e.onExited();
-        e.disabled || (e.collapse && !this.props.collapse && (this.setState({
-          style: {},
-          collapse: t.getInitialCollapseStyle(e)
-        }), this.isShown = !1), e.when === this.props.when && e.spy === this.props.spy || this.reveal(e), this.onRevealTimeout && !this.isOn && (this.onRevealTimeout = window.clearTimeout(this.onRevealTimeout)));
-      }
-    }, {
-      key: "getChild",
-      value: function value() {
-        if (this.savedChild && !this.props.disabled) return this.savedChild;
-
-        if ("object" === _typeof(this.props.children)) {
-          var e = _react2.default.Children.only(this.props.children);
-
-          return "type" in e && "string" == typeof e.type || "ref" !== this.props.refProp ? e : _react2.default.createElement("div", null, e);
-        }
-
-        return _react2.default.createElement("div", null, this.props.children);
-      }
-    }, {
-      key: "render",
-      value: function value() {
-        var e = void 0;
-        e = this.state.hasAppeared ? !this.props.unmountOnExit || !this.state.hasExited || this.isOn : !this.props.mountOnEnter || this.isOn;
-        var t = this.getChild();
-        "function" == typeof t.ref && (this.childRef = t.ref);
-        var i = !1,
-            s = t.props,
-            o = s.style,
-            n = s.className,
-            r = s.children,
-            a = this.props.disabled ? n : (this.props.outEffect ? globals.namespace : "") + (this.state.className ? " " + this.state.className : "") + (n ? " " + n : "") || void 0,
-            l = void 0;
-        "function" == typeof this.state.style.animationName && (this.state.style.animationName = this.state.style.animationName(!this.isOn, this.props)), this.props.cascade && !this.props.disabled && r && this.state.style.animationName ? (i = this.cascade(r), l = _extends({}, o, {
-          opacity: 1
-        })) : l = this.props.disabled ? o : _extends({}, o, this.state.style);
-
-        var p = _extends({}, this.props.props, _defineProperty({
-          className: a,
-          style: l
-        }, this.props.refProp, this.saveRef)),
-            h = _react2.default.cloneElement(t, p, e ? i || r : void 0);
-
-        return void 0 !== this.props.collapse ? this.props.collapseEl ? _react2.default.cloneElement(this.props.collapseEl, {
-          style: _extends({}, this.props.collapseEl.style, this.props.disabled ? void 0 : this.state.collapse),
-          children: h
-        }) : _react2.default.createElement("div", {
-          style: this.props.disabled ? void 0 : this.state.collapse,
-          children: h
-        }) : h;
-      }
-    }, {
-      key: "makeHandler",
-      value: function value(e) {
-        var t = this,
-            i = function i() {
-          e.call(t, t.props), t.ticking = !1;
-        };
-
-        return function () {
-          t.ticking || ((0, globals.raf)(i), t.ticking = !0);
-        };
-      }
-    }, {
-      key: "inViewport",
-      value: function value(e) {
-        if (!this.el || window.document.hidden) return !1;
-        var i = this.el.offsetHeight,
-            s = window.pageYOffset - t.getTop(this.el),
-            o = Math.min(i, window.innerHeight) * (globals.globalHide ? e.fraction : 0);
-        return s > o - window.innerHeight && s < i - o;
-      }
-    }, {
-      key: "resize",
-      value: function value(e) {
-        this && this.el && this.isOn && this.inViewport(e) && (this.unlisten(), this.isShown = this.isOn, this.setState({
-          hasExited: !this.isOn,
-          hasAppeared: !0,
-          collapse: void 0,
-          style: {
-            opacity: this.isOn || !e.outEffect ? 1 : 0
-          }
-        }), this.onReveal(e));
-      }
-    }, {
-      key: "listen",
-      value: function value() {
-        globals.observerMode || this.isListener || (this.isListener = !0, window.addEventListener("scroll", this.revealHandler, {
-          passive: !0
-        }), window.addEventListener("orientationchange", this.revealHandler, {
-          passive: !0
-        }), window.document.addEventListener("visibilitychange", this.revealHandler, {
-          passive: !0
-        }), window.document.addEventListener("collapseend", this.revealHandler, {
-          passive: !0
-        }), window.addEventListener("resize", this.resizeHandler, {
-          passive: !0
-        }));
-      }
-    }, {
-      key: "unlisten",
-      value: function value() {
-        !globals.observerMode && this.isListener && (window.removeEventListener("scroll", this.revealHandler, {
-          passive: !0
-        }), window.removeEventListener("orientationchange", this.revealHandler, {
-          passive: !0
-        }), window.document.removeEventListener("visibilitychange", this.revealHandler, {
-          passive: !0
-        }), window.document.removeEventListener("collapseend", this.revealHandler, {
-          passive: !0
-        }), window.removeEventListener("resize", this.resizeHandler, {
-          passive: !0
-        }), this.isListener = !1), this.onRevealTimeout && (this.onRevealTimeout = window.clearTimeout(this.onRevealTimeout)), this.animationEndTimeout && (this.animationEndTimeout = window.clearTimeout(this.animationEndTimeout));
-      }
-    }], [{
-      key: "getInitialCollapseStyle",
-      value: function value(e) {
-        return {
-          height: 0,
-          visibility: e.when ? void 0 : "hidden"
-        };
-      }
-    }, {
-      key: "getTop",
-      value: function value(e) {
-        for (; void 0 === e.offsetTop;) {
-          e = e.parentNode;
-        }
-
-        for (var t = e.offsetTop; e.offsetParent; t += e.offsetTop) {
-          e = e.offsetParent;
-        }
-
-        return t;
-      }
-    }]), t;
-  }(_react2.default.Component);
-
-  RevealBase.propTypes = propTypes, RevealBase.defaultProps = defaultProps, RevealBase.contextTypes = contextTypes, RevealBase.displayName = "RevealBase", exports.default = RevealBase, module.exports = exports.default;
-});
-unwrapExports(RevealBase_1);
-var wrap_1 = createCommonjsModule(function (module, exports) {
-  function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-      default: e
-    };
-  }
-
-  function wrap(e, t, a, r) {
-    return "in" in e && (e.when = e.in), _react2.default.Children.count(r) < 2 ? _react2.default.createElement(_RevealBase2.default, _extends({}, e, {
-      inEffect: t,
-      outEffect: a,
-      children: r
-    })) : (r = _react2.default.Children.map(r, function (r) {
-      return _react2.default.createElement(_RevealBase2.default, _extends({}, e, {
-        inEffect: t,
-        outEffect: a,
-        children: r
-      }));
-    }), "Fragment" in _react2.default ? _react2.default.createElement(_react2.default.Fragment, null, r) : _react2.default.createElement("span", null, r));
-  }
-
-  Object.defineProperty(exports, "__esModule", {
-    value: !0
-  });
-
-  var _extends = Object.assign || function (e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var a = arguments[t];
-
-      for (var r in a) {
-        Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r]);
-      }
-    }
-
-    return e;
-  };
-
-  exports.default = wrap;
-
-  var _react2 = _interopRequireDefault(react__WEBPACK_IMPORTED_MODULE_0___default.a),
-      _RevealBase2 = _interopRequireDefault(RevealBase_1);
-
-  module.exports = exports.default;
-});
-unwrapExports(wrap_1);
-var Fade_1 = createCommonjsModule(function (module, exports) {
-  function _interopRequireDefault(o) {
-    return o && o.__esModule ? o : {
-      default: o
-    };
-  }
-
-  function _objectWithoutProperties(o, e) {
-    var r = {};
-
-    for (var t in o) {
-      e.indexOf(t) >= 0 || Object.prototype.hasOwnProperty.call(o, t) && (r[t] = o[t]);
-    }
-
-    return r;
-  }
-
-  function make(o, e) {
-    var r = e.distance,
-        t = e.left,
-        p = e.right,
-        a = e.up,
-        l = e.down,
-        i = e.top,
-        u = e.bottom,
-        n = e.big,
-        s = e.mirror,
-        d = e.opposite,
-        _ = (r ? r.toString() : 0) + ((t ? 1 : 0) | (p ? 2 : 0) | (i || l ? 4 : 0) | (u || a ? 8 : 0) | (s ? 16 : 0) | (d ? 32 : 0) | (o ? 64 : 0) | (n ? 128 : 0));
-
-    if (lookup.hasOwnProperty(_)) return lookup[_];
-    var f = t || p || a || l || i || u,
-        y = void 0,
-        b = void 0;
-
-    if (f) {
-      if (!s != !(o && d)) {
-        var v = [p, t, u, i, l, a];
-        t = v[0], p = v[1], i = v[2], u = v[3], a = v[4], l = v[5];
-      }
-
-      var c = r || (n ? "2000px" : "100%");
-      y = t ? "-" + c : p ? c : "0", b = l || i ? "-" + c : a || u ? c : "0";
-    }
-
-    return lookup[_] = (0, globals.animation)((o ? "to" : "from") + " {opacity: 0;" + (f ? " transform: translate3d(" + y + ", " + b + ", 0);" : "") + "}\n     " + (o ? "from" : "to") + " {opacity: 1;transform: none;} "), lookup[_];
-  }
-
-  function Fade() {
-    var o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
-        e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-        r = o.children,
-        t = (o.out, o.forever),
-        p = o.timeout,
-        a = o.duration,
-        l = void 0 === a ? globals.defaults.duration : a,
-        i = o.delay,
-        u = void 0 === i ? globals.defaults.delay : i,
-        n = o.count,
-        s = void 0 === n ? globals.defaults.count : n,
-        d = _objectWithoutProperties(o, ["children", "out", "forever", "timeout", "duration", "delay", "count"]),
-        _ = {
-      make: make,
-      duration: void 0 === p ? l : p,
-      delay: u,
-      forever: t,
-      count: s,
-      style: {
-        animationFillMode: "both"
-      },
-      reverse: d.left
-    };
-
-    return e ? (0, _wrap2.default)(d, _, _, r) : _;
-  }
-
-  Object.defineProperty(exports, "__esModule", {
-    value: !0
-  });
-
-  var _wrap2 = _interopRequireDefault(wrap_1),
-      propTypes = {
-    out: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    left: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    right: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    top: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    bottom: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    big: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    mirror: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    opposite: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    distance: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
-  },
-      lookup = {};
-
-  Fade.propTypes = propTypes, exports.default = Fade, module.exports = exports.default;
-});
-var Fade = unwrapExports(Fade_1);
-
-var Text = function Text(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'box'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fade, {
-    bottom: true,
-    duration: 5000
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value)));
-};
-
-var Footer = function Footer(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Footer"));
-};
-
-var Nav = function Nav(props) {
-  var renderChapterNav = function renderChapterNav() {
-    return props.chapters.map(function (chapter, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: 'navigation--item',
-        key: index
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-        to: "/chapter/".concat(chapter.id)
-      }));
-    });
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "app-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: 'navigation'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: 'navigation--item'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-    exact: true,
-    to: "/"
-  })), renderChapterNav()));
-};
-
-var Title = function Title(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, props.text));
 };
 /* eslint-disable no-use-before-define */
 
@@ -1487,41 +323,6 @@ function getLuminance(color) {
   return Number((0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]).toFixed(3));
 }
 /**
- * Darken or lighten a color, depending on its luminance.
- * Light colors are darkened, dark colors are lightened.
- *
- * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @param {number} coefficient=0.15 - multiplier in the range 0 - 1
- * @returns {string} A CSS color string. Hex input values are returned as rgb
- */
-
-
-function emphasize(color) {
-  var coefficient = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0.15;
-  return getLuminance(color) > 0.5 ? darken(color, coefficient) : lighten(color, coefficient);
-}
-/**
- * Set the absolute transparency of a color.
- * Any existing alpha values are overwritten.
- *
- * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @param {number} value - value to set the alpha channel to in the range 0 -1
- * @returns {string} A CSS color string. Hex input values are returned as rgb
- */
-
-
-function fade(color, value) {
-  color = decomposeColor(color);
-  value = clamp(value);
-
-  if (color.type === 'rgb' || color.type === 'hsl') {
-    color.type += 'a';
-  }
-
-  color.values[3] = value;
-  return recomposeColor(color);
-}
-/**
  * Darkens a color.
  *
  * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
@@ -1568,7 +369,7 @@ function lighten(color, coefficient) {
   return recomposeColor(color);
 }
 
-function _defineProperty$1(obj, key, value) {
+function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -1617,14 +418,6 @@ function _objectWithoutProperties(source, excluded) {
   }
 
   return target;
-}
-
-function chainPropTypes(propType1, propType2) {
-  if (false) {}
-
-  return function validate() {
-    return propType1.apply(void 0, arguments) || propType2.apply(void 0, arguments);
-  };
 }
 
 function _extends() {
@@ -1687,56 +480,18 @@ function deepmerge(target, source) {
   }
 
   return output;
-}
-
-function isClassComponent(elementType) {
-  // elementType.prototype?.isReactComponent
-  var _elementType$prototyp = elementType.prototype,
-      prototype = _elementType$prototyp === void 0 ? {} : _elementType$prototyp;
-  return Boolean(prototype.isReactComponent);
-}
-
-function elementTypeAcceptingRef(props, propName, componentName, location, propFullName) {
-  var propValue = props[propName];
-  var safePropName = propFullName || propName;
-
-  if (propValue == null) {
-    return null;
-  }
-
-  var warningHint;
-  /**
-   * Blacklisting instead of whitelisting
-   *
-   * Blacklisting will miss some components, such as React.Fragment. Those will at least
-   * trigger a warning in React.
-   * We can't whitelist because there is no safe way to detect React.forwardRef
-   * or class components. "Safe" means there's no public API.
-   *
-   */
-
-  if (typeof propValue === 'function' && !isClassComponent(propValue)) {
-    warningHint = 'Did you accidentally provide a plain function component instead?';
-  }
-
-  if (warningHint !== undefined) {
-    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName, "`. ") + "Expected an element type that can hold a ref. ".concat(warningHint, " ") + 'For more information see https://material-ui.com/r/caveat-with-refs-guide');
-  }
-
-  return null;
-}
-
-var elementTypeAcceptingRef$1 = chainPropTypes(prop_types__WEBPACK_IMPORTED_MODULE_2__["elementType"], elementTypeAcceptingRef); // This module is based on https://github.com/airbnb/prop-types-exact repository.
+} // This module is based on https://github.com/airbnb/prop-types-exact repository.
 // However, in order to reduce the number of dependencies and to remove some extra safe checks
 // the module was forked.
 // Only exported for test purposes.
+
 
 var specialProperty = "exact-prop: \u200B";
 
 function exactProp(propTypes) {
   if (false) {}
 
-  return _extends({}, propTypes, _defineProperty$1({}, specialProperty, function (props) {
+  return _extends({}, propTypes, _defineProperty({}, specialProperty, function (props) {
     var unsupportedProps = Object.keys(props).filter(function (prop) {
       return !propTypes.hasOwnProperty(prop);
     });
@@ -1800,10 +555,10 @@ function getDisplayName(Component) {
 
   if (_typeof(Component) === 'object') {
     switch (Component.$$typeof) {
-      case react_is__WEBPACK_IMPORTED_MODULE_4__["ForwardRef"]:
+      case react_is__WEBPACK_IMPORTED_MODULE_3__["ForwardRef"]:
         return getWrappedName(Component, Component.render, 'ForwardRef');
 
-      case react_is__WEBPACK_IMPORTED_MODULE_4__["Memo"]:
+      case react_is__WEBPACK_IMPORTED_MODULE_3__["Memo"]:
         return getWrappedName(Component, Component.type, 'memo');
 
       default:
@@ -1812,10 +567,9 @@ function getDisplayName(Component) {
   }
 
   return undefined;
-}
-
-var refType = prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object]); // Sorted ASC by size. That's important.
+} // Sorted ASC by size. That's important.
 // It can't be configured as it's used statically for propTypes.
+
 
 var keys = ['xs', 'sm', 'md', 'lg', 'xl']; // Keep in mind that @media is inclusive by the CSS specification.
 
@@ -1906,16 +660,16 @@ function createMixins(breakpoints, spacing, mixins) {
       return _extends({
         paddingLeft: spacing(2),
         paddingRight: spacing(2)
-      }, styles, _defineProperty$1({}, breakpoints.up('sm'), _extends({
+      }, styles, _defineProperty({}, breakpoints.up('sm'), _extends({
         paddingLeft: spacing(3),
         paddingRight: spacing(3)
       }, styles[breakpoints.up('sm')])));
     },
     toolbar: (_toolbar = {
       minHeight: 56
-    }, _defineProperty$1(_toolbar, "".concat(breakpoints.up('xs'), " and (orientation: landscape)"), {
+    }, _defineProperty(_toolbar, "".concat(breakpoints.up('xs'), " and (orientation: landscape)"), {
       minHeight: 48
-    }), _defineProperty$1(_toolbar, breakpoints.up('sm'), {
+    }), _defineProperty(_toolbar, breakpoints.up('sm'), {
       minHeight: 64
     }), _toolbar)
   }, mixins);
@@ -2363,7 +1117,7 @@ var shape = {
 };
 var responsivePropType =  true ? prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array]) : undefined;
 
-function _arrayLikeToArray$1(arr, len) {
+function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -2373,29 +1127,29 @@ function _arrayLikeToArray$1(arr, len) {
   return arr2;
 }
 
-function _arrayWithoutHoles$1(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$1(arr);
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
 }
 
-function _iterableToArray$1(iter) {
+function _iterableToArray(iter) {
   if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
 }
 
-function _unsupportedIterableToArray$1(o, minLen) {
+function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(n);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
 }
 
-function _nonIterableSpread$1() {
+function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _toConsumableArray$1(arr) {
-  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$1(arr) || _nonIterableSpread$1();
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
 
 function merge(acc, item) {
@@ -2454,11 +1208,11 @@ function handleBreakpoints(props, propValue, styleFromPropValue) {
   return output;
 }
 
-function _arrayWithHoles$1(arr) {
+function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
 }
 
-function _iterableToArrayLimit$1(arr, i) {
+function _iterableToArrayLimit(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
@@ -2485,12 +1239,12 @@ function _iterableToArrayLimit$1(arr, i) {
   return _arr;
 }
 
-function _nonIterableRest$1() {
+function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _slicedToArray$1(arr, i) {
-  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
 
 function memoize(fn) {
@@ -2536,7 +1290,7 @@ var getCssProperties = memoize(function (prop) {
   }
 
   var _prop$split = prop.split(''),
-      _prop$split2 = _slicedToArray$1(_prop$split, 2),
+      _prop$split2 = _slicedToArray(_prop$split, 2),
       a = _prop$split2[0],
       b = _prop$split2[1];
 
@@ -2873,7 +1627,7 @@ function createMuiTheme() {
         } else if (pseudoClasses.indexOf(key) !== -1 && Object.keys(child).length > 0) {
           if (true) {
             console.error(["Material-UI: the `".concat(parentKey, "` component increases ") + "the CSS specificity of the `".concat(key, "` internal state."), 'You can not override it like this: ', JSON.stringify(node, null, 2), '', 'Instead, you need to use the $ruleName syntax:', JSON.stringify({
-              root: _defineProperty$1({}, "&$".concat(key), child)
+              root: _defineProperty({}, "&$".concat(key), child)
             }, null, 2), '', 'https://material-ui.com/r/pseudo-classes-guide'].join('\n'));
           } // Remove the style to prevent global conflicts.
 
@@ -2889,389 +1643,20 @@ function createMuiTheme() {
   return muiTheme;
 }
 
-function toVal(mix) {
-  var k,
-      y,
-      str = '';
-
-  if (mix) {
-    if (typeof mix === 'object') {
-      if (Array.isArray(mix)) {
-        for (k = 0; k < mix.length; k++) {
-          if (mix[k] && (y = toVal(mix[k]))) {
-            str && (str += ' ');
-            str += y;
-          }
-        }
-      } else {
-        for (k in mix) {
-          if (mix[k] && (y = toVal(k))) {
-            str && (str += ' ');
-            str += y;
-          }
-        }
-      }
-    } else if (typeof mix !== 'boolean' && !mix.call) {
-      str && (str += ' ');
-      str += mix;
-    }
-  }
-
-  return str;
-}
-
-function clsx() {
-  var i = 0,
-      x,
-      str = '';
-
-  while (i < arguments.length) {
-    if (x = toVal(arguments[i++])) {
-      str && (str += ' ');
-      str += x;
-    }
-  }
-
-  return str;
-}
-
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
   subClass.prototype.constructor = subClass;
   subClass.__proto__ = superClass;
 }
 
-var TransitionGroupContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null);
-
-function _assertThisInitialized$1(self) {
+function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
 
   return self;
 }
-/**
- * Given `this.props.children`, return an object mapping key to child.
- *
- * @param {*} children `this.props.children`
- * @return {object} Mapping of key to child
- */
 
-
-function getChildMapping(children, mapFn) {
-  var mapper = function mapper(child) {
-    return mapFn && Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(child) ? mapFn(child) : child;
-  };
-
-  var result = Object.create(null);
-  if (children) react__WEBPACK_IMPORTED_MODULE_0__["Children"].map(children, function (c) {
-    return c;
-  }).forEach(function (child) {
-    // run the map function here instead so that the key is the computed one
-    result[child.key] = mapper(child);
-  });
-  return result;
-}
-/**
- * When you're adding or removing children some may be added or removed in the
- * same render pass. We want to show *both* since we want to simultaneously
- * animate elements in and out. This function takes a previous set of keys
- * and a new set of keys and merges them with its best guess of the correct
- * ordering. In the future we may expose some of the utilities in
- * ReactMultiChild to make this easy, but for now React itself does not
- * directly have this concept of the union of prevChildren and nextChildren
- * so we implement it here.
- *
- * @param {object} prev prev children as returned from
- * `ReactTransitionChildMapping.getChildMapping()`.
- * @param {object} next next children as returned from
- * `ReactTransitionChildMapping.getChildMapping()`.
- * @return {object} a key set that contains all keys in `prev` and all keys
- * in `next` in a reasonable order.
- */
-
-
-function mergeChildMappings(prev, next) {
-  prev = prev || {};
-  next = next || {};
-
-  function getValueForKey(key) {
-    return key in next ? next[key] : prev[key];
-  } // For each key of `next`, the list of keys to insert before that key in
-  // the combined list
-
-
-  var nextKeysPending = Object.create(null);
-  var pendingKeys = [];
-
-  for (var prevKey in prev) {
-    if (prevKey in next) {
-      if (pendingKeys.length) {
-        nextKeysPending[prevKey] = pendingKeys;
-        pendingKeys = [];
-      }
-    } else {
-      pendingKeys.push(prevKey);
-    }
-  }
-
-  var i;
-  var childMapping = {};
-
-  for (var nextKey in next) {
-    if (nextKeysPending[nextKey]) {
-      for (i = 0; i < nextKeysPending[nextKey].length; i++) {
-        var pendingNextKey = nextKeysPending[nextKey][i];
-        childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
-      }
-    }
-
-    childMapping[nextKey] = getValueForKey(nextKey);
-  } // Finally, add the keys which didn't appear before any key in `next`
-
-
-  for (i = 0; i < pendingKeys.length; i++) {
-    childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
-  }
-
-  return childMapping;
-}
-
-function getProp(child, prop, props) {
-  return props[prop] != null ? props[prop] : child.props[prop];
-}
-
-function getInitialChildMapping(props, onExited) {
-  return getChildMapping(props.children, function (child) {
-    return Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(child, {
-      onExited: onExited.bind(null, child),
-      in: true,
-      appear: getProp(child, 'appear', props),
-      enter: getProp(child, 'enter', props),
-      exit: getProp(child, 'exit', props)
-    });
-  });
-}
-
-function getNextChildMapping(nextProps, prevChildMapping, onExited) {
-  var nextChildMapping = getChildMapping(nextProps.children);
-  var children = mergeChildMappings(prevChildMapping, nextChildMapping);
-  Object.keys(children).forEach(function (key) {
-    var child = children[key];
-    if (!Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(child)) return;
-    var hasPrev = (key in prevChildMapping);
-    var hasNext = (key in nextChildMapping);
-    var prevChild = prevChildMapping[key];
-    var isLeaving = Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(prevChild) && !prevChild.props.in; // item is new (entering)
-
-    if (hasNext && (!hasPrev || isLeaving)) {
-      // console.log('entering', key)
-      children[key] = Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(child, {
-        onExited: onExited.bind(null, child),
-        in: true,
-        exit: getProp(child, 'exit', nextProps),
-        enter: getProp(child, 'enter', nextProps)
-      });
-    } else if (!hasNext && hasPrev && !isLeaving) {
-      // item is old (exiting)
-      // console.log('leaving', key)
-      children[key] = Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(child, {
-        in: false
-      });
-    } else if (hasNext && hasPrev && Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(prevChild)) {
-      // item hasn't changed transition states
-      // copy over the last transition props;
-      // console.log('unchanged', key)
-      children[key] = Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(child, {
-        onExited: onExited.bind(null, child),
-        in: prevChild.props.in,
-        exit: getProp(child, 'exit', nextProps),
-        enter: getProp(child, 'enter', nextProps)
-      });
-    }
-  });
-  return children;
-}
-
-var values$1 = Object.values || function (obj) {
-  return Object.keys(obj).map(function (k) {
-    return obj[k];
-  });
-};
-
-var defaultProps = {
-  component: 'div',
-  childFactory: function childFactory(child) {
-    return child;
-  }
-  /**
-   * The `<TransitionGroup>` component manages a set of transition components
-   * (`<Transition>` and `<CSSTransition>`) in a list. Like with the transition
-   * components, `<TransitionGroup>` is a state machine for managing the mounting
-   * and unmounting of components over time.
-   *
-   * Consider the example below. As items are removed or added to the TodoList the
-   * `in` prop is toggled automatically by the `<TransitionGroup>`.
-   *
-   * Note that `<TransitionGroup>`  does not define any animation behavior!
-   * Exactly _how_ a list item animates is up to the individual transition
-   * component. This means you can mix and match animations across different list
-   * items.
-   */
-
-};
-
-var TransitionGroup = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose(TransitionGroup, _React$Component);
-
-  function TransitionGroup(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-
-    var handleExited = _this.handleExited.bind(_assertThisInitialized$1(_assertThisInitialized$1(_this))); // Initial children should all be entering, dependent on appear
-
-
-    _this.state = {
-      contextValue: {
-        isMounting: true
-      },
-      handleExited: handleExited,
-      firstRender: true
-    };
-    return _this;
-  }
-
-  var _proto = TransitionGroup.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.mounted = true;
-    this.setState({
-      contextValue: {
-        isMounting: false
-      }
-    });
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.mounted = false;
-  };
-
-  TransitionGroup.getDerivedStateFromProps = function getDerivedStateFromProps(nextProps, _ref) {
-    var prevChildMapping = _ref.children,
-        handleExited = _ref.handleExited,
-        firstRender = _ref.firstRender;
-    return {
-      children: firstRender ? getInitialChildMapping(nextProps, handleExited) : getNextChildMapping(nextProps, prevChildMapping, handleExited),
-      firstRender: false
-    };
-  };
-
-  _proto.handleExited = function handleExited(child, node) {
-    var currentChildMapping = getChildMapping(this.props.children);
-    if (child.key in currentChildMapping) return;
-
-    if (child.props.onExited) {
-      child.props.onExited(node);
-    }
-
-    if (this.mounted) {
-      this.setState(function (state) {
-        var children = _extends({}, state.children);
-
-        delete children[child.key];
-        return {
-          children: children
-        };
-      });
-    }
-  };
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        Component = _this$props.component,
-        childFactory = _this$props.childFactory,
-        props = _objectWithoutPropertiesLoose(_this$props, ["component", "childFactory"]);
-
-    var contextValue = this.state.contextValue;
-    var children = values$1(this.state.children).map(childFactory);
-    delete props.appear;
-    delete props.enter;
-    delete props.exit;
-
-    if (Component === null) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TransitionGroupContext.Provider, {
-        value: contextValue
-      }, children);
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TransitionGroupContext.Provider, {
-      value: contextValue
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, props, children));
-  };
-
-  return TransitionGroup;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-TransitionGroup.propTypes =  true ? {
-  /**
-   * `<TransitionGroup>` renders a `<div>` by default. You can change this
-   * behavior by providing a `component` prop.
-   * If you use React v16+ and would like to avoid a wrapping `<div>` element
-   * you can pass in `component={null}`. This is useful if the wrapping div
-   * borks your css styles.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.any,
-
-  /**
-   * A set of `<Transition>` components, that are toggled `in` and out as they
-   * leave. the `<TransitionGroup>` will inject specific transition props, so
-   * remember to spread them through if you are wrapping the `<Transition>` as
-   * with our `<Fade>` example.
-   *
-   * While this component is meant for multiple `Transition` or `CSSTransition`
-   * children, sometimes you may want to have a single transition child with
-   * content that you want to be transitioned out and in when you change it
-   * (e.g. routes, images etc.) In that case you can change the `key` prop of
-   * the transition child as you change its content, this will cause
-   * `TransitionGroup` to transition the child out and back in.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
-
-  /**
-   * A convenience prop that enables or disables appear animations
-   * for all children. Note that specifying this will override any defaults set
-   * on individual children Transitions.
-   */
-  appear: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * A convenience prop that enables or disables enter animations
-   * for all children. Note that specifying this will override any defaults set
-   * on individual children Transitions.
-   */
-  enter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * A convenience prop that enables or disables exit animations
-   * for all children. Note that specifying this will override any defaults set
-   * on individual children Transitions.
-   */
-  exit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * You may need to apply reactive updates to a child as it is exiting.
-   * This is generally done by using `cloneElement` however in the case of an exiting
-   * child the element has already been removed and not accessible to the consumer.
-   *
-   * If you do need to update a child as it leaves you can provide a `childFactory`
-   * to wrap every child, even the ones that are leaving.
-   *
-   * @type Function(child: ReactElement) -> ReactElement
-   */
-  childFactory: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func
-} : undefined;
-TransitionGroup.defaultProps = defaultProps;
 var hasSymbol = typeof Symbol === 'function' && Symbol.for;
 var nested = hasSymbol ? Symbol.for('mui.nested') : '__THEME_NESTED__';
 /**
@@ -3338,31 +1723,6 @@ function createGenerateClassName() {
     return "".concat(seedPrefix).concat(suffix);
   };
 }
-/* eslint-disable no-restricted-syntax */
-
-
-function getThemeProps(params) {
-  var theme = params.theme,
-      name = params.name,
-      props = params.props;
-
-  if (!theme || !theme.props || !theme.props[name]) {
-    return props;
-  } // Resolve default props, code borrow from React source.
-  // https://github.com/facebook/react/blob/15a8f031838a553e41c0b66eb1bcf1da8448104d/packages/react/src/ReactElement.js#L221
-
-
-  var defaultProps = theme.props[name];
-  var propName;
-
-  for (propName in defaultProps) {
-    if (props[propName] === undefined) {
-      props[propName] = defaultProps[propName];
-    }
-  }
-
-  return props;
-}
 
 var isProduction = "development" === 'production';
 
@@ -3392,7 +1752,7 @@ var _typeof$1 = typeof Symbol === "function" && typeof Symbol.iterator === "symb
 
 var isBrowser = (typeof window === "undefined" ? "undefined" : _typeof$1(window)) === "object" && (typeof document === "undefined" ? "undefined" : _typeof$1(document)) === 'object' && document.nodeType === 9;
 
-function _defineProperties$1(target, props) {
+function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
     descriptor.enumerable = descriptor.enumerable || false;
@@ -3402,9 +1762,9 @@ function _defineProperties$1(target, props) {
   }
 }
 
-function _createClass$1(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties$1(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties$1(Constructor, staticProps);
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
 }
 
@@ -3653,7 +2013,7 @@ var StyleRule = /*#__PURE__*/function (_BaseStyleRule) {
     if (selector) {
       _this.selectorText = selector;
     } else if (scoped !== false) {
-      _this.id = generateId(_assertThisInitialized$1(_assertThisInitialized$1(_this)), sheet);
+      _this.id = generateId(_assertThisInitialized(_assertThisInitialized(_this)), sheet);
       _this.selectorText = "." + escape(_this.id);
     }
 
@@ -3715,7 +2075,7 @@ var StyleRule = /*#__PURE__*/function (_BaseStyleRule) {
     return toCss(this.selectorText, this.style, opts);
   };
 
-  _createClass$1(StyleRule, [{
+  _createClass(StyleRule, [{
     key: "selector",
     set: function set(selector) {
       if (selector === this.selectorText) return;
@@ -4802,7 +3162,7 @@ var SheetsRegistry = /*#__PURE__*/function () {
     return css;
   };
 
-  _createClass$1(SheetsRegistry, [{
+  _createClass(SheetsRegistry, [{
     key: "index",
 
     /**
@@ -6541,7 +4901,7 @@ var propertyDetectors = plugins$1.filter(function (p) {
 var noPrefill = plugins$1.filter(function (p) {
   return p.noPrefill;
 }).reduce(function (a, p) {
-  a.push.apply(a, _toConsumableArray$1(p.noPrefill));
+  a.push.apply(a, _toConsumableArray(p.noPrefill));
   return a;
 }, []);
 var el;
@@ -7338,617 +5698,8 @@ function makeStyles(stylesOrCreator) {
 
   return useStyles;
 }
-/**
- * Copyright 2015, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
-
-
-var REACT_STATICS = {
-  childContextTypes: true,
-  contextType: true,
-  contextTypes: true,
-  defaultProps: true,
-  displayName: true,
-  getDefaultProps: true,
-  getDerivedStateFromError: true,
-  getDerivedStateFromProps: true,
-  mixins: true,
-  propTypes: true,
-  type: true
-};
-var KNOWN_STATICS = {
-  name: true,
-  length: true,
-  prototype: true,
-  caller: true,
-  callee: true,
-  arguments: true,
-  arity: true
-};
-var FORWARD_REF_STATICS = {
-  '$$typeof': true,
-  render: true,
-  defaultProps: true,
-  displayName: true,
-  propTypes: true
-};
-var MEMO_STATICS = {
-  '$$typeof': true,
-  compare: true,
-  defaultProps: true,
-  displayName: true,
-  propTypes: true,
-  type: true
-};
-var TYPE_STATICS = {};
-TYPE_STATICS[react_is__WEBPACK_IMPORTED_MODULE_4___default.a.ForwardRef] = FORWARD_REF_STATICS;
-TYPE_STATICS[react_is__WEBPACK_IMPORTED_MODULE_4___default.a.Memo] = MEMO_STATICS;
-
-function getStatics(component) {
-  // React v16.11 and below
-  if (react_is__WEBPACK_IMPORTED_MODULE_4___default.a.isMemo(component)) {
-    return MEMO_STATICS;
-  } // React v16.12 and above
-
-
-  return TYPE_STATICS[component['$$typeof']] || REACT_STATICS;
-}
-
-var defineProperty = Object.defineProperty;
-var getOwnPropertyNames = Object.getOwnPropertyNames;
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-var getPrototypeOf = Object.getPrototypeOf;
-var objectPrototype = Object.prototype;
-
-function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
-  if (typeof sourceComponent !== 'string') {
-    // don't hoist over string (html) components
-    if (objectPrototype) {
-      var inheritedComponent = getPrototypeOf(sourceComponent);
-
-      if (inheritedComponent && inheritedComponent !== objectPrototype) {
-        hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
-      }
-    }
-
-    var keys = getOwnPropertyNames(sourceComponent);
-
-    if (getOwnPropertySymbols) {
-      keys = keys.concat(getOwnPropertySymbols(sourceComponent));
-    }
-
-    var targetStatics = getStatics(targetComponent);
-    var sourceStatics = getStatics(sourceComponent);
-
-    for (var i = 0; i < keys.length; ++i) {
-      var key = keys[i];
-
-      if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
-        var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
-
-        try {
-          // Avoid failures from read-only properties
-          defineProperty(targetComponent, key, descriptor);
-        } catch (e) {}
-      }
-    }
-  }
-
-  return targetComponent;
-}
-
-var hoistNonReactStatics_cjs = hoistNonReactStatics; // It does not modify the component passed to it;
-// instead, it returns a new component, with a `classes` property.
-
-var withStyles = function withStyles(stylesOrCreator) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  return function (Component) {
-    var defaultTheme = options.defaultTheme,
-        _options$withTheme = options.withTheme,
-        withTheme = _options$withTheme === void 0 ? false : _options$withTheme,
-        name = options.name,
-        stylesOptions = _objectWithoutProperties(options, ["defaultTheme", "withTheme", "name"]);
-
-    if (true) {
-      if (Component === undefined) {
-        throw new Error(['You are calling withStyles(styles)(Component) with an undefined component.', 'You may have forgotten to import it.'].join('\n'));
-      }
-    }
-
-    var classNamePrefix = name;
-
-    if (true) {
-      if (!name) {
-        // Provide a better DX outside production.
-        var displayName = getDisplayName(Component);
-
-        if (displayName !== undefined) {
-          classNamePrefix = displayName;
-        }
-      }
-    }
-
-    var useStyles = makeStyles(stylesOrCreator, _extends({
-      defaultTheme: defaultTheme,
-      Component: Component,
-      name: name || Component.displayName,
-      classNamePrefix: classNamePrefix
-    }, stylesOptions));
-    var WithStyles = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function WithStyles(props, ref) {
-      var classesProp = props.classes,
-          innerRef = props.innerRef,
-          other = _objectWithoutProperties(props, ["classes", "innerRef"]); // The wrapper receives only user supplied props, which could be a subset of
-      // the actual props Component might receive due to merging with defaultProps.
-      // So copying it here would give us the same result in the wrapper as well.
-
-
-      var classes = useStyles(_extends({}, Component.defaultProps, {}, props));
-      var theme;
-      var more = other;
-
-      if (typeof name === 'string' || withTheme) {
-        // name and withTheme are invariant in the outer scope
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        theme = useTheme() || defaultTheme;
-
-        if (name) {
-          more = getThemeProps({
-            theme: theme,
-            name: name,
-            props: other
-          });
-        } // Provide the theme to the wrapped component.
-        // So we don't have to use the `withTheme()` Higher-order Component.
-
-
-        if (withTheme && !more.theme) {
-          more.theme = theme;
-        }
-      }
-
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({
-        ref: innerRef || ref,
-        classes: classes
-      }, more));
-    });
-     true ? WithStyles.propTypes = {
-      /**
-       * Override or extend the styles applied to the component.
-       */
-      classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
-
-      /**
-       * Use that prop to pass a ref to the decorated component.
-       * @deprecated
-       */
-      innerRef: chainPropTypes(prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object]), function (props) {
-        if (props.innerRef == null) {
-          return null;
-        }
-
-        return null; // return new Error(
-        //   'Material-UI: the `innerRef` prop is deprecated and will be removed in v5. ' +
-        //     'Refs are now automatically forwarded to the inner component.',
-        // );
-      })
-    } : undefined;
-
-    if (true) {
-      WithStyles.displayName = "WithStyles(".concat(getDisplayName(Component), ")");
-    }
-
-    hoistNonReactStatics_cjs(WithStyles, Component);
-
-    if (true) {
-      // Exposed for test purposes.
-      WithStyles.Naked = Component;
-      WithStyles.options = options;
-      WithStyles.useStyles = useStyles;
-    }
-
-    return WithStyles;
-  };
-};
 
 var defaultTheme = createMuiTheme();
-
-function withStyles$1(stylesOrCreator, options) {
-  return withStyles(stylesOrCreator, _extends({
-    defaultTheme: defaultTheme
-  }, options));
-} // It should to be noted that this function isn't equivalent to `text-transform: capitalize`.
-//
-// A strict capitalization should uppercase the first letter of each word a the sentence.
-// We only handle the first word.
-
-
-function capitalize(string) {
-  if (true) {
-    if (typeof string !== 'string') {
-      throw new Error('Material-UI: capitalize(string) expects a string argument.');
-    }
-  }
-
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      userSelect: 'none',
-      width: '1em',
-      height: '1em',
-      display: 'inline-block',
-      fill: 'currentColor',
-      flexShrink: 0,
-      fontSize: theme.typography.pxToRem(24),
-      transition: theme.transitions.create('fill', {
-        duration: theme.transitions.duration.shorter
-      })
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      color: theme.palette.primary.main
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      color: theme.palette.secondary.main
-    },
-
-    /* Styles applied to the root element if `color="action"`. */
-    colorAction: {
-      color: theme.palette.action.active
-    },
-
-    /* Styles applied to the root element if `color="error"`. */
-    colorError: {
-      color: theme.palette.error.main
-    },
-
-    /* Styles applied to the root element if `color="disabled"`. */
-    colorDisabled: {
-      color: theme.palette.action.disabled
-    },
-
-    /* Styles applied to the root element if `fontSize="inherit"`. */
-    fontSizeInherit: {
-      fontSize: 'inherit'
-    },
-
-    /* Styles applied to the root element if `fontSize="small"`. */
-    fontSizeSmall: {
-      fontSize: theme.typography.pxToRem(20)
-    },
-
-    /* Styles applied to the root element if `fontSize="large"`. */
-    fontSizeLarge: {
-      fontSize: theme.typography.pxToRem(35)
-    }
-  };
-};
-
-var SvgIcon = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function SvgIcon(props, ref) {
-  var children = props.children,
-      classes = props.classes,
-      className = props.className,
-      _props$color = props.color,
-      color = _props$color === void 0 ? 'inherit' : _props$color,
-      _props$component = props.component,
-      Component = _props$component === void 0 ? 'svg' : _props$component,
-      _props$fontSize = props.fontSize,
-      fontSize = _props$fontSize === void 0 ? 'default' : _props$fontSize,
-      htmlColor = props.htmlColor,
-      titleAccess = props.titleAccess,
-      _props$viewBox = props.viewBox,
-      viewBox = _props$viewBox === void 0 ? '0 0 24 24' : _props$viewBox,
-      other = _objectWithoutProperties(props, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
-
-  return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Component, _extends({
-    className: clsx(classes.root, className, color !== 'inherit' && classes["color".concat(capitalize(color))], fontSize !== 'default' && classes["fontSize".concat(capitalize(fontSize))]),
-    focusable: "false",
-    viewBox: viewBox,
-    color: htmlColor,
-    "aria-hidden": titleAccess ? undefined : 'true',
-    role: titleAccess ? 'img' : undefined,
-    ref: ref
-  }, other), children, titleAccess ? /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])("title", null, titleAccess) : null);
-});
- true ? SvgIcon.propTypes = {
-  // ----------------------------- Warning --------------------------------
-  // | These PropTypes are generated from the TypeScript type definitions |
-  // |     To update them edit the d.ts file and run "yarn proptypes"     |
-  // ----------------------------------------------------------------------
-
-  /**
-   * Node passed into the SVG element.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
-
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   * You can use the `htmlColor` prop to apply a color attribute to the SVG element.
-   */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(['action', 'disabled', 'error', 'inherit', 'primary', 'secondary']),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.elementType,
-
-  /**
-   * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
-   */
-  fontSize: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(['default', 'inherit', 'large', 'small']),
-
-  /**
-   * Applies a color attribute to the SVG element.
-   */
-  htmlColor: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * The shape-rendering attribute. The behavior of the different options is described on the
-   * [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering).
-   * If you are having issues with blurry icons you should investigate this property.
-   */
-  shapeRendering: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * Provides a human-readable title for the element that contains it.
-   * https://www.w3.org/TR/SVG-access/#Equivalent
-   */
-  titleAccess: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * Allows you to redefine what the coordinates without units mean inside an SVG element.
-   * For example, if the SVG element is 500 (width) by 200 (height),
-   * and you pass viewBox="0 0 50 20",
-   * this means that the coordinates inside the SVG will go from the top left corner (0,0)
-   * to bottom right (50,20) and each unit will be worth 10px.
-   */
-  viewBox: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
-} : undefined;
-SvgIcon.muiName = 'SvgIcon';
-var SvgIcon$1 = withStyles$1(styles, {
-  name: 'MuiSvgIcon'
-})(SvgIcon);
-/**
- * Private module reserved for @material-ui/x packages.
- */
-
-function createSvgIcon(path, displayName) {
-  var Component = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function (props, ref) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgIcon$1, _extends({
-      ref: ref
-    }, props), path);
-  }));
-
-  if (true) {
-    Component.displayName = "".concat(displayName, "Icon");
-  }
-
-  Component.muiName = SvgIcon$1.muiName;
-  return Component;
-} // TODO v5: consider to make it private
-
-
-function setRef(ref, value) {
-  if (typeof ref === 'function') {
-    ref(value);
-  } else if (ref) {
-    ref.current = value;
-  }
-}
-
-function unsupportedProp(props, propName, componentName, location, propFullName) {
-  if (false) {}
-
-  var propFullNameSafe = propFullName || propName;
-
-  if (typeof props[propName] !== 'undefined') {
-    return new Error("The prop `".concat(propFullNameSafe, "` is not supported. Please remove it."));
-  }
-
-  return null;
-}
-
-var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useEffect"];
-/**
- * https://github.com/facebook/react/issues/14099#issuecomment-440013892
- *
- * @param {function} fn
- */
-
-function useEventCallback(fn) {
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(fn);
-  useEnhancedEffect(function () {
-    ref.current = fn;
-  });
-  return Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
-    return ref.current.apply(void 0, arguments);
-  }, []);
-}
-
-function useForkRef(refA, refB) {
-  /**
-   * This will create a new function if the ref props change and are defined.
-   * This means react will call the old forkRef with `null` and the new forkRef
-   * with the ref. Cleanup naturally emerges from this behavior
-   */
-  return Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
-    if (refA == null && refB == null) {
-      return null;
-    }
-
-    return function (refValue) {
-      setRef(refA, refValue);
-      setRef(refB, refValue);
-    };
-  }, [refA, refB]);
-} // based on https://github.com/WICG/focus-visible/blob/v4.1.5/src/focus-visible.js
-
-
-var hadKeyboardEvent = true;
-var hadFocusVisibleRecently = false;
-var hadFocusVisibleRecentlyTimeout = null;
-var inputTypesWhitelist = {
-  text: true,
-  search: true,
-  url: true,
-  tel: true,
-  email: true,
-  password: true,
-  number: true,
-  date: true,
-  month: true,
-  week: true,
-  time: true,
-  datetime: true,
-  'datetime-local': true
-};
-/**
- * Computes whether the given element should automatically trigger the
- * `focus-visible` class being added, i.e. whether it should always match
- * `:focus-visible` when focused.
- * @param {Element} node
- * @return {boolean}
- */
-
-function focusTriggersKeyboardModality(node) {
-  var type = node.type,
-      tagName = node.tagName;
-
-  if (tagName === 'INPUT' && inputTypesWhitelist[type] && !node.readOnly) {
-    return true;
-  }
-
-  if (tagName === 'TEXTAREA' && !node.readOnly) {
-    return true;
-  }
-
-  if (node.isContentEditable) {
-    return true;
-  }
-
-  return false;
-}
-/**
- * Keep track of our keyboard modality state with `hadKeyboardEvent`.
- * If the most recent user interaction was via the keyboard;
- * and the key press did not include a meta, alt/option, or control key;
- * then the modality is keyboard. Otherwise, the modality is not keyboard.
- * @param {KeyboardEvent} event
- */
-
-
-function handleKeyDown(event) {
-  if (event.metaKey || event.altKey || event.ctrlKey) {
-    return;
-  }
-
-  hadKeyboardEvent = true;
-}
-/**
- * If at any point a user clicks with a pointing device, ensure that we change
- * the modality away from keyboard.
- * This avoids the situation where a user presses a key on an already focused
- * element, and then clicks on a different element, focusing it with a
- * pointing device, while we still think we're in keyboard modality.
- */
-
-
-function handlePointerDown() {
-  hadKeyboardEvent = false;
-}
-
-function handleVisibilityChange() {
-  if (this.visibilityState === 'hidden') {
-    // If the tab becomes active again, the browser will handle calling focus
-    // on the element (Safari actually calls it twice).
-    // If this tab change caused a blur on an element with focus-visible,
-    // re-apply the class when the user switches back to the tab.
-    if (hadFocusVisibleRecently) {
-      hadKeyboardEvent = true;
-    }
-  }
-}
-
-function prepare(doc) {
-  doc.addEventListener('keydown', handleKeyDown, true);
-  doc.addEventListener('mousedown', handlePointerDown, true);
-  doc.addEventListener('pointerdown', handlePointerDown, true);
-  doc.addEventListener('touchstart', handlePointerDown, true);
-  doc.addEventListener('visibilitychange', handleVisibilityChange, true);
-}
-
-function isFocusVisible(event) {
-  var target = event.target;
-
-  try {
-    return target.matches(':focus-visible');
-  } catch (error) {} // browsers not implementing :focus-visible will throw a SyntaxError
-  // we use our own heuristic for those browsers
-  // rethrow might be better if it's not the expected error but do we really
-  // want to crash if focus-visible malfunctioned?
-  // no need for validFocusTarget check. the user does that by attaching it to
-  // focusable events only
-
-
-  return hadKeyboardEvent || focusTriggersKeyboardModality(target);
-}
-/**
- * Should be called if a blur event is fired on a focus-visible element
- */
-
-
-function handleBlurVisible() {
-  // To detect a tab/window switch, we look for a blur event followed
-  // rapidly by a visibility change.
-  // If we don't see a visibility change within 100ms, it's probably a
-  // regular focus change.
-  hadFocusVisibleRecently = true;
-  window.clearTimeout(hadFocusVisibleRecentlyTimeout);
-  hadFocusVisibleRecentlyTimeout = window.setTimeout(function () {
-    hadFocusVisibleRecently = false;
-  }, 100);
-}
-
-function useIsFocusVisible() {
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (instance) {
-    var node = Object(react_dom__WEBPACK_IMPORTED_MODULE_5__["findDOMNode"])(instance);
-
-    if (node != null) {
-      prepare(node.ownerDocument);
-    }
-  }, []);
-
-  if (true) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    Object(react__WEBPACK_IMPORTED_MODULE_0__["useDebugValue"])(isFocusVisible);
-  }
-
-  return {
-    isFocusVisible: isFocusVisible,
-    onBlurVisible: handleBlurVisible,
-    ref: ref
-  };
-}
 
 function makeStyles$1(stylesOrCreator) {
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -7956,1400 +5707,8 @@ function makeStyles$1(stylesOrCreator) {
     defaultTheme: defaultTheme
   }, options));
 }
-/**
- * @ignore - internal component.
- */
 
-
-var CancelIcon = createSvgIcon( /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])("path", {
-  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-}), 'Cancel');
-var useEnhancedEffect$1 = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__["useEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"];
-/**
- * @ignore - internal component.
- */
-
-function Ripple(props) {
-  var classes = props.classes,
-      _props$pulsate = props.pulsate,
-      pulsate = _props$pulsate === void 0 ? false : _props$pulsate,
-      rippleX = props.rippleX,
-      rippleY = props.rippleY,
-      rippleSize = props.rippleSize,
-      inProp = props.in,
-      _props$onExited = props.onExited,
-      onExited = _props$onExited === void 0 ? function () {} : _props$onExited,
-      timeout = props.timeout;
-
-  var _React$useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      leaving = _React$useState[0],
-      setLeaving = _React$useState[1];
-
-  var rippleClassName = clsx(classes.ripple, classes.rippleVisible, pulsate && classes.ripplePulsate);
-  var rippleStyles = {
-    width: rippleSize,
-    height: rippleSize,
-    top: -(rippleSize / 2) + rippleY,
-    left: -(rippleSize / 2) + rippleX
-  };
-  var childClassName = clsx(classes.child, leaving && classes.childLeaving, pulsate && classes.childPulsate);
-  var handleExited = useEventCallback(onExited); // Ripple is used for user feedback (e.g. click or press) so we want to apply styles with the highest priority
-
-  useEnhancedEffect$1(function () {
-    if (!inProp) {
-      // react-transition-group#onExit
-      setLeaving(true); // react-transition-group#onExited
-
-      var timeoutId = setTimeout(handleExited, timeout);
-      return function () {
-        clearTimeout(timeoutId);
-      };
-    }
-
-    return undefined;
-  }, [handleExited, inProp, timeout]);
-  return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: rippleClassName,
-    style: rippleStyles
-  }, /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: childClassName
-  }));
-}
-
- true ? Ripple.propTypes = {
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
-
-  /**
-   * @ignore - injected from TransitionGroup
-   */
-  in: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * @ignore - injected from TransitionGroup
-   */
-  onExited: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * If `true`, the ripple pulsates, typically indicating the keyboard focus state of an element.
-   */
-  pulsate: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * Diameter of the ripple.
-   */
-  rippleSize: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-
-  /**
-   * Horizontal position of the ripple center.
-   */
-  rippleX: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-
-  /**
-   * Vertical position of the ripple center.
-   */
-  rippleY: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-
-  /**
-   * exit delay
-   */
-  timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired
-} : undefined;
-var DURATION = 550;
-var DELAY_RIPPLE = 80;
-
-var styles$1 = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      overflow: 'hidden',
-      pointerEvents: 'none',
-      position: 'absolute',
-      zIndex: 0,
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-      borderRadius: 'inherit'
-    },
-
-    /* Styles applied to the internal `Ripple` components `ripple` class. */
-    ripple: {
-      opacity: 0,
-      position: 'absolute'
-    },
-
-    /* Styles applied to the internal `Ripple` components `rippleVisible` class. */
-    rippleVisible: {
-      opacity: 0.3,
-      transform: 'scale(1)',
-      animation: "$enter ".concat(DURATION, "ms ").concat(theme.transitions.easing.easeInOut)
-    },
-
-    /* Styles applied to the internal `Ripple` components `ripplePulsate` class. */
-    ripplePulsate: {
-      animationDuration: "".concat(theme.transitions.duration.shorter, "ms")
-    },
-
-    /* Styles applied to the internal `Ripple` components `child` class. */
-    child: {
-      opacity: 1,
-      display: 'block',
-      width: '100%',
-      height: '100%',
-      borderRadius: '50%',
-      backgroundColor: 'currentColor'
-    },
-
-    /* Styles applied to the internal `Ripple` components `childLeaving` class. */
-    childLeaving: {
-      opacity: 0,
-      animation: "$exit ".concat(DURATION, "ms ").concat(theme.transitions.easing.easeInOut)
-    },
-
-    /* Styles applied to the internal `Ripple` components `childPulsate` class. */
-    childPulsate: {
-      position: 'absolute',
-      left: 0,
-      top: 0,
-      animation: "$pulsate 2500ms ".concat(theme.transitions.easing.easeInOut, " 200ms infinite")
-    },
-    '@keyframes enter': {
-      '0%': {
-        transform: 'scale(0)',
-        opacity: 0.1
-      },
-      '100%': {
-        transform: 'scale(1)',
-        opacity: 0.3
-      }
-    },
-    '@keyframes exit': {
-      '0%': {
-        opacity: 1
-      },
-      '100%': {
-        opacity: 0
-      }
-    },
-    '@keyframes pulsate': {
-      '0%': {
-        transform: 'scale(1)'
-      },
-      '50%': {
-        transform: 'scale(0.92)'
-      },
-      '100%': {
-        transform: 'scale(1)'
-      }
-    }
-  };
-};
-/**
- * @ignore - internal component.
- *
- * TODO v5: Make private
- */
-
-
-var TouchRipple = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function TouchRipple(props, ref) {
-  var _props$center = props.center,
-      centerProp = _props$center === void 0 ? false : _props$center,
-      classes = props.classes,
-      className = props.className,
-      other = _objectWithoutProperties(props, ["center", "classes", "className"]);
-
-  var _React$useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      ripples = _React$useState[0],
-      setRipples = _React$useState[1];
-
-  var nextKey = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(0);
-  var rippleCallback = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (rippleCallback.current) {
-      rippleCallback.current();
-      rippleCallback.current = null;
-    }
-  }, [ripples]); // Used to filter out mouse emulated events on mobile.
-
-  var ignoringMouseDown = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false); // We use a timer in order to only show the ripples for touch "click" like events.
-  // We don't want to display the ripple for touch scroll events.
-
-  var startTimer = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null); // This is the hook called once the previous timeout is ready.
-
-  var startTimerCommit = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  var container = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    return function () {
-      clearTimeout(startTimer.current);
-    };
-  }, []);
-  var startCommit = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (params) {
-    var pulsate = params.pulsate,
-        rippleX = params.rippleX,
-        rippleY = params.rippleY,
-        rippleSize = params.rippleSize,
-        cb = params.cb;
-    setRipples(function (oldRipples) {
-      return [].concat(_toConsumableArray$1(oldRipples), [/*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Ripple, {
-        key: nextKey.current,
-        classes: classes,
-        timeout: DURATION,
-        pulsate: pulsate,
-        rippleX: rippleX,
-        rippleY: rippleY,
-        rippleSize: rippleSize
-      })]);
-    });
-    nextKey.current += 1;
-    rippleCallback.current = cb;
-  }, [classes]);
-  var start = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
-    var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var cb = arguments.length > 2 ? arguments[2] : undefined;
-    var _options$pulsate = options.pulsate,
-        pulsate = _options$pulsate === void 0 ? false : _options$pulsate,
-        _options$center = options.center,
-        center = _options$center === void 0 ? centerProp || options.pulsate : _options$center,
-        _options$fakeElement = options.fakeElement,
-        fakeElement = _options$fakeElement === void 0 ? false : _options$fakeElement;
-
-    if (event.type === 'mousedown' && ignoringMouseDown.current) {
-      ignoringMouseDown.current = false;
-      return;
-    }
-
-    if (event.type === 'touchstart') {
-      ignoringMouseDown.current = true;
-    }
-
-    var element = fakeElement ? null : container.current;
-    var rect = element ? element.getBoundingClientRect() : {
-      width: 0,
-      height: 0,
-      left: 0,
-      top: 0
-    }; // Get the size of the ripple
-
-    var rippleX;
-    var rippleY;
-    var rippleSize;
-
-    if (center || event.clientX === 0 && event.clientY === 0 || !event.clientX && !event.touches) {
-      rippleX = Math.round(rect.width / 2);
-      rippleY = Math.round(rect.height / 2);
-    } else {
-      var clientX = event.clientX ? event.clientX : event.touches[0].clientX;
-      var clientY = event.clientY ? event.clientY : event.touches[0].clientY;
-      rippleX = Math.round(clientX - rect.left);
-      rippleY = Math.round(clientY - rect.top);
-    }
-
-    if (center) {
-      rippleSize = Math.sqrt((2 * Math.pow(rect.width, 2) + Math.pow(rect.height, 2)) / 3); // For some reason the animation is broken on Mobile Chrome if the size if even.
-
-      if (rippleSize % 2 === 0) {
-        rippleSize += 1;
-      }
-    } else {
-      var sizeX = Math.max(Math.abs((element ? element.clientWidth : 0) - rippleX), rippleX) * 2 + 2;
-      var sizeY = Math.max(Math.abs((element ? element.clientHeight : 0) - rippleY), rippleY) * 2 + 2;
-      rippleSize = Math.sqrt(Math.pow(sizeX, 2) + Math.pow(sizeY, 2));
-    } // Touche devices
-
-
-    if (event.touches) {
-      // check that this isn't another touchstart due to multitouch
-      // otherwise we will only clear a single timer when unmounting while two
-      // are running
-      if (startTimerCommit.current === null) {
-        // Prepare the ripple effect.
-        startTimerCommit.current = function () {
-          startCommit({
-            pulsate: pulsate,
-            rippleX: rippleX,
-            rippleY: rippleY,
-            rippleSize: rippleSize,
-            cb: cb
-          });
-        }; // Delay the execution of the ripple effect.
-
-
-        startTimer.current = setTimeout(function () {
-          if (startTimerCommit.current) {
-            startTimerCommit.current();
-            startTimerCommit.current = null;
-          }
-        }, DELAY_RIPPLE); // We have to make a tradeoff with this value.
-      }
-    } else {
-      startCommit({
-        pulsate: pulsate,
-        rippleX: rippleX,
-        rippleY: rippleY,
-        rippleSize: rippleSize,
-        cb: cb
-      });
-    }
-  }, [centerProp, startCommit]);
-  var pulsate = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
-    start({}, {
-      pulsate: true
-    });
-  }, [start]);
-  var stop = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event, cb) {
-    clearTimeout(startTimer.current); // The touch interaction occurs too quickly.
-    // We still want to show ripple effect.
-
-    if (event.type === 'touchend' && startTimerCommit.current) {
-      event.persist();
-      startTimerCommit.current();
-      startTimerCommit.current = null;
-      startTimer.current = setTimeout(function () {
-        stop(event, cb);
-      });
-      return;
-    }
-
-    startTimerCommit.current = null;
-    setRipples(function (oldRipples) {
-      if (oldRipples.length > 0) {
-        return oldRipples.slice(1);
-      }
-
-      return oldRipples;
-    });
-    rippleCallback.current = cb;
-  }, []);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useImperativeHandle"])(ref, function () {
-    return {
-      pulsate: pulsate,
-      start: start,
-      stop: stop
-    };
-  }, [pulsate, start, stop]);
-  return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", _extends({
-    className: clsx(classes.root, className),
-    ref: container
-  }, other), /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(TransitionGroup, {
-    component: null,
-    exit: true
-  }, ripples));
-});
- true ? TouchRipple.propTypes = {
-  /**
-   * If `true`, the ripple starts at the center of the component
-   * rather than at the point of interaction.
-   */
-  center: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
-} : undefined;
-var TouchRipple$1 = withStyles$1(styles$1, {
-  flip: false,
-  name: 'MuiTouchRipple'
-})(Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(TouchRipple));
-var styles$2 = {
-  /* Styles applied to the root element. */
-  root: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
-    WebkitTapHighlightColor: 'transparent',
-    backgroundColor: 'transparent',
-    // Reset default value
-    // We disable the focus ring for mouse, touch and keyboard users.
-    outline: 0,
-    border: 0,
-    margin: 0,
-    // Remove the margin in Safari
-    borderRadius: 0,
-    padding: 0,
-    // Remove the padding in Firefox
-    cursor: 'pointer',
-    userSelect: 'none',
-    verticalAlign: 'middle',
-    '-moz-appearance': 'none',
-    // Reset
-    '-webkit-appearance': 'none',
-    // Reset
-    textDecoration: 'none',
-    // So we take precedent over the style of a native <a /> element.
-    color: 'inherit',
-    '&::-moz-focus-inner': {
-      borderStyle: 'none' // Remove Firefox dotted outline.
-
-    },
-    '&$disabled': {
-      pointerEvents: 'none',
-      // Disable link interactions
-      cursor: 'default'
-    }
-  },
-
-  /* Pseudo-class applied to the root element if `disabled={true}`. */
-  disabled: {},
-
-  /* Pseudo-class applied to the root element if keyboard focused. */
-  focusVisible: {}
-};
-/**
- * `ButtonBase` contains as few styles as possible.
- * It aims to be a simple building block for creating a button.
- * It contains a load of style reset and some focus/ripple logic.
- */
-
-var ButtonBase = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function ButtonBase(props, ref) {
-  var action = props.action,
-      buttonRefProp = props.buttonRef,
-      _props$centerRipple = props.centerRipple,
-      centerRipple = _props$centerRipple === void 0 ? false : _props$centerRipple,
-      children = props.children,
-      classes = props.classes,
-      className = props.className,
-      _props$component = props.component,
-      component = _props$component === void 0 ? 'button' : _props$component,
-      _props$disabled = props.disabled,
-      disabled = _props$disabled === void 0 ? false : _props$disabled,
-      _props$disableRipple = props.disableRipple,
-      disableRipple = _props$disableRipple === void 0 ? false : _props$disableRipple,
-      _props$disableTouchRi = props.disableTouchRipple,
-      disableTouchRipple = _props$disableTouchRi === void 0 ? false : _props$disableTouchRi,
-      _props$focusRipple = props.focusRipple,
-      focusRipple = _props$focusRipple === void 0 ? false : _props$focusRipple,
-      focusVisibleClassName = props.focusVisibleClassName,
-      onBlur = props.onBlur,
-      onClick = props.onClick,
-      onFocus = props.onFocus,
-      onFocusVisible = props.onFocusVisible,
-      onKeyDown = props.onKeyDown,
-      onKeyUp = props.onKeyUp,
-      onMouseDown = props.onMouseDown,
-      onMouseLeave = props.onMouseLeave,
-      onMouseUp = props.onMouseUp,
-      onTouchEnd = props.onTouchEnd,
-      onTouchMove = props.onTouchMove,
-      onTouchStart = props.onTouchStart,
-      onDragLeave = props.onDragLeave,
-      _props$tabIndex = props.tabIndex,
-      tabIndex = _props$tabIndex === void 0 ? 0 : _props$tabIndex,
-      TouchRippleProps = props.TouchRippleProps,
-      _props$type = props.type,
-      type = _props$type === void 0 ? 'button' : _props$type,
-      other = _objectWithoutProperties(props, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onClick", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "onDragLeave", "tabIndex", "TouchRippleProps", "type"]);
-
-  var buttonRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-
-  function getButtonNode() {
-    // #StrictMode ready
-    return Object(react_dom__WEBPACK_IMPORTED_MODULE_5__["findDOMNode"])(buttonRef.current);
-  }
-
-  var rippleRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-
-  var _React$useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      focusVisible = _React$useState[0],
-      setFocusVisible = _React$useState[1];
-
-  if (disabled && focusVisible) {
-    setFocusVisible(false);
-  }
-
-  var _useIsFocusVisible = useIsFocusVisible(),
-      isFocusVisible = _useIsFocusVisible.isFocusVisible,
-      onBlurVisible = _useIsFocusVisible.onBlurVisible,
-      focusVisibleRef = _useIsFocusVisible.ref;
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useImperativeHandle"])(action, function () {
-    return {
-      focusVisible: function focusVisible() {
-        setFocusVisible(true);
-        buttonRef.current.focus();
-      }
-    };
-  }, []);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (focusVisible && focusRipple && !disableRipple) {
-      rippleRef.current.pulsate();
-    }
-  }, [disableRipple, focusRipple, focusVisible]);
-
-  function useRippleHandler(rippleAction, eventCallback) {
-    var skipRippleAction = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : disableTouchRipple;
-    return useEventCallback(function (event) {
-      if (eventCallback) {
-        eventCallback(event);
-      }
-
-      var ignore = skipRippleAction;
-
-      if (!ignore && rippleRef.current) {
-        rippleRef.current[rippleAction](event);
-      }
-
-      return true;
-    });
-  }
-
-  var handleMouseDown = useRippleHandler('start', onMouseDown);
-  var handleDragLeave = useRippleHandler('stop', onDragLeave);
-  var handleMouseUp = useRippleHandler('stop', onMouseUp);
-  var handleMouseLeave = useRippleHandler('stop', function (event) {
-    if (focusVisible) {
-      event.preventDefault();
-    }
-
-    if (onMouseLeave) {
-      onMouseLeave(event);
-    }
-  });
-  var handleTouchStart = useRippleHandler('start', onTouchStart);
-  var handleTouchEnd = useRippleHandler('stop', onTouchEnd);
-  var handleTouchMove = useRippleHandler('stop', onTouchMove);
-  var handleBlur = useRippleHandler('stop', function (event) {
-    if (focusVisible) {
-      onBlurVisible(event);
-      setFocusVisible(false);
-    }
-
-    if (onBlur) {
-      onBlur(event);
-    }
-  }, false);
-  var handleFocus = useEventCallback(function (event) {
-    // Fix for https://github.com/facebook/react/issues/7769
-    if (!buttonRef.current) {
-      buttonRef.current = event.currentTarget;
-    }
-
-    if (isFocusVisible(event)) {
-      setFocusVisible(true);
-
-      if (onFocusVisible) {
-        onFocusVisible(event);
-      }
-    }
-
-    if (onFocus) {
-      onFocus(event);
-    }
-  });
-
-  var isNonNativeButton = function isNonNativeButton() {
-    var button = getButtonNode();
-    return component && component !== 'button' && !(button.tagName === 'A' && button.href);
-  };
-  /**
-   * IE 11 shim for https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/repeat
-   */
-
-
-  var keydownRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
-  var handleKeyDown = useEventCallback(function (event) {
-    // Check if key is already down to avoid repeats being counted as multiple activations
-    if (focusRipple && !keydownRef.current && focusVisible && rippleRef.current && event.key === ' ') {
-      keydownRef.current = true;
-      event.persist();
-      rippleRef.current.stop(event, function () {
-        rippleRef.current.start(event);
-      });
-    }
-
-    if (event.target === event.currentTarget && isNonNativeButton() && event.key === ' ') {
-      event.preventDefault();
-    }
-
-    if (onKeyDown) {
-      onKeyDown(event);
-    } // Keyboard accessibility for non interactive elements
-
-
-    if (event.target === event.currentTarget && isNonNativeButton() && event.key === 'Enter' && !disabled) {
-      event.preventDefault();
-
-      if (onClick) {
-        onClick(event);
-      }
-    }
-  });
-  var handleKeyUp = useEventCallback(function (event) {
-    // calling preventDefault in keyUp on a <button> will not dispatch a click event if Space is pressed
-    // https://codesandbox.io/s/button-keyup-preventdefault-dn7f0
-    if (focusRipple && event.key === ' ' && rippleRef.current && focusVisible && !event.defaultPrevented) {
-      keydownRef.current = false;
-      event.persist();
-      rippleRef.current.stop(event, function () {
-        rippleRef.current.pulsate(event);
-      });
-    }
-
-    if (onKeyUp) {
-      onKeyUp(event);
-    } // Keyboard accessibility for non interactive elements
-
-
-    if (onClick && event.target === event.currentTarget && isNonNativeButton() && event.key === ' ' && !event.defaultPrevented) {
-      onClick(event);
-    }
-  });
-  var ComponentProp = component;
-
-  if (ComponentProp === 'button' && other.href) {
-    ComponentProp = 'a';
-  }
-
-  var buttonProps = {};
-
-  if (ComponentProp === 'button') {
-    buttonProps.type = type;
-    buttonProps.disabled = disabled;
-  } else {
-    if (ComponentProp !== 'a' || !other.href) {
-      buttonProps.role = 'button';
-    }
-
-    buttonProps['aria-disabled'] = disabled;
-  }
-
-  var handleUserRef = useForkRef(buttonRefProp, ref);
-  var handleOwnRef = useForkRef(focusVisibleRef, buttonRef);
-  var handleRef = useForkRef(handleUserRef, handleOwnRef);
-
-  var _React$useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      mountedState = _React$useState2[0],
-      setMountedState = _React$useState2[1];
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setMountedState(true);
-  }, []);
-  var enableTouchRipple = mountedState && !disableRipple && !disabled;
-
-  if (true) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-      if (enableTouchRipple && !rippleRef.current) {
-        console.error(['Material-UI: the `component` prop provided to ButtonBase is invalid.', 'Please make sure the children prop is rendered in this custom component.'].join('\n'));
-      }
-    }, [enableTouchRipple]);
-  }
-
-  return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(ComponentProp, _extends({
-    className: clsx(classes.root, className, focusVisible && [classes.focusVisible, focusVisibleClassName], disabled && classes.disabled),
-    onBlur: handleBlur,
-    onClick: onClick,
-    onFocus: handleFocus,
-    onKeyDown: handleKeyDown,
-    onKeyUp: handleKeyUp,
-    onMouseDown: handleMouseDown,
-    onMouseLeave: handleMouseLeave,
-    onMouseUp: handleMouseUp,
-    onDragLeave: handleDragLeave,
-    onTouchEnd: handleTouchEnd,
-    onTouchMove: handleTouchMove,
-    onTouchStart: handleTouchStart,
-    ref: handleRef,
-    tabIndex: disabled ? -1 : tabIndex
-  }, buttonProps, other), children, enableTouchRipple ?
-  /*#__PURE__*/
-
-  /* TouchRipple is only needed client-side, x2 boost on the server. */
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(TouchRipple$1, _extends({
-    ref: rippleRef,
-    center: centerRipple
-  }, TouchRippleProps)) : null);
-});
- true ? ButtonBase.propTypes = {
-  /**
-   * A ref for imperative actions.
-   * It currently only supports `focusVisible()` action.
-   */
-  action: refType,
-
-  /**
-   * @ignore
-   *
-   * Use that prop to pass a ref to the native button component.
-   * @deprecated Use `ref` instead.
-   */
-  buttonRef: refType,
-
-  /**
-   * If `true`, the ripples will be centered.
-   * They won't start at the cursor interaction position.
-   */
-  centerRipple: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * The content of the component.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: elementTypeAcceptingRef$1,
-
-  /**
-   * If `true`, the base button will be disabled.
-   */
-  disabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * If `true`, the ripple effect will be disabled.
-   *
-   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
-   * to highlight the element by applying separate styles with the `focusVisibleClassName`.
-   */
-  disableRipple: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * If `true`, the touch ripple effect will be disabled.
-   */
-  disableTouchRipple: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * If `true`, the base button will have a keyboard focus ripple.
-   * `disableRipple` must also be `false`.
-   */
-  focusRipple: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * This prop can help a person know which element has the keyboard focus.
-   * The class name will be applied when the element gain the focus through a keyboard interaction.
-   * It's a polyfill for the [CSS :focus-visible selector](https://drafts.csswg.org/selectors-4/#the-focus-visible-pseudo).
-   * The rationale for using this feature [is explained here](https://github.com/WICG/focus-visible/blob/master/explainer.md).
-   * A [polyfill can be used](https://github.com/WICG/focus-visible) to apply a `focus-visible` class to other components
-   * if needed.
-   */
-  focusVisibleClassName: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * @ignore
-   */
-  onBlur: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onClick: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onDragLeave: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onFocus: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * Callback fired when the component is focused with a keyboard.
-   * We trigger a `onFocus` callback too.
-   */
-  onFocusVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onKeyDown: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onKeyUp: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onMouseDown: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onMouseLeave: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onMouseUp: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onTouchEnd: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onTouchMove: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onTouchStart: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  role: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * @ignore
-   */
-  tabIndex: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string]),
-
-  /**
-   * Props applied to the `TouchRipple` element.
-   */
-  TouchRippleProps: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
-
-  /**
-   * Used to control the button's purpose.
-   * This prop passes the value to the `type` attribute of the native button component.
-   */
-  type: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(['submit', 'reset', 'button'])
-} : undefined;
-var ButtonBase$1 = withStyles$1(styles$2, {
-  name: 'MuiButtonBase'
-})(ButtonBase);
-
-var styles$3 = function styles(theme) {
-  var backgroundColor = theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[700];
-  var deleteIconColor = fade(theme.palette.text.primary, 0.26);
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      fontFamily: theme.typography.fontFamily,
-      fontSize: theme.typography.pxToRem(13),
-      display: 'inline-flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: 32,
-      color: theme.palette.getContrastText(backgroundColor),
-      backgroundColor: backgroundColor,
-      borderRadius: 32 / 2,
-      whiteSpace: 'nowrap',
-      transition: theme.transitions.create(['background-color', 'box-shadow']),
-      // label will inherit this from root, then `clickable` class overrides this for both
-      cursor: 'default',
-      // We disable the focus ring for mouse, touch and keyboard users.
-      outline: 0,
-      textDecoration: 'none',
-      border: 'none',
-      // Remove `button` border
-      padding: 0,
-      // Remove `button` padding
-      verticalAlign: 'middle',
-      boxSizing: 'border-box',
-      '&$disabled': {
-        opacity: 0.5,
-        pointerEvents: 'none'
-      },
-      '& $avatar': {
-        marginLeft: 5,
-        marginRight: -6,
-        width: 24,
-        height: 24,
-        color: theme.palette.type === 'light' ? theme.palette.grey[700] : theme.palette.grey[300],
-        fontSize: theme.typography.pxToRem(12)
-      },
-      '& $avatarColorPrimary': {
-        color: theme.palette.primary.contrastText,
-        backgroundColor: theme.palette.primary.dark
-      },
-      '& $avatarColorSecondary': {
-        color: theme.palette.secondary.contrastText,
-        backgroundColor: theme.palette.secondary.dark
-      },
-      '& $avatarSmall': {
-        marginLeft: 4,
-        marginRight: -4,
-        width: 18,
-        height: 18,
-        fontSize: theme.typography.pxToRem(10)
-      }
-    },
-
-    /* Styles applied to the root element if `size="small"`. */
-    sizeSmall: {
-      height: 24
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      backgroundColor: theme.palette.primary.main,
-      color: theme.palette.primary.contrastText
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      backgroundColor: theme.palette.secondary.main,
-      color: theme.palette.secondary.contrastText
-    },
-
-    /* Pseudo-class applied to the root element if `disabled={true}`. */
-    disabled: {},
-
-    /* Styles applied to the root element if `onClick` is defined or `clickable={true}`. */
-    clickable: {
-      userSelect: 'none',
-      WebkitTapHighlightColor: 'transparent',
-      cursor: 'pointer',
-      '&:hover, &:focus': {
-        backgroundColor: emphasize(backgroundColor, 0.08)
-      },
-      '&:active': {
-        boxShadow: theme.shadows[1]
-      }
-    },
-
-    /* Styles applied to the root element if `onClick` and `color="primary"` is defined or `clickable={true}`. */
-    clickableColorPrimary: {
-      '&:hover, &:focus': {
-        backgroundColor: emphasize(theme.palette.primary.main, 0.08)
-      }
-    },
-
-    /* Styles applied to the root element if `onClick` and `color="secondary"` is defined or `clickable={true}`. */
-    clickableColorSecondary: {
-      '&:hover, &:focus': {
-        backgroundColor: emphasize(theme.palette.secondary.main, 0.08)
-      }
-    },
-
-    /* Styles applied to the root element if `onDelete` is defined. */
-    deletable: {
-      '&:focus': {
-        backgroundColor: emphasize(backgroundColor, 0.08)
-      }
-    },
-
-    /* Styles applied to the root element if `onDelete` and `color="primary"` is defined. */
-    deletableColorPrimary: {
-      '&:focus': {
-        backgroundColor: emphasize(theme.palette.primary.main, 0.2)
-      }
-    },
-
-    /* Styles applied to the root element if `onDelete` and `color="secondary"` is defined. */
-    deletableColorSecondary: {
-      '&:focus': {
-        backgroundColor: emphasize(theme.palette.secondary.main, 0.2)
-      }
-    },
-
-    /* Styles applied to the root element if `variant="outlined"`. */
-    outlined: {
-      backgroundColor: 'transparent',
-      border: "1px solid ".concat(theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'),
-      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
-        backgroundColor: fade(theme.palette.text.primary, theme.palette.action.hoverOpacity)
-      },
-      '& $avatar': {
-        marginLeft: 4
-      },
-      '& $avatarSmall': {
-        marginLeft: 2
-      },
-      '& $icon': {
-        marginLeft: 4
-      },
-      '& $iconSmall': {
-        marginLeft: 2
-      },
-      '& $deleteIcon': {
-        marginRight: 5
-      },
-      '& $deleteIconSmall': {
-        marginRight: 3
-      }
-    },
-
-    /* Styles applied to the root element if `variant="outlined"` and `color="primary"`. */
-    outlinedPrimary: {
-      color: theme.palette.primary.main,
-      border: "1px solid ".concat(theme.palette.primary.main),
-      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
-        backgroundColor: fade(theme.palette.primary.main, theme.palette.action.hoverOpacity)
-      }
-    },
-
-    /* Styles applied to the root element if `variant="outlined"` and `color="secondary"`. */
-    outlinedSecondary: {
-      color: theme.palette.secondary.main,
-      border: "1px solid ".concat(theme.palette.secondary.main),
-      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
-        backgroundColor: fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity)
-      }
-    },
-    // TODO v5: remove
-
-    /* Styles applied to the `avatar` element. */
-    avatar: {},
-
-    /* Styles applied to the `avatar` element if `size="small"`. */
-    avatarSmall: {},
-
-    /* Styles applied to the `avatar` element if `color="primary"`. */
-    avatarColorPrimary: {},
-
-    /* Styles applied to the `avatar` element if `color="secondary"`. */
-    avatarColorSecondary: {},
-
-    /* Styles applied to the `icon` element. */
-    icon: {
-      color: theme.palette.type === 'light' ? theme.palette.grey[700] : theme.palette.grey[300],
-      marginLeft: 5,
-      marginRight: -6
-    },
-
-    /* Styles applied to the `icon` element if `size="small"`. */
-    iconSmall: {
-      width: 18,
-      height: 18,
-      marginLeft: 4,
-      marginRight: -4
-    },
-
-    /* Styles applied to the `icon` element if `color="primary"`. */
-    iconColorPrimary: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the `icon` element if `color="secondary"`. */
-    iconColorSecondary: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the label `span` element. */
-    label: {
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      paddingLeft: 12,
-      paddingRight: 12,
-      whiteSpace: 'nowrap'
-    },
-
-    /* Styles applied to the label `span` element if `size="small"`. */
-    labelSmall: {
-      paddingLeft: 8,
-      paddingRight: 8
-    },
-
-    /* Styles applied to the `deleteIcon` element. */
-    deleteIcon: {
-      WebkitTapHighlightColor: 'transparent',
-      color: deleteIconColor,
-      height: 22,
-      width: 22,
-      cursor: 'pointer',
-      margin: '0 5px 0 -6px',
-      '&:hover': {
-        color: fade(deleteIconColor, 0.4)
-      }
-    },
-
-    /* Styles applied to the `deleteIcon` element if `size="small"`. */
-    deleteIconSmall: {
-      height: 16,
-      width: 16,
-      marginRight: 4,
-      marginLeft: -4
-    },
-
-    /* Styles applied to the deleteIcon element if `color="primary"` and `variant="default"`. */
-    deleteIconColorPrimary: {
-      color: fade(theme.palette.primary.contrastText, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.primary.contrastText
-      }
-    },
-
-    /* Styles applied to the deleteIcon element if `color="secondary"` and `variant="default"`. */
-    deleteIconColorSecondary: {
-      color: fade(theme.palette.secondary.contrastText, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.secondary.contrastText
-      }
-    },
-
-    /* Styles applied to the deleteIcon element if `color="primary"` and `variant="outlined"`. */
-    deleteIconOutlinedColorPrimary: {
-      color: fade(theme.palette.primary.main, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.primary.main
-      }
-    },
-
-    /* Styles applied to the deleteIcon element if `color="secondary"` and `variant="outlined"`. */
-    deleteIconOutlinedColorSecondary: {
-      color: fade(theme.palette.secondary.main, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.secondary.main
-      }
-    }
-  };
-};
-
-function isDeleteKeyboardEvent(keyboardEvent) {
-  return keyboardEvent.key === 'Backspace' || keyboardEvent.key === 'Delete';
-}
-/**
- * Chips represent complex entities in small blocks, such as a contact.
- */
-
-
-var Chip = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function Chip(props, ref) {
-  var avatarProp = props.avatar,
-      classes = props.classes,
-      className = props.className,
-      clickableProp = props.clickable,
-      _props$color = props.color,
-      color = _props$color === void 0 ? 'default' : _props$color,
-      ComponentProp = props.component,
-      deleteIconProp = props.deleteIcon,
-      _props$disabled = props.disabled,
-      disabled = _props$disabled === void 0 ? false : _props$disabled,
-      iconProp = props.icon,
-      label = props.label,
-      onClick = props.onClick,
-      onDelete = props.onDelete,
-      onKeyDown = props.onKeyDown,
-      onKeyUp = props.onKeyUp,
-      _props$size = props.size,
-      size = _props$size === void 0 ? 'medium' : _props$size,
-      _props$variant = props.variant,
-      variant = _props$variant === void 0 ? 'default' : _props$variant,
-      other = _objectWithoutProperties(props, ["avatar", "classes", "className", "clickable", "color", "component", "deleteIcon", "disabled", "icon", "label", "onClick", "onDelete", "onKeyDown", "onKeyUp", "size", "variant"]);
-
-  var chipRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  var handleRef = useForkRef(chipRef, ref);
-
-  var handleDeleteIconClick = function handleDeleteIconClick(event) {
-    // Stop the event from bubbling up to the `Chip`
-    event.stopPropagation();
-
-    if (onDelete) {
-      onDelete(event);
-    }
-  };
-
-  var handleKeyDown = function handleKeyDown(event) {
-    // Ignore events from children of `Chip`.
-    if (event.currentTarget === event.target && isDeleteKeyboardEvent(event)) {
-      // will be handled in keyUp, otherwise some browsers
-      // might init navigation
-      event.preventDefault();
-    }
-
-    if (onKeyDown) {
-      onKeyDown(event);
-    }
-  };
-
-  var handleKeyUp = function handleKeyUp(event) {
-    // Ignore events from children of `Chip`.
-    if (event.currentTarget === event.target) {
-      if (onDelete && isDeleteKeyboardEvent(event)) {
-        onDelete(event);
-      } else if (event.key === 'Escape' && chipRef.current) {
-        chipRef.current.blur();
-      }
-    }
-
-    if (onKeyUp) {
-      onKeyUp(event);
-    }
-  };
-
-  var clickable = clickableProp !== false && onClick ? true : clickableProp;
-  var small = size === 'small';
-  var Component = ComponentProp || (clickable ? ButtonBase$1 : 'div');
-  var moreProps = Component === ButtonBase$1 ? {
-    component: 'div'
-  } : {};
-  var deleteIcon = null;
-
-  if (onDelete) {
-    var customClasses = clsx(color !== 'default' && (variant === "default" ? classes["deleteIconColor".concat(capitalize(color))] : classes["deleteIconOutlinedColor".concat(capitalize(color))]), small && classes.deleteIconSmall);
-    deleteIcon = deleteIconProp && Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(deleteIconProp) ? Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(deleteIconProp, {
-      className: clsx(deleteIconProp.props.className, classes.deleteIcon, customClasses),
-      onClick: handleDeleteIconClick
-    }) : /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(CancelIcon, {
-      className: clsx(classes.deleteIcon, customClasses),
-      onClick: handleDeleteIconClick
-    });
-  }
-
-  var avatar = null;
-
-  if (avatarProp && Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(avatarProp)) {
-    avatar = Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(avatarProp, {
-      className: clsx(classes.avatar, avatarProp.props.className, small && classes.avatarSmall, color !== 'default' && classes["avatarColor".concat(capitalize(color))])
-    });
-  }
-
-  var icon = null;
-
-  if (iconProp && Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(iconProp)) {
-    icon = Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(iconProp, {
-      className: clsx(classes.icon, iconProp.props.className, small && classes.iconSmall, color !== 'default' && classes["iconColor".concat(capitalize(color))])
-    });
-  }
-
-  if (true) {
-    if (avatar && icon) {
-      console.error('Material-UI: the Chip component can not handle the avatar ' + 'and the icon prop at the same time. Pick one.');
-    }
-  }
-
-  return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Component, _extends({
-    role: clickable || onDelete ? 'button' : undefined,
-    className: clsx(classes.root, className, color !== 'default' && [classes["color".concat(capitalize(color))], clickable && classes["clickableColor".concat(capitalize(color))], onDelete && classes["deletableColor".concat(capitalize(color))]], variant !== "default" && [classes.outlined, {
-      'primary': classes.outlinedPrimary,
-      'secondary': classes.outlinedSecondary
-    }[color]], disabled && classes.disabled, small && classes.sizeSmall, clickable && classes.clickable, onDelete && classes.deletable),
-    "aria-disabled": disabled ? true : undefined,
-    tabIndex: clickable || onDelete ? 0 : undefined,
-    onClick: onClick,
-    onKeyDown: handleKeyDown,
-    onKeyUp: handleKeyUp,
-    ref: handleRef
-  }, moreProps, other), avatar || icon, /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: clsx(classes.label, small && classes.labelSmall)
-  }, label), deleteIcon);
-});
- true ? Chip.propTypes = {
-  /**
-   * Avatar element.
-   */
-  avatar: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element,
-
-  /**
-   * This prop isn't supported.
-   * Use the `component` prop if you need to change the children structure.
-   */
-  children: unsupportedProp,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-
-  /**
-   * If `true`, the chip will appear clickable, and will raise when pressed,
-   * even if the onClick prop is not defined.
-   * If false, the chip will not be clickable, even if onClick prop is defined.
-   * This can be used, for example,
-   * along with the component prop to indicate an anchor Chip is clickable.
-   */
-  clickable: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(['default', 'primary', 'secondary']),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.elementType,
-
-  /**
-   * Override the default delete icon element. Shown only if `onDelete` is set.
-   */
-  deleteIcon: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element,
-
-  /**
-   * If `true`, the chip should be displayed in a disabled state.
-   */
-  disabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-
-  /**
-   * Icon element.
-   */
-  icon: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element,
-
-  /**
-   * The content of the label.
-   */
-  label: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
-
-  /**
-   * @ignore
-   */
-  onClick: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * Callback function fired when the delete icon is clicked.
-   * If set, the delete icon will be shown.
-   */
-  onDelete: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onKeyDown: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onKeyUp: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-
-  /**
-   * The size of the chip.
-   */
-  size: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(['small', 'medium']),
-
-  /**
-   * The variant to use.
-   */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(['default', 'outlined'])
-} : undefined;
-var Chip$1 = withStyles$1(styles$3, {
-  name: 'MuiChip'
-})(Chip);
-
-var ChapterComponent = function ChapterComponent(props) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
-      _useContext2 = _slicedToArray(_useContext, 2),
-      character = _useContext2[0],
-      setCharacter = _useContext2[1];
-
+var Header = function Header(props) {
   var useStyles = makeStyles$1(function () {
     return {
       chapter: {
@@ -9360,89 +5719,2397 @@ var ChapterComponent = function ChapterComponent(props) {
     };
   });
   var classes = useStyles();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: 'parallax__group parallax__header'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "parallax__layer parallax__layer--base fade-in-scale ".concat(classes.chapter)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+    text: props.name
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Scrollicon, null)));
+};
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
-      _React$useState2 = _slicedToArray(_React$useState, 2),
-      volume = _React$useState2[0],
-      setVolume = _React$useState2[1];
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-  var audio = new Audio("./assets/sounds/".concat(props.link, ".mp3"));
+function _defineProperties$1(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
 
-  var startAudio = function startAudio() {
-    setVolume(!volume);
-    volume ? audio.pause() : audio.play();
-  };
+function _createClass$1(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties$1(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties$1(Constructor, staticProps);
+  return Constructor;
+}
 
-  var renderChapterGroups = function renderChapterGroups() {
-    return props.groups.map(function (group, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-        key: index
-      }, (!group.character || group.character === character) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        key: index,
-        className: "parallax__group ".concat(group.background ? 'back' : '')
-      }, group.background && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "parallax__layer parallax__layer--back"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-        value: group.background,
-        width: 'bg'
-      })), group.content && renderChapterContent(group)));
+function _defineProperty$1(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
     });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
   };
 
-  var renderContent = function renderContent(content, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      key: index
-    }, content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Text && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, {
-      value: content.value
-    }), content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Redirect && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Redirect, {
-      value: content.value
-    }), content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Video && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Video, {
-      value: content.value,
-      width: content.layer,
-      title: content.title
-    }), content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Image && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-      value: content.value,
-      width: content.layer,
-      title: content.title
-    }), content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Decission && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Decission, {
-      value: content.value
-    }), content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].SmokingPit && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Smokingpit, {
-      value: content.value
-    }), content.type === _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["ContentType"].Puzzle && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Puzzle, null));
+  return _setPrototypeOf(o, p);
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _assertThisInitialized$1(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized$1(self);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function () {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _slicedToArray$1(arr, i) {
+  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
+}
+
+function _toConsumableArray$1(arr) {
+  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$1(arr) || _nonIterableSpread$1();
+}
+
+function _arrayWithoutHoles$1(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray$1(arr);
+}
+
+function _arrayWithHoles$1(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArray$1(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+
+function _iterableToArrayLimit$1(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _unsupportedIterableToArray$1(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
+}
+
+function _arrayLikeToArray$1(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+function _nonIterableSpread$1() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+function _nonIterableRest$1() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+var Video = function Video(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray$1(_useState, 2),
+      isPlaying = _useState2[0],
+      setPlaying = _useState2[1];
+
+  var playVideo = function playVideo(playing) {
+    setPlaying(playing);
   };
 
-  var renderChapterContent = function renderChapterContent(_ref) {
-    var contentList = _ref.content,
-        grouped = _ref.grouped,
-        row = _ref.row;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter_video ".concat(props.layer, " ").concat(isPlaying ? 'theater' : '')
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+    controls: true,
+    onPlaying: function onPlaying() {
+      return playVideo(true);
+    },
+    onPause: function onPause() {
+      return playVideo(false);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+    type: 'video/mp4',
+    src: "./assets/movies/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["VIDEO_SUFFIX"]
+  }), "Your browser does not support the video tag."));
+};
+
+var AppContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])([]);
+
+var Image = function Image(props) {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
+      _useContext2 = _slicedToArray$1(_useContext, 2),
+      character = _useContext2[0],
+      setCharacter = _useContext2[1];
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray$1(_useState, 2),
+      hover = _useState2[0],
+      setHover = _useState2[1]; //const [source, setSource] = useState(props.value);
+
+
+  var chooseCharacter = function chooseCharacter() {
+    props.title && setCharacter(props.title);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
+    className: "chapter_picture ".concat(props.layer, " ").concat(props.title && hover ? 'highlighted' : ''),
+    onMouseOut: function onMouseOut() {
+      return setHover(false);
+    },
+    onMouseOver: function onMouseOver() {
+      return setHover(true);
+    },
+    onClick: function onClick() {
+      return chooseCharacter();
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+    srcSet: "./assets/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX"],
+    type: 'image/webp'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+    srcSet: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
+    type: 'image/png'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    draggable: "false",
+    src: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
+    alt: props.value
+  }));
+};
+
+function unwrapExports(x) {
+  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
+function createCommonjsModule(fn, module) {
+  return module = {
+    exports: {}
+  }, fn(module, module.exports), module.exports;
+}
+
+var globals = createCommonjsModule(function (module, exports) {
+  function insertRule(e) {
+    try {
+      return sheet.insertRule(e, sheet.cssRules.length);
+    } catch (e) {
+      console.warn("react-reveal - animation failed");
+    }
+  }
+
+  function cascade(e, n, t, o, r) {
+    var s = Math.log(o),
+        i = Math.log(r),
+        a = (i - s) / (t - n);
+    return Math.exp(s + a * (e - n));
+  }
+
+  function animation(e) {
+    if (!sheet) return "";
+    var n = "@keyframes " + (name + counter) + "{" + e + "}",
+        t = effectMap[e];
+    return t ? "" + name + t : (sheet.insertRule(n, sheet.cssRules.length), effectMap[e] = counter, "" + name + counter++);
+  }
+
+  function hideAll() {
+    globalHide || (exports.globalHide = globalHide = !0, window.removeEventListener("scroll", hideAll, !0), insertRule("." + namespace + " { opacity: 0; }"), window.removeEventListener("orientationchange", hideAll, !0), window.document.removeEventListener("visibilitychange", hideAll));
+  }
+
+  function config(e) {
+    var n = e.ssrFadeout;
+    exports.fadeOutEnabled = fadeOutEnabled = n;
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  }), exports.insertRule = insertRule, exports.cascade = cascade, exports.animation = animation, exports.hideAll = hideAll, exports.default = config;
+
+  var namespace = exports.namespace = "react-reveal",
+      defaults = exports.defaults = {
+    duration: 1e3,
+    delay: 0,
+    count: 1
+  },
+      ssr = exports.ssr = !0,
+      observerMode = exports.observerMode = !1,
+      raf = exports.raf = function (e) {
+    return window.setTimeout(e, 66);
+  },
+      disableSsr = exports.disableSsr = function () {
+    return exports.ssr = ssr = !1;
+  },
+      fadeOutEnabled = exports.fadeOutEnabled = !1,
+      ssrFadeout = exports.ssrFadeout = function () {
+    var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+    return exports.fadeOutEnabled = fadeOutEnabled = e;
+  },
+      globalHide = exports.globalHide = !1,
+      ie10 = exports.ie10 = !1,
+      collapseend = exports.collapseend = void 0,
+      counter = 1,
+      effectMap = {},
+      sheet = !1,
+      name = namespace + "-" + Math.floor(1e15 * Math.random()) + "-";
+
+  if ("undefined" != typeof window && "nodejs" !== window.name && window.document && "undefined" != typeof navigator) {
+    exports.observerMode = observerMode = "IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype && /\{\s*\[native code\]\s*\}/.test("" + IntersectionObserver), exports.raf = raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || raf, exports.ssr = ssr = window.document.querySelectorAll("div[data-reactroot]").length > 0, -1 !== navigator.appVersion.indexOf("MSIE 10") && (exports.ie10 = ie10 = !0), ssr && "performance" in window && "timing" in window.performance && "domContentLoadedEventEnd" in window.performance.timing && window.performance.timing.domLoading && Date.now() - window.performance.timing.domLoading < 300 && (exports.ssr = ssr = !1), ssr && window.setTimeout(disableSsr, 1500), observerMode || (exports.collapseend = collapseend = document.createEvent("Event"), collapseend.initEvent("collapseend", !0, !0));
+    var element = document.createElement("style");
+    document.head.appendChild(element), element.sheet && element.sheet.cssRules && element.sheet.insertRule && (sheet = element.sheet, window.addEventListener("scroll", hideAll, !0), window.addEventListener("orientationchange", hideAll, !0), window.document.addEventListener("visibilitychange", hideAll));
+  }
+});
+unwrapExports(globals);
+var globals_1 = globals.globalHide;
+var globals_2 = globals.fadeOutEnabled;
+var globals_3 = globals.insertRule;
+var globals_4 = globals.cascade;
+var globals_5 = globals.animation;
+var globals_6 = globals.hideAll;
+var globals_7 = globals.namespace;
+var globals_8 = globals.defaults;
+var globals_9 = globals.ssr;
+var globals_10 = globals.observerMode;
+var globals_11 = globals.raf;
+var globals_12 = globals.disableSsr;
+var globals_13 = globals.ssrFadeout;
+var globals_14 = globals.ie10;
+var globals_15 = globals.collapseend;
+var RevealBase_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function _defineProperty(e, t, i) {
+    return t in e ? Object.defineProperty(e, t, {
+      value: i,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }) : e[t] = i, e;
+  }
+
+  function _classCallCheck(e, t) {
+    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
+  }
+
+  function _possibleConstructorReturn(e, t) {
+    if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return !t || "object" != typeof t && "function" != typeof t ? e : t;
+  }
+
+  function _inherits(e, t) {
+    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+    e.prototype = Object.create(t && t.prototype, {
+      constructor: {
+        value: e,
+        enumerable: !1,
+        writable: !0,
+        configurable: !0
+      }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t);
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) {
+    return typeof e;
+  } : function (e) {
+    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
+  },
+      _slicedToArray = function () {
+    function e(e, t) {
+      var i = [],
+          s = !0,
+          o = !1,
+          n = void 0;
+
+      try {
+        for (var r, a = e[Symbol.iterator](); !(s = (r = a.next()).done) && (i.push(r.value), !t || i.length !== t); s = !0) {
+          ;
+        }
+      } catch (e) {
+        o = !0, n = e;
+      } finally {
+        try {
+          !s && a.return && a.return();
+        } finally {
+          if (o) throw n;
+        }
+      }
+
+      return i;
+    }
+
+    return function (t, i) {
+      if (Array.isArray(t)) return t;
+      if (Symbol.iterator in Object(t)) return e(t, i);
+      throw new TypeError("Invalid attempt to destructure non-iterable instance");
+    };
+  }(),
+      _extends = Object.assign || function (e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var i = arguments[t];
+
+      for (var s in i) {
+        Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
+      }
+    }
+
+    return e;
+  },
+      _createClass = function () {
+    function e(e, t) {
+      for (var i = 0; i < t.length; i++) {
+        var s = t[i];
+        s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s);
+      }
+    }
+
+    return function (t, i, s) {
+      return i && e(t.prototype, i), s && e(t, s), t;
+    };
+  }(),
+      _react2 = _interopRequireDefault(react__WEBPACK_IMPORTED_MODULE_0___default.a),
+      inOut = (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape)({
+    make: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
+    style: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
+    reverse: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  }),
+      propTypes = {
+    collapse: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    collapseEl: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element,
+    cascade: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    wait: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    force: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    disabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    enter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    exit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    fraction: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    refProp: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+    onReveal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+    unmountOnExit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    mountOnEnter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    inEffect: inOut.isRequired,
+    outEffect: (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType)([inOut, (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf)([!1])]).isRequired,
+    ssrReveal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    collapseOnly: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    ssrFadeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      defaultProps = {
+    fraction: .2,
+    refProp: "ref"
+  },
+      contextTypes = {
+    transitionGroup: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
+  },
+      RevealBase = function (e) {
+    function t(e, i) {
+      _classCallCheck(this, t);
+
+      var s = _possibleConstructorReturn(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e, i));
+
+      return s.isOn = void 0 === e.when || !!e.when, s.state = {
+        collapse: e.collapse ? t.getInitialCollapseStyle(e) : void 0,
+        style: {
+          opacity: s.isOn && !e.ssrReveal || !e.outEffect ? void 0 : 0
+        }
+      }, s.savedChild = !1, s.isShown = !1, globals.observerMode ? s.handleObserve = s.handleObserve.bind(s) : (s.revealHandler = s.makeHandler(s.reveal), s.resizeHandler = s.makeHandler(s.resize)), s.saveRef = s.saveRef.bind(s), s;
+    }
+
+    return _inherits(t, e), _createClass(t, [{
+      key: "saveRef",
+      value: function value(e) {
+        this.childRef && this.childRef(e), this.props.innerRef && this.props.innerRef(e), this.el !== e && (this.el = e && "offsetHeight" in e ? e : void 0, this.observe(this.props, !0));
+      }
+    }, {
+      key: "invisible",
+      value: function value() {
+        this && this.el && (this.savedChild = !1, this.isShown || (this.setState({
+          hasExited: !0,
+          collapse: this.props.collapse ? _extends({}, this.state.collapse, {
+            visibility: "hidden"
+          }) : null,
+          style: {
+            opacity: 0
+          }
+        }), !globals.observerMode && this.props.collapse && window.document.dispatchEvent(globals.collapseend)));
+      }
+    }, {
+      key: "animationEnd",
+      value: function value(e, t, i) {
+        var s = this,
+            o = i.forever,
+            n = i.count,
+            r = i.delay,
+            a = i.duration;
+
+        if (!o) {
+          var l = function l() {
+            s && s.el && (s.animationEndTimeout = void 0, e.call(s));
+          };
+
+          this.animationEndTimeout = window.setTimeout(l, r + (a + (t ? a : 0) * n));
+        }
+      }
+    }, {
+      key: "getDimensionValue",
+      value: function value() {
+        return this.el.offsetHeight + parseInt(window.getComputedStyle(this.el, null).getPropertyValue("margin-top"), 10) + parseInt(window.getComputedStyle(this.el, null).getPropertyValue("margin-bottom"), 10);
+      }
+    }, {
+      key: "collapse",
+      value: function value(e, t, i) {
+        var s = i.duration + (t.cascade ? i.duration : 0),
+            o = this.isOn ? this.getDimensionValue() : 0,
+            n = void 0,
+            r = void 0;
+        if (t.collapseOnly) n = i.duration / 3, r = i.delay;else {
+          var a = s >> 2,
+              l = a >> 1;
+          n = a, r = i.delay + (this.isOn ? 0 : s - a - l), e.style.animationDuration = s - a + (this.isOn ? l : -l) + "ms", e.style.animationDelay = i.delay + (this.isOn ? a - l : 0) + "ms";
+        }
+        return e.collapse = {
+          height: o,
+          transition: "height " + n + "ms ease " + r + "ms",
+          overflow: t.collapseOnly ? "hidden" : void 0
+        }, e;
+      }
+    }, {
+      key: "animate",
+      value: function value(e) {
+        if (this && this.el && (this.unlisten(), this.isShown !== this.isOn)) {
+          this.isShown = this.isOn;
+          var t = !this.isOn && e.outEffect,
+              i = e[t ? "outEffect" : "inEffect"],
+              s = "style" in i && i.style.animationName || void 0,
+              o = void 0;
+          e.collapseOnly ? o = {
+            hasAppeared: !0,
+            hasExited: !1,
+            style: {
+              opacity: 1
+            }
+          } : ((e.outEffect || this.isOn) && i.make && (s = i.make), o = {
+            hasAppeared: !0,
+            hasExited: !1,
+            collapse: void 0,
+            style: _extends({}, i.style, {
+              animationDuration: i.duration + "ms",
+              animationDelay: i.delay + "ms",
+              animationIterationCount: i.forever ? "infinite" : i.count,
+              opacity: 1,
+              animationName: s
+            }),
+            className: i.className
+          }), this.setState(e.collapse ? this.collapse(o, e, i) : o), t ? (this.savedChild = _react2.default.cloneElement(this.getChild()), this.animationEnd(this.invisible, e.cascade, i)) : this.savedChild = !1, this.onReveal(e);
+        }
+      }
+    }, {
+      key: "onReveal",
+      value: function value(e) {
+        e.onReveal && this.isOn && (this.onRevealTimeout && (this.onRevealTimeout = window.clearTimeout(this.onRevealTimeout)), e.wait ? this.onRevealTimeout = window.setTimeout(e.onReveal, e.wait) : e.onReveal());
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function value() {
+        this.unlisten(), globals.ssr && (0, globals.disableSsr)();
+      }
+    }, {
+      key: "handleObserve",
+      value: function value(e, t) {
+        _slicedToArray(e, 1)[0].intersectionRatio > 0 && (t.disconnect(), this.observer = null, this.reveal(this.props, !0));
+      }
+    }, {
+      key: "observe",
+      value: function value(e) {
+        var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+
+        if (this.el && globals.observerMode) {
+          if (this.observer) {
+            if (!t) return;
+            this.observer.disconnect();
+          } else if (t) return;
+
+          this.observer = new IntersectionObserver(this.handleObserve, {
+            threshold: e.fraction
+          }), this.observer.observe(this.el);
+        }
+      }
+    }, {
+      key: "reveal",
+      value: function value(e) {
+        var t = this,
+            i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+        globals.globalHide || (0, globals.hideAll)(), this && this.el && (e || (e = this.props), globals.ssr && (0, globals.disableSsr)(), this.isOn && this.isShown && void 0 !== e.spy ? (this.isShown = !1, this.setState({
+          style: {}
+        }), window.setTimeout(function () {
+          return t.reveal(e);
+        }, 200)) : i || this.inViewport(e) || e.force ? this.animate(e) : globals.observerMode ? this.observe(e) : this.listen());
+      }
+    }, {
+      key: "componentDidMount",
+      value: function value() {
+        var e = this;
+
+        if (this.el && !this.props.disabled) {
+          this.props.collapseOnly || ("make" in this.props.inEffect && this.props.inEffect.make(!1, this.props), void 0 !== this.props.when && this.props.outEffect && "make" in this.props.outEffect && this.props.outEffect.make(!0, this.props));
+          var i = this.context.transitionGroup,
+              s = i && !i.isMounting ? !("enter" in this.props && !1 === this.props.enter) : this.props.appear;
+          return this.isOn && ((void 0 !== this.props.when || void 0 !== this.props.spy) && !s || globals.ssr && !globals.fadeOutEnabled && !this.props.ssrFadeout && this.props.outEffect && !this.props.ssrReveal && t.getTop(this.el) < window.pageYOffset + window.innerHeight) ? (this.isShown = !0, this.setState({
+            hasAppeared: !0,
+            collapse: this.props.collapse ? {
+              height: this.getDimensionValue()
+            } : this.state.collapse,
+            style: {
+              opacity: 1
+            }
+          }), void this.onReveal(this.props)) : globals.ssr && (globals.fadeOutEnabled || this.props.ssrFadeout) && this.props.outEffect && t.getTop(this.el) < window.pageYOffset + window.innerHeight ? (this.setState({
+            style: {
+              opacity: 0,
+              transition: "opacity 1000ms 1000ms"
+            }
+          }), void window.setTimeout(function () {
+            return e.reveal(e.props, !0);
+          }, 2e3)) : void (this.isOn && (this.props.force ? this.animate(this.props) : this.reveal(this.props)));
+        }
+      }
+    }, {
+      key: "cascade",
+      value: function value(e) {
+        var t = this,
+            i = void 0;
+        i = "string" == typeof e ? e.split("").map(function (e, t) {
+          return _react2.default.createElement("span", {
+            key: t,
+            style: {
+              display: "inline-block",
+              whiteSpace: "pre"
+            }
+          }, e);
+        }) : _react2.default.Children.toArray(e);
+        var s = this.props[this.isOn || !this.props.outEffect ? "inEffect" : "outEffect"],
+            o = s.duration,
+            n = s.reverse,
+            r = i.length,
+            a = 2 * o;
+        this.props.collapse && (a = parseInt(this.state.style.animationDuration, 10), o = a / 2);
+        var l = n ? r : 0;
+        return i = i.map(function (e) {
+          return "object" === (void 0 === e ? "undefined" : _typeof(e)) && e ? _react2.default.cloneElement(e, {
+            style: _extends({}, e.props.style, t.state.style, {
+              animationDuration: Math.round((0, globals.cascade)(n ? l-- : l++, 0, r, o, a)) + "ms"
+            })
+          }) : e;
+        });
+      }
+    }, {
+      key: "componentWillReceiveProps",
+      value: function value(e) {
+        if (void 0 !== e.when && (this.isOn = !!e.when), e.fraction !== this.props.fraction && this.observe(e, !0), !this.isOn && e.onExited && "exit" in e && !1 === e.exit) return void e.onExited();
+        e.disabled || (e.collapse && !this.props.collapse && (this.setState({
+          style: {},
+          collapse: t.getInitialCollapseStyle(e)
+        }), this.isShown = !1), e.when === this.props.when && e.spy === this.props.spy || this.reveal(e), this.onRevealTimeout && !this.isOn && (this.onRevealTimeout = window.clearTimeout(this.onRevealTimeout)));
+      }
+    }, {
+      key: "getChild",
+      value: function value() {
+        if (this.savedChild && !this.props.disabled) return this.savedChild;
+
+        if ("object" === _typeof(this.props.children)) {
+          var e = _react2.default.Children.only(this.props.children);
+
+          return "type" in e && "string" == typeof e.type || "ref" !== this.props.refProp ? e : _react2.default.createElement("div", null, e);
+        }
+
+        return _react2.default.createElement("div", null, this.props.children);
+      }
+    }, {
+      key: "render",
+      value: function value() {
+        var e = void 0;
+        e = this.state.hasAppeared ? !this.props.unmountOnExit || !this.state.hasExited || this.isOn : !this.props.mountOnEnter || this.isOn;
+        var t = this.getChild();
+        "function" == typeof t.ref && (this.childRef = t.ref);
+        var i = !1,
+            s = t.props,
+            o = s.style,
+            n = s.className,
+            r = s.children,
+            a = this.props.disabled ? n : (this.props.outEffect ? globals.namespace : "") + (this.state.className ? " " + this.state.className : "") + (n ? " " + n : "") || void 0,
+            l = void 0;
+        "function" == typeof this.state.style.animationName && (this.state.style.animationName = this.state.style.animationName(!this.isOn, this.props)), this.props.cascade && !this.props.disabled && r && this.state.style.animationName ? (i = this.cascade(r), l = _extends({}, o, {
+          opacity: 1
+        })) : l = this.props.disabled ? o : _extends({}, o, this.state.style);
+
+        var p = _extends({}, this.props.props, _defineProperty({
+          className: a,
+          style: l
+        }, this.props.refProp, this.saveRef)),
+            h = _react2.default.cloneElement(t, p, e ? i || r : void 0);
+
+        return void 0 !== this.props.collapse ? this.props.collapseEl ? _react2.default.cloneElement(this.props.collapseEl, {
+          style: _extends({}, this.props.collapseEl.style, this.props.disabled ? void 0 : this.state.collapse),
+          children: h
+        }) : _react2.default.createElement("div", {
+          style: this.props.disabled ? void 0 : this.state.collapse,
+          children: h
+        }) : h;
+      }
+    }, {
+      key: "makeHandler",
+      value: function value(e) {
+        var t = this,
+            i = function i() {
+          e.call(t, t.props), t.ticking = !1;
+        };
+
+        return function () {
+          t.ticking || ((0, globals.raf)(i), t.ticking = !0);
+        };
+      }
+    }, {
+      key: "inViewport",
+      value: function value(e) {
+        if (!this.el || window.document.hidden) return !1;
+        var i = this.el.offsetHeight,
+            s = window.pageYOffset - t.getTop(this.el),
+            o = Math.min(i, window.innerHeight) * (globals.globalHide ? e.fraction : 0);
+        return s > o - window.innerHeight && s < i - o;
+      }
+    }, {
+      key: "resize",
+      value: function value(e) {
+        this && this.el && this.isOn && this.inViewport(e) && (this.unlisten(), this.isShown = this.isOn, this.setState({
+          hasExited: !this.isOn,
+          hasAppeared: !0,
+          collapse: void 0,
+          style: {
+            opacity: this.isOn || !e.outEffect ? 1 : 0
+          }
+        }), this.onReveal(e));
+      }
+    }, {
+      key: "listen",
+      value: function value() {
+        globals.observerMode || this.isListener || (this.isListener = !0, window.addEventListener("scroll", this.revealHandler, {
+          passive: !0
+        }), window.addEventListener("orientationchange", this.revealHandler, {
+          passive: !0
+        }), window.document.addEventListener("visibilitychange", this.revealHandler, {
+          passive: !0
+        }), window.document.addEventListener("collapseend", this.revealHandler, {
+          passive: !0
+        }), window.addEventListener("resize", this.resizeHandler, {
+          passive: !0
+        }));
+      }
+    }, {
+      key: "unlisten",
+      value: function value() {
+        !globals.observerMode && this.isListener && (window.removeEventListener("scroll", this.revealHandler, {
+          passive: !0
+        }), window.removeEventListener("orientationchange", this.revealHandler, {
+          passive: !0
+        }), window.document.removeEventListener("visibilitychange", this.revealHandler, {
+          passive: !0
+        }), window.document.removeEventListener("collapseend", this.revealHandler, {
+          passive: !0
+        }), window.removeEventListener("resize", this.resizeHandler, {
+          passive: !0
+        }), this.isListener = !1), this.onRevealTimeout && (this.onRevealTimeout = window.clearTimeout(this.onRevealTimeout)), this.animationEndTimeout && (this.animationEndTimeout = window.clearTimeout(this.animationEndTimeout));
+      }
+    }], [{
+      key: "getInitialCollapseStyle",
+      value: function value(e) {
+        return {
+          height: 0,
+          visibility: e.when ? void 0 : "hidden"
+        };
+      }
+    }, {
+      key: "getTop",
+      value: function value(e) {
+        for (; void 0 === e.offsetTop;) {
+          e = e.parentNode;
+        }
+
+        for (var t = e.offsetTop; e.offsetParent; t += e.offsetTop) {
+          e = e.offsetParent;
+        }
+
+        return t;
+      }
+    }]), t;
+  }(_react2.default.Component);
+
+  RevealBase.propTypes = propTypes, RevealBase.defaultProps = defaultProps, RevealBase.contextTypes = contextTypes, RevealBase.displayName = "RevealBase", exports.default = RevealBase, module.exports = exports.default;
+});
+unwrapExports(RevealBase_1);
+var wrap_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function wrap(e, t, a, r) {
+    return "in" in e && (e.when = e.in), _react2.default.Children.count(r) < 2 ? _react2.default.createElement(_RevealBase2.default, _extends({}, e, {
+      inEffect: t,
+      outEffect: a,
+      children: r
+    })) : (r = _react2.default.Children.map(r, function (r) {
+      return _react2.default.createElement(_RevealBase2.default, _extends({}, e, {
+        inEffect: t,
+        outEffect: a,
+        children: r
+      }));
+    }), "Fragment" in _react2.default ? _react2.default.createElement(_react2.default.Fragment, null, r) : _react2.default.createElement("span", null, r));
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _extends = Object.assign || function (e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var a = arguments[t];
+
+      for (var r in a) {
+        Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r]);
+      }
+    }
+
+    return e;
+  };
+
+  exports.default = wrap;
+
+  var _react2 = _interopRequireDefault(react__WEBPACK_IMPORTED_MODULE_0___default.a),
+      _RevealBase2 = _interopRequireDefault(RevealBase_1);
+
+  module.exports = exports.default;
+});
+unwrapExports(wrap_1);
+var Fade_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(o) {
+    return o && o.__esModule ? o : {
+      default: o
+    };
+  }
+
+  function _objectWithoutProperties(o, e) {
+    var r = {};
+
+    for (var t in o) {
+      e.indexOf(t) >= 0 || Object.prototype.hasOwnProperty.call(o, t) && (r[t] = o[t]);
+    }
+
+    return r;
+  }
+
+  function make(o, e) {
+    var r = e.distance,
+        t = e.left,
+        p = e.right,
+        a = e.up,
+        l = e.down,
+        i = e.top,
+        u = e.bottom,
+        n = e.big,
+        s = e.mirror,
+        d = e.opposite,
+        _ = (r ? r.toString() : 0) + ((t ? 1 : 0) | (p ? 2 : 0) | (i || l ? 4 : 0) | (u || a ? 8 : 0) | (s ? 16 : 0) | (d ? 32 : 0) | (o ? 64 : 0) | (n ? 128 : 0));
+
+    if (lookup.hasOwnProperty(_)) return lookup[_];
+    var f = t || p || a || l || i || u,
+        y = void 0,
+        b = void 0;
+
+    if (f) {
+      if (!s != !(o && d)) {
+        var v = [p, t, u, i, l, a];
+        t = v[0], p = v[1], i = v[2], u = v[3], a = v[4], l = v[5];
+      }
+
+      var c = r || (n ? "2000px" : "100%");
+      y = t ? "-" + c : p ? c : "0", b = l || i ? "-" + c : a || u ? c : "0";
+    }
+
+    return lookup[_] = (0, globals.animation)((o ? "to" : "from") + " {opacity: 0;" + (f ? " transform: translate3d(" + y + ", " + b + ", 0);" : "") + "}\n     " + (o ? "from" : "to") + " {opacity: 1;transform: none;} "), lookup[_];
+  }
+
+  function Fade() {
+    var o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
+        e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+        r = o.children,
+        t = (o.out, o.forever),
+        p = o.timeout,
+        a = o.duration,
+        l = void 0 === a ? globals.defaults.duration : a,
+        i = o.delay,
+        u = void 0 === i ? globals.defaults.delay : i,
+        n = o.count,
+        s = void 0 === n ? globals.defaults.count : n,
+        d = _objectWithoutProperties(o, ["children", "out", "forever", "timeout", "duration", "delay", "count"]),
+        _ = {
+      make: make,
+      duration: void 0 === p ? l : p,
+      delay: u,
+      forever: t,
+      count: s,
+      style: {
+        animationFillMode: "both"
+      },
+      reverse: d.left
+    };
+
+    return e ? (0, _wrap2.default)(d, _, _, r) : _;
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _wrap2 = _interopRequireDefault(wrap_1),
+      propTypes = {
+    out: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    left: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    right: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    top: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    bottom: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    big: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    mirror: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    opposite: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    distance: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      lookup = {};
+
+  Fade.propTypes = propTypes, exports.default = Fade, module.exports = exports.default;
+});
+var Fade = unwrapExports(Fade_1);
+var Reveal_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function _objectWithoutProperties(e, t) {
+    var r = {};
+
+    for (var o in e) {
+      t.indexOf(o) >= 0 || Object.prototype.hasOwnProperty.call(e, o) && (r[o] = e[o]);
+    }
+
+    return r;
+  }
+
+  function Reveal(e) {
+    function t(e) {
+      return e ? _ ? {
+        duration: n,
+        delay: f,
+        count: s,
+        forever: d,
+        className: _,
+        style: {}
+      } : y : i ? {
+        duration: void 0 === o ? u : o,
+        delay: p,
+        count: a,
+        forever: l,
+        className: i,
+        style: {}
+      } : c;
+    }
+
+    var r = e.children,
+        o = e.timeout,
+        u = e.duration,
+        p = e.delay,
+        a = e.count,
+        l = e.forever,
+        n = e.durationOut,
+        f = e.delayOut,
+        s = e.countOut,
+        d = e.foreverOut,
+        i = e.effect,
+        _ = e.effectOut,
+        c = e.inEffect,
+        y = e.outEffect,
+        O = _objectWithoutProperties(e, ["children", "timeout", "duration", "delay", "count", "forever", "durationOut", "delayOut", "countOut", "foreverOut", "effect", "effectOut", "inEffect", "outEffect"]);
+
+    return (0, _wrap2.default)(O, t(!1), t(!0), r);
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _extends = Object.assign || function (e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = arguments[t];
+
+      for (var o in r) {
+        Object.prototype.hasOwnProperty.call(r, o) && (e[o] = r[o]);
+      }
+    }
+
+    return e;
+  },
+      _wrap2 = _interopRequireDefault(wrap_1),
+      _Fade2 = _interopRequireDefault(Fade_1),
+      propTypes = {
+    in: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
+    out: (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType)([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object, (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf)([!1])]),
+    effect: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+    effectOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    durationOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    delayOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    countOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    foreverOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      defaultProps = _extends({}, globals.defaults, {
+    durationOut: globals.defaults.duration,
+    delayOut: globals.defaults.delay,
+    countOut: globals.defaults.count,
+    foreverOut: globals.defaults.forever,
+    inEffect: (0, _Fade2.default)(globals.defaults),
+    outEffect: (0, _Fade2.default)(_extends({
+      out: !0
+    }, globals.defaults))
+  });
+
+  Reveal.propTypes = propTypes, Reveal.defaultProps = defaultProps, exports.default = Reveal, module.exports = exports.default;
+});
+var Reveal = unwrapExports(Reveal_1);
+
+var Text = function Text(props) {
+  var isRevealing = props.title === 'reveal';
+
+  if (isRevealing) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: 'box'
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Reveal, {
+      effect: "reveal",
+      duration: 100
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value.split("").map(function (_char, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        "aria-hidden": "true",
+        key: index,
+        style: {
+          animationDelay: 0.1 + index / 10 + "s"
+        }
+      }, _char);
+    }))));
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'box'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fade, {
+    bottom: true,
+    duration: 5000
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value)));
+};
+
+var Decission = function Decission(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'box'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value), "!");
+};
+
+var Smokingpit = function Smokingpit(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'smokingPit'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: 'daheim_arbeiterschaft'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'smoke'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's0'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's1'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's2'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's3'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's4'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's5'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's6'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's7'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's8'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: 's9'
+  })));
+};
+
+var Puzzle = /*#__PURE__*/function (_Component) {
+  _inherits(Puzzle, _Component);
+
+  var _super = _createSuper(Puzzle);
+
+  function Puzzle() {
+    var _this;
+
+    _classCallCheck(this, Puzzle);
+
+    _this = _super.apply(this, arguments);
+    _this.state = {
+      pieces: [],
+      shuffled: [],
+      solved: []
+    };
+    return _this;
+  }
+
+  _createClass$1(Puzzle, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var pieces = _toConsumableArray$1(Array(16)).map(function (_, i) {
+        return {
+          img: "daheim_puzzle_".concat(("0" + (i + 1)).substr(-2), ".webp"),
+          order: i,
+          board: "shuffled"
+        };
+      });
+
+      this.setState({
+        pieces: pieces,
+        shuffled: this.shufflePieces(pieces),
+        solved: _toConsumableArray$1(Array(16))
+      });
+    }
+  }, {
+    key: "handleDrop",
+    value: function handleDrop(e, index, targetName) {
+      var _this$setState;
+
+      e.preventDefault();
+      var target = this.state[targetName];
+      if (target[index]) return;
+      var pieceOrder = e.dataTransfer.getData("text");
+      var pieceData = this.state.pieces.find(function (p) {
+        return p.order === +pieceOrder;
+      });
+      var origin = this.state[pieceData.board];
+      if (targetName === pieceData.board) target = origin;
+      origin[origin.indexOf(pieceData)] = undefined;
+      target[index] = pieceData;
+      pieceData.board = targetName;
+      this.setState((_this$setState = {}, _defineProperty$1(_this$setState, pieceData.board, origin), _defineProperty$1(_this$setState, targetName, target), _this$setState));
+    }
+  }, {
+    key: "handleDragStart",
+    value: function handleDragStart(e, order) {
+      var dt = e.dataTransfer;
+      dt.setData("text/plain", order);
+      dt.effectAllowed = "move";
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: 'puzzle'
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: 'puzzle__shuffled-board'
+      }, this.state.shuffled.map(function (piece, i) {
+        return _this2.renderPieceContainer(piece, i, "shuffled");
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+        className: 'puzzle__solved-board',
+        style: {
+          backgroundImage: "url(./assets/daheim_puzzle.webp)"
+        }
+      }, this.state.solved.map(function (piece, i) {
+        return _this2.renderPieceContainer(piece, i, "solved");
+      })));
+    }
+  }, {
+    key: "renderPieceContainer",
+    value: function renderPieceContainer(piece, index, boardName) {
+      var _this3 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        key: index,
+        onDragOver: function onDragOver(e) {
+          return e.preventDefault();
+        },
+        onDrop: function onDrop(e) {
+          return _this3.handleDrop(e, index, boardName);
+        }
+      }, piece && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        draggable: true,
+        alt: "",
+        onDragStart: function onDragStart(e) {
+          return _this3.handleDragStart(e, piece.order);
+        },
+        src: "./assets/".concat(piece.img)
+      }));
+    }
+  }, {
+    key: "shufflePieces",
+    value: function shufflePieces(pieces) {
+      var shuffled = _toConsumableArray$1(pieces);
+
+      for (var i = shuffled.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var _ref = [shuffled[j], shuffled[i]];
+        shuffled[i] = _ref[0];
+        shuffled[j] = _ref[1];
+      }
+
+      return shuffled;
+    }
+  }]);
+
+  return Puzzle;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+var items = ['abfahrt', 'abmarsch', 'kochen', 'lagerstruktur', 'morgen', 'schlafen', 'tanzen', 'waschen'];
+
+var Memory = function Memory(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray$1(_useState, 2),
+      list = _useState2[0],
+      setList = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray$1(_useState3, 2),
+      visibleItems = _useState4[0],
+      setVisibleItems = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState6 = _slicedToArray$1(_useState5, 2),
+      finishedItems = _useState6[0],
+      setFinishedItems = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState8 = _slicedToArray$1(_useState7, 2),
+      winner = _useState8[0],
+      setWinner = _useState8[1];
+
+  var checkItems = function checkItems(firstIndex, secondIndex) {
+    if (firstIndex !== secondIndex && list[firstIndex].name === list[secondIndex].name) {
+      setFinishedItems([].concat(_toConsumableArray$1(finishedItems), [firstIndex, secondIndex]));
+    } else {
+      setTimeout(function () {
+        setVisibleItems([]);
+      }, 600);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setList(items.concat(items).map(function (name, i) {
+      return {
+        name: name,
+        id: i
+      };
+    }).sort(function () {
+      return 0.5 - Math.random();
+    }));
+  }, []);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (finishedItems.length > 0 && finishedItems.length === list.length) {
+      setWinner(true);
+    }
+  }, [finishedItems, list]);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Grid, {
+    list: list,
+    visibleItems: visibleItems,
+    setVisibleItems: setVisibleItems,
+    finishedItems: finishedItems,
+    checkItems: checkItems
+  }), winner && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "You Win !", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
+};
+
+var Grid = function Grid(props) {
+  var list = props.list,
+      visibleItems = props.visibleItems,
+      setVisibleItems = props.setVisibleItems,
+      finishedItems = props.finishedItems,
+      checkItems = props.checkItems;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "memory"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "description"
+  }, "In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Diese bestehen aus einer Zeichnung und dem dazu passenden Foto. Klicke einfach auf die K\xE4rtchen, um zu sehen, was sich auf der R\xFCckseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards"
+  }, list.map(function (item, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Card, {
+      key: item.id,
+      className: "card ".concat(visibleItems.includes(index) ? "grid-card-show" : "", " ").concat(finishedItems.includes(index) ? "grid-card-show grid-card-finished" : ""),
+      onClick: function onClick() {
+        if (!finishedItems.includes(index)) {
+          switch (visibleItems.length) {
+            case 0:
+              setVisibleItems([index]);
+              break;
+
+            case 1:
+              if (visibleItems[0] !== index) {
+                setVisibleItems(visibleItems.concat(index));
+                checkItems(visibleItems[0], index);
+              }
+
+              break;
+
+            case 2:
+              setVisibleItems([index]);
+              break;
+
+            default:
+              setVisibleItems([]);
+          }
+        }
+      },
+      name: item.name
+    });
+  })));
+};
+
+Grid.defaultProps = {
+  list: []
+};
+
+var Card = function Card(props) {
+  var name = props.name,
+      className = props.className,
+      onClick = props.onClick;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "".concat(className),
+    onClick: onClick
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: "memory_".concat(name)
+  }));
+};
+
+var Shake_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function _objectWithoutProperties(e, r) {
+    var o = {};
+
+    for (var t in e) {
+      r.indexOf(t) >= 0 || Object.prototype.hasOwnProperty.call(e, t) && (o[t] = e[t]);
+    }
+
+    return o;
+  }
+
+  function make() {
+    return name || (name = (0, globals.animation)(rule));
+  }
+
+  function Shake() {
+    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
+        r = e.children,
+        o = (e.out, e.timeout),
+        t = e.duration,
+        a = void 0 === t ? globals.defaults.duration : t,
+        n = e.delay,
+        u = void 0 === n ? globals.defaults.delay : n,
+        p = e.count,
+        l = void 0 === p ? globals.defaults.count : p,
+        i = e.forever,
+        s = _objectWithoutProperties(e, ["children", "out", "timeout", "duration", "delay", "count", "forever"]),
+        d = {
+      make: make,
+      duration: void 0 === o ? a : o,
+      delay: u,
+      forever: i,
+      count: l,
+      style: {
+        animationFillMode: "both"
+      }
+    };
+
+    return (0, _wrap2.default)(s, d, !1, r, !0);
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _wrap2 = _interopRequireDefault(wrap_1),
+      propTypes = {
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      rule = "\nfrom, to {\n    transform: translate3d(0, 0, 0);\n  }\n\n  10%, 30%, 50%, 70%, 90% {\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  20%, 40%, 60%, 80% {\n    transform: translate3d(10px, 0, 0);\n}\n",
+      name = !1;
+
+  Shake.propTypes = propTypes, exports.default = Shake, module.exports = exports.default;
+});
+var Shake = unwrapExports(Shake_1);
+var Jump_1 = createCommonjsModule(function (module, exports) {
+  function _interopRequireDefault(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    };
+  }
+
+  function _objectWithoutProperties(e, r) {
+    var t = {};
+
+    for (var n in e) {
+      r.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+    }
+
+    return t;
+  }
+
+  function make() {
+    return name || (name = (0, globals.animation)(rule));
+  }
+
+  function Jump() {
+    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : globals.defaults,
+        r = e.children,
+        t = (e.out, e.timeout),
+        n = e.duration,
+        o = void 0 === n ? globals.defaults.duration : n,
+        a = e.delay,
+        i = void 0 === a ? globals.defaults.delay : a,
+        u = e.count,
+        p = void 0 === u ? globals.defaults.count : u,
+        l = e.forever,
+        s = _objectWithoutProperties(e, ["children", "out", "timeout", "duration", "delay", "count", "forever"]),
+        d = {
+      make: make,
+      duration: void 0 === t ? o : t,
+      delay: i,
+      forever: l,
+      count: p,
+      style: {
+        animationFillMode: "both"
+      }
+    };
+
+    return (0, _wrap2.default)(s, d, !1, r, !0);
+  }
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  });
+
+  var _wrap2 = _interopRequireDefault(wrap_1),
+      propTypes = {
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+  },
+      rule = "\n from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n}\n",
+      name = !1;
+
+  Jump.propTypes = propTypes, exports.default = Jump, module.exports = exports.default;
+});
+var Jump = unwrapExports(Jump_1);
+
+var Suitcase = function Suitcase(props) {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
+      _useContext2 = _slicedToArray$1(_useContext, 2),
+      character = _useContext2[0],
+      setCharacter = _useContext2[1];
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState2 = _slicedToArray$1(_useState, 2),
+      drag = _useState2[0],
+      setDrag = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState4 = _slicedToArray$1(_useState3, 2),
+      bagCounter = _useState4[0],
+      setBagCounter = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState6 = _slicedToArray$1(_useState5, 2),
+      showResult = _useState6[0],
+      setShowResult = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState8 = _slicedToArray$1(_useState7, 2),
+      falseCounter = _useState8[0],
+      setFalseCounter = _useState8[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'suitcase'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'items'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: 'ein Hemd',
+    image: 'suitcase_hemd'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: 'eine Feldflasche',
+    image: 'suitcase_feldflasche'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'ein Radio',
+    image: 'suitcase_radio'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: 'eine Seife',
+    image: 'suitcase_seife'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'ein Smartphone',
+    image: 'suitcase_smartphone'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: "eine Zahnb\xFCrste",
+    image: "suitcase_zahnb\xFCrste"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'eine Karaffe',
+    image: 'suitcase_karaffe'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'eine Topfpflanze',
+    image: 'suitcase_topfpflanze'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'bag',
+    label: "einen L\xF6ffel",
+    image: "suitcase_l\xF6ffel"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Items, {
+    targetKey: 'negative',
+    label: 'einen Hammer',
+    image: 'suitcase_hammer'
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Jump, {
+    spy: bagCounter
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shake, {
+    spy: falseCounter
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'bag'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: 'suitcase'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'dragText'
+  }, drag)))));
+};
+
+var Items = function Items(props) {
+  // return (
+  //   <DragDropContainer
+  //     targetKey={props.targetKey}
+  //     dragData={{ label: props.label }}
+  //     render={() => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+    value: props.image
+  }); //     }}
+  //   />
+  // );
+};
+
+var Square = function Square(_ref) {
+  var value = _ref.value,
+      onClick = _ref.onClick;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    role: "button",
+    tabIndex: 0,
+    className: 'square',
+    onClick: onClick
+  }, value);
+};
+
+var lines = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+var userSymbol = "X";
+var computerSymbol = "O";
+
+var TicTacToe = function TicTacToe(props) {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
+      _useContext2 = _slicedToArray$1(_useContext, 2),
+      character = _useContext2[0],
+      setCharacter = _useContext2[1];
+
+  var status = "Um zu spielen, setze dein Kreuz in eines der K\xE4stchen, indem du dort hinein klickst. Danach ist ".concat(character, " dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.");
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Array(9).fill(null)),
+      _useState2 = _slicedToArray$1(_useState, 2),
+      squares = _useState2[0],
+      setSquares = _useState2[1];
+
+  var winner = calculateWinner(squares);
+
+  function getStatus() {
+    if (winner) {
+      document.querySelector('.result').scrollIntoView({
+        behavior: 'smooth'
+      });
+      return winner === "X" ? "Du hast gewonnen!" : "Es ist ja nur ein Spiel!";
+    } else if (isBoardFull(squares)) {
+      document.querySelector('.result').scrollIntoView({
+        behavior: 'smooth'
+      });
+      return "Ein solidarisches Remis!";
+    } else {
+      return '';
+    }
+  }
+
+  function renderSquare(i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+      value: squares[i],
+      key: i,
+      onClick: function onClick() {
+        if (squares[i] != null || winner != null) {
+          return;
+        }
+
+        var nextSquares = squares.slice();
+        nextSquares[i] = userSymbol;
+        setSquares(nextSquares);
+
+        if (!calculateWinner(nextSquares)) {
+          setTimeout(function () {
+            var generatedSquares = nextSquares.slice();
+            var generatedSquare = setGeneratedSquare(generatedSquares);
+
+            if (generatedSquare != null) {
+              generatedSquares[generatedSquare] = computerSymbol;
+              setSquares(generatedSquares);
+            }
+          }, 300);
+        }
+      }
+    });
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'game'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'status'
+  }, status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'board'
+  }, squares.map(function (value, index) {
+    return renderSquare(index);
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'result'
+  }, getStatus()));
+};
+
+function setGeneratedSquare(squares) {
+  for (var i = 0; i < squares.length; i++) {
+    if (squares[i] == null) {
+      return i;
+    }
+  }
+
+  return null;
+}
+
+function calculateWinner(squares) {
+  // go over all possibly winning lines and check if they consist of only X's/only O's
+  for (var i = 0; i < lines.length; i++) {
+    var _lines$i = _slicedToArray$1(lines[i], 3),
+        a = _lines$i[0],
+        b = _lines$i[1],
+        c = _lines$i[2];
+
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+
+  return null;
+}
+
+function isBoardFull(squares) {
+  for (var i = 0; i < squares.length; i++) {
+    if (squares[i] == null) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+var dailyItems = ["Waschen und Baden", "Frühstück", "Wanderungen machen", "Sprechstunde des Lagerarztes", "Lagerruhe - Post- und Zeitungsausgabe", "Tagung des Lagerparlaments", "Gemeinsame Veranstaltungen", "Zeltruhe"];
+var schedule = ["6 Uhr", "8 Uhr", "8 ½ – 12 Uhr ", "8 ½ – 9 ½", "12 ½ – 14 ½ ", "18 – 19 Uhr", "19 ½ – 21 Uhr", "21 Uhr"];
+var description = "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.";
+
+var Daily = function Daily(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray$1(_useState, 2),
+      result = _useState2[0],
+      setResult = _useState2[1];
+
+  var handleClick = function handleClick() {
+    setResult(true); //props.onCheckDaily();
+  };
+
+  var getItems = function getItems() {
+    if (result) return;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "items"
+    }, dailyItems.map(function (item, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        key: index,
+        className: "item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item));
+    }));
+  };
+
+  var showStatus = function showStatus() {
+    if (result) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+        value: 'daily_result'
+      });
+    }
+
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Box, {
+      targetKey: "box"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      type: 'button',
+      className: 'link-button show',
+      onClick: function onClick() {
+        return handleClick();
+      }
+    }, "Tagesplan anzeigen!"));
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "daily"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "description"
+  }, description), getItems(), showStatus());
+};
+
+var Box = function Box(props) {
+  var useStyles = makeStyles$1(function () {
+    return {
+      box: {
+        background: 'url(./assets/daily.webp) no-repeat center center'
+      }
+    };
+  });
+  var classes = useStyles();
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray$1(_useState3, 2),
+      boxItems = _useState4[0],
+      setBoxItems = _useState4[1];
+
+  var swap = function swap(fromIndex, toIndex, dragData) {
+    var items = boxItems.slice();
+    var item = {
+      label: dragData.label
+    };
+    items.splice(toIndex, 0, item);
+    setBoxItems(items);
+  };
+
+  var kill = function kill(uid) {
+    var items = boxItems.slice();
+    var index = items.findIndex(function (item) {
+      return item.uid === uid;
+    });
+
+    if (index !== -1) {
+      items.splice(index, 1);
+    }
+
+    setBoxItems(items);
+  };
+
+  return (// <DropTarget
+    //   onHit={handleDrop}
+    //   targetKey={props.targetKey}
+    //   dropData={{name: props.name}}>
+    //   <DropTarget
+    //     onHit={handleDrop}
+    //     targetKey="boxItem"
+    //     dropData={{name: props.name}}>
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "component_box ".concat(classes.box)
+    }, boxItems.map(function (item, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BoxItem, {
+        key: item.uid,
+        uid: item.uid,
+        kill: kill,
+        index: index,
+        swap: swap
+      }, item.label);
+    })) //   </DropTarget>
+    // </DropTarget>
+
+  );
+};
+
+var BoxItem = function BoxItem(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "box_item_component"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "outer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "grabber"
+  }, "\u2237"), schedule[props.index], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u2003"), props.children)));
+};
+
+var Redirect = function Redirect(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: 'button',
+    className: 'link-button redirect'
+  }, props.value);
+};
+
+var Info = function Info(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fade, {
+    left: true,
+    delay: 2000
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "infoLink"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "infoText"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    dangerouslySetInnerHTML: {
+      __html: props.value
+    }
+  }))));
+};
+
+var ContentType = {
+  text: Text,
+  redirect: Redirect,
+  video: Video,
+  image: Image,
+  smokingpit: Smokingpit,
+  puzzle: Puzzle,
+  memory: Memory,
+  suitcase: Suitcase,
+  tictactoe: TicTacToe,
+  daily: Daily,
+  decission: Decission
+};
+
+var Group = function Group(_ref) {
+  var grouped = _ref.grouped,
+      row = _ref.row,
+      info = _ref.info,
+      background = _ref.background,
+      contentList = _ref.content;
+
+  var renderBackground = function renderBackground() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "parallax__layer parallax__layer--back"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+      value: background,
+      layer: 'bg'
+    }));
+  };
+
+  var renderGroupContent = function renderGroupContent() {
     var chapterGroupedContent = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "parallax__layer parallax__layer--base grouped ".concat(row ? 'row' : 'column')
-    }, contentList.map(function (content, index) {
+    }, info && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, {
+      value: info
+    }), contentList.map(function (content, index) {
       return renderContent(content, index);
     }));
     var chapterContent = contentList.map(function (content, index) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         key: index,
         className: "parallax__layer parallax__layer--".concat(content.layer)
-      }, renderContent(content, index));
+      }, info && content.layer === 'fore' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, {
+        value: info
+      }), renderContent(content, index));
     });
     return grouped ? chapterGroupedContent : chapterContent;
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  var renderContent = function renderContent(content, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      key: index
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContentType[content.type], Object.assign({}, content)));
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, background && renderBackground(), contentList && renderGroupContent());
+};
+
+var Footer = function Footer(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Footer"));
+};
+
+var Nav = function Nav(props) {
+  var renderChapterNav = function renderChapterNav() {
+    return props.chapters.map(function (chapter, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: 'navigation--item',
+        key: index
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["NavLink"], {
+        to: "/chapter/".concat(chapter.id)
+      }, chapter.name));
+    });
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "app-nav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: 'navigation'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: 'navigation--item'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["NavLink"], {
+    exact: true,
+    to: "/"
+  }, "Home")), renderChapterNav()));
+};
+
+var isProduction$1 = "development" === 'production';
+var prefix$1 = 'Invariant failed';
+
+function invariant(condition, message) {
+  if (condition) {
+    return;
+  }
+
+  if (isProduction$1) {
+    throw new Error(prefix$1);
+  }
+
+  throw new Error(prefix$1 + ": " + (message || ''));
+}
+
+function _defineProperty$2(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _extends$1() {
+  _extends$1 = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends$1.apply(this, arguments);
+}
+
+function _inheritsLoose$1(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  subClass.__proto__ = superClass;
+}
+
+function _objectWithoutPropertiesLoose$1(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _assertThisInitialized$2(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+var INSTANCE_MAP = new Map();
+var OBSERVER_MAP = new Map();
+var ROOT_IDS = new Map();
+var consecutiveRootId = 0;
+/**
+ * Generate a unique ID for the root element
+ * @param root
+ */
+
+function getRootId(root) {
+  if (!root) return '';
+  if (ROOT_IDS.has(root)) return ROOT_IDS.get(root);
+  consecutiveRootId += 1;
+  ROOT_IDS.set(root, consecutiveRootId.toString());
+  return ROOT_IDS.get(root) + '_';
+}
+/**
+ * Monitor element, and trigger callback when element becomes inView
+ * @param element {HTMLElement}
+ * @param callback {Function} Called with inView
+ * @param options {Object} InterSection observer options
+ * @param options.threshold {Number} Number between 0 and 1, indicating how much of the element should be inView before triggering
+ * @param options.root {HTMLElement}
+ * @param options.rootMargin {String} The CSS margin to apply to the root element.
+ */
+
+
+function observe(element, callback, options) {
+  if (options === void 0) {
+    options = {};
+  } // IntersectionObserver needs a threshold to trigger, so set it to 0 if it's not defined.
+  // Modify the options object, since it's used in the onChange handler.
+
+
+  if (!options.threshold) options.threshold = 0;
+  var _options = options,
+      root = _options.root,
+      rootMargin = _options.rootMargin,
+      threshold = _options.threshold; // Validate that the element is not being used in another <Observer />
+
+  !!INSTANCE_MAP.has(element) ?  true ? invariant(false, "react-intersection-observer: Trying to observe %s, but it's already being observed by another instance.\nMake sure the `ref` is only used by a single <Observer /> instance.\n\n%s") : undefined : void 0;
+  /* istanbul ignore if */
+
+  if (!element) return; // Create a unique ID for this observer instance, based on the root, root margin and threshold.
+  // An observer with the same options can be reused, so lets use this fact
+
+  var observerId = getRootId(root) + (rootMargin ? threshold.toString() + "_" + rootMargin : threshold.toString());
+  var observerInstance = OBSERVER_MAP.get(observerId);
+
+  if (!observerInstance) {
+    observerInstance = new IntersectionObserver(onChange, options);
+    /* istanbul ignore else  */
+
+    if (observerId) OBSERVER_MAP.set(observerId, observerInstance);
+  }
+
+  var instance = {
+    callback: callback,
+    element: element,
+    inView: false,
+    observerId: observerId,
+    observer: observerInstance,
+    // Make sure we have the thresholds value. It's undefined on a browser like Chrome 51.
+    thresholds: observerInstance.thresholds || (Array.isArray(threshold) ? threshold : [threshold])
+  };
+  INSTANCE_MAP.set(element, instance);
+  observerInstance.observe(element);
+  return instance;
+}
+/**
+ * Stop observing an element. If an element is removed from the DOM or otherwise destroyed,
+ * make sure to call this method.
+ * @param element {Element}
+ */
+
+
+function unobserve(element) {
+  if (!element) return;
+  var instance = INSTANCE_MAP.get(element);
+
+  if (instance) {
+    var observerId = instance.observerId,
+        observer = instance.observer;
+    var root = observer.root;
+    observer.unobserve(element); // Check if we are still observing any elements with the same threshold.
+
+    var itemsLeft = false; // Check if we still have observers configured with the same root.
+
+    var rootObserved = false;
+    /* istanbul ignore else  */
+
+    if (observerId) {
+      INSTANCE_MAP.forEach(function (item, key) {
+        if (key !== element) {
+          if (item.observerId === observerId) {
+            itemsLeft = true;
+            rootObserved = true;
+          }
+
+          if (item.observer.root === root) {
+            rootObserved = true;
+          }
+        }
+      });
+    }
+
+    if (!rootObserved && root) ROOT_IDS["delete"](root);
+
+    if (observer && !itemsLeft) {
+      // No more elements to observe for threshold, disconnect observer
+      observer.disconnect();
+    } // Remove reference to element
+
+
+    INSTANCE_MAP["delete"](element);
+  }
+}
+
+function onChange(changes) {
+  changes.forEach(function (intersection) {
+    var isIntersecting = intersection.isIntersecting,
+        intersectionRatio = intersection.intersectionRatio,
+        target = intersection.target;
+    var instance = INSTANCE_MAP.get(target); // Firefox can report a negative intersectionRatio when scrolling.
+
+    /* istanbul ignore else */
+
+    if (instance && intersectionRatio >= 0) {
+      // If threshold is an array, check if any of them intersects. This just triggers the onChange event multiple times.
+      var inView = instance.thresholds.some(function (threshold) {
+        return instance.inView ? intersectionRatio > threshold : intersectionRatio >= threshold;
+      });
+
+      if (isIntersecting !== undefined) {
+        // If isIntersecting is defined, ensure that the element is actually intersecting.
+        // Otherwise it reports a threshold of 0
+        inView = inView && isIntersecting;
+      }
+
+      instance.inView = inView;
+      instance.callback(inView, intersection);
+    }
+  });
+}
+
+function isPlainChildren(props) {
+  return typeof props.children !== 'function';
+}
+/**
+ * Monitors scroll, and triggers the children function with updated props
+ *
+ <InView>
+ {({inView, ref}) => (
+   <h1 ref={ref}>{`${inView}`}</h1>
+ )}
+ </InView>
+ */
+
+
+var InView = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(InView, _React$Component);
+
+  function InView() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "state", {
+      inView: false,
+      entry: undefined
+    });
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "node", null);
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "handleNode", function (node) {
+      if (_this.node) {
+        unobserve(_this.node);
+
+        if (!node && !_this.props.triggerOnce) {
+          _this.setState({
+            inView: false,
+            entry: undefined
+          });
+        }
+      }
+
+      _this.node = node ? node : null;
+
+      _this.observeNode();
+    });
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "handleChange", function (inView, entry) {
+      // Only trigger a state update if inView has changed.
+      // This prevents an unnecessary extra state update during mount, when the element stats outside the viewport
+      if (inView !== _this.state.inView || inView) {
+        _this.setState({
+          inView: inView,
+          entry: entry
+        });
+      }
+
+      if (_this.props.onChange) {
+        // If the user is actively listening for onChange, always trigger it
+        _this.props.onChange(inView, entry);
+      }
+    });
+
+    return _this;
+  }
+
+  var _proto = InView.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    !this.node ?  true ? invariant(false, "react-intersection-observer: No DOM node found. Make sure you forward \"ref\" to the root DOM element you want to observe.") : undefined : void 0;
+  };
+
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
+    // If a IntersectionObserver option changed, reinit the observer
+    if (prevProps.rootMargin !== this.props.rootMargin || prevProps.root !== this.props.root || prevProps.threshold !== this.props.threshold) {
+      unobserve(this.node);
+      this.observeNode();
+    }
+
+    if (prevState.inView !== this.state.inView) {
+      if (this.state.inView && this.props.triggerOnce) {
+        unobserve(this.node);
+        this.node = null;
+      }
+    }
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    if (this.node) {
+      unobserve(this.node);
+      this.node = null;
+    }
+  };
+
+  _proto.observeNode = function observeNode() {
+    if (!this.node) return;
+    var _this$props = this.props,
+        threshold = _this$props.threshold,
+        root = _this$props.root,
+        rootMargin = _this$props.rootMargin;
+    observe(this.node, this.handleChange, {
+      threshold: threshold,
+      root: root,
+      rootMargin: rootMargin
+    });
+  };
+
+  _proto.render = function render() {
+    var _this$state = this.state,
+        inView = _this$state.inView,
+        entry = _this$state.entry;
+
+    if (!isPlainChildren(this.props)) {
+      return this.props.children({
+        inView: inView,
+        entry: entry,
+        ref: this.handleNode
+      });
+    }
+
+    var _this$props2 = this.props,
+        children = _this$props2.children,
+        as = _this$props2.as,
+        tag = _this$props2.tag,
+        triggerOnce = _this$props2.triggerOnce,
+        threshold = _this$props2.threshold,
+        root = _this$props2.root,
+        rootMargin = _this$props2.rootMargin,
+        onChange = _this$props2.onChange,
+        props = _objectWithoutPropertiesLoose$1(_this$props2, ["children", "as", "tag", "triggerOnce", "threshold", "root", "rootMargin", "onChange"]);
+
+    return Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(as || tag || 'div', _extends$1({
+      ref: this.handleNode
+    }, props), children);
+  };
+
+  return InView;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+_defineProperty$2(InView, "displayName", 'InView');
+
+_defineProperty$2(InView, "defaultProps", {
+  threshold: 0,
+  triggerOnce: false
+});
+
+var Chapter = function Chapter(props) {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
+      _useContext2 = _slicedToArray$1(_useContext, 2),
+      character = _useContext2[0],
+      setCharacter = _useContext2[1];
+
+  var audio = new Audio("./assets/sounds/".concat(props.link, ".mp3"));
+  audio.loop = true;
+
+  var startAudio = function startAudio(inView) {
+    inView ? audio.play() : audio.pause();
+  };
+
+  var renderChapterGroups = function renderChapterGroups() {
+    return props.groups.map(function (group, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+        key: index
+      }, (!group.character || group.character === character) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InView, {
+        threshold: 0.5
+      }, function (_ref) {
+        var inView = _ref.inView,
+            ref = _ref.ref,
+            entry = _ref.entry;
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+          ref: ref,
+          key: index,
+          className: "parallax__group ".concat(group.background ? 'back' : '', " ").concat(inView ? 'active' : '')
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Group, Object.assign({}, group)));
+      }));
+    });
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InView, {
+    as: "div",
+    onChange: function onChange(inView, entry) {
+      return audio && startAudio(inView);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'parallax'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'parallax__group parallax__header'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "parallax__layer parallax__layer--base fade-in-scale ".concat(classes.chapter)
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
-    text: props.name
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Chip$1, {
-    onClick: function onClick() {
-      return startAudio();
-    },
-    label: volume ? "Ton aus" : "Ton an"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Scrollicon, null))), props.groups && renderChapterGroups());
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, Object.assign({}, props)), props.groups && renderChapterGroups()));
 };
 
 var Ui = function Ui(props) {
@@ -9460,7 +8127,7 @@ var Ui = function Ui(props) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":root {\n  --color-text: #850101;\n  --color-title: #BF6422;\n  --color-link: #008080;\n  --color-link-highlighted: #E3000F;\n}\n\n@font-face {\n  font-family: \"FundamentalBrigade\";\n  font-display: swap;\n  src: url('Fundamental_Brigade_Schlank.ttf') format(\"truetype\");\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\nhtml {\n  overflow: hidden;\n  min-height: 100vh;\n  scroll-behavior: smooth;\n  text-rendering: optimizeSpeed;\n  line-height: 1.2;\n}\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n}\n\nbody {\n  background-image: url('background.webp');\n  color: var(--color-text);\n  font-size: clamp(1em, 1em + 2vw, 3em);\n  font-family: FundamentalBrigade, arial, sans-serif;\n  font-weight: normal;\n  height: 100%;\n  overflow-x: hidden;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9nZXJkbXVlbGxlci9EZXZlbG9wbWVudC9kZW1va3JhdGllZXJsZWJlbjIwMjAvYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIiwiYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQUE7RUFDQSxzQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUNBQUE7QUNDRjs7QURFQTtFQUNFLGlDQUFBO0VBQ0Esa0JBQUE7RUFDQSw4REFBQTtBQ0NGOztBREVBOzs7RUFHRSxzQkFBQTtBQ0FGOztBREdBO0VBQ0UsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLHVCQUFBO0VBQ0EsNkJBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREdBOzs7Ozs7Ozs7Ozs7O0VBYUMsU0FBQTtFQUNBLFVBQUE7RUFDQyxTQUFBO0FDQUY7O0FER0E7RUFDRSx3Q0FBQTtFQUNBLHdCQUFBO0VBQ0EscUNBQUE7RUFDQSxrREFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0Esd0JBQUE7VUFBQSxnQkFBQTtFQUNBLG9DQUFBO1VBQUEsNEJBQUE7QUNBRiIsImZpbGUiOiJhcHBzL2RlbW9sL3NyYy9hcHAvYXBwLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6cm9vdCB7XG4gIC0tY29sb3ItdGV4dDogIzg1MDEwMTtcbiAgLS1jb2xvci10aXRsZTogI0JGNjQyMjtcbiAgLS1jb2xvci1saW5rOiAjMDA4MDgwO1xuICAtLWNvbG9yLWxpbmstaGlnaGxpZ2h0ZWQ6ICNFMzAwMEY7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0Z1bmRhbWVudGFsQnJpZ2FkZSc7XG4gIGZvbnQtZGlzcGxheTogc3dhcDtcbiAgc3JjOiB1cmwoJy4uL2Fzc2V0cy9mb250cy9GdW5kYW1lbnRhbF9CcmlnYWRlX1NjaGxhbmsudHRmJykgZm9ybWF0KCd0cnVldHlwZScpO1xufVxuXG4qLFxuKjo6YmVmb3JlLFxuKjo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG5odG1sIHtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIHNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVTcGVlZDtcbiAgbGluZS1oZWlnaHQ6IDEuMjtcbn1cblxuaHRtbCwgYm9keSwgZGl2LCBzcGFuLCBhcHBsZXQsIG9iamVjdCwgaWZyYW1lLFxuaDEsIGgyLCBoMywgaDQsIGg1LCBoNiwgcCwgYmxvY2txdW90ZSwgcHJlLFxuYSwgYWJiciwgYWNyb255bSwgYWRkcmVzcywgYmlnLCBjaXRlLCBjb2RlLFxuZGVsLCBkZm4sIGVtLCBpbWcsIGlucywga2JkLCBxLCBzLCBzYW1wLFxuc21hbGwsIHN0cmlrZSwgc3Ryb25nLCBzdWIsIHN1cCwgdHQsIHZhcixcbmIsIHUsIGksIGNlbnRlcixcbmRsLCBkdCwgZGQsIG9sLCB1bCwgbGksXG5maWVsZHNldCwgZm9ybSwgbGFiZWwsIGxlZ2VuZCxcbnRhYmxlLCBjYXB0aW9uLCB0Ym9keSwgdGZvb3QsIHRoZWFkLCB0ciwgdGgsIHRkLFxuYXJ0aWNsZSwgYXNpZGUsIGNhbnZhcywgZGV0YWlscywgZW1iZWQsIFxuZmlndXJlLCBmaWdjYXB0aW9uLCBmb290ZXIsIGhlYWRlciwgaGdyb3VwLCBcbm1lbnUsIG5hdiwgb3V0cHV0LCBydWJ5LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcblx0bWFyZ2luOiAwO1xuXHRwYWRkaW5nOiAwO1xuICBib3JkZXI6IDA7XG59XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vYXNzZXRzL2JhY2tncm91bmQud2VicCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci10ZXh0KTtcbiAgZm9udC1zaXplOiAjeydjbGFtcCgxZW0sIDFlbSArIDJ2dywgM2VtKSd9O1xuICBmb250LWZhbWlseTogRnVuZGFtZW50YWxCcmlnYWRlLCBhcmlhbCwgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG4gIHBlcnNwZWN0aXZlOiAxcHg7XG4gIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XG59IiwiOnJvb3Qge1xuICAtLWNvbG9yLXRleHQ6ICM4NTAxMDE7XG4gIC0tY29sb3ItdGl0bGU6ICNCRjY0MjI7XG4gIC0tY29sb3ItbGluazogIzAwODA4MDtcbiAgLS1jb2xvci1saW5rLWhpZ2hsaWdodGVkOiAjRTMwMDBGO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiRnVuZGFtZW50YWxCcmlnYWRlXCI7XG4gIGZvbnQtZGlzcGxheTogc3dhcDtcbiAgc3JjOiB1cmwoXCIuLi9hc3NldHMvZm9udHMvRnVuZGFtZW50YWxfQnJpZ2FkZV9TY2hsYW5rLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbn1cbiosXG4qOjpiZWZvcmUsXG4qOjphZnRlciB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS4yO1xufVxuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIGFwcGxldCwgb2JqZWN0LCBpZnJhbWUsXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsXG5hLCBhYmJyLCBhY3JvbnltLCBhZGRyZXNzLCBiaWcsIGNpdGUsIGNvZGUsXG5kZWwsIGRmbiwgZW0sIGltZywgaW5zLCBrYmQsIHEsIHMsIHNhbXAsXG5zbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLFxuYiwgdSwgaSwgY2VudGVyLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBlbWJlZCxcbmZpZ3VyZSwgZmlnY2FwdGlvbiwgZm9vdGVyLCBoZWFkZXIsIGhncm91cCxcbm1lbnUsIG5hdiwgb3V0cHV0LCBydWJ5LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBib3JkZXI6IDA7XG59XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vYXNzZXRzL2JhY2tncm91bmQud2VicCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci10ZXh0KTtcbiAgZm9udC1zaXplOiBjbGFtcCgxZW0sIDFlbSArIDJ2dywgM2VtKTtcbiAgZm9udC1mYW1pbHk6IEZ1bmRhbWVudGFsQnJpZ2FkZSwgYXJpYWwsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGhlaWdodDogMTAwJTtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICBwZXJzcGVjdGl2ZTogMXB4O1xuICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xufSJdfQ== */"
+module.exports = ":root {\n  --color-text: #850101;\n  --color-title: #BF6422;\n  --color-link: #008080;\n  --color-link-highlighted: #E3000F;\n}\n\n@font-face {\n  font-family: \"FundamentalBrigade\";\n  font-display: swap;\n  src: url('Fundamental_Brigade_Schlank.ttf') format(\"truetype\");\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\nhtml {\n  overflow: hidden;\n  min-height: 100vh;\n  scroll-behavior: smooth;\n  text-rendering: optimizeSpeed;\n  line-height: 1.2;\n}\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n}\n\nbody {\n  background-image: url('background.webp');\n  color: var(--color-text);\n  font-size: clamp(1em, 1em + 2vw, 3em);\n  font-family: FundamentalBrigade, arial, sans-serif;\n  font-weight: normal;\n  height: 100%;\n  overflow-x: hidden;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9nZXJkbXVlbGxlci9EZXZlbG9wbWVudC9kZW1va3JhdGllZXJsZWJlbjIwMjAvYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIiwiYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQUE7RUFDQSxzQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUNBQUE7QUNDRjs7QURFQTtFQUNFLGlDQUFBO0VBQ0Esa0JBQUE7RUFDQSw4REFBQTtBQ0NGOztBREVBOzs7RUFHRSxzQkFBQTtFQUNBLG1DQUFBO0VBQ0Esa0NBQUE7QUNBRjs7QURHQTtFQUNFLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSx1QkFBQTtFQUNBLDZCQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURHQTs7Ozs7Ozs7Ozs7OztFQWFDLFNBQUE7RUFDQSxVQUFBO0VBQ0MsU0FBQTtBQ0FGOztBREdBO0VBQ0Usd0NBQUE7RUFDQSx3QkFBQTtFQUNBLHFDQUFBO0VBQ0Esa0RBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLHdCQUFBO1VBQUEsZ0JBQUE7RUFDQSxvQ0FBQTtVQUFBLDRCQUFBO0FDQUYiLCJmaWxlIjoiYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOnJvb3Qge1xuICAtLWNvbG9yLXRleHQ6ICM4NTAxMDE7XG4gIC0tY29sb3ItdGl0bGU6ICNCRjY0MjI7XG4gIC0tY29sb3ItbGluazogIzAwODA4MDtcbiAgLS1jb2xvci1saW5rLWhpZ2hsaWdodGVkOiAjRTMwMDBGO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdGdW5kYW1lbnRhbEJyaWdhZGUnO1xuICBmb250LWRpc3BsYXk6IHN3YXA7XG4gIHNyYzogdXJsKCcuLi9hc3NldHMvZm9udHMvRnVuZGFtZW50YWxfQnJpZ2FkZV9TY2hsYW5rLnR0ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbn1cblxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS4yO1xufVxuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIGFwcGxldCwgb2JqZWN0LCBpZnJhbWUsXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsXG5hLCBhYmJyLCBhY3JvbnltLCBhZGRyZXNzLCBiaWcsIGNpdGUsIGNvZGUsXG5kZWwsIGRmbiwgZW0sIGltZywgaW5zLCBrYmQsIHEsIHMsIHNhbXAsXG5zbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLFxuYiwgdSwgaSwgY2VudGVyLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBlbWJlZCwgXG5maWd1cmUsIGZpZ2NhcHRpb24sIGZvb3RlciwgaGVhZGVyLCBoZ3JvdXAsIFxubWVudSwgbmF2LCBvdXRwdXQsIHJ1YnksIHNlY3Rpb24sIHN1bW1hcnksXG50aW1lLCBtYXJrLCBhdWRpbywgdmlkZW8ge1xuXHRtYXJnaW46IDA7XG5cdHBhZGRpbmc6IDA7XG4gIGJvcmRlcjogMDtcbn1cblxuYm9keSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9hc3NldHMvYmFja2dyb3VuZC53ZWJwKTtcbiAgY29sb3I6IHZhcigtLWNvbG9yLXRleHQpO1xuICBmb250LXNpemU6ICN7J2NsYW1wKDFlbSwgMWVtICsgMnZ3LCAzZW0pJ307XG4gIGZvbnQtZmFtaWx5OiBGdW5kYW1lbnRhbEJyaWdhZGUsIGFyaWFsLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgcGVyc3BlY3RpdmU6IDFweDtcbiAgdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbn0iLCI6cm9vdCB7XG4gIC0tY29sb3ItdGV4dDogIzg1MDEwMTtcbiAgLS1jb2xvci10aXRsZTogI0JGNjQyMjtcbiAgLS1jb2xvci1saW5rOiAjMDA4MDgwO1xuICAtLWNvbG9yLWxpbmstaGlnaGxpZ2h0ZWQ6ICNFMzAwMEY7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogXCJGdW5kYW1lbnRhbEJyaWdhZGVcIjtcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xuICBzcmM6IHVybChcIi4uL2Fzc2V0cy9mb250cy9GdW5kYW1lbnRhbF9CcmlnYWRlX1NjaGxhbmsudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xufVxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS4yO1xufVxuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIGFwcGxldCwgb2JqZWN0LCBpZnJhbWUsXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsXG5hLCBhYmJyLCBhY3JvbnltLCBhZGRyZXNzLCBiaWcsIGNpdGUsIGNvZGUsXG5kZWwsIGRmbiwgZW0sIGltZywgaW5zLCBrYmQsIHEsIHMsIHNhbXAsXG5zbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLFxuYiwgdSwgaSwgY2VudGVyLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBlbWJlZCxcbmZpZ3VyZSwgZmlnY2FwdGlvbiwgZm9vdGVyLCBoZWFkZXIsIGhncm91cCxcbm1lbnUsIG5hdiwgb3V0cHV0LCBydWJ5LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBib3JkZXI6IDA7XG59XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vYXNzZXRzL2JhY2tncm91bmQud2VicCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci10ZXh0KTtcbiAgZm9udC1zaXplOiBjbGFtcCgxZW0sIDFlbSArIDJ2dywgM2VtKTtcbiAgZm9udC1mYW1pbHk6IEZ1bmRhbWVudGFsQnJpZ2FkZSwgYXJpYWwsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGhlaWdodDogMTAwJTtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICBwZXJzcGVjdGl2ZTogMXB4O1xuICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -9764,7 +8431,7 @@ module.exports = function (list, options) {
 /*! exports provided: chapters, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"chapters\":[{\"id\":1,\"name\":\"Zu Hause\",\"link\":\"daheim\",\"groups\":[{\"grouped\":false,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Es ist 1928. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"smokingpit\",\"layer\":\"base\",\"value\":\"smokingpit\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_kinder\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben.\"}]},{\"grouped\":true,\"row\":true,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Wen möchtest du auf diesem Weg begleiten?\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_karl\",\"title\":\"karl\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_gerda\",\"title\":\"gerda\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_anna\",\"title\":\"anna\"}]},{\"grouped\":true,\"row\":false,\"character\":\"anna\",\"content\":[{\"value\":\"Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"primary\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":true,\"character\":\"anna\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"3_Annas_Alltag\",\"title\":\"Annas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"4_Annas_Zuhause\",\"title\":\"Annas Umfeld\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"2_Anna_Familie\",\"title\":\"Annas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"1_Anna_Großvater\",\"title\":\"Annas Großvater\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie von einem Verein namens 'Sozialistische Arbeiterjugend' sind. Gemeinsam mit der Reichsarbeitsgemeinschaft der Kinderfreunde haben diese eine Ortsgruppe ins Leben gerufen.\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_werbung\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und gehst direkt mit Anna zur Ortsgruppe\"}]}]}]}");
+module.exports = JSON.parse("{\"chapters\":[{\"id\":1,\"name\":\"Zu Hause\",\"link\":\"daheim\",\"groups\":[{\"grouped\":false,\"row\":false,\"info\":\"<p>Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/events/westfalen-ruhrgebiet/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Westfalen-Ruhrgebiet</a> von Oktober bis Dezember 2019. Wir danken dem <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>, welches die Fotografien und Bildkärtchen unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt hat.</p>\",\"content\":[{\"type\":\"text\",\"value\":\"Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"smokingpit\",\"layer\":\"base\",\"value\":\"smokingpit\"}]},{\"grouped\":true,\"row\":false,\"info\":\"<a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_kinder\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben.\"}]},{\"grouped\":true,\"row\":true,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Wen möchtest du auf diesem Weg begleiten?\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_karl\",\"title\":\"Karl\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_gerda\",\"title\":\"Gerda\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_anna\",\"title\":\"Anna\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Anna\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"3_Annas_Alltag\",\"title\":\"Annas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"4_Annas_Zuhause\",\"title\":\"Annas Umfeld\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"2_Anna_Familie\",\"title\":\"Annas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"1_Anna_Großvater\",\"title\":\"Annas Großvater\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Karl\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"7_Alltag\",\"title\":\"Karls_Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"6_Karl_Familie\",\"title\":\"Karls Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"5_Karl_Großmutter\",\"title\":\"Karls Großmutter\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"8_Karls_Zuhause\",\"title\":\"Karls Zuhause\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Gerda\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"9_Gerdas_Familie\",\"title\":\"Gerdas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"10_Gerdas_Alltag_mit_Musik\",\"title\":\"Gerdas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"11_Gerdas_Zuhause\",\"title\":\"Gerdas Zuhause\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie sich in einem Verein namens 'Reichsarbeitsgemeinschaft der Kinderfreunde' engagieren und nach neuen Mitgliedern für die Ortsgruppe des Vereins suchen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend dabei und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend. Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_12_(4)\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Zur Vorbereitung treffen sich die Helferinnen und Helfer bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Karl, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Gerda, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe.\"}]}]},{\"id\":2,\"name\":\"Ortsgruppe\",\"link\":\"ortsgruppe\",\"groups\":[{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. \",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"In dem Raum sind 17 Mädchen und Jungen versammelt. Einige von ihnen kennt sie aus ihrer Siedlung. Alle kommen wie Anna aus ärmlichen Verhältnissen und erhoffen sich durch die Betätigung in der Ortsgruppe etwas Ablenkung vom oft tristen Alltag.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(68)\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"2_214_Seite142\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"12_Anna_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über Annas Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"02_1455_(68)\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_84_(2)\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"13_Karl_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über Karls Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"},{\"value\":\"Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos. Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.\",\"type\":\"text\",\"layer\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(103)\"},{\"value\":\"Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. \",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(105)\"},{\"value\":\"Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"14_Gerda_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über die Arbeit der Ortsgruppe sowie über die Rolle der Helfer*innen erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]}]}]}");
 
 /***/ }),
 
@@ -9826,7 +8493,7 @@ var App = () => {
   var renderChapter = routerProps => {
     var chapterId = parseInt(routerProps.match.params.id);
     var chapter = _app_json__WEBPACK_IMPORTED_MODULE_5__.chapters.find(chapterObj => chapterObj.id === chapterId);
-    return chapter && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__["ChapterComponent"], chapter);
+    return chapter && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__["Chapter"], chapter);
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__["AppContext"].Provider, {
