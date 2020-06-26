@@ -1,6 +1,32 @@
 .box {
   width: 80%;
 
+  &.avatar {
+    flex: 1 25%;
+    padding: 5px;
+
+    &:hover p {
+      background-color: var(--color-title);
+    }
+
+    &.second {
+      flex: 1 50%;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      height: 200px;
+      margin: 8px;
+      color: #ffffff;
+      background-color: #673ab7;
+      text-shadow: none;
+      justify-content: center;
+    }
+  }
+
   p {
     text-shadow: 2px 2px lightgrey;
   }

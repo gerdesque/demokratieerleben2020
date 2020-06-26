@@ -5,7 +5,8 @@ import './text.scss';
 
 export interface TextProps {
   value: string,
-  title: string
+  title: string,
+  layer: string
 }
 
 export const Text = (props: TextProps) => {
@@ -24,7 +25,7 @@ export const Text = (props: TextProps) => {
     );
   }
   return (
-    <div className='box'>
+    <div className={`box ${props.layer}`}>
       <Fade bottom duration={5000}>
         <p>{props.value}</p>
       </Fade>
