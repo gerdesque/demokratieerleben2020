@@ -61,19 +61,19 @@
             },
             {
               "type": "image",
-              "layer": "third",
+              "layer": "third avatar",
               "value": "daheim_karl",
               "title": "Karl"
             },
             {
               "type": "image",
-              "layer": "third",
+              "layer": "third avatar",
               "value": "daheim_gerda",
               "title": "Gerda"
             },
             {
               "type": "image",
-              "layer": "third",
+              "layer": "third avatar",
               "value": "daheim_anna",
               "title": "Anna"
             }
@@ -488,8 +488,8 @@
           ]
         }
       ]
-        },
-        {
+    },
+    {
      "id": 2,
      "name": "Die Ortsgruppe",
      "link": "ortsgruppe",
@@ -688,8 +688,8 @@
         ]
       }
      ]
-        },
-        {
+    },
+    {
       "id": 3,
       "name": "Die Arbeit der Ortsgruppe",
       "link": "gruppenvorbereitung",
@@ -1100,8 +1100,8 @@
           ]
         }
       ]
-        },
-        { 
+    },
+    { 
           "id": 4,
           "name": "Das Probezeltlager",
           "link": "probezeltlager",
@@ -1352,9 +1352,9 @@
             }
           ]
         }  
-          ]    
-        },
-        { 
+      ]    
+    },
+    { 
          "id": 5,
          "name": "Der Weg zur Kinderrepublik",
          "link": "reise",
@@ -1635,8 +1635,8 @@
           ] 
         }  
       ]
-        },
-        { 
+    },
+    { 
           "id": 6,
           "name": "Die Kinderrepublik",
           "link": "ankunft",
@@ -1647,48 +1647,192 @@
              "info": "Hier könnte ein Link sein.",
              "content": [
                 {
-                "type": "image",
-                "layer": "back",
-                "value": "daheim_karte"
-               },
-               {
-               "type": "image",
-               "layer": "base",
-               "value": "02_1455_(1)"
-               }
+                 "type": "image",
+                 "layer": "back",
+                 "value": "daheim_karte"
+                },
+                {
+                 "type": "image",
+                 "layer": "deep",
+                 "value": "02_1455_(1)"
+                }
+              ]
+            },
+            {
+              "grouped": true,
+              "row": false,
+              "character": "Anna",
+              "content": [
+                {
+                 "type": "text",
+                 "value": "Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "video",
+                 "layer": "second",
+                 "value": "32_Anna_Zeltobfrau"
+                },
+                {
+                 "type": "image",
+                 "layer": "third",
+                 "value": "02_1455_(75)"
+                },
+                {
+                 "type": "text",
+                 "layer": "fore",
+                 "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
+                }
               ]
             },
             {
              "grouped": true,
              "row": false,
-             "character": "Anna",
+             "character": "Karl",
              "content": [
-              {
-              "type": "text",
-              "value": "Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.",
-              "layer": "fore"
+                {
+                 "type": "text",
+                 "value": "Karl ist jetzt endlich in der Kinderrepublik angekommen und hat sein Zelt gemeinsam mit mehreren anderen Kindern bezogen. Er verschafft sich sofort einen Überblick über das Gelände und das Lager.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "third",
+                 "value": "2_8_Weg_zum_Zeltlager"
+                },
+                {
+                 "type": "text",
+                 "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "deep",
+                 "value": "02_45_(20)"
+                },
+                {
+                 "type": "text",
+                 "layer": "fore",
+                 "value": "Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen."
+                }
+              ]
+            },
+            {
+             "grouped": true,
+             "row": false,
+             "character": "Karl",
+             "content": [
+                {
+                 "type": "text",
+                 "value": "An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "deep",
+                 "value": "02_0028_KR_Westerwald_1932_Lagerwahl"
+                },
+                {
+                 "type": "video",
+                 "layer": "base",
+                 "value": "39_Karl_Zeltobfrau"
+                },
+                {
+                 "type": "text",
+                 "layer": "fore",
+                 "value": "In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu entdecken und auszuprobieren."
+                }
+              ]
+            },
+            {
+             "grouped": true,
+             "row": false,
+             "character": "Gerda",
+             "content": [
+                {
+                 "type": "text",
+                 "value": "Gerda ist nun endlich mit ihrer Gruppe in der Kinderrepublik angekommen. Sie fangen sofort damit an, ihre Zelte aufzubauen und ihre Strohsäcke zu füllen. Das ist ein Durcheinander: Hunderte Kinder, die gleichzeitig mit Zeltstangen, Zeltbahnen und Stroh durcheinanderlaufen!",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "back",
+                 "value": "2_31_aa"
+                },
+                {
+                 "type": "text",
+                 "layer": "fore",
+                 "value": "Nebenan sind Gruppen aus dem Ruhrgebiet und Schlesien, die ebenfalls emsig mit dem Aufbau ihrer Zeltdörfer beschäftigt sind. Gerda verschafft sich erst einmal einen Überblick über das Gelände und das Lager."
+                },
+                {
+                 "type": "video",
+                 "layer": "base",
+                 "value": "27_Gerda_Lageraufbau"
+                }
+              ]
+            },
+           {
+             "grouped": true,
+             "row": false,
+             "character": "Gerda",
+             "content": [
+                {
+                 "type": "text",
+                 "value": "Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "back",
+                 "value": "2_31_a"
+                },
+                {
+                 "type": "text",
+                 "value": "Jede Ortsgruppe gibt zu Beginn ihre eingesammelten Spenden bei der Lagerkasse ab, die durch eine Helferin und drei Falken verwaltet wird. Davon werden zum Beispiel die Bäckereien bezahlt, die Brot an die Kinderrepublik liefern, oder die Fleischereien, die Wurst und Fleisch bereitstellen.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "third",
+                 "value": "2_31_k"
+                }
+              ]
+            },
+            {
+             "grouped": true,
+             "row": false,
+             "character": "Gerda",
+             "content": [
+                {
+                 "type": "text",
+                 "value": "Gerda hat unter den Helfer*innen auch Berta, eine Bekannte aus ihrer Ortsgruppe getroffen. Sie ist bereits einige Tage vor den Kindergruppen angereist, um beim Aufbau der Latrinen und der Funktionszelte zu helfen.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "back",
+                 "value": "02_1455_(85)"
+                },
+                {
+               "type": "text",
+               "layer": "fore",
+               "value": "Berta hilft nun beim Brotdienst und schneidet Brote in Scheiben, die dann an die Kinder verteilt werden. Gerda freut sich, dass Berta dabei ist. Denn von ihrer Erfahrung bei den Kinderfreunden kann Gerda noch viel lernen."
               },
               {
-              "type": "video",
-              "layer": "base",
-              "value": "32_Anna_Zeltobfrau"
-              },
+                "type": "image",
+                "layer": "fourth",
+                "value": "02_1455_(139)"
+               },
               {
-              "type": "image",
-              "layer": "third",
-              "value": "02_1455_(75)"
-              },
-              {
-              "type": "text",
-              "layer": "fourth",
-              "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
+               "type": "video",
+               "layer": "base",
+               "value": "26_Gerda_Küchenkommission"
               }
             ]
           },
           {
             "grouped": true,
             "row": false,
-            "character": "Anna",
             "content": [
               {
               "type": "image",
@@ -1702,9 +1846,1599 @@
              },
              {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik."
-              }
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+             },
+             {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+             },
+             {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+             },
+             {
+              "type": "redirect",
+              "layer": "falken",
+              "value": "Ich möchte mehr über die Roten Falken erfahren."
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.",
+              "title": "Personen"
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Priester",
+              "title": "Priester"
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Lagerfotograf",
+              "title": "Lagerfotograf"
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Lagerarzt",
+              "title": "Lagerarzt"
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Genossen",
+              "title": "lokale Genoss*innen"
+             },
+             {
+              "type": "text",
+              "layer": "fore",
+              "value": "Hitlerjugend",
+              "title": "Hitlerjugend"
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 7,
+      "name": "Andere Personen",
+      "link": "Personen",
+      "groups": [
+       {
+        "grouped": true,
+        "row": false,
+        "info": "Hier könnte ein Link sein.",
+        "content": [
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "daheim_karte"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_12_(13)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "falken",
+          "content": [
+            {
+              "type": "text",
+              "value": "Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": ""
+            },
+            {
+              "type": "text",
+              "value": "Das Ziel dieser Gebote ist es, dass aus den Kindern später einmal gute, hilfsbereite und engagierte Sozialdemokrat*innen werden. Diese Regeln und Gebote werden in der Kinderrepublik oft abends vor der Lagerruhe im Sprechchor aufgesagt.",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "layer": "deep",
+              "value": "41_Rote_Falken_Gebote_Chor"
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            }
+          ]
+        },           
+        {
+         "grouped": true,
+         "row": false,
+         "character": "Priester",
+         "content": [
+          {
+            "type": "video",
+            "layer": "second",
+            "value": "19_Besuchstag"
+           },
+            {
+             "type": "text",
+             "value": "Einer dieser Kirchenvertreter ist ein katholischer Priester aus der nahen Umgebung. Insbesondere die katholische Kirche lehnt das Prinzip der Koedukation, das die Kinderfreunde  propagieren, ab. Koedukation bedeutet, dass Mädchen und Jungen gemeinsam in der Gruppe aktiv sind. Vor allem die gemeinsam genutzten Zelte hält der Priester für moralisch verwerflich.",
+             "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(65)"
+            },
+            {
+             "type": "text",
+             "value": "In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden.",
+             "layer": "fore"
+            },           
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(99)"
+            },
+            {
+              "type": "text",
+              "value": "Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel.",
+              "layer": "fore"
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitfalken",
+              "value": "Ich möchte mehr über die Roten Falken erfahren."
+            }   
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerfotograf",
+          "content": [
+            {
+              "type": "text",
+              "value": "Im Zeltlager wird oft fotografiert. Obwohl bereits seit 1925 Kleinbildkameras serienmäßig produziert werden, besitzen die wenigsten Arbeiterfamilien Fotoapparate. Denn diese kosten oft den 4- bis 5-fachen Monatslohn eines Arbeiters. Erst 1930 gibt es erschwingliche Kameras - zwar mit größeren Rollfilmen, aber für nur 40 RM.",
+              "layer": "fore"
+            },
+            {
+             "type": "text",
+              "value": "Im Zeltlager gibt es nur wenige Personen, die eine Kamera bedienen können.",
+              "layer": "fore"
+            },           
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_0189_SAJ_Bielefeld_auf_dem_AJT_in_Hamburg,_1925,_Fotograf"
+            },
+            {
+              "type": "text",
+              "value": "Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik.",
+              "layer": "fore"
+            },
+            {
+             "type": "text",
+              "value": "Er hält alle wichtigen Momente fest: Ausflüge, Aufführungen des legendären Lagerzirkus, die Essenausgabe, die Musikkapelle und natürlich auch alle anderen Situationen des Gruppenlebens.",
+              "layer": "fore"
+            },           
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(108)"
+            },
+            {
+              "type": "text",
+              "value": "Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll.",
+              "layer": "fore"
+            },          
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(46)"
+            },
+            {
+              "type": "text",
+              "value": "Irmas Bericht",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "value": "08.08. Um 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen. Freundschaft. Irma",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(146)"
+            },
+            {
+              "type": "text",
+              "value": "Georgs Bericht",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "value": "01.08. Wir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein. Freundschaft. Georg",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_45_(6)"
+            },
+            {
+              "type": "text",
+              "value": "Lottes Bericht",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "value": "23.07. Um 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe. Freundschaft. Lotte",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_45_(21)"
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitfalken",
+              "value": "Ich möchte mehr über die Roten Falken erfahren."
+            }          
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerarzt",
+          "content": [
+            {
+             "type": "text",
+             "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
+             "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_29_2_Seite85"
+            },
+            {
+             "type": "text",
+             "value": "Er versorgt in der Kinderrepublik verletzte und kranke Kinder. Obwohl jedes Kind vor der Reise ärztlich untersucht werden sollte, gibt es doch immer wieder Fälle von schweren Erkrankungen und Seuchen.",
+             "layer": "fore"
+            },           
+            {
+              "type": "text",
+              "value": "Erst letzten Monat gab es Berichte von einem kleineren Zeltlager, das kurz vor der Schließung stand. Dort waren mehrere Fälle der lebensgefährlichen Krankheit Diphterie aufgetreten. Zum Glück konnten die betroffenen Kinder schnell isoliert und ins Krankenhaus gebracht werden. Die Ansteckung anderer Kinder wurde so verhindert.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_30_2"
+            },
+            {
+              "type": "text",
+              "value": "Für die Helfer*innen bietet der Lagerarzt regelmäßig Bildungsabende zum Thema Hygiene an. Dieses Wissen ist wichtig, damit Krankheiten im Zeltlager keine Chance haben.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_30_3"
+            },           
+            {
+              "type": "text",
+              "value": "2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil.",
+              "layer": "fore"
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitfalken",
+              "value": "Ich möchte mehr über die Roten Falken erfahren."
+            }     
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Genossen",
+          "content": [
+            {
+             "type": "text",
+             "value": "In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. ",
+              "layer": "fore"
+            },
+            {
+             "type": "text",
+             "value": "So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen.",
+             "layer": "fore"
+            },           
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(96)"
+            },
+            {
+              "type": "text",
+              "value": "Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch.",
+               "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(2)"
+            },
+            {
+              "type": "text",
+              "value": "Ohne die vielen wohlgesonnenen Bürger*innen im Umland könnte das Zeltlager nicht stattfinden. Und Lebensmittel für so viele Kinder in einem Laden zu kaufen wäre einerseits unmöglich und andererseits auch viel zu teuer.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(121)"
+            },
+            {
+              "type": "text",
+              "value": "Und wie schmeckt Anna und Karl das Essen in der Kinderrepublik?",
+               "layer": "fore"
+            },
+            {
+              "type": "video",
+              "layer": "fourth",
+              "value": "37_Karl_Essen"
+            },
+            {
+              "type": "video",
+              "layer": "fourth",
+              "value": "31_Anna_Essen"
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitfalken",
+              "value": "Ich möchte mehr über die Roten Falken erfahren."
+            }       
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Hitlerjugend",
+          "content": [
+            {
+              "type": "video",
+              "layer": "second",
+              "value": "21_Nächtlicher_Überfall"
+            },
+            {
+             "type": "text",
+             "value": "Vor ihnen stehen knapp 30 Kinder und Jugendliche mit leuchtenden Fackeln in den Händen. Sie brüllen irgendetwas von 'Sozialistenschweinen' und 'Vaterlandsverrätern' und rennen davon. ",
+             "layer": "fore"
+            },
+            {
+             "type": "text",
+             "value": "Die Kinder des Zeltlagers sind erschrocken. Sie haben schon oft gehört, dass die Hitlerjugend Zeltlager von sozialistischen Verbänden gestürmt haben. Aber sie hatten sich sehr sicher gefühlt.",
+             "layer": "fore"
+            },           
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(22)"
+            },
+            {
+              "type": "text",
+              "value": "Die Helfer*innen setzen sich nun mit ihren jeweiligen Zeltgemeinschaften zusammen und besprechen das soeben Erlebte.",
+              "layer": "fore"
+            },
+            {
+             "type": "text",
+             "value": "Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft.",
+             "layer": "fore"
+            },           
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "2_31_t"
+            },
+            {
+              "type": "text",
+              "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft.",
+              "layer": "fore"
+            }, 
+            {
+              "type": "text",
+              "value": "Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_31_z"
+            },
+            {
+              "type": "text",
+              "value": "Seit 1926 gab es mit der Hitlerjugend bereits eine Jugendorganisation der NSDAP, die für Kinder ähnlich attraktiv wirkte, wie die sozialistischen und sozialdemokratischen Verbände.",
+              "layer": "fore"
+            },
+            {
+              "type": "video",
+              "layer": "second",
+              "value": "25_Karl_Hitlerjugend"
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitanna",
+              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitkarl",
+              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitgerda",
+              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            },
+            {
+              "type": "redirect",
+              "layer": "weitermitfalken",
+              "value": "Ich möchte mehr über die Roten Falken erfahren."
+            }   
+          ]
+        }
+      ]      
+    },
+    { 
+       "id": 8,
+       "name": "Annas Erlebnisse",
+       "link": "weitermitanna",
+       "character": "Anna",
+       "groups": [
+        {
+         "grouped": true,
+         "row": false,
+         "info": "Hier könnte ein Link sein.",
+         "content": [
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "daheim_karte"
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "02_1455_(141)"
+            }
+          ]
+        },
+        {
+         "grouped": true,
+         "row": false,
+         "character": "Anna",
+         "content": [
+            {
+             "type": "text",
+             "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
+             "layer": "fore"
+            },
+            {
+             "type": "text",
+             "layer": "fore",
+             "value": "Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan."
+            },
+            {
+             "type": "image",
+             "layer": "deep",
+             "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
+            }         
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+             "type": "text",
+             "value": "Wie sieht der Tagesplan aus? Hilf Anna, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.",
+             "layer": "fore"
+            },
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "2_30_1"
+            },
+            {
+             "type": "text",
+             "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.",
+             "layer": "fore"
+            },
+            {
+             "type": "daily",
+             "layer": "base",
+             "value": "Tagesplan"
+            }        
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+             "type": "text",
+             "value": "Anna kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind. Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.",
+             "layer": "fore"
+            },
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "02_1455_(16)"
+            },
+            {
+             "type": "video",
+             "layer": "second",
+             "value": "30_Anna_Dialekte"
+            }         
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+             "type": "text",
+             "value": "Auch wenn sich die Kinder manchmal aneinander vorbei reden und unterschiedliche Wörter benutzen, gibt es doch eine Sache, die alle gleich gut verstehen und mögen: Kino.",
+             "layer": "base"
+            },
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "2_31_c"
+            },
+            {
+             "type": "text",
+             "value": "Am Nachmittag haben die Helfer*innen eine Filmvorführung für die jungen Republikaner*inne in einem nahen Kino organisiert. In 2 Schichten schauen alle Kinder einen Stummfilm von Buster Keaton. Dafür braucht es keine Worte, denn diesen Humor verstehen alle.",
+             "layer": "base"
+            },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_12_(5)"
+            }      
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+             "type": "text",
+             "value": "Normalerweise finden Ausflüge und Arbeitsgruppen vor dem Mittagessen statt.",
+             "layer": "base"
+            },
+            {
+             "type": "image",
+             "layer": "second",
+             "value": "02_1455_(135)"
+            },
+            {
+             "type": "text",
+             "value": "Die ruhigeren Nachmittage können die Kinder selbst füllen, um ihren Neigungen und Interessen nachzugehen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.",
+             "layer": "base"
+            }  
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+             "type": "text",
+             "value": "Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden. Die Kinder nennen diese Zeit auch 'Zausestunde', weil es oft rege Diskussionen gibt.",
+             "layer": "base"
+            },
+            {
+             "type": "image",
+             "layer": "back",
+             "value": "02_1455_(97)"
+            },
+            {
+             "type": "text",
+             "value": "Hin und wieder gibt es in den einzelnen Zeltdörfern naturkundliche Vorträge der Helfer*innen. Dadurch lernen die Kinder etwas über die Tiere und die Pflanzen der Umgebung.",
+             "layer": "base"
+            }  
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "2_31_j"
+            },
+            {
+             "type": "text",
+             "value": "An manchen Nachmittagen bewegt sich das ganze Zeltlager! Die Kinder lernen dann Volkstänze aus allen Teilen der Republik und sogar aus anderen Ländern. Dabei tanzen alle zusammen: Jungen und Mädchen.",
+             "layer": "base"
+            },
+            {
+             "type": "image",
+             "layer": "third",
+             "value": "02_1455_(36)"
+            },
+            {
+             "type": "text",
+             "value": "Abends gibt es manchmal Kulturveranstaltungen und gemeinsames Singen.",
+             "layer": "base"
+            }  
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "02_2453_(2)"
+            },
+            {
+             "type": "text",
+             "value": "Fast alle Angelegenheiten werden demokratisch entschieden. Dennoch gibt es manchmal Situationen, in denen dies nichts nützt, denn...",
+             "layer": "base"
+            },
+            {
+              "type": "video",
+              "layer": "second",
+              "value": "29_Anna_Gewitter"
+            } 
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+              "type": "text",
+              "value": "In solchen Momenten muss die ganze Kinderrepublik an einem Strang ziehen. Jede*r hat eine Aufgabe.",
+              "layer": "base"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "02_45_(9)"
+            },
+            {
+             "type": "text",
+             "value": "Die Zelte müssen wieder aufgebaut werden, Löcher gestopft werden, abgebrochene Äste und Zweige müssen eingesammelt werden und über den matschigen Feldboden wird ein Holzweg gebaut.",
+             "layer": "base"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "2_8_Stegbau"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+              "type": "text",
+              "value": "Anna hat von einigen Helfer*innen gehört, dass es vergangenen Sommer ein Zeltlager gegeben hat, bei dem es zwei Wochen lang ununterbrochen geregnet hat. Die Kinder waren dann die meiste Zeit im Zelt und die meisten Ausflüge und Aktivitäten fielen sprichwörtlich ins Wasser.",
+              "layer": "base"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "02_1455_(132)"
+            },
+            {
+             "type": "text",
+             "value": "Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen.",
+             "layer": "base"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+              "type": "text",
+              "value": "Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.",
+              "layer": "base"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "02_1455_(57)"
+            },
+            {
+              "type": "video",
+              "layer": "second",
+              "value": "20_Anna_Lagerbücherei"
+            } 
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [
+            {
+              "type": "image",
+              "layer": "third",
+              "value": "02_1455_(106)"
+            },
+            {
+              "type": "text",
+              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?",
+              "layer": "base"
+            },
+            {
+              "type": "redirect",
+              "layer": "annameetskarl",
+              "value": "Ja, gern."
+            },
+            {
+              "type": "redirect",
+              "layer": "annaundausflüge",
+              "value": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 9,
+      "name": "Karls Erlebnisse",
+      "link": "weitermitkarl",
+      "character": "Karl",
+      "groups": [
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(141)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+            {
+              "type": "text",
+              "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
+            }         
+          ]
+        },
+        {
+            "grouped": true,
+            "row": false,
+            "character": "Karl",
+            "content": [
+              {
+                 "type": "text",
+                 "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.",
+                 "layer": "fore"
+              },
+              {
+                 "type": "image",
+                 "layer": "back",
+                 "value": "2_30_1"
+              },
+              {
+                 "type": "text",
+                 "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.",
+                 "layer": "fore"
+              },
+              {
+                 "type": "daily",
+                 "layer": "base",
+                 "value": "Tagesplan"
+              }        
+            ]
+        },
+        {
+             "grouped": true,
+             "row": false,
+             "character": "Karl",
+             "content": [
+                {
+                 "type": "text",
+                 "value": "Ein Großteil des Tages besteht darin, dass die Kinder und Jugendlichen ihren eigenen Interessen nachgehen können und an einer der vielfältigen Arbeitsgruppen teilnehmen können. Oft organisieren die Kinder auch eigene Veranstaltungen oder Ausflüge.",
+                 "layer": "fore"
+                },
+                {
+                 "type": "image",
+                 "layer": "back",
+                 "value": "02_1455_(16)"
+                },
+                {
+                  "type": "text",
+                  "value": "Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert.",
+                  "layer": "base"
+                },
+                {
+                 "type": "video",
+                 "layer": "fourth",
+                 "value": "38_Karl_ErsteHilfe"
+                }         
+              ]
+        },
+        {
+            "grouped": true,
+            "row": false,
+            "character": "Karl",
+            "content": [
+              {
+                "type": "text",
+                "value": "Karl kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind.",
+                "layer": "fore"
+              },
+              {
+                  "type": "image",
+                  "layer": "back",
+                  "value": "2_8_5"
+              },
+              {
+                   "type": "text",
+                   "value": "Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.",
+                   "layer": "base"
+              },
+              {
+                  "type": "video",
+                  "layer": "fourth",
+                  "value": "36_Karl_Dialekte"
+              }         
+            ]
+        },
+        {
+              "grouped": true,
+              "row": false,
+              "character": "Karl",
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.",
+                  "layer": "fore"
+                },
+                {
+                  "type": "image",
+                  "layer": "back",
+                  "value": "02_1455_(135)"
+                },
+                {
+                  "type": "text",
+                  "value": "Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden.",
+                  "layer": "base"
+                }         
+              ]
+        },
+        {
+              "grouped": true,
+              "row": false,
+              "character": "Karl",
+              "content": [
+                {
+                  "type": "image",
+                  "layer": "back",
+                  "value": "2_31_v"
+                },
+                {
+                  "type": "text",
+                  "value": "An manchen Nachmittagen tanzt das ganze Zeltlager, es gibt Zirkusaufführungen oder Theaterinszenierungen der Kinder und Helfer*innen.",
+                  "layer": "fore"
+                },
+                {
+                  "type": "video",
+                  "layer": "third",
+                  "value": "22_Karl_Dialektabend"
+                },
+                {
+                  "type": "image",
+                  "layer": "back",
+                  "value": "2_31_l"
+                }    
+              ]
+        },
+        {
+              "grouped": true,
+              "row": false,
+              "character": "Karl",
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Auch wenn im Zeltlager vieles gut organisiert ist und über fast alles demokratisch entschieden wird, gibt es auch hier Situationen, die niemand beeinflussen kann, denn...",
+                  "layer": "fore"
+                },
+                {
+                  "type": "video",
+                  "layer": "third",
+                  "value": "35_Karl_Gewitter"
+                },
+                {
+                  "type": "image",
+                  "layer": "back",
+                  "value": "2_8_Stegbau"
+                }    
+              ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+           "character": "Karl",
+          "content": [
+            {
+              "type": "text",
+              "value": "Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen. Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "02_1455_(57)"
+            },
+            {
+              "type": "text",
+              "value": "Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann.",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?",
+              "layer": "base"
+            },
+            {
+              "type": "redirect",
+              "layer": "annameetskarl",
+              "value": "Ja, gern."
+            },
+            {
+              "type": "redirect",
+              "layer": "annaundausflüge",
+              "value": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
+            }   
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 10,
+      "name": "Anna und die Ausflüge",
+      "link": "annaundausflüge",
+      "groups": [
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(52)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "video",
+              "layer": "third",
+              "value": "34_Anna_Ausflug"
+            },
+            {
+              "type": "text",
+              "value": "Eine wichtige Beschäftigung während der Kinderrepublik ist auch das sogenannte 'soziale Wandern'.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(123)"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Dabei geht es nicht nur um das Wandern als sportliche Betätigung, sondern auch um das soziale und wirtschaftliche Lebensumfeld der Menschen vor Ort."
+            }   
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(78)"
+            },
+            {
+              "type": "text",
+              "value": "Annas Zeltdorf macht eine Wanderung zu einer nahen Ziegelei, die durch einige Arbeitersiedlungen führt. Dort wohnen viele Arbeiterfamilien in ärmlichen Verhältnissen. Sie erfahren in Gesprächen mit den Bewohner*innen, dass die meisten von ihnen in einer der nahen Werften und am Hafen arbeiten.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(64)"
+            },
+            {
+              "type": "text",
+              "value": "Hier in der Gegend gibt es aber auch noch viele Bauerndörfer. Für Anna wirken manche Orte viel idyllischer als das, was sie von zu Hause kennt. Sie versteht aber, dass auch Kleinbauern oft arm sind und wenig zu essen haben.",
+              "layer": "fore"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "video",
+              "layer": "third",
+              "value": "24_Anna_Arbeiterklasse"
+            },
+            {
+              "type": "text",
+              "value": "Anna hat in der Lagerbücherei Karl kennengelernt, mit dem sie sich gut versteht. Die beiden wohnen sogar in dem selben Zeltdorf.",
+              "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_2593_(2)"
+            },
+            {
+              "type": "text",
+              "value": "Anna versucht Karl für die parlamentarische Struktur der Kinderrepublik zu begeistern, die ihm bisher sehr kompliziert vorkommt. ",
+              "layer": "fore"
+            },
+            {
+              "type": "redirect",
+              "layer": "gemeinsam",
+              "value": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
+            } 
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 11,
+      "name": "Anna und Karl",
+      "link": "annameetskarl",
+      "groups": [
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(101)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(71)"
+            },
+            {
+              "type": "text",
+              "value": "In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.",
+              "layer": "fore"
+            },
+            {
+              "type": "video",
+              "layer": "third",
+              "value": "23_Anna_und_Karl_mit_Musik"
+            }  
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_8_Lesende_Jungs_im_Zelt"
+            },
+            {
+              "type": "text",
+              "value": "Beide lesen aber auch gern Romane, die von Entdeckungsreisen und fantastischen Orten handeln. Karl hat bisher während des Zeltlagers schon zwei Bücher von Jules Verne gelesen. ",
+              "layer": "fore"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Auch einige sehr neue Romane finden sich in der Lagerbücherei. Anna hat zum Beispiel 'Emil und die Detektive' von Erich Kästner gelesen und war begeistert."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Es gibt aber auch Literatur, welche die geistige und moralische Haltung der Kinder stärken soll. Neben wichtigen Werken sozialistischer Autor*innen steht daher auch hochaktuelle Antikriegsliteratur, z.B. 'Im Westen nichts Neues' von Erich Maria Remarque."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(118)"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(111)"
+            },
+            {
+              "type": "redirect",
+              "layer": "gemeinsam",
+              "value": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
+            } 
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 12,
+      "name": "Gemeinsam in der Kinderrepublik",
+      "link": "gemeinsam",
+      "groups": [
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_2623_(3)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "In Annas und Karls Zeltdorf haben sich mehrere Kinder zusammengefunden, die einen Antrag an das Lagerparlament stellen wollen. Sie wollen erreichen, dass die Gymnastik morgens nach dem Frühstück und nicht davor stattfindet. "
+            },
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "2_8_Mädchen_in_Turnkleidung_am_Strand"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Nachdem sie die Mehrheit für diesen Vorschlag in ihrer Zeltgemeinschaft erhalten haben, reichen sie den Antrag an die Gemeindevertretung des Zeltdorfes weiter."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_12_(1)"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Der Bürgermeister muss nun den Antrag an das Lagerparlament weiterreichen, sodass alle Vertreter*innen der Gemeinderäte darüber beraten und abstimmen können. Am Ende lehnt das Lagerparlament mit großer Mehrheit den Vorschlag ab."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "image",
+              "layer": "second",
+              "value": "2_8_Junge_mit_Becher"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Es begründet seine Entscheidung damit, dass der Küchendienst nach dem Aufstehen etwas Zeit braucht, um das Essen vorzubereiten und damit, dass Sport vor dem Essen gesünder sei als direkt danach."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Anna hat eingesehen, dass der Ablauf wirklich kompliziert ist. Um die ganze Lagerstruktur besser erklären zu können,  hat sie sich ein Spiel ausgedacht. Sie spielt es mit Karl, um auszuprobieren, ob es verständlich ist."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(91)"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Diese bestehen aus einer Zeichnung und dem dazu passenden Foto. Klicke einfach auf die Kärtchen, um zu sehen, was sich auf der Rückseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Wenn du das Spiel gewinnst, wird sich die Kinderrepublik langsam dem Ende nähern."
+            },
+            {
+              "type": "memory",
+              "layer": "base",
+              "value": "Memory"
+            },
+            {
+              "type": "redirect",
+              "layer": "endkapitel",
+              "value": "Du hast genug gespielt und hast langsam Heimweh...."
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 13,
+      "name": "Das Ende der Kinderrepublik",
+      "link": "endkapitel",
+      "groups": [
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_1455_(124)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Gerda hat den beiden Kindern beim Spielen zugeschaut und findet Annas Idee großartig. Sie will das Spiel mit ihrer Ortsgruppe ausprobieren, wenn sie sich auf das nächste Zeltlager vorbereiten."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_31_ac"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Da Gerda nur wenige Jahre älter als Anna und Karl ist, hat sie direkt einen guten Draht zu den beiden. Sie hören ihr gespannt zu, wie sie berichtet, wie sie zur Sozialistischen Arbeiterjugend gekommen ist und warum sie Helferin in der Kinderrepublik geworden ist. "
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "103"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon."
+            },
+            {
+              "type": "video",
+              "layer": "third",
+              "value": "28_Deutschfranzösisches_Zeltlager"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Bis dahin nehmen sie sich jedoch vor, an einem der nächsten Arbeiterjugendtage teilzunehmen. Dieser findet alle ein bis zwei Jahre statt und wird voraussichtlich 1931 in Frankfurt am Main ausgetragen."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_0016_AJT_in_Wien_1929"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Dort treffen sich Arbeiterkinder aus der ganzen Republik, bekunden ihre Solidarität und schmieden Pläne für eine bessere Zukunft."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Die Kinderrepublik nähert sich langsam dem Ende. Für Anna und Karl ist diese Zeit wie im Flug vergangen."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_31_y"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Sie haben viele neue Freunde gefunden. Viele davon werden, wie die beiden, bald eine Lehre in einer der großen Fabriken anfangen."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "02_0013_Lübecker_Bucht_1930_Briefkasten"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_31_s"
+            },
+            {
+              "type": "redirect",
+              "layer": "ausblick",
+              "value": "Doch was ist nach den 1920er Jahren aus den Kindern geworden?"
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "id": 14,
+      "name": "Das Ende der Republik",
+      "link": "ausblick",
+      "groups": [
+        {
+          "grouped": true,
+          "row": false,
+          "info": "Hier könnte ein Link sein.",
+          "content": [
+            {
+              "type": "image",
+              "layer": "back",
+              "value": "daheim_karte"
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "2_0016_Seite155"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": " Viele der Kinder und Jugendlichen, die in den 1920er und 1930er Jahren an Zeltlagern der Kinderfreunde und der Sozialistischen Arbeiterjugend (SAJ) teilgenommen haben, wurden nach 1933 für ihr politisches Engagement verfolgt, inhaftiert und auch ermordet."
+            },
+            {
+              "type": "image",
+              "layer": "deep",
+              "value": "PH_dig_205_Seite205"
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Die hier verwendeten Bilder überlebten oft nur durch Zufall oder weil sie gut versteckt worden waren und wie ein Schatz gehütet wurden."
+            },
+            {
+              "type": "text",
+              "layer": "fore",
+              "value": "Ende"
+            }
           ]
         }
       ]
