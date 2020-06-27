@@ -1,3 +1,5 @@
+export * from './lib/rain/rain';
+export * from './lib/birds/birds';
 export * from './lib/memory/memory';
 export * from './lib/daily/daily';
 export * from './lib/tictactoe/tictactoe';

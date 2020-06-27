@@ -25,6 +25,7 @@
               "apps/demol/src/styles.scss",
               "libs/ui/src/lib/ui.scss"
             ],
+            "extractCss": true,
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack",
             "baseHref": "/demokratieerleben2020/"
