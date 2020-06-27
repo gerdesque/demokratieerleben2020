@@ -5,6 +5,6 @@ import { Title } from 'react-admin';
 export default () => (
     <Card>
         <Title title="Willkommen zur Demokratie erLeben Administratoroberfläche" />
-        <CardContent>Hier können Kapitel, Bilder, Spiele und Videos bearbeitet werden.</CardContent>
+        <CardContent>Hier können Kapitel und deren Texte bearbeitet werden.</CardContent>
     </Card>
 );

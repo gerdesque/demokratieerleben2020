@@ -18,20 +18,12 @@ export const ChapterEdit = props => (
       <TextInput label="Pfad" source="link" validate={required()}/>
       <ArrayInput label="Inhaltsgruppen" source="groups">
         <SimpleFormIterator>
+        <TextInput label="Info" source="info" />
           <ArrayInput label="Inhalt" source="content">
             <SimpleFormIterator>
-              <RadioButtonGroupInput fullWidth="true" label="Typ" source="type" choices={[
-                { id: ContentType.Text, name: 'Text' },
-                { id: ContentType.Video, name: 'Video' },
-                { id: ContentType.Image, name: 'Bild' },
-                { id: ContentType.Game, name: 'Spiel' },
-                { id: ContentType.Misc, name: 'Sonstiges' },
-              ]} />
-              <RadioButtonGroupInput label="Ebene" source="layer" choices={[
-                { id: Layer.Fore, name: 'Front' },
-                { id: Layer.Base, name: 'Mitte' },
-                { id: Layer.Back, name: 'Hinten' },
-              ]} />
+              <TextInput label="Typ" source="type" />
+              <TextInput label="Ebene" source="layer" />
+              <TextInput label="Titel" source="title" />
               <TextInput multiline label="Wert" fullWidth="true" source="value" />
             </SimpleFormIterator>
           </ArrayInput>
