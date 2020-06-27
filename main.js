@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
 /***/ "../../../dist/libs/data/data.esm.js":
-/*!***************************************************************************************!*\
-  !*** /Users/gerdmueller/Development/demokratieerleben2020/dist/libs/data/data.esm.js ***!
-  \***************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/dist/libs/data/data.esm.js ***!
+  \****************************************************************************************/
 /*! exports provided: API_URL, ContentType, IMAGE_SUFFIX, IMAGE_SUFFIX_ALTERNATE, Layer, VIDEO_SUFFIX */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -48,9 +48,9 @@ var ContentType;
 /***/ }),
 
 /***/ "../../../dist/libs/home/home.esm.js":
-/*!***************************************************************************************!*\
-  !*** /Users/gerdmueller/Development/demokratieerleben2020/dist/libs/home/home.esm.js ***!
-  \***************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/dist/libs/home/home.esm.js ***!
+  \****************************************************************************************/
 /*! exports provided: Home */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65,13 +65,45 @@ __webpack_require__.r(__webpack_exports__);
 var home = {
   link: "home",
   groups: [{
-    "grouped": true,
+    "grouped": false,
     "row": false,
     "content": [{
       "type": "text",
       "value": "Natürlich besteht die Kinderrepublik nicht nur aus Karl, Anna und Gerda. Damit ihr mit den beiden dieses Abenteuer erleben könnt, hat Florian eine Website entworfen, die Gerd umgesetzt hat. Anne hat dafür unter dem Einsatz von Felix‘ Sprecherstimme Trickfilme produziert.",
       "layer": "fore"
+    }]
+  }, {
+    "grouped": true,
+    "row": true,
+    "content": [{
+      "type": "text",
+      "value": "Anne Mühlich",
+      "layer": "avatar second"
     }, {
+      "type": "text",
+      "value": "Gerd Müller",
+      "layer": "avatar second"
+    }, {
+      "type": "text",
+      "value": "Julia Kothe",
+      "layer": "avatar"
+    }, {
+      "type": "text",
+      "value": "Lars Tunçay",
+      "layer": "avatar"
+    }, {
+      "type": "text",
+      "value": "Nina Heinke",
+      "layer": "avatar"
+    }, {
+      "type": "text",
+      "value": "Felix Werthschulte",
+      "layer": "avatar"
+    }]
+  }, {
+    "grouped": false,
+    "row": false,
+    "content": [{
       "type": "text",
       "value": "Unsere Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können.",
       "layer": "fore"
@@ -88,10 +120,10 @@ var Home = function Home() {
 /***/ }),
 
 /***/ "../../../dist/libs/ui/ui.esm.js":
-/*!***********************************************************************************!*\
-  !*** /Users/gerdmueller/Development/demokratieerleben2020/dist/libs/ui/ui.esm.js ***!
-  \***********************************************************************************/
-/*! exports provided: AppContext, Chapter, Daily, Decission, Footer, Group, Header, Image, Info, Memory, Nav, Redirect, Scrollicon, Smokingpit, Suitcase, Text, TicTacToe, Title, Ui, Video */
+/*!************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/dist/libs/ui/ui.esm.js ***!
+  \************************************************************************************/
+/*! exports provided: AppContext, Chapter, Daily, Decission, Footer, Group, Header, Image, Info, Memory, Nav, RedirectComponent, Scrollicon, Smokingpit, Suitcase, Text, TicTacToe, Title, Ui, Video */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -107,7 +139,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Info", function() { return Info; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Memory", function() { return Memory; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nav", function() { return Nav; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return Redirect; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RedirectComponent", function() { return RedirectComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollicon", function() { return Scrollicon; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Smokingpit", function() { return Smokingpit; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Suitcase", function() { return Suitcase; });
@@ -119,13 +151,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gerdesque/data */ "../../../dist/libs/data/data.esm.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "../../../node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "../../../node_modules/react-is/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "../../../node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-drag-drop-container */ "../../../node_modules/react-drag-drop-container/lib/bundle.js");
+/* harmony import */ var react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var shortid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! shortid */ "../../../node_modules/shortid/index.js");
+/* harmony import */ var shortid__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(shortid__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "../../../node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-is */ "../../../node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dom */ "../../../node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
+
+
 
 
 
@@ -331,24 +369,12 @@ var Image = function Image(props) {
       character = _useContext2[0],
       setCharacter = _useContext2[1];
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      hover = _useState2[0],
-      setHover = _useState2[1]; //const [source, setSource] = useState(props.value);
-
-
   var chooseCharacter = function chooseCharacter() {
     props.title && setCharacter(props.title);
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
-    className: "chapter_picture ".concat(props.layer, " ").concat(props.title && hover ? 'highlighted' : ''),
-    onMouseOut: function onMouseOut() {
-      return setHover(false);
-    },
-    onMouseOver: function onMouseOver() {
-      return setHover(true);
-    },
+    className: "chapter_picture ".concat(props.layer),
     onClick: function onClick() {
       return chooseCharacter();
     }
@@ -361,8 +387,10 @@ var Image = function Image(props) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     draggable: "false",
     src: "./assets/fallback/" + props.value + _gerdesque_data__WEBPACK_IMPORTED_MODULE_1__["IMAGE_SUFFIX_ALTERNATE"],
-    alt: props.value
-  }));
+    alt: props.title || props.value
+  }), props.title && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overlay"
+  }, props.title));
 };
 
 var items = ['abfahrt', 'abmarsch', 'kochen', 'lagerstruktur', 'morgen', 'schlafen', 'tanzen', 'waschen'];
@@ -897,10 +925,10 @@ function getDisplayName(Component) {
 
   if (_typeof(Component) === 'object') {
     switch (Component.$$typeof) {
-      case react_is__WEBPACK_IMPORTED_MODULE_3__["ForwardRef"]:
+      case react_is__WEBPACK_IMPORTED_MODULE_5__["ForwardRef"]:
         return getWrappedName(Component, Component.render, 'ForwardRef');
 
-      case react_is__WEBPACK_IMPORTED_MODULE_3__["Memo"]:
+      case react_is__WEBPACK_IMPORTED_MODULE_5__["Memo"]:
         return getWrappedName(Component, Component.type, 'memo');
 
       default:
@@ -1457,7 +1485,7 @@ var shadows = ['none', createShadow(0, 2, 1, -1, 0, 1, 1, 0, 0, 1, 3, 0), create
 var shape = {
   borderRadius: 4
 };
-var responsivePropType =  true ? prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array]) : undefined;
+var responsivePropType =  true ? prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.array]) : undefined;
 
 function _arrayLikeToArray$1(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
@@ -5652,7 +5680,7 @@ function StylesProvider(props) {
   /**
    * Your component tree.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired,
 
   /**
    * You can disable the generation of the styles with this option.
@@ -5661,29 +5689,29 @@ function StylesProvider(props) {
    * Let's say you are using react-apollo to extract all
    * the queries made by the interface server-side - you can significantly speed up the traversal with this prop.
    */
-  disableGeneration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+  disableGeneration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
   /**
    * JSS's class name generator.
    */
-  generateClassName: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+  generateClassName: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
 
   /**
    * By default, the styles are injected last in the <head> element of the page.
    * As a result, they gain more specificity than any other style sheet.
    * If you want to override Material-UI's styles, set this prop.
    */
-  injectFirst: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+  injectFirst: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
   /**
    * JSS's instance.
    */
-  jss: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
+  jss: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
    */
-  serverGenerateClassName: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+  serverGenerateClassName: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
 
   /**
    * @ignore
@@ -5692,7 +5720,7 @@ function StylesProvider(props) {
    *
    * Cache for the sheets.
    */
-  sheetsCache: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
+  sheetsCache: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -5701,14 +5729,14 @@ function StylesProvider(props) {
    * It's deduplicating using the (theme, styles) couple.
    * On the server, you should provide a new instance for each request.
    */
-  sheetsManager: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
+  sheetsManager: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
    *
    * Collect the sheets.
    */
-  sheetsRegistry: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
+  sheetsRegistry: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object
 } : undefined;
 
 if (true) {
@@ -6072,7 +6100,12 @@ var Daily = function Daily(props) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         key: index,
         className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DragDropContainer"], {
+        targetKey: "box",
+        dragData: {
+          label: item
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, item)));
     }));
   };
 
@@ -6116,10 +6149,21 @@ var Box = function Box(props) {
       boxItems = _useState4[0],
       setBoxItems = _useState4[1];
 
+  var handleDrop = function handleDrop(e) {
+    var items = boxItems.slice();
+    items.push({
+      label: e.dragData.label,
+      uid: shortid__WEBPACK_IMPORTED_MODULE_3___default.a.generate()
+    });
+    setBoxItems(items);
+    e.containerElem.style.visibility = "hidden";
+  };
+
   var swap = function swap(fromIndex, toIndex, dragData) {
     var items = boxItems.slice();
     var item = {
-      label: dragData.label
+      label: dragData.label,
+      uid: shortid__WEBPACK_IMPORTED_MODULE_3___default.a.generate()
     };
     items.splice(toIndex, 0, item);
     setBoxItems(items);
@@ -6138,40 +6182,63 @@ var Box = function Box(props) {
     setBoxItems(items);
   };
 
-  return (// <DropTarget
-    //   onHit={handleDrop}
-    //   targetKey={props.targetKey}
-    //   dropData={{name: props.name}}>
-    //   <DropTarget
-    //     onHit={handleDrop}
-    //     targetKey="boxItem"
-    //     dropData={{name: props.name}}>
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "component_box ".concat(classes.box)
-    }, boxItems.map(function (item, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BoxItem, {
-        key: item.uid,
-        uid: item.uid,
-        kill: kill,
-        index: index,
-        swap: swap
-      }, item.label);
-    })) //   </DropTarget>
-    // </DropTarget>
-
-  );
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DropTarget"], {
+    onHit: handleDrop,
+    targetKey: props.targetKey,
+    dropData: {
+      name: props.name
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DropTarget"], {
+    onHit: handleDrop,
+    targetKey: "boxItem",
+    dropData: {
+      name: props.name
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "component_box ".concat(classes.box)
+  }, boxItems.map(function (item, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BoxItem, {
+      key: item.uid,
+      uid: item.uid,
+      kill: kill,
+      index: index,
+      swap: swap
+    }, item.label);
+  }))));
 };
 
 var BoxItem = function BoxItem(props) {
+  var handleDrop = function handleDrop(e) {
+    e.stopPropagation();
+    props.swap(e.dragData.index, props.index, e.dragData);
+    e.containerElem.style.visibility = "hidden";
+  };
+
+  var deleteMe = function deleteMe() {
+    props.kill(props.uid);
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box_item_component"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DragDropContainer"], {
+    targetKey: "boxItem",
+    dragData: {
+      label: props.children,
+      index: props.index
+    },
+    onDrop: deleteMe,
+    disappearDraggedElement: true,
+    dragHandleClassName: "grabber"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DropTarget"], {
+    onHit: handleDrop,
+    targetKey: "boxItem"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "outer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "item"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "grabber"
-  }, "\u2237"), schedule[props.index], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u2003"), props.children)));
+  }, "\u2237"), schedule[props.index], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u2003"), props.children)))));
 };
 
 var Square = function Square(_ref) {
@@ -6492,43 +6559,43 @@ var RevealBase_1 = createCommonjsModule(function (module, exports) {
     };
   }(),
       _react2 = _interopRequireDefault(react__WEBPACK_IMPORTED_MODULE_0___default.a),
-      inOut = (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape)({
-    make: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired,
-    style: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
-    reverse: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+      inOut = (0, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape)({
+    make: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number.isRequired,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number.isRequired,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number.isRequired,
+    style: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+    reverse: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   }),
       propTypes = {
-    collapse: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    collapseEl: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element,
-    cascade: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    wait: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    force: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    disabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    appear: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    enter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    exit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    fraction: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    refProp: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-    onReveal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-    unmountOnExit: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    mountOnEnter: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+    collapse: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    collapseEl: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.element,
+    cascade: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    wait: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    force: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    disabled: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    enter: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    exit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    fraction: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    refProp: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+    onReveal: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+    unmountOnExit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    mountOnEnter: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
     inEffect: inOut.isRequired,
-    outEffect: (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType)([inOut, (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf)([!1])]).isRequired,
-    ssrReveal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    collapseOnly: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    ssrFadeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+    outEffect: (0, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType)([inOut, (0, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf)([!1])]).isRequired,
+    ssrReveal: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    collapseOnly: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    ssrFadeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   },
       defaultProps = {
     fraction: .2,
     refProp: "ref"
   },
       contextTypes = {
-    transitionGroup: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
+    transitionGroup: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object
   },
       RevealBase = function (e) {
     function t(e, i) {
@@ -6972,11 +7039,11 @@ var Shake_1 = createCommonjsModule(function (module, exports) {
 
   var _wrap2 = _interopRequireDefault(wrap_1),
       propTypes = {
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   },
       rule = "\nfrom, to {\n    transform: translate3d(0, 0, 0);\n  }\n\n  10%, 30%, 50%, 70%, 90% {\n    transform: translate3d(-10px, 0, 0);\n  }\n\n  20%, 40%, 60%, 80% {\n    transform: translate3d(10px, 0, 0);\n}\n",
       name = !1;
@@ -7037,11 +7104,11 @@ var Jump_1 = createCommonjsModule(function (module, exports) {
 
   var _wrap2 = _interopRequireDefault(wrap_1),
       propTypes = {
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   },
       rule = "\n from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n}\n",
       name = !1;
@@ -7049,6 +7116,7 @@ var Jump_1 = createCommonjsModule(function (module, exports) {
   Jump.propTypes = propTypes, exports.default = Jump, module.exports = exports.default;
 });
 var Jump = unwrapExports(Jump_1);
+var _this = undefined;
 
 var Suitcase = function Suitcase(props) {
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
@@ -7075,6 +7143,21 @@ var Suitcase = function Suitcase(props) {
       _useState8 = _slicedToArray(_useState7, 2),
       falseCounter = _useState8[0],
       setFalseCounter = _useState8[1];
+
+  var dropped = function dropped(e) {
+    e.containerElem.style.visibility = "hidden";
+    setBagCounter(bagCounter + 1);
+    setDrag("".concat(character, " packt ").concat(e.dragData.label, " ein."));
+
+    if (bagCounter === 5) {
+      _this.props.onCheckBag();
+    }
+  };
+
+  var droppedFalseItem = function droppedFalseItem(e) {
+    setDrag("".concat(character, " braucht ").concat(e.dragData.label, " wohl eher nicht."));
+    setFalseCounter(falseCounter + 1);
+  };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'suitcase'
@@ -7120,7 +7203,17 @@ var Suitcase = function Suitcase(props) {
     targetKey: 'negative',
     label: 'einen Hammer',
     image: 'suitcase_hammer'
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Jump, {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DropTarget"], {
+    onHit: function onHit(e) {
+      return dropped(e);
+    },
+    targetKey: 'bag'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DropTarget"], {
+    onHit: function onHit(e) {
+      return droppedFalseItem(e);
+    },
+    targetKey: 'negative'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Jump, {
     spy: bagCounter
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Shake, {
     spy: falseCounter
@@ -7130,20 +7223,21 @@ var Suitcase = function Suitcase(props) {
     value: 'suitcase'
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'dragText'
-  }, drag)))));
+  }, drag)))))));
 };
 
 var Items = function Items(props) {
-  // return (
-  //   <DragDropContainer
-  //     targetKey={props.targetKey}
-  //     dragData={{ label: props.label }}
-  //     render={() => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
-    value: props.image
-  }); //     }}
-  //   />
-  // );
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_2__["DragDropContainer"], {
+    targetKey: props.targetKey,
+    dragData: {
+      label: props.label
+    },
+    render: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, {
+        value: props.image
+      });
+    }
+  });
 };
 
 var Title = function Title(props) {
@@ -7286,20 +7380,20 @@ var Fade_1 = createCommonjsModule(function (module, exports) {
 
   var _wrap2 = _interopRequireDefault(wrap_1),
       propTypes = {
-    out: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    left: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    right: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    top: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    bottom: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    big: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    mirror: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    opposite: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    distance: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+    out: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    left: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    right: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    top: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    bottom: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    big: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    mirror: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    opposite: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    distance: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   },
       lookup = {};
 
@@ -7379,19 +7473,19 @@ var Reveal_1 = createCommonjsModule(function (module, exports) {
       _wrap2 = _interopRequireDefault(wrap_1),
       _Fade2 = _interopRequireDefault(Fade_1),
       propTypes = {
-    in: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object,
-    out: (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType)([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object, (0, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf)([!1])]),
-    effect: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-    effectOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
-    duration: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    timeout: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    delay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    count: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    forever: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-    durationOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    delayOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    countOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    foreverOut: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool
+    in: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
+    out: (0, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType)([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object, (0, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf)([!1])]),
+    effect: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
+    effectOut: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
+    duration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    timeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    delay: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    count: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    forever: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+    durationOut: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    delayOut: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    countOut: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
+    foreverOut: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   },
       defaultProps = _extends({}, globals.defaults, {
     durationOut: globals.defaults.duration,
@@ -7429,7 +7523,7 @@ var Text = function Text(props) {
   }
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'box'
+    className: "box ".concat(props.layer)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fade, {
     bottom: true,
     duration: 5000
@@ -7595,11 +7689,22 @@ var Puzzle = /*#__PURE__*/function (_Component) {
   return Puzzle;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-var Redirect = function Redirect(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+var RedirectComponent = function RedirectComponent(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      redirect = _useState2[0],
+      setRedirect = _useState2[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: 'button',
-    className: 'link-button redirect'
-  }, props.value);
+    className: 'link-button redirect',
+    onClick: function onClick() {
+      return setRedirect(true);
+    }
+  }, props.value), redirect && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Redirect"], {
+    exact: true,
+    to: props.layer
+  }));
 };
 
 var Info = function Info(props) {
@@ -7619,7 +7724,7 @@ var Info = function Info(props) {
 
 var ContentType = {
   text: Text,
-  redirect: Redirect,
+  redirect: RedirectComponent,
   video: Video,
   image: Image,
   smokingpit: Smokingpit,
@@ -7685,9 +7790,9 @@ var Nav = function Nav(props) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: 'navigation--item',
         key: index
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["NavLink"], {
-        to: "/chapter/".concat(chapter.id)
-      }, chapter.name));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["NavLink"], {
+        to: "/chapter/".concat(chapter.link)
+      }));
     });
   };
 
@@ -7697,10 +7802,10 @@ var Nav = function Nav(props) {
     className: 'navigation'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: 'navigation--item'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["NavLink"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["NavLink"], {
     exact: true,
     to: "/"
-  }, "Home")), renderChapterNav()));
+  })), renderChapterNav()));
 };
 
 var isProduction$1 = "development" === 'production';
@@ -8125,20 +8230,20 @@ var Ui = function Ui(props) {
 /***/ }),
 
 /***/ "../../../node_modules/postcss-loader/src/index.js?!../../../node_modules/sass-loader/lib/loader.js?!./app/app.scss":
-/*!***********************************************************************************************************************************************************************************************************************************!*\
-  !*** /Users/gerdmueller/Development/demokratieerleben2020/node_modules/postcss-loader/src??embedded!/Users/gerdmueller/Development/demokratieerleben2020/node_modules/sass-loader/lib/loader.js??ref--5-oneOf-3-2!./app/app.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/node_modules/postcss-loader/src??embedded!/home/gm/Development/playground/demokratieerleben2020/node_modules/sass-loader/lib/loader.js??ref--5-oneOf-3-2!./app/app.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":root {\n  --color-text: #850101;\n  --color-title: #BF6422;\n  --color-link: #008080;\n  --color-link-highlighted: #E3000F;\n}\n\n@font-face {\n  font-family: \"FundamentalBrigade\";\n  font-display: swap;\n  src: url('Fundamental_Brigade_Schlank.ttf') format(\"truetype\");\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\nhtml {\n  overflow: hidden;\n  min-height: 100vh;\n  scroll-behavior: smooth;\n  text-rendering: optimizeSpeed;\n  line-height: 1.2;\n}\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n}\n\nbody {\n  background-image: url('background.webp');\n  color: var(--color-text);\n  font-size: clamp(1em, 1em + 2vw, 3em);\n  font-family: FundamentalBrigade, arial, sans-serif;\n  font-weight: normal;\n  height: 100%;\n  overflow-x: hidden;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9nZXJkbXVlbGxlci9EZXZlbG9wbWVudC9kZW1va3JhdGllZXJsZWJlbjIwMjAvYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIiwiYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQUE7RUFDQSxzQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUNBQUE7QUNDRjs7QURFQTtFQUNFLGlDQUFBO0VBQ0Esa0JBQUE7RUFDQSw4REFBQTtBQ0NGOztBREVBOzs7RUFHRSxzQkFBQTtFQUNBLG1DQUFBO0VBQ0Esa0NBQUE7QUNBRjs7QURHQTtFQUNFLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSx1QkFBQTtFQUNBLDZCQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURHQTs7Ozs7Ozs7Ozs7OztFQWFDLFNBQUE7RUFDQSxVQUFBO0VBQ0MsU0FBQTtBQ0FGOztBREdBO0VBQ0Usd0NBQUE7RUFDQSx3QkFBQTtFQUNBLHFDQUFBO0VBQ0Esa0RBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLHdCQUFBO1VBQUEsZ0JBQUE7RUFDQSxvQ0FBQTtVQUFBLDRCQUFBO0FDQUYiLCJmaWxlIjoiYXBwcy9kZW1vbC9zcmMvYXBwL2FwcC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOnJvb3Qge1xuICAtLWNvbG9yLXRleHQ6ICM4NTAxMDE7XG4gIC0tY29sb3ItdGl0bGU6ICNCRjY0MjI7XG4gIC0tY29sb3ItbGluazogIzAwODA4MDtcbiAgLS1jb2xvci1saW5rLWhpZ2hsaWdodGVkOiAjRTMwMDBGO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdGdW5kYW1lbnRhbEJyaWdhZGUnO1xuICBmb250LWRpc3BsYXk6IHN3YXA7XG4gIHNyYzogdXJsKCcuLi9hc3NldHMvZm9udHMvRnVuZGFtZW50YWxfQnJpZ2FkZV9TY2hsYW5rLnR0ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbn1cblxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS4yO1xufVxuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIGFwcGxldCwgb2JqZWN0LCBpZnJhbWUsXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsXG5hLCBhYmJyLCBhY3JvbnltLCBhZGRyZXNzLCBiaWcsIGNpdGUsIGNvZGUsXG5kZWwsIGRmbiwgZW0sIGltZywgaW5zLCBrYmQsIHEsIHMsIHNhbXAsXG5zbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLFxuYiwgdSwgaSwgY2VudGVyLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBlbWJlZCwgXG5maWd1cmUsIGZpZ2NhcHRpb24sIGZvb3RlciwgaGVhZGVyLCBoZ3JvdXAsIFxubWVudSwgbmF2LCBvdXRwdXQsIHJ1YnksIHNlY3Rpb24sIHN1bW1hcnksXG50aW1lLCBtYXJrLCBhdWRpbywgdmlkZW8ge1xuXHRtYXJnaW46IDA7XG5cdHBhZGRpbmc6IDA7XG4gIGJvcmRlcjogMDtcbn1cblxuYm9keSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9hc3NldHMvYmFja2dyb3VuZC53ZWJwKTtcbiAgY29sb3I6IHZhcigtLWNvbG9yLXRleHQpO1xuICBmb250LXNpemU6ICN7J2NsYW1wKDFlbSwgMWVtICsgMnZ3LCAzZW0pJ307XG4gIGZvbnQtZmFtaWx5OiBGdW5kYW1lbnRhbEJyaWdhZGUsIGFyaWFsLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgcGVyc3BlY3RpdmU6IDFweDtcbiAgdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbn0iLCI6cm9vdCB7XG4gIC0tY29sb3ItdGV4dDogIzg1MDEwMTtcbiAgLS1jb2xvci10aXRsZTogI0JGNjQyMjtcbiAgLS1jb2xvci1saW5rOiAjMDA4MDgwO1xuICAtLWNvbG9yLWxpbmstaGlnaGxpZ2h0ZWQ6ICNFMzAwMEY7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogXCJGdW5kYW1lbnRhbEJyaWdhZGVcIjtcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xuICBzcmM6IHVybChcIi4uL2Fzc2V0cy9mb250cy9GdW5kYW1lbnRhbF9CcmlnYWRlX1NjaGxhbmsudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xufVxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmh0bWwge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xuICBsaW5lLWhlaWdodDogMS4yO1xufVxuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIGFwcGxldCwgb2JqZWN0LCBpZnJhbWUsXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsXG5hLCBhYmJyLCBhY3JvbnltLCBhZGRyZXNzLCBiaWcsIGNpdGUsIGNvZGUsXG5kZWwsIGRmbiwgZW0sIGltZywgaW5zLCBrYmQsIHEsIHMsIHNhbXAsXG5zbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLFxuYiwgdSwgaSwgY2VudGVyLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBlbWJlZCxcbmZpZ3VyZSwgZmlnY2FwdGlvbiwgZm9vdGVyLCBoZWFkZXIsIGhncm91cCxcbm1lbnUsIG5hdiwgb3V0cHV0LCBydWJ5LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBib3JkZXI6IDA7XG59XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vYXNzZXRzL2JhY2tncm91bmQud2VicCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci10ZXh0KTtcbiAgZm9udC1zaXplOiBjbGFtcCgxZW0sIDFlbSArIDJ2dywgM2VtKTtcbiAgZm9udC1mYW1pbHk6IEZ1bmRhbWVudGFsQnJpZ2FkZSwgYXJpYWwsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGhlaWdodDogMTAwJTtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICBwZXJzcGVjdGl2ZTogMXB4O1xuICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xufSJdfQ== */"
+module.exports = ":root {\n  --color-text: #850101;\n  --color-title: #BF6422;\n  --color-link: #008080;\n  --color-link-highlighted: #E3000F;\n}\n\n@font-face {\n  font-family: \"FundamentalBrigade\";\n  font-display: swap;\n  src: url('Fundamental_Brigade_Schlank.ttf') format(\"truetype\");\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\nhtml {\n  overflow: hidden;\n  min-height: 100vh;\n  scroll-behavior: smooth;\n  text-rendering: optimizeSpeed;\n  line-height: 1.2;\n}\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n}\n\nbody {\n  background-image: url('background.webp');\n  color: var(--color-text);\n  font-size: clamp(1em, 1em + 2vw, 3em);\n  font-family: FundamentalBrigade, arial, sans-serif;\n  font-weight: normal;\n  height: 100%;\n  overflow-x: hidden;\n  -webkit-perspective: 1px;\n          perspective: 1px;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2dtL0RldmVsb3BtZW50L3BsYXlncm91bmQvZGVtb2tyYXRpZWVybGViZW4yMDIwL2FwcHMvZGVtb2wvc3JjL2FwcC9hcHAuc2NzcyIsImFwcHMvZGVtb2wvc3JjL2FwcC9hcHAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFBO0VBQ0Esc0JBQUE7RUFDQSxxQkFBQTtFQUNBLGlDQUFBO0FDQ0Y7O0FERUE7RUFDRSxpQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsOERBQUE7QUNDRjs7QURFQTs7O0VBR0Usc0JBQUE7RUFDQSxtQ0FBQTtFQUNBLGtDQUFBO0FDQUY7O0FER0E7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsdUJBQUE7RUFDQSw2QkFBQTtFQUNBLGdCQUFBO0FDQUY7O0FER0E7Ozs7Ozs7Ozs7Ozs7RUFhQyxTQUFBO0VBQ0EsVUFBQTtFQUNDLFNBQUE7QUNBRjs7QURHQTtFQUNFLHdDQUFBO0VBQ0Esd0JBQUE7RUFDQSxxQ0FBQTtFQUNBLGtEQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSx3QkFBQTtVQUFBLGdCQUFBO0VBQ0Esb0NBQUE7VUFBQSw0QkFBQTtBQ0FGIiwiZmlsZSI6ImFwcHMvZGVtb2wvc3JjL2FwcC9hcHAuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpyb290IHtcbiAgLS1jb2xvci10ZXh0OiAjODUwMTAxO1xuICAtLWNvbG9yLXRpdGxlOiAjQkY2NDIyO1xuICAtLWNvbG9yLWxpbms6ICMwMDgwODA7XG4gIC0tY29sb3ItbGluay1oaWdobGlnaHRlZDogI0UzMDAwRjtcbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnRnVuZGFtZW50YWxCcmlnYWRlJztcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xuICBzcmM6IHVybCgnLi4vYXNzZXRzL2ZvbnRzL0Z1bmRhbWVudGFsX0JyaWdhZGVfU2NobGFuay50dGYnKSBmb3JtYXQoJ3RydWV0eXBlJyk7XG59XG5cbiosXG4qOjpiZWZvcmUsXG4qOjphZnRlciB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xufVxuXG5odG1sIHtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIHNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVTcGVlZDtcbiAgbGluZS1oZWlnaHQ6IDEuMjtcbn1cblxuaHRtbCwgYm9keSwgZGl2LCBzcGFuLCBhcHBsZXQsIG9iamVjdCwgaWZyYW1lLFxuaDEsIGgyLCBoMywgaDQsIGg1LCBoNiwgcCwgYmxvY2txdW90ZSwgcHJlLFxuYSwgYWJiciwgYWNyb255bSwgYWRkcmVzcywgYmlnLCBjaXRlLCBjb2RlLFxuZGVsLCBkZm4sIGVtLCBpbWcsIGlucywga2JkLCBxLCBzLCBzYW1wLFxuc21hbGwsIHN0cmlrZSwgc3Ryb25nLCBzdWIsIHN1cCwgdHQsIHZhcixcbmIsIHUsIGksIGNlbnRlcixcbmRsLCBkdCwgZGQsIG9sLCB1bCwgbGksXG5maWVsZHNldCwgZm9ybSwgbGFiZWwsIGxlZ2VuZCxcbnRhYmxlLCBjYXB0aW9uLCB0Ym9keSwgdGZvb3QsIHRoZWFkLCB0ciwgdGgsIHRkLFxuYXJ0aWNsZSwgYXNpZGUsIGNhbnZhcywgZGV0YWlscywgZW1iZWQsIFxuZmlndXJlLCBmaWdjYXB0aW9uLCBmb290ZXIsIGhlYWRlciwgaGdyb3VwLCBcbm1lbnUsIG5hdiwgb3V0cHV0LCBydWJ5LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcblx0bWFyZ2luOiAwO1xuXHRwYWRkaW5nOiAwO1xuICBib3JkZXI6IDA7XG59XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vYXNzZXRzL2JhY2tncm91bmQud2VicCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci10ZXh0KTtcbiAgZm9udC1zaXplOiAjeydjbGFtcCgxZW0sIDFlbSArIDJ2dywgM2VtKSd9O1xuICBmb250LWZhbWlseTogRnVuZGFtZW50YWxCcmlnYWRlLCBhcmlhbCwgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG4gIHBlcnNwZWN0aXZlOiAxcHg7XG4gIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XG59IiwiOnJvb3Qge1xuICAtLWNvbG9yLXRleHQ6ICM4NTAxMDE7XG4gIC0tY29sb3ItdGl0bGU6ICNCRjY0MjI7XG4gIC0tY29sb3ItbGluazogIzAwODA4MDtcbiAgLS1jb2xvci1saW5rLWhpZ2hsaWdodGVkOiAjRTMwMDBGO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiRnVuZGFtZW50YWxCcmlnYWRlXCI7XG4gIGZvbnQtZGlzcGxheTogc3dhcDtcbiAgc3JjOiB1cmwoXCIuLi9hc3NldHMvZm9udHMvRnVuZGFtZW50YWxfQnJpZ2FkZV9TY2hsYW5rLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbn1cbiosXG4qOjpiZWZvcmUsXG4qOjphZnRlciB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xufVxuXG5odG1sIHtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIHNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVTcGVlZDtcbiAgbGluZS1oZWlnaHQ6IDEuMjtcbn1cblxuaHRtbCwgYm9keSwgZGl2LCBzcGFuLCBhcHBsZXQsIG9iamVjdCwgaWZyYW1lLFxuaDEsIGgyLCBoMywgaDQsIGg1LCBoNiwgcCwgYmxvY2txdW90ZSwgcHJlLFxuYSwgYWJiciwgYWNyb255bSwgYWRkcmVzcywgYmlnLCBjaXRlLCBjb2RlLFxuZGVsLCBkZm4sIGVtLCBpbWcsIGlucywga2JkLCBxLCBzLCBzYW1wLFxuc21hbGwsIHN0cmlrZSwgc3Ryb25nLCBzdWIsIHN1cCwgdHQsIHZhcixcbmIsIHUsIGksIGNlbnRlcixcbmRsLCBkdCwgZGQsIG9sLCB1bCwgbGksXG5maWVsZHNldCwgZm9ybSwgbGFiZWwsIGxlZ2VuZCxcbnRhYmxlLCBjYXB0aW9uLCB0Ym9keSwgdGZvb3QsIHRoZWFkLCB0ciwgdGgsIHRkLFxuYXJ0aWNsZSwgYXNpZGUsIGNhbnZhcywgZGV0YWlscywgZW1iZWQsXG5maWd1cmUsIGZpZ2NhcHRpb24sIGZvb3RlciwgaGVhZGVyLCBoZ3JvdXAsXG5tZW51LCBuYXYsIG91dHB1dCwgcnVieSwgc2VjdGlvbiwgc3VtbWFyeSxcbnRpbWUsIG1hcmssIGF1ZGlvLCB2aWRlbyB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgYm9yZGVyOiAwO1xufVxuXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uL2Fzc2V0cy9iYWNrZ3JvdW5kLndlYnApO1xuICBjb2xvcjogdmFyKC0tY29sb3ItdGV4dCk7XG4gIGZvbnQtc2l6ZTogY2xhbXAoMWVtLCAxZW0gKyAydncsIDNlbSk7XG4gIGZvbnQtZmFtaWx5OiBGdW5kYW1lbnRhbEJyaWdhZGUsIGFyaWFsLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgcGVyc3BlY3RpdmU6IDFweDtcbiAgdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbn0iXX0= */"
 
 /***/ }),
 
 /***/ "../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!*******************************************************************************************************************************!*\
-  !*** /Users/gerdmueller/Development/demokratieerleben2020/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \*******************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /home/gm/Development/playground/demokratieerleben2020/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8435,7 +8540,7 @@ module.exports = function (list, options) {
 /*! exports provided: chapters, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"chapters\":[{\"id\":1,\"name\":\"Zu Hause\",\"link\":\"daheim\",\"groups\":[{\"grouped\":false,\"row\":false,\"info\":\"<p>Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/events/westfalen-ruhrgebiet/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Westfalen-Ruhrgebiet</a> von Oktober bis Dezember 2019. Wir danken dem <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>, welches die Fotografien und Bildkärtchen unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt hat.</p>\",\"content\":[{\"type\":\"text\",\"value\":\"Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"smokingpit\",\"layer\":\"base\",\"value\":\"smokingpit\"}]},{\"grouped\":true,\"row\":false,\"info\":\"<a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_kinder\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben.\"}]},{\"grouped\":true,\"row\":true,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Wen möchtest du auf diesem Weg begleiten?\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_karl\",\"title\":\"Karl\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_gerda\",\"title\":\"Gerda\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_anna\",\"title\":\"Anna\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Anna\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"3_Annas_Alltag\",\"title\":\"Annas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"4_Annas_Zuhause\",\"title\":\"Annas Umfeld\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"2_Anna_Familie\",\"title\":\"Annas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"1_Anna_Großvater\",\"title\":\"Annas Großvater\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Karl\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"7_Alltag\",\"title\":\"Karls_Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"6_Karl_Familie\",\"title\":\"Karls Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"5_Karl_Großmutter\",\"title\":\"Karls Großmutter\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"8_Karls_Zuhause\",\"title\":\"Karls Zuhause\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Gerda\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"9_Gerdas_Familie\",\"title\":\"Gerdas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"10_Gerdas_Alltag_mit_Musik\",\"title\":\"Gerdas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"11_Gerdas_Zuhause\",\"title\":\"Gerdas Zuhause\"},{\"type\":\"redirect\",\"layer\":\"republic\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie sich in einem Verein namens 'Reichsarbeitsgemeinschaft der Kinderfreunde' engagieren und nach neuen Mitgliedern für die Ortsgruppe des Vereins suchen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend dabei und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend. Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_12_(4)\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Zur Vorbereitung treffen sich die Helferinnen und Helfer bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Karl, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Gerda, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"family\",\"value\":\"Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe.\"}]}]},{\"id\":2,\"name\":\"Ortsgruppe\",\"link\":\"ortsgruppe\",\"groups\":[{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. \",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"In dem Raum sind 17 Mädchen und Jungen versammelt. Einige von ihnen kennt sie aus ihrer Siedlung. Alle kommen wie Anna aus ärmlichen Verhältnissen und erhoffen sich durch die Betätigung in der Ortsgruppe etwas Ablenkung vom oft tristen Alltag.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(68)\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"2_214_Seite142\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"12_Anna_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über Annas Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"02_1455_(68)\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_84_(2)\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"13_Karl_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über Karls Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"},{\"value\":\"Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos. Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.\",\"type\":\"text\",\"layer\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(103)\"},{\"value\":\"Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. \",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(105)\"},{\"value\":\"Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"14_Gerda_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über die Arbeit der Ortsgruppe sowie über die Rolle der Helfer*innen erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]}]}]}");
+module.exports = JSON.parse("{\"chapters\":[{\"id\":1,\"name\":\"Zu Hause\",\"link\":\"daheim\",\"groups\":[{\"grouped\":false,\"row\":false,\"info\":\"<p>Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/events/westfalen-ruhrgebiet/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Westfalen-Ruhrgebiet</a> von Oktober bis Dezember 2019. Wir danken dem <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>, welches die Fotografien und Bildkärtchen unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt hat.</p>\",\"content\":[{\"type\":\"text\",\"value\":\"Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"smokingpit\",\"layer\":\"base\",\"value\":\"smokingpit\"}]},{\"grouped\":true,\"row\":false,\"info\":\"<a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_kinder\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben.\"}]},{\"grouped\":true,\"row\":true,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Wen möchtest du auf diesem Weg begleiten?\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_karl\",\"title\":\"Karl\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_gerda\",\"title\":\"Gerda\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"daheim_anna\",\"title\":\"Anna\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Anna\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"3_Annas_Alltag_mit_Hühnern\",\"title\":\"Annas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"4_Annas_Zuhause\",\"title\":\"Annas Umfeld\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"2_Anna_Familie\",\"title\":\"Annas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"1_Anna_Großvater\",\"title\":\"Annas Großvater\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Karl\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"7_Karl_Alltag\",\"title\":\"Karls_Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"6_Karl_Familie\",\"title\":\"Karls Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"5_Karl_Großmutter\",\"title\":\"Karls Großmutter\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"8_Karls_Zuhause\",\"title\":\"Karls Zuhause\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Gerda\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"9_Gerdas_Familie\",\"title\":\"Gerdas Familie\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"10_Gerdas_Alltag_mit_Musik\",\"title\":\"Gerdas Alltag\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"11_Gerdas_Zuhause\",\"title\":\"Gerdas Zuhause\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie sich in einem Verein namens 'Reichsarbeitsgemeinschaft der Kinderfreunde' engagieren und nach neuen Mitgliedern für die Ortsgruppe des Vereins suchen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend. Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_12_(4)\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Zur Vorbereitung treffen sich die Helferinnen und Helfer bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"ortsgruppe\",\"value\":\"Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Karl, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"ortsgruppe\",\"value\":\"Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Hilf Gerda, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"layer\":\"base\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"layer\":\"ortsgruppe\",\"value\":\"Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe.\"}]}]},{\"id\":2,\"name\":\"Die Ortsgruppe\",\"link\":\"ortsgruppe\",\"groups\":[{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. \",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"In dem Raum sind 17 Mädchen und Jungen versammelt. Einige von ihnen kennt sie aus ihrer Siedlung. Alle kommen wie Anna aus ärmlichen Verhältnissen und erhoffen sich durch die Betätigung in der Ortsgruppe etwas Ablenkung vom oft tristen Alltag.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(68)\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"2_214_Seite142\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"12_Anna_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über Annas Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.\",\"type\":\"text\",\"layer\":\"base\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(68)\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"02_84_(2)\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"13_Karl_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über Karls Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.\",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"},{\"value\":\"Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos. Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.\",\"type\":\"text\",\"layer\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(103)\"},{\"value\":\"Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. \",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(105)\"},{\"value\":\"Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"fourth\",\"value\":\"14_Gerda_Ortsgruppe\"},{\"type\":\"redirect\",\"layer\":\"gruppenvorbereitung\",\"value\":\"Ich möchte noch mehr über die Arbeit der Ortsgruppe sowie über die Rolle der Helfer*innen erfahren.\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]}]},{\"id\":3,\"name\":\"Die Arbeit der Ortsgruppe\",\"link\":\"gruppenvorbereitung\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken. \",\"layer\":\"fore\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"2_31_g\"},{\"value\":\"Als Rote Falken werden alle 12- bis 14-Jährigen im Verband der Kinderfreunde genannt.\",\"type\":\"text\",\"layer\":\"second\"},{\"value\":\"Anna ist stolz, ein 'Roter Falke' zu sein und ein blaues Hemd zu tragen. Endlich hat sie einen Ort gefunden, wo sie sich zugehörig und verstanden fühlt.\",\"type\":\"text\",\"layer\":\"third\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"02_1455_(14)\"},{\"value\":\"Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. \",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(21)\"},{\"value\":\"Die Ausstellung kann gegen einen Eintritt von 10 Pfennig besucht werden. Neben einigen Leuten von der örtlichen Presse kommen auch viele Eltern vorbei. Einige der Ausstellungsobjekte spendet die Ortsgruppe der Arbeiterwohlfahrt.\",\"type\":\"text\",\"layer\":\"fourth\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"02_1455_(49)\"},{\"value\":\"Die Bildungsabende beschäftigen sich neben politischen auch mit praktischen Themen, wie zum Beispiel der Hygiene.\",\"type\":\"text\",\"layer\":\"fifth\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"2_30_2\"},{\"value\":\"Anna lernt während eines Vortrags, dass das Elend der Arbeiterklasse oft durch mangelnde Sauberkeit und schlecht versorgte Wunden und Krankheiten verschärft wird. Die Sauberkeit des eigenen Körpers und des eigenen Heims sind dabei besonders wichtig. Auch der Umgang mit ansteckenden Krankheiten in der eigenen Familien wird dabei angesprochen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"2_31_h\"},{\"value\":\"Inzwischen ist Anna schon über ein halbes Jahr regelmäßig zu den Treffen der Roten Falken gegangen. Für den Sommer ist ein großes Zeltlager unter dem Titel 'Kinderrepublik' geplant. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren. \",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(58)\"},{\"value\":\"Das kostet natürlich viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.\",\"type\":\"text\",\"layer\":\"fore\"},{\"value\":\"Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(72)\"},{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"info\":\"Hier könnte ein Link sein.\",\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"2_31_g\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl gehört in seiner Ortsgruppe der Kinderfreunde zu den 'Roten Falken'. Diese Bezeichnung wird für alle 12- bis 14-jährigen Mitglieder verwendet.\",\"layer\":\"base\",\"title\":\"reveal\"},{\"value\":\"Karls Falkengruppe trifft sich mehrmals die Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.\",\"type\":\"text\",\"layer\":\"second\"},{\"value\":\"Im Moment besteht die Hauptaufgabe der Gruppe darin, sich auf die bevorstehende 'Kinderrepublik', das große Zeltlager im Sommer, vorzubereiten. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren.\",\"type\":\"text\",\"layer\":\"third\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(14)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. \",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(21)\"},{\"value\":\"Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.\",\"type\":\"text\",\"layer\":\"fourth\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(49)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Auch Karl beteiligt sich emsig und zieht mit einigen Freunden von Haus zu Haus, um Unterstützer*innen für die Kasse der 'Kinderrepublik' zu finden. Am Ende können sie 27 RM zum Guthaben der Ortsgruppe beisteuern.\",\"type\":\"text\",\"layer\":\"base\"},{\"type\":\"image\",\"layer\":\"base\",\"value\":\"2_30_2\"},{\"value\":\"Inzwischen steht fest, an welchem Ort das Lager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Karls Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(72)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"base\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"info\":\"Hier könnte ein Link sein.\",\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"2_31_g\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat noch nie die Aktivitäten einer Kindergruppe organisiert. Um ihre Aufgaben besser zu kennen liest sie das Buch 'Im Zeltlager - ein technisches Handbuch für rote Falkenführer von Hermann Neddermayer. Das Buch wurde gerade erst herausgegeben und sammelt wertvolle Erfahrungen aus den bisherigen Zeltlagern der Kinderfreunde. \",\"layer\":\"base\",\"title\":\"reveal\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"2_214_Seite142\"},{\"value\":\"Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.\",\"type\":\"text\",\"layer\":\"base\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(14)\"},{\"value\":\"In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.\",\"type\":\"text\",\"layer\":\"base\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(21)\"},{\"value\":\"Gerda sieht darin eine tiefgreifende Auseinandersetzung mit einem anderen Ort. Diese Methode wird sich daher auch gut für die Kinderrepublik eignen.\",\"type\":\"text\",\"layer\":\"fourth\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(49)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. \",\"type\":\"text\",\"layer\":\"base\"},{\"type\":\"image\",\"layer\":\"base\",\"value\":\"2_30_2\"},{\"value\":\"Gerda nimmt an einer Wanderung teil, zu der alle Helfer*innen aus ihrer Stadt eingeladen sind. Am Ende sind sie immerhin 16 Jugendliche, die alle zwischen 15 und 18 Jahre alt sind. Die meisten von ihnen werden ebenfalls als Helfer*innen bei der 'Kinderrepublik' dabei sein. Gerda freut sich darauf, mit ihnen gemeinsam dorthin zu fahren.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(72)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"video\",\"layer\":\"base\",\"value\":\"18_Gerda_Vorbereitung\"},{\"value\":\"Inzwischen steht auch fest, an welchem Ort das Zeltlager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Gerdas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben\",\"type\":\"text\",\"layer\":\"fore\"},{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"base\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Wenige Wochen bevor die 'Kinderrepublik' stattfindet, haben die Kinderfreunde begonnen, eine Zeltlagerzeitung herauszugeben. Auch Gerdas Gruppe hat sich mit Artikeln und Bildern daran beteiligt. Die Zeitung soll alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten.\",\"type\":\"text\",\"layer\":\"base\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_12_(9)\"},{\"value\":\"Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\",\"type\":\"text\",\"layer\":\"fore\"},{\"type\":\"redirect\",\"layer\":\"probezeltlager\",\"value\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]}]},{\"id\":4,\"name\":\"Das Probezeltlager\",\"link\":\"probezeltlager\",\"groups\":[{\"grouped\":true,\"row\":false,\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_45_(5)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"video\",\"layer\":\"fore\",\"value\":\"15_Anna_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Annas Ortsgruppe hat gut geklappt. Alle haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht. Nun fiebern alle der 'Kinderrepublik' entgegen.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_2480_(1)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Vor einigen Wochen haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem soll sie dazu dienen, Bauern und Bäcker zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle geben wird. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_278_(7)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Nun steht die Abreise endlich bevor. Anna muss ihre Sachen packen, damit sie die nächsten drei Wochen alles dabei hat, was sie braucht.\"},{\"type\":\"text\",\"layer\":\"second\",\"value\":\"Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"suitcase\",\"layer\":\"base\",\"value\":\"rucksack\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"video\",\"layer\":\"fore\",\"value\":\"16_Karl_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.\",\"layer\":\"base\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_2480_(1)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Nur Kurt war mit wenig Interesse dabei, hat sich vor der Arbeit gedrückt und oft von der Gruppe entfernt. Die Gruppe hat daher einstimmig entschieden, dass Kurt nicht mehr an den Unternehmungen der Gruppe teilnehmen darf, wenn er nicht bereit ist, sich einzubringen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\",\"layer\":\"third\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_2424_(1)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"suitcase\",\"layer\":\"base\",\"value\":\"rucksack\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"video\",\"layer\":\"fore\",\"value\":\"17_Gerda_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Gerdas Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"second\",\"value\":\"02_2480_(1)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Gerda fand es trotzdem aufregend, da sie als Helferin auch die Verantwortung für das Wohlergehen der Kinder hatte. Zum Glück haben sich alle vorbildlich verhalten, niemand hat sich verletzt und es gab keinen Ärger zwischen den Kindern und Helfer*innen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab.\",\"layer\":\"fore\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_1455_(49)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Ihre Sachen hat Gerda auch noch nicht gepackt. 3 Wochen sind eine lange Zeit.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"02_2424_(1)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"suitcase\",\"layer\":\"base\",\"value\":\"rucksack\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik.\"}]}]},{\"id\":5,\"name\":\"Der Weg zur Kinderrepublik\",\"link\":\"reise\",\"groups\":[{\"grouped\":true,\"row\":false,\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"base\",\"value\":\"02_1455_(69)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Anna fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Ihre Eltern und ihr Großvater sind etwas traurig, denn Anna war noch nie länger von zu Hause weg - und schon gar nicht allein.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(56)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Mit 35 anderen Kindern und einigen Helfer*innen als Begleitung fährt Anna im Zug Richtung Norden.\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_2453_(1)\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Anna möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.\",\"layer\":\"second\"},{\"type\":\"tictactoe\",\"layer\":\"base\",\"value\":\"Drei gewinnt\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_278_(3)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Betrete die Kinderrepublik!\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(56)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten.\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_2453_(1)\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.\",\"layer\":\"second\"},{\"type\":\"tictactoe\",\"layer\":\"base\",\"value\":\"Drei gewinnt\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_278_(3)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Betrete die Kinderrepublik!\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"2_1590_Seite_138\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Aber ihre Mutter hat ihr versichert, dass sie es schon schaffen wird. Und im Moment hat sie einen sehr höflichen und ordentlichen Schlafburschen, der ihr auch ab und zu im Haushalt zur Hand geht.\"},{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_2453_(1)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Nun sitzt Gerda mit 28 Kindern und einigen anderen Helfer*innen im Zug, der sich langsam Richtung Norden bewegt.\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Gerda hat dafür keine Zeit, denn sie muss ein Auge darauf haben, dass niemand sich zu weit aus dem Fenster lehnt und herausfällt.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(51)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_278_(3)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\",\"layer\":\"second\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Betrete die Kinderrepublik!\"}]}]},{\"id\":6,\"name\":\"Die Kinderrepublik\",\"link\":\"ankunft\",\"groups\":[{\"grouped\":true,\"row\":false,\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"image\",\"layer\":\"base\",\"value\":\"02_1455_(1)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.\",\"layer\":\"fore\"},{\"type\":\"video\",\"layer\":\"base\",\"value\":\"32_Anna_Zeltobfrau\"},{\"type\":\"image\",\"layer\":\"third\",\"value\":\"02_1455_(75)\"},{\"type\":\"text\",\"layer\":\"fourth\",\"value\":\"Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"deep\",\"value\":\"02_167_(4)\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?\"},{\"type\":\"redirect\",\"layer\":\"ankunft\",\"value\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik.\"}]}]}]}");
 
 /***/ }),
 
@@ -8479,12 +8584,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _gerdesque_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @gerdesque/home */ "../../../dist/libs/home/home.esm.js");
-/* harmony import */ var _gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @gerdesque/ui */ "../../../dist/libs/ui/ui.esm.js");
-/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.scss */ "./app/app.scss");
-/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _app_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.json */ "./app/app.json");
-var _app_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./app.json */ "./app/app.json", 1);
+/* harmony import */ var _scrollintoview__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scrollintoview */ "./app/scrollintoview.tsx");
+/* harmony import */ var _usepersistedstate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./usepersistedstate */ "./app/usepersistedstate.tsx");
+/* harmony import */ var _gerdesque_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @gerdesque/home */ "../../../dist/libs/home/home.esm.js");
+/* harmony import */ var _gerdesque_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @gerdesque/ui */ "../../../dist/libs/ui/ui.esm.js");
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.scss */ "./app/app.scss");
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _app_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.json */ "./app/app.json");
+var _app_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./app.json */ "./app/app.json", 1);
+
+
 
 
 
@@ -8492,34 +8601,103 @@ var _app_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_re
 
 
 var App = () => {
-  var [character, setCharacter] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('default');
+  var [character, setCharacter] = Object(_usepersistedstate__WEBPACK_IMPORTED_MODULE_3__["default"])('character', 'default');
 
   var renderChapter = routerProps => {
-    var chapterId = parseInt(routerProps.match.params.id);
-    var chapter = _app_json__WEBPACK_IMPORTED_MODULE_5__.chapters.find(chapterObj => chapterObj.id === chapterId);
-    return chapter && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__["Chapter"], chapter);
+    var chapterLink = routerProps.match.params.link;
+    var chapter = _app_json__WEBPACK_IMPORTED_MODULE_7__.chapters.find(chapterObj => chapterObj.link === chapterLink);
+    return chapter && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_5__["Chapter"], chapter);
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__["AppContext"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_5__["AppContext"].Provider, {
     value: [character, setCharacter]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
     basename: "/demokratieerleben2020"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_3__["Nav"], {
-    chapters: _app_json__WEBPACK_IMPORTED_MODULE_5__.chapters
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_gerdesque_ui__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
+    chapters: _app_json__WEBPACK_IMPORTED_MODULE_7__.chapters
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_scrollintoview__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/",
     exact: true,
-    component: _gerdesque_home__WEBPACK_IMPORTED_MODULE_2__["Home"]
+    component: _gerdesque_home__WEBPACK_IMPORTED_MODULE_4__["Home"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/chapter/:id",
+    path: "/chapter/:link",
     render: renderChapter
-  }))))));
+  })))))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./app/scrollintoview.tsx":
+/*!********************************!*\
+  !*** ./app/scrollintoview.tsx ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "../../../node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+var ScrollIntoView = (_ref) => {
+  var {
+    children,
+    location
+  } = _ref;
+  var prevLocation = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (prevLocation.current !== location.pathname) {
+      document.querySelector('.parallax__header').scrollIntoView({
+        behavior: 'smooth'
+      });
+      prevLocation.current = location.pathname;
+    }
+  }, [location]);
+  return children;
+};
+
+ScrollIntoView.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
+  location: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(ScrollIntoView));
+
+/***/ }),
+
+/***/ "./app/usepersistedstate.tsx":
+/*!***********************************!*\
+  !*** ./app/usepersistedstate.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return usePersistedState; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function usePersistedState(key, defaultValue) {
+  var [state, setState] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(() => {
+    var persistedState = localStorage.getItem(key);
+    return persistedState ? JSON.parse(persistedState) : defaultValue;
+  });
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(state));
+  }, [state, key]);
+  return [state, setState];
+}
 
 /***/ }),
 
@@ -8551,7 +8729,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/gerdmueller/Development/demokratieerleben2020/apps/demol/src/main.tsx */"./main.tsx");
+module.exports = __webpack_require__(/*! /home/gm/Development/playground/demokratieerleben2020/apps/demol/src/main.tsx */"./main.tsx");
 
 
 /***/ })
