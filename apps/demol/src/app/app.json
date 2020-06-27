@@ -1035,8 +1035,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik."
+              "value": "ankunft",
+              "title": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik."
             }
           ]
         },
@@ -1109,8 +1109,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik."
+              "value": "ankunft",
+              "title": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik."
             }
           ]
         },
@@ -1192,8 +1192,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik."
+              "value": "ankunft",
+              "title": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik."
             }
           ]
         }
@@ -1281,8 +1281,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Betrete die Kinderrepublik!"
+              "value": "ankunft",
+              "title": "Betrete die Kinderrepublik!"
             }
           ]
         },
@@ -1375,8 +1375,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Betrete die Kinderrepublik!"
+              "value": "ankunft",
+              "title": "Betrete die Kinderrepublik!"
             }
           ]
         },
@@ -1458,8 +1458,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ankunft",
-              "value": "Betrete die Kinderrepublik!"
+              "value": "ankunft",
+              "title": "Betrete die Kinderrepublik!"
             }
           ]
         }
@@ -1651,28 +1651,27 @@
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?"
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             },
             {
               "type": "redirect",
-              "layer": "falken",
-              "value": "Ich möchte mehr über die Roten Falken erfahren."
+              "value": "falken",
+              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -1765,18 +1764,18 @@
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             }
           ]
         },
@@ -1816,18 +1815,18 @@
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             },
             {
               "type": "redirect",
@@ -1927,23 +1926,23 @@
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             },
             {
               "type": "redirect",
-              "layer": "weitermitfalken",
-              "value": "Ich möchte mehr über die Roten Falken erfahren."
+              "value": "weitermitfalken",
+              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -1993,23 +1992,23 @@
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             },
             {
               "type": "redirect",
-              "layer": "weitermitfalken",
-              "value": "Ich möchte mehr über die Roten Falken erfahren."
+              "value": "weitermitfalken",
+              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -2069,23 +2068,23 @@
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             },
             {
               "type": "redirect",
-              "layer": "weitermitfalken",
-              "value": "Ich möchte mehr über die Roten Falken erfahren."
+              "value": "weitermitfalken",
+              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -2155,23 +2154,23 @@
             },
             {
               "type": "redirect",
-              "layer": "weitermitanna",
-              "value": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "value": "weitermitanna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
-              "layer": "weitermitkarl",
-              "value": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "value": "weitermitkarl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "layer": "weitermitgerda",
-              "value": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "value": "weitermitgerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             },
             {
               "type": "redirect",
-              "layer": "weitermitfalken",
-              "value": "Ich möchte mehr über die Roten Falken erfahren."
+              "value": "weitermitfalken",
+              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         }
@@ -2460,18 +2459,17 @@
             },
             {
               "type": "text",
-              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?",
-              "layer": "base"
+              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?"
             },
             {
               "type": "redirect",
-              "layer": "annameetskarl",
-              "value": "Ja, gern."
+              "value": "annameetskarl",
+              "title": "Ja, gern."
             },
             {
               "type": "redirect",
-              "layer": "annaundausflüge",
-              "value": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
+              "value": "annaundausflüge",
+              "title": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
             }
           ]
         }
@@ -2679,8 +2677,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann.",
-              "layer": "fore"
+              "value": "Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann."
             },
             {
               "type": "image",
@@ -2689,18 +2686,17 @@
             },
             {
               "type": "text",
-              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?",
-              "layer": "base"
+              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?"
             },
             {
               "type": "redirect",
-              "layer": "annameetskarl",
-              "value": "Ja, gern."
+              "value": "annameetskarl",
+              "title": "Ja, gern."
             },
             {
               "type": "redirect",
-              "layer": "annaundausflüge",
-              "value": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
+              "value": "annaundausflüge",
+              "title": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
             }
           ]
         }
@@ -2801,8 +2797,8 @@
             },
             {
               "type": "redirect",
-              "layer": "gemeinsam",
-              "value": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
+              "value": "gemeinsam",
+              "title": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
             }
           ]
         }
@@ -2877,7 +2873,6 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik."
             },
             {
@@ -2887,8 +2882,8 @@
             },
             {
               "type": "redirect",
-              "layer": "gemeinsam",
-              "value": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
+              "value": "gemeinsam",
+              "title": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
             }
           ]
         }
@@ -2978,18 +2973,16 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "Wenn du das Spiel gewinnst, wird sich die Kinderrepublik langsam dem Ende nähern."
             },
             {
               "type": "memory",
-              "layer": "base",
               "value": "Memory"
             },
             {
               "type": "redirect",
-              "layer": "endkapitel",
-              "value": "Du hast genug gespielt und hast langsam Heimweh...."
+              "value": "endkapitel",
+              "title": "Du hast genug gespielt und hast langsam Heimweh...."
             }
           ]
         }
@@ -3109,8 +3102,8 @@
             },
             {
               "type": "redirect",
-              "layer": "ausblick",
-              "value": "Doch was ist nach den 1920er Jahren aus den Kindern geworden?"
+              "value": "ausblick",
+              "title": "Doch was ist nach den 1920er Jahren aus den Kindern geworden?"
             }
           ]
         }
