@@ -5,8 +5,8 @@ import './image.scss';
 
 export interface ImageProps {
   value: string
-  layer?: string
   title?: string
+  option?: string
 }
 
 export const Image = (props: ImageProps) => {
@@ -17,7 +17,7 @@ export const Image = (props: ImageProps) => {
   }
 
   return (
-    <picture className={`chapter_picture ${props.layer}`} onClick={() => chooseCharacter()}>
+    <picture className={`chapter_picture ${props.option}`} onClick={() => chooseCharacter()}>
       <source srcSet={"./assets/"+props.value+IMAGE_SUFFIX} type='image/webp' />
       <source srcSet={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} type='image/png' />
       <img draggable="false" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.title || props.value} />

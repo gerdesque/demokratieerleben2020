@@ -25,9 +25,10 @@ export enum ContentType {
 
 export interface Content {
   type: string
-  layer: string
   value: string
+  layer?: string
   title?: string
+  option?: string
 }
 
 export interface GroupProps {

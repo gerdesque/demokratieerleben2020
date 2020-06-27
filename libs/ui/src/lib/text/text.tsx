@@ -4,13 +4,12 @@ import Fade from 'react-reveal/Fade';
 import './text.scss';
 
 export interface TextProps {
-  value: string,
-  title: string,
-  layer: string
+  value: string
+  option?: string
 }
 
 export const Text = (props: TextProps) => {
-  const isRevealing = props.title === 'reveal';
+  const isRevealing = props.option === 'reveal';
   if (isRevealing) {
     return (
       <div className='box'>
@@ -25,7 +24,7 @@ export const Text = (props: TextProps) => {
     );
   }
   return (
-    <div className={`box ${props.layer}`}>
+    <div className={`box ${props.option}`}>
       <Fade bottom duration={5000}>
         <p>{props.value}</p>
       </Fade>

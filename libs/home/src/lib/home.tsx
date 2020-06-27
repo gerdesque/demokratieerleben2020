@@ -24,32 +24,32 @@ const home:ChapterProps = {
       {
         "type": "text",
         "value": "Anne Mühlich",
-        "layer": "avatar second"
+        "option": "avatar second"
       },
       {
         "type": "text",
         "value": "Gerd Müller",
-        "layer": "avatar second"
+        "option": "avatar second"
       },
       {
         "type": "text",
         "value": "Julia Kothe",
-        "layer": "avatar"
+        "option": "avatar"
       },
       {
         "type": "text",
         "value": "Lars Tunçay",
-        "layer": "avatar"
+        "option": "avatar"
       },
       {
         "type": "text",
         "value": "Nina Heinke",
-        "layer": "avatar"
+        "option": "avatar"
       },
       {
         "type": "text",
         "value": "Felix Werthschulte",
-        "layer": "avatar"
+        "option": "avatar"
       }
     ]
   },
