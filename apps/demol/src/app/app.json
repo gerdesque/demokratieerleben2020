@@ -144,7 +144,7 @@
             {
               "type": "video",
               "layer": "fourth",
-              "value": "3_Annas_Alltag",
+              "value": "3_Annas_Alltag_mit_Hühnern",
               "title": "Annas Alltag"
             },
             {
@@ -167,7 +167,7 @@
             },
             {
               "type": "redirect",
-              "layer": "republic",
+              "layer": "probezeltlager",
               "value": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
             }
           ]
@@ -186,7 +186,7 @@
             {
               "type": "video",
               "layer": "fourth",
-              "value": "7_Alltag",
+              "value": "7_Karl_Alltag",
               "title": "Karls_Alltag"
             },
             {
@@ -209,7 +209,7 @@
             },
             {
               "type": "redirect",
-              "layer": "republic",
+              "layer": "probezeltlager",
               "value": "Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt."
             }
           ]
@@ -245,7 +245,7 @@
             },
             {
               "type": "redirect",
-              "layer": "republic",
+              "layer": "probezeltlager",
               "value": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
             }
           ]
@@ -263,7 +263,7 @@
           ]
         },  
         {
-          "grouped": false,
+          "grouped": true,
           "row": false,
           "character": "Karl",
           "content": [
@@ -271,6 +271,11 @@
               "type": "text",
               "layer": "base",
               "value": "Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie."
+            },
+            {
+              "type": "image",
+              "layer": "second",
+              "value": "daheim_werbung"
             }
           ]
         },     
@@ -311,26 +316,29 @@
           ]
         }, 
         {
-          "grouped": false,
-          "row": false,
-          "character": "Karl",
-          "content": [
-            {
-              "type": "image",
-              "layer": "fore",
-              "value": "daheim_werbung"
-            }
-          ]
-        }, 
-        {
-          "grouped": false,
+          "grouped": true,
           "row": false,
           "character": "Karl",
           "content": [
             {
               "type": "text",
               "layer": "base",
-              "value": "Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend. Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage."
+              "value": "Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend."
+            },
+            {
+              "type": "image",
+              "layer": "second",
+              "value": "BEARBEITEN"
+            },
+            {
+              "type": "text",
+              "layer": "base",
+              "value": "Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage."
+            },
+            {
+              "type": "image",
+              "layer": "second",
+              "value": "BEARBEITEN"
             }
           ]
         }, 
@@ -416,7 +424,7 @@
             },
             {
               "type": "redirect",
-              "layer": "family",
+              "layer": "ortsgruppe",
               "value": "Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -429,7 +437,7 @@
             {
               "type": "image",
               "layer": "deep",
-              "value": "daheim_karte"
+              "value": "BEARBEITEN"
             }
           ]
         },
@@ -455,7 +463,7 @@
             },
             {
               "type": "redirect",
-              "layer": "family",
+              "layer": "ortsgruppe",
               "value": "Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -482,7 +490,7 @@
             },
             {
               "type": "redirect",
-              "layer": "family",
+              "layer": "ortsgruppe",
               "value": "Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -556,7 +564,7 @@
         ]
       },
       {
-        "grouped": false,
+        "grouped": true,
         "row": false,
         "character": "Karl",
         "info": "Hier könnte ein Link sein.",
@@ -569,13 +577,8 @@
           },
           {
             "type": "image",
-            "layer": "back",
-            "value": "daheim_karte"
-          },
-          {
-            "type": "image",
-            "layer": "second",
-            "value": "02_45_(5)"
+            "layer": "third",
+            "value": "02_84_(2)"
           }
         ]
       },
@@ -590,18 +593,8 @@
             "layer": "base"
           },
           {
-            "type": "image",
-            "layer": "deep",
-            "value": "02_1455_(68)"
-          },
-          {
-            "type": "image",
-            "layer": "back",
-            "value": "02_84_(2)"
-          },
-          {
             "type": "video",
-            "layer": "fourth",
+            "layer": "fore",
             "value": "13_Karl_Ortsgruppe"
           },
           {
@@ -816,24 +809,6 @@
          {
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
-          "character": "Karl",
-          "content": [
-            {
-             "type": "image",
-             "layer": "back",
-             "value": "daheim_karte"
-            },
-            {
-             "type": "image",
-             "layer": "deep",
-             "value": "2_31_g"
-            }
-           ]
-          },
-         {
-          "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [
             {
@@ -847,15 +822,15 @@
              "type": "text",
              "layer": "second"
              },
+             {
+              "type": "image",
+              "layer": "third",
+              "value": "02_1455_(14)"
+             },
             {
              "value": "Im Moment besteht die Hauptaufgabe der Gruppe darin, sich auf die bevorstehende 'Kinderrepublik', das große Zeltlager im Sommer, vorzubereiten. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren.",
              "type": "text",
              "layer": "third"
-            },
-            {
-             "type": "image",
-             "layer": "third",
-             "value": "02_1455_(14)"
             }
           ]
          },
@@ -864,24 +839,31 @@
           "row": false,
           "character": "Karl",
           "content": [
-           {
-            "value": "Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. ",
-            "type": "text",
-            "layer": "fore"
-            },
             {
              "type": "image",
-             "layer": "deep",
+             "layer": "second",
              "value": "02_1455_(21)"
             },
             {
+              "value": "Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. ",
+              "type": "text",
+              "layer": "fore"
+            }
+          ]
+         },
+         {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+            {
             "value": "Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
             "type": "text",
-            "layer": "fourth"
+            "layer": "base"
             },
             {
              "type": "image",
-             "layer": "deep",
+             "layer": "second",
              "value": "02_1455_(49)"
             }
           ]
@@ -897,18 +879,13 @@
              "layer": "base"
              },
              {
-             "type": "image",
-             "layer": "base",
-             "value": "2_30_2"
-             },
-             {
              "value": "Inzwischen steht fest, an welchem Ort das Lager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Karls Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
              "type": "text",
              "layer": "fore"
              },
              {
              "type": "image",
-             "layer": "deep",
+             "layer": "third",
              "value": "02_1455_(72)"
             }
            ]
@@ -1107,23 +1084,6 @@
           "link": "probezeltlager",
           "groups": [
           {
-           "grouped": true,
-           "row": false,
-           "info": "Hier könnte ein Link sein.",
-           "content": [
-             {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-             },
-             {
-              "type": "image",
-              "layer": "second",
-              "value": "02_45_(5)"
-             }
-            ]
-          },
-          {
             "grouped": true,
             "row": false,
             "character": "Anna",
@@ -1192,7 +1152,7 @@
             "content": [
             {
             "type": "video",
-            "layer": "fore",
+            "layer": "third",
             "value": "16_Karl_Probezeltlager"
             },
             {
@@ -1202,13 +1162,8 @@
             },
             {
             "type": "image",
-            "layer": "deep",
-            "value": "daheim_karte"
-            },
-            {
-            "type": "image",
             "layer": "second",
-            "value": "02_2480_(1)"
+            "value": "BEARBEITEN"
             },
             {
             "type": "text",
@@ -1228,6 +1183,11 @@
                "layer": "third"
                },
                {
+                "type": "image",
+                "layer": "second",
+                "value": "BEARBEITEN"
+                },
+               {
                "type": "text",
                "layer": "base",
                "value": "Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht."
@@ -1238,6 +1198,7 @@
             "grouped": true,
             "row": false,
             "character": "Karl",
+            "info":"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
             "content": [
             {
               "type": "text",
@@ -1245,14 +1206,9 @@
               "value": "Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?"
               },
               {
-              "type": "image",
-              "layer": "deep",
-              "value": "02_2424_(1)"
-              },
-              {
               "type": "text",
               "layer": "base",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
               }, 
               {
               "type": "suitcase",
@@ -1360,23 +1316,6 @@
          "link": "reise",
          "groups": [
            {
-            "grouped": true,
-            "row": false,
-            "info": "Hier könnte ein Link sein.",
-            "content": [
-             {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-             },
-             {
-              "type": "image",
-              "layer": "base",
-              "value": "02_1455_(69)"
-             }
-            ]
-           },
-           {
              "grouped": true,
              "row": false,
              "character": "Anna",
@@ -1476,24 +1415,43 @@
              "type": "image",
              "layer": "third",
              "value": "02_1455_(56)"
-            },
-            {
-             "type": "text",
-             "layer": "fourth",
-             "value": "Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten."
-            },
-            {
-             "type": "image",
-             "layer": "deep",
-             "value": "02_2453_(1)"
-            },
-            {
-             "type": "text",
-             "layer": "fore",
-             "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
             }
           ]
         },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+           {
+            "type": "text",
+            "layer": "base",
+            "value": "Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten."
+           },
+           {
+            "type": "image",
+            "layer": "second",
+            "value": "02_2453_(1)"
+           },
+           {
+            "type": "text",
+            "layer": "fore",
+            "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
+           }
+         ]
+       },
+       {
+        "grouped": false,
+        "row": false,
+        "character": "Karl",
+        "content": [
+         {
+          "type": "image",
+          "layer": "deep",
+          "value": "02_278_(3)"
+         }
+       ]
+     },
         {
            "grouped": true,
            "row": false,
@@ -1510,13 +1468,8 @@
              "value": "Drei gewinnt"
             },
             {
-             "type": "image",
-             "layer": "third",
-             "value": "02_278_(3)"
-            },
-            {
              "type": "text",
-             "layer": "fourth",
+             "layer": "base",
              "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
             }
           ]
@@ -1538,7 +1491,7 @@
             },
             {
              "type": "text",
-             "layer": "fourth",
+             "layer": "base",
              "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
             },
             {
@@ -1641,23 +1594,6 @@
           "name": "Die Kinderrepublik",
           "link": "ankunft",
           "groups": [
-           {
-             "grouped": true,
-             "row": false,
-             "info": "Hier könnte ein Link sein.",
-             "content": [
-                {
-                 "type": "image",
-                 "layer": "back",
-                 "value": "daheim_karte"
-                },
-                {
-                 "type": "image",
-                 "layer": "deep",
-                 "value": "02_1455_(1)"
-                }
-              ]
-            },
             {
               "grouped": true,
               "row": false,
@@ -1693,48 +1629,55 @@
                 {
                  "type": "text",
                  "value": "Karl ist jetzt endlich in der Kinderrepublik angekommen und hat sein Zelt gemeinsam mit mehreren anderen Kindern bezogen. Er verschafft sich sofort einen Überblick über das Gelände und das Lager.",
-                 "layer": "fore"
+                 "layer": "reveal"
                 },
                 {
                  "type": "image",
                  "layer": "third",
                  "value": "2_8_Weg_zum_Zeltlager"
-                },
-                {
-                 "type": "text",
-                 "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament.",
-                 "layer": "fore"
-                },
-                {
-                 "type": "image",
-                 "layer": "deep",
-                 "value": "02_45_(20)"
-                },
-                {
-                 "type": "text",
-                 "layer": "fore",
-                 "value": "Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen."
                 }
               ]
             },
             {
+              "grouped": true,
+              "row": false,
+              "character": "Karl",
+              "content": [
+                 {
+                  "type": "text",
+                  "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament.",
+                  "layer": "fore"
+                 },
+                 {
+                  "type": "image",
+                  "layer": "third",
+                  "value": "02_45_(20)"
+                 },
+                 {
+                  "type": "text",
+                  "layer": "fore",
+                  "value": "Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen."
+                 }
+               ]
+             },
+            {
              "grouped": true,
              "row": false,
              "character": "Karl",
-             "content": [
-                {
+             "content": [ 
+              {
+                "type": "image",
+                "layer": "third",
+                "value": "02_0028_KR_Westerwald_1932_Lagerwahl"
+               },
+               {
                  "type": "text",
                  "value": "An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge.",
                  "layer": "fore"
                 },
                 {
-                 "type": "image",
-                 "layer": "deep",
-                 "value": "02_0028_KR_Westerwald_1932_Lagerwahl"
-                },
-                {
                  "type": "video",
-                 "layer": "base",
+                 "layer": "third",
                  "value": "39_Karl_Zeltobfrau"
                 },
                 {
@@ -1836,7 +1779,7 @@
             "content": [
               {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "02_167_(4)"
               },
               {
@@ -1863,40 +1806,46 @@
               "type": "redirect",
               "layer": "falken",
               "value": "Ich möchte mehr über die Roten Falken erfahren."
-             },
+             }
+          ]
+        },
+          {
+            "grouped": true,
+            "row": true,
+            "content": [
              {
               "type": "text",
-              "layer": "fore",
+              "layer": "primary",
               "value": "Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.",
               "title": "Personen"
              },
              {
               "type": "text",
-              "layer": "fore",
+              "layer": "fifth",
               "value": "Priester",
               "title": "Priester"
              },
              {
               "type": "text",
-              "layer": "fore",
+              "layer": "fifth",
               "value": "Lagerfotograf",
               "title": "Lagerfotograf"
              },
              {
               "type": "text",
-              "layer": "fore",
+              "layer": "fifth",
               "value": "Lagerarzt",
               "title": "Lagerarzt"
              },
              {
               "type": "text",
-              "layer": "fore",
+              "layer": "fifth",
               "value": "Genossen",
               "title": "lokale Genoss*innen"
              },
              {
               "type": "text",
-              "layer": "fore",
+              "layer": "fifth",
               "value": "Hitlerjugend",
               "title": "Hitlerjugend"
             }
@@ -2693,40 +2642,23 @@
         {
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
-          "content": [
-            {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-            },
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "02_1455_(141)"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [
             {
               "type": "text",
               "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
-              "layer": "fore"
+              "layer": "reveal"
+            },
+            {
+              "type": "image",
+              "layer": "third",
+              "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
             },
             {
               "type": "text",
               "layer": "fore",
               "value": "Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan."
-            },
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
-            }         
+            }
           ]
         },
         {
@@ -2741,21 +2673,28 @@
               },
               {
                  "type": "image",
-                 "layer": "back",
+                 "layer": "third",
                  "value": "2_30_1"
-              },
-              {
-                 "type": "text",
-                 "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.",
-                 "layer": "fore"
-              },
-              {
-                 "type": "daily",
-                 "layer": "base",
-                 "value": "Tagesplan"
-              }        
+              }   
             ]
         },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+            {
+               "type": "text",
+               "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.",
+               "layer": "fore"
+            },
+            {
+               "type": "daily",
+               "layer": "base",
+               "value": "Tagesplan"
+            }        
+          ]
+      },
         {
              "grouped": true,
              "row": false,
@@ -2768,21 +2707,28 @@
                 },
                 {
                  "type": "image",
-                 "layer": "back",
+                 "layer": "third",
                  "value": "02_1455_(16)"
-                },
-                {
-                  "type": "text",
-                  "value": "Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert.",
-                  "layer": "base"
-                },
-                {
-                 "type": "video",
-                 "layer": "fourth",
-                 "value": "38_Karl_ErsteHilfe"
-                }         
+                }     
               ]
         },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+             {
+               "type": "text",
+               "value": "Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert.",
+               "layer": "base"
+             },
+             {
+              "type": "video",
+              "layer": "second",
+              "value": "38_Karl_ErsteHilfe"
+             }         
+           ]
+     },
         {
             "grouped": true,
             "row": false,
@@ -2795,21 +2741,28 @@
               },
               {
                   "type": "image",
-                  "layer": "back",
+                  "layer": "third",
                   "value": "2_8_5"
-              },
-              {
-                   "type": "text",
-                   "value": "Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.",
-                   "layer": "base"
-              },
-              {
-                  "type": "video",
-                  "layer": "fourth",
-                  "value": "36_Karl_Dialekte"
-              }         
+              }        
             ]
         },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [
+            {
+                 "type": "text",
+                 "value": "Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.",
+                 "layer": "base"
+            },
+            {
+                "type": "video",
+                "layer": "second",
+                "value": "36_Karl_Dialekte"
+            }         
+          ]
+      },
         {
               "grouped": true,
               "row": false,
@@ -2822,7 +2775,7 @@
                 },
                 {
                   "type": "image",
-                  "layer": "back",
+                  "layer": "third",
                   "value": "02_1455_(135)"
                 },
                 {
@@ -2839,7 +2792,7 @@
               "content": [
                 {
                   "type": "image",
-                  "layer": "back",
+                  "layer": "third",
                   "value": "2_31_v"
                 },
                 {
@@ -2851,12 +2804,7 @@
                   "type": "video",
                   "layer": "third",
                   "value": "22_Karl_Dialektabend"
-                },
-                {
-                  "type": "image",
-                  "layer": "back",
-                  "value": "2_31_l"
-                }    
+                }
               ]
         },
         {
@@ -2873,18 +2821,13 @@
                   "type": "video",
                   "layer": "third",
                   "value": "35_Karl_Gewitter"
-                },
-                {
-                  "type": "image",
-                  "layer": "back",
-                  "value": "2_8_Stegbau"
-                }    
+                }
               ]
         },
         {
           "grouped": true,
           "row": false,
-           "character": "Karl",
+          "character": "Karl",
           "content": [
             {
               "type": "text",
@@ -2893,13 +2836,25 @@
             },
             {
               "type": "image",
-              "layer": "back",
-              "value": "02_1455_(57)"
-            },
+              "layer": "second",
+              "value": "2_8_Stegbau"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+           "character": "Karl",
+          "content": [
             {
               "type": "text",
               "value": "Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann.",
               "layer": "fore"
+            },
+            {
+              "type": "image",
+              "layer": "third",
+              "value": "02_1455_(57)"
             },
             {
               "type": "text",
@@ -3035,29 +2990,7 @@
         {
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
           "content": [
-            {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-            },
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "02_1455_(101)"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
-          "content": [
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "02_1455_(71)"
-            },
             {
               "type": "text",
               "value": "In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.",
@@ -3065,7 +2998,7 @@
             },
             {
               "type": "video",
-              "layer": "third",
+              "layer": "second",
               "value": "23_Anna_und_Karl_mit_Musik"
             }  
           ]
@@ -3075,19 +3008,30 @@
           "row": false,
           "content": [
             {
-              "type": "image",
-              "layer": "deep",
-              "value": "2_8_Lesende_Jungs_im_Zelt"
-            },
-            {
               "type": "text",
               "value": "Beide lesen aber auch gern Romane, die von Entdeckungsreisen und fantastischen Orten handeln. Karl hat bisher während des Zeltlagers schon zwei Bücher von Jules Verne gelesen. ",
               "layer": "fore"
             },
             {
+              "type": "image",
+              "layer": "third",
+              "value": "2_8_Lesende_Jungs_im_Zelt"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
+            {
               "type": "text",
               "layer": "fore",
               "value": "Auch einige sehr neue Romane finden sich in der Lagerbücherei. Anna hat zum Beispiel 'Emil und die Detektive' von Erich Kästner gelesen und war begeistert."
+            },
+            {
+              "type": "image",
+              "layer": "third",
+              "value": "BEARBEITEN"
             }
           ]
         },
@@ -3102,9 +3046,15 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "02_1455_(118)"
-            },
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [
             {
               "type": "text",
               "layer": "fore",
@@ -3112,7 +3062,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "primary",
               "value": "02_1455_(111)"
             },
             {
@@ -3132,23 +3082,6 @@
         {
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
-          "content": [
-            {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-            },
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "2_2623_(3)"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
           "content": [
             {
               "type": "text",
@@ -3157,7 +3090,7 @@
             },
             {
               "type": "image",
-              "layer": "back",
+              "layer": "third",
               "value": "2_8_Mädchen_in_Turnkleidung_am_Strand"
             },
             {
@@ -3178,7 +3111,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "02_12_(1)"
             },
             {
@@ -3194,7 +3127,7 @@
           "content": [
             {
               "type": "image",
-              "layer": "second",
+              "layer": "third",
               "value": "2_8_Junge_mit_Becher"
             },
             {
@@ -3215,7 +3148,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "02_1455_(91)"
             },
             {
@@ -3256,23 +3189,6 @@
         {
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
-          "content": [
-            {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-            },
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "02_1455_(124)"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
           "content": [
             {
               "type": "text",
@@ -3281,7 +3197,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "2_31_ac"
             },
             {
@@ -3297,7 +3213,7 @@
           "content": [
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "fifth",
               "value": "103"
             },
             {
@@ -3323,7 +3239,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "02_0016_AJT_in_Wien_1929"
             },
             {
@@ -3344,7 +3260,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "second",
               "value": "2_31_y"
             },
             {
@@ -3365,7 +3281,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "second",
               "value": "02_0013_Lübecker_Bucht_1930_Briefkasten"
             },
             {
@@ -3381,7 +3297,7 @@
           "content": [
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "primary",
               "value": "2_31_s"
             },
             {
@@ -3401,23 +3317,6 @@
         {
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
-          "content": [
-            {
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-            },
-            {
-              "type": "image",
-              "layer": "deep",
-              "value": "2_0016_Seite155"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
           "content": [
             {
               "type": "text",
@@ -3426,7 +3325,7 @@
             },
             {
               "type": "image",
-              "layer": "deep",
+              "layer": "third",
               "value": "PH_dig_205_Seite205"
             },
             {

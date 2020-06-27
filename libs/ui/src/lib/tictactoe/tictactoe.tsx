@@ -1,6 +1,4 @@
-import React, { useState, useContext } from "react";
-
-import {AppContext } from '../chapter/context';
+import React, { useState } from "react";
 
 import './tictactoe.scss';
 
@@ -28,9 +26,6 @@ const userSymbol = "X";
 const computerSymbol = "O";
 
 export const TicTacToe = (props: TicTacToeProps) => {
-
-  const [character, setCharacter] = useContext(AppContext);
-  const status = `Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist ${character} dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.`;
 
   const [squares, setSquares] = useState(Array(9).fill(null));
   const winner = calculateWinner(squares);
@@ -77,7 +72,6 @@ export const TicTacToe = (props: TicTacToeProps) => {
 
   return (
     <div className='game'>
-      <div className='status'>{status}</div>
       <div className='board'>
       {squares.map((value, index) => (
           renderSquare(index)

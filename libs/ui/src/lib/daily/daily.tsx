@@ -14,7 +14,6 @@ const dailyItems = ["Waschen und Baden", "Frühstück", "Wanderungen machen", "S
 "Lagerruhe - Post- und Zeitungsausgabe", "Tagung des Lagerparlaments", "Gemeinsame Veranstaltungen", "Zeltruhe"];
 const schedule = ["6 Uhr", "8 Uhr", "8 ½ – 12 Uhr ", "8 ½ – 9 ½", "12 ½ – 14 ½ ",
 "18 – 19 Uhr", "19 ½ – 21 Uhr", "21 Uhr"]
-const description = "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen."
 
 export const Daily = (props: DailyProps) => {
 
@@ -54,7 +53,6 @@ export const Daily = (props: DailyProps) => {
    
   return (
     <div className="daily">
-      <div className="description">{description}</div>
       {getItems()}
       {showStatus()}
     </div>
