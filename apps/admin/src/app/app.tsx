@@ -27,10 +27,6 @@ export const Admin = () => {
       i18nProvider={i18nProvider}
       dataProvider={dataProvider}>
       <Resource name="chapters" {...chapters} />
-      <Resource name="images" {...images} />
-      <Resource name="videos" {...videos} />
-      <Resource name="games" {...games} />
-      <Resource name="tags" {...tags} />
     </ReactAdmin>
   );
 };
