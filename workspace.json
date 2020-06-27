@@ -20,8 +20,7 @@
               "apps/demol/src/manifest.json",
               "apps/demol/src/logo192.png",
               "apps/demol/src/logo512.png",
-              { "glob": "**/*", "input": "apps/demol/src/assets/", "output": "./assets/" },
-              { "glob": "**/*", "input": "libs/shared-assets/", "output": "./assets/" }],
+              { "glob": "**/*", "input": "apps/demol/src/assets/", "output": "./assets/" }],
             "styles": [
               "apps/demol/src/styles.scss",
               "libs/ui/src/lib/ui.scss"

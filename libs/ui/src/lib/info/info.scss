@@ -5,7 +5,6 @@
   cursor: pointer;
   width: 1em;
   height: 1em;
-  background: url(./info.svg) no-repeat 0 0 transparent;
   opacity: 1;
   transition: opacity .6s ease, margin-top .6s ease;
 
@@ -22,14 +21,10 @@
     font-size: 1.1rem;
   }
 
-  &:hover {
-    background: url(./info_highlighted.svg) no-repeat 0 0 transparent;
-
-    .infoText {
+  &:hover .infoText {
       padding: 8px;
       opacity: 1;
       transition: opacity .5s ease;
-    }
   }
 }
 
