@@ -10,14 +10,14 @@ export interface NavProps {
 export const Nav = (props: NavProps) => {
 
   const renderChapterNav = () => {
-    return props.chapters.map((chapter, index) => <li className='navigation--item' key={index}><NavLink to = {`/chapter/${chapter.link}`} />{chapter.name}</li> )
+    return props.chapters.map((chapter, index) => <li className='navigation--item' key={index}><NavLink to = {`/chapter/${chapter.link}`} /></li> )
 }
 
   return (
     <nav className="app-nav">
       <ul className='navigation'>
         <li className='navigation--item'>
-          <NavLink exact to="/">Home</NavLink>
+          <NavLink exact to="/" />
         </li>
         {renderChapterNav()}
     </ul>
