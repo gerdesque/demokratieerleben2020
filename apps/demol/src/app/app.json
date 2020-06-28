@@ -2823,17 +2823,15 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "In Annas und Karls Zeltdorf haben sich mehrere Kinder zusammengefunden, die einen Antrag an das Lagerparlament stellen wollen. Sie wollen erreichen, dass die Gymnastik morgens nach dem Frühstück und nicht davor stattfindet. "
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "2_8_Mädchen_in_Turnkleidung_am_Strand"
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Nachdem sie die Mehrheit für diesen Vorschlag in ihrer Zeltgemeinschaft erhalten haben, reichen sie den Antrag an die Gemeindevertretung des Zeltdorfes weiter."
             }
           ]
@@ -2876,15 +2874,11 @@
         {
           "grouped": true,
           "row": false,
+          "background": "02_1455_(91)",
           "content": [{
               "type": "text",
               "layer": "fore",
               "value": "Anna hat eingesehen, dass der Ablauf wirklich kompliziert ist. Um die ganze Lagerstruktur besser erklären zu können,  hat sie sich ein Spiel ausgedacht. Sie spielt es mit Karl, um auszuprobieren, ob es verständlich ist."
-            },
-            {
-              "type": "image",
-              "option": "third",
-              "value": "02_1455_(91)"
             },
             {
               "type": "text",
@@ -2924,6 +2918,7 @@
           "content": [{
               "type": "text",
               "layer": "fore",
+              "option": "reveal",
               "value": "Gerda hat den beiden Kindern beim Spielen zugeschaut und findet Annas Idee großartig. Sie will das Spiel mit ihrer Ortsgruppe ausprobieren, wenn sie sich auf das nächste Zeltlager vorbereiten."
             },
             {
@@ -2941,19 +2936,15 @@
         {
           "grouped": true,
           "row": false,
+          "background": "103",
           "content": [{
-              "type": "image",
-              "option": "fifth",
-              "value": "103"
-            },
-            {
               "type": "text",
               "layer": "fore",
               "value": "Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon."
             },
             {
               "type": "video",
-              "option": "third",
+              "option": "primary",
               "value": "28_Deutschfranzösisches_Zeltlager"
             }
           ]
@@ -2968,7 +2959,7 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_0016_AJT_in_Wien_1929"
             },
             {
@@ -3010,24 +3001,20 @@
               "type": "image",
               "option": "second",
               "value": "02_0013_Lübecker_Bucht_1930_Briefkasten"
-            },
-            {
-              "type": "text",
-              "layer": "fore",
-              "value": "Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien."
             }
           ]
         },
         {
           "grouped": true,
           "row": false,
+          "background": "2_31_s",
           "content": [{
-              "type": "image",
-              "option": "primary",
-              "value": "2_31_s"
+              "type": "text",
+              "value": "Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien."
             },
             {
               "type": "redirect",
+              "option": "second",
               "value": "ausblick",
               "title": "Doch was ist nach den 1920er Jahren aus den Kindern geworden?"
             }
@@ -3042,24 +3029,17 @@
       "groups": [{
         "grouped": true,
         "row": false,
+        "background": "PH_dig_205_Seite205",
         "content": [{
             "type": "text",
-            "layer": "fore",
             "value": "Viele der Kinder und Jugendlichen, die in den 1920er und 1930er Jahren an Zeltlagern der Kinderfreunde und der Sozialistischen Arbeiterjugend (SAJ) teilgenommen haben, wurden nach 1933 für ihr politisches Engagement verfolgt, inhaftiert und auch ermordet."
           },
           {
-            "type": "image",
-            "option": "third",
-            "value": "PH_dig_205_Seite205"
-          },
-          {
             "type": "text",
-            "layer": "fore",
             "value": "Die hier verwendeten Bilder überlebten oft nur durch Zufall oder weil sie gut versteckt worden waren und wie ein Schatz gehütet wurden."
           },
           {
             "type": "text",
-            "layer": "fore",
             "value": "Ende"
           }
         ]

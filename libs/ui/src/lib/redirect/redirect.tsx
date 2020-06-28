@@ -26,8 +26,8 @@ export const RedirectComponent = (props: RedirectProps) => {
 
   return (
     <>
-      <button type='button' className={`link-button redirect ${props.option}`} onClick={() => handleRedirect()}>{props.title}</button>
-      {redirect}
+      {/* <button type='button' className={`link-button redirect ${props.option}`} onClick={() => handleRedirect()}>{props.title}</button> */}
+      <p className={`redirect ${props.option}`} onClick={() => handleRedirect()}>{props.title}</p>
       {redirect && <Redirect exact to={props.value} />}
     </>
   );

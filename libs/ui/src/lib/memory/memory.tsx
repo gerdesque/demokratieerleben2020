@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { makeStyles } from '@material-ui/core/styles';
 
 import Image from "../image/image";
+import { IMAGE_SUFFIX } from '@gerdesque/data';
 
 import './memory.scss';
 
@@ -61,12 +63,6 @@ export const Memory = (props: MemoryProps) => {
         finishedItems={finishedItems}
         checkItems={checkItems}
       />
-      {winner && (
-        <div>
-          You Win !
-          <br />
-        </div>
-      )}
     </div>
   );
 }
@@ -80,13 +76,22 @@ const Grid = props => {
     checkItems
   } = props;
 
+  const useStyles = makeStyles(() => ({
+    card: {
+      "&::after": {
+        background: `url(./assets/logo${IMAGE_SUFFIX})`
+      }
+    },
+  }));
+  const classes = useStyles();
+
   return (
     <div className="memory">
       <div className="cards">
         {list.map((item, index) => (
           <Card
             key={item.id}
-            className={`card ${
+            className={`card ${classes.card} ${
               visibleItems.includes(index) ? "grid-card-show" : ""
             } ${
               finishedItems.includes(index)
