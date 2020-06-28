@@ -14,7 +14,6 @@ export const Chapter = (props: ChapterProps) => {
   const [character, setCharacter] = useContext(AppContext);
 
   const audio = new Audio(`./assets/sounds/${props.link}.mp3`);
-  audio.loop = true;
   const startAudio = (inView) => {
     inView ? audio.play() : audio.pause();  
   };

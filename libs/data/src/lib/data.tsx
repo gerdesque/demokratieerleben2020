@@ -29,6 +29,7 @@ export interface Content {
   layer?: string
   title?: string
   option?: string
+  avatar?: string
 }
 
 export interface GroupProps {

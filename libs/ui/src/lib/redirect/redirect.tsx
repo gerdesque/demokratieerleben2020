@@ -1,5 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState,useContext} from 'react';
 import { Redirect } from "react-router-dom";
+
+import {AppContext } from '../chapter/context';
+
 import './redirect.scss';
 
 /* eslint-disable-next-line */
@@ -9,13 +12,22 @@ export interface RedirectProps {
   layer?: string
   title?: string
   option?: string
+  avatar?: string
 }
 
 export const RedirectComponent = (props: RedirectProps) => {
+  const [character, setCharacter] = useContext(AppContext);
   const [redirect, setRedirect] = useState(false);
+
+  const handleRedirect = () => {
+    props.avatar && setCharacter(props.avatar);
+    setRedirect(true)
+  }
+
   return (
     <>
-      <button type='button' className={`link-button redirect ${props.option}`} onClick={() => setRedirect(true)}>{props.title}</button>
+      <button type='button' className={`link-button redirect ${props.option}`} onClick={() => handleRedirect()}>{props.title}</button>
+      {redirect}
       {redirect && <Redirect exact to={props.value} />}
     </>
   );

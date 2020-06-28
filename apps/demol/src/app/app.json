@@ -1625,21 +1625,25 @@
           {
             "type": "redirect",
             "value": "weitermitanna",
+            "avatar": "Anna",
             "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
           },
           {
             "type": "redirect",
             "value": "weitermitkarl",
+            "avatar": "Karl",
             "title": "Ich möchte (weiter) schauen, was Karl erlebt."
           },
           {
             "type": "redirect",
-            "value": "weitermitgerda",
+            "value": "ankunft",
+            "avatar": "Gerda",
             "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
           },
           {
             "type": "redirect",
             "value": "falken",
+            "avatar": "Falken",
             "title": "Ich möchte mehr über die Roten Falken erfahren."
           },
           {
@@ -1648,28 +1652,33 @@
             "title": "Personen"
           },
           {
-            "type": "text",
-            "value": "Priester",
+            "type": "redirect",
+            "value": "personen",
+            "avatar": "Priester",
             "title": "Priester"
           },
           {
-            "type": "text",
-            "value": "Lagerfotograf",
+            "type": "redirect",
+            "value": "personen",
+            "avatar": "Lagerfotograf",
             "title": "Lagerfotograf"
           },
           {
-            "type": "text",
-            "value": "Lagerarzt",
+            "type": "redirect",
+            "value": "personen",
+            "avatar": "Lagerarzt",
             "title": "Lagerarzt"
           },
           {
-            "type": "text",
-            "value": "Genossen",
+            "type": "redirect",
+            "value": "personen",
+            "avatar": "Genossen",
             "title": "lokale Genoss*innen"
           },
           {
-            "type": "text",
-            "value": "Hitlerjugend",
+            "type": "redirect",
+            "value": "personen",
+            "avatar": "Hitlerjugend",
             "title": "Hitlerjugend"
           }
         ]
@@ -1678,62 +1687,63 @@
     },
     {
       "id": 7,
-      "name": "Andere Personen",
-      "link": "Personen",
+      "name": "Die Roten Falken",
+      "link": "falken",
       "groups": [{
           "grouped": true,
           "row": false,
-          "info": "Hier könnte ein Link sein.",
-          "content": [{
-              "type": "image",
-              "layer": "back",
-              "value": "daheim_karte"
-            },
-            {
-              "type": "image",
-              "option": "third",
-              "value": "02_12_(13)"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
-          "character": "falken",
+          "character": "Falken",
           "content": [{
               "type": "text",
-              "value": "Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen.",
-              "layer": "fore"
+              "value": "Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen."
             },
             {
               "type": "image",
               "option": "third",
-              "value": ""
+              "value": "BEARBEITEN"
             },
             {
               "type": "text",
-              "value": "Das Ziel dieser Gebote ist es, dass aus den Kindern später einmal gute, hilfsbereite und engagierte Sozialdemokrat*innen werden. Diese Regeln und Gebote werden in der Kinderrepublik oft abends vor der Lagerruhe im Sprechchor aufgesagt.",
-              "layer": "fore"
-            },
-            {
-              "type": "text",
-              "option": "third",
-              "value": "41_Rote_Falken_Gebote_Chor"
+              "value": "Das Ziel dieser Gebote ist es, dass aus den Kindern später einmal gute, hilfsbereite und engagierte Sozialdemokrat*innen werden. Diese Regeln und Gebote werden in der Kinderrepublik oft abends vor der Lagerruhe im Sprechchor aufgesagt."
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
+              "avatar": "Anna",
               "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
+              "avatar": "Karl",
               "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "value": "weitermitgerda",
+              "value": "ankunft",
+              "avatar": "Gerda",
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Weitere Personen",
+      "link": "personen",
+      "groups": [{
+          "grouped": true,
+          "row": false,
+          "character": "Priester",
+          "content": [{
+              "type": "video",
+              "option": "primary",
+              "value": "19_Besuchstag"
+            },
+            {
+              "type": "text",
+              "value": "Einer dieser Kirchenvertreter ist ein katholischer Priester aus der nahen Umgebung. Insbesondere die katholische Kirche lehnt das Prinzip der Koedukation, das die Kinderfreunde  propagieren, ab. Koedukation bedeutet, dass Mädchen und Jungen gemeinsam in der Gruppe aktiv sind. Vor allem die gemeinsam genutzten Zelte hält der Priester für moralisch verwerflich."
             }
           ]
         },
@@ -1742,24 +1752,13 @@
           "row": false,
           "character": "Priester",
           "content": [{
-              "type": "video",
-              "option": "second",
-              "value": "19_Besuchstag"
-            },
-            {
-              "type": "text",
-              "value": "Einer dieser Kirchenvertreter ist ein katholischer Priester aus der nahen Umgebung. Insbesondere die katholische Kirche lehnt das Prinzip der Koedukation, das die Kinderfreunde  propagieren, ab. Koedukation bedeutet, dass Mädchen und Jungen gemeinsam in der Gruppe aktiv sind. Vor allem die gemeinsam genutzten Zelte hält der Priester für moralisch verwerflich.",
-              "layer": "fore"
-            },
-            {
               "type": "image",
-              "option": "third",
-              "value": "02_1455_(65)"
+              "value": "BEARBEITEN",
+              "option": "third"
             },
             {
               "type": "text",
-              "value": "In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden.",
-              "layer": "fore"
+              "value": "In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden."
             },
             {
               "type": "image",
@@ -1768,28 +1767,25 @@
             },
             {
               "type": "text",
-              "value": "Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel.",
-              "layer": "fore"
+              "value": "Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel."
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
+              "avatar": "Anna",
               "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
+              "avatar": "Karl",
               "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "value": "weitermitgerda",
+              "value": "ankunft",
+              "avatar": "Gerda",
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
-            },
-            {
-              "type": "redirect",
-              "layer": "weitermitfalken",
-              "value": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -1800,27 +1796,30 @@
           "content": [{
               "type": "text",
               "value": "Im Zeltlager wird oft fotografiert. Obwohl bereits seit 1925 Kleinbildkameras serienmäßig produziert werden, besitzen die wenigsten Arbeiterfamilien Fotoapparate. Denn diese kosten oft den 4- bis 5-fachen Monatslohn eines Arbeiters. Erst 1930 gibt es erschwingliche Kameras - zwar mit größeren Rollfilmen, aber für nur 40 RM.",
-              "layer": "fore"
+              "option": "reveal"
             },
             {
               "type": "text",
-              "value": "Im Zeltlager gibt es nur wenige Personen, die eine Kamera bedienen können.",
-              "layer": "fore"
+              "value": "Im Zeltlager gibt es nur wenige Personen, die eine Kamera bedienen können."
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_0189_SAJ_Bielefeld_auf_dem_AJT_in_Hamburg,_1925,_Fotograf"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerfotograf",
+          "content": [{
+              "type": "text",
+              "value": "Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik."
             },
             {
               "type": "text",
-              "value": "Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik.",
-              "layer": "fore"
-            },
-            {
-              "type": "text",
-              "value": "Er hält alle wichtigen Momente fest: Ausflüge, Aufführungen des legendären Lagerzirkus, die Essenausgabe, die Musikkapelle und natürlich auch alle anderen Situationen des Gruppenlebens.",
-              "layer": "fore"
+              "value": "Er hält alle wichtigen Momente fest: Ausflüge, Aufführungen des legendären Lagerzirkus, die Essenausgabe, die Musikkapelle und natürlich auch alle anderen Situationen des Gruppenlebens."
             },
             {
               "type": "image",
@@ -1829,8 +1828,7 @@
             },
             {
               "type": "text",
-              "value": "Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll.",
-              "layer": "fore"
+              "value": "Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll."
             },
             {
               "type": "image",
@@ -1839,13 +1837,11 @@
             },
             {
               "type": "text",
-              "value": "Irmas Bericht",
-              "layer": "fore"
+              "value": "Irmas Bericht"
             },
             {
               "type": "text",
-              "value": "08.08. Um 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen. Freundschaft. Irma",
-              "layer": "fore"
+              "value": "08.08. Um 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen. Freundschaft. Irma"
             },
             {
               "type": "image",
@@ -1854,13 +1850,11 @@
             },
             {
               "type": "text",
-              "value": "Georgs Bericht",
-              "layer": "fore"
+              "value": "Georgs Bericht"
             },
             {
               "type": "text",
-              "value": "01.08. Wir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein. Freundschaft. Georg",
-              "layer": "fore"
+              "value": "01.08. Wir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein. Freundschaft. Georg"
             },
             {
               "type": "image",
@@ -1869,38 +1863,36 @@
             },
             {
               "type": "text",
-              "value": "Lottes Bericht",
-              "layer": "fore"
+              "value": "Lottes Bericht"
             },
             {
               "type": "text",
-              "value": "23.07. Um 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe. Freundschaft. Lotte",
-              "layer": "fore"
+              "value": "23.07. Um 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe. Freundschaft. Lotte"
             },
             {
               "type": "image",
-              "option": "third",
               "value": "02_45_(21)"
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
+              "avatar": "Anna",
+              "option": "third",
               "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
+              "avatar": "Karl",
+              "option": "third",
               "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "value": "weitermitgerda",
+              "value": "ankunft",
+              "avatar": "Gerda",
+              "option": "third",
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
-            },
-            {
-              "type": "redirect",
-              "value": "weitermitfalken",
-              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -1911,7 +1903,7 @@
           "content": [{
               "type": "text",
               "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
-              "layer": "fore"
+              "option": "reveal"
             },
             {
               "type": "image",
@@ -1921,12 +1913,17 @@
             {
               "type": "text",
               "value": "Er versorgt in der Kinderrepublik verletzte und kranke Kinder. Obwohl jedes Kind vor der Reise ärztlich untersucht werden sollte, gibt es doch immer wieder Fälle von schweren Erkrankungen und Seuchen.",
-              "layer": "fore"
-            },
-            {
+              "option": "third"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerarzt",
+          "content": [{
               "type": "text",
-              "value": "Erst letzten Monat gab es Berichte von einem kleineren Zeltlager, das kurz vor der Schließung stand. Dort waren mehrere Fälle der lebensgefährlichen Krankheit Diphterie aufgetreten. Zum Glück konnten die betroffenen Kinder schnell isoliert und ins Krankenhaus gebracht werden. Die Ansteckung anderer Kinder wurde so verhindert.",
-              "layer": "fore"
+              "value": "Erst letzten Monat gab es Berichte von einem kleineren Zeltlager, das kurz vor der Schließung stand. Dort waren mehrere Fälle der lebensgefährlichen Krankheit Diphterie aufgetreten. Zum Glück konnten die betroffenen Kinder schnell isoliert und ins Krankenhaus gebracht werden. Die Ansteckung anderer Kinder wurde so verhindert."
             },
             {
               "type": "image",
@@ -1935,8 +1932,7 @@
             },
             {
               "type": "text",
-              "value": "Für die Helfer*innen bietet der Lagerarzt regelmäßig Bildungsabende zum Thema Hygiene an. Dieses Wissen ist wichtig, damit Krankheiten im Zeltlager keine Chance haben.",
-              "layer": "fore"
+              "value": "Für die Helfer*innen bietet der Lagerarzt regelmäßig Bildungsabende zum Thema Hygiene an. Dieses Wissen ist wichtig, damit Krankheiten im Zeltlager keine Chance haben."
             },
             {
               "type": "image",
@@ -1945,28 +1941,25 @@
             },
             {
               "type": "text",
-              "value": "2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil.",
-              "layer": "fore"
+              "value": "2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil."
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
+              "avatar": "Anna",
               "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
+              "avatar": "Karl",
               "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "value": "weitermitgerda",
+              "value": "ankunft",
+              "avatar": "Gerda",
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
-            },
-            {
-              "type": "redirect",
-              "value": "weitermitfalken",
-              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -1977,12 +1970,7 @@
           "content": [{
               "type": "text",
               "value": "In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. ",
-              "layer": "fore"
-            },
-            {
-              "type": "text",
-              "value": "So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen.",
-              "layer": "fore"
+              "option": "reveal"
             },
             {
               "type": "image",
@@ -1991,8 +1979,18 @@
             },
             {
               "type": "text",
-              "value": "Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch.",
-              "layer": "fore"
+              "option": "third",
+              "value": "So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Genossen",
+          "content": [{
+              "type": "text",
+              "value": "Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch."
             },
             {
               "type": "image",
@@ -2001,48 +1999,50 @@
             },
             {
               "type": "text",
-              "value": "Ohne die vielen wohlgesonnenen Bürger*innen im Umland könnte das Zeltlager nicht stattfinden. Und Lebensmittel für so viele Kinder in einem Laden zu kaufen wäre einerseits unmöglich und andererseits auch viel zu teuer.",
-              "layer": "fore"
-            },
-            {
+              "value": "Ohne die vielen wohlgesonnenen Bürger*innen im Umland könnte das Zeltlager nicht stattfinden. Und Lebensmittel für so viele Kinder in einem Laden zu kaufen wäre einerseits unmöglich und andererseits auch viel zu teuer."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Genossen",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "02_1455_(121)"
             },
             {
               "type": "text",
-              "value": "Und wie schmeckt Anna und Karl das Essen in der Kinderrepublik?",
-              "layer": "fore"
+              "value": "Und wie schmeckt Anna und Karl das Essen in der Kinderrepublik?"
             },
             {
               "type": "video",
-              "option": "fourth",
+              "option": "second",
               "value": "37_Karl_Essen"
             },
             {
               "type": "video",
-              "option": "fourth",
+              "option": "second",
               "value": "31_Anna_Essen"
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
+              "avatar": "Anna",
               "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
+              "avatar": "Karl",
               "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "value": "weitermitgerda",
+              "value": "ankunft",
+              "avatar": "Gerda",
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
-            },
-            {
-              "type": "redirect",
-              "value": "weitermitfalken",
-              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         },
@@ -2052,18 +2052,23 @@
           "character": "Hitlerjugend",
           "content": [{
               "type": "video",
-              "option": "second",
+              "option": "primary",
               "value": "21_Nächtlicher_Überfall"
             },
             {
               "type": "text",
-              "value": "Vor ihnen stehen knapp 30 Kinder und Jugendliche mit leuchtenden Fackeln in den Händen. Sie brüllen irgendetwas von 'Sozialistenschweinen' und 'Vaterlandsverrätern' und rennen davon. ",
-              "layer": "fore"
-            },
-            {
+              "value": "Vor ihnen stehen knapp 30 Kinder und Jugendliche mit leuchtenden Fackeln in den Händen. Sie brüllen irgendetwas von 'Sozialistenschweinen' und 'Vaterlandsverrätern' und rennen davon."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Hitlerjugend",
+          "content": [{
               "type": "text",
-              "value": "Die Kinder des Zeltlagers sind erschrocken. Sie haben schon oft gehört, dass die Hitlerjugend Zeltlager von sozialistischen Verbänden gestürmt haben. Aber sie hatten sich sehr sicher gefühlt.",
-              "layer": "fore"
+              "option": "fourth",
+              "value": "Die Kinder des Zeltlagers sind erschrocken. Sie haben schon oft gehört, dass die Hitlerjugend Zeltlager von sozialistischen Verbänden gestürmt haben. Aber sie hatten sich sehr sicher gefühlt."
             },
             {
               "type": "image",
@@ -2072,28 +2077,37 @@
             },
             {
               "type": "text",
-              "value": "Die Helfer*innen setzen sich nun mit ihren jeweiligen Zeltgemeinschaften zusammen und besprechen das soeben Erlebte.",
-              "layer": "fore"
-            },
-            {
+              "option": "fourth",
+              "value": "Die Helfer*innen setzen sich nun mit ihren jeweiligen Zeltgemeinschaften zusammen und besprechen das soeben Erlebte."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Hitlerjugend",
+          "content": [{
               "type": "text",
-              "value": "Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft.",
-              "layer": "fore"
+              "value": "Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft."
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "2_31_t"
             },
             {
               "type": "text",
-              "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft.",
-              "layer": "fore"
-            },
-            {   
+              "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Hitlerjugend",
+          "content": [{   
               "type": "text",
-              "value": "Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern.",
-              "layer": "fore"
+              "value": "Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern."
             },
             {
               "type": "image",
@@ -2102,43 +2116,42 @@
             },
             {
               "type": "text",
-              "value": "Seit 1926 gab es mit der Hitlerjugend bereits eine Jugendorganisation der NSDAP, die für Kinder ähnlich attraktiv wirkte, wie die sozialistischen und sozialdemokratischen Verbände.",
-              "layer": "fore"
+              "value": "Seit 1926 gab es mit der Hitlerjugend bereits eine Jugendorganisation der NSDAP, die für Kinder ähnlich attraktiv wirkte, wie die sozialistischen und sozialdemokratischen Verbände."
             },
             {
               "type": "video",
-              "option": "second",
+              "option": "primary",
               "value": "25_Karl_Hitlerjugend"
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
+              "option": "second",
+              "avatar": "Anna",
               "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
+              "avatar": "Karl",
+              "option": "third",
               "title": "Ich möchte (weiter) schauen, was Karl erlebt."
             },
             {
               "type": "redirect",
-              "value": "weitermitgerda",
+              "value": "ankunft",
+              "avatar": "Gerda",
+              "option": "third",
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
-            },
-            {
-              "type": "redirect",
-              "value": "weitermitfalken",
-              "title": "Ich möchte mehr über die Roten Falken erfahren."
             }
           ]
         }
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Annas Erlebnisse",
       "link": "weitermitanna",
-      "character": "Anna",
       "groups": [{
           "grouped": true,
           "row": false,
@@ -2402,7 +2415,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Karls Erlebnisse",
       "link": "weitermitkarl",
       "character": "Karl",
@@ -2629,7 +2642,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 11,
       "name": "Anna und die Ausflüge",
       "link": "annaundausflüge",
       "groups": [
@@ -2717,7 +2730,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "Anna und Karl",
       "link": "annameetskarl",
       "groups": [{
@@ -2802,7 +2815,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "Gemeinsam in der Kinderrepublik",
       "link": "gemeinsam",
       "groups": [{
@@ -2902,7 +2915,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Das Ende der Kinderrepublik",
       "link": "endkapitel",
       "groups": [{
@@ -3023,7 +3036,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Das Ende der Republik",
       "link": "ausblick",
       "groups": [{
