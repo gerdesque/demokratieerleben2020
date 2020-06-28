@@ -5,7 +5,7 @@
   opacity: .9;
   transition: all 0.50s;
 
-  &:hover {
+  &.avatar:hover {
     transition: all 0.50s;
     filter: brightness(110%);
     transform: scale(1.1);
