@@ -97,7 +97,7 @@
             {
               "type": "image",
               "option": "second",
-              "value": "daheim_familie"
+              "value": "2_1033_Seite58"
             }
           ]
         },
@@ -112,7 +112,7 @@
             {
               "type": "image",
               "option": "second",
-              "value": "daheim_familie"
+              "value": "2_608_Seite112"
             }
           ]
         },
@@ -297,8 +297,8 @@
             },
             {
               "type": "image",
-              "option": "second",
-              "value": "BEARBEITEN"
+              "option": "third",
+              "value": "2-1781_Seite135"
             },
             {
               "type": "text",
@@ -306,8 +306,8 @@
             },
             {
               "type": "image",
-              "option": "second",
-              "value": "BEARBEITEN"
+              "option": "third",
+              "value": "02_1945_SAJ_Frankenthal_1929"
             }
           ]
         },
@@ -319,7 +319,7 @@
             "type": "image",
             "layer": "back",
             "option": "second",
-            "value": "daheim_werbung"
+            "value": "02_12_(4)"
           },
           {
             "type": "text",
@@ -333,8 +333,8 @@
           "character": "Gerda",
           "content": [{
             "type": "image",
-            "option": "primary",
-            "value": "02_12_(4)"
+            "option": "third",
+            "value": "daheim_werbung"
           },
           {
             "type": "text",
@@ -384,7 +384,7 @@
             "type": "image",
             "layer": "deep",
             "option": "third",
-            "value": "BEARBEITEN"
+            "value": "02_1455_(147)"
           }]
         },
         {
@@ -543,7 +543,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "BEARBEITEN"
+              "value": "2-1781_Seite135"
             },
             {
               "value": "Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos. Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.",
@@ -555,6 +555,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "02_1455_(105)",
           "content": [{
               "type": "image",
               "option": "third",
@@ -563,11 +564,6 @@
             {
               "value": "Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. ",
               "type": "text"
-            },
-            {
-              "type": "image",
-              "option": "third",
-              "value": "02_1455_(105)"
             }
           ]
         },
@@ -1063,11 +1059,17 @@
               "type": "text",
               "value": "Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.",
               "layer": "base"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [{
               "type": "image",
               "option": "second",
-              "value": "BEARBEITEN"
+              "value": "02_84_(9)"
             },
             {
               "type": "text",
@@ -1081,14 +1083,25 @@
           "row": false,
           "character": "Karl",
           "content": [{
-              "type": "text",
-              "value": "Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
-              "layer": "third"
+              "type": "image",
+              "option": "third",
+              "value": "02_1455_(50)"
             },
             {
+              "type": "text",
+              "value": "Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
+              "layer": "base"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [{
               "type": "image",
               "option": "second",
-              "value": "BEARBEITEN"
+              "value": "02_12_(17)"
             },
             {
               "type": "text",
@@ -1137,11 +1150,17 @@
             {
               "type": "text",
               "value": "Das Probezeltlager von Gerdas Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht."
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [{
               "type": "image",
-              "option": "second",
-              "value": "BEARBEITEN"
+              "option": "third",
+              "value": "02_84_(9)"
             },
             {
               "type": "text",
@@ -1157,7 +1176,7 @@
           "content": [{
               "type": "image",
               "option": "third",
-              "value": "BEARBEITEN"
+              "value": "02_1455_(49)"
             },
             {
               "type": "text",
@@ -1167,7 +1186,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_1455_(49)"
+              "value": "03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934"
             },
             {
               "type": "text",
@@ -1726,7 +1745,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "BEARBEITEN"
+              "value": "02_1455_(144)"
             },
             {
               "type": "text",
