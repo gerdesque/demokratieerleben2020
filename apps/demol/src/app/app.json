@@ -2465,12 +2465,11 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan."
             }
           ]
@@ -2481,8 +2480,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.",
-              "layer": "fore"
+              "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
             },
             {
               "type": "image",
@@ -2497,12 +2495,10 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.",
-              "layer": "fore"
+              "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen."
             },
             {
               "type": "daily",
-              "layer": "base",
               "value": "Tagesplan"
             }
           ]
@@ -2513,12 +2509,11 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Ein Großteil des Tages besteht darin, dass die Kinder und Jugendlichen ihren eigenen Interessen nachgehen können und an einer der vielfältigen Arbeitsgruppen teilnehmen können. Oft organisieren die Kinder auch eigene Veranstaltungen oder Ausflüge.",
-              "layer": "fore"
+              "value": "Ein Großteil des Tages besteht darin, dass die Kinder und Jugendlichen ihren eigenen Interessen nachgehen können und an einer der vielfältigen Arbeitsgruppen teilnehmen können. Oft organisieren die Kinder auch eigene Veranstaltungen oder Ausflüge."
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_1455_(16)"
             }
           ]
@@ -2529,12 +2524,11 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert.",
-              "layer": "base"
+              "value": "Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert."
             },
             {
               "type": "video",
-              "option": "second",
+              "option": "primary",
               "value": "38_Karl_ErsteHilfe"
             }
           ]
@@ -2545,12 +2539,11 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind.",
-              "layer": "fore"
+              "value": "Karl kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind."
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "primary",
               "value": "2_8_5"
             }
           ]
@@ -2561,12 +2554,11 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.",
-              "layer": "base"
+              "value": "Es bereitet ihm große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat."
             },
             {
               "type": "video",
-              "option": "second",
+              "option": "primary",
               "value": "36_Karl_Dialekte"
             }
           ]
@@ -2577,18 +2569,16 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.",
-              "layer": "fore"
+              "value": "Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben."
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_1455_(135)"
             },
             {
               "type": "text",
-              "value": "Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden.",
-              "layer": "base"
+              "value": "Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden."
             }
           ]
         },
@@ -2603,8 +2593,7 @@
             },
             {
               "type": "text",
-              "value": "An manchen Nachmittagen tanzt das ganze Zeltlager, es gibt Zirkusaufführungen oder Theaterinszenierungen der Kinder und Helfer*innen.",
-              "layer": "fore"
+              "value": "An manchen Nachmittagen tanzt das ganze Zeltlager, es gibt Zirkusaufführungen oder Theaterinszenierungen der Kinder und Helfer*innen."
             },
             {
               "type": "video",
@@ -2619,12 +2608,11 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Auch wenn im Zeltlager vieles gut organisiert ist und über fast alles demokratisch entschieden wird, gibt es auch hier Situationen, die niemand beeinflussen kann, denn...",
-              "layer": "fore"
+              "value": "Auch wenn im Zeltlager vieles gut organisiert ist und über fast alles demokratisch entschieden wird, gibt es auch hier Situationen, die niemand beeinflussen kann, denn..."
             },
             {
               "type": "video",
-              "option": "third",
+              "option": "primary",
               "value": "35_Karl_Gewitter"
             }
           ]
@@ -2635,8 +2623,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen. Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.",
-              "layer": "fore"
+              "value": "Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen. Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw."
             },
             {
               "type": "image",
@@ -2655,7 +2642,7 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_1455_(57)"
             },
             {
@@ -2665,11 +2652,13 @@
             {
               "type": "redirect",
               "value": "annameetskarl",
+              "option": "third",
               "title": "Ja, gern."
             },
             {
               "type": "redirect",
               "value": "annaundausflüge",
+              "option": "third",
               "title": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
             }
           ]

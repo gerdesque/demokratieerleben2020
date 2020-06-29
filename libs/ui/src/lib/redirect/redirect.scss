@@ -4,7 +4,7 @@
   transition: all 0.25s linear;
   position: relative;
   //color: var(--color-link-highlighted);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
 
   &:before {
@@ -23,5 +23,9 @@
 
   &:hover:before {
     transform: scale(1);
+  }
+  &.big {
+    font-weight: bold;
+    font-size: 3.5rem;
   }
 }

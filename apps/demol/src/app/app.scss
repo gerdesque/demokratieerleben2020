@@ -1,8 +1,8 @@
 :root {
-  --color-text: #850101;
-  --color-title: #BF6422;
-  --color-link: #008080;
-  --color-link-highlighted: #E3000F;
+  --color-text: #96271f;
+  --color-title: #781f19;
+  --color-link: #d6ae01;
+  --color-link-highlighted: #96271f;
 }
 
 @font-face {
@@ -61,8 +61,4 @@ body {
   overflow-x: hidden;
   perspective: 1px;
   transform-style: preserve-3d;
-}
-
-p {
-  text-shadow: 2px 2px lightgrey;
 }
