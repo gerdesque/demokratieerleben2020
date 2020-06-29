@@ -303,6 +303,11 @@
             {
               "type": "text",
               "value": "Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage."
+            },
+            {
+              "type": "image",
+              "option": "third",
+              "value": "02_1945_SAJ_Frankenthal_1929"
             }
           ]
         },
@@ -475,8 +480,8 @@
             },
             {
               "type": "image",
-              "option": "third",
-              "value": "02_84_(2)"
+              "option": "second",
+              "value": "02_12_(4)"
             }
           ]
         },
@@ -686,7 +691,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_1455_(72)"
+              "value": "02_1455_(92)"
             },
             {
               "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
@@ -721,7 +726,7 @@
               "title": "reveal"
             },
             {
-              "value": "Karls Falkengruppe trifft sich mehrmals die Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.",
+              "value": "Karls Falkengruppe trifft sich einmal in der Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.",
               "type": "text",
               "layer": "second"
             },
@@ -744,7 +749,7 @@
           "content": [{
               "type": "image",
               "option": "second",
-              "value": "02_1455_(21)"
+              "value": "02_84_(7)"
             },
             {
               "value": "Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. ",
@@ -762,8 +767,8 @@
             },
             {
               "type": "image",
-              "option": "second",
-              "value": "02_1455_(49)"
+              "option": "fifth",
+              "value": "2_31_e"
             }
           ]
         },
@@ -782,7 +787,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_1455_(72)"
+              "value": "02_1455_(92)"
             }
           ]
         },
@@ -817,7 +822,7 @@
             {
               "type": "image",
               "option": "second",
-              "value": "2_214_Seite142"
+              "value": "02_167_(4)"
             }
           ]
         },
@@ -848,7 +853,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_1455_(21)"
+              "value": "PH-B_279_Löwenstein_in_Seekamp_1927"
             }
           ]
         },
@@ -891,7 +896,7 @@
           "content": [{
               "type": "image",
               "option": "second",
-              "value": "02_1455_(72)"
+              "value": "02_2424_(1)"
             },
             {
               "value": "Gerda nimmt an einer Wanderung teil, zu der alle Helfer*innen aus ihrer Stadt eingeladen sind. Am Ende sind sie immerhin 16 Jugendliche, die alle zwischen 15 und 18 Jahre alt sind. Die meisten von ihnen werden ebenfalls als Helfer*innen bei der 'Kinderrepublik' dabei sein. Gerda freut sich darauf, mit ihnen gemeinsam dorthin zu fahren.",
@@ -940,7 +945,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_12_(9)"
+              "value": "02_12_(17)"
             },
             {
               "value": "Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
@@ -993,7 +998,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_278_(7)"
+              "value": "02_12_(17)"
             },
             {
               "type": "text",
@@ -1150,7 +1155,7 @@
           "content": [{
               "type": "image",
               "option": "third",
-              "value": "02_1455_(49)"
+              "value": "03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934"
             },
             {
               "type": "text",
@@ -1160,7 +1165,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934"
+              "value": "02_1455_(92)"
             },
             {
               "type": "text",
@@ -1291,7 +1296,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_1455_(56)"
+              "value": "02_45_(8)"
             }
           ]
         },
@@ -1310,7 +1315,7 @@
             },
             {
               "type": "text",
-              "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
+              "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihm langweilig ist."
             }
           ]
         },
@@ -1320,8 +1325,8 @@
           "character": "Karl",
           "content": [{
             "type": "image",
-            "option": "third",
-            "value": "02_278_(3)"
+            "option": "second",
+            "value": "02_1455_(51)"
           }]
         },
         {
@@ -1486,7 +1491,7 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "fifth",
               "value": "2_8_Weg_zum_Zeltlager"
             }
           ]
@@ -1666,7 +1671,7 @@
           "content": [{
             "type": "image",
             "option": "full",
-            "value": "BEARBEITEN"
+            "value": "02_45_(12)"
           },
           {
             "type": "redirect",
@@ -1775,7 +1780,7 @@
           "character": "Priester",
           "content": [{
               "type": "image",
-              "value": "BEARBEITEN",
+              "value": "02_84_(4)",
               "option": "third"
             },
             {
@@ -2691,11 +2696,6 @@
               "value": "34_Anna_Ausflug"
             },
             {
-              "type": "image",
-              "option": "second",
-              "value": "02_1455_(123)"
-            },
-            {
               "type": "text",
               "value": "Dabei geht es nicht nur um das Wandern als sportliche Betätigung, sondern auch um das soziale und wirtschaftliche Lebensumfeld der Menschen vor Ort."
             }
@@ -2707,7 +2707,7 @@
           "content": [{
               "type": "image",
               "option": "third",
-              "value": "02_1455_(78)"
+              "value": "02_1455_(123)"
             },
             {
               "type": "text",
@@ -2805,7 +2805,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "BEARBEITEN"
+              "value": "02_1455_(118)"
             }
           ]
         },
@@ -2820,7 +2820,7 @@
             {
               "type": "image",
               "option": "third",
-              "value": "02_1455_(118)"
+              "value": "02_1455_(91)"
             }
           ]
         },
@@ -2830,11 +2830,6 @@
           "content": [{
               "type": "text",
               "value": "Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik."
-            },
-            {
-              "type": "image",
-              "option": "primary",
-              "value": "02_1455_(111)"
             },
             {
               "type": "redirect",
@@ -2872,7 +2867,7 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
+              "layer": "base",
               "value": "Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang."
             },
             {
@@ -3064,6 +3059,11 @@
         "content": [{
             "type": "text",
             "value": "Viele der Kinder und Jugendlichen, die in den 1920er und 1930er Jahren an Zeltlagern der Kinderfreunde und der Sozialistischen Arbeiterjugend (SAJ) teilgenommen haben, wurden nach 1933 für ihr politisches Engagement verfolgt, inhaftiert und auch ermordet."
+          },
+          {
+            "type": "image",
+            "option": "third",
+            "value": "02_1455_(19)"
           },
           {
             "type": "text",
