@@ -371,6 +371,7 @@
             {
               "type": "redirect",
               "value": "ortsgruppe",
+              "option": "second",
               "title": "Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -405,6 +406,7 @@
             {
               "type": "redirect",
               "value": "ortsgruppe",
+              "option": "second",
               "title": "Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -428,6 +430,7 @@
             {
               "type": "redirect",
               "value": "ortsgruppe",
+              "option": "second",
               "title": "Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -515,11 +518,13 @@
             {
               "type": "redirect",
               "value": "gruppenvorbereitung",
+              "option": "second",
               "title": "Ich möchte noch mehr über Karls Ortsgruppe erfahren."
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
+              "option": "second",
               "title": "Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen."
             }
           ]
@@ -674,21 +679,17 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_1455_(58)",
           "info": "Hier könnte ein Link sein.",
           "content": [{
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "2_31_h"
             },
             {
               "value": "Inzwischen ist Anna schon über ein halbes Jahr regelmäßig zu den Treffen der Roten Falken gegangen. Für den Sommer ist ein großes Zeltlager unter dem Titel 'Kinderrepublik' geplant. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren. ",
-              "option": "fourth",
-              "type": "text"
-            },
-            {
-              "type": "image",
               "option": "third",
-              "value": "02_1455_(58)"
+              "type": "text"
             },
             {
               "value": "Das kostet natürlich viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
@@ -713,8 +714,15 @@
             {
               "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
               "type": "text"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "info": "Hier könnte ein Link sein.",
+          "content": [{
               "type": "image",
               "value": "Karte_Weimarer_Republik"
             },
@@ -831,12 +839,8 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "2_214_Seite142"
-            },
-            {
-              "value": "Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.",
-              "type": "text"
             }
           ]
         },
@@ -845,13 +849,14 @@
           "row": false,
           "character": "Gerda",
           "content": [{
+              "value": "Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.",
+              "type": "text",
+              "option": "third"
+            },
+            {
               "type": "image",
               "option": "second",
               "value": "02_1455_(14)"
-            },
-            {
-              "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
-              "type": "text"
             }
           ]
         },
@@ -860,28 +865,33 @@
           "row": false,
           "character": "Gerda",
           "content": [{
-              "type": "image",
-              "option": "primary",
-              "value": "02_1455_(21)"
+            "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
+            "type": "text"
             },
             {
+              "type": "image",
+              "option": "third",
+              "value": "02_1455_(21)"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [{
               "value": "Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.",
               "type": "text"
-            }
-          ]
-        },
-        {
-          "grouped": true,
-          "row": false,
-          "character": "Gerda",
-          "content": [{
+            },
+            {
               "type": "image",
-              "option": "primary",
+              "option": "third",
               "value": "02_1455_(49)"
             },
             {
               "value": "Gerda sieht darin eine tiefgreifende Auseinandersetzung mit einem anderen Ort. Diese Methode wird sich daher auch gut für die Kinderrepublik eignen.",
-              "type": "text"
+              "type": "text",
+              "option": "third"
             }
           ]
         },
@@ -889,12 +899,8 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "2_30_2",
           "content": [{
-              "type": "image",
-              "value": "2_30_2",
-              "option":"primary"
-            },
-            {
               "value": "Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. ",
               "type": "text"
             }
@@ -961,7 +967,8 @@
             },
             {
               "value": "Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
-              "type": "text"
+              "type": "text",
+              "option": "third"
             },
             {
               "type": "redirect",
@@ -989,8 +996,14 @@
               "type": "text",
               "value": "Das Probezeltlager von Annas Ortsgruppe hat gut geklappt. Alle haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht. Nun fiebern alle der 'Kinderrepublik' entgegen.",
               "option": "reveal"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "02_2480_(1)"
@@ -1008,15 +1021,23 @@
             {
               "type": "text",
               "value": "Nun steht die Abreise endlich bevor. Anna muss ihre Sachen packen, damit sie die nächsten drei Wochen alles dabei hat, was sie braucht."
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "background": "02_2424_(1)",
+          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
+          "content": [{
               "type": "text",
               "option": "second",
               "value": "Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
             },
             {
               "type": "text",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
             },
             {
               "type": "suitcase",
@@ -1080,6 +1101,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_2424_(1)",
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
           "content": [{
               "type": "text",
@@ -1159,13 +1181,14 @@
           "row": false,
           "character": "Gerda",
           "background": "02_2424_(1)",
+          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
           "content": [{
               "type": "text",
               "value": "Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
             },
             {
               "type": "text",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
             },
             {
               "type": "suitcase",
@@ -1269,8 +1292,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein.",
-              "layer": "second"
+              "value": "Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein."
             },
             {
               "type": "image",
@@ -1285,7 +1307,6 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "layer": "base",
               "value": "Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten."
             },
             {
@@ -1295,7 +1316,6 @@
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
             }
           ]
@@ -1316,17 +1336,14 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.",
-              "layer": "second"
+              "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren."
             },
             {
               "type": "tictactoe",
-              "layer": "base",
               "value": "Drei gewinnt"
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
             }
           ]
@@ -1337,8 +1354,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.",
-              "layer": "second"
+              "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik."
             },
             {
               "type": "image",
@@ -1347,12 +1363,12 @@
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
             },
             {
               "type": "redirect",
               "value": "ankunft",
+              "option": "second",
               "title": "Betrete die Kinderrepublik!"
             }
           ]
@@ -1612,13 +1628,8 @@
         {
           "grouped": true,
           "row": false,
-          "content": [
-            {
-            "type": "image",
-            "option": "second",
-            "value": "02_167_(4)"
-            },
-            {
+          "background": "02_167_(4)",
+          "content": [{
             "type": "text",
             "value": "In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?"
           },
@@ -1650,34 +1661,49 @@
             "type": "text",
             "value": "Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.",
             "title": "Personen"
+          }
+        ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "content": [{
+            "type": "image",
+            "option": "full",
+            "value": "BEARBEITEN"
           },
           {
             "type": "redirect",
             "value": "personen",
+            "option": "third",
             "avatar": "Priester",
             "title": "Priester"
           },
           {
             "type": "redirect",
             "value": "personen",
+            "option": "third",
             "avatar": "Lagerfotograf",
             "title": "Lagerfotograf"
           },
           {
             "type": "redirect",
             "value": "personen",
+            "option": "third",
             "avatar": "Lagerarzt",
             "title": "Lagerarzt"
           },
           {
             "type": "redirect",
             "value": "personen",
+            "option": "third",
             "avatar": "Genossen",
             "title": "lokale Genoss*innen"
           },
           {
             "type": "redirect",
             "value": "personen",
+            "option": "third",
             "avatar": "Hitlerjugend",
             "title": "Hitlerjugend"
           }
@@ -1764,8 +1790,14 @@
               "type": "image",
               "option": "third",
               "value": "02_1455_(99)"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Priester",
+          "content": [{
               "type": "text",
               "value": "Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel."
             },

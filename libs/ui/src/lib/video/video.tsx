@@ -16,6 +16,7 @@ export const Video = (props: VideoProps) => {
 
   const playVideo = (playing) => {
     setPlaying(playing);
+    playing && document.querySelector('.theater').scrollIntoView({ behavior: "smooth" });
   };
 
   return (
