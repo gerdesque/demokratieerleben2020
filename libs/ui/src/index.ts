@@ -1,3 +1,4 @@
+export * from './lib/summary/summary';
 export * from './lib/rain/rain';
 export * from './lib/birds/birds';
 export * from './lib/memory/memory';

@@ -151,7 +151,6 @@
             },
             {
               "type": "redirect",
-              "option": "third",
               "value": "probezeltlager",
               "title": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
             }
@@ -291,6 +290,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_1945_SAJ_Frankenthal_1929",
           "content": [{
               "type": "text",
               "value": "Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend."
@@ -303,11 +303,6 @@
             {
               "type": "text",
               "value": "Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage."
-            },
-            {
-              "type": "image",
-              "option": "third",
-              "value": "02_1945_SAJ_Frankenthal_1929"
             }
           ]
         },
@@ -343,19 +338,10 @@
           }]
         },
         {
-          "grouped": false,
-          "row": false,
-          "character": "Anna",
-          "content": [{
-            "type": "image",
-            "layer": "deep",
-            "value": "daheim_karte"
-          }]
-        },
-        {
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_1455_(147)",
           "content": [{
               "type": "text",
               "value": "Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
@@ -371,26 +357,16 @@
             {
               "type": "redirect",
               "value": "ortsgruppe",
-              "option": "second",
+              "option": "primary",
               "title": "Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe."
             }
           ]
         },
         {
-          "grouped": false,
-          "row": false,
-          "character": "Karl",
-          "content": [{
-            "type": "image",
-            "layer": "deep",
-            "option": "third",
-            "value": "02_1455_(147)"
-          }]
-        },
-        {
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_1455_(147)",
           "content": [{
               "type": "text",
               "value": "Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
@@ -406,7 +382,7 @@
             {
               "type": "redirect",
               "value": "ortsgruppe",
-              "option": "second",
+              "option": "primary",
               "title": "Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -415,6 +391,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "02_1455_(147)",
           "content": [{
               "type": "text",
               "value": "Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
@@ -430,7 +407,7 @@
             {
               "type": "redirect",
               "value": "ortsgruppe",
-              "option": "second",
+              "option": "primary",
               "title": "Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe."
             }
           ]
@@ -546,7 +523,7 @@
               "value": "2-1781_Seite135"
             },
             {
-              "value": "Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos. Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.",
+              "value": "Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos.",
               "type": "text"
             }
           ]
@@ -557,6 +534,10 @@
           "character": "Gerda",
           "background": "02_1455_(105)",
           "content": [{
+              "value": "Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.",
+              "type": "text"
+            },
+            {
               "type": "image",
               "option": "third",
               "value": "02_1455_(103)"
@@ -1028,11 +1009,12 @@
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
           "content": [{
               "type": "text",
-              "option": "second",
+              "option": "third",
               "value": "Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
             },
             {
               "type": "text",
+              "option": "third",
               "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
             },
             {
@@ -1052,13 +1034,12 @@
           "character": "Karl",
           "content": [{
               "type": "video",
-              "option": "third",
+              "option": "second",
               "value": "16_Karl_Probezeltlager"
             },
             {
               "type": "text",
-              "value": "Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.",
-              "layer": "base"
+              "value": "Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht."
             }
           ]
         },
@@ -1073,7 +1054,6 @@
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Nur Kurt war mit wenig Interesse dabei, hat sich vor der Arbeit gedrückt und oft von der Gruppe entfernt. Die Gruppe hat daher einstimmig entschieden, dass Kurt nicht mehr an den Unternehmungen der Gruppe teilnehmen darf, wenn er nicht bereit ist, sich einzubringen."
             }
           ]
@@ -1089,8 +1069,7 @@
             },
             {
               "type": "text",
-              "value": "Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
-              "layer": "base"
+              "value": "Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen."
             }
           ]
         },
@@ -1105,7 +1084,6 @@
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht."
             }
           ]
@@ -1118,17 +1096,14 @@
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
           "content": [{
               "type": "text",
-              "layer": "base",
               "value": "Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?"
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
             },
             {
               "type": "suitcase",
-              "layer": "base",
               "value": "rucksack"
             },
             {
@@ -1164,7 +1139,6 @@
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Gerda fand es trotzdem aufregend, da sie als Helferin auch die Verantwortung für das Wohlergehen der Kinder hatte. Zum Glück haben sich alle vorbildlich verhalten, niemand hat sich verletzt und es gab keinen Ärger zwischen den Kindern und Helfer*innen."
             }
           ]
@@ -1180,8 +1154,8 @@
             },
             {
               "type": "text",
-              "value": "Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab.",
-              "layer": "fore"
+              "option": "fourth",
+              "value": "Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab."
             },
             {
               "type": "image",
@@ -1190,7 +1164,6 @@
             },
             {
               "type": "text",
-              "layer": "base",
               "value": "Ihre Sachen hat Gerda auch noch nicht gepackt. 3 Wochen sind eine lange Zeit."
             }
           ]
@@ -1203,10 +1176,12 @@
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
           "content": [{
               "type": "text",
+              "option": "third",
               "value": "Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
             },
             {
               "type": "text",
+              "option": "third",
               "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
             },
             {
@@ -1491,7 +1466,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "32_Anna_Zeltobfrau"
             },
             {
@@ -1522,8 +1497,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament.",
-              "layer": "fore"
+              "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament."
             },
             {
               "type": "image",
@@ -1532,7 +1506,6 @@
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen."
             }
           ]
@@ -1543,22 +1516,26 @@
           "character": "Karl",
           "content": [{
               "type": "image",
-              "option": "third",
+              "option": "primary",
               "value": "02_0028_KR_Westerwald_1932_Lagerwahl"
             },
             {
               "type": "text",
-              "value": "An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge.",
-              "layer": "fore"
-            },
-            {
+              "value": "An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge."
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [{
               "type": "video",
-              "option": "third",
+              "option": "primary",
               "value": "39_Karl_Zeltobfrau"
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu entdecken und auszuprobieren."
             }
           ]
@@ -1855,7 +1832,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "02_0189_SAJ_Bielefeld_auf_dem_AJT_in_Hamburg,_1925,_Fotograf"
             }
           ]
@@ -1880,45 +1857,48 @@
             {
               "type": "text",
               "value": "Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll."
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerfotograf",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "02_1455_(46)"
             },
             {
-              "type": "text",
-              "value": "Irmas Bericht"
+              "type": "summary",
+              "value": "Irmas Bericht",
+              "title": "08.08. Um 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen. Freundschaft. Irma"
             },
             {
-              "type": "text",
-              "value": "08.08. Um 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen. Freundschaft. Irma"
+              "type": "summary",
+              "value": "Georgs Bericht",
+              "title": "01.08. Wir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein. Freundschaft. Georg"
             },
             {
               "type": "image",
               "option": "third",
               "value": "02_1455_(146)"
-            },
-            {
-              "type": "text",
-              "value": "Georgs Bericht"
-            },
-            {
-              "type": "text",
-              "value": "01.08. Wir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein. Freundschaft. Georg"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerfotograf",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "02_45_(6)"
             },
             {
-              "type": "text",
-              "value": "Lottes Bericht"
-            },
-            {
-              "type": "text",
-              "value": "23.07. Um 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe. Freundschaft. Lotte"
+              "type": "summary",
+              "value": "Lottes Bericht",
+              "title": "23.07. Um 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe. Freundschaft. Lotte"
             },
             {
               "type": "image",

@@ -12,6 +12,7 @@ import TicTacToe from '../tictactoe/tictactoe';
 import Daily from '../daily/daily';
 import Redirect from '../redirect/redirect';
 import Info from '../info/info';
+import Summary from '../summary/summary';
 
 import { GroupProps } from '@gerdesque/data';
 
@@ -26,6 +27,7 @@ const ContentType  = {
   puzzle: Puzzle,
   memory: Memory,
   suitcase: Suitcase,
+  summary: Summary,
   tictactoe: TicTacToe,
   daily: Daily,
   decission: Decission
