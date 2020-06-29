@@ -63,6 +63,9 @@ export const Memory = (props: MemoryProps) => {
         finishedItems={finishedItems}
         checkItems={checkItems}
       />
+      {winner && (
+        <p>Du hast gewonnen!</p>
+      )}
     </div>
   );
 }

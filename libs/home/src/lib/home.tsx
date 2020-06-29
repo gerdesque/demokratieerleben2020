@@ -56,10 +56,20 @@ const home:ChapterProps = {
   {
     "grouped": false,
     "row": false,
-    "content": [
-      {
+    "content": [{
         "type": "text",
         "value": "Unsere Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können.",
+        "layer": "fore"
+      }
+    ]
+  },
+  {
+    "grouped": false,
+    "row": false,
+    "content": [{
+        "type": "redirect",
+        "value": "chapter/daheim",
+        "title": "Demokratie erLeben",
         "layer": "fore"
       }
     ]
