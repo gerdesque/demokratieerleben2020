@@ -347,6 +347,10 @@ img {
   text-align: center;
 }
 
+.full {
+  width: 80%;
+}
+
 .primary {
   width: 66%;
 }
@@ -365,13 +369,14 @@ img {
 }
 
 .bg {
-  opacity: 0.3;
+  opacity: 0.2;
+  width: 100%;
 }
 
 .infoLink {
   position: absolute;
-  top: 37%;
-  left: 15%;
+  top: 25%;
+  left: 5%;
   cursor: pointer;
   width: 1em;
   height: 1em;
@@ -388,8 +393,12 @@ img {
   overflow: hidden;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  color: var(--color-link);
   font-size: 1.1rem;
+}
+
+.infoLink .infoText p {
+  text-shadow: none;
 }
 
 .infoLink:hover .infoText {
@@ -399,7 +408,7 @@ img {
 }
 
 a {
-  color: #fff;
+  color: var(--color-link);
   text-decoration: none;
 }
 
@@ -472,7 +481,7 @@ a {
 .navigation {
   right: 2%;
   position: absolute;
-  top: 33%;
+  top: 10%;
   z-index: 6;
   align-items: center;
   display: flex;
@@ -484,8 +493,8 @@ a {
 .navigation--item {
   cursor: pointer;
   border-radius: 9999px;
-  height: 20px;
-  width: 20px;
+  height: 28px;
+  width: 28px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 8px 0;
@@ -691,7 +700,7 @@ a {
   border-bottom: 3px solid var(--color-link);
   transition: all 0.25s linear;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -712,6 +721,11 @@ a {
 
 .redirect:hover:before {
   transform: scale(1);
+}
+
+.redirect.big {
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 
 .icon-scroll,
@@ -913,6 +927,10 @@ a {
   align-items: center;
 }
 
+.suitcase .bag picture {
+  width: 50%;
+}
+
 .suitcase .items > * {
   width: 25%;
   margin: auto;
@@ -943,38 +961,23 @@ a {
   }
 }
 
+.summary {
+  width: 60%;
+  font-size: 1.5rem;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.summary summary:focus {
+  outline-style: none;
+}
+
+.summary p {
+  text-align: left;
+}
+
 .box {
   width: 80%;
-}
-
-.box.avatar {
-  flex: 1 25%;
-  padding: 5px;
-}
-
-.box.avatar:hover p {
-  background-color: var(--color-title);
-}
-
-.box.avatar.second {
-  flex: 1 50%;
-}
-
-.box.avatar p {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 50%;
-  height: 200px;
-  margin: 8px;
-  color: #ffffff;
-  background-color: #673ab7;
-  text-shadow: none;
-  justify-content: center;
-}
-
-.box p {
-  text-shadow: 2px 2px lightgrey;
 }
 
 .column {
