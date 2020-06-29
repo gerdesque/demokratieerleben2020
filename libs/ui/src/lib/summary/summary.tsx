@@ -11,9 +11,12 @@ export interface SummaryProps {
 
 export const Summary = (props: SummaryProps) => {
   return (
-    <details>
+    <details className="summary">
       <summary>{props.value}</summary>
-      <p>{props.title}</p>
+      {props.title.split(/\n/g).map((text, index) =>
+          <p key={index}>{text}</p>
+        )}
+      
     </details>
   );
 };

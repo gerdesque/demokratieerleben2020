@@ -46,7 +46,7 @@ export const Daily = (props: DailyProps) => {
     return (
       <>
         <Box targetKey="box"/>
-        <button type='button' className='link-button show' onClick={() => handleClick()}>Tagesplan anzeigen!</button>
+        <p className="redirect" onClick={() => handleClick()}>Tagesplan anzeigen!</p>
       </>
     )
   }
