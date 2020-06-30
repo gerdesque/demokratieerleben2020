@@ -84,9 +84,9 @@ export const TicTacToe = (props: TicTacToeProps) => {
       ))}
       </div>
       <div className='result'>{getStatus()}</div>
-      {winner === "X" && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={playStatus} 
+      {winner === "X" && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={playStatus}
         onFinishedPlaying={() => setPlayStatus(Sound.status.STOPPED)} />}
-      {winner === "O" && <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={playStatus} 
+      {winner === "O" && <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={playStatus}
         onFinishedPlaying={() => setPlayStatus(Sound.status.STOPPED)} />}
     </div>
   );
