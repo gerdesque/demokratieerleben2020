@@ -6,7 +6,6 @@
       "groups": [{
           "grouped": false,
           "row": false,
-          "info": "<p>Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/events/westfalen-ruhrgebiet/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Westfalen-Ruhrgebiet</a> von Oktober bis Dezember 2019. Wir danken dem <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>, welches die Fotografien und Bildkärtchen unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt hat.</p>",
           "content": [{
               "type": "text",
               "value": "Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.",
@@ -28,7 +27,6 @@
         {
           "grouped": true,
           "row": false,
-          "info": "<a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>",
           "content": [{
               "type": "text",
               "value": "Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei."
@@ -427,7 +425,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "type": "text",
               "value": "Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. ",
@@ -471,7 +468,6 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "type": "text",
               "value": "Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.",
@@ -515,7 +511,6 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
-          "info": "Hier könnte ein Link sein.",
           "background": "daheim_karte",
           "content": [{
               "type": "text",
@@ -590,7 +585,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "type": "text",
               "value": "Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken.",
@@ -615,7 +609,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "value": "Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. ",
               "type": "text"
@@ -641,7 +634,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "info": "Hier könnte ein Link sein.",
+          "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
           "content": [{
               "value": "Die Bildungsabende beschäftigen sich neben politischen auch mit praktischen Themen, wie zum Beispiel der Hygiene.",
               "type": "text"
@@ -662,7 +655,6 @@
           "row": false,
           "character": "Anna",
           "background": "02_1455_(58)",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "type": "image",
               "option": "second",
@@ -683,7 +675,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "value": "Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
               "type": "text"
@@ -703,7 +694,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "info": "Hier könnte ein Link sein.",
           "content": [{
               "type": "image",
               "value": "Karte_Weimarer_Republik"
@@ -861,6 +851,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "info": "Eine Horde bezeichnet eine unbestimmte Gruppe von Menschen - ähnlich wie eine Herde bei Tieren.",
           "content": [{
               "value": "Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.",
               "type": "text"
@@ -1376,6 +1367,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "info": "Schlafgänger/Schlafburschen waren Menschen, die für ein kleines Entgelt eine Schlafstelle (zumeist ein Bett in einer Wohnung) mieteten. Durch die Industrialisierung und die vielen Menschen in den Städten war Wohnraum meist knapp und teuer.",
           "content": [{
               "type": "text",
               "value": "Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.",
@@ -1464,6 +1456,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
           "content": [{
               "type": "text",
               "value": "Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.",
@@ -1500,6 +1493,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
           "content": [{
               "type": "text",
               "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament."
@@ -1534,6 +1528,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
           "content": [{
               "type": "video",
               "option": "primary",
@@ -1580,6 +1575,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "info": "Latrine ist ein altes Wort für eine behelfsmäßige Toilette ohne Wasserspülung.",
           "content": [{
               "type": "text",
               "value": "Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte."
@@ -2126,6 +2122,7 @@
           "grouped": true,
           "row": false,
           "character": "Hitlerjugend",
+          "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
           "content": [{
               "type": "text",
               "value": "Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft."
@@ -2712,6 +2709,7 @@
         {
           "grouped": true,
           "row": false,
+          "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
           "content": [{
               "type": "text",
               "value": "Hier in der Gegend gibt es aber auch noch viele Bauerndörfer. Für Anna wirken manche Orte viel idyllischer als das, was sie von zu Hause kennt. Sie versteht aber, dass auch Kleinbauern oft arm sind und wenig zu essen haben."
