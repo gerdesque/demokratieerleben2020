@@ -297,8 +297,15 @@
               "type": "image",
               "option": "third",
               "value": "2-1781_Seite135"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "background": "02_1455_(147)",
+          "content": [{
               "type": "text",
               "value": "Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage."
             },
@@ -369,7 +376,6 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
-          "background": "02_1455_(147)",
           "content": [{
               "type": "text",
               "value": "Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
@@ -1002,7 +1008,7 @@
           "row": false,
           "character": "Anna",
           "background": "02_2424_(1)",
-          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
+          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
           "content": [{
               "type": "text",
               "option": "third",
@@ -1011,7 +1017,7 @@
             {
               "type": "text",
               "option": "third",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack.Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
             },
             {
               "type": "suitcase",
@@ -1089,14 +1095,14 @@
           "row": false,
           "character": "Karl",
           "background": "02_2424_(1)",
-          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
+          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
           "content": [{
               "type": "text",
               "value": "Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?"
             },
             {
               "type": "text",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
             },
             {
               "type": "suitcase",
@@ -1169,7 +1175,7 @@
           "row": false,
           "character": "Gerda",
           "background": "02_2424_(1)",
-          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
+          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
           "content": [{
               "type": "text",
               "option": "third",
@@ -1178,7 +1184,7 @@
             {
               "type": "text",
               "option": "third",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack."
+              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
             },
             {
               "type": "suitcase",
@@ -2496,7 +2502,7 @@
             },
             {
               "type": "daily",
-              "value": "daily"
+              "value": "Tagesplan"
             }
           ]
         },
@@ -2913,7 +2919,7 @@
             {
               "type": "redirect",
               "value": "endkapitel",
-              "option": "full",
+              "option": "primary",
               "title": "Du hast genug gespielt und hast langsam Heimweh...."
             }
           ]

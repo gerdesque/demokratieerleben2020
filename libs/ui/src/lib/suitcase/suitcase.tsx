@@ -1,8 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Redirect } from 'react-router-dom';
 import { DragDropContainer, DropTarget } from "react-drag-drop-container";
 import Shake from 'react-reveal/Shake';
 import Jump from 'react-reveal/Jump';
+import Sound from 'react-sound';
 
 import Image from '../image/image';
 import {AppContext } from '../chapter/context';
@@ -16,21 +17,30 @@ export const Suitcase = (props) => {
   const [drag, setDrag] = useState("");
   const [bagCounter, setBagCounter] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [winningSound, setWinningSound] = useState(false);
+  const [lostSound, setLostSound] = useState(false);
+  const [playStatus, setPlayStatus] = useState(Sound.status.PLAYING);
   const [falseCounter, setFalseCounter] = useState(0);
+
+  useEffect(
+    () => {
+      setPlayStatus(Sound.status.PLAYING);
+    }, [falseCounter]
+  );
 
   const dropped = (e) => {
     e.containerElem.style.visibility = "hidden";
     setBagCounter(bagCounter +1);
     setDrag(`${character} packt ${e.dragData.label} ein.`);
     if (bagCounter === 4) {
-      //TODO: Sound for winning the game
+      setWinningSound(true);
       setTimeout(() => setShowResult(true), 1500);
     }
   };
 
   const droppedFalseItem = (e) => {
     setDrag(`${character} braucht ${e.dragData.label} wohl eher nicht.`);
-    //TODO: Sound for losing the game
+    setLostSound(true);
     setFalseCounter(falseCounter+1);
   };
 
@@ -60,6 +70,9 @@ export const Suitcase = (props) => {
           </Jump>
         </DropTarget>
       </DropTarget>
+      {winningSound && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={Sound.status.PLAYING} />}
+      {lostSound && <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={playStatus} 
+        onFinishedPlaying={() => setPlayStatus(Sound.status.STOPPED)} />}
       {showResult && <Redirect exact to="reise" />}
     </div>
   );

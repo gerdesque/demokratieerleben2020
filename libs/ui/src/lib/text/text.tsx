@@ -26,7 +26,7 @@ export const Text = (props: TextProps) => {
   return (
     <div className={`box ${props.option}`}>
       <Fade bottom duration={5000}>
-        <p>{props.value}</p>
+        {props.option === 'link' ? <p className="link" dangerouslySetInnerHTML={{__html: props.value}} /> : <p>{props.value}</p>}
       </Fade>
     </div>
   );

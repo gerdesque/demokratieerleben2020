@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
+import Sound from 'react-sound';
 
 import './puzzle.scss';
 
@@ -9,7 +10,9 @@ class Puzzle extends Component {
     shuffled: [],
     solved: [],
     winner: false,
-    chance: false
+    winningSound: false,
+    chance: false,
+    playStatus: Sound.status.PLAYING
   };
 
   componentDidMount() {
@@ -58,10 +61,9 @@ class Puzzle extends Component {
     const finished = this.state.solved.find((piece, index) => piece.order !== index);
 
     if (finished === undefined) {
-      //TODO: Sound for winning the game
-      setTimeout(() => this.setState({ winner: true }), 1500);
+      this.setState({ winningSound: true })
+      setTimeout(() => this.setState({ winner: true }), 2500);
     } else {
-      //TODO: Sound for losing the game
       this.setState({ chance: true })
     }
   }
@@ -76,9 +78,15 @@ class Puzzle extends Component {
           <ol className='puzzle__solved-board' style={{ backgroundImage: `url(./assets/daheim_puzzle.webp)` }}>
             {this.state.solved.map((piece, i) => this.renderPieceContainer(piece, i, "solved"))}
           </ol>
+          {this.state.winningSound && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={Sound.status.PLAYING} />}
           {this.state.winner && <Redirect exact to="ortsgruppe" />}
         </div>
-        {this.state.chance && <p>Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!</p>}
+        {this.state.chance &&
+          <>
+            <p>Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!</p>
+            <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={this.state.playStatus}
+              onFinishedPlaying={() => this.setState({ playStatus: Sound.status.STOPPED })} />
+          </>}
       </>
     );
   }

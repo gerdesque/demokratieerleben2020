@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Redirect } from 'react-router-dom';
+import Sound from 'react-sound';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Image from "../image/image";
@@ -18,6 +19,7 @@ export const Memory = (props: MemoryProps) => {
   const [visibleItems, setVisibleItems] = useState([]);
   const [finishedItems, setFinishedItems] = useState([]);
   const [winner, setWinner] = useState(false);
+  const [winningSound, setWinningSound] = useState(false);
 
   const checkItems = (firstIndex, secondIndex) => {
     if (
@@ -49,8 +51,8 @@ export const Memory = (props: MemoryProps) => {
   useEffect(
     () => {
       if (finishedItems.length > 0 && finishedItems.length === list.length) {
-        //TODO: Sound for winning the game
-        setTimeout(() => setWinner(true), 1500);
+        setWinningSound(true);
+        setTimeout(() => setWinner(true), 2500);
       }
     },
     [finishedItems, list]
@@ -65,6 +67,7 @@ export const Memory = (props: MemoryProps) => {
         finishedItems={finishedItems}
         checkItems={checkItems}
       />
+      {winningSound && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={Sound.status.PLAYING} />}
       {winner && <Redirect exact to="endkapitel" />}
     </div>
   );

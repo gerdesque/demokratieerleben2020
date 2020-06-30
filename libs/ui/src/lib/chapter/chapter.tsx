@@ -1,5 +1,6 @@
 import React, { Fragment, useContext} from 'react';
 import { InView } from 'react-intersection-observer'
+import Sound from 'react-sound';
 
 import Header from '../header/header';
 import Group from '../group/group';
@@ -12,12 +13,6 @@ import './chapter.scss';
 export const Chapter = (props: ChapterProps) => {
 
   const [character, setCharacter] = useContext(AppContext);
-
-  const audio = new Audio(`./assets/sounds/${props.link}.mp3`);
-  audio.loop = true;
-  const startAudio = (inView) => {
-    inView ? audio.play() : audio.pause();  
-  };
 
   const renderChapterGroups = () => {
     return props.groups.map((group, index) =>
@@ -35,7 +30,12 @@ export const Chapter = (props: ChapterProps) => {
   }
 
   return (
-    <InView as="div" onChange={(inView, entry) => audio && startAudio(inView)}>
+    <InView as="div">
+      <Sound
+        url={`./assets/sounds/${props.link}.mp3`}
+        loop={true}
+        playStatus={Sound.status.PLAYING}
+      />
       <div className='parallax'>
         <Header {...props}/>
         {props.groups && renderChapterGroups()}

@@ -10,6 +10,8 @@ import './app.scss';
 
 import app from './app.json';
 
+(window as any).soundManager.setup({debugMode: false});
+
 export const App = () => {
   const [character, setCharacter] = usePersistedState('character', 'default');
 

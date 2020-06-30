@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Sound from 'react-sound';
 
 import './tictactoe.scss';
 
@@ -28,16 +29,15 @@ const computerSymbol = "O";
 export const TicTacToe = (props: TicTacToeProps) => {
 
   const [squares, setSquares] = useState(Array(9).fill(null));
+  const [playStatus, setPlayStatus] = useState(Sound.status.PLAYING);
   const winner = calculateWinner(squares);
 
   function getStatus() {
     if (winner) {
       document.querySelector('.result').scrollIntoView({ behavior: 'smooth' });
       if (winner === "X") {
-        //TODO: Sound for winning the game
         return "Du hast gewonnen!"
       } else {
-        //TODO: Sound for losing the game
         return "Es ist ja nur ein Spiel!";
       }
     } else if (isBoardFull(squares)) {
@@ -84,6 +84,10 @@ export const TicTacToe = (props: TicTacToeProps) => {
       ))}
       </div>
       <div className='result'>{getStatus()}</div>
+      {winner === "X" && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={playStatus} 
+        onFinishedPlaying={() => setPlayStatus(Sound.status.STOPPED)} />}
+      {winner === "O" && <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={playStatus} 
+        onFinishedPlaying={() => setPlayStatus(Sound.status.STOPPED)} />}
     </div>
   );
 }
