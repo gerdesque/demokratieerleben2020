@@ -64,6 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var home = {
   link: "home",
+  name: "Demokratie erLeben",
   groups: [{
     "grouped": false,
     "row": false,
@@ -77,10 +78,19 @@ var home = {
     "grouped": true,
     "row": false,
     "content": [{
+      "type": "redirect",
+      "value": "chapter/daheim",
+      "option": "big",
+      "title": "Beginne hier das Abenteuer!"
+    }, {
       "type": "image",
       "value": "02_1455_(114)",
-      "option": "second"
-    }, {
+      "option": "third"
+    }]
+  }, {
+    "grouped": true,
+    "row": false,
+    "content": [{
       "type": "text",
       "value": "Die Reise zur Kinderrepublik wäre für Anna, Karl und Gerda ohne Anne Mühlich und Gerd Müller nicht möglich gewesen. Im Rahmen des Kulturhackathons 'Coding da Vinci Westfalen-Ruhrgebiet' 2019 entwickelten die beiden diese Scrollytelling-Website, die auf Fotos und Material des Archivs der Arbeiterjugendbewegung basiert. 2020 haben sie im Rahmen eines Stipendiums des Coding da Vinci die Website für die Zwecke des Archivs ergänzt und ausgebaut."
     }]
@@ -107,14 +117,15 @@ var home = {
       "value": "Die Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können."
     }]
   }, {
-    "grouped": false,
-    "row": false,
+    "grouped": true,
+    "row": true,
     "content": [{
-      "type": "redirect",
-      "value": "chapter/daheim",
-      "option": "big",
-      "title": "Beginne hier das Abenteuer!",
-      "layer": "fore"
+      "type": "text",
+      "option": "link",
+      "value": "Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Stipendiums</a> zwischen April und Juni 2020. Die Fotografien und Bildkärtchen wurden vom <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a> unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt. Genutzt wurden zudem Sounds aus der Sammlung des <a href='http://www.soundsofchanges.eu/' target='_blank' rel='noopener noreferrer'>Sounds of Changes</a> Projektes (CC BY 4.0 Lizenz), der <a href='https://www.hoerspielbox.de/' target='_blank' rel='noopener noreferrer'>Hörspielbox</a> sowie  dem <a href='http://bbcsfx.acropolis.org.uk/' target='_blank' rel='noopener noreferrer'>BBC Sound Effects</a> Archiv. Genutzt ildmaterial von <a href='https://commons.wikimedia.org' target='_blank' rel='noopener noreferrer'>Wikimedia Commons</a>."
+    }, {
+      "type": "text",
+      "value": "Der Quellcode läuft unter einer MIT license. Die eigens für das Projekt erstellten Mediendateien sind unter einer CC BY-SA 3.0 Lizenz veröffentlicht."
     }]
   }]
 };
@@ -166,11 +177,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "../../../node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _gerdesque_data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @gerdesque/data */ "../../../dist/libs/data/data.esm.js");
-/* harmony import */ var react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-drag-drop-container */ "../../../node_modules/react-drag-drop-container/lib/bundle.js");
-/* harmony import */ var react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var shortid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! shortid */ "../../../node_modules/shortid/index.js");
-/* harmony import */ var shortid__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(shortid__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-drag-drop-container */ "../../../node_modules/react-drag-drop-container/lib/bundle.js");
+/* harmony import */ var react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var shortid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! shortid */ "../../../node_modules/shortid/index.js");
+/* harmony import */ var shortid__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(shortid__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -5990,6 +6001,9104 @@ function _nonIterableRest$1() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
+function unwrapExports(x) {
+  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
+function createCommonjsModule(fn, module) {
+  return module = {
+    exports: {}
+  }, fn(module, module.exports), module.exports;
+}
+
+var soundmanager2 = createCommonjsModule(function (module) {
+  /** @license
+   *
+   * SoundManager 2: JavaScript Sound for the Web
+   * ----------------------------------------------
+   * http://schillmania.com/projects/soundmanager2/
+   *
+   * Copyright (c) 2007, Scott Schiller. All rights reserved.
+   * Code provided under the BSD License:
+   * http://schillmania.com/projects/soundmanager2/license.txt
+   *
+   * V2.97a.20170601
+   */
+
+  /**
+   * About this file
+   * -------------------------------------------------------------------------------------
+   * This is the fully-commented source version of the SoundManager 2 API,
+   * recommended for use during development and testing.
+   *
+   * See soundmanager2-nodebug-jsmin.js for an optimized build (~11KB with gzip.)
+   * http://schillmania.com/projects/soundmanager2/doc/getstarted/#basic-inclusion
+   * Alternately, serve this file with gzip for 75% compression savings (~30KB over HTTP.)
+   *
+   * You may notice <d> and </d> comments in this source; these are delimiters for
+   * debug blocks which are removed in the -nodebug builds, further optimizing code size.
+   *
+   * Also, as you may note: Whoa, reliable cross-platform/device audio support is hard! ;)
+   */
+  (function SM2(window, _undefined) {
+    if (!window || !window.document) {
+      // Don't cross the [environment] streams. SM2 expects to be running in a browser, not under node.js etc.
+      // Additionally, if a browser somehow manages to fail this test, as Egon said: "It would be bad."
+      throw new Error('SoundManager requires a browser with window and document objects.');
+    }
+
+    var soundManager = null;
+    /**
+     * The SoundManager constructor.
+     *
+     * @constructor
+     * @param {string} smURL Optional: Path to SWF files
+     * @param {string} smID Optional: The ID to use for the SWF container element
+     * @this {SoundManager}
+     * @return {SoundManager} The new SoundManager instance
+     */
+
+    function SoundManager(smURL, smID) {
+      /**
+       * soundManager configuration options list
+       * defines top-level configuration properties to be applied to the soundManager instance (eg. soundManager.flashVersion)
+       * to set these properties, use the setup() method - eg., soundManager.setup({url: '/swf/', flashVersion: 9})
+       */
+      this.setupOptions = {
+        url: smURL || null,
+        // path (directory) where SoundManager 2 SWFs exist, eg., /path/to/swfs/
+        flashVersion: 8,
+        // flash build to use (8 or 9.) Some API features require 9.
+        debugMode: true,
+        // enable debugging output (console.log() with HTML fallback)
+        debugFlash: false,
+        // enable debugging output inside SWF, troubleshoot Flash/browser issues
+        useConsole: true,
+        // use console.log() if available (otherwise, writes to #soundmanager-debug element)
+        consoleOnly: true,
+        // if console is being used, do not create/write to #soundmanager-debug
+        waitForWindowLoad: false,
+        // force SM2 to wait for window.onload() before trying to call soundManager.onload()
+        bgColor: '#ffffff',
+        // SWF background color. N/A when wmode = 'transparent'
+        useHighPerformance: false,
+        // position:fixed flash movie can help increase js/flash speed, minimize lag
+        flashPollingInterval: null,
+        // msec affecting whileplaying/loading callback frequency. If null, default of 50 msec is used.
+        html5PollingInterval: null,
+        // msec affecting whileplaying() for HTML5 audio, excluding mobile devices. If null, native HTML5 update events are used.
+        flashLoadTimeout: 1000,
+        // msec to wait for flash movie to load before failing (0 = infinity)
+        wmode: null,
+        // flash rendering mode - null, 'transparent', or 'opaque' (last two allow z-index to work)
+        allowScriptAccess: 'always',
+        // for scripting the SWF (object/embed property), 'always' or 'sameDomain'
+        useFlashBlock: false,
+        // *requires flashblock.css, see demos* - allow recovery from flash blockers. Wait indefinitely and apply timeout CSS to SWF, if applicable.
+        useHTML5Audio: true,
+        // use HTML5 Audio() where API is supported (most Safari, Chrome versions), Firefox (MP3/MP4 support varies.) Ideally, transparent vs. Flash API where possible.
+        forceUseGlobalHTML5Audio: false,
+        // if true, a single Audio() object is used for all sounds - and only one can play at a time.
+        ignoreMobileRestrictions: false,
+        // if true, SM2 will not apply global HTML5 audio rules to mobile UAs. iOS > 7 and WebViews may allow multiple Audio() instances.
+        html5Test: /^(probably|maybe)$/i,
+        // HTML5 Audio() format support test. Use /^probably$/i; if you want to be more conservative.
+        preferFlash: false,
+        // overrides useHTML5audio, will use Flash for MP3/MP4/AAC if present. Potential option if HTML5 playback with these formats is quirky.
+        noSWFCache: false,
+        // if true, appends ?ts={date} to break aggressive SWF caching.
+        idPrefix: 'sound' // if an id is not provided to createSound(), this prefix is used for generated IDs - 'sound0', 'sound1' etc.
+
+      };
+      this.defaultOptions = {
+        /**
+         * the default configuration for sound objects made with createSound() and related methods
+         * eg., volume, auto-load behaviour and so forth
+         */
+        autoLoad: false,
+        // enable automatic loading (otherwise .load() will be called on demand with .play(), the latter being nicer on bandwidth - if you want to .load yourself, you also can)
+        autoPlay: false,
+        // enable playing of file as soon as possible (much faster if "stream" is true)
+        from: null,
+        // position to start playback within a sound (msec), default = beginning
+        loops: 1,
+        // how many times to repeat the sound (position will wrap around to 0, setPosition() will break out of loop when >0)
+        onid3: null,
+        // callback function for "ID3 data is added/available"
+        onerror: null,
+        // callback function for "load failed" (or, playback/network/decode error under HTML5.)
+        onload: null,
+        // callback function for "load finished"
+        whileloading: null,
+        // callback function for "download progress update" (X of Y bytes received)
+        onplay: null,
+        // callback for "play" start
+        onpause: null,
+        // callback for "pause"
+        onresume: null,
+        // callback for "resume" (pause toggle)
+        whileplaying: null,
+        // callback during play (position update)
+        onposition: null,
+        // object containing times and function callbacks for positions of interest
+        onstop: null,
+        // callback for "user stop"
+        onfinish: null,
+        // callback function for "sound finished playing"
+        multiShot: true,
+        // let sounds "restart" or layer on top of each other when played multiple times, rather than one-shot/one at a time
+        multiShotEvents: false,
+        // fire multiple sound events (currently onfinish() only) when multiShot is enabled
+        position: null,
+        // offset (milliseconds) to seek to within loaded sound data.
+        pan: 0,
+        // "pan" settings, left-to-right, -100 to 100
+        playbackRate: 1,
+        // rate at which to play the sound (HTML5-only)
+        stream: true,
+        // allows playing before entire file has loaded (recommended)
+        to: null,
+        // position to end playback within a sound (msec), default = end
+        type: null,
+        // MIME-like hint for file pattern / canPlay() tests, eg. audio/mp3
+        usePolicyFile: false,
+        // enable crossdomain.xml request for audio on remote domains (for ID3/waveform access)
+        volume: 100 // self-explanatory. 0-100, the latter being the max.
+
+      };
+      this.flash9Options = {
+        /**
+         * flash 9-only options,
+         * merged into defaultOptions if flash 9 is being used
+         */
+        onfailure: null,
+        // callback function for when playing fails (Flash 9, MovieStar + RTMP-only)
+        isMovieStar: null,
+        // "MovieStar" MPEG4 audio mode. Null (default) = auto detect MP4, AAC etc. based on URL. true = force on, ignore URL
+        usePeakData: false,
+        // enable left/right channel peak (level) data
+        useWaveformData: false,
+        // enable sound spectrum (raw waveform data) - NOTE: May increase CPU load.
+        useEQData: false,
+        // enable sound EQ (frequency spectrum data) - NOTE: May increase CPU load.
+        onbufferchange: null,
+        // callback for "isBuffering" property change
+        ondataerror: null // callback for waveform/eq data access error (flash playing audio in other tabs/domains)
+
+      };
+      this.movieStarOptions = {
+        /**
+         * flash 9.0r115+ MPEG4 audio options,
+         * merged into defaultOptions if flash 9+movieStar mode is enabled
+         */
+        bufferTime: 3,
+        // seconds of data to buffer before playback begins (null = flash default of 0.1 seconds - if AAC playback is gappy, try increasing.)
+        serverURL: null,
+        // rtmp: FMS or FMIS server to connect to, required when requesting media via RTMP or one of its variants
+        onconnect: null,
+        // rtmp: callback for connection to flash media server
+        duration: null // rtmp: song duration (msec)
+
+      };
+      this.audioFormats = {
+        /**
+         * determines HTML5 support + flash requirements.
+         * if no support (via flash and/or HTML5) for a "required" format, SM2 will fail to start.
+         * flash fallback is used for MP3 or MP4 if HTML5 can't play it (or if preferFlash = true)
+         */
+        mp3: {
+          type: ['audio/mpeg; codecs="mp3"', 'audio/mpeg', 'audio/mp3', 'audio/MPA', 'audio/mpa-robust'],
+          required: true
+        },
+        mp4: {
+          related: ['aac', 'm4a', 'm4b'],
+          // additional formats under the MP4 container
+          type: ['audio/mp4; codecs="mp4a.40.2"', 'audio/aac', 'audio/x-m4a', 'audio/MP4A-LATM', 'audio/mpeg4-generic'],
+          required: false
+        },
+        ogg: {
+          type: ['audio/ogg; codecs=vorbis'],
+          required: false
+        },
+        opus: {
+          type: ['audio/ogg; codecs=opus', 'audio/opus'],
+          required: false
+        },
+        wav: {
+          type: ['audio/wav; codecs="1"', 'audio/wav', 'audio/wave', 'audio/x-wav'],
+          required: false
+        },
+        flac: {
+          type: ['audio/flac'],
+          required: false
+        }
+      }; // HTML attributes (id + class names) for the SWF container
+
+      this.movieID = 'sm2-container';
+      this.id = smID || 'sm2movie';
+      this.debugID = 'soundmanager-debug';
+      this.debugURLParam = /([#?&])debug=1/i; // dynamic attributes
+
+      this.versionNumber = 'V2.97a.20170601';
+      this.version = null;
+      this.movieURL = null;
+      this.altURL = null;
+      this.swfLoaded = false;
+      this.enabled = false;
+      this.oMC = null;
+      this.sounds = {};
+      this.soundIDs = [];
+      this.muted = false;
+      this.didFlashBlock = false;
+      this.filePattern = null;
+      this.filePatterns = {
+        flash8: /\.mp3(\?.*)?$/i,
+        flash9: /\.mp3(\?.*)?$/i
+      }; // support indicators, set at init
+
+      this.features = {
+        buffering: false,
+        peakData: false,
+        waveformData: false,
+        eqData: false,
+        movieStar: false
+      }; // flash sandbox info, used primarily in troubleshooting
+
+      this.sandbox = {
+        // <d>
+        type: null,
+        types: {
+          remote: 'remote (domain-based) rules',
+          localWithFile: 'local with file access (no internet access)',
+          localWithNetwork: 'local with network (internet access only, no local access)',
+          localTrusted: 'local, trusted (local+internet access)'
+        },
+        description: null,
+        noRemote: null,
+        noLocal: null // </d>
+
+      };
+      /**
+       * format support (html5/flash)
+       * stores canPlayType() results based on audioFormats.
+       * eg. { mp3: boolean, mp4: boolean }
+       * treat as read-only.
+       */
+
+      this.html5 = {
+        usingFlash: null // set if/when flash fallback is needed
+
+      }; // file type support hash
+
+      this.flash = {}; // determined at init time
+
+      this.html5Only = false; // used for special cases (eg. iPad/iPhone/palm OS?)
+
+      this.ignoreFlash = false;
+      /**
+       * a few private internals (OK, a lot. :D)
+       */
+
+      var SMSound,
+          sm2 = this,
+          globalHTML5Audio = null,
+          flash = null,
+          sm = 'soundManager',
+          smc = sm + ': ',
+          h5 = 'HTML5::',
+          id,
+          ua = navigator.userAgent,
+          wl = window.location.href.toString(),
+          doc = document,
+          doNothing,
+          setProperties,
+          init,
+          fV,
+          on_queue = [],
+          debugOpen = true,
+          debugTS,
+          didAppend = false,
+          appendSuccess = false,
+          didInit = false,
+          disabled = false,
+          windowLoaded = false,
+          _wDS,
+          wdCount = 0,
+          initComplete,
+          _mixin,
+          _assign,
+          extraOptions,
+          addOnEvent,
+          processOnEvents,
+          _initUserOnload,
+          delayWaitForEI,
+          waitForEI,
+          rebootIntoHTML5,
+          setVersionInfo,
+          _handleFocus,
+          strings,
+          initMovie,
+          _domContentLoaded,
+          _winOnLoad,
+          didDCLoaded,
+          getDocument,
+          createMovie,
+          catchError,
+          setPolling,
+          initDebug,
+          debugLevels = ['log', 'info', 'warn', 'error'],
+          defaultFlashVersion = 8,
+          disableObject,
+          failSafely,
+          normalizeMovieURL,
+          oRemoved = null,
+          oRemovedHTML = null,
+          str,
+          flashBlockHandler,
+          getSWFCSS,
+          swfCSS,
+          toggleDebug,
+          loopFix,
+          policyFix,
+          complain,
+          idCheck,
+          waitingForEI = false,
+          initPending = false,
+          startTimer,
+          stopTimer,
+          timerExecute,
+          h5TimerCount = 0,
+          h5IntervalTimer = null,
+          parseURL,
+          messages = [],
+          canIgnoreFlash,
+          needsFlash = null,
+          featureCheck,
+          html5OK,
+          html5CanPlay,
+          html5ErrorCodes,
+          html5Ext,
+          html5Unload,
+          _domContentLoadedIE,
+          testHTML5,
+          event,
+          slice = Array.prototype.slice,
+          useGlobalHTML5Audio = false,
+          lastGlobalHTML5URL,
+          hasFlash,
+          detectFlash,
+          badSafariFix,
+          html5_events,
+          showSupport,
+          flushMessages,
+          wrapCallback,
+          idCounter = 0,
+          didSetup,
+          msecScale = 1000,
+          is_iDevice = ua.match(/(ipad|iphone|ipod)/i),
+          isAndroid = ua.match(/android/i),
+          isIE = ua.match(/msie|trident/i),
+          isWebkit = ua.match(/webkit/i),
+          isSafari = ua.match(/safari/i) && !ua.match(/chrome/i),
+          isOpera = ua.match(/opera/i),
+          mobileHTML5 = ua.match(/(mobile|pre\/|xoom)/i) || is_iDevice || isAndroid,
+          isBadSafari = !wl.match(/usehtml5audio/i) && !wl.match(/sm2-ignorebadua/i) && isSafari && !ua.match(/silk/i) && ua.match(/OS\sX\s10_6_([3-7])/i),
+          // Safari 4 and 5 (excluding Kindle Fire, "Silk") occasionally fail to load/play HTML5 audio on Snow Leopard 10.6.3 through 10.6.7 due to bug(s) in QuickTime X and/or other underlying frameworks. :/ Confirmed bug. https://bugs.webkit.org/show_bug.cgi?id=32159
+      hasConsole = window.console !== _undefined && console.log !== _undefined,
+          isFocused = doc.hasFocus !== _undefined ? doc.hasFocus() : null,
+          tryInitOnFocus = isSafari && (doc.hasFocus === _undefined || !doc.hasFocus()),
+          okToDisable = !tryInitOnFocus,
+          flashMIME = /(mp3|mp4|mpa|m4a|m4b)/i,
+          emptyURL = 'about:blank',
+          // safe URL to unload, or load nothing from (flash 8 + most HTML5 UAs)
+      emptyWAV = 'data:audio/wave;base64,/UklGRiYAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQIAAAD//w==',
+          // tiny WAV for HTML5 unloading
+      overHTTP = doc.location ? doc.location.protocol.match(/http/i) : null,
+          http = !overHTTP ? '//' : '',
+          // mp3, mp4, aac etc.
+      netStreamMimeTypes = /^\s*audio\/(?:x-)?(?:mpeg4|aac|flv|mov|mp4|m4v|m4a|m4b|mp4v|3gp|3g2)\s*(?:$|;)/i,
+          // Flash v9.0r115+ "moviestar" formats
+      netStreamTypes = ['mpeg4', 'aac', 'flv', 'mov', 'mp4', 'm4v', 'f4v', 'm4a', 'm4b', 'mp4v', '3gp', '3g2'],
+          netStreamPattern = new RegExp('\\.(' + netStreamTypes.join('|') + ')(\\?.*)?$', 'i');
+
+      this.mimePattern = /^\s*audio\/(?:x-)?(?:mp(?:eg|3))\s*(?:$|;)/i; // default mp3 set
+      // use altURL if not "online"
+
+      this.useAltURL = !overHTTP;
+      swfCSS = {
+        swfBox: 'sm2-object-box',
+        swfDefault: 'movieContainer',
+        swfError: 'swf_error',
+        // SWF loaded, but SM2 couldn't start (other error)
+        swfTimedout: 'swf_timedout',
+        swfLoaded: 'swf_loaded',
+        swfUnblocked: 'swf_unblocked',
+        // or loaded OK
+        sm2Debug: 'sm2_debug',
+        highPerf: 'high_performance',
+        flashDebug: 'flash_debug'
+      };
+      /**
+       * HTML5 error codes, per W3C
+       * Error code 1, MEDIA_ERR_ABORTED: Client aborted download at user's request.
+       * Error code 2, MEDIA_ERR_NETWORK: A network error of some description caused the user agent to stop fetching the media resource, after the resource was established to be usable.
+       * Error code 3, MEDIA_ERR_DECODE: An error of some description occurred while decoding the media resource, after the resource was established to be usable.
+       * Error code 4, MEDIA_ERR_SRC_NOT_SUPPORTED: Media (audio file) not supported ("not usable.")
+       * Reference: https://html.spec.whatwg.org/multipage/embedded-content.html#error-codes
+       */
+
+      html5ErrorCodes = [null, 'MEDIA_ERR_ABORTED', 'MEDIA_ERR_NETWORK', 'MEDIA_ERR_DECODE', 'MEDIA_ERR_SRC_NOT_SUPPORTED'];
+      /**
+       * basic HTML5 Audio() support test
+       * try...catch because of IE 9 "not implemented" nonsense
+       * https://github.com/Modernizr/Modernizr/issues/224
+       */
+
+      this.hasHTML5 = function () {
+        try {
+          // new Audio(null) for stupid Opera 9.64 case, which throws not_enough_arguments exception otherwise.
+          return Audio !== _undefined && (isOpera && opera !== _undefined && opera.version() < 10 ? new Audio(null) : new Audio()).canPlayType !== _undefined;
+        } catch (e) {
+          return false;
+        }
+      }();
+      /**
+       * Public SoundManager API
+       * -----------------------
+       */
+
+      /**
+       * Configures top-level soundManager properties.
+       *
+       * @param {object} options Option parameters, eg. { flashVersion: 9, url: '/path/to/swfs/' }
+       * onready and ontimeout are also accepted parameters. call soundManager.setup() to see the full list.
+       */
+
+
+      this.setup = function (options) {
+        var noURL = !sm2.url; // warn if flash options have already been applied
+
+        if (options !== _undefined && didInit && needsFlash && sm2.ok() && (options.flashVersion !== _undefined || options.url !== _undefined || options.html5Test !== _undefined)) {
+          complain(str('setupLate'));
+        } // TODO: defer: true?
+
+
+        _assign(options);
+
+        if (!useGlobalHTML5Audio) {
+          if (mobileHTML5) {
+            // force the singleton HTML5 pattern on mobile, by default.
+            if (!sm2.setupOptions.ignoreMobileRestrictions || sm2.setupOptions.forceUseGlobalHTML5Audio) {
+              messages.push(strings.globalHTML5);
+              useGlobalHTML5Audio = true;
+            }
+          } else if (sm2.setupOptions.forceUseGlobalHTML5Audio) {
+            // only apply singleton HTML5 on desktop if forced.
+            messages.push(strings.globalHTML5);
+            useGlobalHTML5Audio = true;
+          }
+        }
+
+        if (!didSetup && mobileHTML5) {
+          if (sm2.setupOptions.ignoreMobileRestrictions) {
+            messages.push(strings.ignoreMobile);
+          } else {
+            // prefer HTML5 for mobile + tablet-like devices, probably more reliable vs. flash at this point.
+            // <d>
+            if (!sm2.setupOptions.useHTML5Audio || sm2.setupOptions.preferFlash) {
+              // notify that defaults are being changed.
+              sm2._wD(strings.mobileUA);
+            } // </d>
+
+
+            sm2.setupOptions.useHTML5Audio = true;
+            sm2.setupOptions.preferFlash = false;
+
+            if (is_iDevice) {
+              // no flash here.
+              sm2.ignoreFlash = true;
+            } else if (isAndroid && !ua.match(/android\s2\.3/i) || !isAndroid) {
+              /**
+               * Android devices tend to work better with a single audio instance, specifically for chained playback of sounds in sequence.
+               * Common use case: exiting sound onfinish() -> createSound() -> play()
+               * Presuming similar restrictions for other mobile, non-Android, non-iOS devices.
+               */
+              // <d>
+              sm2._wD(strings.globalHTML5); // </d>
+
+
+              useGlobalHTML5Audio = true;
+            }
+          }
+        } // special case 1: "Late setup". SM2 loaded normally, but user didn't assign flash URL eg., setup({url:...}) before SM2 init. Treat as delayed init.
+
+
+        if (options) {
+          if (noURL && didDCLoaded && options.url !== _undefined) {
+            sm2.beginDelayedInit();
+          } // special case 2: If lazy-loading SM2 (DOMContentLoaded has already happened) and user calls setup() with url: parameter, try to init ASAP.
+
+
+          if (!didDCLoaded && options.url !== _undefined && doc.readyState === 'complete') {
+            setTimeout(_domContentLoaded, 1);
+          }
+        }
+
+        didSetup = true;
+        return sm2;
+      };
+
+      this.ok = function () {
+        return needsFlash ? didInit && !disabled : sm2.useHTML5Audio && sm2.hasHTML5;
+      };
+
+      this.supported = this.ok; // legacy
+
+      this.getMovie = function (movie_id) {
+        // safety net: some old browsers differ on SWF references, possibly related to ExternalInterface / flash version
+        return id(movie_id) || doc[movie_id] || window[movie_id];
+      };
+      /**
+       * Creates a SMSound sound object instance. Can also be overloaded, e.g., createSound('mySound', '/some.mp3');
+       *
+       * @param {object} oOptions Sound options (at minimum, url parameter is required.)
+       * @return {object} SMSound The new SMSound object.
+       */
+
+
+      this.createSound = function (oOptions, _url) {
+        var cs,
+            cs_string,
+            options,
+            oSound = null; // <d>
+
+        cs = sm + '.createSound(): ';
+        cs_string = cs + str(!didInit ? 'notReady' : 'notOK'); // </d>
+
+        if (!didInit || !sm2.ok()) {
+          complain(cs_string);
+          return false;
+        }
+
+        if (_url !== _undefined) {
+          // function overloading in JS! :) ... assume simple createSound(id, url) use case.
+          oOptions = {
+            id: oOptions,
+            url: _url
+          };
+        } // inherit from defaultOptions
+
+
+        options = _mixin(oOptions);
+        options.url = parseURL(options.url); // generate an id, if needed.
+
+        if (options.id === _undefined) {
+          options.id = sm2.setupOptions.idPrefix + idCounter++;
+        } // <d>
+
+
+        if (options.id.toString().charAt(0).match(/^[0-9]$/)) {
+          sm2._wD(cs + str('badID', options.id), 2);
+        }
+
+        sm2._wD(cs + options.id + (options.url ? ' (' + options.url + ')' : ''), 1); // </d>
+
+
+        if (idCheck(options.id, true)) {
+          sm2._wD(cs + options.id + ' exists', 1);
+
+          return sm2.sounds[options.id];
+        }
+
+        function make() {
+          options = loopFix(options);
+          sm2.sounds[options.id] = new SMSound(options);
+          sm2.soundIDs.push(options.id);
+          return sm2.sounds[options.id];
+        }
+
+        if (html5OK(options)) {
+          oSound = make(); // <d>
+
+          if (!sm2.html5Only) {
+            sm2._wD(options.id + ': Using HTML5');
+          } // </d>
+
+
+          oSound._setup_html5(options);
+        } else {
+          if (sm2.html5Only) {
+            sm2._wD(options.id + ': No HTML5 support for this sound, and no Flash. Exiting.');
+
+            return make();
+          } // TODO: Move HTML5/flash checks into generic URL parsing/handling function.
+
+
+          if (sm2.html5.usingFlash && options.url && options.url.match(/data:/i)) {
+            // data: URIs not supported by Flash, either.
+            sm2._wD(options.id + ': data: URIs not supported via Flash. Exiting.');
+
+            return make();
+          }
+
+          if (fV > 8) {
+            if (options.isMovieStar === null) {
+              // attempt to detect MPEG-4 formats
+              options.isMovieStar = !!(options.serverURL || (options.type ? options.type.match(netStreamMimeTypes) : false) || options.url && options.url.match(netStreamPattern));
+            } // <d>
+
+
+            if (options.isMovieStar) {
+              sm2._wD(cs + 'using MovieStar handling');
+
+              if (options.loops > 1) {
+                _wDS('noNSLoop');
+              }
+            } // </d>
+
+          }
+
+          options = policyFix(options, cs);
+          oSound = make();
+
+          if (fV === 8) {
+            flash._createSound(options.id, options.loops || 1, options.usePolicyFile);
+          } else {
+            flash._createSound(options.id, options.url, options.usePeakData, options.useWaveformData, options.useEQData, options.isMovieStar, options.isMovieStar ? options.bufferTime : false, options.loops || 1, options.serverURL, options.duration || null, options.autoPlay, true, options.autoLoad, options.usePolicyFile);
+
+            if (!options.serverURL) {
+              // We are connected immediately
+              oSound.connected = true;
+
+              if (options.onconnect) {
+                options.onconnect.apply(oSound);
+              }
+            }
+          }
+
+          if (!options.serverURL && (options.autoLoad || options.autoPlay)) {
+            // call load for non-rtmp streams
+            oSound.load(options);
+          }
+        } // rtmp will play in onconnect
+
+
+        if (!options.serverURL && options.autoPlay) {
+          oSound.play();
+        }
+
+        return oSound;
+      };
+      /**
+       * Destroys a SMSound sound object instance.
+       *
+       * @param {string} sID The ID of the sound to destroy
+       */
+
+
+      this.destroySound = function (sID, _bFromSound) {
+        // explicitly destroy a sound before normal page unload, etc.
+        if (!idCheck(sID)) return false;
+        var oS = sm2.sounds[sID],
+            i;
+        oS.stop(); // Disable all callbacks after stop(), when the sound is being destroyed
+
+        oS._iO = {};
+        oS.unload();
+
+        for (i = 0; i < sm2.soundIDs.length; i++) {
+          if (sm2.soundIDs[i] === sID) {
+            sm2.soundIDs.splice(i, 1);
+            break;
+          }
+        }
+
+        if (!_bFromSound) {
+          // ignore if being called from SMSound instance
+          oS.destruct(true);
+        }
+
+        oS = null;
+        delete sm2.sounds[sID];
+        return true;
+      };
+      /**
+       * Calls the load() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {object} oOptions Optional: Sound options
+       */
+
+
+      this.load = function (sID, oOptions) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].load(oOptions);
+      };
+      /**
+       * Calls the unload() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       */
+
+
+      this.unload = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].unload();
+      };
+      /**
+       * Calls the onPosition() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {number} nPosition The position to watch for
+       * @param {function} oMethod The relevant callback to fire
+       * @param {object} oScope Optional: The scope to apply the callback to
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.onPosition = function (sID, nPosition, oMethod, oScope) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].onposition(nPosition, oMethod, oScope);
+      }; // legacy/backwards-compability: lower-case method name
+
+
+      this.onposition = this.onPosition;
+      /**
+       * Calls the clearOnPosition() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {number} nPosition The position to watch for
+       * @param {function} oMethod Optional: The relevant callback to fire
+       * @return {SMSound} The SMSound object
+       */
+
+      this.clearOnPosition = function (sID, nPosition, oMethod) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].clearOnPosition(nPosition, oMethod);
+      };
+      /**
+       * Calls the play() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {object} oOptions Optional: Sound options
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.play = function (sID, oOptions) {
+        var result = null,
+            // legacy function-overloading use case: play('mySound', '/path/to/some.mp3');
+        overloaded = oOptions && !(oOptions instanceof Object);
+
+        if (!didInit || !sm2.ok()) {
+          complain(sm + '.play(): ' + str(!didInit ? 'notReady' : 'notOK'));
+          return false;
+        }
+
+        if (!idCheck(sID, overloaded)) {
+          // no sound found for the given ID. Bail.
+          if (!overloaded) return false;
+
+          if (overloaded) {
+            oOptions = {
+              url: oOptions
+            };
+          }
+
+          if (oOptions && oOptions.url) {
+            // overloading use case, create+play: .play('someID', {url:'/path/to.mp3'});
+            sm2._wD(sm + '.play(): Attempting to create "' + sID + '"', 1);
+
+            oOptions.id = sID;
+            result = sm2.createSound(oOptions).play();
+          }
+        } else if (overloaded) {
+          // existing sound object case
+          oOptions = {
+            url: oOptions
+          };
+        }
+
+        if (result === null) {
+          // default case
+          result = sm2.sounds[sID].play(oOptions);
+        }
+
+        return result;
+      }; // just for convenience
+
+
+      this.start = this.play;
+      /**
+       * Calls the setPlaybackRate() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+      this.setPlaybackRate = function (sID, rate, allowOverride) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setPlaybackRate(rate, allowOverride);
+      };
+      /**
+       * Calls the setPosition() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {number} nMsecOffset Position (milliseconds)
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.setPosition = function (sID, nMsecOffset) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setPosition(nMsecOffset);
+      };
+      /**
+       * Calls the stop() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.stop = function (sID) {
+        if (!idCheck(sID)) return false;
+
+        sm2._wD(sm + '.stop(' + sID + ')', 1);
+
+        return sm2.sounds[sID].stop();
+      };
+      /**
+       * Stops all currently-playing sounds.
+       */
+
+
+      this.stopAll = function () {
+        var oSound;
+
+        sm2._wD(sm + '.stopAll()', 1);
+
+        for (oSound in sm2.sounds) {
+          if (sm2.sounds.hasOwnProperty(oSound)) {
+            // apply only to sound objects
+            sm2.sounds[oSound].stop();
+          }
+        }
+      };
+      /**
+       * Calls the pause() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.pause = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].pause();
+      };
+      /**
+       * Pauses all currently-playing sounds.
+       */
+
+
+      this.pauseAll = function () {
+        var i;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          sm2.sounds[sm2.soundIDs[i]].pause();
+        }
+      };
+      /**
+       * Calls the resume() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.resume = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].resume();
+      };
+      /**
+       * Resumes all currently-paused sounds.
+       */
+
+
+      this.resumeAll = function () {
+        var i;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          sm2.sounds[sm2.soundIDs[i]].resume();
+        }
+      };
+      /**
+       * Calls the togglePause() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.togglePause = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].togglePause();
+      };
+      /**
+       * Calls the setPan() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {number} nPan The pan value (-100 to 100)
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.setPan = function (sID, nPan) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setPan(nPan);
+      };
+      /**
+       * Calls the setVolume() method of a SMSound object by ID
+       * Overloaded case: pass only volume argument eg., setVolume(50) to apply to all sounds.
+       *
+       * @param {string} sID The ID of the sound
+       * @param {number} nVol The volume value (0 to 100)
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.setVolume = function (sID, nVol) {
+        // setVolume(50) function overloading case - apply to all sounds
+        var i, j;
+
+        if (sID !== _undefined && !isNaN(sID) && nVol === _undefined) {
+          for (i = 0, j = sm2.soundIDs.length; i < j; i++) {
+            sm2.sounds[sm2.soundIDs[i]].setVolume(sID);
+          }
+
+          return false;
+        } // setVolume('mySound', 50) case
+
+
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setVolume(nVol);
+      };
+      /**
+       * Calls the mute() method of either a single SMSound object by ID, or all sound objects.
+       *
+       * @param {string} sID Optional: The ID of the sound (if omitted, all sounds will be used.)
+       */
+
+
+      this.mute = function (sID) {
+        var i = 0;
+
+        if (sID instanceof String) {
+          sID = null;
+        }
+
+        if (!sID) {
+          sm2._wD(sm + '.mute(): Muting all sounds');
+
+          for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+            sm2.sounds[sm2.soundIDs[i]].mute();
+          }
+
+          sm2.muted = true;
+        } else {
+          if (!idCheck(sID)) return false;
+
+          sm2._wD(sm + '.mute(): Muting "' + sID + '"');
+
+          return sm2.sounds[sID].mute();
+        }
+
+        return true;
+      };
+      /**
+       * Mutes all sounds.
+       */
+
+
+      this.muteAll = function () {
+        sm2.mute();
+      };
+      /**
+       * Calls the unmute() method of either a single SMSound object by ID, or all sound objects.
+       *
+       * @param {string} sID Optional: The ID of the sound (if omitted, all sounds will be used.)
+       */
+
+
+      this.unmute = function (sID) {
+        var i;
+
+        if (sID instanceof String) {
+          sID = null;
+        }
+
+        if (!sID) {
+          sm2._wD(sm + '.unmute(): Unmuting all sounds');
+
+          for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+            sm2.sounds[sm2.soundIDs[i]].unmute();
+          }
+
+          sm2.muted = false;
+        } else {
+          if (!idCheck(sID)) return false;
+
+          sm2._wD(sm + '.unmute(): Unmuting "' + sID + '"');
+
+          return sm2.sounds[sID].unmute();
+        }
+
+        return true;
+      };
+      /**
+       * Unmutes all sounds.
+       */
+
+
+      this.unmuteAll = function () {
+        sm2.unmute();
+      };
+      /**
+       * Calls the toggleMute() method of a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.toggleMute = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].toggleMute();
+      };
+      /**
+       * Retrieves the memory used by the flash plugin.
+       *
+       * @return {number} The amount of memory in use
+       */
+
+
+      this.getMemoryUse = function () {
+        // flash-only
+        var ram = 0;
+
+        if (flash && fV !== 8) {
+          ram = parseInt(flash._getMemoryUse(), 10);
+        }
+
+        return ram;
+      };
+      /**
+       * Undocumented: NOPs soundManager and all SMSound objects.
+       */
+
+
+      this.disable = function (bNoDisable) {
+        // destroy all functions
+        var i;
+
+        if (bNoDisable === _undefined) {
+          bNoDisable = false;
+        } // already disabled?
+
+
+        if (disabled) return false;
+        disabled = true;
+
+        _wDS('shutdown', 1);
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          disableObject(sm2.sounds[sm2.soundIDs[i]]);
+        }
+
+        disableObject(sm2); // fire "complete", despite fail
+
+        initComplete(bNoDisable);
+        event.remove(window, 'load', _initUserOnload);
+        return true;
+      };
+      /**
+       * Determines playability of a MIME type, eg. 'audio/mp3'.
+       */
+
+
+      this.canPlayMIME = function (sMIME) {
+        var result;
+
+        if (sm2.hasHTML5) {
+          result = html5CanPlay({
+            type: sMIME
+          });
+        }
+
+        if (!result && needsFlash) {
+          // if flash 9, test netStream (movieStar) types as well.
+          result = sMIME && sm2.ok() ? !!((fV > 8 ? sMIME.match(netStreamMimeTypes) : null) || sMIME.match(sm2.mimePattern)) : null; // TODO: make less "weird" (per JSLint)
+        }
+
+        return result;
+      };
+      /**
+       * Determines playability of a URL based on audio support.
+       *
+       * @param {string} sURL The URL to test
+       * @return {boolean} URL playability
+       */
+
+
+      this.canPlayURL = function (sURL) {
+        var result;
+
+        if (sm2.hasHTML5) {
+          result = html5CanPlay({
+            url: sURL
+          });
+        }
+
+        if (!result && needsFlash) {
+          result = sURL && sm2.ok() ? !!sURL.match(sm2.filePattern) : null;
+        }
+
+        return result;
+      };
+      /**
+       * Determines playability of an HTML DOM &lt;a&gt; object (or similar object literal) based on audio support.
+       *
+       * @param {object} oLink an HTML DOM &lt;a&gt; object or object literal including href and/or type attributes
+       * @return {boolean} URL playability
+       */
+
+
+      this.canPlayLink = function (oLink) {
+        if (oLink.type !== _undefined && oLink.type && sm2.canPlayMIME(oLink.type)) return true;
+        return sm2.canPlayURL(oLink.href);
+      };
+      /**
+       * Retrieves a SMSound object by ID.
+       *
+       * @param {string} sID The ID of the sound
+       * @return {SMSound} The SMSound object
+       */
+
+
+      this.getSoundById = function (sID, _suppressDebug) {
+        if (!sID) return null;
+        var result = sm2.sounds[sID]; // <d>
+
+        if (!result && !_suppressDebug) {
+          sm2._wD(sm + '.getSoundById(): Sound "' + sID + '" not found.', 2);
+        } // </d>
+
+
+        return result;
+      };
+      /**
+       * Queues a callback for execution when SoundManager has successfully initialized.
+       *
+       * @param {function} oMethod The callback method to fire
+       * @param {object} oScope Optional: The scope to apply to the callback
+       */
+
+
+      this.onready = function (oMethod, oScope) {
+        var sType = 'onready',
+            result = false;
+
+        if (typeof oMethod === 'function') {
+          // <d>
+          if (didInit) {
+            sm2._wD(str('queue', sType));
+          } // </d>
+
+
+          if (!oScope) {
+            oScope = window;
+          }
+
+          addOnEvent(sType, oMethod, oScope);
+          processOnEvents();
+          result = true;
+        } else {
+          throw str('needFunction', sType);
+        }
+
+        return result;
+      };
+      /**
+       * Queues a callback for execution when SoundManager has failed to initialize.
+       *
+       * @param {function} oMethod The callback method to fire
+       * @param {object} oScope Optional: The scope to apply to the callback
+       */
+
+
+      this.ontimeout = function (oMethod, oScope) {
+        var sType = 'ontimeout',
+            result = false;
+
+        if (typeof oMethod === 'function') {
+          // <d>
+          if (didInit) {
+            sm2._wD(str('queue', sType));
+          } // </d>
+
+
+          if (!oScope) {
+            oScope = window;
+          }
+
+          addOnEvent(sType, oMethod, oScope);
+          processOnEvents({
+            type: sType
+          });
+          result = true;
+        } else {
+          throw str('needFunction', sType);
+        }
+
+        return result;
+      };
+      /**
+       * Writes console.log()-style debug output to a console or in-browser element.
+       * Applies when debugMode = true
+       *
+       * @param {string} sText The console message
+       * @param {object} nType Optional log level (number), or object. Number case: Log type/style where 0 = 'info', 1 = 'warn', 2 = 'error'. Object case: Object to be dumped.
+       */
+
+
+      this._writeDebug = function (sText, sTypeOrObject) {
+        // pseudo-private console.log()-style output
+        // <d>
+        var sDID = 'soundmanager-debug',
+            o,
+            oItem;
+        if (!sm2.setupOptions.debugMode) return false;
+
+        if (hasConsole && sm2.useConsole) {
+          if (sTypeOrObject && typeof sTypeOrObject === 'object') {
+            // object passed; dump to console.
+            console.log(sText, sTypeOrObject);
+          } else if (debugLevels[sTypeOrObject] !== _undefined) {
+            console[debugLevels[sTypeOrObject]](sText);
+          } else {
+            console.log(sText);
+          }
+
+          if (sm2.consoleOnly) return true;
+        }
+
+        o = id(sDID);
+        if (!o) return false;
+        oItem = doc.createElement('div');
+
+        if (++wdCount % 2 === 0) {
+          oItem.className = 'sm2-alt';
+        }
+
+        if (sTypeOrObject === _undefined) {
+          sTypeOrObject = 0;
+        } else {
+          sTypeOrObject = parseInt(sTypeOrObject, 10);
+        }
+
+        oItem.appendChild(doc.createTextNode(sText));
+
+        if (sTypeOrObject) {
+          if (sTypeOrObject >= 2) {
+            oItem.style.fontWeight = 'bold';
+          }
+
+          if (sTypeOrObject === 3) {
+            oItem.style.color = '#ff3333';
+          }
+        } // top-to-bottom
+        // o.appendChild(oItem);
+        // bottom-to-top
+
+
+        o.insertBefore(oItem, o.firstChild);
+        o = null; // </d>
+
+        return true;
+      }; // <d>
+      // last-resort debugging option
+
+
+      if (wl.indexOf('sm2-debug=alert') !== -1) {
+        this._writeDebug = function (sText) {
+          window.alert(sText);
+        };
+      } // </d>
+      // alias
+
+
+      this._wD = this._writeDebug;
+      /**
+       * Provides debug / state information on all SMSound objects.
+       */
+
+      this._debug = function () {
+        // <d>
+        var i, j;
+
+        _wDS('currentObj', 1);
+
+        for (i = 0, j = sm2.soundIDs.length; i < j; i++) {
+          sm2.sounds[sm2.soundIDs[i]]._debug();
+        } // </d>
+
+      };
+      /**
+       * Restarts and re-initializes the SoundManager instance.
+       *
+       * @param {boolean} resetEvents Optional: When true, removes all registered onready and ontimeout event callbacks.
+       * @param {boolean} excludeInit Options: When true, does not call beginDelayedInit() (which would restart SM2).
+       * @return {object} soundManager The soundManager instance.
+       */
+
+
+      this.reboot = function (resetEvents, excludeInit) {
+        // reset some (or all) state, and re-init unless otherwise specified.
+        // <d>
+        if (sm2.soundIDs.length) {
+          sm2._wD('Destroying ' + sm2.soundIDs.length + ' SMSound object' + (sm2.soundIDs.length !== 1 ? 's' : '') + '...');
+        } // </d>
+
+
+        var i, j, k;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          sm2.sounds[sm2.soundIDs[i]].destruct();
+        } // trash ze flash (remove from the DOM)
+
+
+        if (flash) {
+          try {
+            if (isIE) {
+              oRemovedHTML = flash.innerHTML;
+            }
+
+            oRemoved = flash.parentNode.removeChild(flash);
+          } catch (e) {
+            // Remove failed? May be due to flash blockers silently removing the SWF object/embed node from the DOM. Warn and continue.
+            _wDS('badRemove', 2);
+          }
+        } // actually, force recreate of movie.
+
+
+        oRemovedHTML = oRemoved = needsFlash = flash = null;
+        sm2.enabled = didDCLoaded = didInit = waitingForEI = initPending = didAppend = appendSuccess = disabled = useGlobalHTML5Audio = sm2.swfLoaded = false;
+        sm2.soundIDs = [];
+        sm2.sounds = {};
+        idCounter = 0;
+        didSetup = false;
+
+        if (!resetEvents) {
+          // reset callbacks for onready, ontimeout etc. so that they will fire again on re-init
+          for (i in on_queue) {
+            if (on_queue.hasOwnProperty(i)) {
+              for (j = 0, k = on_queue[i].length; j < k; j++) {
+                on_queue[i][j].fired = false;
+              }
+            }
+          }
+        } else {
+          // remove all callbacks entirely
+          on_queue = [];
+        } // <d>
+
+
+        if (!excludeInit) {
+          sm2._wD(sm + ': Rebooting...');
+        } // </d>
+        // reset HTML5 and flash canPlay test results
+
+
+        sm2.html5 = {
+          usingFlash: null
+        };
+        sm2.flash = {}; // reset device-specific HTML/flash mode switches
+
+        sm2.html5Only = false;
+        sm2.ignoreFlash = false;
+        window.setTimeout(function () {
+          // by default, re-init
+          if (!excludeInit) {
+            sm2.beginDelayedInit();
+          }
+        }, 20);
+        return sm2;
+      };
+
+      this.reset = function () {
+        /**
+         * Shuts down and restores the SoundManager instance to its original loaded state, without an explicit reboot. All onready/ontimeout handlers are removed.
+         * After this call, SM2 may be re-initialized via soundManager.beginDelayedInit().
+         * @return {object} soundManager The soundManager instance.
+         */
+        _wDS('reset');
+
+        return sm2.reboot(true, true);
+      };
+      /**
+       * Undocumented: Determines the SM2 flash movie's load progress.
+       *
+       * @return {number or null} Percent loaded, or if invalid/unsupported, null.
+       */
+
+
+      this.getMoviePercent = function () {
+        /**
+         * Interesting syntax notes...
+         * Flash/ExternalInterface (ActiveX/NPAPI) bridge methods are not typeof "function" nor instanceof Function, but are still valid.
+         * Furthermore, using (flash && flash.PercentLoaded) causes IE to throw "object doesn't support this property or method".
+         * Thus, 'in' syntax must be used.
+         */
+        return flash && 'PercentLoaded' in flash ? flash.PercentLoaded() : null;
+      };
+      /**
+       * Additional helper for manually invoking SM2's init process after DOM Ready / window.onload().
+       */
+
+
+      this.beginDelayedInit = function () {
+        windowLoaded = true;
+
+        _domContentLoaded();
+
+        setTimeout(function () {
+          if (initPending) return false;
+          createMovie();
+          initMovie();
+          initPending = true;
+          return true;
+        }, 20);
+        delayWaitForEI();
+      };
+      /**
+       * Destroys the SoundManager instance and all SMSound instances.
+       */
+
+
+      this.destruct = function () {
+        sm2._wD(sm + '.destruct()');
+
+        sm2.disable(true);
+      };
+      /**
+       * SMSound() (sound object) constructor
+       * ------------------------------------
+       *
+       * @param {object} oOptions Sound options (id and url are required attributes)
+       * @return {SMSound} The new SMSound object
+       */
+
+
+      SMSound = function SMSound(oOptions) {
+        var s = this,
+            resetProperties,
+            add_html5_events,
+            remove_html5_events,
+            stop_html5_timer,
+            start_html5_timer,
+            attachOnPosition,
+            onplay_called = false,
+            onPositionItems = [],
+            onPositionFired = 0,
+            detachOnPosition,
+            applyFromTo,
+            lastURL = null,
+            lastHTML5State,
+            urlOmitted;
+        lastHTML5State = {
+          // tracks duration + position (time)
+          duration: null,
+          time: null
+        };
+        this.id = oOptions.id; // legacy
+
+        this.sID = this.id;
+        this.url = oOptions.url;
+        this.options = _mixin(oOptions); // per-play-instance-specific options
+
+        this.instanceOptions = this.options; // short alias
+
+        this._iO = this.instanceOptions; // assign property defaults
+
+        this.pan = this.options.pan;
+        this.volume = this.options.volume; // whether or not this object is using HTML5
+
+        this.isHTML5 = false; // internal HTML5 Audio() object reference
+
+        this._a = null; // for flash 8 special-case createSound() without url, followed by load/play with url case
+
+        urlOmitted = !this.url;
+        /**
+         * SMSound() public methods
+         * ------------------------
+         */
+
+        this.id3 = {};
+        /**
+         * Writes SMSound object parameters to debug console
+         */
+
+        this._debug = function () {
+          // <d>
+          sm2._wD(s.id + ': Merged options:', s.options); // </d>
+
+        };
+        /**
+         * Begins loading a sound per its *url*.
+         *
+         * @param {object} options Optional: Sound options
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.load = function (options) {
+          var oSound = null,
+              instanceOptions;
+
+          if (options !== _undefined) {
+            s._iO = _mixin(options, s.options);
+          } else {
+            options = s.options;
+            s._iO = options;
+
+            if (lastURL && lastURL !== s.url) {
+              _wDS('manURL');
+
+              s._iO.url = s.url;
+              s.url = null;
+            }
+          }
+
+          if (!s._iO.url) {
+            s._iO.url = s.url;
+          }
+
+          s._iO.url = parseURL(s._iO.url); // ensure we're in sync
+
+          s.instanceOptions = s._iO; // local shortcut
+
+          instanceOptions = s._iO;
+
+          sm2._wD(s.id + ': load (' + instanceOptions.url + ')');
+
+          if (!instanceOptions.url && !s.url) {
+            sm2._wD(s.id + ': load(): url is unassigned. Exiting.', 2);
+
+            return s;
+          } // <d>
+
+
+          if (!s.isHTML5 && fV === 8 && !s.url && !instanceOptions.autoPlay) {
+            // flash 8 load() -> play() won't work before onload has fired.
+            sm2._wD(s.id + ': Flash 8 load() limitation: Wait for onload() before calling play().', 1);
+          } // </d>
+
+
+          if (instanceOptions.url === s.url && s.readyState !== 0 && s.readyState !== 2) {
+            _wDS('onURL', 1); // if loaded and an onload() exists, fire immediately.
+
+
+            if (s.readyState === 3 && instanceOptions.onload) {
+              // assume success based on truthy duration.
+              wrapCallback(s, function () {
+                instanceOptions.onload.apply(s, [!!s.duration]);
+              });
+            }
+
+            return s;
+          } // reset a few state properties
+
+
+          s.loaded = false;
+          s.readyState = 1;
+          s.playState = 0;
+          s.id3 = {}; // TODO: If switching from HTML5 -> flash (or vice versa), stop currently-playing audio.
+
+          if (html5OK(instanceOptions)) {
+            oSound = s._setup_html5(instanceOptions);
+
+            if (!oSound._called_load) {
+              s._html5_canplay = false; // TODO: review called_load / html5_canplay logic
+              // if url provided directly to load(), assign it here.
+
+              if (s.url !== instanceOptions.url) {
+                sm2._wD(_wDS('manURL') + ': ' + instanceOptions.url);
+
+                s._a.src = instanceOptions.url; // TODO: review / re-apply all relevant options (volume, loop, onposition etc.)
+                // reset position for new URL
+
+                s.setPosition(0);
+              } // given explicit load call, try to preload.
+              // early HTML5 implementation (non-standard)
+
+
+              s._a.autobuffer = 'auto'; // standard property, values: none / metadata / auto
+              // reference: http://msdn.microsoft.com/en-us/library/ie/ff974759%28v=vs.85%29.aspx
+
+              s._a.preload = 'auto';
+              s._a._called_load = true;
+            } else {
+              sm2._wD(s.id + ': Ignoring request to load again');
+            }
+          } else {
+            if (sm2.html5Only) {
+              sm2._wD(s.id + ': No flash support. Exiting.');
+
+              return s;
+            }
+
+            if (s._iO.url && s._iO.url.match(/data:/i)) {
+              // data: URIs not supported by Flash, either.
+              sm2._wD(s.id + ': data: URIs not supported via Flash. Exiting.');
+
+              return s;
+            }
+
+            try {
+              s.isHTML5 = false;
+              s._iO = policyFix(loopFix(instanceOptions)); // if we have "position", disable auto-play as we'll be seeking to that position at onload().
+
+              if (s._iO.autoPlay && (s._iO.position || s._iO.from)) {
+                sm2._wD(s.id + ': Disabling autoPlay because of non-zero offset case');
+
+                s._iO.autoPlay = false;
+              } // re-assign local shortcut
+
+
+              instanceOptions = s._iO;
+
+              if (fV === 8) {
+                flash._load(s.id, instanceOptions.url, instanceOptions.stream, instanceOptions.autoPlay, instanceOptions.usePolicyFile);
+              } else {
+                flash._load(s.id, instanceOptions.url, !!instanceOptions.stream, !!instanceOptions.autoPlay, instanceOptions.loops || 1, !!instanceOptions.autoLoad, instanceOptions.usePolicyFile);
+              }
+            } catch (e) {
+              _wDS('smError', 2);
+
+              debugTS('onload', false);
+              catchError({
+                type: 'SMSOUND_LOAD_JS_EXCEPTION',
+                fatal: true
+              });
+            }
+          } // after all of this, ensure sound url is up to date.
+
+
+          s.url = instanceOptions.url;
+          return s;
+        };
+        /**
+         * Unloads a sound, canceling any open HTTP requests.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.unload = function () {
+          // Flash 8/AS2 can't "close" a stream - fake it by loading an empty URL
+          // Flash 9/AS3: Close stream, preventing further load
+          // HTML5: Most UAs will use empty URL
+          if (s.readyState !== 0) {
+            sm2._wD(s.id + ': unload()');
+
+            if (!s.isHTML5) {
+              if (fV === 8) {
+                flash._unload(s.id, emptyURL);
+              } else {
+                flash._unload(s.id);
+              }
+            } else {
+              stop_html5_timer();
+
+              if (s._a) {
+                s._a.pause(); // update empty URL, too
+
+
+                lastURL = html5Unload(s._a);
+              }
+            } // reset load/status flags
+
+
+            resetProperties();
+          }
+
+          return s;
+        };
+        /**
+         * Unloads and destroys a sound.
+         */
+
+
+        this.destruct = function (_bFromSM) {
+          sm2._wD(s.id + ': Destruct');
+
+          if (!s.isHTML5) {
+            // kill sound within Flash
+            // Disable the onfailure handler
+            s._iO.onfailure = null;
+
+            flash._destroySound(s.id);
+          } else {
+            stop_html5_timer();
+
+            if (s._a) {
+              s._a.pause();
+
+              html5Unload(s._a);
+
+              if (!useGlobalHTML5Audio) {
+                remove_html5_events();
+              } // break obvious circular reference
+
+
+              s._a._s = null;
+              s._a = null;
+            }
+          }
+
+          if (!_bFromSM) {
+            // ensure deletion from controller
+            sm2.destroySound(s.id, true);
+          }
+        };
+        /**
+         * Begins playing a sound.
+         *
+         * @param {object} options Optional: Sound options
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.play = function (options, _updatePlayState) {
+          var fN,
+              allowMulti,
+              a,
+              onready,
+              audioClone,
+              _onended,
+              _oncanplay,
+              startOK = true; // <d>
+
+
+          fN = s.id + ': play(): '; // </d>
+          // default to true
+
+          _updatePlayState = _updatePlayState === _undefined ? true : _updatePlayState;
+
+          if (!options) {
+            options = {};
+          } // first, use local URL (if specified)
+
+
+          if (s.url) {
+            s._iO.url = s.url;
+          } // mix in any options defined at createSound()
+
+
+          s._iO = _mixin(s._iO, s.options); // mix in any options specific to this method
+
+          s._iO = _mixin(options, s._iO);
+          s._iO.url = parseURL(s._iO.url);
+          s.instanceOptions = s._iO; // RTMP-only
+
+          if (!s.isHTML5 && s._iO.serverURL && !s.connected) {
+            if (!s.getAutoPlay()) {
+              sm2._wD(fN + ' Netstream not connected yet - setting autoPlay');
+
+              s.setAutoPlay(true);
+            } // play will be called in onconnect()
+
+
+            return s;
+          }
+
+          if (html5OK(s._iO)) {
+            s._setup_html5(s._iO);
+
+            start_html5_timer();
+          }
+
+          if (s.playState === 1 && !s.paused) {
+            allowMulti = s._iO.multiShot;
+
+            if (!allowMulti) {
+              sm2._wD(fN + 'Already playing (one-shot)', 1);
+
+              if (s.isHTML5) {
+                // go back to original position.
+                s.setPosition(s._iO.position);
+              }
+
+              return s;
+            }
+
+            sm2._wD(fN + 'Already playing (multi-shot)', 1);
+          } // edge case: play() with explicit URL parameter
+
+
+          if (options.url && options.url !== s.url) {
+            // special case for createSound() followed by load() / play() with url; avoid double-load case.
+            if (!s.readyState && !s.isHTML5 && fV === 8 && urlOmitted) {
+              urlOmitted = false;
+            } else {
+              // load using merged options
+              s.load(s._iO);
+            }
+          }
+
+          if (!s.loaded) {
+            if (s.readyState === 0) {
+              sm2._wD(fN + 'Attempting to load'); // try to get this sound playing ASAP
+
+
+              if (!s.isHTML5 && !sm2.html5Only) {
+                // flash: assign directly because setAutoPlay() increments the instanceCount
+                s._iO.autoPlay = true;
+                s.load(s._iO);
+              } else if (s.isHTML5) {
+                // iOS needs this when recycling sounds, loading a new URL on an existing object.
+                s.load(s._iO);
+              } else {
+                sm2._wD(fN + 'Unsupported type. Exiting.');
+
+                return s;
+              } // HTML5 hack - re-set instanceOptions?
+
+
+              s.instanceOptions = s._iO;
+            } else if (s.readyState === 2) {
+              sm2._wD(fN + 'Could not load - exiting', 2);
+
+              return s;
+            } else {
+              sm2._wD(fN + 'Loading - attempting to play...');
+            }
+          } else {
+            // "play()"
+            sm2._wD(fN.substr(0, fN.lastIndexOf(':')));
+          }
+
+          if (!s.isHTML5 && fV === 9 && s.position > 0 && s.position === s.duration) {
+            // flash 9 needs a position reset if play() is called while at the end of a sound.
+            sm2._wD(fN + 'Sound at end, resetting to position: 0');
+
+            options.position = 0;
+          }
+          /**
+           * Streams will pause when their buffer is full if they are being loaded.
+           * In this case paused is true, but the song hasn't started playing yet.
+           * If we just call resume() the onplay() callback will never be called.
+           * So only call resume() if the position is > 0.
+           * Another reason is because options like volume won't have been applied yet.
+           * For normal sounds, just resume.
+           */
+
+
+          if (s.paused && s.position >= 0 && (!s._iO.serverURL || s.position > 0)) {
+            // https://gist.github.com/37b17df75cc4d7a90bf6
+            sm2._wD(fN + 'Resuming from paused state', 1);
+
+            s.resume();
+          } else {
+            s._iO = _mixin(options, s._iO);
+            /**
+             * Preload in the event of play() with position under Flash,
+             * or from/to parameters and non-RTMP case
+             */
+
+            if ((!s.isHTML5 && s._iO.position !== null && s._iO.position > 0 || s._iO.from !== null && s._iO.from > 0 || s._iO.to !== null) && s.instanceCount === 0 && s.playState === 0 && !s._iO.serverURL) {
+              onready = function onready() {
+                // sound "canplay" or onload()
+                // re-apply position/from/to to instance options, and start playback
+                s._iO = _mixin(options, s._iO);
+                s.play(s._iO);
+              }; // HTML5 needs to at least have "canplay" fired before seeking.
+
+
+              if (s.isHTML5 && !s._html5_canplay) {
+                // this hasn't been loaded yet. load it first, and then do this again.
+                sm2._wD(fN + 'Beginning load for non-zero offset case');
+
+                s.load({
+                  // note: custom HTML5-only event added for from/to implementation.
+                  _oncanplay: onready
+                });
+              } else if (!s.isHTML5 && !s.loaded && (!s.readyState || s.readyState !== 2)) {
+                // to be safe, preload the whole thing in Flash.
+                sm2._wD(fN + 'Preloading for non-zero offset case');
+
+                s.load({
+                  onload: onready
+                });
+              } // otherwise, we're ready to go. re-apply local options, and continue
+
+
+              s._iO = applyFromTo();
+            } // sm2._wD(fN + 'Starting to play');
+            // increment instance counter, where enabled + supported
+
+
+            if (!s.instanceCount || s._iO.multiShotEvents || s.isHTML5 && s._iO.multiShot && !useGlobalHTML5Audio || !s.isHTML5 && fV > 8 && !s.getAutoPlay()) {
+              s.instanceCount++;
+            } // if first play and onposition parameters exist, apply them now
+
+
+            if (s._iO.onposition && s.playState === 0) {
+              attachOnPosition(s);
+            }
+
+            s.playState = 1;
+            s.paused = false;
+            s.position = s._iO.position !== _undefined && !isNaN(s._iO.position) ? s._iO.position : 0;
+
+            if (!s.isHTML5) {
+              s._iO = policyFix(loopFix(s._iO));
+            }
+
+            if (s._iO.onplay && _updatePlayState) {
+              s._iO.onplay.apply(s);
+
+              onplay_called = true;
+            }
+
+            s.setVolume(s._iO.volume, true);
+            s.setPan(s._iO.pan, true);
+
+            if (s._iO.playbackRate !== 1) {
+              s.setPlaybackRate(s._iO.playbackRate);
+            }
+
+            if (!s.isHTML5) {
+              startOK = flash._start(s.id, s._iO.loops || 1, fV === 9 ? s.position : s.position / msecScale, s._iO.multiShot || false);
+
+              if (fV === 9 && !startOK) {
+                // edge case: no sound hardware, or 32-channel flash ceiling hit.
+                // applies only to Flash 9, non-NetStream/MovieStar sounds.
+                // http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Sound.html#play%28%29
+                sm2._wD(fN + 'No sound hardware, or 32-sound ceiling hit', 2);
+
+                if (s._iO.onplayerror) {
+                  s._iO.onplayerror.apply(s);
+                }
+              }
+            } else if (s.instanceCount < 2) {
+              // HTML5 single-instance case
+              start_html5_timer();
+              a = s._setup_html5();
+              s.setPosition(s._iO.position);
+              a.play();
+            } else {
+              // HTML5 multi-shot case
+              sm2._wD(s.id + ': Cloning Audio() for instance #' + s.instanceCount + '...');
+
+              audioClone = new Audio(s._iO.url);
+
+              _onended = function onended() {
+                event.remove(audioClone, 'ended', _onended);
+
+                s._onfinish(s); // cleanup
+
+
+                html5Unload(audioClone);
+                audioClone = null;
+              };
+
+              _oncanplay = function oncanplay() {
+                event.remove(audioClone, 'canplay', _oncanplay);
+
+                try {
+                  audioClone.currentTime = s._iO.position / msecScale;
+                } catch (err) {
+                  complain(s.id + ': multiShot play() failed to apply position of ' + s._iO.position / msecScale);
+                }
+
+                audioClone.play();
+              };
+
+              event.add(audioClone, 'ended', _onended); // apply volume to clones, too
+
+              if (s._iO.volume !== _undefined) {
+                audioClone.volume = Math.max(0, Math.min(1, s._iO.volume / 100));
+              } // playing multiple muted sounds? if you do this, you're weird ;) - but let's cover it.
+
+
+              if (s.muted) {
+                audioClone.muted = true;
+              }
+
+              if (s._iO.position) {
+                // HTML5 audio can't seek before onplay() event has fired.
+                // wait for canplay, then seek to position and start playback.
+                event.add(audioClone, 'canplay', _oncanplay);
+              } else {
+                // begin playback at currentTime: 0
+                audioClone.play();
+              }
+            }
+          }
+
+          return s;
+        }; // just for convenience
+
+
+        this.start = this.play;
+        /**
+         * Stops playing a sound (and optionally, all sounds)
+         *
+         * @param {boolean} bAll Optional: Whether to stop all sounds
+         * @return {SMSound} The SMSound object
+         */
+
+        this.stop = function (bAll) {
+          var instanceOptions = s._iO,
+              originalPosition;
+
+          if (s.playState === 1) {
+            sm2._wD(s.id + ': stop()');
+
+            s._onbufferchange(0);
+
+            s._resetOnPosition(0);
+
+            s.paused = false;
+
+            if (!s.isHTML5) {
+              s.playState = 0;
+            } // remove onPosition listeners, if any
+
+
+            detachOnPosition(); // and "to" position, if set
+
+            if (instanceOptions.to) {
+              s.clearOnPosition(instanceOptions.to);
+            }
+
+            if (!s.isHTML5) {
+              flash._stop(s.id, bAll); // hack for netStream: just unload
+
+
+              if (instanceOptions.serverURL) {
+                s.unload();
+              }
+            } else if (s._a) {
+              originalPosition = s.position; // act like Flash, though
+
+              s.setPosition(0); // hack: reflect old position for onstop() (also like Flash)
+
+              s.position = originalPosition; // html5 has no stop()
+              // NOTE: pausing means iOS requires interaction to resume.
+
+              s._a.pause();
+
+              s.playState = 0; // and update UI
+
+              s._onTimer();
+
+              stop_html5_timer();
+            }
+
+            s.instanceCount = 0;
+            s._iO = {};
+
+            if (instanceOptions.onstop) {
+              instanceOptions.onstop.apply(s);
+            }
+          }
+
+          return s;
+        };
+        /**
+         * Undocumented/internal: Sets autoPlay for RTMP.
+         *
+         * @param {boolean} autoPlay state
+         */
+
+
+        this.setAutoPlay = function (autoPlay) {
+          sm2._wD(s.id + ': Autoplay turned ' + (autoPlay ? 'on' : 'off'));
+
+          s._iO.autoPlay = autoPlay;
+
+          if (!s.isHTML5) {
+            flash._setAutoPlay(s.id, autoPlay);
+
+            if (autoPlay) {
+              // only increment the instanceCount if the sound isn't loaded (TODO: verify RTMP)
+              if (!s.instanceCount && s.readyState === 1) {
+                s.instanceCount++;
+
+                sm2._wD(s.id + ': Incremented instance count to ' + s.instanceCount);
+              }
+            }
+          }
+        };
+        /**
+         * Undocumented/internal: Returns the autoPlay boolean.
+         *
+         * @return {boolean} The current autoPlay value
+         */
+
+
+        this.getAutoPlay = function () {
+          return s._iO.autoPlay;
+        };
+        /**
+         * Sets the playback rate of a sound (HTML5-only.)
+         *
+         * @param {number} playbackRate (+/-)
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.setPlaybackRate = function (playbackRate) {
+          // Per Mozilla, limit acceptable values to prevent playback from stopping (unless allowOverride is truthy.)
+          // https://developer.mozilla.org/en-US/Apps/Build/Audio_and_video_delivery/WebAudio_playbackRate_explained
+          var normalizedRate = Math.max(0.5, Math.min(4, playbackRate)); // <d>
+
+          if (normalizedRate !== playbackRate) {
+            sm2._wD(s.id + ': setPlaybackRate(' + playbackRate + '): limiting rate to ' + normalizedRate, 2);
+          } // </d>
+
+
+          if (s.isHTML5) {
+            try {
+              s._iO.playbackRate = normalizedRate;
+              s._a.playbackRate = normalizedRate;
+            } catch (e) {
+              sm2._wD(s.id + ': setPlaybackRate(' + normalizedRate + ') failed: ' + e.message, 2);
+            }
+          }
+
+          return s;
+        };
+        /**
+         * Sets the position of a sound.
+         *
+         * @param {number} nMsecOffset Position (milliseconds)
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.setPosition = function (nMsecOffset) {
+          if (nMsecOffset === _undefined) {
+            nMsecOffset = 0;
+          }
+
+          var position,
+              position1K,
+              // Use the duration from the instance options, if we don't have a track duration yet.
+          // position >= 0 and <= current available (loaded) duration
+          offset = s.isHTML5 ? Math.max(nMsecOffset, 0) : Math.min(s.duration || s._iO.duration, Math.max(nMsecOffset, 0));
+          s.position = offset;
+          position1K = s.position / msecScale;
+
+          s._resetOnPosition(s.position);
+
+          s._iO.position = offset;
+
+          if (!s.isHTML5) {
+            position = fV === 9 ? s.position : position1K;
+
+            if (s.readyState && s.readyState !== 2) {
+              // if paused or not playing, will not resume (by playing)
+              flash._setPosition(s.id, position, s.paused || !s.playState, s._iO.multiShot);
+            }
+          } else if (s._a) {
+            // Set the position in the canplay handler if the sound is not ready yet
+            if (s._html5_canplay) {
+              if (s._a.currentTime.toFixed(3) !== position1K.toFixed(3)) {
+                /**
+                 * DOM/JS errors/exceptions to watch out for:
+                 * if seek is beyond (loaded?) position, "DOM exception 11"
+                 * "INDEX_SIZE_ERR": DOM exception 1
+                 */
+                sm2._wD(s.id + ': setPosition(' + position1K + ')');
+
+                try {
+                  s._a.currentTime = position1K;
+
+                  if (s.playState === 0 || s.paused) {
+                    // allow seek without auto-play/resume
+                    s._a.pause();
+                  }
+                } catch (e) {
+                  sm2._wD(s.id + ': setPosition(' + position1K + ') failed: ' + e.message, 2);
+                }
+              }
+            } else if (position1K) {
+              // warn on non-zero seek attempts
+              sm2._wD(s.id + ': setPosition(' + position1K + '): Cannot seek yet, sound not ready', 2);
+
+              return s;
+            }
+
+            if (s.paused) {
+              // if paused, refresh UI right away by forcing update
+              s._onTimer(true);
+            }
+          }
+
+          return s;
+        };
+        /**
+         * Pauses sound playback.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.pause = function (_bCallFlash) {
+          if (s.paused || s.playState === 0 && s.readyState !== 1) return s;
+
+          sm2._wD(s.id + ': pause()');
+
+          s.paused = true;
+
+          if (!s.isHTML5) {
+            if (_bCallFlash || _bCallFlash === _undefined) {
+              flash._pause(s.id, s._iO.multiShot);
+            }
+          } else {
+            s._setup_html5().pause();
+
+            stop_html5_timer();
+          }
+
+          if (s._iO.onpause) {
+            s._iO.onpause.apply(s);
+          }
+
+          return s;
+        };
+        /**
+         * Resumes sound playback.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+        /**
+         * When auto-loaded streams pause on buffer full they have a playState of 0.
+         * We need to make sure that the playState is set to 1 when these streams "resume".
+         * When a paused stream is resumed, we need to trigger the onplay() callback if it
+         * hasn't been called already. In this case since the sound is being played for the
+         * first time, I think it's more appropriate to call onplay() rather than onresume().
+         */
+
+
+        this.resume = function () {
+          var instanceOptions = s._iO;
+          if (!s.paused) return s;
+
+          sm2._wD(s.id + ': resume()');
+
+          s.paused = false;
+          s.playState = 1;
+
+          if (!s.isHTML5) {
+            if (instanceOptions.isMovieStar && !instanceOptions.serverURL) {
+              // Bizarre Webkit bug (Chrome reported via 8tracks.com dudes): AAC content paused for 30+ seconds(?) will not resume without a reposition.
+              s.setPosition(s.position);
+            } // flash method is toggle-based (pause/resume)
+
+
+            flash._pause(s.id, instanceOptions.multiShot);
+          } else {
+            s._setup_html5().play();
+
+            start_html5_timer();
+          }
+
+          if (!onplay_called && instanceOptions.onplay) {
+            instanceOptions.onplay.apply(s);
+            onplay_called = true;
+          } else if (instanceOptions.onresume) {
+            instanceOptions.onresume.apply(s);
+          }
+
+          return s;
+        };
+        /**
+         * Toggles sound playback.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.togglePause = function () {
+          sm2._wD(s.id + ': togglePause()');
+
+          if (s.playState === 0) {
+            s.play({
+              position: fV === 9 && !s.isHTML5 ? s.position : s.position / msecScale
+            });
+            return s;
+          }
+
+          if (s.paused) {
+            s.resume();
+          } else {
+            s.pause();
+          }
+
+          return s;
+        };
+        /**
+         * Sets the panning (L-R) effect.
+         *
+         * @param {number} nPan The pan value (-100 to 100)
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.setPan = function (nPan, bInstanceOnly) {
+          if (nPan === _undefined) {
+            nPan = 0;
+          }
+
+          if (bInstanceOnly === _undefined) {
+            bInstanceOnly = false;
+          }
+
+          if (!s.isHTML5) {
+            flash._setPan(s.id, nPan);
+          } // else { no HTML5 pan? }
+
+
+          s._iO.pan = nPan;
+
+          if (!bInstanceOnly) {
+            s.pan = nPan;
+            s.options.pan = nPan;
+          }
+
+          return s;
+        };
+        /**
+         * Sets the volume.
+         *
+         * @param {number} nVol The volume value (0 to 100)
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.setVolume = function (nVol, _bInstanceOnly) {
+          /**
+           * Note: Setting volume has no effect on iOS "special snowflake" devices.
+           * Hardware volume control overrides software, and volume
+           * will always return 1 per Apple docs. (iOS 4 + 5.)
+           * http://developer.apple.com/library/safari/documentation/AudioVideo/Conceptual/HTML-canvas-guide/AddingSoundtoCanvasAnimations/AddingSoundtoCanvasAnimations.html
+           */
+          if (nVol === _undefined) {
+            nVol = 100;
+          }
+
+          if (_bInstanceOnly === _undefined) {
+            _bInstanceOnly = false;
+          }
+
+          if (!s.isHTML5) {
+            flash._setVolume(s.id, sm2.muted && !s.muted || s.muted ? 0 : nVol);
+          } else if (s._a) {
+            if (sm2.muted && !s.muted) {
+              s.muted = true;
+              s._a.muted = true;
+            } // valid range for native HTML5 Audio(): 0-1
+
+
+            s._a.volume = Math.max(0, Math.min(1, nVol / 100));
+          }
+
+          s._iO.volume = nVol;
+
+          if (!_bInstanceOnly) {
+            s.volume = nVol;
+            s.options.volume = nVol;
+          }
+
+          return s;
+        };
+        /**
+         * Mutes the sound.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.mute = function () {
+          s.muted = true;
+
+          if (!s.isHTML5) {
+            flash._setVolume(s.id, 0);
+          } else if (s._a) {
+            s._a.muted = true;
+          }
+
+          return s;
+        };
+        /**
+         * Unmutes the sound.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.unmute = function () {
+          s.muted = false;
+          var hasIO = s._iO.volume !== _undefined;
+
+          if (!s.isHTML5) {
+            flash._setVolume(s.id, hasIO ? s._iO.volume : s.options.volume);
+          } else if (s._a) {
+            s._a.muted = false;
+          }
+
+          return s;
+        };
+        /**
+         * Toggles the muted state of a sound.
+         *
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.toggleMute = function () {
+          return s.muted ? s.unmute() : s.mute();
+        };
+        /**
+         * Registers a callback to be fired when a sound reaches a given position during playback.
+         *
+         * @param {number} nPosition The position to watch for
+         * @param {function} oMethod The relevant callback to fire
+         * @param {object} oScope Optional: The scope to apply the callback to
+         * @return {SMSound} The SMSound object
+         */
+
+
+        this.onPosition = function (nPosition, oMethod, oScope) {
+          // TODO: basic dupe checking?
+          onPositionItems.push({
+            position: parseInt(nPosition, 10),
+            method: oMethod,
+            scope: oScope !== _undefined ? oScope : s,
+            fired: false
+          });
+          return s;
+        }; // legacy/backwards-compability: lower-case method name
+
+
+        this.onposition = this.onPosition;
+        /**
+         * Removes registered callback(s) from a sound, by position and/or callback.
+         *
+         * @param {number} nPosition The position to clear callback(s) for
+         * @param {function} oMethod Optional: Identify one callback to be removed when multiple listeners exist for one position
+         * @return {SMSound} The SMSound object
+         */
+
+        this.clearOnPosition = function (nPosition, oMethod) {
+          var i;
+          nPosition = parseInt(nPosition, 10);
+
+          if (isNaN(nPosition)) {
+            // safety check
+            return;
+          }
+
+          for (i = 0; i < onPositionItems.length; i++) {
+            if (nPosition === onPositionItems[i].position) {
+              // remove this item if no method was specified, or, if the method matches
+              if (!oMethod || oMethod === onPositionItems[i].method) {
+                if (onPositionItems[i].fired) {
+                  // decrement "fired" counter, too
+                  onPositionFired--;
+                }
+
+                onPositionItems.splice(i, 1);
+              }
+            }
+          }
+        };
+
+        this._processOnPosition = function () {
+          var i,
+              item,
+              j = onPositionItems.length;
+          if (!j || !s.playState || onPositionFired >= j) return false;
+
+          for (i = j - 1; i >= 0; i--) {
+            item = onPositionItems[i];
+
+            if (!item.fired && s.position >= item.position) {
+              item.fired = true;
+              onPositionFired++;
+              item.method.apply(item.scope, [item.position]); //  reset j -- onPositionItems.length can be changed in the item callback above... occasionally breaking the loop.
+
+              j = onPositionItems.length;
+            }
+          }
+
+          return true;
+        };
+
+        this._resetOnPosition = function (nPosition) {
+          // reset "fired" for items interested in this position
+          var i,
+              item,
+              j = onPositionItems.length;
+          if (!j) return false;
+
+          for (i = j - 1; i >= 0; i--) {
+            item = onPositionItems[i];
+
+            if (item.fired && nPosition <= item.position) {
+              item.fired = false;
+              onPositionFired--;
+            }
+          }
+
+          return true;
+        };
+        /**
+         * SMSound() private internals
+         * --------------------------------
+         */
+
+
+        applyFromTo = function applyFromTo() {
+          var instanceOptions = s._iO,
+              f = instanceOptions.from,
+              t = instanceOptions.to,
+              start,
+              _end;
+
+          _end = function end() {
+            // end has been reached.
+            sm2._wD(s.id + ': "To" time of ' + t + ' reached.'); // detach listener
+
+
+            s.clearOnPosition(t, _end); // stop should clear this, too
+
+            s.stop();
+          };
+
+          start = function start() {
+            sm2._wD(s.id + ': Playing "from" ' + f); // add listener for end
+
+
+            if (t !== null && !isNaN(t)) {
+              s.onPosition(t, _end);
+            }
+          };
+
+          if (f !== null && !isNaN(f)) {
+            // apply to instance options, guaranteeing correct start position.
+            instanceOptions.position = f; // multiShot timing can't be tracked, so prevent that.
+
+            instanceOptions.multiShot = false;
+            start();
+          } // return updated instanceOptions including starting position
+
+
+          return instanceOptions;
+        };
+
+        attachOnPosition = function attachOnPosition() {
+          var item,
+              op = s._iO.onposition; // attach onposition things, if any, now.
+
+          if (op) {
+            for (item in op) {
+              if (op.hasOwnProperty(item)) {
+                s.onPosition(parseInt(item, 10), op[item]);
+              }
+            }
+          }
+        };
+
+        detachOnPosition = function detachOnPosition() {
+          var item,
+              op = s._iO.onposition; // detach any onposition()-style listeners.
+
+          if (op) {
+            for (item in op) {
+              if (op.hasOwnProperty(item)) {
+                s.clearOnPosition(parseInt(item, 10));
+              }
+            }
+          }
+        };
+
+        start_html5_timer = function start_html5_timer() {
+          if (s.isHTML5) {
+            startTimer(s);
+          }
+        };
+
+        stop_html5_timer = function stop_html5_timer() {
+          if (s.isHTML5) {
+            stopTimer(s);
+          }
+        };
+
+        resetProperties = function resetProperties(retainPosition) {
+          if (!retainPosition) {
+            onPositionItems = [];
+            onPositionFired = 0;
+          }
+
+          onplay_called = false;
+          s._hasTimer = null;
+          s._a = null;
+          s._html5_canplay = false;
+          s.bytesLoaded = null;
+          s.bytesTotal = null;
+          s.duration = s._iO && s._iO.duration ? s._iO.duration : null;
+          s.durationEstimate = null;
+          s.buffered = []; // legacy: 1D array
+
+          s.eqData = [];
+          s.eqData.left = [];
+          s.eqData.right = [];
+          s.failures = 0;
+          s.isBuffering = false;
+          s.instanceOptions = {};
+          s.instanceCount = 0;
+          s.loaded = false;
+          s.metadata = {}; // 0 = uninitialised, 1 = loading, 2 = failed/error, 3 = loaded/success
+
+          s.readyState = 0;
+          s.muted = false;
+          s.paused = false;
+          s.peakData = {
+            left: 0,
+            right: 0
+          };
+          s.waveformData = {
+            left: [],
+            right: []
+          };
+          s.playState = 0;
+          s.position = null;
+          s.id3 = {};
+        };
+
+        resetProperties();
+        /**
+         * Pseudo-private SMSound internals
+         * --------------------------------
+         */
+
+        this._onTimer = function (bForce) {
+          /**
+           * HTML5-only _whileplaying() etc.
+           * called from both HTML5 native events, and polling/interval-based timers
+           * mimics flash and fires only when time/duration change, so as to be polling-friendly
+           */
+          var duration,
+              isNew = false,
+              time,
+              x = {};
+
+          if (s._hasTimer || bForce) {
+            // TODO: May not need to track readyState (1 = loading)
+            if (s._a && (bForce || (s.playState > 0 || s.readyState === 1) && !s.paused)) {
+              duration = s._get_html5_duration();
+
+              if (duration !== lastHTML5State.duration) {
+                lastHTML5State.duration = duration;
+                s.duration = duration;
+                isNew = true;
+              } // TODO: investigate why this goes wack if not set/re-set each time.
+
+
+              s.durationEstimate = s.duration;
+              time = s._a.currentTime * msecScale || 0;
+
+              if (time !== lastHTML5State.time) {
+                lastHTML5State.time = time;
+                isNew = true;
+              }
+
+              if (isNew || bForce) {
+                s._whileplaying(time, x, x, x, x);
+              }
+            }
+            /* else {
+               // sm2._wD('_onTimer: Warn for "'+s.id+'": '+(!s._a?'Could not find element. ':'')+(s.playState === 0?'playState bad, 0?':'playState = '+s.playState+', OK'));
+               return false;
+             }*/
+
+          }
+
+          return isNew;
+        };
+
+        this._get_html5_duration = function () {
+          var instanceOptions = s._iO,
+              // if audio object exists, use its duration - else, instance option duration (if provided - it's a hack, really, and should be retired) OR null
+          d = s._a && s._a.duration ? s._a.duration * msecScale : instanceOptions && instanceOptions.duration ? instanceOptions.duration : null,
+              result = d && !isNaN(d) && d !== Infinity ? d : null;
+          return result;
+        };
+
+        this._apply_loop = function (a, nLoops) {
+          /**
+           * boolean instead of "loop", for webkit? - spec says string. http://www.w3.org/TR/html-markup/audio.html#audio.attrs.loop
+           * note that loop is either off or infinite under HTML5, unlike Flash which allows arbitrary loop counts to be specified.
+           */
+          // <d>
+          if (!a.loop && nLoops > 1) {
+            sm2._wD('Note: Native HTML5 looping is infinite.', 1);
+          } // </d>
+
+
+          a.loop = nLoops > 1 ? 'loop' : '';
+        };
+
+        this._setup_html5 = function (options) {
+          var instanceOptions = _mixin(s._iO, options),
+              a = useGlobalHTML5Audio ? globalHTML5Audio : s._a,
+              dURL = decodeURI(instanceOptions.url),
+              sameURL;
+          /**
+           * "First things first, I, Poppa..." (reset the previous state of the old sound, if playing)
+           * Fixes case with devices that can only play one sound at a time
+           * Otherwise, other sounds in mid-play will be terminated without warning and in a stuck state
+           */
+
+
+          if (useGlobalHTML5Audio) {
+            if (dURL === decodeURI(lastGlobalHTML5URL)) {
+              // global HTML5 audio: re-use of URL
+              sameURL = true;
+            }
+          } else if (dURL === decodeURI(lastURL)) {
+            // options URL is the same as the "last" URL, and we used (loaded) it
+            sameURL = true;
+          }
+
+          if (a) {
+            if (a._s) {
+              if (useGlobalHTML5Audio) {
+                if (a._s && a._s.playState && !sameURL) {
+                  // global HTML5 audio case, and loading a new URL. stop the currently-playing one.
+                  a._s.stop();
+                }
+              } else if (!useGlobalHTML5Audio && dURL === decodeURI(lastURL)) {
+                // non-global HTML5 reuse case: same url, ignore request
+                s._apply_loop(a, instanceOptions.loops);
+
+                return a;
+              }
+            }
+
+            if (!sameURL) {
+              // don't retain onPosition() stuff with new URLs.
+              if (lastURL) {
+                resetProperties(false);
+              } // assign new HTML5 URL
+
+
+              a.src = instanceOptions.url;
+              s.url = instanceOptions.url;
+              lastURL = instanceOptions.url;
+              lastGlobalHTML5URL = instanceOptions.url;
+              a._called_load = false;
+            }
+          } else {
+            if (instanceOptions.autoLoad || instanceOptions.autoPlay) {
+              s._a = new Audio(instanceOptions.url);
+
+              s._a.load();
+            } else {
+              // null for stupid Opera 9.64 case
+              s._a = isOpera && opera.version() < 10 ? new Audio(null) : new Audio();
+            } // assign local reference
+
+
+            a = s._a;
+            a._called_load = false;
+
+            if (useGlobalHTML5Audio) {
+              globalHTML5Audio = a;
+            }
+          }
+
+          s.isHTML5 = true; // store a ref on the track
+
+          s._a = a; // store a ref on the audio
+
+          a._s = s;
+          add_html5_events();
+
+          s._apply_loop(a, instanceOptions.loops);
+
+          if (instanceOptions.autoLoad || instanceOptions.autoPlay) {
+            s.load();
+          } else {
+            // early HTML5 implementation (non-standard)
+            a.autobuffer = false; // standard ('none' is also an option.)
+
+            a.preload = 'auto';
+          }
+
+          return a;
+        };
+
+        add_html5_events = function add_html5_events() {
+          if (s._a._added_events) return false;
+          var f;
+
+          function add(oEvt, oFn, bCapture) {
+            return s._a ? s._a.addEventListener(oEvt, oFn, bCapture || false) : null;
+          }
+
+          s._a._added_events = true;
+
+          for (f in html5_events) {
+            if (html5_events.hasOwnProperty(f)) {
+              add(f, html5_events[f]);
+            }
+          }
+
+          return true;
+        };
+
+        remove_html5_events = function remove_html5_events() {
+          // Remove event listeners
+          var f;
+
+          function remove(oEvt, oFn, bCapture) {
+            return s._a ? s._a.removeEventListener(oEvt, oFn, bCapture || false) : null;
+          }
+
+          sm2._wD(s.id + ': Removing event listeners');
+
+          s._a._added_events = false;
+
+          for (f in html5_events) {
+            if (html5_events.hasOwnProperty(f)) {
+              remove(f, html5_events[f]);
+            }
+          }
+        };
+        /**
+         * Pseudo-private event internals
+         * ------------------------------
+         */
+
+
+        this._onload = function (nSuccess) {
+          var fN,
+              // check for duration to prevent false positives from flash 8 when loading from cache.
+          loadOK = !!nSuccess || !s.isHTML5 && fV === 8 && s.duration; // <d>
+
+          fN = s.id + ': ';
+
+          sm2._wD(fN + (loadOK ? 'onload()' : 'Failed to load / invalid sound?' + (!s.duration ? ' Zero-length duration reported.' : ' -') + ' (' + s.url + ')'), loadOK ? 1 : 2);
+
+          if (!loadOK && !s.isHTML5) {
+            if (sm2.sandbox.noRemote === true) {
+              sm2._wD(fN + str('noNet'), 1);
+            }
+
+            if (sm2.sandbox.noLocal === true) {
+              sm2._wD(fN + str('noLocal'), 1);
+            }
+          } // </d>
+
+
+          s.loaded = loadOK;
+          s.readyState = loadOK ? 3 : 2;
+
+          s._onbufferchange(0);
+
+          if (!loadOK && !s.isHTML5) {
+            // note: no error code from Flash.
+            s._onerror();
+          }
+
+          if (s._iO.onload) {
+            wrapCallback(s, function () {
+              s._iO.onload.apply(s, [loadOK]);
+            });
+          }
+
+          return true;
+        };
+
+        this._onerror = function (errorCode, description) {
+          // https://html.spec.whatwg.org/multipage/embedded-content.html#error-codes
+          if (s._iO.onerror) {
+            wrapCallback(s, function () {
+              s._iO.onerror.apply(s, [errorCode, description]);
+            });
+          }
+        };
+
+        this._onbufferchange = function (nIsBuffering) {
+          // ignore if not playing
+          if (s.playState === 0) return false;
+          if (nIsBuffering && s.isBuffering || !nIsBuffering && !s.isBuffering) return false;
+          s.isBuffering = nIsBuffering === 1;
+
+          if (s._iO.onbufferchange) {
+            sm2._wD(s.id + ': Buffer state change: ' + nIsBuffering);
+
+            s._iO.onbufferchange.apply(s, [nIsBuffering]);
+          }
+
+          return true;
+        };
+        /**
+         * Playback may have stopped due to buffering, or related reason.
+         * This state can be encountered on iOS < 6 when auto-play is blocked.
+         */
+
+
+        this._onsuspend = function () {
+          if (s._iO.onsuspend) {
+            sm2._wD(s.id + ': Playback suspended');
+
+            s._iO.onsuspend.apply(s);
+          }
+
+          return true;
+        };
+        /**
+         * flash 9/movieStar + RTMP-only method, should fire only once at most
+         * at this point we just recreate failed sounds rather than trying to reconnect
+         */
+
+
+        this._onfailure = function (msg, level, code) {
+          s.failures++;
+
+          sm2._wD(s.id + ': Failure (' + s.failures + '): ' + msg);
+
+          if (s._iO.onfailure && s.failures === 1) {
+            s._iO.onfailure(msg, level, code);
+          } else {
+            sm2._wD(s.id + ': Ignoring failure');
+          }
+        };
+        /**
+         * flash 9/movieStar + RTMP-only method for unhandled warnings/exceptions from Flash
+         * e.g., RTMP "method missing" warning (non-fatal) for getStreamLength on server
+         */
+
+
+        this._onwarning = function (msg, level, code) {
+          if (s._iO.onwarning) {
+            s._iO.onwarning(msg, level, code);
+          }
+        };
+
+        this._onfinish = function () {
+          // store local copy before it gets trashed...
+          var io_onfinish = s._iO.onfinish;
+
+          s._onbufferchange(0);
+
+          s._resetOnPosition(0); // reset some state items
+
+
+          if (s.instanceCount) {
+            s.instanceCount--;
+
+            if (!s.instanceCount) {
+              // remove onPosition listeners, if any
+              detachOnPosition(); // reset instance options
+
+              s.playState = 0;
+              s.paused = false;
+              s.instanceCount = 0;
+              s.instanceOptions = {};
+              s._iO = {};
+              stop_html5_timer(); // reset position, too
+
+              if (s.isHTML5) {
+                s.position = 0;
+              }
+            }
+
+            if (!s.instanceCount || s._iO.multiShotEvents) {
+              // fire onfinish for last, or every instance
+              if (io_onfinish) {
+                sm2._wD(s.id + ': onfinish()');
+
+                wrapCallback(s, function () {
+                  io_onfinish.apply(s);
+                });
+              }
+            }
+          }
+        };
+
+        this._whileloading = function (nBytesLoaded, nBytesTotal, nDuration, nBufferLength) {
+          var instanceOptions = s._iO;
+          s.bytesLoaded = nBytesLoaded;
+          s.bytesTotal = nBytesTotal;
+          s.duration = Math.floor(nDuration);
+          s.bufferLength = nBufferLength;
+
+          if (!s.isHTML5 && !instanceOptions.isMovieStar) {
+            if (instanceOptions.duration) {
+              // use duration from options, if specified and larger. nobody should be specifying duration in options, actually, and it should be retired.
+              s.durationEstimate = s.duration > instanceOptions.duration ? s.duration : instanceOptions.duration;
+            } else {
+              s.durationEstimate = parseInt(s.bytesTotal / s.bytesLoaded * s.duration, 10);
+            }
+          } else {
+            s.durationEstimate = s.duration;
+          } // for flash, reflect sequential-load-style buffering
+
+
+          if (!s.isHTML5) {
+            s.buffered = [{
+              start: 0,
+              end: s.duration
+            }];
+          } // allow whileloading to fire even if "load" fired under HTML5, due to HTTP range/partials
+
+
+          if ((s.readyState !== 3 || s.isHTML5) && instanceOptions.whileloading) {
+            instanceOptions.whileloading.apply(s);
+          }
+        };
+
+        this._whileplaying = function (nPosition, oPeakData, oWaveformDataLeft, oWaveformDataRight, oEQData) {
+          var instanceOptions = s._iO,
+              eqLeft; // flash safety net
+
+          if (isNaN(nPosition) || nPosition === null) return false; // Safari HTML5 play() may return small -ve values when starting from position: 0, eg. -50.120396875. Unexpected/invalid per W3, I think. Normalize to 0.
+
+          s.position = Math.max(0, nPosition);
+
+          s._processOnPosition();
+
+          if (!s.isHTML5 && fV > 8) {
+            if (instanceOptions.usePeakData && oPeakData !== _undefined && oPeakData) {
+              s.peakData = {
+                left: oPeakData.leftPeak,
+                right: oPeakData.rightPeak
+              };
+            }
+
+            if (instanceOptions.useWaveformData && oWaveformDataLeft !== _undefined && oWaveformDataLeft) {
+              s.waveformData = {
+                left: oWaveformDataLeft.split(','),
+                right: oWaveformDataRight.split(',')
+              };
+            }
+
+            if (instanceOptions.useEQData) {
+              if (oEQData !== _undefined && oEQData && oEQData.leftEQ) {
+                eqLeft = oEQData.leftEQ.split(',');
+                s.eqData = eqLeft;
+                s.eqData.left = eqLeft;
+
+                if (oEQData.rightEQ !== _undefined && oEQData.rightEQ) {
+                  s.eqData.right = oEQData.rightEQ.split(',');
+                }
+              }
+            }
+          }
+
+          if (s.playState === 1) {
+            // special case/hack: ensure buffering is false if loading from cache (and not yet started)
+            if (!s.isHTML5 && fV === 8 && !s.position && s.isBuffering) {
+              s._onbufferchange(0);
+            }
+
+            if (instanceOptions.whileplaying) {
+              // flash may call after actual finish
+              instanceOptions.whileplaying.apply(s);
+            }
+          }
+
+          return true;
+        };
+
+        this._oncaptiondata = function (oData) {
+          /**
+           * internal: flash 9 + NetStream (MovieStar/RTMP-only) feature
+           *
+           * @param {object} oData
+           */
+          sm2._wD(s.id + ': Caption data received.');
+
+          s.captiondata = oData;
+
+          if (s._iO.oncaptiondata) {
+            s._iO.oncaptiondata.apply(s, [oData]);
+          }
+        };
+
+        this._onmetadata = function (oMDProps, oMDData) {
+          /**
+           * internal: flash 9 + NetStream (MovieStar/RTMP-only) feature
+           * RTMP may include song title, MovieStar content may include encoding info
+           *
+           * @param {array} oMDProps (names)
+           * @param {array} oMDData (values)
+           */
+          sm2._wD(s.id + ': Metadata received.');
+
+          var oData = {},
+              i,
+              j;
+
+          for (i = 0, j = oMDProps.length; i < j; i++) {
+            oData[oMDProps[i]] = oMDData[i];
+          }
+
+          s.metadata = oData;
+
+          if (s._iO.onmetadata) {
+            s._iO.onmetadata.call(s, s.metadata);
+          }
+        };
+
+        this._onid3 = function (oID3Props, oID3Data) {
+          /**
+           * internal: flash 8 + flash 9 ID3 feature
+           * may include artist, song title etc.
+           *
+           * @param {array} oID3Props (names)
+           * @param {array} oID3Data (values)
+           */
+          sm2._wD(s.id + ': ID3 data received.');
+
+          var oData = [],
+              i,
+              j;
+
+          for (i = 0, j = oID3Props.length; i < j; i++) {
+            oData[oID3Props[i]] = oID3Data[i];
+          }
+
+          s.id3 = _mixin(s.id3, oData);
+
+          if (s._iO.onid3) {
+            s._iO.onid3.apply(s);
+          }
+        }; // flash/RTMP-only
+
+
+        this._onconnect = function (bSuccess) {
+          bSuccess = bSuccess === 1;
+
+          sm2._wD(s.id + ': ' + (bSuccess ? 'Connected.' : 'Failed to connect? - ' + s.url), bSuccess ? 1 : 2);
+
+          s.connected = bSuccess;
+
+          if (bSuccess) {
+            s.failures = 0;
+
+            if (idCheck(s.id)) {
+              if (s.getAutoPlay()) {
+                // only update the play state if auto playing
+                s.play(_undefined, s.getAutoPlay());
+              } else if (s._iO.autoLoad) {
+                s.load();
+              }
+            }
+
+            if (s._iO.onconnect) {
+              s._iO.onconnect.apply(s, [bSuccess]);
+            }
+          }
+        };
+
+        this._ondataerror = function (sError) {
+          // flash 9 wave/eq data handler
+          // hack: called at start, and end from flash at/after onfinish()
+          if (s.playState > 0) {
+            sm2._wD(s.id + ': Data error: ' + sError);
+
+            if (s._iO.ondataerror) {
+              s._iO.ondataerror.apply(s);
+            }
+          }
+        }; // <d>
+
+
+        this._debug(); // </d>
+
+      }; // SMSound()
+
+      /**
+       * Private SoundManager internals
+       * ------------------------------
+       */
+
+
+      getDocument = function getDocument() {
+        return doc.body || doc.getElementsByTagName('div')[0];
+      };
+
+      id = function id(sID) {
+        return doc.getElementById(sID);
+      };
+
+      _mixin = function mixin(oMain, oAdd) {
+        // non-destructive merge
+        var o1 = oMain || {},
+            o2,
+            o; // if unspecified, o2 is the default options object
+
+        o2 = oAdd === _undefined ? sm2.defaultOptions : oAdd;
+
+        for (o in o2) {
+          if (o2.hasOwnProperty(o) && o1[o] === _undefined) {
+            if (typeof o2[o] !== 'object' || o2[o] === null) {
+              // assign directly
+              o1[o] = o2[o];
+            } else {
+              // recurse through o2
+              o1[o] = _mixin(o1[o], o2[o]);
+            }
+          }
+        }
+
+        return o1;
+      };
+
+      wrapCallback = function wrapCallback(oSound, callback) {
+        /**
+         * 03/03/2013: Fix for Flash Player 11.6.602.171 + Flash 8 (flashVersion = 8) SWF issue
+         * setTimeout() fix for certain SMSound callbacks like onload() and onfinish(), where subsequent calls like play() and load() fail when Flash Player 11.6.602.171 is installed, and using soundManager with flashVersion = 8 (which is the default).
+         * Not sure of exact cause. Suspect race condition and/or invalid (NaN-style) position argument trickling down to the next JS -> Flash _start() call, in the play() case.
+         * Fix: setTimeout() to yield, plus safer null / NaN checking on position argument provided to Flash.
+         * https://getsatisfaction.com/schillmania/topics/recent_chrome_update_seems_to_have_broken_my_sm2_audio_player
+         */
+        if (!oSound.isHTML5 && fV === 8) {
+          window.setTimeout(callback, 0);
+        } else {
+          callback();
+        }
+      }; // additional soundManager properties that soundManager.setup() will accept
+
+
+      extraOptions = {
+        onready: 1,
+        ontimeout: 1,
+        defaultOptions: 1,
+        flash9Options: 1,
+        movieStarOptions: 1
+      };
+
+      _assign = function assign(o, oParent) {
+        /**
+         * recursive assignment of properties, soundManager.setup() helper
+         * allows property assignment based on whitelist
+         */
+        var i,
+            result = true,
+            hasParent = oParent !== _undefined,
+            setupOptions = sm2.setupOptions,
+            bonusOptions = extraOptions; // <d>
+        // if soundManager.setup() called, show accepted parameters.
+
+        if (o === _undefined) {
+          result = [];
+
+          for (i in setupOptions) {
+            if (setupOptions.hasOwnProperty(i)) {
+              result.push(i);
+            }
+          }
+
+          for (i in bonusOptions) {
+            if (bonusOptions.hasOwnProperty(i)) {
+              if (typeof sm2[i] === 'object') {
+                result.push(i + ': {...}');
+              } else if (sm2[i] instanceof Function) {
+                result.push(i + ': function() {...}');
+              } else {
+                result.push(i);
+              }
+            }
+          }
+
+          sm2._wD(str('setup', result.join(', ')));
+
+          return false;
+        } // </d>
+
+
+        for (i in o) {
+          if (o.hasOwnProperty(i)) {
+            // if not an {object} we want to recurse through...
+            if (typeof o[i] !== 'object' || o[i] === null || o[i] instanceof Array || o[i] instanceof RegExp) {
+              // check "allowed" options
+              if (hasParent && bonusOptions[oParent] !== _undefined) {
+                // valid recursive / nested object option, eg., { defaultOptions: { volume: 50 } }
+                sm2[oParent][i] = o[i];
+              } else if (setupOptions[i] !== _undefined) {
+                // special case: assign to setupOptions object, which soundManager property references
+                sm2.setupOptions[i] = o[i]; // assign directly to soundManager, too
+
+                sm2[i] = o[i];
+              } else if (bonusOptions[i] === _undefined) {
+                // invalid or disallowed parameter. complain.
+                complain(str(sm2[i] === _undefined ? 'setupUndef' : 'setupError', i), 2);
+                result = false;
+              } else if (sm2[i] instanceof Function) {
+                /**
+                 * valid extraOptions (bonusOptions) parameter.
+                 * is it a method, like onready/ontimeout? call it.
+                 * multiple parameters should be in an array, eg. soundManager.setup({onready: [myHandler, myScope]});
+                 */
+                sm2[i].apply(sm2, o[i] instanceof Array ? o[i] : [o[i]]);
+              } else {
+                // good old-fashioned direct assignment
+                sm2[i] = o[i];
+              }
+            } else if (bonusOptions[i] === _undefined) {
+              // recursion case, eg., { defaultOptions: { ... } }
+              // invalid or disallowed parameter. complain.
+              complain(str(sm2[i] === _undefined ? 'setupUndef' : 'setupError', i), 2);
+              result = false;
+            } else {
+              // recurse through object
+              return _assign(o[i], i);
+            }
+          }
+        }
+
+        return result;
+      };
+
+      function preferFlashCheck(kind) {
+        // whether flash should play a given type
+        return sm2.preferFlash && hasFlash && !sm2.ignoreFlash && sm2.flash[kind] !== _undefined && sm2.flash[kind];
+      }
+      /**
+       * Internal DOM2-level event helpers
+       * ---------------------------------
+       */
+
+
+      event = function () {
+        // normalize event methods
+        var old = window.attachEvent,
+            evt = {
+          add: old ? 'attachEvent' : 'addEventListener',
+          remove: old ? 'detachEvent' : 'removeEventListener'
+        }; // normalize "on" event prefix, optional capture argument
+
+        function getArgs(oArgs) {
+          var args = slice.call(oArgs),
+              len = args.length;
+
+          if (old) {
+            // prefix
+            args[1] = 'on' + args[1];
+
+            if (len > 3) {
+              // no capture
+              args.pop();
+            }
+          } else if (len === 3) {
+            args.push(false);
+          }
+
+          return args;
+        }
+
+        function apply(args, sType) {
+          // normalize and call the event method, with the proper arguments
+          var element = args.shift(),
+              method = [evt[sType]];
+
+          if (old) {
+            // old IE can't do apply().
+            element[method](args[0], args[1]);
+          } else {
+            element[method].apply(element, args);
+          }
+        }
+
+        function add() {
+          apply(getArgs(arguments), 'add');
+        }
+
+        function remove() {
+          apply(getArgs(arguments), 'remove');
+        }
+
+        return {
+          add: add,
+          remove: remove
+        };
+      }();
+      /**
+       * Internal HTML5 event handling
+       * -----------------------------
+       */
+
+
+      function html5_event(oFn) {
+        // wrap html5 event handlers so we don't call them on destroyed and/or unloaded sounds
+        return function (e) {
+          var s = this._s,
+              result;
+
+          if (!s || !s._a) {
+            // <d>
+            if (s && s.id) {
+              sm2._wD(s.id + ': Ignoring ' + e.type);
+            } else {
+              sm2._wD(h5 + 'Ignoring ' + e.type);
+            } // </d>
+
+
+            result = null;
+          } else {
+            result = oFn.call(this, e);
+          }
+
+          return result;
+        };
+      }
+
+      html5_events = {
+        // HTML5 event-name-to-handler map
+        abort: html5_event(function () {
+          sm2._wD(this._s.id + ': abort');
+        }),
+        // enough has loaded to play
+        canplay: html5_event(function () {
+          var s = this._s,
+              position1K;
+
+          if (s._html5_canplay) {
+            // this event has already fired. ignore.
+            return;
+          }
+
+          s._html5_canplay = true;
+
+          sm2._wD(s.id + ': canplay');
+
+          s._onbufferchange(0); // position according to instance options
+
+
+          position1K = s._iO.position !== _undefined && !isNaN(s._iO.position) ? s._iO.position / msecScale : null; // set the position if position was provided before the sound loaded
+
+          if (this.currentTime !== position1K) {
+            sm2._wD(s.id + ': canplay: Setting position to ' + position1K);
+
+            try {
+              this.currentTime = position1K;
+            } catch (ee) {
+              sm2._wD(s.id + ': canplay: Setting position of ' + position1K + ' failed: ' + ee.message, 2);
+            }
+          } // hack for HTML5 from/to case
+
+
+          if (s._iO._oncanplay) {
+            s._iO._oncanplay();
+          }
+        }),
+        canplaythrough: html5_event(function () {
+          var s = this._s;
+
+          if (!s.loaded) {
+            s._onbufferchange(0);
+
+            s._whileloading(s.bytesLoaded, s.bytesTotal, s._get_html5_duration());
+
+            s._onload(true);
+          }
+        }),
+        durationchange: html5_event(function () {
+          // durationchange may fire at various times, probably the safest way to capture accurate/final duration.
+          var s = this._s,
+              duration;
+          duration = s._get_html5_duration();
+
+          if (!isNaN(duration) && duration !== s.duration) {
+            sm2._wD(this._s.id + ': durationchange (' + duration + ')' + (s.duration ? ', previously ' + s.duration : ''));
+
+            s.durationEstimate = s.duration = duration;
+          }
+        }),
+        // TODO: Reserved for potential use
+
+        /*
+        emptied: html5_event(function() {
+            sm2._wD(this._s.id + ': emptied');
+          }),
+        */
+        ended: html5_event(function () {
+          var s = this._s;
+
+          sm2._wD(s.id + ': ended');
+
+          s._onfinish();
+        }),
+        error: html5_event(function () {
+          var description = html5ErrorCodes[this.error.code] || null;
+
+          sm2._wD(this._s.id + ': HTML5 error, code ' + this.error.code + (description ? ' (' + description + ')' : ''));
+
+          this._s._onload(false);
+
+          this._s._onerror(this.error.code, description);
+        }),
+        loadeddata: html5_event(function () {
+          var s = this._s;
+
+          sm2._wD(s.id + ': loadeddata'); // safari seems to nicely report progress events, eventually totalling 100%
+
+
+          if (!s._loaded && !isSafari) {
+            s.duration = s._get_html5_duration();
+          }
+        }),
+        loadedmetadata: html5_event(function () {
+          sm2._wD(this._s.id + ': loadedmetadata');
+        }),
+        loadstart: html5_event(function () {
+          sm2._wD(this._s.id + ': loadstart'); // assume buffering at first
+
+
+          this._s._onbufferchange(1);
+        }),
+        play: html5_event(function () {
+          // sm2._wD(this._s.id + ': play()');
+          // once play starts, no buffering
+          this._s._onbufferchange(0);
+        }),
+        playing: html5_event(function () {
+          sm2._wD(this._s.id + ': playing ' + String.fromCharCode(9835)); // once play starts, no buffering
+
+
+          this._s._onbufferchange(0);
+        }),
+        progress: html5_event(function (e) {
+          // note: can fire repeatedly after "loaded" event, due to use of HTTP range/partials
+          var s = this._s,
+              i,
+              j,
+              progStr,
+              buffered = 0,
+              isProgress = e.type === 'progress',
+              ranges = e.target.buffered,
+              // firefox 3.6 implements e.loaded/total (bytes)
+          loaded = e.loaded || 0,
+              total = e.total || 1; // reset the "buffered" (loaded byte ranges) array
+
+          s.buffered = [];
+
+          if (ranges && ranges.length) {
+            // if loaded is 0, try TimeRanges implementation as % of load
+            // https://developer.mozilla.org/en/DOM/TimeRanges
+            // re-build "buffered" array
+            // HTML5 returns seconds. SM2 API uses msec for setPosition() etc., whether Flash or HTML5.
+            for (i = 0, j = ranges.length; i < j; i++) {
+              s.buffered.push({
+                start: ranges.start(i) * msecScale,
+                end: ranges.end(i) * msecScale
+              });
+            } // use the last value locally
+
+
+            buffered = (ranges.end(0) - ranges.start(0)) * msecScale; // linear case, buffer sum; does not account for seeking and HTTP partials / byte ranges
+
+            loaded = Math.min(1, buffered / (e.target.duration * msecScale)); // <d>
+
+            if (isProgress && ranges.length > 1) {
+              progStr = [];
+              j = ranges.length;
+
+              for (i = 0; i < j; i++) {
+                progStr.push(e.target.buffered.start(i) * msecScale + '-' + e.target.buffered.end(i) * msecScale);
+              }
+
+              sm2._wD(this._s.id + ': progress, timeRanges: ' + progStr.join(', '));
+            }
+
+            if (isProgress && !isNaN(loaded)) {
+              sm2._wD(this._s.id + ': progress, ' + Math.floor(loaded * 100) + '% loaded');
+            } // </d>
+
+          }
+
+          if (!isNaN(loaded)) {
+            // TODO: prevent calls with duplicate values.
+            s._whileloading(loaded, total, s._get_html5_duration());
+
+            if (loaded && total && loaded === total) {
+              // in case "onload" doesn't fire (eg. gecko 1.9.2)
+              html5_events.canplaythrough.call(this, e);
+            }
+          }
+        }),
+        ratechange: html5_event(function () {
+          sm2._wD(this._s.id + ': ratechange');
+        }),
+        suspend: html5_event(function (e) {
+          // download paused/stopped, may have finished (eg. onload)
+          var s = this._s;
+
+          sm2._wD(this._s.id + ': suspend');
+
+          html5_events.progress.call(this, e);
+
+          s._onsuspend();
+        }),
+        stalled: html5_event(function () {
+          sm2._wD(this._s.id + ': stalled');
+        }),
+        timeupdate: html5_event(function () {
+          this._s._onTimer();
+        }),
+        waiting: html5_event(function () {
+          var s = this._s; // see also: seeking
+
+          sm2._wD(this._s.id + ': waiting'); // playback faster than download rate, etc.
+
+
+          s._onbufferchange(1);
+        })
+      };
+
+      html5OK = function html5OK(iO) {
+        // playability test based on URL or MIME type
+        var result;
+
+        if (!iO || !iO.type && !iO.url && !iO.serverURL) {
+          // nothing to check
+          result = false;
+        } else if (iO.serverURL || iO.type && preferFlashCheck(iO.type)) {
+          // RTMP, or preferring flash
+          result = false;
+        } else {
+          // Use type, if specified. Pass data: URIs to HTML5. If HTML5-only mode, no other options, so just give 'er
+          result = iO.type ? html5CanPlay({
+            type: iO.type
+          }) : html5CanPlay({
+            url: iO.url
+          }) || sm2.html5Only || iO.url.match(/data:/i);
+        }
+
+        return result;
+      };
+
+      html5Unload = function html5Unload(oAudio) {
+        /**
+         * Internal method: Unload media, and cancel any current/pending network requests.
+         * Firefox can load an empty URL, which allegedly destroys the decoder and stops the download.
+         * https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox#Stopping_the_download_of_media
+         * However, Firefox has been seen loading a relative URL from '' and thus requesting the hosting page on unload.
+         * Other UA behaviour is unclear, so everyone else gets an about:blank-style URL.
+         */
+        var url;
+
+        if (oAudio) {
+          // Firefox and Chrome accept short WAVe data: URIs. Chome dislikes audio/wav, but accepts audio/wav for data: MIME.
+          // Desktop Safari complains / fails on data: URI, so it gets about:blank.
+          url = isSafari ? emptyURL : sm2.html5.canPlayType('audio/wav') ? emptyWAV : emptyURL;
+          oAudio.src = url; // reset some state, too
+
+          if (oAudio._called_unload !== _undefined) {
+            oAudio._called_load = false;
+          }
+        }
+
+        if (useGlobalHTML5Audio) {
+          // ensure URL state is trashed, also
+          lastGlobalHTML5URL = null;
+        }
+
+        return url;
+      };
+
+      html5CanPlay = function html5CanPlay(o) {
+        /**
+         * Try to find MIME, test and return truthiness
+         * o = {
+         *  url: '/path/to/an.mp3',
+         *  type: 'audio/mp3'
+         * }
+         */
+        if (!sm2.useHTML5Audio || !sm2.hasHTML5) return false;
+        var url = o.url || null,
+            mime = o.type || null,
+            aF = sm2.audioFormats,
+            result,
+            offset,
+            fileExt,
+            item; // account for known cases like audio/mp3
+
+        if (mime && sm2.html5[mime] !== _undefined) return sm2.html5[mime] && !preferFlashCheck(mime);
+
+        if (!html5Ext) {
+          html5Ext = [];
+
+          for (item in aF) {
+            if (aF.hasOwnProperty(item)) {
+              html5Ext.push(item);
+
+              if (aF[item].related) {
+                html5Ext = html5Ext.concat(aF[item].related);
+              }
+            }
+          }
+
+          html5Ext = new RegExp('\\.(' + html5Ext.join('|') + ')(\\?.*)?$', 'i');
+        } // TODO: Strip URL queries, etc.
+
+
+        fileExt = url ? url.toLowerCase().match(html5Ext) : null;
+
+        if (!fileExt || !fileExt.length) {
+          if (!mime) {
+            result = false;
+          } else {
+            // audio/mp3 -> mp3, result should be known
+            offset = mime.indexOf(';'); // strip "audio/X; codecs..."
+
+            fileExt = (offset !== -1 ? mime.substr(0, offset) : mime).substr(6);
+          }
+        } else {
+          // match the raw extension name - "mp3", for example
+          fileExt = fileExt[1];
+        }
+
+        if (fileExt && sm2.html5[fileExt] !== _undefined) {
+          // result known
+          result = sm2.html5[fileExt] && !preferFlashCheck(fileExt);
+        } else {
+          mime = 'audio/' + fileExt;
+          result = sm2.html5.canPlayType({
+            type: mime
+          });
+          sm2.html5[fileExt] = result; // sm2._wD('canPlayType, found result: ' + result);
+
+          result = result && sm2.html5[mime] && !preferFlashCheck(mime);
+        }
+
+        return result;
+      };
+
+      testHTML5 = function testHTML5() {
+        /**
+         * Internal: Iterates over audioFormats, determining support eg. audio/mp3, audio/mpeg and so on
+         * assigns results to html5[] and flash[].
+         */
+        if (!sm2.useHTML5Audio || !sm2.hasHTML5) {
+          // without HTML5, we need Flash.
+          sm2.html5.usingFlash = true;
+          needsFlash = true;
+          return false;
+        } // double-whammy: Opera 9.64 throws WRONG_ARGUMENTS_ERR if no parameter passed to Audio(), and Webkit + iOS happily tries to load "null" as a URL. :/
+
+
+        var a = Audio !== _undefined ? isOpera && opera.version() < 10 ? new Audio(null) : new Audio() : null,
+            item,
+            lookup,
+            support = {},
+            aF,
+            i;
+
+        function cp(m) {
+          var canPlay,
+              j,
+              result = false,
+              isOK = false;
+          if (!a || typeof a.canPlayType !== 'function') return result;
+
+          if (m instanceof Array) {
+            // iterate through all mime types, return any successes
+            for (i = 0, j = m.length; i < j; i++) {
+              if (sm2.html5[m[i]] || a.canPlayType(m[i]).match(sm2.html5Test)) {
+                isOK = true;
+                sm2.html5[m[i]] = true; // note flash support, too
+
+                sm2.flash[m[i]] = !!m[i].match(flashMIME);
+              }
+            }
+
+            result = isOK;
+          } else {
+            canPlay = a && typeof a.canPlayType === 'function' ? a.canPlayType(m) : false;
+            result = !!(canPlay && canPlay.match(sm2.html5Test));
+          }
+
+          return result;
+        } // test all registered formats + codecs
+
+
+        aF = sm2.audioFormats;
+
+        for (item in aF) {
+          if (aF.hasOwnProperty(item)) {
+            lookup = 'audio/' + item;
+            support[item] = cp(aF[item].type); // write back generic type too, eg. audio/mp3
+
+            support[lookup] = support[item]; // assign flash
+
+            if (item.match(flashMIME)) {
+              sm2.flash[item] = true;
+              sm2.flash[lookup] = true;
+            } else {
+              sm2.flash[item] = false;
+              sm2.flash[lookup] = false;
+            } // assign result to related formats, too
+
+
+            if (aF[item] && aF[item].related) {
+              for (i = aF[item].related.length - 1; i >= 0; i--) {
+                // eg. audio/m4a
+                support['audio/' + aF[item].related[i]] = support[item];
+                sm2.html5[aF[item].related[i]] = support[item];
+                sm2.flash[aF[item].related[i]] = support[item];
+              }
+            }
+          }
+        }
+
+        support.canPlayType = a ? cp : null;
+        sm2.html5 = _mixin(sm2.html5, support);
+        sm2.html5.usingFlash = featureCheck();
+        needsFlash = sm2.html5.usingFlash;
+        return true;
+      };
+
+      strings = {
+        // <d>
+        notReady: 'Unavailable - wait until onready() has fired.',
+        notOK: 'Audio support is not available.',
+        domError: sm + 'exception caught while appending SWF to DOM.',
+        spcWmode: 'Removing wmode, preventing known SWF loading issue(s)',
+        swf404: smc + 'Verify that %s is a valid path.',
+        tryDebug: 'Try ' + sm + '.debugFlash = true for more security details (output goes to SWF.)',
+        checkSWF: 'See SWF output for more debug info.',
+        localFail: smc + 'Non-HTTP page (' + doc.location.protocol + ' URL?) Review Flash player security settings for this special case:\nhttp://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html\nMay need to add/allow path, eg. c:/sm2/ or /users/me/sm2/',
+        waitFocus: smc + 'Special case: Waiting for SWF to load with window focus...',
+        waitForever: smc + 'Waiting indefinitely for Flash (will recover if unblocked)...',
+        waitSWF: smc + 'Waiting for 100% SWF load...',
+        needFunction: smc + 'Function object expected for %s',
+        badID: 'Sound ID "%s" should be a string, starting with a non-numeric character',
+        currentObj: smc + '_debug(): Current sound objects',
+        waitOnload: smc + 'Waiting for window.onload()',
+        docLoaded: smc + 'Document already loaded',
+        onload: smc + 'initComplete(): calling soundManager.onload()',
+        onloadOK: sm + '.onload() complete',
+        didInit: smc + 'init(): Already called?',
+        secNote: 'Flash security note: Network/internet URLs will not load due to security restrictions. Access can be configured via Flash Player Global Security Settings Page: http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html',
+        badRemove: smc + 'Failed to remove Flash node.',
+        shutdown: sm + '.disable(): Shutting down',
+        queue: smc + 'Queueing %s handler',
+        smError: 'SMSound.load(): Exception: JS-Flash communication failed, or JS error.',
+        fbTimeout: 'No flash response, applying .' + swfCSS.swfTimedout + ' CSS...',
+        fbLoaded: 'Flash loaded',
+        fbHandler: smc + 'flashBlockHandler()',
+        manURL: 'SMSound.load(): Using manually-assigned URL',
+        onURL: sm + '.load(): current URL already assigned.',
+        badFV: sm + '.flashVersion must be 8 or 9. "%s" is invalid. Reverting to %s.',
+        as2loop: 'Note: Setting stream:false so looping can work (flash 8 limitation)',
+        noNSLoop: 'Note: Looping not implemented for MovieStar formats',
+        needfl9: 'Note: Switching to flash 9, required for MP4 formats.',
+        mfTimeout: 'Setting flashLoadTimeout = 0 (infinite) for off-screen, mobile flash case',
+        needFlash: smc + 'Fatal error: Flash is needed to play some required formats, but is not available.',
+        gotFocus: smc + 'Got window focus.',
+        policy: 'Enabling usePolicyFile for data access',
+        setup: sm + '.setup(): allowed parameters: %s',
+        setupError: sm + '.setup(): "%s" cannot be assigned with this method.',
+        setupUndef: sm + '.setup(): Could not find option "%s"',
+        setupLate: sm + '.setup(): url, flashVersion and html5Test property changes will not take effect until reboot().',
+        noURL: smc + 'Flash URL required. Call soundManager.setup({url:...}) to get started.',
+        sm2Loaded: 'SoundManager 2: Ready. ' + String.fromCharCode(10003),
+        reset: sm + '.reset(): Removing event callbacks',
+        mobileUA: 'Mobile UA detected, preferring HTML5 by default.',
+        globalHTML5: 'Using singleton HTML5 Audio() pattern for this device.',
+        ignoreMobile: 'Ignoring mobile restrictions for this device.' // </d>
+
+      };
+
+      str = function str() {
+        // internal string replace helper.
+        // arguments: o [,items to replace]
+        // <d>
+        var args, i, j, o, sstr; // real array, please
+
+        args = slice.call(arguments); // first argument
+
+        o = args.shift();
+        sstr = strings && strings[o] ? strings[o] : '';
+
+        if (sstr && args && args.length) {
+          for (i = 0, j = args.length; i < j; i++) {
+            sstr = sstr.replace('%s', args[i]);
+          }
+        }
+
+        return sstr; // </d>
+      };
+
+      loopFix = function loopFix(sOpt) {
+        // flash 8 requires stream = false for looping to work
+        if (fV === 8 && sOpt.loops > 1 && sOpt.stream) {
+          _wDS('as2loop');
+
+          sOpt.stream = false;
+        }
+
+        return sOpt;
+      };
+
+      policyFix = function policyFix(sOpt, sPre) {
+        if (sOpt && !sOpt.usePolicyFile && (sOpt.onid3 || sOpt.usePeakData || sOpt.useWaveformData || sOpt.useEQData)) {
+          sm2._wD((sPre || '') + str('policy'));
+
+          sOpt.usePolicyFile = true;
+        }
+
+        return sOpt;
+      };
+
+      complain = function complain(sMsg) {
+        // <d>
+        if (hasConsole && console.warn !== _undefined) {
+          console.warn(sMsg);
+        } else {
+          sm2._wD(sMsg);
+        } // </d>
+
+      };
+
+      doNothing = function doNothing() {
+        return false;
+      };
+
+      disableObject = function disableObject(o) {
+        var oProp;
+
+        for (oProp in o) {
+          if (o.hasOwnProperty(oProp) && typeof o[oProp] === 'function') {
+            o[oProp] = doNothing;
+          }
+        }
+
+        oProp = null;
+      };
+
+      failSafely = function failSafely(bNoDisable) {
+        // general failure exception handler
+        if (bNoDisable === _undefined) {
+          bNoDisable = false;
+        }
+
+        if (disabled || bNoDisable) {
+          sm2.disable(bNoDisable);
+        }
+      };
+
+      normalizeMovieURL = function normalizeMovieURL(movieURL) {
+        var urlParams = null,
+            url;
+
+        if (movieURL) {
+          if (movieURL.match(/\.swf(\?.*)?$/i)) {
+            urlParams = movieURL.substr(movieURL.toLowerCase().lastIndexOf('.swf?') + 4); // assume user knows what they're doing
+
+            if (urlParams) return movieURL;
+          } else if (movieURL.lastIndexOf('/') !== movieURL.length - 1) {
+            // append trailing slash, if needed
+            movieURL += '/';
+          }
+        }
+
+        url = (movieURL && movieURL.lastIndexOf('/') !== -1 ? movieURL.substr(0, movieURL.lastIndexOf('/') + 1) : './') + sm2.movieURL;
+
+        if (sm2.noSWFCache) {
+          url += '?ts=' + new Date().getTime();
+        }
+
+        return url;
+      };
+
+      setVersionInfo = function setVersionInfo() {
+        // short-hand for internal use
+        fV = parseInt(sm2.flashVersion, 10);
+
+        if (fV !== 8 && fV !== 9) {
+          sm2._wD(str('badFV', fV, defaultFlashVersion));
+
+          sm2.flashVersion = fV = defaultFlashVersion;
+        } // debug flash movie, if applicable
+
+
+        var isDebug = sm2.debugMode || sm2.debugFlash ? '_debug.swf' : '.swf';
+
+        if (sm2.useHTML5Audio && !sm2.html5Only && sm2.audioFormats.mp4.required && fV < 9) {
+          sm2._wD(str('needfl9'));
+
+          sm2.flashVersion = fV = 9;
+        }
+
+        sm2.version = sm2.versionNumber + (sm2.html5Only ? ' (HTML5-only mode)' : fV === 9 ? ' (AS3/Flash 9)' : ' (AS2/Flash 8)'); // set up default options
+
+        if (fV > 8) {
+          // +flash 9 base options
+          sm2.defaultOptions = _mixin(sm2.defaultOptions, sm2.flash9Options);
+          sm2.features.buffering = true; // +moviestar support
+
+          sm2.defaultOptions = _mixin(sm2.defaultOptions, sm2.movieStarOptions);
+          sm2.filePatterns.flash9 = new RegExp('\\.(mp3|' + netStreamTypes.join('|') + ')(\\?.*)?$', 'i');
+          sm2.features.movieStar = true;
+        } else {
+          sm2.features.movieStar = false;
+        } // regExp for flash canPlay(), etc.
+
+
+        sm2.filePattern = sm2.filePatterns[fV !== 8 ? 'flash9' : 'flash8']; // if applicable, use _debug versions of SWFs
+
+        sm2.movieURL = (fV === 8 ? 'soundmanager2.swf' : 'soundmanager2_flash9.swf').replace('.swf', isDebug);
+        sm2.features.peakData = sm2.features.waveformData = sm2.features.eqData = fV > 8;
+      };
+
+      setPolling = function setPolling(bPolling, bHighPerformance) {
+        if (!flash) {
+          return;
+        }
+
+        flash._setPolling(bPolling, bHighPerformance);
+      };
+
+      initDebug = function initDebug() {
+        // starts debug mode, creating output <div> for UAs without console object
+        // allow force of debug mode via URL
+        // <d>
+        if (sm2.debugURLParam.test(wl)) {
+          sm2.setupOptions.debugMode = sm2.debugMode = true;
+        }
+
+        if (id(sm2.debugID)) {
+          return;
+        }
+
+        var oD, oDebug, oTarget, oToggle, tmp;
+
+        if (sm2.debugMode && !id(sm2.debugID) && (!hasConsole || !sm2.useConsole || !sm2.consoleOnly)) {
+          oD = doc.createElement('div');
+          oD.id = sm2.debugID + '-toggle';
+          oToggle = {
+            position: 'fixed',
+            bottom: '0px',
+            right: '0px',
+            width: '1.2em',
+            height: '1.2em',
+            lineHeight: '1.2em',
+            margin: '2px',
+            textAlign: 'center',
+            border: '1px solid #999',
+            cursor: 'pointer',
+            background: '#fff',
+            color: '#333',
+            zIndex: 10001
+          };
+          oD.appendChild(doc.createTextNode('-'));
+          oD.onclick = toggleDebug;
+          oD.title = 'Toggle SM2 debug console';
+
+          if (ua.match(/msie 6/i)) {
+            oD.style.position = 'absolute';
+            oD.style.cursor = 'hand';
+          }
+
+          for (tmp in oToggle) {
+            if (oToggle.hasOwnProperty(tmp)) {
+              oD.style[tmp] = oToggle[tmp];
+            }
+          }
+
+          oDebug = doc.createElement('div');
+          oDebug.id = sm2.debugID;
+          oDebug.style.display = sm2.debugMode ? 'block' : 'none';
+
+          if (sm2.debugMode && !id(oD.id)) {
+            try {
+              oTarget = getDocument();
+              oTarget.appendChild(oD);
+            } catch (e2) {
+              throw new Error(str('domError') + ' \n' + e2.toString());
+            }
+
+            oTarget.appendChild(oDebug);
+          }
+        }
+
+        oTarget = null; // </d>
+      };
+
+      idCheck = this.getSoundById; // <d>
+
+      _wDS = function _wDS(o, errorLevel) {
+        return !o ? '' : sm2._wD(str(o), errorLevel);
+      };
+
+      toggleDebug = function toggleDebug() {
+        var o = id(sm2.debugID),
+            oT = id(sm2.debugID + '-toggle');
+
+        if (!o) {
+          return;
+        }
+
+        if (debugOpen) {
+          // minimize
+          oT.innerHTML = '+';
+          o.style.display = 'none';
+        } else {
+          oT.innerHTML = '-';
+          o.style.display = 'block';
+        }
+
+        debugOpen = !debugOpen;
+      };
+
+      debugTS = function debugTS(sEventType, bSuccess, sMessage) {
+        // troubleshooter debug hooks
+        if (window.sm2Debugger !== _undefined) {
+          try {
+            sm2Debugger.handleEvent(sEventType, bSuccess, sMessage);
+          } catch (e) {
+            // oh well
+            return false;
+          }
+        }
+
+        return true;
+      }; // </d>
+
+
+      getSWFCSS = function getSWFCSS() {
+        var css = [];
+
+        if (sm2.debugMode) {
+          css.push(swfCSS.sm2Debug);
+        }
+
+        if (sm2.debugFlash) {
+          css.push(swfCSS.flashDebug);
+        }
+
+        if (sm2.useHighPerformance) {
+          css.push(swfCSS.highPerf);
+        }
+
+        return css.join(' ');
+      };
+
+      flashBlockHandler = function flashBlockHandler() {
+        // *possible* flash block situation.
+        var name = str('fbHandler'),
+            p = sm2.getMoviePercent(),
+            css = swfCSS,
+            error = {
+          type: 'FLASHBLOCK'
+        };
+
+        if (sm2.html5Only) {
+          // no flash, or unused
+          return;
+        }
+
+        if (!sm2.ok()) {
+          if (needsFlash) {
+            // make the movie more visible, so user can fix
+            sm2.oMC.className = getSWFCSS() + ' ' + css.swfDefault + ' ' + (p === null ? css.swfTimedout : css.swfError);
+
+            sm2._wD(name + ': ' + str('fbTimeout') + (p ? ' (' + str('fbLoaded') + ')' : ''));
+          }
+
+          sm2.didFlashBlock = true; // fire onready(), complain lightly
+
+          processOnEvents({
+            type: 'ontimeout',
+            ignoreInit: true,
+            error: error
+          });
+          catchError(error);
+        } else {
+          // SM2 loaded OK (or recovered)
+          // <d>
+          if (sm2.didFlashBlock) {
+            sm2._wD(name + ': Unblocked');
+          } // </d>
+
+
+          if (sm2.oMC) {
+            sm2.oMC.className = [getSWFCSS(), css.swfDefault, css.swfLoaded + (sm2.didFlashBlock ? ' ' + css.swfUnblocked : '')].join(' ');
+          }
+        }
+      };
+
+      addOnEvent = function addOnEvent(sType, oMethod, oScope) {
+        if (on_queue[sType] === _undefined) {
+          on_queue[sType] = [];
+        }
+
+        on_queue[sType].push({
+          method: oMethod,
+          scope: oScope || null,
+          fired: false
+        });
+      };
+
+      processOnEvents = function processOnEvents(oOptions) {
+        // if unspecified, assume OK/error
+        if (!oOptions) {
+          oOptions = {
+            type: sm2.ok() ? 'onready' : 'ontimeout'
+          };
+        } // not ready yet.
+
+
+        if (!didInit && oOptions && !oOptions.ignoreInit) return false; // invalid case
+
+        if (oOptions.type === 'ontimeout' && (sm2.ok() || disabled && !oOptions.ignoreInit)) return false;
+        var status = {
+          success: oOptions && oOptions.ignoreInit ? sm2.ok() : !disabled
+        },
+            // queue specified by type, or none
+        srcQueue = oOptions && oOptions.type ? on_queue[oOptions.type] || [] : [],
+            queue = [],
+            i,
+            j,
+            args = [status],
+            canRetry = needsFlash && !sm2.ok();
+
+        if (oOptions.error) {
+          args[0].error = oOptions.error;
+        }
+
+        for (i = 0, j = srcQueue.length; i < j; i++) {
+          if (srcQueue[i].fired !== true) {
+            queue.push(srcQueue[i]);
+          }
+        }
+
+        if (queue.length) {
+          // sm2._wD(sm + ': Firing ' + queue.length + ' ' + oOptions.type + '() item' + (queue.length === 1 ? '' : 's'));
+          for (i = 0, j = queue.length; i < j; i++) {
+            if (queue[i].scope) {
+              queue[i].method.apply(queue[i].scope, args);
+            } else {
+              queue[i].method.apply(this, args);
+            }
+
+            if (!canRetry) {
+              // useFlashBlock and SWF timeout case doesn't count here.
+              queue[i].fired = true;
+            }
+          }
+        }
+
+        return true;
+      };
+
+      _initUserOnload = function initUserOnload() {
+        window.setTimeout(function () {
+          if (sm2.useFlashBlock) {
+            flashBlockHandler();
+          }
+
+          processOnEvents(); // call user-defined "onload", scoped to window
+
+          if (typeof sm2.onload === 'function') {
+            _wDS('onload', 1);
+
+            sm2.onload.apply(window);
+
+            _wDS('onloadOK', 1);
+          }
+
+          if (sm2.waitForWindowLoad) {
+            event.add(window, 'load', _initUserOnload);
+          }
+        }, 1);
+      };
+
+      detectFlash = function detectFlash() {
+        /**
+         * Hat tip: Flash Detect library (BSD, (C) 2007) by Carl "DocYes" S. Yestrau
+         * http://featureblend.com/javascript-flash-detection-library.html / http://featureblend.com/license.txt
+         */
+        // this work has already been done.
+        if (hasFlash !== _undefined) return hasFlash;
+        var hasPlugin = false,
+            n = navigator,
+            obj,
+            type,
+            types,
+            AX = window.ActiveXObject; // MS Edge 14 throws an "Unspecified Error" because n.plugins is inaccessible due to permissions
+
+        var nP;
+
+        try {
+          nP = n.plugins;
+        } catch (e) {
+          nP = undefined;
+        }
+
+        if (nP && nP.length) {
+          type = 'application/x-shockwave-flash';
+          types = n.mimeTypes;
+
+          if (types && types[type] && types[type].enabledPlugin && types[type].enabledPlugin.description) {
+            hasPlugin = true;
+          }
+        } else if (AX !== _undefined && !ua.match(/MSAppHost/i)) {
+          // Windows 8 Store Apps (MSAppHost) are weird (compatibility?) and won't complain here, but will barf if Flash/ActiveX object is appended to the DOM.
+          try {
+            obj = new AX('ShockwaveFlash.ShockwaveFlash');
+          } catch (e) {
+            // oh well
+            obj = null;
+          }
+
+          hasPlugin = !!obj; // cleanup, because it is ActiveX after all
+
+          obj = null;
+        }
+
+        hasFlash = hasPlugin;
+        return hasPlugin;
+      };
+
+      featureCheck = function featureCheck() {
+        var flashNeeded,
+            item,
+            formats = sm2.audioFormats,
+            // iPhone <= 3.1 has broken HTML5 audio(), but firmware 3.2 (original iPad) + iOS4 works.
+        isSpecial = is_iDevice && !!ua.match(/os (1|2|3_0|3_1)\s/i);
+
+        if (isSpecial) {
+          // has Audio(), but is broken; let it load links directly.
+          sm2.hasHTML5 = false; // ignore flash case, however
+
+          sm2.html5Only = true; // hide the SWF, if present
+
+          if (sm2.oMC) {
+            sm2.oMC.style.display = 'none';
+          }
+        } else if (sm2.useHTML5Audio) {
+          if (!sm2.html5 || !sm2.html5.canPlayType) {
+            sm2._wD('SoundManager: No HTML5 Audio() support detected.');
+
+            sm2.hasHTML5 = false;
+          } // <d>
+
+
+          if (isBadSafari) {
+            sm2._wD(smc + 'Note: Buggy HTML5 Audio in Safari on this OS X release, see https://bugs.webkit.org/show_bug.cgi?id=32159 - ' + (!hasFlash ? ' would use flash fallback for MP3/MP4, but none detected.' : 'will use flash fallback for MP3/MP4, if available'), 1);
+          } // </d>
+
+        }
+
+        if (sm2.useHTML5Audio && sm2.hasHTML5) {
+          // sort out whether flash is optional, required or can be ignored.
+          // innocent until proven guilty.
+          canIgnoreFlash = true;
+
+          for (item in formats) {
+            if (formats.hasOwnProperty(item)) {
+              if (formats[item].required) {
+                if (!sm2.html5.canPlayType(formats[item].type)) {
+                  // 100% HTML5 mode is not possible.
+                  canIgnoreFlash = false;
+                  flashNeeded = true;
+                } else if (sm2.preferFlash && (sm2.flash[item] || sm2.flash[formats[item].type])) {
+                  // flash may be required, or preferred for this format.
+                  flashNeeded = true;
+                }
+              }
+            }
+          }
+        } // sanity check...
+
+
+        if (sm2.ignoreFlash) {
+          flashNeeded = false;
+          canIgnoreFlash = true;
+        }
+
+        sm2.html5Only = sm2.hasHTML5 && sm2.useHTML5Audio && !flashNeeded;
+        return !sm2.html5Only;
+      };
+
+      parseURL = function parseURL(url) {
+        /**
+         * Internal: Finds and returns the first playable URL (or failing that, the first URL.)
+         * @param {string or array} url A single URL string, OR, an array of URL strings or {url:'/path/to/resource', type:'audio/mp3'} objects.
+         */
+        var i,
+            j,
+            urlResult = 0,
+            result;
+
+        if (url instanceof Array) {
+          // find the first good one
+          for (i = 0, j = url.length; i < j; i++) {
+            if (url[i] instanceof Object) {
+              // MIME check
+              if (sm2.canPlayMIME(url[i].type)) {
+                urlResult = i;
+                break;
+              }
+            } else if (sm2.canPlayURL(url[i])) {
+              // URL string check
+              urlResult = i;
+              break;
+            }
+          } // normalize to string
+
+
+          if (url[urlResult].url) {
+            url[urlResult] = url[urlResult].url;
+          }
+
+          result = url[urlResult];
+        } else {
+          // single URL case
+          result = url;
+        }
+
+        return result;
+      };
+
+      startTimer = function startTimer(oSound) {
+        /**
+         * attach a timer to this sound, and start an interval if needed
+         */
+        if (!oSound._hasTimer) {
+          oSound._hasTimer = true;
+
+          if (!mobileHTML5 && sm2.html5PollingInterval) {
+            if (h5IntervalTimer === null && h5TimerCount === 0) {
+              h5IntervalTimer = setInterval(timerExecute, sm2.html5PollingInterval);
+            }
+
+            h5TimerCount++;
+          }
+        }
+      };
+
+      stopTimer = function stopTimer(oSound) {
+        /**
+         * detach a timer
+         */
+        if (oSound._hasTimer) {
+          oSound._hasTimer = false;
+
+          if (!mobileHTML5 && sm2.html5PollingInterval) {
+            // interval will stop itself at next execution.
+            h5TimerCount--;
+          }
+        }
+      };
+
+      timerExecute = function timerExecute() {
+        /**
+         * manual polling for HTML5 progress events, ie., whileplaying()
+         * (can achieve greater precision than conservative default HTML5 interval)
+         */
+        var i;
+
+        if (h5IntervalTimer !== null && !h5TimerCount) {
+          // no active timers, stop polling interval.
+          clearInterval(h5IntervalTimer);
+          h5IntervalTimer = null;
+          return;
+        } // check all HTML5 sounds with timers
+
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          if (sm2.sounds[sm2.soundIDs[i]].isHTML5 && sm2.sounds[sm2.soundIDs[i]]._hasTimer) {
+            sm2.sounds[sm2.soundIDs[i]]._onTimer();
+          }
+        }
+      };
+
+      catchError = function catchError(options) {
+        options = options !== _undefined ? options : {};
+
+        if (typeof sm2.onerror === 'function') {
+          sm2.onerror.apply(window, [{
+            type: options.type !== _undefined ? options.type : null
+          }]);
+        }
+
+        if (options.fatal !== _undefined && options.fatal) {
+          sm2.disable();
+        }
+      };
+
+      badSafariFix = function badSafariFix() {
+        // special case: "bad" Safari (OS X 10.3 - 10.7) must fall back to flash for MP3/MP4
+        if (!isBadSafari || !detectFlash()) {
+          // doesn't apply
+          return;
+        }
+
+        var aF = sm2.audioFormats,
+            i,
+            item;
+
+        for (item in aF) {
+          if (aF.hasOwnProperty(item)) {
+            if (item === 'mp3' || item === 'mp4') {
+              sm2._wD(sm + ': Using flash fallback for ' + item + ' format');
+
+              sm2.html5[item] = false; // assign result to related formats, too
+
+              if (aF[item] && aF[item].related) {
+                for (i = aF[item].related.length - 1; i >= 0; i--) {
+                  sm2.html5[aF[item].related[i]] = false;
+                }
+              }
+            }
+          }
+        }
+      };
+      /**
+       * Pseudo-private flash/ExternalInterface methods
+       * ----------------------------------------------
+       */
+
+
+      this._setSandboxType = function (sandboxType) {
+        // <d>
+        // Security sandbox according to Flash plugin
+        var sb = sm2.sandbox;
+        sb.type = sandboxType;
+        sb.description = sb.types[sb.types[sandboxType] !== _undefined ? sandboxType : 'unknown'];
+
+        if (sb.type === 'localWithFile') {
+          sb.noRemote = true;
+          sb.noLocal = false;
+
+          _wDS('secNote', 2);
+        } else if (sb.type === 'localWithNetwork') {
+          sb.noRemote = false;
+          sb.noLocal = true;
+        } else if (sb.type === 'localTrusted') {
+          sb.noRemote = false;
+          sb.noLocal = false;
+        } // </d>
+
+      };
+
+      this._externalInterfaceOK = function (swfVersion) {
+        // flash callback confirming flash loaded, EI working etc.
+        // swfVersion: SWF build string
+        if (sm2.swfLoaded) {
+          return;
+        }
+
+        var e;
+        debugTS('swf', true);
+        debugTS('flashtojs', true);
+        sm2.swfLoaded = true;
+        tryInitOnFocus = false;
+
+        if (isBadSafari) {
+          badSafariFix();
+        } // complain if JS + SWF build/version strings don't match, excluding +DEV builds
+        // <d>
+
+
+        if (!swfVersion || swfVersion.replace(/\+dev/i, '') !== sm2.versionNumber.replace(/\+dev/i, '')) {
+          e = sm + ': Fatal: JavaScript file build "' + sm2.versionNumber + '" does not match Flash SWF build "' + swfVersion + '" at ' + sm2.url + '. Ensure both are up-to-date.'; // escape flash -> JS stack so this error fires in window.
+
+          setTimeout(function () {
+            throw new Error(e);
+          }, 0); // exit, init will fail with timeout
+
+          return;
+        } // </d>
+        // IE needs a larger timeout
+
+
+        setTimeout(init, isIE ? 100 : 1);
+      };
+      /**
+       * Private initialization helpers
+       * ------------------------------
+       */
+
+
+      createMovie = function createMovie(movieID, movieURL) {
+        // ignore if already connected
+        if (didAppend && appendSuccess) return false;
+
+        function initMsg() {
+          // <d>
+          var options = [],
+              title,
+              msg = [],
+              delimiter = ' + ';
+          title = 'SoundManager ' + sm2.version + (!sm2.html5Only && sm2.useHTML5Audio ? sm2.hasHTML5 ? ' + HTML5 audio' : ', no HTML5 audio support' : '');
+
+          if (!sm2.html5Only) {
+            if (sm2.preferFlash) {
+              options.push('preferFlash');
+            }
+
+            if (sm2.useHighPerformance) {
+              options.push('useHighPerformance');
+            }
+
+            if (sm2.flashPollingInterval) {
+              options.push('flashPollingInterval (' + sm2.flashPollingInterval + 'ms)');
+            }
+
+            if (sm2.html5PollingInterval) {
+              options.push('html5PollingInterval (' + sm2.html5PollingInterval + 'ms)');
+            }
+
+            if (sm2.wmode) {
+              options.push('wmode (' + sm2.wmode + ')');
+            }
+
+            if (sm2.debugFlash) {
+              options.push('debugFlash');
+            }
+
+            if (sm2.useFlashBlock) {
+              options.push('flashBlock');
+            }
+          } else if (sm2.html5PollingInterval) {
+            options.push('html5PollingInterval (' + sm2.html5PollingInterval + 'ms)');
+          }
+
+          if (options.length) {
+            msg = msg.concat([options.join(delimiter)]);
+          }
+
+          sm2._wD(title + (msg.length ? delimiter + msg.join(', ') : ''), 1);
+
+          showSupport(); // </d>
+        }
+
+        if (sm2.html5Only) {
+          // 100% HTML5 mode
+          setVersionInfo();
+          initMsg();
+          sm2.oMC = id(sm2.movieID);
+          init(); // prevent multiple init attempts
+
+          didAppend = true;
+          appendSuccess = true;
+          return false;
+        } // flash path
+
+
+        var remoteURL = movieURL || sm2.url,
+            localURL = sm2.altURL || remoteURL,
+            swfTitle = 'JS/Flash audio component (SoundManager 2)',
+            oTarget = getDocument(),
+            extraClass = getSWFCSS(),
+            isRTL = null,
+            html = doc.getElementsByTagName('html')[0],
+            oEmbed,
+            oMovie,
+            tmp,
+            movieHTML,
+            oEl,
+            s,
+            x,
+            sClass;
+        isRTL = html && html.dir && html.dir.match(/rtl/i);
+        movieID = movieID === _undefined ? sm2.id : movieID;
+
+        function param(name, value) {
+          return '<param name="' + name + '" value="' + value + '" />';
+        } // safety check for legacy (change to Flash 9 URL)
+
+
+        setVersionInfo();
+        sm2.url = normalizeMovieURL(overHTTP ? remoteURL : localURL);
+        movieURL = sm2.url;
+        sm2.wmode = !sm2.wmode && sm2.useHighPerformance ? 'transparent' : sm2.wmode;
+
+        if (sm2.wmode !== null && (ua.match(/msie 8/i) || !isIE && !sm2.useHighPerformance) && navigator.platform.match(/win32|win64/i)) {
+          /**
+           * extra-special case: movie doesn't load until scrolled into view when using wmode = anything but 'window' here
+           * does not apply when using high performance (position:fixed means on-screen), OR infinite flash load timeout
+           * wmode breaks IE 8 on Vista + Win7 too in some cases, as of January 2011 (?)
+           */
+          messages.push(strings.spcWmode);
+          sm2.wmode = null;
+        }
+
+        oEmbed = {
+          name: movieID,
+          id: movieID,
+          src: movieURL,
+          quality: 'high',
+          allowScriptAccess: sm2.allowScriptAccess,
+          bgcolor: sm2.bgColor,
+          pluginspage: http + 'www.macromedia.com/go/getflashplayer',
+          title: swfTitle,
+          type: 'application/x-shockwave-flash',
+          wmode: sm2.wmode,
+          // http://help.adobe.com/en_US/as3/mobile/WS4bebcd66a74275c36cfb8137124318eebc6-7ffd.html
+          hasPriority: 'true'
+        };
+
+        if (sm2.debugFlash) {
+          oEmbed.FlashVars = 'debug=1';
+        }
+
+        if (!sm2.wmode) {
+          // don't write empty attribute
+          delete oEmbed.wmode;
+        }
+
+        if (isIE) {
+          // IE is "special".
+          oMovie = doc.createElement('div');
+          movieHTML = ['<object id="' + movieID + '" data="' + movieURL + '" type="' + oEmbed.type + '" title="' + oEmbed.title + '" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">', param('movie', movieURL), param('AllowScriptAccess', sm2.allowScriptAccess), param('quality', oEmbed.quality), sm2.wmode ? param('wmode', sm2.wmode) : '', param('bgcolor', sm2.bgColor), param('hasPriority', 'true'), sm2.debugFlash ? param('FlashVars', oEmbed.FlashVars) : '', '</object>'].join('');
+        } else {
+          oMovie = doc.createElement('embed');
+
+          for (tmp in oEmbed) {
+            if (oEmbed.hasOwnProperty(tmp)) {
+              oMovie.setAttribute(tmp, oEmbed[tmp]);
+            }
+          }
+        }
+
+        initDebug();
+        extraClass = getSWFCSS();
+        oTarget = getDocument();
+
+        if (oTarget) {
+          sm2.oMC = id(sm2.movieID) || doc.createElement('div');
+
+          if (!sm2.oMC.id) {
+            sm2.oMC.id = sm2.movieID;
+            sm2.oMC.className = swfCSS.swfDefault + ' ' + extraClass;
+            s = null;
+            oEl = null;
+
+            if (!sm2.useFlashBlock) {
+              if (sm2.useHighPerformance) {
+                // on-screen at all times
+                s = {
+                  position: 'fixed',
+                  width: '8px',
+                  height: '8px',
+                  // >= 6px for flash to run fast, >= 8px to start up under Firefox/win32 in some cases. odd? yes.
+                  bottom: '0px',
+                  left: '0px',
+                  overflow: 'hidden'
+                };
+              } else {
+                // hide off-screen, lower priority
+                s = {
+                  position: 'absolute',
+                  width: '6px',
+                  height: '6px',
+                  top: '-9999px',
+                  left: '-9999px'
+                };
+
+                if (isRTL) {
+                  s.left = Math.abs(parseInt(s.left, 10)) + 'px';
+                }
+              }
+            }
+
+            if (isWebkit) {
+              // soundcloud-reported render/crash fix, safari 5
+              sm2.oMC.style.zIndex = 10000;
+            }
+
+            if (!sm2.debugFlash) {
+              for (x in s) {
+                if (s.hasOwnProperty(x)) {
+                  sm2.oMC.style[x] = s[x];
+                }
+              }
+            }
+
+            try {
+              if (!isIE) {
+                sm2.oMC.appendChild(oMovie);
+              }
+
+              oTarget.appendChild(sm2.oMC);
+
+              if (isIE) {
+                oEl = sm2.oMC.appendChild(doc.createElement('div'));
+                oEl.className = swfCSS.swfBox;
+                oEl.innerHTML = movieHTML;
+              }
+
+              appendSuccess = true;
+            } catch (e) {
+              throw new Error(str('domError') + ' \n' + e.toString());
+            }
+          } else {
+            // SM2 container is already in the document (eg. flashblock use case)
+            sClass = sm2.oMC.className;
+            sm2.oMC.className = (sClass ? sClass + ' ' : swfCSS.swfDefault) + (extraClass ? ' ' + extraClass : '');
+            sm2.oMC.appendChild(oMovie);
+
+            if (isIE) {
+              oEl = sm2.oMC.appendChild(doc.createElement('div'));
+              oEl.className = swfCSS.swfBox;
+              oEl.innerHTML = movieHTML;
+            }
+
+            appendSuccess = true;
+          }
+        }
+
+        didAppend = true;
+        initMsg(); // sm2._wD(sm + ': Trying to load ' + movieURL + (!overHTTP && sm2.altURL ? ' (alternate URL)' : ''), 1);
+
+        return true;
+      };
+
+      initMovie = function initMovie() {
+        if (sm2.html5Only) {
+          createMovie();
+          return false;
+        } // attempt to get, or create, movie (may already exist)
+
+
+        if (flash) return false;
+
+        if (!sm2.url) {
+          /**
+           * Something isn't right - we've reached init, but the soundManager url property has not been set.
+           * User has not called setup({url: ...}), or has not set soundManager.url (legacy use case) directly before init time.
+           * Notify and exit. If user calls setup() with a url: property, init will be restarted as in the deferred loading case.
+           */
+          _wDS('noURL');
+
+          return false;
+        } // inline markup case
+
+
+        flash = sm2.getMovie(sm2.id);
+
+        if (!flash) {
+          if (!oRemoved) {
+            // try to create
+            createMovie(sm2.id, sm2.url);
+          } else {
+            // try to re-append removed movie after reboot()
+            if (!isIE) {
+              sm2.oMC.appendChild(oRemoved);
+            } else {
+              sm2.oMC.innerHTML = oRemovedHTML;
+            }
+
+            oRemoved = null;
+            didAppend = true;
+          }
+
+          flash = sm2.getMovie(sm2.id);
+        }
+
+        if (typeof sm2.oninitmovie === 'function') {
+          setTimeout(sm2.oninitmovie, 1);
+        } // <d>
+
+
+        flushMessages(); // </d>
+
+        return true;
+      };
+
+      delayWaitForEI = function delayWaitForEI() {
+        setTimeout(waitForEI, 1000);
+      };
+
+      rebootIntoHTML5 = function rebootIntoHTML5() {
+        // special case: try for a reboot with preferFlash: false, if 100% HTML5 mode is possible and useFlashBlock is not enabled.
+        window.setTimeout(function () {
+          complain(smc + 'useFlashBlock is false, 100% HTML5 mode is possible. Rebooting with preferFlash: false...');
+          sm2.setup({
+            preferFlash: false
+          }).reboot(); // if for some reason you want to detect this case, use an ontimeout() callback and look for html5Only and didFlashBlock == true.
+
+          sm2.didFlashBlock = true;
+          sm2.beginDelayedInit();
+        }, 1);
+      };
+
+      waitForEI = function waitForEI() {
+        var p,
+            loadIncomplete = false;
+
+        if (!sm2.url) {
+          // No SWF url to load (noURL case) - exit for now. Will be retried when url is set.
+          return;
+        }
+
+        if (waitingForEI) {
+          return;
+        }
+
+        waitingForEI = true;
+        event.remove(window, 'load', delayWaitForEI);
+
+        if (hasFlash && tryInitOnFocus && !isFocused) {
+          // Safari won't load flash in background tabs, only when focused.
+          _wDS('waitFocus');
+
+          return;
+        }
+
+        if (!didInit) {
+          p = sm2.getMoviePercent();
+
+          if (p > 0 && p < 100) {
+            loadIncomplete = true;
+          }
+        }
+
+        setTimeout(function () {
+          p = sm2.getMoviePercent();
+
+          if (loadIncomplete) {
+            // special case: if movie *partially* loaded, retry until it's 100% before assuming failure.
+            waitingForEI = false;
+
+            sm2._wD(str('waitSWF'));
+
+            window.setTimeout(delayWaitForEI, 1);
+            return;
+          } // <d>
+
+
+          if (!didInit) {
+            sm2._wD(sm + ': No Flash response within expected time. Likely causes: ' + (p === 0 ? 'SWF load failed, ' : '') + 'Flash blocked or JS-Flash security error.' + (sm2.debugFlash ? ' ' + str('checkSWF') : ''), 2);
+
+            if (!overHTTP && p) {
+              _wDS('localFail', 2);
+
+              if (!sm2.debugFlash) {
+                _wDS('tryDebug', 2);
+              }
+            }
+
+            if (p === 0) {
+              // if 0 (not null), probably a 404.
+              sm2._wD(str('swf404', sm2.url), 1);
+            }
+
+            debugTS('flashtojs', false, ': Timed out' + (overHTTP ? ' (Check flash security or flash blockers)' : ' (No plugin/missing SWF?)'));
+          } // </d>
+          // give up / time-out, depending
+
+
+          if (!didInit && okToDisable) {
+            if (p === null) {
+              // SWF failed to report load progress. Possibly blocked.
+              if (sm2.useFlashBlock || sm2.flashLoadTimeout === 0) {
+                if (sm2.useFlashBlock) {
+                  flashBlockHandler();
+                }
+
+                _wDS('waitForever');
+              } else if (!sm2.useFlashBlock && canIgnoreFlash) {
+                // no custom flash block handling, but SWF has timed out. Will recover if user unblocks / allows SWF load.
+                rebootIntoHTML5();
+              } else {
+                _wDS('waitForever'); // fire any regular registered ontimeout() listeners.
+
+
+                processOnEvents({
+                  type: 'ontimeout',
+                  ignoreInit: true,
+                  error: {
+                    type: 'INIT_FLASHBLOCK'
+                  }
+                });
+              }
+            } else if (sm2.flashLoadTimeout === 0) {
+              // SWF loaded? Shouldn't be a blocking issue, then.
+              _wDS('waitForever');
+            } else if (!sm2.useFlashBlock && canIgnoreFlash) {
+              rebootIntoHTML5();
+            } else {
+              failSafely(true);
+            }
+          }
+        }, sm2.flashLoadTimeout);
+      };
+
+      _handleFocus = function handleFocus() {
+        function cleanup() {
+          event.remove(window, 'focus', _handleFocus);
+        }
+
+        if (isFocused || !tryInitOnFocus) {
+          // already focused, or not special Safari background tab case
+          cleanup();
+          return true;
+        }
+
+        okToDisable = true;
+        isFocused = true;
+
+        _wDS('gotFocus'); // allow init to restart
+
+
+        waitingForEI = false; // kick off ExternalInterface timeout, now that the SWF has started
+
+        delayWaitForEI();
+        cleanup();
+        return true;
+      };
+
+      flushMessages = function flushMessages() {
+        // <d>
+        // SM2 pre-init debug messages
+        if (messages.length) {
+          sm2._wD('SoundManager 2: ' + messages.join(' '), 1);
+
+          messages = [];
+        } // </d>
+
+      };
+
+      showSupport = function showSupport() {
+        // <d>
+        flushMessages();
+        var item,
+            tests = [];
+
+        if (sm2.useHTML5Audio && sm2.hasHTML5) {
+          for (item in sm2.audioFormats) {
+            if (sm2.audioFormats.hasOwnProperty(item)) {
+              tests.push(item + ' = ' + sm2.html5[item] + (!sm2.html5[item] && needsFlash && sm2.flash[item] ? ' (using flash)' : sm2.preferFlash && sm2.flash[item] && needsFlash ? ' (preferring flash)' : !sm2.html5[item] ? ' (' + (sm2.audioFormats[item].required ? 'required, ' : '') + 'and no flash support)' : ''));
+            }
+          }
+
+          sm2._wD('SoundManager 2 HTML5 support: ' + tests.join(', '), 1);
+        } // </d>
+
+      };
+
+      initComplete = function initComplete(bNoDisable) {
+        if (didInit) return false;
+
+        if (sm2.html5Only) {
+          // all good.
+          _wDS('sm2Loaded', 1);
+
+          didInit = true;
+
+          _initUserOnload();
+
+          debugTS('onload', true);
+          return true;
+        }
+
+        var wasTimeout = sm2.useFlashBlock && sm2.flashLoadTimeout && !sm2.getMoviePercent(),
+            result = true,
+            error;
+
+        if (!wasTimeout) {
+          didInit = true;
+        }
+
+        error = {
+          type: !hasFlash && needsFlash ? 'NO_FLASH' : 'INIT_TIMEOUT'
+        };
+
+        sm2._wD('SoundManager 2 ' + (disabled ? 'failed to load' : 'loaded') + ' (' + (disabled ? 'Flash security/load error' : 'OK') + ') ' + String.fromCharCode(disabled ? 10006 : 10003), disabled ? 2 : 1);
+
+        if (disabled || bNoDisable) {
+          if (sm2.useFlashBlock && sm2.oMC) {
+            sm2.oMC.className = getSWFCSS() + ' ' + (sm2.getMoviePercent() === null ? swfCSS.swfTimedout : swfCSS.swfError);
+          }
+
+          processOnEvents({
+            type: 'ontimeout',
+            error: error,
+            ignoreInit: true
+          });
+          debugTS('onload', false);
+          catchError(error);
+          result = false;
+        } else {
+          debugTS('onload', true);
+        }
+
+        if (!disabled) {
+          if (sm2.waitForWindowLoad && !windowLoaded) {
+            _wDS('waitOnload');
+
+            event.add(window, 'load', _initUserOnload);
+          } else {
+            // <d>
+            if (sm2.waitForWindowLoad && windowLoaded) {
+              _wDS('docLoaded');
+            } // </d>
+
+
+            _initUserOnload();
+          }
+        }
+
+        return result;
+      };
+      /**
+       * apply top-level setupOptions object as local properties, eg., this.setupOptions.flashVersion -> this.flashVersion (soundManager.flashVersion)
+       * this maintains backward compatibility, and allows properties to be defined separately for use by soundManager.setup().
+       */
+
+
+      setProperties = function setProperties() {
+        var i,
+            o = sm2.setupOptions;
+
+        for (i in o) {
+          if (o.hasOwnProperty(i)) {
+            // assign local property if not already defined
+            if (sm2[i] === _undefined) {
+              sm2[i] = o[i];
+            } else if (sm2[i] !== o[i]) {
+              // legacy support: write manually-assigned property (eg., soundManager.url) back to setupOptions to keep things in sync
+              sm2.setupOptions[i] = sm2[i];
+            }
+          }
+        }
+      };
+
+      init = function init() {
+        // called after onload()
+        if (didInit) {
+          _wDS('didInit');
+
+          return false;
+        }
+
+        function cleanup() {
+          event.remove(window, 'load', sm2.beginDelayedInit);
+        }
+
+        if (sm2.html5Only) {
+          if (!didInit) {
+            // we don't need no steenking flash!
+            cleanup();
+            sm2.enabled = true;
+            initComplete();
+          }
+
+          return true;
+        } // flash path
+
+
+        initMovie();
+
+        try {
+          // attempt to talk to Flash
+          flash._externalInterfaceTest(false);
+          /**
+           * Apply user-specified polling interval, OR, if "high performance" set, faster vs. default polling
+           * (determines frequency of whileloading/whileplaying callbacks, effectively driving UI framerates)
+           */
+
+
+          setPolling(true, sm2.flashPollingInterval || (sm2.useHighPerformance ? 10 : 50));
+
+          if (!sm2.debugMode) {
+            // stop the SWF from making debug output calls to JS
+            flash._disableDebug();
+          }
+
+          sm2.enabled = true;
+          debugTS('jstoflash', true);
+
+          if (!sm2.html5Only) {
+            // prevent browser from showing cached page state (or rather, restoring "suspended" page state) via back button, because flash may be dead
+            // http://www.webkit.org/blog/516/webkit-page-cache-ii-the-unload-event/
+            event.add(window, 'unload', doNothing);
+          }
+        } catch (e) {
+          sm2._wD('js/flash exception: ' + e.toString());
+
+          debugTS('jstoflash', false);
+          catchError({
+            type: 'JS_TO_FLASH_EXCEPTION',
+            fatal: true
+          }); // don't disable, for reboot()
+
+          failSafely(true);
+          initComplete();
+          return false;
+        }
+
+        initComplete(); // disconnect events
+
+        cleanup();
+        return true;
+      };
+
+      _domContentLoaded = function domContentLoaded() {
+        if (didDCLoaded) return false;
+        didDCLoaded = true; // assign top-level soundManager properties eg. soundManager.url
+
+        setProperties();
+        initDebug();
+
+        if (!hasFlash && sm2.hasHTML5) {
+          sm2._wD('SoundManager 2: No Flash detected' + (!sm2.useHTML5Audio ? ', enabling HTML5.' : '. Trying HTML5-only mode.'), 1);
+
+          sm2.setup({
+            useHTML5Audio: true,
+            // make sure we aren't preferring flash, either
+            // TODO: preferFlash should not matter if flash is not installed. Currently, stuff breaks without the below tweak.
+            preferFlash: false
+          });
+        }
+
+        testHTML5();
+
+        if (!hasFlash && needsFlash) {
+          messages.push(strings.needFlash); // TODO: Fatal here vs. timeout approach, etc.
+          // hack: fail sooner.
+
+          sm2.setup({
+            flashLoadTimeout: 1
+          });
+        }
+
+        if (doc.removeEventListener) {
+          doc.removeEventListener('DOMContentLoaded', _domContentLoaded, false);
+        }
+
+        initMovie();
+        return true;
+      };
+
+      _domContentLoadedIE = function domContentLoadedIE() {
+        if (doc.readyState === 'complete') {
+          _domContentLoaded();
+
+          doc.detachEvent('onreadystatechange', _domContentLoadedIE);
+        }
+
+        return true;
+      };
+
+      _winOnLoad = function winOnLoad() {
+        // catch edge case of initComplete() firing after window.load()
+        windowLoaded = true; // catch case where DOMContentLoaded has been sent, but we're still in doc.readyState = 'interactive'
+
+        _domContentLoaded();
+
+        event.remove(window, 'load', _winOnLoad);
+      }; // sniff up-front
+
+
+      detectFlash(); // focus and window load, init (primarily flash-driven)
+
+      event.add(window, 'focus', _handleFocus);
+      event.add(window, 'load', delayWaitForEI);
+      event.add(window, 'load', _winOnLoad);
+
+      if (doc.addEventListener) {
+        doc.addEventListener('DOMContentLoaded', _domContentLoaded, false);
+      } else if (doc.attachEvent) {
+        doc.attachEvent('onreadystatechange', _domContentLoadedIE);
+      } else {
+        // no add/attachevent support - safe to assume no JS -> Flash either
+        debugTS('onload', false);
+        catchError({
+          type: 'NO_DOM2_EVENTS',
+          fatal: true
+        });
+      }
+    } // SoundManager()
+    // SM2_DEFER details: http://www.schillmania.com/projects/soundmanager2/doc/getstarted/#lazy-loading
+
+
+    if (window.SM2_DEFER === _undefined || !SM2_DEFER) {
+      soundManager = new SoundManager();
+    }
+    /**
+     * SoundManager public interfaces
+     * ------------------------------
+     */
+
+
+    if (module && 'object' === 'object') {
+      /**
+       * commonJS module
+       */
+      module.exports.SoundManager = SoundManager;
+      module.exports.soundManager = soundManager;
+    } // standard browser case
+    // constructor
+
+
+    window.SoundManager = SoundManager;
+    /**
+     * note: SM2 requires a window global due to Flash, which makes calls to window.soundManager.
+     * Flash may not always be needed, but this is not known until async init and SM2 may even "reboot" into Flash mode.
+     */
+    // public API, flash callbacks etc.
+
+    window.soundManager = soundManager;
+  })(window);
+});
+var soundmanager2_1 = soundmanager2.SoundManager;
+var soundmanager2_2 = soundmanager2.soundManager;
+var soundmanager2Nodebug = createCommonjsModule(function (module) {
+  /** @license
+   *
+   * SoundManager 2: JavaScript Sound for the Web
+   * ----------------------------------------------
+   * http://schillmania.com/projects/soundmanager2/
+   *
+   * Copyright (c) 2007, Scott Schiller. All rights reserved.
+   * Code provided under the BSD License:
+   * http://schillmania.com/projects/soundmanager2/license.txt
+   *
+   * V2.97a.20170601
+   */
+  (function SM2(window, _undefined) {
+    if (!window || !window.document) {
+      throw new Error('SoundManager requires a browser with window and document objects.');
+    }
+
+    var soundManager = null;
+
+    function SoundManager(smURL, smID) {
+      this.setupOptions = {
+        url: smURL || null,
+        flashVersion: 8,
+        debugMode: true,
+        debugFlash: false,
+        useConsole: true,
+        consoleOnly: true,
+        waitForWindowLoad: false,
+        bgColor: '#ffffff',
+        useHighPerformance: false,
+        flashPollingInterval: null,
+        html5PollingInterval: null,
+        flashLoadTimeout: 1000,
+        wmode: null,
+        allowScriptAccess: 'always',
+        useFlashBlock: false,
+        useHTML5Audio: true,
+        forceUseGlobalHTML5Audio: false,
+        ignoreMobileRestrictions: false,
+        html5Test: /^(probably|maybe)$/i,
+        preferFlash: false,
+        noSWFCache: false,
+        idPrefix: 'sound'
+      };
+      this.defaultOptions = {
+        autoLoad: false,
+        autoPlay: false,
+        from: null,
+        loops: 1,
+        onid3: null,
+        onerror: null,
+        onload: null,
+        whileloading: null,
+        onplay: null,
+        onpause: null,
+        onresume: null,
+        whileplaying: null,
+        onposition: null,
+        onstop: null,
+        onfinish: null,
+        multiShot: true,
+        multiShotEvents: false,
+        position: null,
+        pan: 0,
+        playbackRate: 1,
+        stream: true,
+        to: null,
+        type: null,
+        usePolicyFile: false,
+        volume: 100
+      };
+      this.flash9Options = {
+        onfailure: null,
+        isMovieStar: null,
+        usePeakData: false,
+        useWaveformData: false,
+        useEQData: false,
+        onbufferchange: null,
+        ondataerror: null
+      };
+      this.movieStarOptions = {
+        bufferTime: 3,
+        serverURL: null,
+        onconnect: null,
+        duration: null
+      };
+      this.audioFormats = {
+        mp3: {
+          type: ['audio/mpeg; codecs="mp3"', 'audio/mpeg', 'audio/mp3', 'audio/MPA', 'audio/mpa-robust'],
+          required: true
+        },
+        mp4: {
+          related: ['aac', 'm4a', 'm4b'],
+          type: ['audio/mp4; codecs="mp4a.40.2"', 'audio/aac', 'audio/x-m4a', 'audio/MP4A-LATM', 'audio/mpeg4-generic'],
+          required: false
+        },
+        ogg: {
+          type: ['audio/ogg; codecs=vorbis'],
+          required: false
+        },
+        opus: {
+          type: ['audio/ogg; codecs=opus', 'audio/opus'],
+          required: false
+        },
+        wav: {
+          type: ['audio/wav; codecs="1"', 'audio/wav', 'audio/wave', 'audio/x-wav'],
+          required: false
+        },
+        flac: {
+          type: ['audio/flac'],
+          required: false
+        }
+      };
+      this.movieID = 'sm2-container';
+      this.id = smID || 'sm2movie';
+      this.debugID = 'soundmanager-debug';
+      this.debugURLParam = /([#?&])debug=1/i;
+      this.versionNumber = 'V2.97a.20170601';
+      this.version = null;
+      this.movieURL = null;
+      this.altURL = null;
+      this.swfLoaded = false;
+      this.enabled = false;
+      this.oMC = null;
+      this.sounds = {};
+      this.soundIDs = [];
+      this.muted = false;
+      this.didFlashBlock = false;
+      this.filePattern = null;
+      this.filePatterns = {
+        flash8: /\.mp3(\?.*)?$/i,
+        flash9: /\.mp3(\?.*)?$/i
+      };
+      this.features = {
+        buffering: false,
+        peakData: false,
+        waveformData: false,
+        eqData: false,
+        movieStar: false
+      };
+      this.sandbox = {};
+      this.html5 = {
+        usingFlash: null
+      };
+      this.flash = {};
+      this.html5Only = false;
+      this.ignoreFlash = false;
+
+      var SMSound,
+          sm2 = this,
+          globalHTML5Audio = null,
+          flash = null,
+          id,
+          ua = navigator.userAgent,
+          wl = window.location.href.toString(),
+          doc = document,
+          doNothing,
+          setProperties,
+          init,
+          fV,
+          on_queue = [],
+          didAppend = false,
+          appendSuccess = false,
+          didInit = false,
+          disabled = false,
+          windowLoaded = false,
+          initComplete,
+          _mixin2,
+          _assign2,
+          extraOptions,
+          addOnEvent,
+          processOnEvents,
+          _initUserOnload2,
+          delayWaitForEI,
+          waitForEI,
+          rebootIntoHTML5,
+          setVersionInfo,
+          _handleFocus2,
+          strings,
+          initMovie,
+          _domContentLoaded2,
+          _winOnLoad2,
+          didDCLoaded,
+          getDocument,
+          createMovie,
+          catchError,
+          setPolling,
+          initDebug,
+          defaultFlashVersion = 8,
+          disableObject,
+          failSafely,
+          normalizeMovieURL,
+          oRemoved = null,
+          oRemovedHTML = null,
+          str,
+          flashBlockHandler,
+          getSWFCSS,
+          swfCSS,
+          loopFix,
+          policyFix,
+          idCheck,
+          waitingForEI = false,
+          initPending = false,
+          startTimer,
+          stopTimer,
+          timerExecute,
+          h5TimerCount = 0,
+          h5IntervalTimer = null,
+          parseURL,
+          messages = [],
+          canIgnoreFlash,
+          needsFlash = null,
+          featureCheck,
+          html5OK,
+          html5CanPlay,
+          html5ErrorCodes,
+          html5Ext,
+          html5Unload,
+          _domContentLoadedIE2,
+          testHTML5,
+          event,
+          slice = Array.prototype.slice,
+          useGlobalHTML5Audio = false,
+          lastGlobalHTML5URL,
+          hasFlash,
+          detectFlash,
+          badSafariFix,
+          html5_events,
+          wrapCallback,
+          idCounter = 0,
+          didSetup,
+          msecScale = 1000,
+          is_iDevice = ua.match(/(ipad|iphone|ipod)/i),
+          isAndroid = ua.match(/android/i),
+          isIE = ua.match(/msie|trident/i),
+          isWebkit = ua.match(/webkit/i),
+          isSafari = ua.match(/safari/i) && !ua.match(/chrome/i),
+          isOpera = ua.match(/opera/i),
+          mobileHTML5 = ua.match(/(mobile|pre\/|xoom)/i) || is_iDevice || isAndroid,
+          isBadSafari = !wl.match(/usehtml5audio/i) && !wl.match(/sm2-ignorebadua/i) && isSafari && !ua.match(/silk/i) && ua.match(/OS\sX\s10_6_([3-7])/i),
+          hasConsole = window.console !== _undefined && console.log !== _undefined,
+          isFocused = doc.hasFocus !== _undefined ? doc.hasFocus() : null,
+          tryInitOnFocus = isSafari && (doc.hasFocus === _undefined || !doc.hasFocus()),
+          okToDisable = !tryInitOnFocus,
+          flashMIME = /(mp3|mp4|mpa|m4a|m4b)/i,
+          emptyURL = 'about:blank',
+          emptyWAV = 'data:audio/wave;base64,/UklGRiYAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQIAAAD//w==',
+          overHTTP = doc.location ? doc.location.protocol.match(/http/i) : null,
+          http = !overHTTP ? '//' : '',
+          netStreamMimeTypes = /^\s*audio\/(?:x-)?(?:mpeg4|aac|flv|mov|mp4|m4v|m4a|m4b|mp4v|3gp|3g2)\s*(?:$|;)/i,
+          netStreamTypes = ['mpeg4', 'aac', 'flv', 'mov', 'mp4', 'm4v', 'f4v', 'm4a', 'm4b', 'mp4v', '3gp', '3g2'],
+          netStreamPattern = new RegExp('\\.(' + netStreamTypes.join('|') + ')(\\?.*)?$', 'i');
+
+      this.mimePattern = /^\s*audio\/(?:x-)?(?:mp(?:eg|3))\s*(?:$|;)/i;
+      this.useAltURL = !overHTTP;
+      swfCSS = {
+        swfBox: 'sm2-object-box',
+        swfDefault: 'movieContainer',
+        swfError: 'swf_error',
+        swfTimedout: 'swf_timedout',
+        swfLoaded: 'swf_loaded',
+        swfUnblocked: 'swf_unblocked',
+        sm2Debug: 'sm2_debug',
+        highPerf: 'high_performance',
+        flashDebug: 'flash_debug'
+      };
+      html5ErrorCodes = [null, 'MEDIA_ERR_ABORTED', 'MEDIA_ERR_NETWORK', 'MEDIA_ERR_DECODE', 'MEDIA_ERR_SRC_NOT_SUPPORTED'];
+
+      this.hasHTML5 = function () {
+        try {
+          return Audio !== _undefined && (isOpera && opera !== _undefined && opera.version() < 10 ? new Audio(null) : new Audio()).canPlayType !== _undefined;
+        } catch (e) {
+          return false;
+        }
+      }();
+
+      this.setup = function (options) {
+        var noURL = !sm2.url;
+        if (options !== _undefined && didInit && needsFlash && sm2.ok() && (options.flashVersion !== _undefined || options.url !== _undefined || options.html5Test !== _undefined)) ;
+
+        _assign2(options);
+
+        if (!useGlobalHTML5Audio) {
+          if (mobileHTML5) {
+            if (!sm2.setupOptions.ignoreMobileRestrictions || sm2.setupOptions.forceUseGlobalHTML5Audio) {
+              messages.push(strings.globalHTML5);
+              useGlobalHTML5Audio = true;
+            }
+          } else if (sm2.setupOptions.forceUseGlobalHTML5Audio) {
+            messages.push(strings.globalHTML5);
+            useGlobalHTML5Audio = true;
+          }
+        }
+
+        if (!didSetup && mobileHTML5) {
+          if (sm2.setupOptions.ignoreMobileRestrictions) {
+            messages.push(strings.ignoreMobile);
+          } else {
+            sm2.setupOptions.useHTML5Audio = true;
+            sm2.setupOptions.preferFlash = false;
+
+            if (is_iDevice) {
+              sm2.ignoreFlash = true;
+            } else if (isAndroid && !ua.match(/android\s2\.3/i) || !isAndroid) {
+              useGlobalHTML5Audio = true;
+            }
+          }
+        }
+
+        if (options) {
+          if (noURL && didDCLoaded && options.url !== _undefined) {
+            sm2.beginDelayedInit();
+          }
+
+          if (!didDCLoaded && options.url !== _undefined && doc.readyState === 'complete') {
+            setTimeout(_domContentLoaded2, 1);
+          }
+        }
+
+        didSetup = true;
+        return sm2;
+      };
+
+      this.ok = function () {
+        return needsFlash ? didInit && !disabled : sm2.useHTML5Audio && sm2.hasHTML5;
+      };
+
+      this.supported = this.ok;
+
+      this.getMovie = function (movie_id) {
+        return id(movie_id) || doc[movie_id] || window[movie_id];
+      };
+
+      this.createSound = function (oOptions, _url) {
+        var cs,
+            options,
+            oSound = null;
+
+        if (!didInit || !sm2.ok()) {
+          return false;
+        }
+
+        if (_url !== _undefined) {
+          oOptions = {
+            id: oOptions,
+            url: _url
+          };
+        }
+
+        options = _mixin2(oOptions);
+        options.url = parseURL(options.url);
+
+        if (options.id === _undefined) {
+          options.id = sm2.setupOptions.idPrefix + idCounter++;
+        }
+
+        if (idCheck(options.id, true)) {
+          return sm2.sounds[options.id];
+        }
+
+        function make() {
+          options = loopFix(options);
+          sm2.sounds[options.id] = new SMSound(options);
+          sm2.soundIDs.push(options.id);
+          return sm2.sounds[options.id];
+        }
+
+        if (html5OK(options)) {
+          oSound = make();
+
+          oSound._setup_html5(options);
+        } else {
+          if (sm2.html5Only) {
+            return make();
+          }
+
+          if (sm2.html5.usingFlash && options.url && options.url.match(/data:/i)) {
+            return make();
+          }
+
+          if (fV > 8) {
+            if (options.isMovieStar === null) {
+              options.isMovieStar = !!(options.serverURL || (options.type ? options.type.match(netStreamMimeTypes) : false) || options.url && options.url.match(netStreamPattern));
+            }
+          }
+
+          options = policyFix(options, cs);
+          oSound = make();
+
+          if (fV === 8) {
+            flash._createSound(options.id, options.loops || 1, options.usePolicyFile);
+          } else {
+            flash._createSound(options.id, options.url, options.usePeakData, options.useWaveformData, options.useEQData, options.isMovieStar, options.isMovieStar ? options.bufferTime : false, options.loops || 1, options.serverURL, options.duration || null, options.autoPlay, true, options.autoLoad, options.usePolicyFile);
+
+            if (!options.serverURL) {
+              oSound.connected = true;
+
+              if (options.onconnect) {
+                options.onconnect.apply(oSound);
+              }
+            }
+          }
+
+          if (!options.serverURL && (options.autoLoad || options.autoPlay)) {
+            oSound.load(options);
+          }
+        }
+
+        if (!options.serverURL && options.autoPlay) {
+          oSound.play();
+        }
+
+        return oSound;
+      };
+
+      this.destroySound = function (sID, _bFromSound) {
+        if (!idCheck(sID)) return false;
+        var oS = sm2.sounds[sID],
+            i;
+        oS.stop();
+        oS._iO = {};
+        oS.unload();
+
+        for (i = 0; i < sm2.soundIDs.length; i++) {
+          if (sm2.soundIDs[i] === sID) {
+            sm2.soundIDs.splice(i, 1);
+            break;
+          }
+        }
+
+        if (!_bFromSound) {
+          oS.destruct(true);
+        }
+
+        oS = null;
+        delete sm2.sounds[sID];
+        return true;
+      };
+
+      this.load = function (sID, oOptions) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].load(oOptions);
+      };
+
+      this.unload = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].unload();
+      };
+
+      this.onPosition = function (sID, nPosition, oMethod, oScope) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].onposition(nPosition, oMethod, oScope);
+      };
+
+      this.onposition = this.onPosition;
+
+      this.clearOnPosition = function (sID, nPosition, oMethod) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].clearOnPosition(nPosition, oMethod);
+      };
+
+      this.play = function (sID, oOptions) {
+        var result = null,
+            overloaded = oOptions && !(oOptions instanceof Object);
+
+        if (!didInit || !sm2.ok()) {
+          return false;
+        }
+
+        if (!idCheck(sID, overloaded)) {
+          if (!overloaded) return false;
+
+          if (overloaded) {
+            oOptions = {
+              url: oOptions
+            };
+          }
+
+          if (oOptions && oOptions.url) {
+            oOptions.id = sID;
+            result = sm2.createSound(oOptions).play();
+          }
+        } else if (overloaded) {
+          oOptions = {
+            url: oOptions
+          };
+        }
+
+        if (result === null) {
+          result = sm2.sounds[sID].play(oOptions);
+        }
+
+        return result;
+      };
+
+      this.start = this.play;
+
+      this.setPlaybackRate = function (sID, rate, allowOverride) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setPlaybackRate(rate, allowOverride);
+      };
+
+      this.setPosition = function (sID, nMsecOffset) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setPosition(nMsecOffset);
+      };
+
+      this.stop = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].stop();
+      };
+
+      this.stopAll = function () {
+        var oSound;
+
+        for (oSound in sm2.sounds) {
+          if (sm2.sounds.hasOwnProperty(oSound)) {
+            sm2.sounds[oSound].stop();
+          }
+        }
+      };
+
+      this.pause = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].pause();
+      };
+
+      this.pauseAll = function () {
+        var i;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          sm2.sounds[sm2.soundIDs[i]].pause();
+        }
+      };
+
+      this.resume = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].resume();
+      };
+
+      this.resumeAll = function () {
+        var i;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          sm2.sounds[sm2.soundIDs[i]].resume();
+        }
+      };
+
+      this.togglePause = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].togglePause();
+      };
+
+      this.setPan = function (sID, nPan) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setPan(nPan);
+      };
+
+      this.setVolume = function (sID, nVol) {
+        var i, j;
+
+        if (sID !== _undefined && !isNaN(sID) && nVol === _undefined) {
+          for (i = 0, j = sm2.soundIDs.length; i < j; i++) {
+            sm2.sounds[sm2.soundIDs[i]].setVolume(sID);
+          }
+
+          return false;
+        }
+
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].setVolume(nVol);
+      };
+
+      this.mute = function (sID) {
+        var i = 0;
+
+        if (sID instanceof String) {
+          sID = null;
+        }
+
+        if (!sID) {
+          for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+            sm2.sounds[sm2.soundIDs[i]].mute();
+          }
+
+          sm2.muted = true;
+        } else {
+          if (!idCheck(sID)) return false;
+          return sm2.sounds[sID].mute();
+        }
+
+        return true;
+      };
+
+      this.muteAll = function () {
+        sm2.mute();
+      };
+
+      this.unmute = function (sID) {
+        var i;
+
+        if (sID instanceof String) {
+          sID = null;
+        }
+
+        if (!sID) {
+          for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+            sm2.sounds[sm2.soundIDs[i]].unmute();
+          }
+
+          sm2.muted = false;
+        } else {
+          if (!idCheck(sID)) return false;
+          return sm2.sounds[sID].unmute();
+        }
+
+        return true;
+      };
+
+      this.unmuteAll = function () {
+        sm2.unmute();
+      };
+
+      this.toggleMute = function (sID) {
+        if (!idCheck(sID)) return false;
+        return sm2.sounds[sID].toggleMute();
+      };
+
+      this.getMemoryUse = function () {
+        var ram = 0;
+
+        if (flash && fV !== 8) {
+          ram = parseInt(flash._getMemoryUse(), 10);
+        }
+
+        return ram;
+      };
+
+      this.disable = function (bNoDisable) {
+        var i;
+
+        if (bNoDisable === _undefined) {
+          bNoDisable = false;
+        }
+
+        if (disabled) return false;
+        disabled = true;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          disableObject(sm2.sounds[sm2.soundIDs[i]]);
+        }
+
+        disableObject(sm2);
+        initComplete(bNoDisable);
+        event.remove(window, 'load', _initUserOnload2);
+        return true;
+      };
+
+      this.canPlayMIME = function (sMIME) {
+        var result;
+
+        if (sm2.hasHTML5) {
+          result = html5CanPlay({
+            type: sMIME
+          });
+        }
+
+        if (!result && needsFlash) {
+          result = sMIME && sm2.ok() ? !!((fV > 8 ? sMIME.match(netStreamMimeTypes) : null) || sMIME.match(sm2.mimePattern)) : null;
+        }
+
+        return result;
+      };
+
+      this.canPlayURL = function (sURL) {
+        var result;
+
+        if (sm2.hasHTML5) {
+          result = html5CanPlay({
+            url: sURL
+          });
+        }
+
+        if (!result && needsFlash) {
+          result = sURL && sm2.ok() ? !!sURL.match(sm2.filePattern) : null;
+        }
+
+        return result;
+      };
+
+      this.canPlayLink = function (oLink) {
+        if (oLink.type !== _undefined && oLink.type && sm2.canPlayMIME(oLink.type)) return true;
+        return sm2.canPlayURL(oLink.href);
+      };
+
+      this.getSoundById = function (sID, _suppressDebug) {
+        if (!sID) return null;
+        var result = sm2.sounds[sID];
+        return result;
+      };
+
+      this.onready = function (oMethod, oScope) {
+        var sType = 'onready',
+            result = false;
+
+        if (typeof oMethod === 'function') {
+          if (!oScope) {
+            oScope = window;
+          }
+
+          addOnEvent(sType, oMethod, oScope);
+          processOnEvents();
+          result = true;
+        } else {
+          throw str('needFunction', sType);
+        }
+
+        return result;
+      };
+
+      this.ontimeout = function (oMethod, oScope) {
+        var sType = 'ontimeout',
+            result = false;
+
+        if (typeof oMethod === 'function') {
+          if (!oScope) {
+            oScope = window;
+          }
+
+          addOnEvent(sType, oMethod, oScope);
+          processOnEvents({
+            type: sType
+          });
+          result = true;
+        } else {
+          throw str('needFunction', sType);
+        }
+
+        return result;
+      };
+
+      this._writeDebug = function (sText, sTypeOrObject) {
+        return true;
+      };
+
+      this._wD = this._writeDebug;
+
+      this._debug = function () {};
+
+      this.reboot = function (resetEvents, excludeInit) {
+        var i, j, k;
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          sm2.sounds[sm2.soundIDs[i]].destruct();
+        }
+
+        if (flash) {
+          try {
+            if (isIE) {
+              oRemovedHTML = flash.innerHTML;
+            }
+
+            oRemoved = flash.parentNode.removeChild(flash);
+          } catch (e) {}
+        }
+
+        oRemovedHTML = oRemoved = needsFlash = flash = null;
+        sm2.enabled = didDCLoaded = didInit = waitingForEI = initPending = didAppend = appendSuccess = disabled = useGlobalHTML5Audio = sm2.swfLoaded = false;
+        sm2.soundIDs = [];
+        sm2.sounds = {};
+        idCounter = 0;
+        didSetup = false;
+
+        if (!resetEvents) {
+          for (i in on_queue) {
+            if (on_queue.hasOwnProperty(i)) {
+              for (j = 0, k = on_queue[i].length; j < k; j++) {
+                on_queue[i][j].fired = false;
+              }
+            }
+          }
+        } else {
+          on_queue = [];
+        }
+
+        sm2.html5 = {
+          usingFlash: null
+        };
+        sm2.flash = {};
+        sm2.html5Only = false;
+        sm2.ignoreFlash = false;
+        window.setTimeout(function () {
+          if (!excludeInit) {
+            sm2.beginDelayedInit();
+          }
+        }, 20);
+        return sm2;
+      };
+
+      this.reset = function () {
+        return sm2.reboot(true, true);
+      };
+
+      this.getMoviePercent = function () {
+        return flash && 'PercentLoaded' in flash ? flash.PercentLoaded() : null;
+      };
+
+      this.beginDelayedInit = function () {
+        windowLoaded = true;
+
+        _domContentLoaded2();
+
+        setTimeout(function () {
+          if (initPending) return false;
+          createMovie();
+          initMovie();
+          initPending = true;
+          return true;
+        }, 20);
+        delayWaitForEI();
+      };
+
+      this.destruct = function () {
+        sm2.disable(true);
+      };
+
+      SMSound = function SMSound(oOptions) {
+        var s = this,
+            resetProperties,
+            add_html5_events,
+            remove_html5_events,
+            stop_html5_timer,
+            start_html5_timer,
+            attachOnPosition,
+            onplay_called = false,
+            onPositionItems = [],
+            onPositionFired = 0,
+            detachOnPosition,
+            applyFromTo,
+            lastURL = null,
+            lastHTML5State,
+            urlOmitted;
+        lastHTML5State = {
+          duration: null,
+          time: null
+        };
+        this.id = oOptions.id;
+        this.sID = this.id;
+        this.url = oOptions.url;
+        this.options = _mixin2(oOptions);
+        this.instanceOptions = this.options;
+        this._iO = this.instanceOptions;
+        this.pan = this.options.pan;
+        this.volume = this.options.volume;
+        this.isHTML5 = false;
+        this._a = null;
+        urlOmitted = !this.url;
+        this.id3 = {};
+
+        this._debug = function () {};
+
+        this.load = function (options) {
+          var oSound = null,
+              instanceOptions;
+
+          if (options !== _undefined) {
+            s._iO = _mixin2(options, s.options);
+          } else {
+            options = s.options;
+            s._iO = options;
+
+            if (lastURL && lastURL !== s.url) {
+              s._iO.url = s.url;
+              s.url = null;
+            }
+          }
+
+          if (!s._iO.url) {
+            s._iO.url = s.url;
+          }
+
+          s._iO.url = parseURL(s._iO.url);
+          s.instanceOptions = s._iO;
+          instanceOptions = s._iO;
+
+          if (!instanceOptions.url && !s.url) {
+            return s;
+          }
+
+          if (instanceOptions.url === s.url && s.readyState !== 0 && s.readyState !== 2) {
+            if (s.readyState === 3 && instanceOptions.onload) {
+              wrapCallback(s, function () {
+                instanceOptions.onload.apply(s, [!!s.duration]);
+              });
+            }
+
+            return s;
+          }
+
+          s.loaded = false;
+          s.readyState = 1;
+          s.playState = 0;
+          s.id3 = {};
+
+          if (html5OK(instanceOptions)) {
+            oSound = s._setup_html5(instanceOptions);
+
+            if (!oSound._called_load) {
+              s._html5_canplay = false;
+
+              if (s.url !== instanceOptions.url) {
+                s._a.src = instanceOptions.url;
+                s.setPosition(0);
+              }
+
+              s._a.autobuffer = 'auto';
+              s._a.preload = 'auto';
+              s._a._called_load = true;
+            }
+          } else {
+            if (sm2.html5Only) {
+              return s;
+            }
+
+            if (s._iO.url && s._iO.url.match(/data:/i)) {
+              return s;
+            }
+
+            try {
+              s.isHTML5 = false;
+              s._iO = policyFix(loopFix(instanceOptions));
+
+              if (s._iO.autoPlay && (s._iO.position || s._iO.from)) {
+                s._iO.autoPlay = false;
+              }
+
+              instanceOptions = s._iO;
+
+              if (fV === 8) {
+                flash._load(s.id, instanceOptions.url, instanceOptions.stream, instanceOptions.autoPlay, instanceOptions.usePolicyFile);
+              } else {
+                flash._load(s.id, instanceOptions.url, !!instanceOptions.stream, !!instanceOptions.autoPlay, instanceOptions.loops || 1, !!instanceOptions.autoLoad, instanceOptions.usePolicyFile);
+              }
+            } catch (e) {
+              catchError({
+                type: 'SMSOUND_LOAD_JS_EXCEPTION',
+                fatal: true
+              });
+            }
+          }
+
+          s.url = instanceOptions.url;
+          return s;
+        };
+
+        this.unload = function () {
+          if (s.readyState !== 0) {
+            if (!s.isHTML5) {
+              if (fV === 8) {
+                flash._unload(s.id, emptyURL);
+              } else {
+                flash._unload(s.id);
+              }
+            } else {
+              stop_html5_timer();
+
+              if (s._a) {
+                s._a.pause();
+
+                lastURL = html5Unload(s._a);
+              }
+            }
+
+            resetProperties();
+          }
+
+          return s;
+        };
+
+        this.destruct = function (_bFromSM) {
+          if (!s.isHTML5) {
+            s._iO.onfailure = null;
+
+            flash._destroySound(s.id);
+          } else {
+            stop_html5_timer();
+
+            if (s._a) {
+              s._a.pause();
+
+              html5Unload(s._a);
+
+              if (!useGlobalHTML5Audio) {
+                remove_html5_events();
+              }
+
+              s._a._s = null;
+              s._a = null;
+            }
+          }
+
+          if (!_bFromSM) {
+            sm2.destroySound(s.id, true);
+          }
+        };
+
+        this.play = function (options, _updatePlayState) {
+          var allowMulti,
+              a,
+              onready,
+              audioClone,
+              _onended2,
+              _oncanplay2,
+              startOK = true;
+
+          _updatePlayState = _updatePlayState === _undefined ? true : _updatePlayState;
+
+          if (!options) {
+            options = {};
+          }
+
+          if (s.url) {
+            s._iO.url = s.url;
+          }
+
+          s._iO = _mixin2(s._iO, s.options);
+          s._iO = _mixin2(options, s._iO);
+          s._iO.url = parseURL(s._iO.url);
+          s.instanceOptions = s._iO;
+
+          if (!s.isHTML5 && s._iO.serverURL && !s.connected) {
+            if (!s.getAutoPlay()) {
+              s.setAutoPlay(true);
+            }
+
+            return s;
+          }
+
+          if (html5OK(s._iO)) {
+            s._setup_html5(s._iO);
+
+            start_html5_timer();
+          }
+
+          if (s.playState === 1 && !s.paused) {
+            allowMulti = s._iO.multiShot;
+
+            if (!allowMulti) {
+              if (s.isHTML5) {
+                s.setPosition(s._iO.position);
+              }
+
+              return s;
+            }
+          }
+
+          if (options.url && options.url !== s.url) {
+            if (!s.readyState && !s.isHTML5 && fV === 8 && urlOmitted) {
+              urlOmitted = false;
+            } else {
+              s.load(s._iO);
+            }
+          }
+
+          if (!s.loaded) {
+            if (s.readyState === 0) {
+              if (!s.isHTML5 && !sm2.html5Only) {
+                s._iO.autoPlay = true;
+                s.load(s._iO);
+              } else if (s.isHTML5) {
+                s.load(s._iO);
+              } else {
+                return s;
+              }
+
+              s.instanceOptions = s._iO;
+            } else if (s.readyState === 2) {
+              return s;
+            }
+          }
+
+          if (!s.isHTML5 && fV === 9 && s.position > 0 && s.position === s.duration) {
+            options.position = 0;
+          }
+
+          if (s.paused && s.position >= 0 && (!s._iO.serverURL || s.position > 0)) {
+            s.resume();
+          } else {
+            s._iO = _mixin2(options, s._iO);
+
+            if ((!s.isHTML5 && s._iO.position !== null && s._iO.position > 0 || s._iO.from !== null && s._iO.from > 0 || s._iO.to !== null) && s.instanceCount === 0 && s.playState === 0 && !s._iO.serverURL) {
+              onready = function onready() {
+                s._iO = _mixin2(options, s._iO);
+                s.play(s._iO);
+              };
+
+              if (s.isHTML5 && !s._html5_canplay) {
+                s.load({
+                  _oncanplay: onready
+                });
+              } else if (!s.isHTML5 && !s.loaded && (!s.readyState || s.readyState !== 2)) {
+                s.load({
+                  onload: onready
+                });
+              }
+
+              s._iO = applyFromTo();
+            }
+
+            if (!s.instanceCount || s._iO.multiShotEvents || s.isHTML5 && s._iO.multiShot && !useGlobalHTML5Audio || !s.isHTML5 && fV > 8 && !s.getAutoPlay()) {
+              s.instanceCount++;
+            }
+
+            if (s._iO.onposition && s.playState === 0) {
+              attachOnPosition(s);
+            }
+
+            s.playState = 1;
+            s.paused = false;
+            s.position = s._iO.position !== _undefined && !isNaN(s._iO.position) ? s._iO.position : 0;
+
+            if (!s.isHTML5) {
+              s._iO = policyFix(loopFix(s._iO));
+            }
+
+            if (s._iO.onplay && _updatePlayState) {
+              s._iO.onplay.apply(s);
+
+              onplay_called = true;
+            }
+
+            s.setVolume(s._iO.volume, true);
+            s.setPan(s._iO.pan, true);
+
+            if (s._iO.playbackRate !== 1) {
+              s.setPlaybackRate(s._iO.playbackRate);
+            }
+
+            if (!s.isHTML5) {
+              startOK = flash._start(s.id, s._iO.loops || 1, fV === 9 ? s.position : s.position / msecScale, s._iO.multiShot || false);
+
+              if (fV === 9 && !startOK) {
+                if (s._iO.onplayerror) {
+                  s._iO.onplayerror.apply(s);
+                }
+              }
+            } else if (s.instanceCount < 2) {
+              start_html5_timer();
+              a = s._setup_html5();
+              s.setPosition(s._iO.position);
+              a.play();
+            } else {
+              audioClone = new Audio(s._iO.url);
+
+              _onended2 = function onended() {
+                event.remove(audioClone, 'ended', _onended2);
+
+                s._onfinish(s);
+
+                html5Unload(audioClone);
+                audioClone = null;
+              };
+
+              _oncanplay2 = function oncanplay() {
+                event.remove(audioClone, 'canplay', _oncanplay2);
+
+                try {
+                  audioClone.currentTime = s._iO.position / msecScale;
+                } catch (err) {}
+
+                audioClone.play();
+              };
+
+              event.add(audioClone, 'ended', _onended2);
+
+              if (s._iO.volume !== _undefined) {
+                audioClone.volume = Math.max(0, Math.min(1, s._iO.volume / 100));
+              }
+
+              if (s.muted) {
+                audioClone.muted = true;
+              }
+
+              if (s._iO.position) {
+                event.add(audioClone, 'canplay', _oncanplay2);
+              } else {
+                audioClone.play();
+              }
+            }
+          }
+
+          return s;
+        };
+
+        this.start = this.play;
+
+        this.stop = function (bAll) {
+          var instanceOptions = s._iO,
+              originalPosition;
+
+          if (s.playState === 1) {
+            s._onbufferchange(0);
+
+            s._resetOnPosition(0);
+
+            s.paused = false;
+
+            if (!s.isHTML5) {
+              s.playState = 0;
+            }
+
+            detachOnPosition();
+
+            if (instanceOptions.to) {
+              s.clearOnPosition(instanceOptions.to);
+            }
+
+            if (!s.isHTML5) {
+              flash._stop(s.id, bAll);
+
+              if (instanceOptions.serverURL) {
+                s.unload();
+              }
+            } else if (s._a) {
+              originalPosition = s.position;
+              s.setPosition(0);
+              s.position = originalPosition;
+
+              s._a.pause();
+
+              s.playState = 0;
+
+              s._onTimer();
+
+              stop_html5_timer();
+            }
+
+            s.instanceCount = 0;
+            s._iO = {};
+
+            if (instanceOptions.onstop) {
+              instanceOptions.onstop.apply(s);
+            }
+          }
+
+          return s;
+        };
+
+        this.setAutoPlay = function (autoPlay) {
+          s._iO.autoPlay = autoPlay;
+
+          if (!s.isHTML5) {
+            flash._setAutoPlay(s.id, autoPlay);
+
+            if (autoPlay) {
+              if (!s.instanceCount && s.readyState === 1) {
+                s.instanceCount++;
+              }
+            }
+          }
+        };
+
+        this.getAutoPlay = function () {
+          return s._iO.autoPlay;
+        };
+
+        this.setPlaybackRate = function (playbackRate) {
+          var normalizedRate = Math.max(0.5, Math.min(4, playbackRate));
+
+          if (s.isHTML5) {
+            try {
+              s._iO.playbackRate = normalizedRate;
+              s._a.playbackRate = normalizedRate;
+            } catch (e) {}
+          }
+
+          return s;
+        };
+
+        this.setPosition = function (nMsecOffset) {
+          if (nMsecOffset === _undefined) {
+            nMsecOffset = 0;
+          }
+
+          var position,
+              position1K,
+              offset = s.isHTML5 ? Math.max(nMsecOffset, 0) : Math.min(s.duration || s._iO.duration, Math.max(nMsecOffset, 0));
+          s.position = offset;
+          position1K = s.position / msecScale;
+
+          s._resetOnPosition(s.position);
+
+          s._iO.position = offset;
+
+          if (!s.isHTML5) {
+            position = fV === 9 ? s.position : position1K;
+
+            if (s.readyState && s.readyState !== 2) {
+              flash._setPosition(s.id, position, s.paused || !s.playState, s._iO.multiShot);
+            }
+          } else if (s._a) {
+            if (s._html5_canplay) {
+              if (s._a.currentTime.toFixed(3) !== position1K.toFixed(3)) {
+                try {
+                  s._a.currentTime = position1K;
+
+                  if (s.playState === 0 || s.paused) {
+                    s._a.pause();
+                  }
+                } catch (e) {}
+              }
+            } else if (position1K) {
+              return s;
+            }
+
+            if (s.paused) {
+              s._onTimer(true);
+            }
+          }
+
+          return s;
+        };
+
+        this.pause = function (_bCallFlash) {
+          if (s.paused || s.playState === 0 && s.readyState !== 1) return s;
+          s.paused = true;
+
+          if (!s.isHTML5) {
+            if (_bCallFlash || _bCallFlash === _undefined) {
+              flash._pause(s.id, s._iO.multiShot);
+            }
+          } else {
+            s._setup_html5().pause();
+
+            stop_html5_timer();
+          }
+
+          if (s._iO.onpause) {
+            s._iO.onpause.apply(s);
+          }
+
+          return s;
+        };
+
+        this.resume = function () {
+          var instanceOptions = s._iO;
+          if (!s.paused) return s;
+          s.paused = false;
+          s.playState = 1;
+
+          if (!s.isHTML5) {
+            if (instanceOptions.isMovieStar && !instanceOptions.serverURL) {
+              s.setPosition(s.position);
+            }
+
+            flash._pause(s.id, instanceOptions.multiShot);
+          } else {
+            s._setup_html5().play();
+
+            start_html5_timer();
+          }
+
+          if (!onplay_called && instanceOptions.onplay) {
+            instanceOptions.onplay.apply(s);
+            onplay_called = true;
+          } else if (instanceOptions.onresume) {
+            instanceOptions.onresume.apply(s);
+          }
+
+          return s;
+        };
+
+        this.togglePause = function () {
+          if (s.playState === 0) {
+            s.play({
+              position: fV === 9 && !s.isHTML5 ? s.position : s.position / msecScale
+            });
+            return s;
+          }
+
+          if (s.paused) {
+            s.resume();
+          } else {
+            s.pause();
+          }
+
+          return s;
+        };
+
+        this.setPan = function (nPan, bInstanceOnly) {
+          if (nPan === _undefined) {
+            nPan = 0;
+          }
+
+          if (bInstanceOnly === _undefined) {
+            bInstanceOnly = false;
+          }
+
+          if (!s.isHTML5) {
+            flash._setPan(s.id, nPan);
+          }
+
+          s._iO.pan = nPan;
+
+          if (!bInstanceOnly) {
+            s.pan = nPan;
+            s.options.pan = nPan;
+          }
+
+          return s;
+        };
+
+        this.setVolume = function (nVol, _bInstanceOnly) {
+          if (nVol === _undefined) {
+            nVol = 100;
+          }
+
+          if (_bInstanceOnly === _undefined) {
+            _bInstanceOnly = false;
+          }
+
+          if (!s.isHTML5) {
+            flash._setVolume(s.id, sm2.muted && !s.muted || s.muted ? 0 : nVol);
+          } else if (s._a) {
+            if (sm2.muted && !s.muted) {
+              s.muted = true;
+              s._a.muted = true;
+            }
+
+            s._a.volume = Math.max(0, Math.min(1, nVol / 100));
+          }
+
+          s._iO.volume = nVol;
+
+          if (!_bInstanceOnly) {
+            s.volume = nVol;
+            s.options.volume = nVol;
+          }
+
+          return s;
+        };
+
+        this.mute = function () {
+          s.muted = true;
+
+          if (!s.isHTML5) {
+            flash._setVolume(s.id, 0);
+          } else if (s._a) {
+            s._a.muted = true;
+          }
+
+          return s;
+        };
+
+        this.unmute = function () {
+          s.muted = false;
+          var hasIO = s._iO.volume !== _undefined;
+
+          if (!s.isHTML5) {
+            flash._setVolume(s.id, hasIO ? s._iO.volume : s.options.volume);
+          } else if (s._a) {
+            s._a.muted = false;
+          }
+
+          return s;
+        };
+
+        this.toggleMute = function () {
+          return s.muted ? s.unmute() : s.mute();
+        };
+
+        this.onPosition = function (nPosition, oMethod, oScope) {
+          onPositionItems.push({
+            position: parseInt(nPosition, 10),
+            method: oMethod,
+            scope: oScope !== _undefined ? oScope : s,
+            fired: false
+          });
+          return s;
+        };
+
+        this.onposition = this.onPosition;
+
+        this.clearOnPosition = function (nPosition, oMethod) {
+          var i;
+          nPosition = parseInt(nPosition, 10);
+
+          if (isNaN(nPosition)) {
+            return;
+          }
+
+          for (i = 0; i < onPositionItems.length; i++) {
+            if (nPosition === onPositionItems[i].position) {
+              if (!oMethod || oMethod === onPositionItems[i].method) {
+                if (onPositionItems[i].fired) {
+                  onPositionFired--;
+                }
+
+                onPositionItems.splice(i, 1);
+              }
+            }
+          }
+        };
+
+        this._processOnPosition = function () {
+          var i,
+              item,
+              j = onPositionItems.length;
+          if (!j || !s.playState || onPositionFired >= j) return false;
+
+          for (i = j - 1; i >= 0; i--) {
+            item = onPositionItems[i];
+
+            if (!item.fired && s.position >= item.position) {
+              item.fired = true;
+              onPositionFired++;
+              item.method.apply(item.scope, [item.position]);
+              j = onPositionItems.length;
+            }
+          }
+
+          return true;
+        };
+
+        this._resetOnPosition = function (nPosition) {
+          var i,
+              item,
+              j = onPositionItems.length;
+          if (!j) return false;
+
+          for (i = j - 1; i >= 0; i--) {
+            item = onPositionItems[i];
+
+            if (item.fired && nPosition <= item.position) {
+              item.fired = false;
+              onPositionFired--;
+            }
+          }
+
+          return true;
+        };
+
+        applyFromTo = function applyFromTo() {
+          var instanceOptions = s._iO,
+              f = instanceOptions.from,
+              t = instanceOptions.to,
+              start,
+              _end2;
+
+          _end2 = function end() {
+            s.clearOnPosition(t, _end2);
+            s.stop();
+          };
+
+          start = function start() {
+            if (t !== null && !isNaN(t)) {
+              s.onPosition(t, _end2);
+            }
+          };
+
+          if (f !== null && !isNaN(f)) {
+            instanceOptions.position = f;
+            instanceOptions.multiShot = false;
+            start();
+          }
+
+          return instanceOptions;
+        };
+
+        attachOnPosition = function attachOnPosition() {
+          var item,
+              op = s._iO.onposition;
+
+          if (op) {
+            for (item in op) {
+              if (op.hasOwnProperty(item)) {
+                s.onPosition(parseInt(item, 10), op[item]);
+              }
+            }
+          }
+        };
+
+        detachOnPosition = function detachOnPosition() {
+          var item,
+              op = s._iO.onposition;
+
+          if (op) {
+            for (item in op) {
+              if (op.hasOwnProperty(item)) {
+                s.clearOnPosition(parseInt(item, 10));
+              }
+            }
+          }
+        };
+
+        start_html5_timer = function start_html5_timer() {
+          if (s.isHTML5) {
+            startTimer(s);
+          }
+        };
+
+        stop_html5_timer = function stop_html5_timer() {
+          if (s.isHTML5) {
+            stopTimer(s);
+          }
+        };
+
+        resetProperties = function resetProperties(retainPosition) {
+          if (!retainPosition) {
+            onPositionItems = [];
+            onPositionFired = 0;
+          }
+
+          onplay_called = false;
+          s._hasTimer = null;
+          s._a = null;
+          s._html5_canplay = false;
+          s.bytesLoaded = null;
+          s.bytesTotal = null;
+          s.duration = s._iO && s._iO.duration ? s._iO.duration : null;
+          s.durationEstimate = null;
+          s.buffered = [];
+          s.eqData = [];
+          s.eqData.left = [];
+          s.eqData.right = [];
+          s.failures = 0;
+          s.isBuffering = false;
+          s.instanceOptions = {};
+          s.instanceCount = 0;
+          s.loaded = false;
+          s.metadata = {};
+          s.readyState = 0;
+          s.muted = false;
+          s.paused = false;
+          s.peakData = {
+            left: 0,
+            right: 0
+          };
+          s.waveformData = {
+            left: [],
+            right: []
+          };
+          s.playState = 0;
+          s.position = null;
+          s.id3 = {};
+        };
+
+        resetProperties();
+
+        this._onTimer = function (bForce) {
+          var duration,
+              isNew = false,
+              time,
+              x = {};
+
+          if (s._hasTimer || bForce) {
+            if (s._a && (bForce || (s.playState > 0 || s.readyState === 1) && !s.paused)) {
+              duration = s._get_html5_duration();
+
+              if (duration !== lastHTML5State.duration) {
+                lastHTML5State.duration = duration;
+                s.duration = duration;
+                isNew = true;
+              }
+
+              s.durationEstimate = s.duration;
+              time = s._a.currentTime * msecScale || 0;
+
+              if (time !== lastHTML5State.time) {
+                lastHTML5State.time = time;
+                isNew = true;
+              }
+
+              if (isNew || bForce) {
+                s._whileplaying(time, x, x, x, x);
+              }
+            }
+          }
+
+          return isNew;
+        };
+
+        this._get_html5_duration = function () {
+          var instanceOptions = s._iO,
+              d = s._a && s._a.duration ? s._a.duration * msecScale : instanceOptions && instanceOptions.duration ? instanceOptions.duration : null,
+              result = d && !isNaN(d) && d !== Infinity ? d : null;
+          return result;
+        };
+
+        this._apply_loop = function (a, nLoops) {
+          a.loop = nLoops > 1 ? 'loop' : '';
+        };
+
+        this._setup_html5 = function (options) {
+          var instanceOptions = _mixin2(s._iO, options),
+              a = useGlobalHTML5Audio ? globalHTML5Audio : s._a,
+              dURL = decodeURI(instanceOptions.url),
+              sameURL;
+
+          if (useGlobalHTML5Audio) {
+            if (dURL === decodeURI(lastGlobalHTML5URL)) {
+              sameURL = true;
+            }
+          } else if (dURL === decodeURI(lastURL)) {
+            sameURL = true;
+          }
+
+          if (a) {
+            if (a._s) {
+              if (useGlobalHTML5Audio) {
+                if (a._s && a._s.playState && !sameURL) {
+                  a._s.stop();
+                }
+              } else if (!useGlobalHTML5Audio && dURL === decodeURI(lastURL)) {
+                s._apply_loop(a, instanceOptions.loops);
+
+                return a;
+              }
+            }
+
+            if (!sameURL) {
+              if (lastURL) {
+                resetProperties(false);
+              }
+
+              a.src = instanceOptions.url;
+              s.url = instanceOptions.url;
+              lastURL = instanceOptions.url;
+              lastGlobalHTML5URL = instanceOptions.url;
+              a._called_load = false;
+            }
+          } else {
+            if (instanceOptions.autoLoad || instanceOptions.autoPlay) {
+              s._a = new Audio(instanceOptions.url);
+
+              s._a.load();
+            } else {
+              s._a = isOpera && opera.version() < 10 ? new Audio(null) : new Audio();
+            }
+
+            a = s._a;
+            a._called_load = false;
+
+            if (useGlobalHTML5Audio) {
+              globalHTML5Audio = a;
+            }
+          }
+
+          s.isHTML5 = true;
+          s._a = a;
+          a._s = s;
+          add_html5_events();
+
+          s._apply_loop(a, instanceOptions.loops);
+
+          if (instanceOptions.autoLoad || instanceOptions.autoPlay) {
+            s.load();
+          } else {
+            a.autobuffer = false;
+            a.preload = 'auto';
+          }
+
+          return a;
+        };
+
+        add_html5_events = function add_html5_events() {
+          if (s._a._added_events) return false;
+          var f;
+
+          function add(oEvt, oFn, bCapture) {
+            return s._a ? s._a.addEventListener(oEvt, oFn, bCapture || false) : null;
+          }
+
+          s._a._added_events = true;
+
+          for (f in html5_events) {
+            if (html5_events.hasOwnProperty(f)) {
+              add(f, html5_events[f]);
+            }
+          }
+
+          return true;
+        };
+
+        remove_html5_events = function remove_html5_events() {
+          var f;
+
+          function remove(oEvt, oFn, bCapture) {
+            return s._a ? s._a.removeEventListener(oEvt, oFn, bCapture || false) : null;
+          }
+
+          s._a._added_events = false;
+
+          for (f in html5_events) {
+            if (html5_events.hasOwnProperty(f)) {
+              remove(f, html5_events[f]);
+            }
+          }
+        };
+
+        this._onload = function (nSuccess) {
+          var loadOK = !!nSuccess || !s.isHTML5 && fV === 8 && s.duration;
+          s.loaded = loadOK;
+          s.readyState = loadOK ? 3 : 2;
+
+          s._onbufferchange(0);
+
+          if (!loadOK && !s.isHTML5) {
+            s._onerror();
+          }
+
+          if (s._iO.onload) {
+            wrapCallback(s, function () {
+              s._iO.onload.apply(s, [loadOK]);
+            });
+          }
+
+          return true;
+        };
+
+        this._onerror = function (errorCode, description) {
+          if (s._iO.onerror) {
+            wrapCallback(s, function () {
+              s._iO.onerror.apply(s, [errorCode, description]);
+            });
+          }
+        };
+
+        this._onbufferchange = function (nIsBuffering) {
+          if (s.playState === 0) return false;
+          if (nIsBuffering && s.isBuffering || !nIsBuffering && !s.isBuffering) return false;
+          s.isBuffering = nIsBuffering === 1;
+
+          if (s._iO.onbufferchange) {
+            s._iO.onbufferchange.apply(s, [nIsBuffering]);
+          }
+
+          return true;
+        };
+
+        this._onsuspend = function () {
+          if (s._iO.onsuspend) {
+            s._iO.onsuspend.apply(s);
+          }
+
+          return true;
+        };
+
+        this._onfailure = function (msg, level, code) {
+          s.failures++;
+
+          if (s._iO.onfailure && s.failures === 1) {
+            s._iO.onfailure(msg, level, code);
+          }
+        };
+
+        this._onwarning = function (msg, level, code) {
+          if (s._iO.onwarning) {
+            s._iO.onwarning(msg, level, code);
+          }
+        };
+
+        this._onfinish = function () {
+          var io_onfinish = s._iO.onfinish;
+
+          s._onbufferchange(0);
+
+          s._resetOnPosition(0);
+
+          if (s.instanceCount) {
+            s.instanceCount--;
+
+            if (!s.instanceCount) {
+              detachOnPosition();
+              s.playState = 0;
+              s.paused = false;
+              s.instanceCount = 0;
+              s.instanceOptions = {};
+              s._iO = {};
+              stop_html5_timer();
+
+              if (s.isHTML5) {
+                s.position = 0;
+              }
+            }
+
+            if (!s.instanceCount || s._iO.multiShotEvents) {
+              if (io_onfinish) {
+                wrapCallback(s, function () {
+                  io_onfinish.apply(s);
+                });
+              }
+            }
+          }
+        };
+
+        this._whileloading = function (nBytesLoaded, nBytesTotal, nDuration, nBufferLength) {
+          var instanceOptions = s._iO;
+          s.bytesLoaded = nBytesLoaded;
+          s.bytesTotal = nBytesTotal;
+          s.duration = Math.floor(nDuration);
+          s.bufferLength = nBufferLength;
+
+          if (!s.isHTML5 && !instanceOptions.isMovieStar) {
+            if (instanceOptions.duration) {
+              s.durationEstimate = s.duration > instanceOptions.duration ? s.duration : instanceOptions.duration;
+            } else {
+              s.durationEstimate = parseInt(s.bytesTotal / s.bytesLoaded * s.duration, 10);
+            }
+          } else {
+            s.durationEstimate = s.duration;
+          }
+
+          if (!s.isHTML5) {
+            s.buffered = [{
+              start: 0,
+              end: s.duration
+            }];
+          }
+
+          if ((s.readyState !== 3 || s.isHTML5) && instanceOptions.whileloading) {
+            instanceOptions.whileloading.apply(s);
+          }
+        };
+
+        this._whileplaying = function (nPosition, oPeakData, oWaveformDataLeft, oWaveformDataRight, oEQData) {
+          var instanceOptions = s._iO,
+              eqLeft;
+          if (isNaN(nPosition) || nPosition === null) return false;
+          s.position = Math.max(0, nPosition);
+
+          s._processOnPosition();
+
+          if (!s.isHTML5 && fV > 8) {
+            if (instanceOptions.usePeakData && oPeakData !== _undefined && oPeakData) {
+              s.peakData = {
+                left: oPeakData.leftPeak,
+                right: oPeakData.rightPeak
+              };
+            }
+
+            if (instanceOptions.useWaveformData && oWaveformDataLeft !== _undefined && oWaveformDataLeft) {
+              s.waveformData = {
+                left: oWaveformDataLeft.split(','),
+                right: oWaveformDataRight.split(',')
+              };
+            }
+
+            if (instanceOptions.useEQData) {
+              if (oEQData !== _undefined && oEQData && oEQData.leftEQ) {
+                eqLeft = oEQData.leftEQ.split(',');
+                s.eqData = eqLeft;
+                s.eqData.left = eqLeft;
+
+                if (oEQData.rightEQ !== _undefined && oEQData.rightEQ) {
+                  s.eqData.right = oEQData.rightEQ.split(',');
+                }
+              }
+            }
+          }
+
+          if (s.playState === 1) {
+            if (!s.isHTML5 && fV === 8 && !s.position && s.isBuffering) {
+              s._onbufferchange(0);
+            }
+
+            if (instanceOptions.whileplaying) {
+              instanceOptions.whileplaying.apply(s);
+            }
+          }
+
+          return true;
+        };
+
+        this._oncaptiondata = function (oData) {
+          s.captiondata = oData;
+
+          if (s._iO.oncaptiondata) {
+            s._iO.oncaptiondata.apply(s, [oData]);
+          }
+        };
+
+        this._onmetadata = function (oMDProps, oMDData) {
+          var oData = {},
+              i,
+              j;
+
+          for (i = 0, j = oMDProps.length; i < j; i++) {
+            oData[oMDProps[i]] = oMDData[i];
+          }
+
+          s.metadata = oData;
+
+          if (s._iO.onmetadata) {
+            s._iO.onmetadata.call(s, s.metadata);
+          }
+        };
+
+        this._onid3 = function (oID3Props, oID3Data) {
+          var oData = [],
+              i,
+              j;
+
+          for (i = 0, j = oID3Props.length; i < j; i++) {
+            oData[oID3Props[i]] = oID3Data[i];
+          }
+
+          s.id3 = _mixin2(s.id3, oData);
+
+          if (s._iO.onid3) {
+            s._iO.onid3.apply(s);
+          }
+        };
+
+        this._onconnect = function (bSuccess) {
+          bSuccess = bSuccess === 1;
+          s.connected = bSuccess;
+
+          if (bSuccess) {
+            s.failures = 0;
+
+            if (idCheck(s.id)) {
+              if (s.getAutoPlay()) {
+                s.play(_undefined, s.getAutoPlay());
+              } else if (s._iO.autoLoad) {
+                s.load();
+              }
+            }
+
+            if (s._iO.onconnect) {
+              s._iO.onconnect.apply(s, [bSuccess]);
+            }
+          }
+        };
+
+        this._ondataerror = function (sError) {
+          if (s.playState > 0) {
+            if (s._iO.ondataerror) {
+              s._iO.ondataerror.apply(s);
+            }
+          }
+        };
+      };
+
+      getDocument = function getDocument() {
+        return doc.body || doc.getElementsByTagName('div')[0];
+      };
+
+      id = function id(sID) {
+        return doc.getElementById(sID);
+      };
+
+      _mixin2 = function mixin(oMain, oAdd) {
+        var o1 = oMain || {},
+            o2,
+            o;
+        o2 = oAdd === _undefined ? sm2.defaultOptions : oAdd;
+
+        for (o in o2) {
+          if (o2.hasOwnProperty(o) && o1[o] === _undefined) {
+            if (typeof o2[o] !== 'object' || o2[o] === null) {
+              o1[o] = o2[o];
+            } else {
+              o1[o] = _mixin2(o1[o], o2[o]);
+            }
+          }
+        }
+
+        return o1;
+      };
+
+      wrapCallback = function wrapCallback(oSound, callback) {
+        if (!oSound.isHTML5 && fV === 8) {
+          window.setTimeout(callback, 0);
+        } else {
+          callback();
+        }
+      };
+
+      extraOptions = {
+        onready: 1,
+        ontimeout: 1,
+        defaultOptions: 1,
+        flash9Options: 1,
+        movieStarOptions: 1
+      };
+
+      _assign2 = function assign(o, oParent) {
+        var i,
+            result = true,
+            hasParent = oParent !== _undefined,
+            setupOptions = sm2.setupOptions,
+            bonusOptions = extraOptions;
+
+        for (i in o) {
+          if (o.hasOwnProperty(i)) {
+            if (typeof o[i] !== 'object' || o[i] === null || o[i] instanceof Array || o[i] instanceof RegExp) {
+              if (hasParent && bonusOptions[oParent] !== _undefined) {
+                sm2[oParent][i] = o[i];
+              } else if (setupOptions[i] !== _undefined) {
+                sm2.setupOptions[i] = o[i];
+                sm2[i] = o[i];
+              } else if (bonusOptions[i] === _undefined) {
+                result = false;
+              } else if (sm2[i] instanceof Function) {
+                sm2[i].apply(sm2, o[i] instanceof Array ? o[i] : [o[i]]);
+              } else {
+                sm2[i] = o[i];
+              }
+            } else if (bonusOptions[i] === _undefined) {
+              result = false;
+            } else {
+              return _assign2(o[i], i);
+            }
+          }
+        }
+
+        return result;
+      };
+
+      function preferFlashCheck(kind) {
+        return sm2.preferFlash && hasFlash && !sm2.ignoreFlash && sm2.flash[kind] !== _undefined && sm2.flash[kind];
+      }
+
+      event = function () {
+        var old = window.attachEvent,
+            evt = {
+          add: old ? 'attachEvent' : 'addEventListener',
+          remove: old ? 'detachEvent' : 'removeEventListener'
+        };
+
+        function getArgs(oArgs) {
+          var args = slice.call(oArgs),
+              len = args.length;
+
+          if (old) {
+            args[1] = 'on' + args[1];
+
+            if (len > 3) {
+              args.pop();
+            }
+          } else if (len === 3) {
+            args.push(false);
+          }
+
+          return args;
+        }
+
+        function apply(args, sType) {
+          var element = args.shift(),
+              method = [evt[sType]];
+
+          if (old) {
+            element[method](args[0], args[1]);
+          } else {
+            element[method].apply(element, args);
+          }
+        }
+
+        function add() {
+          apply(getArgs(arguments), 'add');
+        }
+
+        function remove() {
+          apply(getArgs(arguments), 'remove');
+        }
+
+        return {
+          add: add,
+          remove: remove
+        };
+      }();
+
+      function html5_event(oFn) {
+        return function (e) {
+          var s = this._s,
+              result;
+
+          if (!s || !s._a) {
+            result = null;
+          } else {
+            result = oFn.call(this, e);
+          }
+
+          return result;
+        };
+      }
+
+      html5_events = {
+        abort: html5_event(function () {}),
+        canplay: html5_event(function () {
+          var s = this._s,
+              position1K;
+
+          if (s._html5_canplay) {
+            return;
+          }
+
+          s._html5_canplay = true;
+
+          s._onbufferchange(0);
+
+          position1K = s._iO.position !== _undefined && !isNaN(s._iO.position) ? s._iO.position / msecScale : null;
+
+          if (this.currentTime !== position1K) {
+            try {
+              this.currentTime = position1K;
+            } catch (ee) {}
+          }
+
+          if (s._iO._oncanplay) {
+            s._iO._oncanplay();
+          }
+        }),
+        canplaythrough: html5_event(function () {
+          var s = this._s;
+
+          if (!s.loaded) {
+            s._onbufferchange(0);
+
+            s._whileloading(s.bytesLoaded, s.bytesTotal, s._get_html5_duration());
+
+            s._onload(true);
+          }
+        }),
+        durationchange: html5_event(function () {
+          var s = this._s,
+              duration;
+          duration = s._get_html5_duration();
+
+          if (!isNaN(duration) && duration !== s.duration) {
+            s.durationEstimate = s.duration = duration;
+          }
+        }),
+        ended: html5_event(function () {
+          var s = this._s;
+
+          s._onfinish();
+        }),
+        error: html5_event(function () {
+          var description = html5ErrorCodes[this.error.code] || null;
+
+          this._s._onload(false);
+
+          this._s._onerror(this.error.code, description);
+        }),
+        loadeddata: html5_event(function () {
+          var s = this._s;
+
+          if (!s._loaded && !isSafari) {
+            s.duration = s._get_html5_duration();
+          }
+        }),
+        loadedmetadata: html5_event(function () {}),
+        loadstart: html5_event(function () {
+          this._s._onbufferchange(1);
+        }),
+        play: html5_event(function () {
+          this._s._onbufferchange(0);
+        }),
+        playing: html5_event(function () {
+          this._s._onbufferchange(0);
+        }),
+        progress: html5_event(function (e) {
+          var s = this._s,
+              i,
+              j,
+              buffered = 0,
+              isProgress = e.type === 'progress',
+              ranges = e.target.buffered,
+              loaded = e.loaded || 0,
+              total = e.total || 1;
+          s.buffered = [];
+
+          if (ranges && ranges.length) {
+            for (i = 0, j = ranges.length; i < j; i++) {
+              s.buffered.push({
+                start: ranges.start(i) * msecScale,
+                end: ranges.end(i) * msecScale
+              });
+            }
+
+            buffered = (ranges.end(0) - ranges.start(0)) * msecScale;
+            loaded = Math.min(1, buffered / (e.target.duration * msecScale));
+          }
+
+          if (!isNaN(loaded)) {
+            s._whileloading(loaded, total, s._get_html5_duration());
+
+            if (loaded && total && loaded === total) {
+              html5_events.canplaythrough.call(this, e);
+            }
+          }
+        }),
+        ratechange: html5_event(function () {}),
+        suspend: html5_event(function (e) {
+          var s = this._s;
+          html5_events.progress.call(this, e);
+
+          s._onsuspend();
+        }),
+        stalled: html5_event(function () {}),
+        timeupdate: html5_event(function () {
+          this._s._onTimer();
+        }),
+        waiting: html5_event(function () {
+          var s = this._s;
+
+          s._onbufferchange(1);
+        })
+      };
+
+      html5OK = function html5OK(iO) {
+        var result;
+
+        if (!iO || !iO.type && !iO.url && !iO.serverURL) {
+          result = false;
+        } else if (iO.serverURL || iO.type && preferFlashCheck(iO.type)) {
+          result = false;
+        } else {
+          result = iO.type ? html5CanPlay({
+            type: iO.type
+          }) : html5CanPlay({
+            url: iO.url
+          }) || sm2.html5Only || iO.url.match(/data:/i);
+        }
+
+        return result;
+      };
+
+      html5Unload = function html5Unload(oAudio) {
+        var url;
+
+        if (oAudio) {
+          url = isSafari ? emptyURL : sm2.html5.canPlayType('audio/wav') ? emptyWAV : emptyURL;
+          oAudio.src = url;
+
+          if (oAudio._called_unload !== _undefined) {
+            oAudio._called_load = false;
+          }
+        }
+
+        if (useGlobalHTML5Audio) {
+          lastGlobalHTML5URL = null;
+        }
+
+        return url;
+      };
+
+      html5CanPlay = function html5CanPlay(o) {
+        if (!sm2.useHTML5Audio || !sm2.hasHTML5) return false;
+        var url = o.url || null,
+            mime = o.type || null,
+            aF = sm2.audioFormats,
+            result,
+            offset,
+            fileExt,
+            item;
+        if (mime && sm2.html5[mime] !== _undefined) return sm2.html5[mime] && !preferFlashCheck(mime);
+
+        if (!html5Ext) {
+          html5Ext = [];
+
+          for (item in aF) {
+            if (aF.hasOwnProperty(item)) {
+              html5Ext.push(item);
+
+              if (aF[item].related) {
+                html5Ext = html5Ext.concat(aF[item].related);
+              }
+            }
+          }
+
+          html5Ext = new RegExp('\\.(' + html5Ext.join('|') + ')(\\?.*)?$', 'i');
+        }
+
+        fileExt = url ? url.toLowerCase().match(html5Ext) : null;
+
+        if (!fileExt || !fileExt.length) {
+          if (!mime) {
+            result = false;
+          } else {
+            offset = mime.indexOf(';');
+            fileExt = (offset !== -1 ? mime.substr(0, offset) : mime).substr(6);
+          }
+        } else {
+          fileExt = fileExt[1];
+        }
+
+        if (fileExt && sm2.html5[fileExt] !== _undefined) {
+          result = sm2.html5[fileExt] && !preferFlashCheck(fileExt);
+        } else {
+          mime = 'audio/' + fileExt;
+          result = sm2.html5.canPlayType({
+            type: mime
+          });
+          sm2.html5[fileExt] = result;
+          result = result && sm2.html5[mime] && !preferFlashCheck(mime);
+        }
+
+        return result;
+      };
+
+      testHTML5 = function testHTML5() {
+        if (!sm2.useHTML5Audio || !sm2.hasHTML5) {
+          sm2.html5.usingFlash = true;
+          needsFlash = true;
+          return false;
+        }
+
+        var a = Audio !== _undefined ? isOpera && opera.version() < 10 ? new Audio(null) : new Audio() : null,
+            item,
+            lookup,
+            support = {},
+            aF,
+            i;
+
+        function cp(m) {
+          var canPlay,
+              j,
+              result = false,
+              isOK = false;
+          if (!a || typeof a.canPlayType !== 'function') return result;
+
+          if (m instanceof Array) {
+            for (i = 0, j = m.length; i < j; i++) {
+              if (sm2.html5[m[i]] || a.canPlayType(m[i]).match(sm2.html5Test)) {
+                isOK = true;
+                sm2.html5[m[i]] = true;
+                sm2.flash[m[i]] = !!m[i].match(flashMIME);
+              }
+            }
+
+            result = isOK;
+          } else {
+            canPlay = a && typeof a.canPlayType === 'function' ? a.canPlayType(m) : false;
+            result = !!(canPlay && canPlay.match(sm2.html5Test));
+          }
+
+          return result;
+        }
+
+        aF = sm2.audioFormats;
+
+        for (item in aF) {
+          if (aF.hasOwnProperty(item)) {
+            lookup = 'audio/' + item;
+            support[item] = cp(aF[item].type);
+            support[lookup] = support[item];
+
+            if (item.match(flashMIME)) {
+              sm2.flash[item] = true;
+              sm2.flash[lookup] = true;
+            } else {
+              sm2.flash[item] = false;
+              sm2.flash[lookup] = false;
+            }
+
+            if (aF[item] && aF[item].related) {
+              for (i = aF[item].related.length - 1; i >= 0; i--) {
+                support['audio/' + aF[item].related[i]] = support[item];
+                sm2.html5[aF[item].related[i]] = support[item];
+                sm2.flash[aF[item].related[i]] = support[item];
+              }
+            }
+          }
+        }
+
+        support.canPlayType = a ? cp : null;
+        sm2.html5 = _mixin2(sm2.html5, support);
+        sm2.html5.usingFlash = featureCheck();
+        needsFlash = sm2.html5.usingFlash;
+        return true;
+      };
+
+      strings = {};
+
+      str = function str() {};
+
+      loopFix = function loopFix(sOpt) {
+        if (fV === 8 && sOpt.loops > 1 && sOpt.stream) {
+          sOpt.stream = false;
+        }
+
+        return sOpt;
+      };
+
+      policyFix = function policyFix(sOpt, sPre) {
+        if (sOpt && !sOpt.usePolicyFile && (sOpt.onid3 || sOpt.usePeakData || sOpt.useWaveformData || sOpt.useEQData)) {
+          sOpt.usePolicyFile = true;
+        }
+
+        return sOpt;
+      };
+
+      doNothing = function doNothing() {
+        return false;
+      };
+
+      disableObject = function disableObject(o) {
+        var oProp;
+
+        for (oProp in o) {
+          if (o.hasOwnProperty(oProp) && typeof o[oProp] === 'function') {
+            o[oProp] = doNothing;
+          }
+        }
+
+        oProp = null;
+      };
+
+      failSafely = function failSafely(bNoDisable) {
+        if (bNoDisable === _undefined) {
+          bNoDisable = false;
+        }
+
+        if (disabled || bNoDisable) {
+          sm2.disable(bNoDisable);
+        }
+      };
+
+      normalizeMovieURL = function normalizeMovieURL(movieURL) {
+        var urlParams = null,
+            url;
+
+        if (movieURL) {
+          if (movieURL.match(/\.swf(\?.*)?$/i)) {
+            urlParams = movieURL.substr(movieURL.toLowerCase().lastIndexOf('.swf?') + 4);
+            if (urlParams) return movieURL;
+          } else if (movieURL.lastIndexOf('/') !== movieURL.length - 1) {
+            movieURL += '/';
+          }
+        }
+
+        url = (movieURL && movieURL.lastIndexOf('/') !== -1 ? movieURL.substr(0, movieURL.lastIndexOf('/') + 1) : './') + sm2.movieURL;
+
+        if (sm2.noSWFCache) {
+          url += '?ts=' + new Date().getTime();
+        }
+
+        return url;
+      };
+
+      setVersionInfo = function setVersionInfo() {
+        fV = parseInt(sm2.flashVersion, 10);
+
+        if (fV !== 8 && fV !== 9) {
+          sm2.flashVersion = fV = defaultFlashVersion;
+        }
+
+        var isDebug = sm2.debugMode || sm2.debugFlash ? '_debug.swf' : '.swf';
+
+        if (sm2.useHTML5Audio && !sm2.html5Only && sm2.audioFormats.mp4.required && fV < 9) {
+          sm2.flashVersion = fV = 9;
+        }
+
+        sm2.version = sm2.versionNumber + (sm2.html5Only ? ' (HTML5-only mode)' : fV === 9 ? ' (AS3/Flash 9)' : ' (AS2/Flash 8)');
+
+        if (fV > 8) {
+          sm2.defaultOptions = _mixin2(sm2.defaultOptions, sm2.flash9Options);
+          sm2.features.buffering = true;
+          sm2.defaultOptions = _mixin2(sm2.defaultOptions, sm2.movieStarOptions);
+          sm2.filePatterns.flash9 = new RegExp('\\.(mp3|' + netStreamTypes.join('|') + ')(\\?.*)?$', 'i');
+          sm2.features.movieStar = true;
+        } else {
+          sm2.features.movieStar = false;
+        }
+
+        sm2.filePattern = sm2.filePatterns[fV !== 8 ? 'flash9' : 'flash8'];
+        sm2.movieURL = (fV === 8 ? 'soundmanager2.swf' : 'soundmanager2_flash9.swf').replace('.swf', isDebug);
+        sm2.features.peakData = sm2.features.waveformData = sm2.features.eqData = fV > 8;
+      };
+
+      setPolling = function setPolling(bPolling, bHighPerformance) {
+        if (!flash) {
+          return;
+        }
+
+        flash._setPolling(bPolling, bHighPerformance);
+      };
+
+      initDebug = function initDebug() {};
+
+      idCheck = this.getSoundById;
+
+      getSWFCSS = function getSWFCSS() {
+        var css = [];
+
+        if (sm2.debugMode) {
+          css.push(swfCSS.sm2Debug);
+        }
+
+        if (sm2.debugFlash) {
+          css.push(swfCSS.flashDebug);
+        }
+
+        if (sm2.useHighPerformance) {
+          css.push(swfCSS.highPerf);
+        }
+
+        return css.join(' ');
+      };
+
+      flashBlockHandler = function flashBlockHandler() {
+        var name = str('fbHandler'),
+            p = sm2.getMoviePercent(),
+            css = swfCSS,
+            error = {
+          type: 'FLASHBLOCK'
+        };
+
+        if (sm2.html5Only) {
+          return;
+        }
+
+        if (!sm2.ok()) {
+          if (needsFlash) {
+            sm2.oMC.className = getSWFCSS() + ' ' + css.swfDefault + ' ' + (p === null ? css.swfTimedout : css.swfError);
+          }
+
+          sm2.didFlashBlock = true;
+          processOnEvents({
+            type: 'ontimeout',
+            ignoreInit: true,
+            error: error
+          });
+          catchError(error);
+        } else {
+          if (sm2.oMC) {
+            sm2.oMC.className = [getSWFCSS(), css.swfDefault, css.swfLoaded + (sm2.didFlashBlock ? ' ' + css.swfUnblocked : '')].join(' ');
+          }
+        }
+      };
+
+      addOnEvent = function addOnEvent(sType, oMethod, oScope) {
+        if (on_queue[sType] === _undefined) {
+          on_queue[sType] = [];
+        }
+
+        on_queue[sType].push({
+          method: oMethod,
+          scope: oScope || null,
+          fired: false
+        });
+      };
+
+      processOnEvents = function processOnEvents(oOptions) {
+        if (!oOptions) {
+          oOptions = {
+            type: sm2.ok() ? 'onready' : 'ontimeout'
+          };
+        }
+
+        if (!didInit && oOptions && !oOptions.ignoreInit) return false;
+        if (oOptions.type === 'ontimeout' && (sm2.ok() || disabled && !oOptions.ignoreInit)) return false;
+        var status = {
+          success: oOptions && oOptions.ignoreInit ? sm2.ok() : !disabled
+        },
+            srcQueue = oOptions && oOptions.type ? on_queue[oOptions.type] || [] : [],
+            queue = [],
+            i,
+            j,
+            args = [status],
+            canRetry = needsFlash && !sm2.ok();
+
+        if (oOptions.error) {
+          args[0].error = oOptions.error;
+        }
+
+        for (i = 0, j = srcQueue.length; i < j; i++) {
+          if (srcQueue[i].fired !== true) {
+            queue.push(srcQueue[i]);
+          }
+        }
+
+        if (queue.length) {
+          for (i = 0, j = queue.length; i < j; i++) {
+            if (queue[i].scope) {
+              queue[i].method.apply(queue[i].scope, args);
+            } else {
+              queue[i].method.apply(this, args);
+            }
+
+            if (!canRetry) {
+              queue[i].fired = true;
+            }
+          }
+        }
+
+        return true;
+      };
+
+      _initUserOnload2 = function initUserOnload() {
+        window.setTimeout(function () {
+          if (sm2.useFlashBlock) {
+            flashBlockHandler();
+          }
+
+          processOnEvents();
+
+          if (typeof sm2.onload === 'function') {
+            sm2.onload.apply(window);
+          }
+
+          if (sm2.waitForWindowLoad) {
+            event.add(window, 'load', _initUserOnload2);
+          }
+        }, 1);
+      };
+
+      detectFlash = function detectFlash() {
+        if (hasFlash !== _undefined) return hasFlash;
+        var hasPlugin = false,
+            n = navigator,
+            obj,
+            type,
+            types,
+            AX = window.ActiveXObject;
+        var nP;
+
+        try {
+          nP = n.plugins;
+        } catch (e) {
+          nP = undefined;
+        }
+
+        if (nP && nP.length) {
+          type = 'application/x-shockwave-flash';
+          types = n.mimeTypes;
+
+          if (types && types[type] && types[type].enabledPlugin && types[type].enabledPlugin.description) {
+            hasPlugin = true;
+          }
+        } else if (AX !== _undefined && !ua.match(/MSAppHost/i)) {
+          try {
+            obj = new AX('ShockwaveFlash.ShockwaveFlash');
+          } catch (e) {
+            obj = null;
+          }
+
+          hasPlugin = !!obj;
+          obj = null;
+        }
+
+        hasFlash = hasPlugin;
+        return hasPlugin;
+      };
+
+      featureCheck = function featureCheck() {
+        var flashNeeded,
+            item,
+            formats = sm2.audioFormats,
+            isSpecial = is_iDevice && !!ua.match(/os (1|2|3_0|3_1)\s/i);
+
+        if (isSpecial) {
+          sm2.hasHTML5 = false;
+          sm2.html5Only = true;
+
+          if (sm2.oMC) {
+            sm2.oMC.style.display = 'none';
+          }
+        } else if (sm2.useHTML5Audio) {
+          if (!sm2.html5 || !sm2.html5.canPlayType) {
+            sm2.hasHTML5 = false;
+          }
+        }
+
+        if (sm2.useHTML5Audio && sm2.hasHTML5) {
+          canIgnoreFlash = true;
+
+          for (item in formats) {
+            if (formats.hasOwnProperty(item)) {
+              if (formats[item].required) {
+                if (!sm2.html5.canPlayType(formats[item].type)) {
+                  canIgnoreFlash = false;
+                  flashNeeded = true;
+                } else if (sm2.preferFlash && (sm2.flash[item] || sm2.flash[formats[item].type])) {
+                  flashNeeded = true;
+                }
+              }
+            }
+          }
+        }
+
+        if (sm2.ignoreFlash) {
+          flashNeeded = false;
+          canIgnoreFlash = true;
+        }
+
+        sm2.html5Only = sm2.hasHTML5 && sm2.useHTML5Audio && !flashNeeded;
+        return !sm2.html5Only;
+      };
+
+      parseURL = function parseURL(url) {
+        var i,
+            j,
+            urlResult = 0,
+            result;
+
+        if (url instanceof Array) {
+          for (i = 0, j = url.length; i < j; i++) {
+            if (url[i] instanceof Object) {
+              if (sm2.canPlayMIME(url[i].type)) {
+                urlResult = i;
+                break;
+              }
+            } else if (sm2.canPlayURL(url[i])) {
+              urlResult = i;
+              break;
+            }
+          }
+
+          if (url[urlResult].url) {
+            url[urlResult] = url[urlResult].url;
+          }
+
+          result = url[urlResult];
+        } else {
+          result = url;
+        }
+
+        return result;
+      };
+
+      startTimer = function startTimer(oSound) {
+        if (!oSound._hasTimer) {
+          oSound._hasTimer = true;
+
+          if (!mobileHTML5 && sm2.html5PollingInterval) {
+            if (h5IntervalTimer === null && h5TimerCount === 0) {
+              h5IntervalTimer = setInterval(timerExecute, sm2.html5PollingInterval);
+            }
+
+            h5TimerCount++;
+          }
+        }
+      };
+
+      stopTimer = function stopTimer(oSound) {
+        if (oSound._hasTimer) {
+          oSound._hasTimer = false;
+
+          if (!mobileHTML5 && sm2.html5PollingInterval) {
+            h5TimerCount--;
+          }
+        }
+      };
+
+      timerExecute = function timerExecute() {
+        var i;
+
+        if (h5IntervalTimer !== null && !h5TimerCount) {
+          clearInterval(h5IntervalTimer);
+          h5IntervalTimer = null;
+          return;
+        }
+
+        for (i = sm2.soundIDs.length - 1; i >= 0; i--) {
+          if (sm2.sounds[sm2.soundIDs[i]].isHTML5 && sm2.sounds[sm2.soundIDs[i]]._hasTimer) {
+            sm2.sounds[sm2.soundIDs[i]]._onTimer();
+          }
+        }
+      };
+
+      catchError = function catchError(options) {
+        options = options !== _undefined ? options : {};
+
+        if (typeof sm2.onerror === 'function') {
+          sm2.onerror.apply(window, [{
+            type: options.type !== _undefined ? options.type : null
+          }]);
+        }
+
+        if (options.fatal !== _undefined && options.fatal) {
+          sm2.disable();
+        }
+      };
+
+      badSafariFix = function badSafariFix() {
+        if (!isBadSafari || !detectFlash()) {
+          return;
+        }
+
+        var aF = sm2.audioFormats,
+            i,
+            item;
+
+        for (item in aF) {
+          if (aF.hasOwnProperty(item)) {
+            if (item === 'mp3' || item === 'mp4') {
+              sm2.html5[item] = false;
+
+              if (aF[item] && aF[item].related) {
+                for (i = aF[item].related.length - 1; i >= 0; i--) {
+                  sm2.html5[aF[item].related[i]] = false;
+                }
+              }
+            }
+          }
+        }
+      };
+
+      this._setSandboxType = function (sandboxType) {};
+
+      this._externalInterfaceOK = function (swfVersion) {
+        if (sm2.swfLoaded) {
+          return;
+        }
+
+        sm2.swfLoaded = true;
+        tryInitOnFocus = false;
+
+        if (isBadSafari) {
+          badSafariFix();
+        }
+
+        setTimeout(init, isIE ? 100 : 1);
+      };
+
+      createMovie = function createMovie(movieID, movieURL) {
+        if (didAppend && appendSuccess) return false;
+
+        if (sm2.html5Only) {
+          setVersionInfo();
+          sm2.oMC = id(sm2.movieID);
+          init();
+          didAppend = true;
+          appendSuccess = true;
+          return false;
+        }
+
+        var remoteURL = movieURL || sm2.url,
+            localURL = sm2.altURL || remoteURL,
+            swfTitle = 'JS/Flash audio component (SoundManager 2)',
+            oTarget = getDocument(),
+            extraClass = getSWFCSS(),
+            isRTL = null,
+            html = doc.getElementsByTagName('html')[0],
+            oEmbed,
+            oMovie,
+            tmp,
+            movieHTML,
+            oEl,
+            s,
+            x,
+            sClass;
+        isRTL = html && html.dir && html.dir.match(/rtl/i);
+        movieID = movieID === _undefined ? sm2.id : movieID;
+
+        function param(name, value) {
+          return '<param name="' + name + '" value="' + value + '" />';
+        }
+
+        setVersionInfo();
+        sm2.url = normalizeMovieURL(overHTTP ? remoteURL : localURL);
+        movieURL = sm2.url;
+        sm2.wmode = !sm2.wmode && sm2.useHighPerformance ? 'transparent' : sm2.wmode;
+
+        if (sm2.wmode !== null && (ua.match(/msie 8/i) || !isIE && !sm2.useHighPerformance) && navigator.platform.match(/win32|win64/i)) {
+          messages.push(strings.spcWmode);
+          sm2.wmode = null;
+        }
+
+        oEmbed = {
+          name: movieID,
+          id: movieID,
+          src: movieURL,
+          quality: 'high',
+          allowScriptAccess: sm2.allowScriptAccess,
+          bgcolor: sm2.bgColor,
+          pluginspage: http + 'www.macromedia.com/go/getflashplayer',
+          title: swfTitle,
+          type: 'application/x-shockwave-flash',
+          wmode: sm2.wmode,
+          hasPriority: 'true'
+        };
+
+        if (sm2.debugFlash) {
+          oEmbed.FlashVars = 'debug=1';
+        }
+
+        if (!sm2.wmode) {
+          delete oEmbed.wmode;
+        }
+
+        if (isIE) {
+          oMovie = doc.createElement('div');
+          movieHTML = ['<object id="' + movieID + '" data="' + movieURL + '" type="' + oEmbed.type + '" title="' + oEmbed.title + '" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">', param('movie', movieURL), param('AllowScriptAccess', sm2.allowScriptAccess), param('quality', oEmbed.quality), sm2.wmode ? param('wmode', sm2.wmode) : '', param('bgcolor', sm2.bgColor), param('hasPriority', 'true'), sm2.debugFlash ? param('FlashVars', oEmbed.FlashVars) : '', '</object>'].join('');
+        } else {
+          oMovie = doc.createElement('embed');
+
+          for (tmp in oEmbed) {
+            if (oEmbed.hasOwnProperty(tmp)) {
+              oMovie.setAttribute(tmp, oEmbed[tmp]);
+            }
+          }
+        }
+
+        initDebug();
+        extraClass = getSWFCSS();
+        oTarget = getDocument();
+
+        if (oTarget) {
+          sm2.oMC = id(sm2.movieID) || doc.createElement('div');
+
+          if (!sm2.oMC.id) {
+            sm2.oMC.id = sm2.movieID;
+            sm2.oMC.className = swfCSS.swfDefault + ' ' + extraClass;
+            s = null;
+            oEl = null;
+
+            if (!sm2.useFlashBlock) {
+              if (sm2.useHighPerformance) {
+                s = {
+                  position: 'fixed',
+                  width: '8px',
+                  height: '8px',
+                  bottom: '0px',
+                  left: '0px',
+                  overflow: 'hidden'
+                };
+              } else {
+                s = {
+                  position: 'absolute',
+                  width: '6px',
+                  height: '6px',
+                  top: '-9999px',
+                  left: '-9999px'
+                };
+
+                if (isRTL) {
+                  s.left = Math.abs(parseInt(s.left, 10)) + 'px';
+                }
+              }
+            }
+
+            if (isWebkit) {
+              sm2.oMC.style.zIndex = 10000;
+            }
+
+            if (!sm2.debugFlash) {
+              for (x in s) {
+                if (s.hasOwnProperty(x)) {
+                  sm2.oMC.style[x] = s[x];
+                }
+              }
+            }
+
+            try {
+              if (!isIE) {
+                sm2.oMC.appendChild(oMovie);
+              }
+
+              oTarget.appendChild(sm2.oMC);
+
+              if (isIE) {
+                oEl = sm2.oMC.appendChild(doc.createElement('div'));
+                oEl.className = swfCSS.swfBox;
+                oEl.innerHTML = movieHTML;
+              }
+
+              appendSuccess = true;
+            } catch (e) {
+              throw new Error(str('domError') + ' \n' + e.toString());
+            }
+          } else {
+            sClass = sm2.oMC.className;
+            sm2.oMC.className = (sClass ? sClass + ' ' : swfCSS.swfDefault) + (extraClass ? ' ' + extraClass : '');
+            sm2.oMC.appendChild(oMovie);
+
+            if (isIE) {
+              oEl = sm2.oMC.appendChild(doc.createElement('div'));
+              oEl.className = swfCSS.swfBox;
+              oEl.innerHTML = movieHTML;
+            }
+
+            appendSuccess = true;
+          }
+        }
+
+        didAppend = true;
+        return true;
+      };
+
+      initMovie = function initMovie() {
+        if (sm2.html5Only) {
+          createMovie();
+          return false;
+        }
+
+        if (flash) return false;
+
+        if (!sm2.url) {
+          return false;
+        }
+
+        flash = sm2.getMovie(sm2.id);
+
+        if (!flash) {
+          if (!oRemoved) {
+            createMovie(sm2.id, sm2.url);
+          } else {
+            if (!isIE) {
+              sm2.oMC.appendChild(oRemoved);
+            } else {
+              sm2.oMC.innerHTML = oRemovedHTML;
+            }
+
+            oRemoved = null;
+            didAppend = true;
+          }
+
+          flash = sm2.getMovie(sm2.id);
+        }
+
+        if (typeof sm2.oninitmovie === 'function') {
+          setTimeout(sm2.oninitmovie, 1);
+        }
+
+        return true;
+      };
+
+      delayWaitForEI = function delayWaitForEI() {
+        setTimeout(waitForEI, 1000);
+      };
+
+      rebootIntoHTML5 = function rebootIntoHTML5() {
+        window.setTimeout(function () {
+          sm2.setup({
+            preferFlash: false
+          }).reboot();
+          sm2.didFlashBlock = true;
+          sm2.beginDelayedInit();
+        }, 1);
+      };
+
+      waitForEI = function waitForEI() {
+        var p,
+            loadIncomplete = false;
+
+        if (!sm2.url) {
+          return;
+        }
+
+        if (waitingForEI) {
+          return;
+        }
+
+        waitingForEI = true;
+        event.remove(window, 'load', delayWaitForEI);
+
+        if (hasFlash && tryInitOnFocus && !isFocused) {
+          return;
+        }
+
+        if (!didInit) {
+          p = sm2.getMoviePercent();
+
+          if (p > 0 && p < 100) {
+            loadIncomplete = true;
+          }
+        }
+
+        setTimeout(function () {
+          p = sm2.getMoviePercent();
+
+          if (loadIncomplete) {
+            waitingForEI = false;
+            window.setTimeout(delayWaitForEI, 1);
+            return;
+          }
+
+          if (!didInit && okToDisable) {
+            if (p === null) {
+              if (sm2.useFlashBlock || sm2.flashLoadTimeout === 0) {
+                if (sm2.useFlashBlock) {
+                  flashBlockHandler();
+                }
+              } else if (!sm2.useFlashBlock && canIgnoreFlash) {
+                rebootIntoHTML5();
+              } else {
+                processOnEvents({
+                  type: 'ontimeout',
+                  ignoreInit: true,
+                  error: {
+                    type: 'INIT_FLASHBLOCK'
+                  }
+                });
+              }
+            } else if (sm2.flashLoadTimeout === 0) ;else if (!sm2.useFlashBlock && canIgnoreFlash) {
+              rebootIntoHTML5();
+            } else {
+              failSafely(true);
+            }
+          }
+        }, sm2.flashLoadTimeout);
+      };
+
+      _handleFocus2 = function handleFocus() {
+        function cleanup() {
+          event.remove(window, 'focus', _handleFocus2);
+        }
+
+        if (isFocused || !tryInitOnFocus) {
+          cleanup();
+          return true;
+        }
+
+        okToDisable = true;
+        isFocused = true;
+        waitingForEI = false;
+        delayWaitForEI();
+        cleanup();
+        return true;
+      };
+
+      initComplete = function initComplete(bNoDisable) {
+        if (didInit) return false;
+
+        if (sm2.html5Only) {
+          didInit = true;
+
+          _initUserOnload2();
+
+          return true;
+        }
+
+        var wasTimeout = sm2.useFlashBlock && sm2.flashLoadTimeout && !sm2.getMoviePercent(),
+            result = true,
+            error;
+
+        if (!wasTimeout) {
+          didInit = true;
+        }
+
+        error = {
+          type: !hasFlash && needsFlash ? 'NO_FLASH' : 'INIT_TIMEOUT'
+        };
+
+        if (disabled || bNoDisable) {
+          if (sm2.useFlashBlock && sm2.oMC) {
+            sm2.oMC.className = getSWFCSS() + ' ' + (sm2.getMoviePercent() === null ? swfCSS.swfTimedout : swfCSS.swfError);
+          }
+
+          processOnEvents({
+            type: 'ontimeout',
+            error: error,
+            ignoreInit: true
+          });
+          catchError(error);
+          result = false;
+        }
+
+        if (!disabled) {
+          if (sm2.waitForWindowLoad && !windowLoaded) {
+            event.add(window, 'load', _initUserOnload2);
+          } else {
+            _initUserOnload2();
+          }
+        }
+
+        return result;
+      };
+
+      setProperties = function setProperties() {
+        var i,
+            o = sm2.setupOptions;
+
+        for (i in o) {
+          if (o.hasOwnProperty(i)) {
+            if (sm2[i] === _undefined) {
+              sm2[i] = o[i];
+            } else if (sm2[i] !== o[i]) {
+              sm2.setupOptions[i] = sm2[i];
+            }
+          }
+        }
+      };
+
+      init = function init() {
+        if (didInit) {
+          return false;
+        }
+
+        function cleanup() {
+          event.remove(window, 'load', sm2.beginDelayedInit);
+        }
+
+        if (sm2.html5Only) {
+          if (!didInit) {
+            cleanup();
+            sm2.enabled = true;
+            initComplete();
+          }
+
+          return true;
+        }
+
+        initMovie();
+
+        try {
+          flash._externalInterfaceTest(false);
+
+          setPolling(true, sm2.flashPollingInterval || (sm2.useHighPerformance ? 10 : 50));
+
+          if (!sm2.debugMode) {
+            flash._disableDebug();
+          }
+
+          sm2.enabled = true;
+
+          if (!sm2.html5Only) {
+            event.add(window, 'unload', doNothing);
+          }
+        } catch (e) {
+          catchError({
+            type: 'JS_TO_FLASH_EXCEPTION',
+            fatal: true
+          });
+          failSafely(true);
+          initComplete();
+          return false;
+        }
+
+        initComplete();
+        cleanup();
+        return true;
+      };
+
+      _domContentLoaded2 = function domContentLoaded() {
+        if (didDCLoaded) return false;
+        didDCLoaded = true;
+        setProperties();
+        initDebug();
+
+        if (!hasFlash && sm2.hasHTML5) {
+          sm2.setup({
+            useHTML5Audio: true,
+            preferFlash: false
+          });
+        }
+
+        testHTML5();
+
+        if (!hasFlash && needsFlash) {
+          messages.push(strings.needFlash);
+          sm2.setup({
+            flashLoadTimeout: 1
+          });
+        }
+
+        if (doc.removeEventListener) {
+          doc.removeEventListener('DOMContentLoaded', _domContentLoaded2, false);
+        }
+
+        initMovie();
+        return true;
+      };
+
+      _domContentLoadedIE2 = function domContentLoadedIE() {
+        if (doc.readyState === 'complete') {
+          _domContentLoaded2();
+
+          doc.detachEvent('onreadystatechange', _domContentLoadedIE2);
+        }
+
+        return true;
+      };
+
+      _winOnLoad2 = function winOnLoad() {
+        windowLoaded = true;
+
+        _domContentLoaded2();
+
+        event.remove(window, 'load', _winOnLoad2);
+      };
+
+      detectFlash();
+      event.add(window, 'focus', _handleFocus2);
+      event.add(window, 'load', delayWaitForEI);
+      event.add(window, 'load', _winOnLoad2);
+
+      if (doc.addEventListener) {
+        doc.addEventListener('DOMContentLoaded', _domContentLoaded2, false);
+      } else if (doc.attachEvent) {
+        doc.attachEvent('onreadystatechange', _domContentLoadedIE2);
+      } else {
+        catchError({
+          type: 'NO_DOM2_EVENTS',
+          fatal: true
+        });
+      }
+    } // SM2_DEFER details: http://www.schillmania.com/projects/soundmanager2/doc/getstarted/#lazy-loading
+
+
+    if (window.SM2_DEFER === _undefined || !SM2_DEFER) {
+      soundManager = new SoundManager();
+    }
+
+    if (module && 'object' === 'object') {
+      module.exports.SoundManager = SoundManager;
+      module.exports.soundManager = soundManager;
+    } // standard browser case
+    // constructor
+
+
+    window.SoundManager = SoundManager; // public API, flash callbacks etc.
+
+    window.soundManager = soundManager;
+  })(window);
+});
+var soundmanager2Nodebug_1 = soundmanager2Nodebug.SoundManager;
+var soundmanager2Nodebug_2 = soundmanager2Nodebug.soundManager;
+var lib = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  var _react2 = _interopRequireDefault(react__WEBPACK_IMPORTED_MODULE_0___default.a);
+
+  var _propTypes2 = _interopRequireDefault(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var pendingCalls = [];
+  var initialized = false;
+  var soundManager = void 0; // Allow server side rendering
+
+  if (typeof window !== 'undefined') {
+    if (true) {
+      var _require = soundmanager2;
+      soundManager = _require.soundManager;
+    } else { var _require2; }
+
+    soundManager.onready(function () {
+      pendingCalls.slice().forEach(function (cb) {
+        return cb();
+      });
+    });
+  }
+
+  function _createSound(options, cb) {
+    if (soundManager.ok()) {
+      cb(soundManager.createSound(options));
+      return function () {};
+    } else {
+      if (!initialized) {
+        initialized = true;
+        soundManager.beginDelayedInit();
+      }
+
+      var call = function call() {
+        cb(soundManager.createSound(options));
+      };
+
+      pendingCalls.push(call);
+      return function () {
+        pendingCalls.splice(pendingCalls.indexOf(call), 1);
+      };
+    }
+  }
+
+  function noop() {}
+
+  var playStatuses = {
+    PLAYING: 'PLAYING',
+    STOPPED: 'STOPPED',
+    PAUSED: 'PAUSED'
+  };
+
+  var Sound = function (_React$Component) {
+    _inherits(Sound, _React$Component);
+
+    function Sound() {
+      _classCallCheck(this, Sound);
+
+      return _possibleConstructorReturn(this, (Sound.__proto__ || Object.getPrototypeOf(Sound)).apply(this, arguments));
+    }
+
+    _createClass(Sound, [{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        var _this2 = this;
+
+        this.createSound(function (sound) {
+          return _this2.updateSound(sound);
+        });
+      }
+    }, {
+      key: 'componentWillUnmount',
+      value: function componentWillUnmount() {
+        this.removeSound();
+      }
+    }, {
+      key: 'componentDidUpdate',
+      value: function componentDidUpdate(prevProps) {
+        var _this3 = this;
+
+        if (this.props.url !== prevProps.url) {
+          this.createSound(function (sound) {
+            return _this3.updateSound(sound, prevProps);
+          });
+        } else {
+          this.updateSound(this.sound);
+        }
+      }
+    }, {
+      key: 'updateSound',
+      value: function updateSound(sound) {
+        var prevProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+        if (!sound) {
+          return;
+        }
+
+        if (this.props.playStatus === playStatuses.PLAYING) {
+          if (sound.playState === 0) {
+            sound.play();
+          }
+
+          if (sound.paused) {
+            sound.resume();
+          }
+        } else if (this.props.playStatus === playStatuses.STOPPED) {
+          if (sound.playState !== 0) {
+            sound.stop();
+          }
+        } else {
+          // this.props.playStatus === playStatuses.PAUSED
+          if (!sound.paused) {
+            sound.pause();
+          }
+        }
+
+        if (this.props.playFromPosition != null) {
+          if (this.props.playFromPosition !== prevProps.playFromPosition) {
+            sound.setPosition(this.props.playFromPosition);
+          }
+        }
+
+        if (this.props.position != null) {
+          if (sound.position !== this.props.position && Math.round(sound.position) !== Math.round(this.props.position)) {
+            sound.setPosition(this.props.position);
+          }
+        }
+
+        if (this.props.volume !== prevProps.volume) {
+          sound.setVolume(this.props.volume);
+        }
+
+        if (this.props.playbackRate !== prevProps.playbackRate) {
+          sound.setPlaybackRate(this.props.playbackRate);
+        }
+      }
+    }, {
+      key: 'createSound',
+      value: function createSound(callback) {
+        var _this4 = this;
+
+        this.removeSound();
+        var instance = this;
+
+        if (!this.props.url) {
+          return;
+        }
+
+        this.stopCreatingSound = _createSound({
+          url: this.props.url,
+          autoLoad: this.props.autoLoad,
+          volume: this.props.volume,
+          position: this.props.playFromPosition || this.props.position || 0,
+          playbackRate: this.props.playbackRate,
+          whileloading: function whileloading() {
+            instance.props.onLoading(this);
+          },
+          whileplaying: function whileplaying() {
+            instance.props.onPlaying(this);
+          },
+          onerror: function onerror(errorCode, description) {
+            instance.props.onError(errorCode, description, this);
+          },
+          onload: function onload() {
+            instance.props.onLoad(this);
+          },
+          onpause: function onpause() {
+            instance.props.onPause(this);
+          },
+          onresume: function onresume() {
+            instance.props.onResume(this);
+          },
+          onstop: function onstop() {
+            instance.props.onStop(this);
+          },
+          onfinish: function onfinish() {
+            if (instance.props.loop && instance.props.playStatus === playStatuses.PLAYING) {
+              instance.sound.play();
+            } else {
+              instance.props.onFinishedPlaying();
+            }
+          },
+          onbufferchange: function onbufferchange() {
+            instance.props.onBufferChange(this.isBuffering);
+          }
+        }, function (sound) {
+          _this4.sound = sound;
+          callback(sound);
+        });
+      }
+    }, {
+      key: 'removeSound',
+      value: function removeSound() {
+        if (this.stopCreatingSound) {
+          this.stopCreatingSound();
+          delete this.stopCreatingSound;
+        }
+
+        if (this.sound) {
+          try {
+            this.sound.destruct();
+          } catch (e) {} // eslint-disable-line
+
+
+          delete this.sound;
+        }
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return null;
+      }
+    }]);
+
+    return Sound;
+  }(_react2.default.Component);
+
+  Sound.status = playStatuses;
+  Sound.propTypes = {
+    url: _propTypes2.default.string.isRequired,
+    playStatus: _propTypes2.default.oneOf(Object.keys(playStatuses)).isRequired,
+    position: _propTypes2.default.number,
+    playFromPosition: _propTypes2.default.number,
+    volume: _propTypes2.default.number,
+    playbackRate: _propTypes2.default.number,
+    onError: _propTypes2.default.func,
+    onLoading: _propTypes2.default.func,
+    onLoad: _propTypes2.default.func,
+    onPlaying: _propTypes2.default.func,
+    onPause: _propTypes2.default.func,
+    onResume: _propTypes2.default.func,
+    onStop: _propTypes2.default.func,
+    onFinishedPlaying: _propTypes2.default.func,
+    onBufferChange: _propTypes2.default.func,
+    autoLoad: _propTypes2.default.bool,
+    loop: _propTypes2.default.bool
+  };
+  Sound.defaultProps = {
+    volume: 100,
+    playbackRate: 1,
+    onError: noop,
+    onLoading: noop,
+    onPlaying: noop,
+    onLoad: noop,
+    onPause: noop,
+    onResume: noop,
+    onStop: noop,
+    onFinishedPlaying: noop,
+    onBufferChange: noop,
+    autoLoad: false,
+    loop: false
+  };
+  exports.default = Sound;
+});
+var Sound = unwrapExports(lib);
 var AppContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])([]);
 
 var Image = function Image(props) {
@@ -6045,6 +15154,11 @@ var Memory = function Memory(props) {
       winner = _useState8[0],
       setWinner = _useState8[1];
 
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState10 = _slicedToArray$1(_useState9, 2),
+      winningSound = _useState10[0],
+      setWinningSound = _useState10[1];
+
   var checkItems = function checkItems(firstIndex, secondIndex) {
     if (firstIndex !== secondIndex && list[firstIndex].name === list[secondIndex].name) {
       setFinishedItems([].concat(_toConsumableArray$1(finishedItems), [firstIndex, secondIndex]));
@@ -6067,7 +15181,10 @@ var Memory = function Memory(props) {
   }, []);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     if (finishedItems.length > 0 && finishedItems.length === list.length) {
-      setWinner(true);
+      setWinningSound(true);
+      setTimeout(function () {
+        return setWinner(true);
+      }, 2500);
     }
   }, [finishedItems, list]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Grid, {
@@ -6076,7 +15193,13 @@ var Memory = function Memory(props) {
     setVisibleItems: setVisibleItems,
     finishedItems: finishedItems,
     checkItems: checkItems
-  }), winner && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Du hast gewonnen!"));
+  }), winningSound && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+    url: "./assets/sounds/game_won.mp3",
+    playStatus: Sound.status.PLAYING
+  }), winner && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Redirect"], {
+    exact: true,
+    to: "endkapitel"
+  }));
 };
 
 var Grid = function Grid(props) {
@@ -6169,7 +15292,7 @@ var Daily = function Daily(props) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         key: index,
         className: "item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DragDropContainer"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DragDropContainer"], {
         targetKey: "box",
         dragData: {
           label: item
@@ -6219,7 +15342,7 @@ var Box = function Box(props) {
     var items = boxItems.slice();
     items.push({
       label: e.dragData.label,
-      uid: shortid__WEBPACK_IMPORTED_MODULE_6___default.a.generate()
+      uid: shortid__WEBPACK_IMPORTED_MODULE_7___default.a.generate()
     });
     setBoxItems(items);
     e.containerElem.style.visibility = "hidden";
@@ -6229,7 +15352,7 @@ var Box = function Box(props) {
     var items = boxItems.slice();
     var item = {
       label: dragData.label,
-      uid: shortid__WEBPACK_IMPORTED_MODULE_6___default.a.generate()
+      uid: shortid__WEBPACK_IMPORTED_MODULE_7___default.a.generate()
     };
     items.splice(toIndex, 0, item);
     setBoxItems(items);
@@ -6248,13 +15371,13 @@ var Box = function Box(props) {
     setBoxItems(items);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DropTarget"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DropTarget"], {
     onHit: handleDrop,
     targetKey: props.targetKey,
     dropData: {
       name: props.name
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DropTarget"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DropTarget"], {
     onHit: handleDrop,
     targetKey: "boxItem",
     dropData: {
@@ -6286,7 +15409,7 @@ var BoxItem = function BoxItem(props) {
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box_item_component"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DragDropContainer"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DragDropContainer"], {
     targetKey: "boxItem",
     dragData: {
       label: props.children,
@@ -6295,7 +15418,7 @@ var BoxItem = function BoxItem(props) {
     onDrop: deleteMe,
     disappearDraggedElement: true,
     dragHandleClassName: "grabber"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DropTarget"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DropTarget"], {
     onHit: handleDrop,
     targetKey: "boxItem"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6328,6 +15451,11 @@ var TicTacToe = function TicTacToe(props) {
       squares = _useState2[0],
       setSquares = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Sound.status.PLAYING),
+      _useState4 = _slicedToArray$1(_useState3, 2),
+      playStatus = _useState4[0],
+      setPlayStatus = _useState4[1];
+
   var winner = calculateWinner(squares);
 
   function getStatus() {
@@ -6335,7 +15463,12 @@ var TicTacToe = function TicTacToe(props) {
       document.querySelector('.result').scrollIntoView({
         behavior: 'smooth'
       });
-      return winner === "X" ? "Du hast gewonnen!" : "Es ist ja nur ein Spiel!";
+
+      if (winner === "X") {
+        return "Du hast gewonnen!";
+      } else {
+        return "Es ist ja nur ein Spiel!";
+      }
     } else if (isBoardFull(squares)) {
       document.querySelector('.result').scrollIntoView({
         behavior: 'smooth'
@@ -6382,7 +15515,19 @@ var TicTacToe = function TicTacToe(props) {
     return renderSquare(index);
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'result'
-  }, getStatus()));
+  }, getStatus()), winner === "X" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+    url: "./assets/sounds/game_won.mp3",
+    playStatus: playStatus,
+    onFinishedPlaying: function onFinishedPlaying() {
+      return setPlayStatus(Sound.status.STOPPED);
+    }
+  }), winner === "O" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+    url: "./assets/sounds/game_lost.mp3",
+    playStatus: playStatus,
+    onFinishedPlaying: function onFinishedPlaying() {
+      return setPlayStatus(Sound.status.STOPPED);
+    }
+  }));
 };
 
 function setGeneratedSquare(squares) {
@@ -6419,16 +15564,6 @@ function isBoardFull(squares) {
   }
 
   return true;
-}
-
-function unwrapExports(x) {
-  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
-
-function createCommonjsModule(fn, module) {
-  return module = {
-    exports: {}
-  }, fn(module, module.exports), module.exports;
 }
 
 var globals = createCommonjsModule(function (module, exports) {
@@ -7173,7 +16308,6 @@ var Jump_1 = createCommonjsModule(function (module, exports) {
   Jump.propTypes = propTypes, exports.default = Jump, module.exports = exports.default;
 });
 var Jump = unwrapExports(Jump_1);
-var _this = undefined;
 
 var Suitcase = function Suitcase(props) {
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(AppContext),
@@ -7196,23 +16330,46 @@ var Suitcase = function Suitcase(props) {
       showResult = _useState6[0],
       setShowResult = _useState6[1];
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState8 = _slicedToArray$1(_useState7, 2),
-      falseCounter = _useState8[0],
-      setFalseCounter = _useState8[1];
+      winningSound = _useState8[0],
+      setWinningSound = _useState8[1];
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState10 = _slicedToArray$1(_useState9, 2),
+      lostSound = _useState10[0],
+      setLostSound = _useState10[1];
+
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Sound.status.PLAYING),
+      _useState12 = _slicedToArray$1(_useState11, 2),
+      playStatus = _useState12[0],
+      setPlayStatus = _useState12[1];
+
+  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState14 = _slicedToArray$1(_useState13, 2),
+      falseCounter = _useState14[0],
+      setFalseCounter = _useState14[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setPlayStatus(Sound.status.PLAYING);
+  }, [falseCounter]);
 
   var dropped = function dropped(e) {
     e.containerElem.style.visibility = "hidden";
     setBagCounter(bagCounter + 1);
     setDrag("".concat(character, " packt ").concat(e.dragData.label, " ein."));
 
-    if (bagCounter === 5) {
-      _this.props.onCheckBag();
+    if (bagCounter === 4) {
+      setWinningSound(true);
+      setTimeout(function () {
+        return setShowResult(true);
+      }, 1500);
     }
   };
 
   var droppedFalseItem = function droppedFalseItem(e) {
     setDrag("".concat(character, " braucht ").concat(e.dragData.label, " wohl eher nicht."));
+    setLostSound(true);
     setFalseCounter(falseCounter + 1);
   };
 
@@ -7260,12 +16417,12 @@ var Suitcase = function Suitcase(props) {
     targetKey: 'negative',
     label: 'einen Hammer',
     image: 'suitcase_hammer'
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DropTarget"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DropTarget"], {
     onHit: function onHit(e) {
       return dropped(e);
     },
     targetKey: 'bag'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DropTarget"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DropTarget"], {
     onHit: function onHit(e) {
       return droppedFalseItem(e);
     },
@@ -7280,11 +16437,23 @@ var Suitcase = function Suitcase(props) {
     value: 'suitcase'
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'dragText'
-  }, drag)))))));
+  }, drag)))))), winningSound && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+    url: "./assets/sounds/game_won.mp3",
+    playStatus: Sound.status.PLAYING
+  }), lostSound && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+    url: "./assets/sounds/game_lost.mp3",
+    playStatus: playStatus,
+    onFinishedPlaying: function onFinishedPlaying() {
+      return setPlayStatus(Sound.status.STOPPED);
+    }
+  }), showResult && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Redirect"], {
+    exact: true,
+    to: "reise"
+  }));
 };
 
 var Items = function Items(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_5__["DragDropContainer"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_drag_drop_container__WEBPACK_IMPORTED_MODULE_6__["DragDropContainer"], {
     targetKey: props.targetKey,
     dragData: {
       label: props.label
@@ -7587,7 +16756,12 @@ var Text = function Text(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fade, {
     bottom: true,
     duration: 5000
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value)));
+  }, props.option === 'link' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "link",
+    dangerouslySetInnerHTML: {
+      __html: props.value
+    }
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.value)));
 };
 
 var Decission = function Decission(props) {
@@ -7640,7 +16814,11 @@ var Puzzle = /*#__PURE__*/function (_Component) {
     _this.state = {
       pieces: [],
       shuffled: [],
-      solved: []
+      solved: [],
+      winner: false,
+      winningSound: false,
+      chance: false,
+      playStatus: Sound.status.PLAYING
     };
     return _this;
   }
@@ -7679,7 +16857,8 @@ var Puzzle = /*#__PURE__*/function (_Component) {
       origin[origin.indexOf(pieceData)] = undefined;
       target[index] = pieceData;
       pieceData.board = targetName;
-      this.setState((_this$setState = {}, _defineProperty$1(_this$setState, pieceData.board, origin), _defineProperty$1(_this$setState, targetName, target), _this$setState));
+      this.setState((_this$setState = {}, _defineProperty$1(_this$setState, pieceData.board, origin), _defineProperty$1(_this$setState, targetName, target), _defineProperty$1(_this$setState, "chance", false), _this$setState));
+      this.checkWinner();
     }
   }, {
     key: "handleDragStart",
@@ -7689,29 +16868,71 @@ var Puzzle = /*#__PURE__*/function (_Component) {
       dt.effectAllowed = "move";
     }
   }, {
-    key: "render",
-    value: function render() {
+    key: "checkWinner",
+    value: function checkWinner() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      for (var i = 0, l = this.state.solved.length; i < l; i++) {
+        if (typeof this.state.solved[i] === 'undefined') return;
+      }
+
+      var finished = this.state.solved.find(function (piece, index) {
+        return piece.order !== index;
+      });
+
+      if (finished === undefined) {
+        this.setState({
+          winningSound: true
+        });
+        setTimeout(function () {
+          return _this2.setState({
+            winner: true
+          });
+        }, 2500);
+      } else {
+        this.setState({
+          chance: true
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: 'puzzle'
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: 'puzzle__shuffled-board'
       }, this.state.shuffled.map(function (piece, i) {
-        return _this2.renderPieceContainer(piece, i, "shuffled");
+        return _this3.renderPieceContainer(piece, i, "shuffled");
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
         className: 'puzzle__solved-board',
         style: {
           backgroundImage: "url(./assets/daheim_puzzle.webp)"
         }
       }, this.state.solved.map(function (piece, i) {
-        return _this2.renderPieceContainer(piece, i, "solved");
+        return _this3.renderPieceContainer(piece, i, "solved");
+      })), this.state.winningSound && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+        url: "./assets/sounds/game_won.mp3",
+        playStatus: Sound.status.PLAYING
+      }), this.state.winner && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Redirect"], {
+        exact: true,
+        to: "ortsgruppe"
+      })), this.state.chance && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+        url: "./assets/sounds/game_lost.mp3",
+        playStatus: this.state.playStatus,
+        onFinishedPlaying: function onFinishedPlaying() {
+          return _this3.setState({
+            playStatus: Sound.status.STOPPED
+          });
+        }
       })));
     }
   }, {
     key: "renderPieceContainer",
     value: function renderPieceContainer(piece, index, boardName) {
-      var _this3 = this;
+      var _this4 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         key: index,
@@ -7719,13 +16940,13 @@ var Puzzle = /*#__PURE__*/function (_Component) {
           return e.preventDefault();
         },
         onDrop: function onDrop(e) {
-          return _this3.handleDrop(e, index, boardName);
+          return _this4.handleDrop(e, index, boardName);
         }
       }, piece && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         draggable: true,
         alt: "",
         onDragStart: function onDragStart(e) {
-          return _this3.handleDragStart(e, piece.order);
+          return _this4.handleDragStart(e, piece.order);
         },
         src: "./assets/".concat(piece.img)
       }));
@@ -7770,7 +16991,7 @@ var RedirectComponent = function RedirectComponent(props) {
     onClick: function onClick() {
       return handleRedirect();
     }
-  }, props.title), redirect && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Redirect"], {
+  }, props.title), redirect && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Redirect"], {
     exact: true,
     to: props.value
   }));
@@ -7871,9 +17092,9 @@ var Nav = function Nav(props) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: 'navigation--item',
         key: index
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["NavLink"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["NavLink"], {
         to: "/chapter/".concat(chapter.link)
-      }));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, chapter.name)));
     });
   };
 
@@ -7883,10 +17104,10 @@ var Nav = function Nav(props) {
     className: 'navigation'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: 'navigation--item'
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["NavLink"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["NavLink"], {
     exact: true,
     to: "/"
-  })), renderChapterNav()));
+  }, "Demokratie erLeben")), renderChapterNav()));
 };
 
 var isProduction$1 = "development" === 'production';
@@ -8266,18 +17487,11 @@ var Chapter = function Chapter(props) {
       character = _useContext2[0],
       setCharacter = _useContext2[1];
 
-  var audio = new Audio("./assets/sounds/".concat(props.link, ".mp3"));
-  audio.loop = true;
-
-  var startAudio = function startAudio(inView) {
-    inView ? audio.play() : audio.pause();
-  };
-
   var renderChapterGroups = function renderChapterGroups() {
     return props.groups.map(function (group, index) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
         key: index
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InView, {
+      }, (!group.character || group.character === character) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InView, {
         threshold: 0.5
       }, function (_ref) {
         var inView = _ref.inView,
@@ -8293,11 +17507,12 @@ var Chapter = function Chapter(props) {
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InView, {
-    as: "div",
-    onChange: function onChange(inView, entry) {
-      return audio && startAudio(inView);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    as: "div"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sound, {
+    url: "./assets/sounds/".concat(props.link, ".mp3"),
+    loop: true,
+    playStatus: Sound.status.PLAYING
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: 'parallax'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, Object.assign({}, props)), props.groups && renderChapterGroups()));
 };
@@ -8328,7 +17543,7 @@ module.exports = ":root {\n  --color-text: #96271f;\n  --color-title: #781f19;\n
 /*! exports provided: chapters, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"chapters\":[{\"id\":1,\"name\":\"Zu Hause\",\"link\":\"daheim\",\"groups\":[{\"grouped\":false,\"row\":false,\"info\":\"<p>Diese Website entstand im Rahmen des <a href='https://codingdavinci.de/events/westfalen-ruhrgebiet/' target='_blank' rel='noopener noreferrer'>Coding da Vinci Westfalen-Ruhrgebiet</a> von Oktober bis Dezember 2019. Wir danken dem <a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>, welches die Fotografien und Bildkärtchen unter einer CC BY-SA 3.0 DE Lizenz zur Verfügung gestellt hat.</p>\",\"content\":[{\"type\":\"text\",\"value\":\"Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.\",\"layer\":\"fore\",\"option\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"smokingpit\",\"layer\":\"base\",\"value\":\"smokingpit\"}]},{\"grouped\":true,\"row\":false,\"info\":\"<a href='https://arbeiterjugend.de/' target='_blank' rel='noopener noreferrer'>Archiv der Arbeiterjugendbewegung</a>\",\"content\":[{\"type\":\"text\",\"value\":\"Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.\"},{\"type\":\"image\",\"value\":\"daheim_kinder\",\"option\":\"third\"},{\"type\":\"text\",\"value\":\"Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben.\"}]},{\"grouped\":true,\"row\":true,\"content\":[{\"type\":\"text\",\"value\":\"Wen möchtest du auf diesem Weg begleiten?\"},{\"type\":\"image\",\"option\":\"third avatar\",\"value\":\"daheim_karl\",\"title\":\"Karl\"},{\"type\":\"image\",\"option\":\"third avatar\",\"value\":\"daheim_gerda\",\"title\":\"Gerda\"},{\"type\":\"image\",\"option\":\"third avatar\",\"value\":\"daheim_anna\",\"title\":\"Anna\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_1033_Seite58\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_608_Seite112\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Anna\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"3_Annas_Alltag_mit_Hühnern\",\"title\":\"Annas Alltag\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"4_Annas_Zuhause\",\"title\":\"Annas Umfeld\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"2_Anna_Familie\",\"title\":\"Annas Familie\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"1_Anna_Großvater\",\"title\":\"Annas Großvater\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Karl\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"7_Karl_Alltag\",\"title\":\"Karls_Alltag\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"6_Karl_Familie\",\"title\":\"Karls Familie\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"5_Karl_Großmutter\",\"title\":\"Karls Großmutter\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"8_Karls_Zuhause\",\"title\":\"Karls Zuhause\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Gerda\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"9_Gerdas_Familie\",\"title\":\"Gerdas Familie\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"10_Gerdas_Alltag_mit_Musik\",\"title\":\"Gerdas Alltag\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"11_Gerdas_Zuhause\",\"title\":\"Gerdas Zuhause\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie sich in einem Verein namens 'Reichsarbeitsgemeinschaft der Kinderfreunde' engagieren und nach neuen Mitgliedern für die Ortsgruppe des Vereins suchen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"option\":\"primary\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"background\":\"02_1945_SAJ_Frankenthal_1929\",\"content\":[{\"type\":\"text\",\"value\":\"Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2-1781_Seite135\"},{\"type\":\"text\",\"value\":\"Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1945_SAJ_Frankenthal_1929\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"option\":\"second\",\"value\":\"02_12_(4)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"daheim_werbung\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Zur Vorbereitung treffen sich die Helferinnen und Helfer bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(147)\",\"content\":[{\"type\":\"text\",\"value\":\"Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"value\":\"Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"value\":\"ortsgruppe\",\"option\":\"primary\",\"title\":\"Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"background\":\"02_1455_(147)\",\"content\":[{\"type\":\"text\",\"value\":\"Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"value\":\"Hilf Karl, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"value\":\"ortsgruppe\",\"option\":\"primary\",\"title\":\"Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"02_1455_(147)\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"value\":\"Hilf Gerda, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"value\":\"ortsgruppe\",\"option\":\"primary\",\"title\":\"Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe.\"}]}]},{\"id\":2,\"name\":\"Die Ortsgruppe\",\"link\":\"ortsgruppe\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. \",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_214_Seite142\"},{\"value\":\"In dem Raum sind 17 Mädchen und Jungen versammelt. Einige von ihnen kennt sie aus ihrer Siedlung. Alle kommen wie Anna aus ärmlichen Verhältnissen und erhoffen sich durch die Betätigung in der Ortsgruppe etwas Ablenkung vom oft tristen Alltag.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"12_Anna_Ortsgruppe\"},{\"type\":\"redirect\",\"value\":\"gruppenvorbereitung\",\"option\":\"second\",\"title\":\"Ich möchte noch mehr über Annas Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"option\":\"second\",\"title\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.\",\"layer\":\"fore\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_12_(4)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.\",\"type\":\"text\"},{\"type\":\"video\",\"value\":\"13_Karl_Ortsgruppe\"},{\"type\":\"redirect\",\"value\":\"gruppenvorbereitung\",\"option\":\"second\",\"title\":\"Ich möchte noch mehr über Karls Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"option\":\"second\",\"title\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"info\":\"Hier könnte ein Link sein.\",\"background\":\"daheim_karte\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2-1781_Seite135\"},{\"value\":\"Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"02_1455_(105)\",\"content\":[{\"value\":\"Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(103)\"},{\"value\":\"Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. \",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"14_Gerda_Ortsgruppe\"},{\"type\":\"redirect\",\"value\":\"gruppenvorbereitung\",\"option\":\"second\",\"title\":\"Ich möchte noch mehr über die Arbeit der Ortsgruppe sowie über die Rolle der Helfer*innen erfahren.\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"option\":\"second\",\"title\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]}]},{\"id\":3,\"name\":\"Die Arbeit der Ortsgruppe\",\"link\":\"gruppenvorbereitung\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"text\",\"value\":\"Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken.\",\"option\":\"reveal\"},{\"value\":\"Als Rote Falken werden alle 12- bis 14-Jährigen im Verband der Kinderfreunde genannt.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(14)\"},{\"value\":\"Anna ist stolz, ein 'Roter Falke' zu sein und ein blaues Hemd zu tragen. Endlich hat sie einen Ort gefunden, wo sie sich zugehörig und verstanden fühlt.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"value\":\"Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. \",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(21)\"},{\"value\":\"Die Ausstellung kann gegen einen Eintritt von 10 Pfennig besucht werden. Neben einigen Leuten von der örtlichen Presse kommen auch viele Eltern vorbei. Einige der Ausstellungsobjekte spendet die Ortsgruppe der Arbeiterwohlfahrt.\",\"type\":\"text\",\"option\":\"fourth\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(49)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"value\":\"Die Bildungsabende beschäftigen sich neben politischen auch mit praktischen Themen, wie zum Beispiel der Hygiene.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_30_2\"},{\"value\":\"Anna lernt während eines Vortrags, dass das Elend der Arbeiterklasse oft durch mangelnde Sauberkeit und schlecht versorgte Wunden und Krankheiten verschärft wird. Die Sauberkeit des eigenen Körpers und des eigenen Heims sind dabei besonders wichtig. Auch der Umgang mit ansteckenden Krankheiten in der eigenen Familien wird dabei angesprochen.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(58)\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_h\"},{\"value\":\"Inzwischen ist Anna schon über ein halbes Jahr regelmäßig zu den Treffen der Roten Falken gegangen. Für den Sommer ist ein großes Zeltlager unter dem Titel 'Kinderrepublik' geplant. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren. \",\"option\":\"third\",\"type\":\"text\"},{\"value\":\"Das kostet natürlich viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"value\":\"Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(92)\"},{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Hier könnte ein Link sein.\",\"content\":[{\"type\":\"image\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl gehört in seiner Ortsgruppe der Kinderfreunde zu den 'Roten Falken'. Diese Bezeichnung wird für alle 12- bis 14-jährigen Mitglieder verwendet.\",\"layer\":\"base\",\"title\":\"reveal\"},{\"value\":\"Karls Falkengruppe trifft sich einmal in der Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.\",\"type\":\"text\",\"layer\":\"second\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(14)\"},{\"value\":\"Im Moment besteht die Hauptaufgabe der Gruppe darin, sich auf die bevorstehende 'Kinderrepublik', das große Zeltlager im Sommer, vorzubereiten. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren.\",\"type\":\"text\",\"layer\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_84_(7)\"},{\"value\":\"Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. \",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"fifth\",\"value\":\"2_31_e\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Auch Karl beteiligt sich emsig und zieht mit einigen Freunden von Haus zu Haus, um Unterstützer*innen für die Kasse der 'Kinderrepublik' zu finden. Am Ende können sie 27 RM zum Guthaben der Ortsgruppe beisteuern.\",\"type\":\"text\"},{\"value\":\"Inzwischen steht fest, an welchem Ort das Lager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Karls Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(92)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\"},{\"type\":\"image\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat noch nie die Aktivitäten einer Kindergruppe organisiert. Um ihre Aufgaben besser zu kennen liest sie das Buch 'Im Zeltlager - ein technisches Handbuch für rote Falkenführer von Hermann Neddermayer. Das Buch wurde gerade erst herausgegeben und sammelt wertvolle Erfahrungen aus den bisherigen Zeltlagern der Kinderfreunde.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_167_(4)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.\",\"type\":\"text\",\"option\":\"third\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(14)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"PH-B_279_Löwenstein_in_Seekamp_1927\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(49)\"},{\"value\":\"Gerda sieht darin eine tiefgreifende Auseinandersetzung mit einem anderen Ort. Diese Methode wird sich daher auch gut für die Kinderrepublik eignen.\",\"type\":\"text\",\"option\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"2_30_2\",\"content\":[{\"value\":\"Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. \",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_2424_(1)\"},{\"value\":\"Gerda nimmt an einer Wanderung teil, zu der alle Helfer*innen aus ihrer Stadt eingeladen sind. Am Ende sind sie immerhin 16 Jugendliche, die alle zwischen 15 und 18 Jahre alt sind. Die meisten von ihnen werden ebenfalls als Helfer*innen bei der 'Kinderrepublik' dabei sein. Gerda freut sich darauf, mit ihnen gemeinsam dorthin zu fahren.\",\"type\":\"text\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"video\",\"value\":\"18_Gerda_Vorbereitung\",\"layer\":\"base\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Inzwischen steht auch fest, an welchem Ort das Zeltlager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Gerdas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben\",\"type\":\"text\"},{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\"},{\"type\":\"image\",\"value\":\"Karte_Weimarer_Republik\",\"option\":\"second\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Wenige Wochen bevor die 'Kinderrepublik' stattfindet, haben die Kinderfreunde begonnen, eine Zeltlagerzeitung herauszugeben. Auch Gerdas Gruppe hat sich mit Artikeln und Bildern daran beteiligt. Die Zeitung soll alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_12_(17)\"},{\"value\":\"Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\",\"type\":\"text\",\"option\":\"third\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]}]},{\"id\":4,\"name\":\"Das Probezeltlager\",\"link\":\"probezeltlager\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"video\",\"option\":\"second\",\"value\":\"15_Anna_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Annas Ortsgruppe hat gut geklappt. Alle haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht. Nun fiebern alle der 'Kinderrepublik' entgegen.\",\"option\":\"reveal\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2480_(1)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Vor einigen Wochen haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem soll sie dazu dienen, Bauern und Bäcker zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle geben wird. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_12_(17)\"},{\"type\":\"text\",\"value\":\"Nun steht die Abreise endlich bevor. Anna muss ihre Sachen packen, damit sie die nächsten drei Wochen alles dabei hat, was sie braucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_2424_(1)\",\"info\":\"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\",\"content\":[{\"type\":\"text\",\"option\":\"third\",\"value\":\"Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack.\"},{\"type\":\"suitcase\",\"value\":\"suitcase\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"title\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"video\",\"option\":\"second\",\"value\":\"16_Karl_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_84_(9)\"},{\"type\":\"text\",\"value\":\"Nur Kurt war mit wenig Interesse dabei, hat sich vor der Arbeit gedrückt und oft von der Gruppe entfernt. Die Gruppe hat daher einstimmig entschieden, dass Kurt nicht mehr an den Unternehmungen der Gruppe teilnehmen darf, wenn er nicht bereit ist, sich einzubringen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(50)\"},{\"type\":\"text\",\"value\":\"Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_12_(17)\"},{\"type\":\"text\",\"value\":\"Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"background\":\"02_2424_(1)\",\"info\":\"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\",\"content\":[{\"type\":\"text\",\"value\":\"Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack.\"},{\"type\":\"suitcase\",\"value\":\"rucksack\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"title\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"video\",\"value\":\"17_Gerda_Probezeltlager\",\"option\":\"second\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Gerdas Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_84_(9)\"},{\"type\":\"text\",\"value\":\"Gerda fand es trotzdem aufregend, da sie als Helferin auch die Verantwortung für das Wohlergehen der Kinder hatte. Zum Glück haben sich alle vorbildlich verhalten, niemand hat sich verletzt und es gab keinen Ärger zwischen den Kindern und Helfer*innen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(92)\"},{\"type\":\"text\",\"value\":\"Ihre Sachen hat Gerda auch noch nicht gepackt. 3 Wochen sind eine lange Zeit.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"02_2424_(1)\",\"info\":\"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\",\"content\":[{\"type\":\"text\",\"option\":\"third\",\"value\":\"Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack.\"},{\"type\":\"suitcase\",\"value\":\"suitcase\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"title\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik.\"}]}]},{\"id\":5,\"name\":\"Der Weg zur Kinderrepublik\",\"link\":\"reise\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Anna fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Ihre Eltern und ihr Großvater sind etwas traurig, denn Anna war noch nie länger von zu Hause weg - und schon gar nicht allein.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(56)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Mit 35 anderen Kindern und einigen Helfer*innen als Begleitung fährt Anna im Zug Richtung Norden.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2453_(1)\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Anna möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.\"},{\"type\":\"tictactoe\",\"value\":\"Drei gewinnt\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_278_(3)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"option\":\"third\",\"title\":\"Betrete die Kinderrepublik!\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(8)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_2453_(1)\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihm langweilig ist.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(51)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.\"},{\"type\":\"tictactoe\",\"value\":\"Drei gewinnt\"},{\"type\":\"text\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"option\":\"second\",\"title\":\"Betrete die Kinderrepublik!\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_1590_Seite_138\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Aber ihre Mutter hat ihr versichert, dass sie es schon schaffen wird. Und im Moment hat sie einen sehr höflichen und ordentlichen Schlafburschen, der ihr auch ab und zu im Haushalt zur Hand geht.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2453_(1)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Nun sitzt Gerda mit 28 Kindern und einigen anderen Helfer*innen im Zug, der sich langsam Richtung Norden bewegt.\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Gerda hat dafür keine Zeit, denn sie muss ein Auge darauf haben, dass niemand sich zu weit aus dem Fenster lehnt und herausfällt.\",\"layer\":\"second\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(51)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_278_(3)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"option\":\"second\",\"title\":\"Betrete die Kinderrepublik!\"}]}]},{\"id\":6,\"name\":\"Die Kinderrepublik\",\"link\":\"ankunft\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.\",\"option\":\"reveal\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"32_Anna_Zeltobfrau\"},{\"type\":\"text\",\"value\":\"Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl ist jetzt endlich in der Kinderrepublik angekommen und hat sein Zelt gemeinsam mit mehreren anderen Kindern bezogen. Er verschafft sich sofort einen Überblick über das Gelände und das Lager.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"fifth\",\"value\":\"2_8_Weg_zum_Zeltlager\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(20)\"},{\"type\":\"text\",\"value\":\"Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"primary\",\"value\":\"02_0028_KR_Westerwald_1932_Lagerwahl\"},{\"type\":\"text\",\"value\":\"An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"39_Karl_Zeltobfrau\"},{\"type\":\"text\",\"value\":\"In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu entdecken und auszuprobieren.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda ist nun endlich mit ihrer Gruppe in der Kinderrepublik angekommen. Sie fangen sofort damit an, ihre Zelte aufzubauen und ihre Strohsäcke zu füllen. Das ist ein Durcheinander: Hunderte Kinder, die gleichzeitig mit Zeltstangen, Zeltbahnen und Stroh durcheinanderlaufen!\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"primary\",\"value\":\"2_31_aa\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Nebenan sind Gruppen aus dem Ruhrgebiet und Schlesien, die ebenfalls emsig mit dem Aufbau ihrer Zeltdörfer beschäftigt sind. Gerda verschafft sich erst einmal einen Überblick über das Gelände und das Lager.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"27_Gerda_Lageraufbau\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte.\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Jede Ortsgruppe gibt zu Beginn ihre eingesammelten Spenden bei der Lagerkasse ab, die durch eine Helferin und drei Falken verwaltet wird. Davon werden zum Beispiel die Bäckereien bezahlt, die Brot an die Kinderrepublik liefern, oder die Fleischereien, die Wurst und Fleisch bereitstellen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_k\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat unter den Helfer*innen auch Berta, eine Bekannte aus ihrer Ortsgruppe getroffen. Sie ist bereits einige Tage vor den Kindergruppen angereist, um beim Aufbau der Latrinen und der Funktionszelte zu helfen.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(139)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Berta hilft nun beim Brotdienst und schneidet Brote in Scheiben, die dann an die Kinder verteilt werden. Gerda freut sich, dass Berta dabei ist. Denn von ihrer Erfahrung bei den Kinderfreunden kann Gerda noch viel lernen.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"26_Gerda_Küchenkommission\"}]},{\"grouped\":true,\"row\":false,\"background\":\"02_167_(4)\",\"content\":[{\"type\":\"text\",\"value\":\"In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"},{\"type\":\"redirect\",\"value\":\"falken\",\"avatar\":\"Falken\",\"title\":\"Ich möchte mehr über die Roten Falken erfahren.\"},{\"type\":\"text\",\"value\":\"Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.\",\"title\":\"Personen\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"image\",\"option\":\"full\",\"value\":\"02_45_(12)\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Priester\",\"title\":\"Priester\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Lagerfotograf\",\"title\":\"Lagerfotograf\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Lagerarzt\",\"title\":\"Lagerarzt\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Genossen\",\"title\":\"lokale Genoss*innen\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Hitlerjugend\",\"title\":\"Hitlerjugend\"}]}]},{\"id\":7,\"name\":\"Die Roten Falken\",\"link\":\"falken\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Falken\",\"content\":[{\"type\":\"text\",\"value\":\"Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(144)\"},{\"type\":\"text\",\"value\":\"Das Ziel dieser Gebote ist es, dass aus den Kindern später einmal gute, hilfsbereite und engagierte Sozialdemokrat*innen werden. Diese Regeln und Gebote werden in der Kinderrepublik oft abends vor der Lagerruhe im Sprechchor aufgesagt.\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]}]},{\"id\":8,\"name\":\"Weitere Personen\",\"link\":\"personen\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Priester\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"19_Besuchstag\"},{\"type\":\"text\",\"value\":\"Einer dieser Kirchenvertreter ist ein katholischer Priester aus der nahen Umgebung. Insbesondere die katholische Kirche lehnt das Prinzip der Koedukation, das die Kinderfreunde  propagieren, ab. Koedukation bedeutet, dass Mädchen und Jungen gemeinsam in der Gruppe aktiv sind. Vor allem die gemeinsam genutzten Zelte hält der Priester für moralisch verwerflich.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Priester\",\"content\":[{\"type\":\"image\",\"value\":\"02_84_(4)\",\"option\":\"third\"},{\"type\":\"text\",\"value\":\"In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(99)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Priester\",\"content\":[{\"type\":\"text\",\"value\":\"Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel.\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"content\":[{\"type\":\"text\",\"value\":\"Im Zeltlager wird oft fotografiert. Obwohl bereits seit 1925 Kleinbildkameras serienmäßig produziert werden, besitzen die wenigsten Arbeiterfamilien Fotoapparate. Denn diese kosten oft den 4- bis 5-fachen Monatslohn eines Arbeiters. Erst 1930 gibt es erschwingliche Kameras - zwar mit größeren Rollfilmen, aber für nur 40 RM.\",\"option\":\"reveal\"},{\"type\":\"text\",\"value\":\"Im Zeltlager gibt es nur wenige Personen, die eine Kamera bedienen können.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_0189_SAJ_Bielefeld_auf_dem_AJT_in_Hamburg,_1925,_Fotograf\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"content\":[{\"type\":\"text\",\"value\":\"Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik.\"},{\"type\":\"text\",\"value\":\"Er hält alle wichtigen Momente fest: Ausflüge, Aufführungen des legendären Lagerzirkus, die Essenausgabe, die Musikkapelle und natürlich auch alle anderen Situationen des Gruppenlebens.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(108)\"},{\"type\":\"text\",\"value\":\"Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(46)\"},{\"type\":\"summary\",\"value\":\"Irmas Bericht\",\"title\":\"08.08.\\nUm 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen.\\nFreundschaft.\\nIrma\"},{\"type\":\"summary\",\"value\":\"Georgs Bericht\",\"title\":\"01.08.\\nWir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein.\\nFreundschaft.\\nGeorg\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(146)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"background\":\"02_45_(21)\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(6)\"},{\"type\":\"summary\",\"value\":\"Lottes Bericht\",\"title\":\"23.07.\\nUm 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe.\\nFreundschaft.\\nLotte\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerarzt\",\"content\":[{\"type\":\"text\",\"value\":\"Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_29_2_Seite85\"},{\"type\":\"text\",\"value\":\"Er versorgt in der Kinderrepublik verletzte und kranke Kinder. Obwohl jedes Kind vor der Reise ärztlich untersucht werden sollte, gibt es doch immer wieder Fälle von schweren Erkrankungen und Seuchen.\",\"option\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerarzt\",\"content\":[{\"type\":\"text\",\"value\":\"Erst letzten Monat gab es Berichte von einem kleineren Zeltlager, das kurz vor der Schließung stand. Dort waren mehrere Fälle der lebensgefährlichen Krankheit Diphterie aufgetreten. Zum Glück konnten die betroffenen Kinder schnell isoliert und ins Krankenhaus gebracht werden. Die Ansteckung anderer Kinder wurde so verhindert.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_30_2\"},{\"type\":\"text\",\"value\":\"Für die Helfer*innen bietet der Lagerarzt regelmäßig Bildungsabende zum Thema Hygiene an. Dieses Wissen ist wichtig, damit Krankheiten im Zeltlager keine Chance haben.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerarzt\",\"background\":\"2_30_3\",\"content\":[{\"type\":\"text\",\"value\":\"2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil.\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"value\":\"In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. \",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(96)\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch.\"},{\"type\":\"image\",\"option\":\"third\",\"layer\":\"base\",\"value\":\"02_1455_(2)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"value\":\"Ohne die vielen wohlgesonnenen Bürger*innen im Umland könnte das Zeltlager nicht stattfinden. Und Lebensmittel für so viele Kinder in einem Laden zu kaufen wäre einerseits unmöglich und andererseits auch viel zu teuer.\"},{\"type\":\"image\",\"option\":\"primary\",\"value\":\"02_1455_(121)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"value\":\"Und wie schmeckt Anna und Karl das Essen in der Kinderrepublik?\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"37_Karl_Essen\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"31_Anna_Essen\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"21_Nächtlicher_Überfall\"},{\"type\":\"text\",\"value\":\"Vor ihnen stehen knapp 30 Kinder und Jugendliche mit leuchtenden Fackeln in den Händen. Sie brüllen irgendetwas von 'Sozialistenschweinen' und 'Vaterlandsverrätern' und rennen davon.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Die Kinder des Zeltlagers sind erschrocken. Sie haben schon oft gehört, dass die Hitlerjugend Zeltlager von sozialistischen Verbänden gestürmt haben. Aber sie hatten sich sehr sicher gefühlt.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(22)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Die Helfer*innen setzen sich nun mit ihren jeweiligen Zeltgemeinschaften zusammen und besprechen das soeben Erlebte.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"value\":\"Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_t\"},{\"type\":\"text\",\"value\":\"Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"value\":\"Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_z\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"value\":\"Seit 1926 gab es mit der Hitlerjugend bereits eine Jugendorganisation der NSDAP, die für Kinder ähnlich attraktiv wirkte, wie die sozialistischen und sozialdemokratischen Verbände.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"25_Karl_Hitlerjugend\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]}]},{\"id\":9,\"name\":\"Annas Erlebnisse\",\"link\":\"weitermitanna\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Kinder_am_Strand_in_Turnkleidung\"},{\"type\":\"text\",\"value\":\"Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Wie sieht der Tagesplan aus? Hilf Anna, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.\"},{\"type\":\"image\",\"option\":\"third bg\",\"layer\":\"base\",\"value\":\"2_30_1\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.\"},{\"type\":\"daily\",\"value\":\"daily\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind. Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"30_Anna_Dialekte\"}]},{\"grouped\":true,\"row\":false,\"background\":\"02_12_(5)\",\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Auch wenn die Kinder manchmal aneinander vorbei reden und unterschiedliche Wörter benutzen, gibt es doch eine Sache, die alle gleich gut verstehen und mögen: Kino.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_c\"},{\"type\":\"text\",\"value\":\"Am Nachmittag haben die Helfer*innen eine Filmvorführung für die jungen Republikaner*inne in einem nahen Kino organisiert. In 2 Schichten schauen alle Kinder einen Stummfilm von Buster Keaton. Dafür braucht es keine Worte, denn diesen Humor verstehen alle.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Normalerweise finden Ausflüge und Arbeitsgruppen vor dem Mittagessen statt.\"},{\"type\":\"text\",\"value\":\"Die ruhigeren Nachmittage können die Kinder selbst füllen, um ihren Neigungen und Interessen nachzugehen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(135)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden. Die Kinder nennen diese Zeit auch 'Zausestunde', weil es oft rege Diskussionen gibt.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(97)\"},{\"type\":\"text\",\"value\":\"Hin und wieder gibt es in den einzelnen Zeltdörfern naturkundliche Vorträge der Helfer*innen. Dadurch lernen die Kinder etwas über die Tiere und die Pflanzen der Umgebung.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2453_(2)\"},{\"type\":\"text\",\"value\":\"An manchen Nachmittagen bewegt sich das ganze Zeltlager! Die Kinder lernen dann Volkstänze aus allen Teilen der Republik und sogar aus anderen Ländern. Dabei tanzen alle zusammen: Jungen und Mädchen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_j\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Abends gibt es manchmal Kulturveranstaltungen und gemeinsames Singen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(36)\",\"content\":[{\"type\":\"text\",\"value\":\"Fast alle Angelegenheiten werden demokratisch entschieden. Dennoch gibt es manchmal Situationen, in denen dies nichts nützt, denn...\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"29_Anna_Gewitter\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"In solchen Momenten muss die ganze Kinderrepublik an einem Strang ziehen. Jede*r hat eine Aufgabe.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(9)\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Die Zelte müssen wieder aufgebaut werden, Löcher gestopft werden, abgebrochene Äste und Zweige müssen eingesammelt werden und über den matschigen Feldboden wird ein Holzweg gebaut.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_8_Stegbau\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna hat von einigen Helfer*innen gehört, dass es vergangenen Sommer ein Zeltlager gegeben hat, bei dem es zwei Wochen lang ununterbrochen geregnet hat. Die Kinder waren dann die meiste Zeit im Zelt und die meisten Ausflüge und Aktivitäten fielen sprichwörtlich ins Wasser.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(132)\"},{\"type\":\"text\",\"value\":\"Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(57)\"},{\"type\":\"text\",\"value\":\"Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(106)\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"20_Anna_Lagerbücherei\"},{\"type\":\"text\",\"value\":\"Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?\"},{\"type\":\"redirect\",\"value\":\"annameetskarl\",\"option\":\"third\",\"title\":\"Ja, gern.\"},{\"type\":\"redirect\",\"value\":\"annaundausflüge\",\"option\":\"third\",\"title\":\"Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen.\"}]}]},{\"id\":10,\"name\":\"Karls Erlebnisse\",\"link\":\"weitermitkarl\",\"character\":\"Karl\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Kinder_am_Strand_in_Turnkleidung\"},{\"type\":\"text\",\"value\":\"Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_30_1\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.\"},{\"type\":\"daily\",\"value\":\"Tagesplan\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Ein Großteil des Tages besteht darin, dass die Kinder und Jugendlichen ihren eigenen Interessen nachgehen können und an einer der vielfältigen Arbeitsgruppen teilnehmen können. Oft organisieren die Kinder auch eigene Veranstaltungen oder Ausflüge.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(16)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"38_Karl_ErsteHilfe\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind.\"},{\"type\":\"image\",\"option\":\"primary\",\"value\":\"2_8_5\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Es bereitet ihm große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"36_Karl_Dialekte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(135)\"},{\"type\":\"text\",\"value\":\"Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_v\"},{\"type\":\"text\",\"value\":\"An manchen Nachmittagen tanzt das ganze Zeltlager, es gibt Zirkusaufführungen oder Theaterinszenierungen der Kinder und Helfer*innen.\"},{\"type\":\"video\",\"option\":\"third\",\"value\":\"22_Karl_Dialektabend\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Auch wenn im Zeltlager vieles gut organisiert ist und über fast alles demokratisch entschieden wird, gibt es auch hier Situationen, die niemand beeinflussen kann, denn...\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"35_Karl_Gewitter\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen. Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Stegbau\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(57)\"},{\"type\":\"text\",\"value\":\"Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?\"},{\"type\":\"redirect\",\"value\":\"annameetskarl\",\"option\":\"third\",\"title\":\"Ja, gern.\"},{\"type\":\"redirect\",\"value\":\"annaundausflüge\",\"option\":\"third\",\"title\":\"Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen.\"}]}]},{\"id\":11,\"name\":\"Anna und die Ausflüge\",\"link\":\"annaundausflüge\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Eine wichtige Beschäftigung während der Kinderrepublik ist auch das sogenannte 'soziale Wandern'.\",\"option\":\"reveal\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"34_Anna_Ausflug\"},{\"type\":\"text\",\"value\":\"Dabei geht es nicht nur um das Wandern als sportliche Betätigung, sondern auch um das soziale und wirtschaftliche Lebensumfeld der Menschen vor Ort.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(123)\"},{\"type\":\"text\",\"value\":\"Annas Zeltdorf macht eine Wanderung zu einer nahen Ziegelei, die durch einige Arbeitersiedlungen führt. Dort wohnen viele Arbeiterfamilien in ärmlichen Verhältnissen. Sie erfahren in Gesprächen mit den Bewohner*innen, dass die meisten von ihnen in einer der nahen Werften und am Hafen arbeiten.\",\"layer\":\"fore\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(64)\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Hier in der Gegend gibt es aber auch noch viele Bauerndörfer. Für Anna wirken manche Orte viel idyllischer als das, was sie von zu Hause kennt. Sie versteht aber, dass auch Kleinbauern oft arm sind und wenig zu essen haben.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"24_Anna_Arbeiterklasse\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Anna hat in der Lagerbücherei Karl kennengelernt, mit dem sie sich gut versteht. Die beiden wohnen sogar in dem selben Zeltdorf.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_2593_(2)\"},{\"type\":\"text\",\"value\":\"Anna versucht Karl für die parlamentarische Struktur der Kinderrepublik zu begeistern, die ihm bisher sehr kompliziert vorkommt.\"},{\"type\":\"redirect\",\"value\":\"gemeinsam\",\"title\":\"Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen.\"}]}]},{\"id\":12,\"name\":\"Anna und Karl\",\"link\":\"annameetskarl\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.\",\"layer\":\"fore\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"23_Anna_und_Karl_mit_Musik\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Beide lesen aber auch gern Romane, die von Entdeckungsreisen und fantastischen Orten handeln. Karl hat bisher während des Zeltlagers schon zwei Bücher von Jules Verne gelesen. \",\"layer\":\"fore\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_8_Lesende_Jungs_im_Zelt\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Auch einige sehr neue Romane finden sich in der Lagerbücherei. Anna hat zum Beispiel 'Emil und die Detektive' von Erich Kästner gelesen und war begeistert.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(118)\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Es gibt aber auch Literatur, welche die geistige und moralische Haltung der Kinder stärken soll. Neben wichtigen Werken sozialistischer Autor*innen steht daher auch hochaktuelle Antikriegsliteratur, z.B. 'Im Westen nichts Neues' von Erich Maria Remarque.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(91)\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik.\"},{\"type\":\"redirect\",\"value\":\"gemeinsam\",\"title\":\"Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen.\"}]}]},{\"id\":13,\"name\":\"Gemeinsam in der Kinderrepublik\",\"link\":\"gemeinsam\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"In Annas und Karls Zeltdorf haben sich mehrere Kinder zusammengefunden, die einen Antrag an das Lagerparlament stellen wollen. Sie wollen erreichen, dass die Gymnastik morgens nach dem Frühstück und nicht davor stattfindet. \"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Mädchen_in_Turnkleidung_am_Strand\"},{\"type\":\"text\",\"value\":\"Nachdem sie die Mehrheit für diesen Vorschlag in ihrer Zeltgemeinschaft erhalten haben, reichen sie den Antrag an die Gemeindevertretung des Zeltdorfes weiter.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_12_(1)\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Der Bürgermeister muss nun den Antrag an das Lagerparlament weiterreichen, sodass alle Vertreter*innen der Gemeinderäte darüber beraten und abstimmen können. Am Ende lehnt das Lagerparlament mit großer Mehrheit den Vorschlag ab.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_8_Junge_mit_Becher\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Es begründet seine Entscheidung damit, dass der Küchendienst nach dem Aufstehen etwas Zeit braucht, um das Essen vorzubereiten und damit, dass Sport vor dem Essen gesünder sei als direkt danach.\"}]},{\"grouped\":true,\"row\":false,\"background\":\"02_1455_(91)\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hat eingesehen, dass der Ablauf wirklich kompliziert ist. Um die ganze Lagerstruktur besser erklären zu können,  hat sie sich ein Spiel ausgedacht. Sie spielt es mit Karl, um auszuprobieren, ob es verständlich ist.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Diese bestehen aus einer Zeichnung und dem dazu passenden Foto. Klicke einfach auf die Kärtchen, um zu sehen, was sich auf der Rückseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Wenn du das Spiel gewinnst, wird sich die Kinderrepublik langsam dem Ende nähern.\"},{\"type\":\"memory\",\"value\":\"Memory\"},{\"type\":\"redirect\",\"value\":\"endkapitel\",\"option\":\"primary\",\"title\":\"Du hast genug gespielt und hast langsam Heimweh....\"}]}]},{\"id\":14,\"name\":\"Das Ende der Kinderrepublik\",\"link\":\"endkapitel\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"option\":\"reveal\",\"value\":\"Gerda hat den beiden Kindern beim Spielen zugeschaut und findet Annas Idee großartig. Sie will das Spiel mit ihrer Ortsgruppe ausprobieren, wenn sie sich auf das nächste Zeltlager vorbereiten.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_ac\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Da Gerda nur wenige Jahre älter als Anna und Karl ist, hat sie direkt einen guten Draht zu den beiden. Sie hören ihr gespannt zu, wie sie berichtet, wie sie zur Sozialistischen Arbeiterjugend gekommen ist und warum sie Helferin in der Kinderrepublik geworden ist. \"}]},{\"grouped\":true,\"row\":false,\"background\":\"103\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"28_Deutschfranzösisches_Zeltlager\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Bis dahin nehmen sie sich jedoch vor, an einem der nächsten Arbeiterjugendtage teilzunehmen. Dieser findet alle ein bis zwei Jahre statt und wird voraussichtlich 1931 in Frankfurt am Main ausgetragen.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_0016_AJT_in_Wien_1929\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Dort treffen sich Arbeiterkinder aus der ganzen Republik, bekunden ihre Solidarität und schmieden Pläne für eine bessere Zukunft.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Die Kinderrepublik nähert sich langsam dem Ende. Für Anna und Karl ist diese Zeit wie im Flug vergangen.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_y\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Sie haben viele neue Freunde gefunden. Viele davon werden, wie die beiden, bald eine Lehre in einer der großen Fabriken anfangen.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_0013_Lübecker_Bucht_1930_Briefkasten\"}]},{\"grouped\":true,\"row\":false,\"background\":\"2_31_s\",\"content\":[{\"type\":\"text\",\"value\":\"Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien.\"},{\"type\":\"redirect\",\"option\":\"second\",\"value\":\"ausblick\",\"title\":\"Doch was ist nach den 1920er Jahren aus den Kindern geworden?\"}]}]},{\"id\":15,\"name\":\"Das Ende der Republik\",\"link\":\"ausblick\",\"groups\":[{\"grouped\":true,\"row\":false,\"background\":\"PH_dig_205_Seite205\",\"content\":[{\"type\":\"text\",\"value\":\"Viele der Kinder und Jugendlichen, die in den 1920er und 1930er Jahren an Zeltlagern der Kinderfreunde und der Sozialistischen Arbeiterjugend (SAJ) teilgenommen haben, wurden nach 1933 für ihr politisches Engagement verfolgt, inhaftiert und auch ermordet.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(19)\"},{\"type\":\"text\",\"value\":\"Die hier verwendeten Bilder überlebten oft nur durch Zufall oder weil sie gut versteckt worden waren und wie ein Schatz gehütet wurden.\"},{\"type\":\"text\",\"value\":\"Ende\"}]}]}]}");
+module.exports = JSON.parse("{\"chapters\":[{\"id\":1,\"name\":\"Zu Hause\",\"link\":\"daheim\",\"groups\":[{\"grouped\":false,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.\",\"layer\":\"fore\",\"option\":\"reveal\"},{\"type\":\"image\",\"layer\":\"back\",\"value\":\"daheim_karte\"},{\"type\":\"smokingpit\",\"layer\":\"base\",\"value\":\"smokingpit\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei.\"},{\"type\":\"image\",\"value\":\"daheim_kinder\",\"option\":\"third\"},{\"type\":\"text\",\"value\":\"Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben.\"}]},{\"grouped\":true,\"row\":true,\"content\":[{\"type\":\"text\",\"value\":\"Wen möchtest du auf diesem Weg begleiten?\"},{\"type\":\"image\",\"option\":\"third avatar\",\"value\":\"daheim_karl\",\"title\":\"Karl\"},{\"type\":\"image\",\"option\":\"third avatar\",\"value\":\"daheim_gerda\",\"title\":\"Gerda\"},{\"type\":\"image\",\"option\":\"third avatar\",\"value\":\"daheim_anna\",\"title\":\"Anna\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"daheim_familie\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_1033_Seite58\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_608_Seite112\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Anna\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"3_Annas_Alltag_mit_Hühnern\",\"title\":\"Annas Alltag\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"4_Annas_Zuhause\",\"title\":\"Annas Umfeld\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"2_Anna_Familie\",\"title\":\"Annas Familie\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"1_Anna_Großvater\",\"title\":\"Annas Großvater\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Karl\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"7_Karl_Alltag\",\"title\":\"Karls_Alltag\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"6_Karl_Familie\",\"title\":\"Karls Familie\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"5_Karl_Großmutter\",\"title\":\"Karls Großmutter\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"8_Karls_Zuhause\",\"title\":\"Karls Zuhause\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt.\"}]},{\"grouped\":true,\"row\":true,\"character\":\"Gerda\",\"background\":\"daheim_familie2\",\"content\":[{\"value\":\"Worüber möchtest du mehr erfahren?\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"9_Gerdas_Familie\",\"title\":\"Gerdas Familie\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"10_Gerdas_Alltag_mit_Musik\",\"title\":\"Gerdas Alltag\"},{\"type\":\"video\",\"option\":\"fourth\",\"value\":\"11_Gerdas_Zuhause\",\"title\":\"Gerdas Zuhause\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie sich in einem Verein namens 'Reichsarbeitsgemeinschaft der Kinderfreunde' engagieren und nach neuen Mitgliedern für die Ortsgruppe des Vereins suchen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"layer\":\"fore\",\"option\":\"primary\",\"value\":\"daheim_werbung\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"option\":\"third\",\"value\":\"Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2-1781_Seite135\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"background\":\"02_1455_(147)\",\"content\":[{\"type\":\"text\",\"value\":\"Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1945_SAJ_Frankenthal_1929\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"layer\":\"back\",\"option\":\"second\",\"value\":\"02_12_(4)\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"daheim_werbung\"},{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Zur Vorbereitung treffen sich die Helferinnen und Helfer bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(147)\",\"content\":[{\"type\":\"text\",\"value\":\"Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"value\":\"Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"value\":\"ortsgruppe\",\"option\":\"primary\",\"title\":\"Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"value\":\"Hilf Karl, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"value\":\"ortsgruppe\",\"option\":\"primary\",\"title\":\"Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"02_1455_(147)\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen.\"},{\"type\":\"text\",\"value\":\"Hilf Gerda, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"puzzle\",\"value\":\"puzzle\"},{\"type\":\"redirect\",\"value\":\"ortsgruppe\",\"option\":\"primary\",\"title\":\"Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe.\"}]}]},{\"id\":2,\"name\":\"Die Ortsgruppe\",\"link\":\"ortsgruppe\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. \",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_214_Seite142\"},{\"value\":\"In dem Raum sind 17 Mädchen und Jungen versammelt. Einige von ihnen kennt sie aus ihrer Siedlung. Alle kommen wie Anna aus ärmlichen Verhältnissen und erhoffen sich durch die Betätigung in der Ortsgruppe etwas Ablenkung vom oft tristen Alltag.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"12_Anna_Ortsgruppe\"},{\"type\":\"redirect\",\"value\":\"gruppenvorbereitung\",\"option\":\"second\",\"title\":\"Ich möchte noch mehr über Annas Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"option\":\"second\",\"title\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.\",\"layer\":\"fore\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_12_(4)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.\",\"type\":\"text\"},{\"type\":\"video\",\"value\":\"13_Karl_Ortsgruppe\"},{\"type\":\"redirect\",\"value\":\"gruppenvorbereitung\",\"option\":\"second\",\"title\":\"Ich möchte noch mehr über Karls Ortsgruppe erfahren.\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"option\":\"second\",\"title\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"daheim_karte\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2-1781_Seite135\"},{\"value\":\"Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"02_1455_(105)\",\"content\":[{\"value\":\"Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(103)\"},{\"value\":\"Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. \",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.\",\"type\":\"text\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"14_Gerda_Ortsgruppe\"},{\"type\":\"redirect\",\"value\":\"gruppenvorbereitung\",\"option\":\"second\",\"title\":\"Ich möchte noch mehr über die Arbeit der Ortsgruppe sowie über die Rolle der Helfer*innen erfahren.\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"option\":\"second\",\"title\":\"Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen.\"}]}]},{\"id\":3,\"name\":\"Die Arbeit der Ortsgruppe\",\"link\":\"gruppenvorbereitung\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken.\",\"option\":\"reveal\"},{\"value\":\"Als Rote Falken werden alle 12- bis 14-Jährigen im Verband der Kinderfreunde genannt.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(14)\"},{\"value\":\"Anna ist stolz, ein 'Roter Falke' zu sein und ein blaues Hemd zu tragen. Endlich hat sie einen Ort gefunden, wo sie sich zugehörig und verstanden fühlt.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. \",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(21)\"},{\"value\":\"Die Ausstellung kann gegen einen Eintritt von 10 Pfennig besucht werden. Neben einigen Leuten von der örtlichen Presse kommen auch viele Eltern vorbei. Einige der Ausstellungsobjekte spendet die Ortsgruppe der Arbeiterwohlfahrt.\",\"type\":\"text\",\"option\":\"fourth\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(49)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.\",\"content\":[{\"value\":\"Die Bildungsabende beschäftigen sich neben politischen auch mit praktischen Themen, wie zum Beispiel der Hygiene.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_30_2\"},{\"value\":\"Anna lernt während eines Vortrags, dass das Elend der Arbeiterklasse oft durch mangelnde Sauberkeit und schlecht versorgte Wunden und Krankheiten verschärft wird. Die Sauberkeit des eigenen Körpers und des eigenen Heims sind dabei besonders wichtig. Auch der Umgang mit ansteckenden Krankheiten in der eigenen Familien wird dabei angesprochen.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(58)\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_h\"},{\"value\":\"Inzwischen ist Anna schon über ein halbes Jahr regelmäßig zu den Treffen der Roten Falken gegangen. Für den Sommer ist ein großes Zeltlager unter dem Titel 'Kinderrepublik' geplant. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren. \",\"option\":\"third\",\"type\":\"text\"},{\"value\":\"Das kostet natürlich viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"value\":\"Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(92)\"},{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl gehört in seiner Ortsgruppe der Kinderfreunde zu den 'Roten Falken'. Diese Bezeichnung wird für alle 12- bis 14-jährigen Mitglieder verwendet.\",\"layer\":\"base\",\"title\":\"reveal\"},{\"value\":\"Karls Falkengruppe trifft sich einmal in der Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.\",\"type\":\"text\",\"layer\":\"second\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(14)\"},{\"value\":\"Im Moment besteht die Hauptaufgabe der Gruppe darin, sich auf die bevorstehende 'Kinderrepublik', das große Zeltlager im Sommer, vorzubereiten. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren.\",\"type\":\"text\",\"layer\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_84_(7)\"},{\"value\":\"Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. \",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"fifth\",\"value\":\"2_31_e\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Auch Karl beteiligt sich emsig und zieht mit einigen Freunden von Haus zu Haus, um Unterstützer*innen für die Kasse der 'Kinderrepublik' zu finden. Am Ende können sie 27 RM zum Guthaben der Ortsgruppe beisteuern.\",\"type\":\"text\"},{\"value\":\"Inzwischen steht fest, an welchem Ort das Lager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Karls Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(92)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\"},{\"type\":\"image\",\"value\":\"Karte_Weimarer_Republik\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat noch nie die Aktivitäten einer Kindergruppe organisiert. Um ihre Aufgaben besser zu kennen liest sie das Buch 'Im Zeltlager - ein technisches Handbuch für rote Falkenführer von Hermann Neddermayer. Das Buch wurde gerade erst herausgegeben und sammelt wertvolle Erfahrungen aus den bisherigen Zeltlagern der Kinderfreunde.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_167_(4)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.\",\"type\":\"text\",\"option\":\"third\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(14)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"PH-B_279_Löwenstein_in_Seekamp_1927\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"info\":\"Eine Horde bezeichnet eine unbestimmte Gruppe von Menschen - ähnlich wie eine Herde bei Tieren.\",\"content\":[{\"value\":\"Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(49)\"},{\"value\":\"Gerda sieht darin eine tiefgreifende Auseinandersetzung mit einem anderen Ort. Diese Methode wird sich daher auch gut für die Kinderrepublik eignen.\",\"type\":\"text\",\"option\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"2_30_2\",\"content\":[{\"value\":\"Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. \",\"type\":\"text\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_2424_(1)\"},{\"value\":\"Gerda nimmt an einer Wanderung teil, zu der alle Helfer*innen aus ihrer Stadt eingeladen sind. Am Ende sind sie immerhin 16 Jugendliche, die alle zwischen 15 und 18 Jahre alt sind. Die meisten von ihnen werden ebenfalls als Helfer*innen bei der 'Kinderrepublik' dabei sein. Gerda freut sich darauf, mit ihnen gemeinsam dorthin zu fahren.\",\"type\":\"text\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"video\",\"value\":\"18_Gerda_Vorbereitung\",\"layer\":\"base\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Inzwischen steht auch fest, an welchem Ort das Zeltlager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Gerdas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben\",\"type\":\"text\"},{\"value\":\"Auf der Karte kannst du dir ansehen, woher die Kinder kommen.\",\"type\":\"text\"},{\"type\":\"image\",\"value\":\"Karte_Weimarer_Republik\",\"option\":\"second\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"value\":\"Wenige Wochen bevor die 'Kinderrepublik' stattfindet, haben die Kinderfreunde begonnen, eine Zeltlagerzeitung herauszugeben. Auch Gerdas Gruppe hat sich mit Artikeln und Bildern daran beteiligt. Die Zeitung soll alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten.\",\"type\":\"text\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_12_(17)\"},{\"value\":\"Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\",\"type\":\"text\",\"option\":\"third\"},{\"type\":\"redirect\",\"value\":\"probezeltlager\",\"title\":\"Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager.\"}]}]},{\"id\":4,\"name\":\"Das Probezeltlager\",\"link\":\"probezeltlager\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"video\",\"option\":\"second\",\"value\":\"15_Anna_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Annas Ortsgruppe hat gut geklappt. Alle haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht. Nun fiebern alle der 'Kinderrepublik' entgegen.\",\"option\":\"reveal\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2480_(1)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Vor einigen Wochen haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem soll sie dazu dienen, Bauern und Bäcker zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle geben wird. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_12_(17)\"},{\"type\":\"text\",\"value\":\"Nun steht die Abreise endlich bevor. Anna muss ihre Sachen packen, damit sie die nächsten drei Wochen alles dabei hat, was sie braucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_2424_(1)\",\"info\":\"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.\",\"content\":[{\"type\":\"text\",\"option\":\"third\",\"value\":\"Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"suitcase\",\"value\":\"suitcase\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"title\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"video\",\"option\":\"second\",\"value\":\"16_Karl_Probezeltlager\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_84_(9)\"},{\"type\":\"text\",\"value\":\"Nur Kurt war mit wenig Interesse dabei, hat sich vor der Arbeit gedrückt und oft von der Gruppe entfernt. Die Gruppe hat daher einstimmig entschieden, dass Kurt nicht mehr an den Unternehmungen der Gruppe teilnehmen darf, wenn er nicht bereit ist, sich einzubringen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(50)\"},{\"type\":\"text\",\"value\":\"Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_12_(17)\"},{\"type\":\"text\",\"value\":\"Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"background\":\"02_2424_(1)\",\"info\":\"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.\",\"content\":[{\"type\":\"text\",\"value\":\"Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"suitcase\",\"value\":\"rucksack\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"title\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"video\",\"value\":\"17_Gerda_Probezeltlager\",\"option\":\"second\"},{\"type\":\"text\",\"value\":\"Das Probezeltlager von Gerdas Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_84_(9)\"},{\"type\":\"text\",\"value\":\"Gerda fand es trotzdem aufregend, da sie als Helferin auch die Verantwortung für das Wohlergehen der Kinder hatte. Zum Glück haben sich alle vorbildlich verhalten, niemand hat sich verletzt und es gab keinen Ärger zwischen den Kindern und Helfer*innen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(92)\"},{\"type\":\"text\",\"value\":\"Ihre Sachen hat Gerda auch noch nicht gepackt. 3 Wochen sind eine lange Zeit.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"background\":\"02_2424_(1)\",\"info\":\"Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.\",\"content\":[{\"type\":\"text\",\"option\":\"third\",\"value\":\"Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.\"},{\"type\":\"suitcase\",\"value\":\"suitcase\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"title\":\"Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik.\"}]}]},{\"id\":5,\"name\":\"Der Weg zur Kinderrepublik\",\"link\":\"reise\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Anna fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Ihre Eltern und ihr Großvater sind etwas traurig, denn Anna war noch nie länger von zu Hause weg - und schon gar nicht allein.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(56)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Mit 35 anderen Kindern und einigen Helfer*innen als Begleitung fährt Anna im Zug Richtung Norden.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2453_(1)\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Anna möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.\"},{\"type\":\"tictactoe\",\"value\":\"Drei gewinnt\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_278_(3)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"option\":\"third\",\"title\":\"Betrete die Kinderrepublik!\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(8)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_2453_(1)\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihm langweilig ist.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(51)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren.\"},{\"type\":\"tictactoe\",\"value\":\"Drei gewinnt\"},{\"type\":\"text\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"option\":\"second\",\"title\":\"Betrete die Kinderrepublik!\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"info\":\"Schlafgänger/Schlafburschen waren Menschen, die für ein kleines Entgelt eine Schlafstelle (zumeist ein Bett in einer Wohnung) mieteten. Durch die Industrialisierung und die vielen Menschen in den Städten war Wohnraum meist knapp und teuer.\",\"content\":[{\"type\":\"text\",\"value\":\"Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_1590_Seite_138\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Aber ihre Mutter hat ihr versichert, dass sie es schon schaffen wird. Und im Moment hat sie einen sehr höflichen und ordentlichen Schlafburschen, der ihr auch ab und zu im Haushalt zur Hand geht.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2453_(1)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Nun sitzt Gerda mit 28 Kindern und einigen anderen Helfer*innen im Zug, der sich langsam Richtung Norden bewegt.\"},{\"type\":\"text\",\"value\":\"Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Gerda hat dafür keine Zeit, denn sie muss ein Auge darauf haben, dass niemand sich zu weit aus dem Fenster lehnt und herausfällt.\",\"layer\":\"second\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(51)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_278_(3)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(61)\"},{\"type\":\"text\",\"value\":\"Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"option\":\"second\",\"title\":\"Betrete die Kinderrepublik!\"}]}]},{\"id\":6,\"name\":\"Die Kinderrepublik\",\"link\":\"ankunft\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"info\":\"Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.\",\"content\":[{\"type\":\"text\",\"value\":\"Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.\",\"option\":\"reveal\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"32_Anna_Zeltobfrau\"},{\"type\":\"text\",\"value\":\"Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl ist jetzt endlich in der Kinderrepublik angekommen und hat sein Zelt gemeinsam mit mehreren anderen Kindern bezogen. Er verschafft sich sofort einen Überblick über das Gelände und das Lager.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"fifth\",\"value\":\"2_8_Weg_zum_Zeltlager\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"info\":\"Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.\",\"content\":[{\"type\":\"text\",\"value\":\"Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(20)\"},{\"type\":\"text\",\"value\":\"Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"primary\",\"value\":\"02_0028_KR_Westerwald_1932_Lagerwahl\"},{\"type\":\"text\",\"value\":\"An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"info\":\"Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"39_Karl_Zeltobfrau\"},{\"type\":\"text\",\"value\":\"In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu entdecken und auszuprobieren.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda ist nun endlich mit ihrer Gruppe in der Kinderrepublik angekommen. Sie fangen sofort damit an, ihre Zelte aufzubauen und ihre Strohsäcke zu füllen. Das ist ein Durcheinander: Hunderte Kinder, die gleichzeitig mit Zeltstangen, Zeltbahnen und Stroh durcheinanderlaufen!\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"primary\",\"value\":\"2_31_aa\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Nebenan sind Gruppen aus dem Ruhrgebiet und Schlesien, die ebenfalls emsig mit dem Aufbau ihrer Zeltdörfer beschäftigt sind. Gerda verschafft sich erst einmal einen Überblick über das Gelände und das Lager.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"27_Gerda_Lageraufbau\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"info\":\"Latrine ist ein altes Wort für eine behelfsmäßige Toilette ohne Wasserspülung.\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte.\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Jede Ortsgruppe gibt zu Beginn ihre eingesammelten Spenden bei der Lagerkasse ab, die durch eine Helferin und drei Falken verwaltet wird. Davon werden zum Beispiel die Bäckereien bezahlt, die Brot an die Kinderrepublik liefern, oder die Fleischereien, die Wurst und Fleisch bereitstellen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_k\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Gerda hat unter den Helfer*innen auch Berta, eine Bekannte aus ihrer Ortsgruppe getroffen. Sie ist bereits einige Tage vor den Kindergruppen angereist, um beim Aufbau der Latrinen und der Funktionszelte zu helfen.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(139)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Gerda\",\"content\":[{\"type\":\"text\",\"value\":\"Berta hilft nun beim Brotdienst und schneidet Brote in Scheiben, die dann an die Kinder verteilt werden. Gerda freut sich, dass Berta dabei ist. Denn von ihrer Erfahrung bei den Kinderfreunden kann Gerda noch viel lernen.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"26_Gerda_Küchenkommission\"}]},{\"grouped\":true,\"row\":false,\"background\":\"02_167_(4)\",\"content\":[{\"type\":\"text\",\"value\":\"In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"},{\"type\":\"redirect\",\"value\":\"falken\",\"avatar\":\"Falken\",\"title\":\"Ich möchte mehr über die Roten Falken erfahren.\"},{\"type\":\"text\",\"value\":\"Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.\",\"title\":\"Personen\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"image\",\"option\":\"full\",\"value\":\"02_45_(12)\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Priester\",\"title\":\"Priester\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Lagerfotograf\",\"title\":\"Lagerfotograf\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Lagerarzt\",\"title\":\"Lagerarzt\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Genossen\",\"title\":\"lokale Genoss*innen\"},{\"type\":\"redirect\",\"value\":\"personen\",\"option\":\"third\",\"avatar\":\"Hitlerjugend\",\"title\":\"Hitlerjugend\"}]}]},{\"id\":7,\"name\":\"Die Roten Falken\",\"link\":\"falken\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Falken\",\"content\":[{\"type\":\"text\",\"value\":\"Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(144)\"},{\"type\":\"text\",\"value\":\"Das Ziel dieser Gebote ist es, dass aus den Kindern später einmal gute, hilfsbereite und engagierte Sozialdemokrat*innen werden. Diese Regeln und Gebote werden in der Kinderrepublik oft abends vor der Lagerruhe im Sprechchor aufgesagt.\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]}]},{\"id\":8,\"name\":\"Weitere Personen\",\"link\":\"personen\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Priester\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"19_Besuchstag\"},{\"type\":\"text\",\"value\":\"Einer dieser Kirchenvertreter ist ein katholischer Priester aus der nahen Umgebung. Insbesondere die katholische Kirche lehnt das Prinzip der Koedukation, das die Kinderfreunde  propagieren, ab. Koedukation bedeutet, dass Mädchen und Jungen gemeinsam in der Gruppe aktiv sind. Vor allem die gemeinsam genutzten Zelte hält der Priester für moralisch verwerflich.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Priester\",\"content\":[{\"type\":\"image\",\"value\":\"02_84_(4)\",\"option\":\"third\"},{\"type\":\"text\",\"value\":\"In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(99)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Priester\",\"content\":[{\"type\":\"text\",\"value\":\"Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel.\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"content\":[{\"type\":\"text\",\"value\":\"Im Zeltlager wird oft fotografiert. Obwohl bereits seit 1925 Kleinbildkameras serienmäßig produziert werden, besitzen die wenigsten Arbeiterfamilien Fotoapparate. Denn diese kosten oft den 4- bis 5-fachen Monatslohn eines Arbeiters. Erst 1930 gibt es erschwingliche Kameras - zwar mit größeren Rollfilmen, aber für nur 40 RM.\",\"option\":\"reveal\"},{\"type\":\"text\",\"value\":\"Im Zeltlager gibt es nur wenige Personen, die eine Kamera bedienen können.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_0189_SAJ_Bielefeld_auf_dem_AJT_in_Hamburg,_1925,_Fotograf\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"content\":[{\"type\":\"text\",\"value\":\"Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik.\"},{\"type\":\"text\",\"value\":\"Er hält alle wichtigen Momente fest: Ausflüge, Aufführungen des legendären Lagerzirkus, die Essenausgabe, die Musikkapelle und natürlich auch alle anderen Situationen des Gruppenlebens.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(108)\"},{\"type\":\"text\",\"value\":\"Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(46)\"},{\"type\":\"summary\",\"value\":\"Irmas Bericht\",\"title\":\"08.08.\\nUm 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen.\\nFreundschaft.\\nIrma\"},{\"type\":\"summary\",\"value\":\"Georgs Bericht\",\"title\":\"01.08.\\nWir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein.\\nFreundschaft.\\nGeorg\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(146)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerfotograf\",\"background\":\"02_45_(21)\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(6)\"},{\"type\":\"summary\",\"value\":\"Lottes Bericht\",\"title\":\"23.07.\\nUm 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe.\\nFreundschaft.\\nLotte\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerarzt\",\"content\":[{\"type\":\"text\",\"value\":\"Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_29_2_Seite85\"},{\"type\":\"text\",\"value\":\"Er versorgt in der Kinderrepublik verletzte und kranke Kinder. Obwohl jedes Kind vor der Reise ärztlich untersucht werden sollte, gibt es doch immer wieder Fälle von schweren Erkrankungen und Seuchen.\",\"option\":\"third\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerarzt\",\"content\":[{\"type\":\"text\",\"value\":\"Erst letzten Monat gab es Berichte von einem kleineren Zeltlager, das kurz vor der Schließung stand. Dort waren mehrere Fälle der lebensgefährlichen Krankheit Diphterie aufgetreten. Zum Glück konnten die betroffenen Kinder schnell isoliert und ins Krankenhaus gebracht werden. Die Ansteckung anderer Kinder wurde so verhindert.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_30_2\"},{\"type\":\"text\",\"value\":\"Für die Helfer*innen bietet der Lagerarzt regelmäßig Bildungsabende zum Thema Hygiene an. Dieses Wissen ist wichtig, damit Krankheiten im Zeltlager keine Chance haben.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Lagerarzt\",\"background\":\"2_30_3\",\"content\":[{\"type\":\"text\",\"value\":\"2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil.\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"value\":\"In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. \",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(96)\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch.\"},{\"type\":\"image\",\"option\":\"third\",\"layer\":\"base\",\"value\":\"02_1455_(2)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"value\":\"Ohne die vielen wohlgesonnenen Bürger*innen im Umland könnte das Zeltlager nicht stattfinden. Und Lebensmittel für so viele Kinder in einem Laden zu kaufen wäre einerseits unmöglich und andererseits auch viel zu teuer.\"},{\"type\":\"image\",\"option\":\"primary\",\"value\":\"02_1455_(121)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Genossen\",\"content\":[{\"type\":\"text\",\"value\":\"Und wie schmeckt Anna und Karl das Essen in der Kinderrepublik?\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"37_Karl_Essen\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"31_Anna_Essen\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"21_Nächtlicher_Überfall\"},{\"type\":\"text\",\"value\":\"Vor ihnen stehen knapp 30 Kinder und Jugendliche mit leuchtenden Fackeln in den Händen. Sie brüllen irgendetwas von 'Sozialistenschweinen' und 'Vaterlandsverrätern' und rennen davon.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Die Kinder des Zeltlagers sind erschrocken. Sie haben schon oft gehört, dass die Hitlerjugend Zeltlager von sozialistischen Verbänden gestürmt haben. Aber sie hatten sich sehr sicher gefühlt.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(22)\"},{\"type\":\"text\",\"option\":\"fourth\",\"value\":\"Die Helfer*innen setzen sich nun mit ihren jeweiligen Zeltgemeinschaften zusammen und besprechen das soeben Erlebte.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"info\":\"Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.\",\"content\":[{\"type\":\"text\",\"value\":\"Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_t\"},{\"type\":\"text\",\"value\":\"Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"value\":\"Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_z\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Hitlerjugend\",\"content\":[{\"type\":\"text\",\"value\":\"Seit 1926 gab es mit der Hitlerjugend bereits eine Jugendorganisation der NSDAP, die für Kinder ähnlich attraktiv wirkte, wie die sozialistischen und sozialdemokratischen Verbände.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"25_Karl_Hitlerjugend\"},{\"type\":\"redirect\",\"value\":\"weitermitanna\",\"avatar\":\"Anna\",\"title\":\"Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken.\"},{\"type\":\"redirect\",\"value\":\"weitermitkarl\",\"avatar\":\"Karl\",\"title\":\"Ich möchte (weiter) schauen, was Karl erlebt.\"},{\"type\":\"redirect\",\"value\":\"ankunft\",\"avatar\":\"Gerda\",\"title\":\"Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist.\"}]}]},{\"id\":9,\"name\":\"Annas Erlebnisse\",\"link\":\"weitermitanna\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Kinder_am_Strand_in_Turnkleidung\"},{\"type\":\"text\",\"value\":\"Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan.\"}]},{\"grouped\":false,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Wie sieht der Tagesplan aus? Hilf Anna, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.\"},{\"type\":\"image\",\"option\":\"third bg\",\"layer\":\"base\",\"value\":\"2_30_1\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.\"},{\"type\":\"daily\",\"value\":\"daily\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind. Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"30_Anna_Dialekte\"}]},{\"grouped\":true,\"row\":false,\"background\":\"02_12_(5)\",\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Auch wenn die Kinder manchmal aneinander vorbei reden und unterschiedliche Wörter benutzen, gibt es doch eine Sache, die alle gleich gut verstehen und mögen: Kino.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_c\"},{\"type\":\"text\",\"value\":\"Am Nachmittag haben die Helfer*innen eine Filmvorführung für die jungen Republikaner*inne in einem nahen Kino organisiert. In 2 Schichten schauen alle Kinder einen Stummfilm von Buster Keaton. Dafür braucht es keine Worte, denn diesen Humor verstehen alle.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Normalerweise finden Ausflüge und Arbeitsgruppen vor dem Mittagessen statt.\"},{\"type\":\"text\",\"value\":\"Die ruhigeren Nachmittage können die Kinder selbst füllen, um ihren Neigungen und Interessen nachzugehen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(135)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden. Die Kinder nennen diese Zeit auch 'Zausestunde', weil es oft rege Diskussionen gibt.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(97)\"},{\"type\":\"text\",\"value\":\"Hin und wieder gibt es in den einzelnen Zeltdörfern naturkundliche Vorträge der Helfer*innen. Dadurch lernen die Kinder etwas über die Tiere und die Pflanzen der Umgebung.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_2453_(2)\"},{\"type\":\"text\",\"value\":\"An manchen Nachmittagen bewegt sich das ganze Zeltlager! Die Kinder lernen dann Volkstänze aus allen Teilen der Republik und sogar aus anderen Ländern. Dabei tanzen alle zusammen: Jungen und Mädchen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_j\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Abends gibt es manchmal Kulturveranstaltungen und gemeinsames Singen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(36)\",\"content\":[{\"type\":\"text\",\"value\":\"Fast alle Angelegenheiten werden demokratisch entschieden. Dennoch gibt es manchmal Situationen, in denen dies nichts nützt, denn...\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"29_Anna_Gewitter\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"In solchen Momenten muss die ganze Kinderrepublik an einem Strang ziehen. Jede*r hat eine Aufgabe.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_45_(9)\"},{\"type\":\"text\",\"option\":\"third\",\"value\":\"Die Zelte müssen wieder aufgebaut werden, Löcher gestopft werden, abgebrochene Äste und Zweige müssen eingesammelt werden und über den matschigen Feldboden wird ein Holzweg gebaut.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_8_Stegbau\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"text\",\"value\":\"Anna hat von einigen Helfer*innen gehört, dass es vergangenen Sommer ein Zeltlager gegeben hat, bei dem es zwei Wochen lang ununterbrochen geregnet hat. Die Kinder waren dann die meiste Zeit im Zelt und die meisten Ausflüge und Aktivitäten fielen sprichwörtlich ins Wasser.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(132)\"},{\"type\":\"text\",\"value\":\"Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"content\":[{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(57)\"},{\"type\":\"text\",\"value\":\"Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Anna\",\"background\":\"02_1455_(106)\",\"content\":[{\"type\":\"video\",\"option\":\"primary\",\"value\":\"20_Anna_Lagerbücherei\"},{\"type\":\"text\",\"value\":\"Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?\"},{\"type\":\"redirect\",\"value\":\"annameetskarl\",\"option\":\"third\",\"title\":\"Ja, gern.\"},{\"type\":\"redirect\",\"value\":\"annaundausflüge\",\"option\":\"third\",\"title\":\"Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen.\"}]}]},{\"id\":10,\"name\":\"Karls Erlebnisse\",\"link\":\"weitermitkarl\",\"character\":\"Karl\",\"groups\":[{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.\",\"option\":\"reveal\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Kinder_am_Strand_in_Turnkleidung\"},{\"type\":\"text\",\"value\":\"Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_30_1\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen.\"},{\"type\":\"daily\",\"value\":\"Tagesplan\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Ein Großteil des Tages besteht darin, dass die Kinder und Jugendlichen ihren eigenen Interessen nachgehen können und an einer der vielfältigen Arbeitsgruppen teilnehmen können. Oft organisieren die Kinder auch eigene Veranstaltungen oder Ausflüge.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(16)\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"38_Karl_ErsteHilfe\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind.\"},{\"type\":\"image\",\"option\":\"primary\",\"value\":\"2_8_5\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Es bereitet ihm große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"36_Karl_Dialekte\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(135)\"},{\"type\":\"text\",\"value\":\"Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden.\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_v\"},{\"type\":\"text\",\"value\":\"An manchen Nachmittagen tanzt das ganze Zeltlager, es gibt Zirkusaufführungen oder Theaterinszenierungen der Kinder und Helfer*innen.\"},{\"type\":\"video\",\"option\":\"third\",\"value\":\"22_Karl_Dialektabend\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Auch wenn im Zeltlager vieles gut organisiert ist und über fast alles demokratisch entschieden wird, gibt es auch hier Situationen, die niemand beeinflussen kann, denn...\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"35_Karl_Gewitter\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen. Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Stegbau\"}]},{\"grouped\":true,\"row\":false,\"character\":\"Karl\",\"content\":[{\"type\":\"text\",\"value\":\"Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(57)\"},{\"type\":\"text\",\"value\":\"Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?\"},{\"type\":\"redirect\",\"value\":\"annameetskarl\",\"option\":\"third\",\"title\":\"Ja, gern.\"},{\"type\":\"redirect\",\"value\":\"annaundausflüge\",\"option\":\"third\",\"title\":\"Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen.\"}]}]},{\"id\":11,\"name\":\"Anna und die Ausflüge\",\"link\":\"annaundausflüge\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Eine wichtige Beschäftigung während der Kinderrepublik ist auch das sogenannte 'soziale Wandern'.\",\"option\":\"reveal\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"34_Anna_Ausflug\"},{\"type\":\"text\",\"value\":\"Dabei geht es nicht nur um das Wandern als sportliche Betätigung, sondern auch um das soziale und wirtschaftliche Lebensumfeld der Menschen vor Ort.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(123)\"},{\"type\":\"text\",\"value\":\"Annas Zeltdorf macht eine Wanderung zu einer nahen Ziegelei, die durch einige Arbeitersiedlungen führt. Dort wohnen viele Arbeiterfamilien in ärmlichen Verhältnissen. Sie erfahren in Gesprächen mit den Bewohner*innen, dass die meisten von ihnen in einer der nahen Werften und am Hafen arbeiten.\",\"layer\":\"fore\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(64)\"}]},{\"grouped\":true,\"row\":false,\"info\":\"Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.\",\"content\":[{\"type\":\"text\",\"value\":\"Hier in der Gegend gibt es aber auch noch viele Bauerndörfer. Für Anna wirken manche Orte viel idyllischer als das, was sie von zu Hause kennt. Sie versteht aber, dass auch Kleinbauern oft arm sind und wenig zu essen haben.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"24_Anna_Arbeiterklasse\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Anna hat in der Lagerbücherei Karl kennengelernt, mit dem sie sich gut versteht. Die beiden wohnen sogar in dem selben Zeltdorf.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_2593_(2)\"},{\"type\":\"text\",\"value\":\"Anna versucht Karl für die parlamentarische Struktur der Kinderrepublik zu begeistern, die ihm bisher sehr kompliziert vorkommt.\"},{\"type\":\"redirect\",\"value\":\"gemeinsam\",\"title\":\"Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen.\"}]}]},{\"id\":12,\"name\":\"Anna und Karl\",\"link\":\"annameetskarl\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.\",\"layer\":\"fore\"},{\"type\":\"video\",\"option\":\"second\",\"value\":\"23_Anna_und_Karl_mit_Musik\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Beide lesen aber auch gern Romane, die von Entdeckungsreisen und fantastischen Orten handeln. Karl hat bisher während des Zeltlagers schon zwei Bücher von Jules Verne gelesen. \",\"layer\":\"fore\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_8_Lesende_Jungs_im_Zelt\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Auch einige sehr neue Romane finden sich in der Lagerbücherei. Anna hat zum Beispiel 'Emil und die Detektive' von Erich Kästner gelesen und war begeistert.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(118)\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Es gibt aber auch Literatur, welche die geistige und moralische Haltung der Kinder stärken soll. Neben wichtigen Werken sozialistischer Autor*innen steht daher auch hochaktuelle Antikriegsliteratur, z.B. 'Im Westen nichts Neues' von Erich Maria Remarque.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_1455_(91)\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik.\"},{\"type\":\"redirect\",\"value\":\"gemeinsam\",\"title\":\"Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen.\"}]}]},{\"id\":13,\"name\":\"Gemeinsam in der Kinderrepublik\",\"link\":\"gemeinsam\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"In Annas und Karls Zeltdorf haben sich mehrere Kinder zusammengefunden, die einen Antrag an das Lagerparlament stellen wollen. Sie wollen erreichen, dass die Gymnastik morgens nach dem Frühstück und nicht davor stattfindet. \"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_8_Mädchen_in_Turnkleidung_am_Strand\"},{\"type\":\"text\",\"value\":\"Nachdem sie die Mehrheit für diesen Vorschlag in ihrer Zeltgemeinschaft erhalten haben, reichen sie den Antrag an die Gemeindevertretung des Zeltdorfes weiter.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"layer\":\"base\",\"value\":\"Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_12_(1)\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Der Bürgermeister muss nun den Antrag an das Lagerparlament weiterreichen, sodass alle Vertreter*innen der Gemeinderäte darüber beraten und abstimmen können. Am Ende lehnt das Lagerparlament mit großer Mehrheit den Vorschlag ab.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_8_Junge_mit_Becher\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Es begründet seine Entscheidung damit, dass der Küchendienst nach dem Aufstehen etwas Zeit braucht, um das Essen vorzubereiten und damit, dass Sport vor dem Essen gesünder sei als direkt danach.\"}]},{\"grouped\":true,\"row\":false,\"background\":\"02_1455_(91)\",\"content\":[{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"Anna hat eingesehen, dass der Ablauf wirklich kompliziert ist. Um die ganze Lagerstruktur besser erklären zu können,  hat sie sich ein Spiel ausgedacht. Sie spielt es mit Karl, um auszuprobieren, ob es verständlich ist.\"},{\"type\":\"text\",\"layer\":\"fore\",\"value\":\"In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Diese bestehen aus einer Zeichnung und dem dazu passenden Foto. Klicke einfach auf die Kärtchen, um zu sehen, was sich auf der Rückseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Wenn du das Spiel gewinnst, wird sich die Kinderrepublik langsam dem Ende nähern.\"},{\"type\":\"memory\",\"value\":\"Memory\"},{\"type\":\"redirect\",\"value\":\"endkapitel\",\"option\":\"primary\",\"title\":\"Du hast genug gespielt und hast langsam Heimweh....\"}]}]},{\"id\":14,\"name\":\"Das Ende der Kinderrepublik\",\"link\":\"endkapitel\",\"groups\":[{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"option\":\"reveal\",\"value\":\"Gerda hat den beiden Kindern beim Spielen zugeschaut und findet Annas Idee großartig. Sie will das Spiel mit ihrer Ortsgruppe ausprobieren, wenn sie sich auf das nächste Zeltlager vorbereiten.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"2_31_ac\"},{\"type\":\"text\",\"value\":\"Da Gerda nur wenige Jahre älter als Anna und Karl ist, hat sie direkt einen guten Draht zu den beiden. Sie hören ihr gespannt zu, wie sie berichtet, wie sie zur Sozialistischen Arbeiterjugend gekommen ist und warum sie Helferin in der Kinderrepublik geworden ist. \"}]},{\"grouped\":true,\"row\":false,\"background\":\"103\",\"content\":[{\"type\":\"text\",\"value\":\"Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon.\"},{\"type\":\"video\",\"option\":\"primary\",\"value\":\"28_Deutschfranzösisches_Zeltlager\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Bis dahin nehmen sie sich jedoch vor, an einem der nächsten Arbeiterjugendtage teilzunehmen. Dieser findet alle ein bis zwei Jahre statt und wird voraussichtlich 1931 in Frankfurt am Main ausgetragen.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_0016_AJT_in_Wien_1929\"},{\"type\":\"text\",\"value\":\"Dort treffen sich Arbeiterkinder aus der ganzen Republik, bekunden ihre Solidarität und schmieden Pläne für eine bessere Zukunft.\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Die Kinderrepublik nähert sich langsam dem Ende. Für Anna und Karl ist diese Zeit wie im Flug vergangen.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"2_31_y\"},{\"type\":\"text\",\"value\":\"Sie haben viele neue Freunde gefunden. Viele davon werden, wie die beiden, bald eine Lehre in einer der großen Fabriken anfangen.\"}]},{\"grouped\":true,\"row\":false,\"background\":\"2_31_s\",\"content\":[{\"type\":\"text\",\"value\":\"Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben.\"},{\"type\":\"image\",\"option\":\"second\",\"value\":\"02_0013_Lübecker_Bucht_1930_Briefkasten\"}]},{\"grouped\":true,\"row\":false,\"content\":[{\"type\":\"text\",\"value\":\"Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien.\"},{\"type\":\"redirect\",\"value\":\"ausblick\",\"title\":\"Doch was ist nach den 1920er Jahren aus den Kindern geworden?\"}]}]},{\"id\":15,\"name\":\"Das Ende der Republik\",\"link\":\"ausblick\",\"groups\":[{\"grouped\":true,\"row\":false,\"background\":\"PH_dig_205_Seite205\",\"content\":[{\"type\":\"text\",\"value\":\"Viele der Kinder und Jugendlichen, die in den 1920er und 1930er Jahren an Zeltlagern der Kinderfreunde und der Sozialistischen Arbeiterjugend (SAJ) teilgenommen haben, wurden nach 1933 für ihr politisches Engagement verfolgt, inhaftiert und auch ermordet.\"},{\"type\":\"image\",\"option\":\"third\",\"value\":\"02_1455_(19)\"},{\"type\":\"text\",\"value\":\"Die hier verwendeten Bilder überlebten oft nur durch Zufall oder weil sie gut versteckt worden waren und wie ein Schatz gehütet wurden.\"},{\"type\":\"text\",\"value\":\"Ende\"}]}]}]}");
 
 /***/ }),
 
@@ -8388,6 +17603,9 @@ var _app_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_re
 
 
 
+window.soundManager.setup({
+  debugMode: false
+});
 var App = () => {
   var [character, setCharacter] = Object(_usepersistedstate__WEBPACK_IMPORTED_MODULE_3__["default"])('character', 'default');
 
