@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Redirect } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Image from "../image/image";
@@ -48,7 +49,8 @@ export const Memory = (props: MemoryProps) => {
   useEffect(
     () => {
       if (finishedItems.length > 0 && finishedItems.length === list.length) {
-        setWinner(true);
+        //TODO: Sound for winning the game
+        setTimeout(() => setWinner(true), 1500);
       }
     },
     [finishedItems, list]
@@ -63,9 +65,7 @@ export const Memory = (props: MemoryProps) => {
         finishedItems={finishedItems}
         checkItems={checkItems}
       />
-      {winner && (
-        <p>Du hast gewonnen!</p>
-      )}
+      {winner && <Redirect exact to="endkapitel" />}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { Redirect } from 'react-router-dom';
 import { DragDropContainer, DropTarget } from "react-drag-drop-container";
 import Shake from 'react-reveal/Shake';
 import Jump from 'react-reveal/Jump';
@@ -21,22 +22,20 @@ export const Suitcase = (props) => {
     e.containerElem.style.visibility = "hidden";
     setBagCounter(bagCounter +1);
     setDrag(`${character} packt ${e.dragData.label} ein.`);
-    if (bagCounter === 5) {
-      this.props.onCheckBag();
+    if (bagCounter === 4) {
+      //TODO: Sound for winning the game
+      setTimeout(() => setShowResult(true), 1500);
     }
   };
 
   const droppedFalseItem = (e) => {
     setDrag(`${character} braucht ${e.dragData.label} wohl eher nicht.`);
+    //TODO: Sound for losing the game
     setFalseCounter(falseCounter+1);
   };
 
   return (
     <div className='suitcase'>
-      {/* <p className='description'>
-        Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. <br /> Tipp: Manche Dinge werden in der
-        Kinderrepublik dringend benötigt, andere gab es 1928 noch gar nicht.
-      </p> */}
       <div className='items'>
         <Items targetKey='bag' label='ein Hemd' image='suitcase_hemd' />
         <Items targetKey='bag' label='eine Feldflasche' image='suitcase_feldflasche' />        
@@ -61,6 +60,7 @@ export const Suitcase = (props) => {
           </Jump>
         </DropTarget>
       </DropTarget>
+      {showResult && <Redirect exact to="reise" />}
     </div>
   );
 }

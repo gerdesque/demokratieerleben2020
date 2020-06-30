@@ -60,8 +60,10 @@ class Puzzle extends Component {
     if (finished === undefined) {
       //TODO: Sound for winning the game
       setTimeout(() => this.setState({ winner: true }), 1500);
+    } else {
+      //TODO: Sound for losing the game
+      this.setState({ chance: true })
     }
-    this.setState({ chance: true })
   }
 
   render() {

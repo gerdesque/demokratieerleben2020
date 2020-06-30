@@ -5,10 +5,11 @@ import {
   TextInput,
   ArrayInput,
   SimpleFormIterator,
-  RadioButtonGroupInput,
+  TextField,
+  FormDataConsumer,
   required
 } from 'react-admin';
-import { ContentType, Layer } from '@gerdesque/data';
+import ImageIcon from '@material-ui/icons/Collections';
 
 export const ChapterEdit = props => (
   <Edit {...props}>
@@ -18,13 +19,24 @@ export const ChapterEdit = props => (
       <TextInput label="Pfad" source="link" validate={required()}/>
       <ArrayInput label="Inhaltsgruppen" source="groups">
         <SimpleFormIterator>
-        <TextInput label="Info" source="info" />
-          <ArrayInput label="Inhalt" source="content">
+          <TextInput label="Info" source="info" />
+          <ArrayInput label="Inhalt" source="content" className="contentarray">
             <SimpleFormIterator>
-              <TextInput label="Typ" source="type" />
-              <TextInput label="Ebene" source="layer" />
+              {/* <TextInput label="Typ" source="type" />
+              <TextInput label="Ebene" source="layer" /> */}
+              <FormDataConsumer>
+                {({ getSource, scopedFormData }) => {
+                  return (
+                    <TextField
+                          source={getSource('layer')}
+                          record={scopedFormData}
+                      />
+                  );
+                }}
+              </FormDataConsumer>
+              {/* {type === 'image' && <ImageIcon />} */}
               <TextInput label="Titel" source="title" />
-              <TextInput multiline label="Wert" fullWidth="true" source="value" />
+              <TextInput multiline label="Wert" source="value" />
             </SimpleFormIterator>
           </ArrayInput>
         </SimpleFormIterator>

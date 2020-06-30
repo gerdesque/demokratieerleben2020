@@ -33,7 +33,13 @@ export const TicTacToe = (props: TicTacToeProps) => {
   function getStatus() {
     if (winner) {
       document.querySelector('.result').scrollIntoView({ behavior: 'smooth' });
-      return winner === "X" ? "Du hast gewonnen!" : "Es ist ja nur ein Spiel!";
+      if (winner === "X") {
+        //TODO: Sound for winning the game
+        return "Du hast gewonnen!"
+      } else {
+        //TODO: Sound for losing the game
+        return "Es ist ja nur ein Spiel!";
+      }
     } else if (isBoardFull(squares)) {
       document.querySelector('.result').scrollIntoView({ behavior: 'smooth' });
       return "Ein solidarisches Remis!";
