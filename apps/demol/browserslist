@@ -7,6 +7,8 @@
 #
 # If you need to support different browsers in production, you may tweak the list below.
 
-> 0.2%
+last 2 versions
+> 0.5%
 not dead
+not ie <= 11
 not op_mini all

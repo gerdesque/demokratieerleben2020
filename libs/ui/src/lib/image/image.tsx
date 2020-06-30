@@ -9,6 +9,12 @@ export interface ImageProps {
   option?: string
 }
 
+declare module "react" {
+  interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
+    loading?: "auto" | "eager" | "lazy";
+  }
+}
+
 export const Image = (props: ImageProps) => {
   const [character, setCharacter] = useContext(AppContext);
 
@@ -20,7 +26,7 @@ export const Image = (props: ImageProps) => {
     <picture className={`chapter_picture ${props.option}`} onClick={() => chooseCharacter()}>
       <source srcSet={"./assets/"+props.value+IMAGE_SUFFIX} type='image/webp' />
       <source srcSet={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} type='image/png' />
-      <img draggable="false" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.title || props.value} />
+      <img draggable="false" loading="lazy" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.title || props.value} />
       {props.title && <div className="overlay">{props.title}</div>}
     </picture>
   )

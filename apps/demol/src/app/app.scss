@@ -8,13 +8,15 @@
 @font-face {
   font-family: 'FundamentalBrigade';
   font-display: swap;
-  src: url('../assets/fonts/Fundamental_Brigade_Schlank.ttf') format('truetype');
+  src:  url('../assets/fonts/Fundamental_Brigade_Schlank.woff') format('woff'),
+        url('../assets/fonts/Fundamental_Brigade_Schlank.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'LinolschriftHeavy';
   font-display: swap;
-  src: url('../assets/fonts/Linolschrift_Heavy.ttf') format('truetype');
+  src: url('../assets/fonts/Linolschrift_Heavy.woff') format('woff'),
+       url('../assets/fonts/Linolschrift_Heavy.ttf') format('truetype');
 }
 
 *,

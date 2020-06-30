@@ -7,7 +7,7 @@ export interface ScrolliconProps {}
 
 export const Scrollicon = (props: ScrolliconProps) => {
   return (
-    <div className='icon-scroll'></div>
+    <div className='icon-scroll' onClick={() => document.querySelector('.icon-scroll').scrollIntoView({ behavior: "smooth" })}></div>
   );
 };
 
