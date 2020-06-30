@@ -6,18 +6,15 @@ import './home.scss';
 const home:ChapterProps = {
   link: "home",
   name: "Demokratie erLeben",
-  groups: [
-  {
+  groups: [{
     "grouped": false,
     "row": false,
     "background": "2_31_b",
-    "content": [
-      {
-        "type": "text",
-        "value": "Diese Website erzählt die Geschichte von Anna, Karl und Gerda. Alle drei entstammen der Arbeiterklasse und träumen Ende der 1920er Jahre von einer besseren Zukunft. Begleitet sie auf ihrem Weg in ein Zeltlager der sozialdemokratischen Organisation der 'Reichsarbeitsgemeinschaft der Kinderfreunde'. In dieser so genannten 'Kinderrepublik' erleben sie viele spannende Dinge, und lernen Demokratie durch eigenes Handeln kennen.",
-        "option": "reveal"
-      }
-    ]
+    "content": [{
+      "type": "text",
+      "value": "Diese Website erzählt die Geschichte von Anna, Karl und Gerda. Alle drei entstammen der Arbeiterklasse und träumen Ende der 1920er Jahre von einer besseren Zukunft. Begleitet sie auf ihrem Weg in ein Zeltlager der sozialdemokratischen Organisation der 'Reichsarbeitsgemeinschaft der Kinderfreunde'. In dieser so genannten 'Kinderrepublik' erleben sie viele spannende Dinge, und lernen Demokratie durch eigenes Handeln kennen.",
+      "option": "reveal"
+    }]
   },
   {
     "grouped": true,
@@ -25,14 +22,13 @@ const home:ChapterProps = {
     "content": [{
       "type": "image",
       "value": "02_1455_(114)",
-      "option": "second"
+      "option": "third"
     },
     {
       "type": "text",
       "value": "Die Reise zur Kinderrepublik wäre für Anna, Karl und Gerda ohne Anne Mühlich und Gerd Müller nicht möglich gewesen. Im Rahmen des Kulturhackathons 'Coding da Vinci Westfalen-Ruhrgebiet' 2019 entwickelten die beiden diese Scrollytelling-Website, die auf Fotos und Material des Archivs der Arbeiterjugendbewegung basiert. 2020 haben sie im Rahmen eines Stipendiums des Coding da Vinci die Website für die Zwecke des Archivs ergänzt und ausgebaut."
-    }
-  ]
-},
+    }]
+  },
   {
     "grouped": true,
     "row": true,
@@ -49,30 +45,22 @@ const home:ChapterProps = {
         "type": "text",
         "value": "Julia Kothe, Lars Tunçay, Nina Heinke, Felix Werthschulte, Luise & John",
         "option": "third"
-      }    
-    ]
-  },
-  {
-    "grouped": true,
-    "row": true,
-    "content": [{
-      "type": "text",
-      "value": "Die Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können."
-     }
-    ]
-  },
-  {
-    "grouped": false,
-    "row": false,
-    "content": [{
+      }]
+    },
+    {
+      "grouped": true,
+      "row": true,
+      "content": [{
+        "type": "text",
+        "value": "Die Website richtet sich an all jene, die sich spielerisch mit dem Thema „Kinderrepublik“ und partizipativer Jugendarbeit in der ersten Hälfte des 20. Jahrhunderts beschäftigen wollen und erfahren möchten, wie solche Zeltlager als Form früher und praktischer Demokratiebildung funktioniert haben. In Zeiten wie jetzt, wo mehr und mehr Menschen sich von den demokratischen Institutionen abwenden, lohnt es sich, einen Blick zurückzuwerfen und zu schauen, wie Demokratiebildung insbesondere für bildungsfernere Schichten in der Vergangenheit funktioniert hat und inwiefern wir dafür etwas für unsere heutige Zeit lernen können."
+      },
+      {
         "type": "redirect",
         "value": "chapter/daheim",
         "option": "big",
-        "title": "Beginne hier das Abenteuer!",
-        "layer": "fore"
-      }
-    ]
-  }
+        "title": "Beginne hier das Abenteuer!"
+      }]
+    }
   ]
 };
 
