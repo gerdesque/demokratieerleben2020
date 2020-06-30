@@ -1376,6 +1376,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel.",
           "content": [{
               "type": "text",
               "value": "Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.",
@@ -2807,7 +2808,7 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_1455_(91)"
             }
           ]
@@ -2931,7 +2932,6 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
               "option": "reveal",
               "value": "Gerda hat den beiden Kindern beim Spielen zugeschaut und findet Annas Idee großartig. Sie will das Spiel mit ihrer Ortsgruppe ausprobieren, wenn sie sich auf das nächste Zeltlager vorbereiten."
             },
@@ -2942,7 +2942,6 @@
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Da Gerda nur wenige Jahre älter als Anna und Karl ist, hat sie direkt einen guten Draht zu den beiden. Sie hören ihr gespannt zu, wie sie berichtet, wie sie zur Sozialistischen Arbeiterjugend gekommen ist und warum sie Helferin in der Kinderrepublik geworden ist. "
             }
           ]
@@ -2953,7 +2952,6 @@
           "background": "103",
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon."
             },
             {
@@ -2968,7 +2966,6 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "Bis dahin nehmen sie sich jedoch vor, an einem der nächsten Arbeiterjugendtage teilzunehmen. Dieser findet alle ein bis zwei Jahre statt und wird voraussichtlich 1931 in Frankfurt am Main ausgetragen."
             },
             {
@@ -2978,7 +2975,6 @@
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Dort treffen sich Arbeiterkinder aus der ganzen Republik, bekunden ihre Solidarität und schmieden Pläne für eine bessere Zukunft."
             }
           ]
@@ -2988,7 +2984,6 @@
           "row": false,
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "Die Kinderrepublik nähert sich langsam dem Ende. Für Anna und Karl ist diese Zeit wie im Flug vergangen."
             },
             {
@@ -2998,7 +2993,6 @@
             },
             {
               "type": "text",
-              "layer": "fore",
               "value": "Sie haben viele neue Freunde gefunden. Viele davon werden, wie die beiden, bald eine Lehre in einer der großen Fabriken anfangen."
             }
           ]
@@ -3006,9 +3000,9 @@
         {
           "grouped": true,
           "row": false,
+          "background": "2_31_s",
           "content": [{
               "type": "text",
-              "layer": "fore",
               "value": "Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben."
             },
             {
@@ -3021,14 +3015,12 @@
         {
           "grouped": true,
           "row": false,
-          "background": "2_31_s",
           "content": [{
               "type": "text",
               "value": "Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien."
             },
             {
               "type": "redirect",
-              "option": "second",
               "value": "ausblick",
               "title": "Doch was ist nach den 1920er Jahren aus den Kindern geworden?"
             }

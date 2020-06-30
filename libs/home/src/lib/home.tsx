@@ -5,6 +5,7 @@ import './home.scss';
 
 const home:ChapterProps = {
   link: "home",
+  name: "Demokratie erLeben",
   groups: [
   {
     "grouped": false,

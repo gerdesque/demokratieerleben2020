@@ -31,12 +31,15 @@
 	height: 100%;
 	left: 0;
 	outline: none;
-	text-indent: -999em;
+	text-indent: -15em;
 	top: 0;
 	transition: background 0.3s ease;
 	width: 100%;
-	overflow: hidden;
+	//overflow: hidden;
 	position: absolute;
+	font-size: 1.7rem;
+	color: var(--color-title);
+	font-weight: bold;
 }
 
 .navigation--item a:focus {
@@ -46,6 +49,10 @@
 .navigation--item a:hover,
 .navigation--item a:focus {
 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation--item a:not(:hover){
+  overflow: hidden;
 }
 
 .navigation--item a::after {
