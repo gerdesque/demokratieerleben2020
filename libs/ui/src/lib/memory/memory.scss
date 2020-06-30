@@ -43,7 +43,6 @@
     position: absolute;
     overflow: hidden;
     object-position: center;
-    transform: rotateY(180deg) perspective(100px);
     transition: .4s;
     backface-visibility: hidden;
   }

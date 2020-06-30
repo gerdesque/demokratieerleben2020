@@ -288,9 +288,9 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
-          "background": "02_1945_SAJ_Frankenthal_1929",
           "content": [{
               "type": "text",
+              "option": "third",
               "value": "Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend."
             },
             {
@@ -2496,7 +2496,7 @@
             },
             {
               "type": "daily",
-              "value": "Tagesplan"
+              "value": "daily"
             }
           ]
         },
@@ -2913,7 +2913,7 @@
             {
               "type": "redirect",
               "value": "endkapitel",
-              "option": "primary",
+              "option": "full",
               "title": "Du hast genug gespielt und hast langsam Heimweh...."
             }
           ]

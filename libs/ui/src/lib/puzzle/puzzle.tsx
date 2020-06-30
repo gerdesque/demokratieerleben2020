@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+import { Redirect } from 'react-router-dom';
+
 import './puzzle.scss';
 
 class Puzzle extends Component {
   state = {
     pieces: [],
     shuffled: [],
-    solved: []
+    solved: [],
+    winner: false,
+    chance: false
   };
 
   componentDidMount() {
@@ -36,7 +40,8 @@ class Puzzle extends Component {
     target[index] = pieceData;
     pieceData.board = targetName;
 
-    this.setState({ [pieceData.board]: origin, [targetName]: target });
+    this.setState({ [pieceData.board]: origin, [targetName]: target, chance: false });
+    this.checkWinner();
   }
 
   handleDragStart(e, order) {
@@ -45,16 +50,34 @@ class Puzzle extends Component {
     dt.effectAllowed = "move";
   }
 
+  checkWinner() {
+    for (let i = 0, l = this.state.solved.length; i < l; i++) {
+      if (typeof(this.state.solved[i]) === 'undefined') return;
+    };
+
+    const finished = this.state.solved.find((piece, index) => piece.order !== index);
+
+    if (finished === undefined) {
+      //TODO: Sound for winning the game
+      setTimeout(() => this.setState({ winner: true }), 1500);
+    }
+    this.setState({ chance: true })
+  }
+
   render() {
     return (
-      <div className='puzzle'>
-        <ul className='puzzle__shuffled-board'>
-          {this.state.shuffled.map((piece, i) => this.renderPieceContainer(piece, i, "shuffled"))}
-        </ul>
-        <ol className='puzzle__solved-board' style={{ backgroundImage: `url(./assets/daheim_puzzle.webp)` }}>
-          {this.state.solved.map((piece, i) => this.renderPieceContainer(piece, i, "solved"))}
-        </ol>
-      </div>
+      <>
+        <div className='puzzle'>
+          <ul className='puzzle__shuffled-board'>
+            {this.state.shuffled.map((piece, i) => this.renderPieceContainer(piece, i, "shuffled"))}
+          </ul>
+          <ol className='puzzle__solved-board' style={{ backgroundImage: `url(./assets/daheim_puzzle.webp)` }}>
+            {this.state.solved.map((piece, i) => this.renderPieceContainer(piece, i, "solved"))}
+          </ol>
+          {this.state.winner && <Redirect exact to="ortsgruppe" />}
+        </div>
+        {this.state.chance && <p>Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!</p>}
+      </>
     );
   }
 
