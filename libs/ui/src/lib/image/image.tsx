@@ -9,12 +9,6 @@ export interface ImageProps {
   option?: string
 }
 
-declare module "react" {
-  interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
-    loading?: "auto" | "eager" | "lazy";
-  }
-}
-
 export const Image = (props: ImageProps) => {
   const [character, setCharacter] = useContext(AppContext);
 
