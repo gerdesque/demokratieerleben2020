@@ -39,6 +39,19 @@ object-assign
  * @license MIT
  */
 
+/** @license
+   *
+   * SoundManager 2: JavaScript Sound for the Web
+   * ----------------------------------------------
+   * http://schillmania.com/projects/soundmanager2/
+   *
+   * Copyright (c) 2007, Scott Schiller. All rights reserved.
+   * Code provided under the BSD License:
+   * http://schillmania.com/projects/soundmanager2/license.txt
+   *
+   * V2.97a.20170601
+   */
+
 /** @license React v16.13.1
  * react-dom.production.min.js
  *
@@ -48,4 +61,4 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/*! For license information please see main.c48933732ed8bbe84dda.esm.js.LICENSE */
+/*! For license information please see main.accb85b2d264dfbd6313.esm.js.LICENSE */
