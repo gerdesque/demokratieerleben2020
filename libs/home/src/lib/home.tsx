@@ -70,7 +70,7 @@ const home:ChapterProps = {
       },
       {
       "type": "text",
-      "value":"Der Quellcode läuft unter einer MIT license. Die eigens für das Projekt erstellten Mediendateien sind unter einer CC BY-SA 3.0 Lizenz veröffentlicht."
+      "value":"Der Quellcode läuft unter einer MIT license. Die Geschichte und die eigens für das Projekt erstellten Mediendateien sind unter einer CC BY-SA 3.0 Lizenz veröffentlicht."
       }]
     }
   ]

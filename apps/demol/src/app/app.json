@@ -1405,6 +1405,7 @@
       "id": 6,
       "name": "Die Kinderrepublik",
       "link": "ankunft",
+      "option": "birds",
       "groups": [{
           "grouped": true,
           "character": "Anna",
