@@ -5,38 +5,58 @@ import {
   TextInput,
   ArrayInput,
   SimpleFormIterator,
-  TextField,
   FormDataConsumer,
-  required
 } from 'react-admin';
-import ImageIcon from '@material-ui/icons/Collections';
+import {Collections, Games, Apartment, VideoLibrary, TextFields, Link, Details} from '@material-ui/icons';
+
+const renderTypeIcon = (type) => {
+  switch (type) {
+    case 'video':
+      return <VideoLibrary />;
+    case 'image':
+      return <Collections />;
+    case 'memory':
+    case 'daily':
+    case 'puzzle':
+    case 'suitcase':
+    case 'tictactoe':
+      return <Games />;
+    case 'smokingpit':
+      return <Apartment />;
+    case 'summary':
+      return <Details />;
+    case 'redirect':
+      return <Link />;
+    case 'text':
+      return <TextFields />;
+    default:
+      return null;
+  }
+}
 
 export const ChapterEdit = props => (
   <Edit {...props}>
     <SimpleForm>
       <TextInput disabled source="id" />
-      <TextInput source="name" />
-      <TextInput label="Pfad" source="link" validate={required()}/>
-      <ArrayInput label="Inhaltsgruppen" source="groups">
+      <TextInput label="Überschrift des Kapitels" source="name" />
+      <TextInput disabled label="Link des Kapitels" source="link"/>
+      <ArrayInput label="Gruppen von Inhaltselementen" source="groups">
         <SimpleFormIterator>
-          <TextInput label="Info" source="info" />
-          <ArrayInput label="Inhalt" source="content" className="contentarray">
+          <TextInput label="Text für das Info-Icon" source="info" />
+          <ArrayInput label="Inhaltselemente" source="content" className="contentarray">
             <SimpleFormIterator>
-              {/* <TextInput label="Typ" source="type" />
-              <TextInput label="Ebene" source="layer" /> */}
               <FormDataConsumer>
-                {({ getSource, scopedFormData }) => {
-                  return (
-                    <TextField
-                          source={getSource('layer')}
-                          record={scopedFormData}
-                      />
-                  );
-                }}
+                {({scopedFormData, getSource}) =>
+                  scopedFormData?.type
+                  ? <>
+                    <TextInput label="Inhaltstyp" source={getSource('type')}/>
+                    {renderTypeIcon(scopedFormData.type)}
+                  </>
+                  : <TextInput label="Inhaltstyp" source="type"/>
+                }
               </FormDataConsumer>
-              {/* {type === 'image' && <ImageIcon />} */}
-              <TextInput label="Titel" source="title" />
-              <TextInput multiline label="Wert" source="value" />
+              <TextInput multiline label="Text/Wert des Inhaltselements" source="value" />
+              <TextInput label="Titel" source="title"/>
             </SimpleFormIterator>
           </ArrayInput>
         </SimpleFormIterator>
