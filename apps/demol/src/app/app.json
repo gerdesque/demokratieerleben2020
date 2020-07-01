@@ -439,7 +439,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "2_214_Seite142"
             },
             {
@@ -600,6 +600,7 @@
             },
             {
               "value": "Als Rote Falken werden alle 12- bis 14-Jährigen im Verband der Kinderfreunde genannt.",
+              "option": "third",
               "type": "text"
             },
             {
@@ -649,7 +650,7 @@
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "fifth",
               "value": "2_30_2"
             },
             {
@@ -1218,16 +1219,21 @@
           "content": [{
               "type": "text",
               "value": "Nachdem Anna fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Ihre Eltern und ihr Großvater sind etwas traurig, denn Anna war noch nie länger von zu Hause weg - und schon gar nicht allein.",
-              "option": "reveal"
+              "option": "reveal third"
             },
             {
               "type": "image",
               "option": "third",
               "value": "02_1455_(56)"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [{
               "type": "text",
-              "option": "fourth",
               "value": "Mit 35 anderen Kindern und einigen Helfer*innen als Begleitung fährt Anna im Zug Richtung Norden."
             },
             {
@@ -1484,8 +1490,14 @@
               "type": "video",
               "option": "second",
               "value": "32_Anna_Zeltobfrau"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [{
               "type": "text",
               "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
             }
@@ -2266,12 +2278,12 @@
           ]
         },
         {
-          "grouped": false,
+          "grouped": true,
           "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
-              "layer": "fore",
+              "option": "third",
               "value": "Wie sieht der Tagesplan aus? Hilf Anna, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
             },
             {
@@ -2359,7 +2371,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "02_1455_(97)"
             },
             {
@@ -2404,7 +2416,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "29_Anna_Gewitter"
             }
           ]
@@ -2776,7 +2788,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "24_Anna_Arbeiterklasse"
             }
           ]
