@@ -824,7 +824,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "02_167_(4)"
             }
           ]
@@ -850,14 +850,15 @@
           "row": false,
           "character": "Gerda",
           "content": [{
-            "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
-            "type": "text"
-            },
-            {
               "type": "image",
               "option": "third",
               "value": "PH-B_279_Löwenstein_in_Seekamp_1927"
-            }
+            },
+            {
+              "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
+              "type": "text",
+              "option": "third"
+            }  
           ]
         },
         {
@@ -934,7 +935,7 @@
             {
               "type": "image",
               "value": "Karte_Weimarer_Republik",
-              "option": "second"
+              "option": "third"
             }
           ]
         },
@@ -1455,7 +1456,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "02_1455_(61)"
             },
             {
@@ -1581,7 +1582,7 @@
             },
             {
               "type": "image",
-              "option": "primary",
+              "option": "second",
               "value": "2_31_aa"
             }
           ]
@@ -1597,7 +1598,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "27_Gerda_Lageraufbau"
             }
           ]
@@ -1610,10 +1611,16 @@
           "content": [{
               "type": "text",
               "value": "Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte."
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [{
               "type": "text",
-              "option": "fourth",
+              "option": "third",
               "value": "Jede Ortsgruppe gibt zu Beginn ihre eingesammelten Spenden bei der Lagerkasse ab, die durch eine Helferin und drei Falken verwaltet wird. Davon werden zum Beispiel die Bäckereien bezahlt, die Brot an die Kinderrepublik liefern, oder die Fleischereien, die Wurst und Fleisch bereitstellen."
             },
             {
@@ -1648,7 +1655,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "26_Gerda_Küchenkommission"
             }
           ]
@@ -2558,14 +2565,21 @@
           "background": "02_1455_(81)",
           "content": [{
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_2453_(2)"
             },
             {
               "type": "text",
               "value": "An manchen Nachmittagen bewegt sich das ganze Zeltlager! Die Kinder lernen dann Volkstänze aus allen Teilen der Republik und sogar aus anderen Ländern. Dabei tanzen alle zusammen: Jungen und Mädchen."
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "background": "02_1455_(81)",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "2_31_j"
