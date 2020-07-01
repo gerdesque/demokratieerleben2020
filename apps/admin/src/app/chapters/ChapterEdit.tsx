@@ -6,14 +6,18 @@ import {
   ArrayInput,
   SimpleFormIterator,
   FormDataConsumer,
+  Toolbar,
+  Filter,
+  SaveButton
 } from 'react-admin';
-import {Collections, Games, Apartment, VideoLibrary, TextFields, Link, Details} from '@material-ui/icons';
+import {Collections, Games, VideoLibrary, TextFields, Link, Details} from '@material-ui/icons';
 
 const renderTypeIcon = (type) => {
   switch (type) {
     case 'video':
       return <VideoLibrary />;
     case 'image':
+    case 'smokingpit':
       return <Collections />;
     case 'memory':
     case 'daily':
@@ -21,8 +25,6 @@ const renderTypeIcon = (type) => {
     case 'suitcase':
     case 'tictactoe':
       return <Games />;
-    case 'smokingpit':
-      return <Apartment />;
     case 'summary':
       return <Details />;
     case 'redirect':
@@ -34,29 +36,51 @@ const renderTypeIcon = (type) => {
   }
 }
 
+const EditToolbar = props => (
+  <Toolbar {...props} >
+    <SaveButton />
+  </Toolbar>
+);
+
+const EditFilter = (props) => (
+  <Filter {...props}>
+      <TextInput label="Search" source="q" alwaysOn />
+  </Filter>
+);
+
 export const ChapterEdit = props => (
   <Edit {...props}>
-    <SimpleForm>
+    <SimpleForm toolbar={<EditToolbar />} filters={<EditFilter />}>
       <TextInput disabled source="id" />
       <TextInput label="Überschrift des Kapitels" source="name" />
       <TextInput disabled label="Link des Kapitels" source="link"/>
       <ArrayInput label="Gruppen von Inhaltselementen" source="groups">
-        <SimpleFormIterator>
+        <SimpleFormIterator disableRemove disableAdd>
           <TextInput label="Text für das Info-Icon" source="info" />
+          <FormDataConsumer>
+            {({scopedFormData, getSource}) =>
+              scopedFormData.character ? <TextInput label="Gruppe für folgenden Avatar" source={getSource('character')}/> : null
+            }
+          </FormDataConsumer>
           <ArrayInput label="Inhaltselemente" source="content" className="contentarray">
-            <SimpleFormIterator>
+            <SimpleFormIterator disableRemove disableAdd>
               <FormDataConsumer>
-                {({scopedFormData, getSource}) =>
-                  scopedFormData?.type
-                  ? <>
-                    <TextInput label="Inhaltstyp" source={getSource('type')}/>
-                    {renderTypeIcon(scopedFormData.type)}
-                  </>
-                  : <TextInput label="Inhaltstyp" source="type"/>
+                {({scopedFormData}) =>
+                  scopedFormData.type ? renderTypeIcon(scopedFormData.type) : null
                 }
               </FormDataConsumer>
-              <TextInput multiline label="Text/Wert des Inhaltselements" source="value" />
-              <TextInput label="Titel" source="title"/>
+              <FormDataConsumer>
+                {({scopedFormData, getSource}) =>
+                  scopedFormData.type === 'text' ? 
+                  <TextInput multiline label="Text/Wert des Inhaltselements" source={getSource('value')} /> : 
+                  <TextInput disabled multiline label="Text/Wert des Inhaltselements" source={getSource('value')} />
+                }
+              </FormDataConsumer>
+              <FormDataConsumer>
+                {({scopedFormData, getSource}) =>
+                  scopedFormData.title ? <TextInput multiline label="Titel" source={getSource('title')}/> : null
+                }
+              </FormDataConsumer>
             </SimpleFormIterator>
           </ArrayInput>
         </SimpleFormIterator>

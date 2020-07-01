@@ -11,5 +11,9 @@
   div {
     margin-right: 5px;
     width: 100%;
+
+    &:first-of-type {
+      margin-top: 15px;
+    }
   }
 }

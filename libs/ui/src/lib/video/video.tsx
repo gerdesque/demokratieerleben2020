@@ -16,11 +16,10 @@ export const Video = (props: VideoProps) => {
 
   const playVideo = (playing) => {
     setPlaying(playing);
-    playing && document.querySelector('.theater').scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className={`chapter_video ${props.option} ${isPlaying ? 'theater' : ''}` }>
+    <div className={`chapter_video ${props.option}` }>
       <p>{props.title}</p>
       <video controls onPlaying={() => playVideo(true)} onPause={() => playVideo(false)}>
         <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>
