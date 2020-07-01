@@ -1780,6 +1780,42 @@
               "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
             }
           ]
+        },
+        {
+        "grouped": true,
+          "row": false,
+          "character": "Anna",
+          "content": [{
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Anna hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+            }
+          ]
+        },
+        {
+        "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [{
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Karl hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+            }
+          ]
+        },
+        {
+        "grouped": true,
+          "row": false,
+          "character": "Gerda",
+          "content": [{
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Gerda hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+            }
+          ]
         }
       ]
     },
@@ -1788,6 +1824,141 @@
       "name": "Weitere Personen",
       "link": "personen",
       "groups": [{
+          "grouped": true,
+            "row": false,
+            "character": "Gerda",
+            "content": [{
+              "type": "text",
+              "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Priester",
+                "title": "Priester"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Lagerfotograf"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Lagerarzt"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "lokale Genoss*innen"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Hitlerjugend",
+                "title": "Hitlerjugend"
+              }
+            ]
+          },
+          {
+          "grouped": true,
+            "row": false,
+            "character": "Anna",
+            "content": [{
+              "type": "text",
+              "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Priester",
+                "title": "Priester"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Lagerfotograf"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Lagerarzt"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "lokale Genoss*innen"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Hitlerjugend",
+                "title": "Hitlerjugend"
+              }
+            ]
+          },
+          {
+          "grouped": true,
+            "row": false,
+            "character": "Karl",
+            "content": [{
+              "type": "text",
+              "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Priester",
+                "title": "Priester"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Lagerfotograf"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Lagerarzt"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "lokale Genoss*innen"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Hitlerjugend",
+                "title": "Hitlerjugend"
+              }
+            ]
+          },
+          {
           "grouped": true,
           "row": false,
           "character": "Priester",
