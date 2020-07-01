@@ -32,7 +32,7 @@ export const Chapter = (props: ChapterProps) => {
   return (
     <InView as="div">
       <Sound
-        url={`./assets/sounds/${props.link}.mp3`}
+        url={props.link === 'personen' ? `./assets/sounds/${props.link}_${character}.mp3` : `./assets/sounds/${props.link}.mp3`}
         loop={true}
         playStatus={Sound.status.PLAYING}
       />

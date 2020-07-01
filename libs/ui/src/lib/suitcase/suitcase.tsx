@@ -18,20 +18,29 @@ export const Suitcase = (props) => {
   const [bagCounter, setBagCounter] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [winningSound, setWinningSound] = useState(false);
+  const [rightSound, setRightSound] = useState(false);
   const [lostSound, setLostSound] = useState(false);
-  const [playStatus, setPlayStatus] = useState(Sound.status.PLAYING);
+  const [lostPlayStatus, setLostPlayStatus] = useState(Sound.status.PLAYING);
+  const [rightPlayStatus, setRightPlayStatus] = useState(Sound.status.PLAYING);
   const [falseCounter, setFalseCounter] = useState(0);
 
   useEffect(
     () => {
-      setPlayStatus(Sound.status.PLAYING);
+      setLostPlayStatus(Sound.status.PLAYING);
     }, [falseCounter]
+  );
+
+  useEffect(
+    () => {
+      setRightPlayStatus(Sound.status.PLAYING);
+    }, [bagCounter]
   );
 
   const dropped = (e) => {
     e.containerElem.style.visibility = "hidden";
     setBagCounter(bagCounter +1);
     setDrag(`${character} packt ${e.dragData.label} ein.`);
+    setRightSound(true);
     if (bagCounter === 4) {
       setWinningSound(true);
       setTimeout(() => setShowResult(true), 2500);
@@ -71,8 +80,10 @@ export const Suitcase = (props) => {
         </DropTarget>
       </DropTarget>
       {winningSound && <Sound url={`./assets/sounds/game_won.mp3`} playStatus={Sound.status.PLAYING} />}
-      {lostSound && <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={playStatus} 
-        onFinishedPlaying={() => setPlayStatus(Sound.status.STOPPED)} />}
+      {rightSound && <Sound url={`./assets/sounds/game_right.mp3`} playStatus={rightPlayStatus}
+        onFinishedPlaying={() => setRightPlayStatus(Sound.status.STOPPED)} />}
+      {lostSound && <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={lostPlayStatus} 
+        onFinishedPlaying={() => setLostPlayStatus(Sound.status.STOPPED)} />}
       {showResult && <Redirect exact to="reise" />}
     </div>
   );

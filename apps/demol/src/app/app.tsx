@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import ScrollIntoView from "./scrollintoview";
@@ -9,15 +9,23 @@ import { ChapterProps } from '@gerdesque/data';
 import './app.scss';
 
 import app from './app.json';
+import { API_URL } from '@gerdesque/data';
 
 (window as any).soundManager.setup({debugMode: false});
 
 export const App = () => {
   const [character, setCharacter] = usePersistedState('character', 'default');
+  const [chapters, setChapters] = useState(app.chapters);
+
+  useEffect(() => {
+    fetch(`${API_URL}/chapters`)
+      .then(_ => _.json())
+      .then(setChapters);
+  }, []);
 
   const renderChapter = (routerProps) => {
     const chapterLink = routerProps.match.params.link
-    const chapter: ChapterProps = app.chapters.find(chapterObj => chapterObj.link === chapterLink)
+    const chapter: ChapterProps = chapters.find(chapterObj => chapterObj.link === chapterLink)
     return (chapter && <Chapter {...chapter} />)
   }
 
