@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import {AppContext } from '../chapter/context';
 
-import './redirect.scss';
+
 
 /* eslint-disable-next-line */
 export interface RedirectProps {

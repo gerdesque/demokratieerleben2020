@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './summary.scss';
+
 
 /* eslint-disable-next-line */
 export interface SummaryProps {

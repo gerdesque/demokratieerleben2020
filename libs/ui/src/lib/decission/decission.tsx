@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './decission.scss';
+
 
 /* eslint-disable-next-line */
 export interface DecissionProps {

@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Image from "../image/image";
 import { IMAGE_SUFFIX } from '@gerdesque/data';
 
-import './memory.scss';
+
 
 /* eslint-disable-next-line */
 export interface MemoryProps {}

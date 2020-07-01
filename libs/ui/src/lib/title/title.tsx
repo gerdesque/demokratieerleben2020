@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './title.scss';
+
 
 /* eslint-disable-next-line */
 export interface TitleProps {

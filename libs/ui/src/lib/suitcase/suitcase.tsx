@@ -8,7 +8,7 @@ import Sound from 'react-sound';
 import Image from '../image/image';
 import {AppContext } from '../chapter/context';
 
-import './suitcase.scss';
+
 
 export const Suitcase = (props) => {
 

@@ -34,7 +34,6 @@ export interface Content {
 
 export interface GroupProps {
   grouped: boolean
-  row: boolean
   info?: string
   background?: string
   character?: string

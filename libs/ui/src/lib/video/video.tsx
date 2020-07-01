@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { VIDEO_SUFFIX } from '@gerdesque/data';
 
-import './video.scss';
+
 
 /* eslint-disable-next-line */
 export interface VideoProps {

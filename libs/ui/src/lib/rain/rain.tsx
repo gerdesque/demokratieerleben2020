@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { IMAGE_SUFFIX } from '@gerdesque/data';
-import './rain.scss';
+
 
 function Rain() {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './nav.scss';
+
 
 /* eslint-disable-next-line */
 export interface NavProps {

@@ -8,7 +8,7 @@ import {AppContext } from '../chapter/context';
 
 import { ChapterProps } from '@gerdesque/data';
 
-import './chapter.scss';
+
 
 export const Chapter = (props: ChapterProps) => {
 

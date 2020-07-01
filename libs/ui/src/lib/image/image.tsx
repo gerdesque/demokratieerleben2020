@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { IMAGE_SUFFIX, IMAGE_SUFFIX_ALTERNATE } from '@gerdesque/data';
 import {AppContext } from '../chapter/context';
-import './image.scss';
+
 
 export interface ImageProps {
   value: string

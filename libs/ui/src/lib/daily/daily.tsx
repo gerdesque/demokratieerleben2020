@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Image from "../image/image";
 
-import './daily.scss';
+
 
 /* eslint-disable-next-line */
 export interface DailyProps {}

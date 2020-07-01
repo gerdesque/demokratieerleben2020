@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
 import Sound from 'react-sound';
 
-import './puzzle.scss';
+
 
 class Puzzle extends Component {
   state = {

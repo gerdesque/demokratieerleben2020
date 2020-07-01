@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Image from '../image/image';
-import './smokingpit.scss';
+
 
 /* eslint-disable-next-line */
 export interface SmokingpitProps {

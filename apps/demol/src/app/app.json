@@ -5,7 +5,6 @@
       "link": "daheim",
       "groups": [{
           "grouped": false,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.",
@@ -26,7 +25,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei."
@@ -44,7 +42,6 @@
         },
         {
           "grouped": true,
-          "row": true,
           "content": [{
               "type": "text",
               "value": "Wen möchtest du auf diesem Weg begleiten?"
@@ -71,7 +68,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "value": "Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.",
@@ -86,7 +82,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "value": "Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.",
@@ -101,7 +96,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "value": "Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.",
@@ -116,7 +110,6 @@
         },
         {
           "grouped": true,
-          "row": true,
           "character": "Anna",
           "background": "daheim_familie2",
           "content": [{
@@ -156,7 +149,6 @@
         },
         {
           "grouped": true,
-          "row": true,
           "character": "Karl",
           "background": "daheim_familie2",
           "content": [{
@@ -196,7 +188,6 @@
         },
         {
           "grouped": true,
-          "row": true,
           "character": "Gerda",
           "background": "daheim_familie2",
           "content": [{
@@ -230,7 +221,6 @@
         },
         {
           "grouped": false,
-          "row": false,
           "character": "Anna",
           "content": [{
             "type": "text",
@@ -240,7 +230,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -255,7 +244,6 @@
         },
         {
           "grouped": false,
-          "row": false,
           "character": "Gerda",
           "content": [{
             "type": "text",
@@ -265,7 +253,6 @@
         },
         {
           "grouped": false,
-          "row": false,
           "character": "Anna",
           "content": [{
             "type": "image",
@@ -276,7 +263,6 @@
         },
         {
           "grouped": false,
-          "row": false,
           "character": "Anna",
           "content": [{
             "type": "text",
@@ -286,7 +272,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -302,7 +287,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_1455_(147)",
           "content": [{
@@ -318,38 +302,37 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
-            "type": "image",
-            "layer": "back",
-            "option": "second",
-            "value": "02_12_(4)"
-          },
-          {
-            "type": "text",
-            "layer": "base",
-            "value": "Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten."
-          }]
+              "type": "image",
+              "layer": "back",
+              "option": "second",
+              "value": "02_12_(4)"
+            },
+            {
+              "type": "text",
+              "layer": "base",
+              "value": "Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten."
+            }
+          ]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
-            "type": "image",
-            "option": "third",
-            "value": "daheim_werbung"
-          },
-          {
-            "type": "text",
-            "layer": "base",
-            "value": "Zur Vorbereitung treffen sich die Helfer*innen bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind."
-          }]
+              "type": "image",
+              "option": "third",
+              "value": "daheim_werbung"
+            },
+            {
+              "type": "text",
+              "layer": "base",
+              "value": "Zur Vorbereitung treffen sich die Helfer*innen bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind."
+            }
+          ]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_1455_(147)",
           "content": [{
@@ -374,7 +357,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -398,7 +380,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_1455_(147)",
           "content": [{
@@ -429,7 +410,6 @@
       "link": "ortsgruppe",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_2424_(2)",
           "content": [{
@@ -450,7 +430,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "video",
@@ -473,7 +452,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_2424_(2)",
           "content": [{
@@ -491,7 +469,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "value": "In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.",
@@ -517,7 +494,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_2424_(2)",
           "content": [{
@@ -538,7 +514,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "value": "Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.",
@@ -557,7 +532,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "value": "Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.",
@@ -590,7 +564,6 @@
       "link": "gruppenvorbereitung",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_1455_(90)",
           "content": [{
@@ -616,7 +589,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "value": "Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. ",
@@ -641,7 +613,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
           "content": [{
@@ -661,7 +632,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_1455_(58)",
           "content": [{
@@ -682,7 +652,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "value": "Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
@@ -701,7 +670,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "image",
@@ -717,7 +685,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_1455_(58)",
           "content": [{
@@ -745,7 +712,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "image",
@@ -760,7 +726,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "value": "Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
@@ -775,7 +740,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "value": "Auch Karl beteiligt sich emsig und zieht mit einigen Freunden von Haus zu Haus, um Unterstützer*innen für die Kasse der 'Kinderrepublik' zu finden. Am Ende können sie 27 RM zum Guthaben der Ortsgruppe beisteuern.",
@@ -794,7 +758,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
@@ -814,7 +777,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_1455_(58)",
           "content": [{
@@ -831,7 +793,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "value": "Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.",
@@ -847,7 +808,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "image",
@@ -858,12 +818,11 @@
               "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
               "type": "text",
               "option": "third"
-            }  
+            }
           ]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "info": "Eine Horde bezeichnet eine unbestimmte Gruppe von Menschen - ähnlich wie eine Herde bei Tieren.",
           "content": [{
@@ -884,18 +843,15 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
-              "value": "Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. ",
-              "type": "text"
-            }
-          ]
+            "value": "Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. ",
+            "type": "text"
+          }]
         },
 
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "image",
@@ -910,18 +866,15 @@
         },
         {
           "grouped": false,
-          "row": false,
           "character": "Gerda",
           "content": [{
-              "type": "video",
-              "value": "18_Gerda_Vorbereitung",
-              "layer": "base"
-            }
-          ]
+            "type": "video",
+            "value": "18_Gerda_Vorbereitung",
+            "layer": "base"
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "2_2593_(3)",
           "content": [{
@@ -941,7 +894,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "value": "Wenige Wochen bevor die 'Kinderrepublik' stattfindet, haben die Kinderfreunde begonnen, eine Zeltlagerzeitung herauszugeben. Auch Gerdas Gruppe hat sich mit Artikeln und Bildern daran beteiligt. Die Zeitung soll alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten.",
@@ -972,7 +924,6 @@
       "link": "probezeltlager",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "video",
@@ -988,7 +939,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "image",
@@ -1013,7 +963,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_278_(1)",
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
@@ -1040,7 +989,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_278_(1)",
           "content": [{
@@ -1056,7 +1004,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "image",
@@ -1071,7 +1018,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "image",
@@ -1086,7 +1032,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "image",
@@ -1101,7 +1046,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_2424_(1)",
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
@@ -1126,7 +1070,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_2424_(1)",
           "content": [{
@@ -1142,7 +1085,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "image",
@@ -1157,7 +1099,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "image",
@@ -1182,7 +1123,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_278_(1)",
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
@@ -1215,7 +1155,6 @@
       "link": "reise",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -1231,7 +1170,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -1250,7 +1188,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_12_(16)",
           "content": [{
@@ -1275,7 +1212,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -1300,7 +1236,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_12_(16)",
           "content": [{
@@ -1316,7 +1251,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -1335,7 +1269,6 @@
         },
         {
           "grouped": false,
-          "row": false,
           "character": "Karl",
           "content": [{
             "type": "image",
@@ -1345,7 +1278,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_13_(7)",
           "content": [{
@@ -1364,7 +1296,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -1389,7 +1320,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "info": "Schlafgänger/Schlafburschen waren Menschen, die für ein kleines Entgelt eine Schlafstelle (zumeist ein Bett in einer Wohnung) mieteten. Durch die Industrialisierung und die vielen Menschen in den Städten war Wohnraum meist knapp und teuer.",
           "content": [{
@@ -1416,7 +1346,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "text",
@@ -1447,7 +1376,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_12_(16)",
           "content": [{
@@ -1479,7 +1407,6 @@
       "link": "ankunft",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
           "content": [{
@@ -1496,17 +1423,14 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
-              "type": "text",
-              "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
-            }
-          ]
+            "type": "text",
+            "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_45_(7)",
           "content": [{
@@ -1523,7 +1447,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
           "content": [{
@@ -1543,7 +1466,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "image",
@@ -1558,7 +1480,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "video",
@@ -1573,7 +1494,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "text",
@@ -1589,7 +1509,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "background": "02_45_(7)",
           "content": [{
@@ -1605,18 +1524,15 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "info": "Latrine ist ein altes Wort für eine behelfsmäßige Toilette ohne Wasserspülung.",
           "content": [{
-              "type": "text",
-              "value": "Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte."
-            }
-          ]
+            "type": "text",
+            "value": "Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte."
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "text",
@@ -1632,7 +1548,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "text",
@@ -1647,7 +1562,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Gerda",
           "content": [{
               "type": "text",
@@ -1662,87 +1576,85 @@
         },
         {
           "grouped": true,
-          "row": false,
           "background": "02_167_(4)",
           "content": [{
-            "type": "text",
-            "value": "In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?"
-          },
-          {
-            "type": "redirect",
-            "value": "weitermitanna",
-            "avatar": "Anna",
-            "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
-          },
-          {
-            "type": "redirect",
-            "value": "weitermitkarl",
-            "avatar": "Karl",
-            "title": "Ich möchte (weiter) schauen, was Karl erlebt."
-          },
-          {
-            "type": "redirect",
-            "value": "ankunft",
-            "avatar": "Gerda",
-            "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
-          },
-          {
-            "type": "redirect",
-            "value": "falken",
-            "avatar": "Falken",
-            "title": "Ich möchte mehr über die Roten Falken erfahren."
-          },
-          {
-            "type": "text",
-            "value": "Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.",
-            "title": "Personen"
-          }
-        ]
+              "type": "text",
+              "value": "In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?"
+            },
+            {
+              "type": "redirect",
+              "value": "weitermitanna",
+              "avatar": "Anna",
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+            },
+            {
+              "type": "redirect",
+              "value": "weitermitkarl",
+              "avatar": "Karl",
+              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+            },
+            {
+              "type": "redirect",
+              "value": "ankunft",
+              "avatar": "Gerda",
+              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+            },
+            {
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Ich möchte mehr über die Roten Falken erfahren."
+            },
+            {
+              "type": "text",
+              "value": "Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.",
+              "title": "Personen"
+            }
+          ]
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
-            "type": "image",
-            "option": "second",
-            "value": "02_45_(12)"
-          },
-          {
-            "type": "redirect",
-            "value": "personen",
-            "option": "full",
-            "avatar": "Priester",
-            "title": "Priester"
-          },
-          {
-            "type": "redirect",
-            "value": "personen",
-            "option": "third",
-            "avatar": "Lagerfotograf",
-            "title": "Lagerfotograf"
-          },
-          {
-            "type": "redirect",
-            "value": "personen",
-            "option": "third",
-            "avatar": "Lagerarzt",
-            "title": "Lagerarzt"
-          },
-          {
-            "type": "redirect",
-            "value": "personen",
-            "option": "third",
-            "avatar": "Genossen",
-            "title": "lokale Genoss*innen"
-          },
-          {
-            "type": "redirect",
-            "value": "personen",
-            "option": "full",
-            "avatar": "Hitlerjugend",
-            "title": "Hitlerjugend"
-          }
-        ]
+              "type": "image",
+              "option": "second",
+              "value": "02_45_(12)"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "full",
+              "avatar": "Priester",
+              "title": "Priester"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerfotograf",
+              "title": "Lagerfotograf"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerarzt",
+              "title": "Lagerarzt"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Genossen",
+              "title": "lokale Genoss*innen"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "full",
+              "avatar": "Hitlerjugend",
+              "title": "Hitlerjugend"
+            }
+          ]
         }
       ]
     },
@@ -1752,9 +1664,8 @@
       "link": "falken",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Falken",
-          "background":"2_287_3",
+          "background": "2_287_3",
           "content": [{
               "type": "text",
               "value": "Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen."
@@ -1789,40 +1700,34 @@
           ]
         },
         {
-        "grouped": true,
-          "row": false,
+          "grouped": true,
           "character": "Anna",
           "content": [{
-              "type": "redirect",
-              "value": "falken",
-              "avatar": "Falken",
-              "title": "Anna hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
-            }
-          ]
+            "type": "redirect",
+            "value": "falken",
+            "avatar": "Falken",
+            "title": "Anna hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+          }]
         },
         {
-        "grouped": true,
-          "row": false,
+          "grouped": true,
           "character": "Karl",
           "content": [{
-              "type": "redirect",
-              "value": "falken",
-              "avatar": "Falken",
-              "title": "Karl hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
-            }
-          ]
+            "type": "redirect",
+            "value": "falken",
+            "avatar": "Falken",
+            "title": "Karl hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+          }]
         },
         {
-        "grouped": true,
-          "row": false,
+          "grouped": true,
           "character": "Gerda",
           "content": [{
-              "type": "redirect",
-              "value": "falken",
-              "avatar": "Falken",
-              "title": "Gerda hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
-            }
-          ]
+            "type": "redirect",
+            "value": "falken",
+            "avatar": "Falken",
+            "title": "Gerda hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+          }]
         }
       ]
     },
@@ -1832,142 +1737,138 @@
       "link": "personen",
       "groups": [{
           "grouped": true,
-            "row": false,
-            "character": "Gerda",
-            "content": [{
+          "character": "Gerda",
+          "content": [{
               "type": "text",
               "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Priester",
-                "title": "Priester"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Lagerfotograf",
-                "title": "Lagerfotograf"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Lagerarzt",
-                "title": "Lagerarzt"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Genossen",
-                "title": "lokale Genoss*innen"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Hitlerjugend",
-                "title": "Hitlerjugend"
-              }
-            ]
-          },
-          {
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Priester",
+              "title": "Priester"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerfotograf",
+              "title": "Lagerfotograf"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerarzt",
+              "title": "Lagerarzt"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Genossen",
+              "title": "lokale Genoss*innen"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Hitlerjugend",
+              "title": "Hitlerjugend"
+            }
+          ]
+        },
+        {
           "grouped": true,
-            "row": false,
-            "character": "Anna",
-            "content": [{
+          "character": "Anna",
+          "content": [{
               "type": "text",
               "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Priester",
-                "title": "Priester"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Lagerfotograf",
-                "title": "Lagerfotograf"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Lagerarzt",
-                "title": "Lagerarzt"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Genossen",
-                "title": "lokale Genoss*innen"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Hitlerjugend",
-                "title": "Hitlerjugend"
-              }
-            ]
-          },
-          {
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Priester",
+              "title": "Priester"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerfotograf",
+              "title": "Lagerfotograf"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerarzt",
+              "title": "Lagerarzt"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Genossen",
+              "title": "lokale Genoss*innen"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Hitlerjugend",
+              "title": "Hitlerjugend"
+            }
+          ]
+        },
+        {
           "grouped": true,
-            "row": false,
-            "character": "Karl",
-            "content": [{
+          "character": "Karl",
+          "content": [{
               "type": "text",
               "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Priester",
-                "title": "Priester"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Lagerfotograf",
-                "title": "Lagerfotograf"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Lagerarzt",
-                "title": "Lagerarzt"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Genossen",
-                "title": "lokale Genoss*innen"
-              },
-              {
-                "type": "redirect",
-                "value": "personen",
-                "option": "third",
-                "avatar": "Hitlerjugend",
-                "title": "Hitlerjugend"
-              }
-            ]
-          },
-          {
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Priester",
+              "title": "Priester"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerfotograf",
+              "title": "Lagerfotograf"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Lagerarzt",
+              "title": "Lagerarzt"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Genossen",
+              "title": "lokale Genoss*innen"
+            },
+            {
+              "type": "redirect",
+              "value": "personen",
+              "option": "third",
+              "avatar": "Hitlerjugend",
+              "title": "Hitlerjugend"
+            }
+          ]
+        },
+        {
           "grouped": true,
-          "row": false,
           "character": "Priester",
           "content": [{
               "type": "video",
@@ -1982,19 +1883,16 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Priester",
-          "background":"02_1455_(102)",
+          "background": "02_1455_(102)",
           "content": [{
-              "type": "image",
-              "value": "02_84_(4)",
-              "option": "third"
-            }
-          ]
+            "type": "image",
+            "value": "02_84_(4)",
+            "option": "third"
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Priester",
           "content": [{
               "type": "text",
@@ -2009,7 +1907,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Priester",
           "content": [{
               "type": "text",
@@ -2037,7 +1934,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerfotograf",
           "content": [{
               "type": "text",
@@ -2057,7 +1953,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerfotograf",
           "background": "02_45_(21)",
           "content": [{
@@ -2081,7 +1976,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerfotograf",
           "content": [{
               "type": "image",
@@ -2107,7 +2001,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerfotograf",
           "content": [{
               "type": "image",
@@ -2141,19 +2034,16 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerarzt",
-          "background":"02_1455_(88)",
+          "background": "02_1455_(88)",
           "content": [{
-              "type": "text",
-              "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
-              "option": "reveal"
-            }
-          ]
+            "type": "text",
+            "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
+            "option": "reveal"
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerarzt",
           "content": [{
               "type": "image",
@@ -2169,7 +2059,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerarzt",
           "content": [{
               "type": "text",
@@ -2188,7 +2077,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerarzt",
           "content": [{
               "type": "text",
@@ -2203,7 +2091,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Lagerarzt",
           "content": [{
               "type": "redirect",
@@ -2227,7 +2114,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Genossen",
           "background": "02_1455_(96)",
           "content": [{
@@ -2244,7 +2130,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Genossen",
           "content": [{
               "type": "text",
@@ -2260,7 +2145,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Genossen",
           "content": [{
               "type": "text",
@@ -2275,7 +2159,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Genossen",
           "content": [{
               "type": "text",
@@ -2313,7 +2196,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
           "background": "02_1455_(127)",
           "content": [{
@@ -2329,7 +2211,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
           "content": [{
               "type": "text",
@@ -2350,7 +2231,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
           "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
           "content": [{
@@ -2366,19 +2246,16 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
           "content": [{
-              "type": "text",
-              "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft."
-            }
-          ]
+            "type": "text",
+            "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft."
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
-          "content": [{   
+          "content": [{
               "type": "text",
               "value": "Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern."
             },
@@ -2391,7 +2268,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
           "content": [{
               "type": "text",
@@ -2406,7 +2282,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Hitlerjugend",
           "content": [{
               "type": "redirect",
@@ -2436,7 +2311,6 @@
       "link": "weitermitanna",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_1455_(55)",
           "content": [{
@@ -2457,7 +2331,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2474,7 +2347,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2488,7 +2360,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2503,7 +2374,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2522,7 +2392,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2541,7 +2410,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2560,7 +2428,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_1455_(81)",
           "content": [{
@@ -2576,7 +2443,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "background": "02_1455_(81)",
           "content": [{
@@ -2593,7 +2459,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2608,7 +2473,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2633,7 +2497,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2652,7 +2515,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "image",
@@ -2667,7 +2529,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Anna",
           "content": [{
               "type": "video",
@@ -2701,7 +2562,6 @@
       "character": "Karl",
       "groups": [{
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_45_(3)",
           "content": [{
@@ -2722,28 +2582,23 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
-              "type": "text",
-              "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
-            }
-          ]
+            "type": "text",
+            "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
-              "type": "image",
-              "option": "third",
-              "value": "2_30_1"
-            }
-          ]
+            "type": "image",
+            "option": "third",
+            "value": "2_30_1"
+          }]
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2757,7 +2612,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2772,7 +2626,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2787,7 +2640,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2802,7 +2654,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2817,7 +2668,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "background": "02_1455_(25)",
           "content": [{
@@ -2837,7 +2687,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "image",
@@ -2857,7 +2706,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2872,7 +2720,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2887,7 +2734,6 @@
         },
         {
           "grouped": true,
-          "row": true,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2922,10 +2768,8 @@
       "id": 11,
       "name": "Anna und die Ausflüge",
       "link": "annaundausflüge",
-      "groups": [
-        {
+      "groups": [{
           "grouped": true,
-          "row": false,
           "background": "02_1455_(60)",
           "content": [{
               "type": "text",
@@ -2945,7 +2789,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "image",
               "option": "third",
@@ -2965,7 +2808,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
           "content": [{
               "type": "text",
@@ -2980,7 +2822,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Anna hat in der Lagerbücherei Karl kennengelernt, mit dem sie sich gut versteht. Die beiden wohnen sogar in dem selben Zeltdorf."
@@ -3009,8 +2850,7 @@
       "link": "annameetskarl",
       "groups": [{
           "grouped": true,
-          "row": false,
-          "background":"02_1455_(13)",
+          "background": "02_1455_(13)",
           "content": [{
               "type": "text",
               "value": "In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.",
@@ -3025,7 +2865,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Beide lesen aber auch gern Romane, die von Entdeckungsreisen und fantastischen Orten handeln. Karl hat bisher während des Zeltlagers schon zwei Bücher von Jules Verne gelesen. ",
@@ -3040,7 +2879,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "layer": "fore",
@@ -3055,7 +2893,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "background": "02_167_(3)",
           "content": [{
               "type": "text",
@@ -3071,7 +2908,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik."
@@ -3091,7 +2927,6 @@
       "link": "gemeinsam",
       "groups": [{
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "In Annas und Karls Zeltdorf haben sich mehrere Kinder zusammengefunden, die einen Antrag an das Lagerparlament stellen wollen. Sie wollen erreichen, dass die Gymnastik morgens nach dem Frühstück und nicht davor stattfindet. "
@@ -3109,8 +2944,7 @@
         },
         {
           "grouped": true,
-          "row": false,
-          "background":"02_13_(1)",
+          "background": "02_13_(1)",
           "content": [{
               "type": "text",
               "value": "Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang."
@@ -3129,7 +2963,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "image",
               "option": "third",
@@ -3144,7 +2977,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "background": "02_1455_(91)",
           "content": [{
               "type": "text",
@@ -3158,7 +2990,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Wenn du das Spiel gewinnst, wird sich die Kinderrepublik langsam dem Ende nähern."
@@ -3183,7 +3014,6 @@
       "link": "endkapitel",
       "groups": [{
           "grouped": true,
-          "row": false,
           "background": "02_1455_(56)",
           "content": [{
               "type": "text",
@@ -3203,7 +3033,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon."
@@ -3217,7 +3046,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Bis dahin nehmen sie sich jedoch vor, an einem der nächsten Arbeiterjugendtage teilzunehmen. Dieser findet alle ein bis zwei Jahre statt und wird voraussichtlich 1931 in Frankfurt am Main ausgetragen."
@@ -3235,7 +3063,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Die Kinderrepublik nähert sich langsam dem Ende. Für Anna und Karl ist diese Zeit wie im Flug vergangen."
@@ -3253,7 +3080,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben."
@@ -3267,7 +3093,6 @@
         },
         {
           "grouped": true,
-          "row": false,
           "content": [{
               "type": "text",
               "value": "Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien."
@@ -3293,7 +3118,6 @@
       "link": "ausblick",
       "groups": [{
         "grouped": true,
-        "row": false,
         "background": "PH_dig_205_Seite205",
         "content": [{
             "type": "text",

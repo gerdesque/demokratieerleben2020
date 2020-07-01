@@ -9,7 +9,7 @@ import { IMAGE_SUFFIX } from '@gerdesque/data';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import './header.scss';
+
 
 /* eslint-disable-next-line */
 export interface HeaderProps {

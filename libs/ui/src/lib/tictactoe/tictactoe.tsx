@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sound from 'react-sound';
 
-import './tictactoe.scss';
+
 
 /* eslint-disable-next-line */
 export interface TicTacToeProps {}

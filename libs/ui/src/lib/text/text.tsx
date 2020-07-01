@@ -1,7 +1,7 @@
 import React from 'react';
 import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
-import './text.scss';
+
 
 export interface TextProps {
   value: string

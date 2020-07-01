@@ -16,7 +16,7 @@ import Summary from '../summary/summary';
 
 import { GroupProps } from '@gerdesque/data';
 
-import './group.scss';
+
 
 const ContentType  = {
   text: Text,
@@ -35,7 +35,6 @@ const ContentType  = {
 
 export const Group = ({
   grouped,
-  row,
   info,
   background,
   content: contentList}: GroupProps) => {
@@ -49,7 +48,7 @@ export const Group = ({
   const renderGroupContent = () => {
 
     const chapterGroupedContent = 
-      <div className={`parallax__layer parallax__layer--base grouped ${row ? 'row' : 'column'}`}>
+    <div className={`parallax__layer parallax__layer--base grouped`}>
         {info && <Info value={info} />}
         {contentList.map((content, index) =>
           renderContent(content, index)

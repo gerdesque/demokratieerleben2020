@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './scrollicon.scss';
+
 
 /* eslint-disable-next-line */
 export interface ScrolliconProps {}
