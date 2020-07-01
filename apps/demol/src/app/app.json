@@ -344,7 +344,7 @@
           {
             "type": "text",
             "layer": "base",
-            "value": "Zur Vorbereitung treffen sich die Helferinnen und Helfer bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind."
+            "value": "Zur Vorbereitung treffen sich die Helfer*innen bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind."
           }]
         },
         {
@@ -707,6 +707,7 @@
             {
               "type": "redirect",
               "value": "probezeltlager",
+              "option": "primary",
               "title": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
             }
           ]
@@ -802,6 +803,7 @@
             {
               "type": "redirect",
               "value": "probezeltlager",
+              "option": "primary",
               "title": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
             }
           ]
@@ -1521,7 +1523,7 @@
           "character": "Karl",
           "content": [{
               "type": "image",
-              "option": "primary",
+              "option": "second",
               "value": "02_0028_KR_Westerwald_1932_Lagerwahl"
             },
             {
@@ -1672,13 +1674,13 @@
           "row": false,
           "content": [{
             "type": "image",
-            "option": "full",
+            "option": "second",
             "value": "02_45_(12)"
           },
           {
             "type": "redirect",
             "value": "personen",
-            "option": "third",
+            "option": "full",
             "avatar": "Priester",
             "title": "Priester"
           },
@@ -1706,7 +1708,7 @@
           {
             "type": "redirect",
             "value": "personen",
-            "option": "third",
+            "option": "full",
             "avatar": "Hitlerjugend",
             "title": "Hitlerjugend"
           }
@@ -2280,7 +2282,7 @@
             },
             {
               "type": "text",
-              "value": "Am Nachmittag haben die Helfer*innen eine Filmvorführung für die jungen Republikaner*inne in einem nahen Kino organisiert. In 2 Schichten schauen alle Kinder einen Stummfilm von Buster Keaton. Dafür braucht es keine Worte, denn diesen Humor verstehen alle."
+              "value": "Am Nachmittag haben die Helfer*innen eine Filmvorführung für die jungen Republikaner*innen in einem nahen Kino organisiert. In 2 Schichten schauen alle Kinder einen Stummfilm von Buster Keaton. Dafür braucht es keine Worte, denn diesen Humor verstehen alle."
             }
           ]
         },
@@ -2615,7 +2617,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "35_Karl_Gewitter"
             }
           ]
@@ -2637,7 +2639,7 @@
         },
         {
           "grouped": true,
-          "row": false,
+          "row": true,
           "character": "Karl",
           "content": [{
               "type": "text",
@@ -2845,7 +2847,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "2_8_Mädchen_in_Turnkleidung_am_Strand"
             },
             {
@@ -2862,13 +2864,14 @@
               "value": "Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang."
             },
             {
+              "type": "text",
+              "option": "third",
+              "value": "Der Bürgermeister muss nun den Antrag an das Lagerparlament weiterreichen, sodass alle Vertreter*innen der Gemeinderäte darüber beraten und abstimmen können. Am Ende lehnt das Lagerparlament mit großer Mehrheit den Vorschlag ab."
+            },
+            {
               "type": "image",
               "option": "third",
               "value": "02_12_(1)"
-            },
-            {
-              "type": "text",
-              "value": "Der Bürgermeister muss nun den Antrag an das Lagerparlament weiterreichen, sodass alle Vertreter*innen der Gemeinderäte darüber beraten und abstimmen können. Am Ende lehnt das Lagerparlament mit großer Mehrheit den Vorschlag ab."
             }
           ]
         },
@@ -2882,6 +2885,7 @@
             },
             {
               "type": "text",
+              "option": "third",
               "value": "Es begründet seine Entscheidung damit, dass der Küchendienst nach dem Aufstehen etwas Zeit braucht, um das Essen vorzubereiten und damit, dass Sport vor dem Essen gesünder sei als direkt danach."
             }
           ]
@@ -2914,7 +2918,7 @@
             {
               "type": "redirect",
               "value": "endkapitel",
-              "option": "primary",
+              "option": "full",
               "title": "Du hast genug gespielt und hast langsam Heimweh...."
             }
           ]
@@ -2954,7 +2958,7 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "28_Deutschfranzösisches_Zeltlager"
             }
           ]
@@ -2968,7 +2972,7 @@
             },
             {
               "type": "image",
-              "option": "second",
+              "option": "third",
               "value": "02_0016_AJT_in_Wien_1929"
             },
             {

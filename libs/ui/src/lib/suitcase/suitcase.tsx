@@ -34,7 +34,7 @@ export const Suitcase = (props) => {
     setDrag(`${character} packt ${e.dragData.label} ein.`);
     if (bagCounter === 4) {
       setWinningSound(true);
-      setTimeout(() => setShowResult(true), 1500);
+      setTimeout(() => setShowResult(true), 2500);
     }
   };
 
