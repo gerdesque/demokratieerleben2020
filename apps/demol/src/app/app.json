@@ -1547,7 +1547,6 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
-          "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
           "content": [{
               "type": "video",
               "option": "primary",
@@ -1555,7 +1554,7 @@
             },
             {
               "type": "text",
-              "value": "In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu entdecken und auszuprobieren."
+              "value": "In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu erleben und auszuprobieren."
             }
           ]
         },
@@ -1654,7 +1653,7 @@
             "type": "redirect",
             "value": "weitermitanna",
             "avatar": "Anna",
-            "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+            "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
           },
           {
             "type": "redirect",
@@ -1754,7 +1753,7 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
             },
             {
               "type": "redirect",
@@ -1782,7 +1781,7 @@
           "character": "Priester",
           "content": [{
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "19_Besuchstag"
             },
             {
@@ -1800,8 +1799,14 @@
               "type": "image",
               "value": "02_84_(4)",
               "option": "third"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Priester",
+          "content": [{
               "type": "text",
               "value": "In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden."
             },
@@ -1824,7 +1829,7 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
             },
             {
               "type": "redirect",
@@ -1928,7 +1933,7 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
             },
             {
               "type": "redirect",
@@ -1953,8 +1958,14 @@
               "type": "text",
               "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
               "option": "reveal"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerarzt",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "2_29_2_Seite85"
@@ -2008,7 +2019,7 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
             },
             {
               "type": "redirect",
@@ -2028,37 +2039,31 @@
           "grouped": true,
           "row": false,
           "character": "Genossen",
-          "background": "02_13_(2)",
+          "background": "02_1455_(96)",
           "content": [{
               "type": "text",
               "value": "In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. ",
               "option": "reveal"
             },
             {
-              "type": "image",
-              "option": "third",
-              "value": "02_1455_(96)"
-            },
-            {
               "type": "text",
-              "option": "third",
-              "value": "So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen."
+              "value": "So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen.",
+              "layer": "fore"
             }
           ]
         },
         {
-          "grouped": false,
+          "grouped": true,
           "row": false,
           "character": "Genossen",
           "content": [{
               "type": "text",
-              "layer": "fore",
+              "option": "third",
               "value": "Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch."
             },
             {
               "type": "image",
               "option": "third",
-              "layer": "base",
               "value": "02_1455_(2)"
             }
           ]
@@ -2100,7 +2105,7 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
             },
             {
               "type": "redirect",
@@ -2166,8 +2171,14 @@
               "type": "image",
               "option": "second",
               "value": "2_31_t"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Hitlerjugend",
+          "content": [{
               "type": "text",
               "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft."
             }
@@ -2198,14 +2209,20 @@
             },
             {
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "25_Karl_Hitlerjugend"
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Hitlerjugend",
+          "content": [{
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik entdecken."
+              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
             },
             {
               "type": "redirect",
@@ -2513,8 +2530,14 @@
           "content": [{
               "type": "text",
               "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
-            },
-            {
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Karl",
+          "content": [{
               "type": "image",
               "option": "third",
               "value": "2_30_1"
