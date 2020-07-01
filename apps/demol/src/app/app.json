@@ -431,6 +431,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_2424_(2)",
           "content": [{
               "type": "text",
               "value": "Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. ",
@@ -474,6 +475,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_2424_(2)",
           "content": [{
               "type": "text",
               "value": "Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.",
@@ -517,7 +519,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
-          "background": "daheim_karte",
+          "background": "02_2424_(2)",
           "content": [{
               "type": "text",
               "value": "Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.",
@@ -538,7 +540,6 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
-          "background": "02_1455_(105)",
           "content": [{
               "value": "Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.",
               "type": "text"
@@ -591,6 +592,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_1455_(90)",
           "content": [{
               "type": "text",
               "value": "Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken.",
@@ -716,6 +718,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_1455_(58)",
           "content": [{
               "type": "text",
               "value": "Karl gehört in seiner Ortsgruppe der Kinderfreunde zu den 'Roten Falken'. Diese Bezeichnung wird für alle 12- bis 14-jährigen Mitglieder verwendet.",
@@ -812,6 +815,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "02_1455_(58)",
           "content": [{
               "type": "text",
               "value": "Gerda hat noch nie die Aktivitäten einer Kindergruppe organisiert. Um ihre Aufgaben besser zu kennen liest sie das Buch 'Im Zeltlager - ein technisches Handbuch für rote Falkenführer von Hermann Neddermayer. Das Buch wurde gerade erst herausgegeben und sammelt wertvolle Erfahrungen aus den bisherigen Zeltlagern der Kinderfreunde.",
@@ -880,7 +884,6 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
-          "background": "2_30_2",
           "content": [{
               "value": "Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. ",
               "type": "text"
@@ -918,6 +921,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "2_2593_(3)",
           "content": [{
               "value": "Inzwischen steht auch fest, an welchem Ort das Zeltlager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Gerdas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben",
               "type": "text"
@@ -1009,7 +1013,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "background": "02_2424_(1)",
+          "background": "02_278_(1)",
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
           "content": [{
               "type": "text",
@@ -1036,6 +1040,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_278_(1)",
           "content": [{
               "type": "video",
               "option": "second",
@@ -1121,6 +1126,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "02_2424_(1)",
           "content": [{
               "type": "video",
               "value": "17_Gerda_Probezeltlager",
@@ -1176,7 +1182,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
-          "background": "02_2424_(1)",
+          "background": "02_278_(1)",
           "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
           "content": [{
               "type": "text",
@@ -1239,6 +1245,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_12_(16)",
           "content": [{
               "type": "text",
               "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren."
@@ -1288,6 +1295,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_12_(16)",
           "content": [{
               "type": "text",
               "value": "Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein."
@@ -1332,6 +1340,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_13_(7)",
           "content": [{
               "type": "text",
               "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren."
@@ -1433,6 +1442,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "02_12_(16)",
           "content": [{
               "type": "text",
               "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik."
@@ -1485,6 +1495,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_45_(7)",
           "content": [{
               "type": "text",
               "value": "Karl ist jetzt endlich in der Kinderrepublik angekommen und hat sein Zelt gemeinsam mit mehreren anderen Kindern bezogen. Er verschafft sich sofort einen Überblick über das Gelände und das Lager.",
@@ -1568,6 +1579,7 @@
           "grouped": true,
           "row": false,
           "character": "Gerda",
+          "background": "02_45_(7)",
           "content": [{
               "type": "text",
               "value": "Nebenan sind Gruppen aus dem Ruhrgebiet und Schlesien, die ebenfalls emsig mit dem Aufbau ihrer Zeltdörfer beschäftigt sind. Gerda verschafft sich erst einmal einen Überblick über das Gelände und das Lager."
@@ -1724,6 +1736,7 @@
           "grouped": true,
           "row": false,
           "character": "Falken",
+          "background":"2_287_3",
           "content": [{
               "type": "text",
               "value": "Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen."
@@ -1782,6 +1795,7 @@
           "grouped": true,
           "row": false,
           "character": "Priester",
+          "background":"02_1455_(102)",
           "content": [{
               "type": "image",
               "value": "02_84_(4)",
@@ -1850,6 +1864,7 @@
           "grouped": true,
           "row": false,
           "character": "Lagerfotograf",
+          "background": "02_45_(21)",
           "content": [{
               "type": "text",
               "value": "Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik."
@@ -1899,7 +1914,6 @@
           "grouped": true,
           "row": false,
           "character": "Lagerfotograf",
-          "background": "02_45_(21)",
           "content": [{
               "type": "image",
               "option": "third",
@@ -1934,6 +1948,7 @@
           "grouped": true,
           "row": false,
           "character": "Lagerarzt",
+          "background":"02_1455_(88)",
           "content": [{
               "type": "text",
               "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
@@ -1974,12 +1989,22 @@
           "grouped": true,
           "row": false,
           "character": "Lagerarzt",
-          "background": "2_30_3",
           "content": [{
               "type": "text",
               "value": "2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil."
             },
             {
+              "type": "video",
+              "option": "primary",
+              "value": "38_Karl_ErsteHilfe"
+            }
+          ]
+        },
+        {
+          "grouped": true,
+          "row": false,
+          "character": "Lagerarzt",
+          "content": [{
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
@@ -2003,6 +2028,7 @@
           "grouped": true,
           "row": false,
           "character": "Genossen",
+          "background": "02_13_(2)",
           "content": [{
               "type": "text",
               "value": "In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. ",
@@ -2094,9 +2120,10 @@
           "grouped": true,
           "row": false,
           "character": "Hitlerjugend",
+          "background": "02_1455_(127)",
           "content": [{
               "type": "video",
-              "option": "primary",
+              "option": "second",
               "value": "21_Nächtlicher_Überfall"
             },
             {
@@ -2204,6 +2231,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_1455_(55)",
           "content": [{
               "type": "text",
               "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
@@ -2231,7 +2259,7 @@
             },
             {
               "type": "image",
-              "option": "third bg",
+              "option": "third",
               "layer": "base",
               "value": "2_30_1"
             }
@@ -2269,7 +2297,6 @@
         {
           "grouped": true,
           "row": false,
-          "background": "02_12_(5)",
           "character": "Anna",
           "content": [{
               "type": "text",
@@ -2328,6 +2355,7 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
+          "background": "02_1455_(81)",
           "content": [{
               "type": "image",
               "option": "third",
@@ -2353,7 +2381,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "background": "02_1455_(36)",
           "content": [{
               "type": "text",
               "value": "Fast alle Angelegenheiten werden demokratisch entschieden. Dennoch gibt es manchmal Situationen, in denen dies nichts nützt, denn..."
@@ -2428,7 +2455,6 @@
           "grouped": true,
           "row": false,
           "character": "Anna",
-          "background": "02_1455_(106)",
           "content": [{
               "type": "video",
               "option": "primary",
@@ -2463,6 +2489,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_45_(3)",
           "content": [{
               "type": "text",
               "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
@@ -2572,6 +2599,7 @@
           "grouped": true,
           "row": false,
           "character": "Karl",
+          "background": "02_1455_(25)",
           "content": [{
               "type": "text",
               "value": "Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben."
@@ -2678,6 +2706,7 @@
         {
           "grouped": true,
           "row": false,
+          "background": "02_1455_(60)",
           "content": [{
               "type": "text",
               "value": "Eine wichtige Beschäftigung während der Kinderrepublik ist auch das sogenannte 'soziale Wandern'.",
@@ -2761,6 +2790,7 @@
       "groups": [{
           "grouped": true,
           "row": false,
+          "background":"02_1455_(13)",
           "content": [{
               "type": "text",
               "value": "In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.",
@@ -2806,6 +2836,7 @@
         {
           "grouped": true,
           "row": false,
+          "background": "02_167_(3)",
           "content": [{
               "type": "text",
               "layer": "fore",
@@ -2859,6 +2890,7 @@
         {
           "grouped": true,
           "row": false,
+          "background":"02_13_(1)",
           "content": [{
               "type": "text",
               "value": "Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang."
@@ -2932,6 +2964,7 @@
       "groups": [{
           "grouped": true,
           "row": false,
+          "background": "02_1455_(56)",
           "content": [{
               "type": "text",
               "option": "reveal",
@@ -2951,7 +2984,6 @@
         {
           "grouped": true,
           "row": false,
-          "background": "103",
           "content": [{
               "type": "text",
               "value": "Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon."
@@ -3002,7 +3034,6 @@
         {
           "grouped": true,
           "row": false,
-          "background": "2_31_s",
           "content": [{
               "type": "text",
               "value": "Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben."
