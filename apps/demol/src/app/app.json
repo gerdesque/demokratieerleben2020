@@ -905,7 +905,7 @@
               "value": "02_12_(17)"
             },
             {
-              "value": "Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
+              "value": "Außerdem dient sie dazu, Bauernhöfe und Bäckereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
               "type": "text",
               "option": "third"
             },
@@ -2311,6 +2311,26 @@
       "name": "Annas Erlebnisse",
       "link": "weitermitanna",
       "groups": [{
+        "grouped": true,
+        "character": "Karl",
+        "content": [{
+          "type": "redirect",
+          "value": "weitermitanna",
+          "avatar": "Anna",
+          "title": "Ich möchte mit Anna die Kinderrepublik erkunden."
+        }]
+      },
+      {
+          "grouped": true,
+          "character": "Gerda",
+          "content": [{
+            "type": "redirect",
+            "value": "weitermitanna",
+            "avatar": "Anna",
+            "title": "Ich möchte mit Anna die Kinderrepublik erkunden."
+          }]
+      },
+      {
           "grouped": true,
           "character": "Anna",
           "background": "02_1455_(55)",
@@ -2562,6 +2582,26 @@
       "link": "weitermitkarl",
       "character": "Karl",
       "groups": [{
+        "grouped": true,
+        "character": "Anna",
+        "content": [{
+          "type": "redirect",
+          "value": "weitermitkarl",
+          "avatar": "Karl",
+          "title": "Ich möchte mit Karl die Kinderrepublik erkunden."
+        }]
+      },
+      {
+          "grouped": true,
+          "character": "Gerda",
+          "content": [{
+            "type": "redirect",
+            "value": "weitermitkarl",
+            "avatar": "Karl",
+            "title": "Ich möchte mit Karl die Kinderrepublik erkunden."
+          }]
+      },
+      {
           "grouped": true,
           "character": "Karl",
           "background": "02_45_(3)",
