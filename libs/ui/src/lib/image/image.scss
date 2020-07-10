@@ -3,4 +3,58 @@
   display: block;
   filter: saturate(.8);
   opacity: .9;
+  transition: all 0.50s;
+
+  &.avatar:hover {
+    transition: all 0.50s;
+    filter: brightness(110%);
+    transform: scale(1.1);
+    
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.full {
+  width: 80%;
+}
+
+.primary {
+  width: 66%;
+}
+
+.second {
+  width: 50%;
+}
+
+.third {
+  width: 33%;
+  padding: 5px;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.bg {
+  opacity: 0.2;
+  width: 100%;
 }

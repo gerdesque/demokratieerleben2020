@@ -1,7 +1,7 @@
 .navigation {
-	left: 2%;
+	right: 2%;
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	z-index: 6;
 
 	align-items: center;
@@ -14,8 +14,8 @@
 .navigation--item {
 	cursor: pointer;
 	border-radius: 9999px;
-	height: 20px;
-	width: 20px;
+	height: 28px;
+	width: 28px;
 	background-color: transparent;
 	border: 1px solid rgba(0, 0, 0, .3);
 	margin: 8px 0;
@@ -31,12 +31,15 @@
 	height: 100%;
 	left: 0;
 	outline: none;
-	text-indent: -999em;
+	text-indent: -15em;
 	top: 0;
 	transition: background 0.3s ease;
 	width: 100%;
-	overflow: hidden;
+	//overflow: hidden;
 	position: absolute;
+	font-size: 1.7rem;
+	color: var(--color-title);
+	font-weight: bold;
 }
 
 .navigation--item a:focus {
@@ -46,6 +49,10 @@
 .navigation--item a:hover,
 .navigation--item a:focus {
 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation--item a:not(:hover){
+  overflow: hidden;
 }
 
 .navigation--item a::after {

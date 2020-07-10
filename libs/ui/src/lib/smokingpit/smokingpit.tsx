@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Image from '../image/image';
-import './smokingpit.scss';
+
 
 /* eslint-disable-next-line */
 export interface SmokingpitProps {
@@ -11,7 +11,7 @@ export interface SmokingpitProps {
 export const Smokingpit = (props: SmokingpitProps) => {
   return (
     <div className='smokingPit'>
-      <Image value='daheim_arbeiterschaft' />
+      <Image value='daheim_arbeiterschaft'/>
       <div className='smoke'>
         <span className='s0'></span>
         <span className='s1'></span>

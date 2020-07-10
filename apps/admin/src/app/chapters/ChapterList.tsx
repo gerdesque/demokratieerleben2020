@@ -16,7 +16,7 @@ const ChapterList = props => (
       <TextField label="Pfad" source="link" />
       <ArrayField label="Inhaltsgruppen" source="groups">
         <SingleFieldList>
-          <ChipField source="id" />
+          <ChipField source="character" />
         </SingleFieldList>
       </ArrayField>
       <EditButton />

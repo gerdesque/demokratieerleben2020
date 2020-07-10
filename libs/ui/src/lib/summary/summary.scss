@@ -1,0 +1,14 @@
+.summary {
+  width: 60%;
+  font-size: 1.5rem;
+  padding: 0 50px;
+  text-align: center;
+
+  summary:focus {
+	  outline-style: none;
+  }
+
+  p {
+    text-align: left;
+  }
+}

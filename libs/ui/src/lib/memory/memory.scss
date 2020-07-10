@@ -1,0 +1,64 @@
+.memory {
+  display: flex;
+  flex-wrap: wrap;
+
+  .description {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cards {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotateY(0) perspective(100px);
+      transition: .4s;
+      backface-visibility: hidden;
+    }
+  }
+
+  img {
+    width: 148px;
+    height: 148px;
+    position: absolute;
+    overflow: hidden;
+    object-position: center;
+    transition: .4s;
+    backface-visibility: hidden;
+  }
+
+  .grid-card-show {
+    &::after {
+      transform: rotateY(180deg) perspective(100px);
+    }
+
+    .grid-img {
+      transform: rotateY(0) perspective(100px);
+    }
+  }
+
+  .grid-card-finished {
+    opacity: .5;
+  }
+
+}

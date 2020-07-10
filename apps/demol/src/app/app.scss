@@ -1,20 +1,30 @@
 :root {
-  --color-text: #850101;
-  --color-title: #BF6422;
-  --color-link: #008080;
-  --color-link-highlighted: #E3000F;
+  --color-text: #96271f;
+  --color-title: #781f19;
+  --color-link: #d6ae01;
+  --color-link-highlighted: #96271f;
 }
 
 @font-face {
   font-family: 'FundamentalBrigade';
   font-display: swap;
-  src: url('../assets/fonts/Fundamental_Brigade_Schlank.ttf') format('truetype');
+  src:  url('../assets/fonts/Fundamental_Brigade_Schlank.woff') format('woff'),
+        url('../assets/fonts/Fundamental_Brigade_Schlank.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LinolschriftHeavy';
+  font-display: swap;
+  src: url('../assets/fonts/Linolschrift_Heavy.woff') format('woff'),
+       url('../assets/fonts/Linolschrift_Heavy.ttf') format('truetype');
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -22,7 +32,7 @@ html {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 html, body, div, span, applet, object, iframe,

@@ -1,20 +1,30 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { IMAGE_SUFFIX, IMAGE_SUFFIX_ALTERNATE } from '@gerdesque/data';
-import './image.scss';
+import {AppContext } from '../chapter/context';
 
-/* eslint-disable-next-line */
+
 export interface ImageProps {
   value: string
+  title?: string
+  option?: string
 }
 
 export const Image = (props: ImageProps) => {
+  const [character, setCharacter] = useContext(AppContext);
+
+  const chooseCharacter = () => {
+    props.title && setCharacter(props.title);
+  }
+
   return (
-    <picture className="chapter_picture">
+    <picture className={`chapter_picture ${props.option}`} onClick={() => chooseCharacter()}>
       <source srcSet={"./assets/"+props.value+IMAGE_SUFFIX} type='image/webp' />
       <source srcSet={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} type='image/png' />
-      <img draggable="false" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.value} />
+      <img draggable="false" loading="lazy" src={"./assets/fallback/"+props.value+IMAGE_SUFFIX_ALTERNATE} alt={props.title || props.value} />
+      {props.title && <div className="overlay">{props.title}</div>}
     </picture>
   )
+
 };
 
 export default Image;

@@ -11,27 +11,38 @@ export enum Layer {
 
 export enum ContentType {
   Text = "text",
+  Redirect = "redirect",
   Video = "video",
   Image = "image",
   Game = "game",
-  Misc = "misc",
+  SmokingPit = "smokingpit",
+  Puzzle = "puzzle",
+  Suitcase = "suitcase",
+  TicTacToe = "tictactoe",
+  Daily = "daily",
   Decission = "decission"
 }
 
 export interface Content {
-  type: ContentType
+  type: string
   value: string
+  layer?: string
+  title?: string
+  option?: string
+  avatar?: string
 }
 
-export interface Group {
-  content: Content[]
+export interface GroupProps {
   grouped: boolean
-  row: boolean
+  info?: string
+  background?: string
+  character?: string
+  content: Content[]
 }
 
-export interface Chapter {
+export interface ChapterProps {
   id?: number
   name?: string
   link: string
-  groups?: Group[]
+  groups?: GroupProps[]
 }

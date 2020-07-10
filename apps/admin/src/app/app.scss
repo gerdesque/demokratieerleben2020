@@ -1,6 +1,19 @@
 :root {
-  --color-text: darkred;
-  --color-title: chocolate;
-  --color-link: mediumblue;
-  --color-link-highlighted: #E3000F;
-} 
+  --color-text: #96271f;
+  --color-title: #781f19;
+  --color-link: #d6ae01;
+  --color-link-highlighted: #96271f;
+}
+
+.contentarray section {
+  display: flex;
+  
+  div {
+    margin-right: 5px;
+    width: 100%;
+
+    &:first-of-type {
+      margin-top: 15px;
+    }
+  }
+}

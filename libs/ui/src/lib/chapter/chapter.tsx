@@ -1,77 +1,46 @@
-import React from 'react';
-import Title from '../title/title';
-import Video from '../video/video';
-import Image from '../image/image';
-import Text from '../text/text';
-import Decission from '../decission/decission';
-import Smokingpit from '../smokingpit/smokingpit';
-import { makeStyles } from '@material-ui/core/styles';
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { Chapter, ContentType } from '@gerdesque/data';
-import { IMAGE_SUFFIX } from '@gerdesque/data';
+import React, { Fragment, useContext} from 'react';
+import { InView } from 'react-intersection-observer'
+import Sound from 'react-sound';
 
-import './chapter.scss';
+import Header from '../header/header';
+import Group from '../group/group';
+import {AppContext } from '../chapter/context';
 
-export const ChapterComponent = (props: Chapter) => {
-  const useStyles = makeStyles(() => ({
-    chapter: {
-      backgroundImage: `url(${"./assets/"+ props.link+IMAGE_SUFFIX})`,
-      boxShadow: '0 0 8px 8px #dcd5cc inset',
-      },
-  }));
-  const classes = useStyles();
+import { ChapterProps } from '@gerdesque/data';
+
+
+
+export const Chapter = (props: ChapterProps) => {
+
+  const [character, setCharacter] = useContext(AppContext);
 
   const renderChapterGroups = () => {
-    return props.groups.map((group, index) => 
-    <div key={index} className='parallax__group'>
-      {group.content && renderChapterContent(group)}
-    </div>)
-  }
-
-  const renderChapterContent = ({content : contentList, grouped, row}) => {
-
-    const chapterGroupContent = 
-      <div className={`parallax__layer parallax__layer--fore grouped ${row ? 'row' : 'column'}`}>
-        {contentList.map((content) =>
-          <>
-            {content.type === ContentType.Text && <Text value={content.value} />}
-            {content.type === ContentType.Video && <Video value={content.value} />}
-            {content.type === ContentType.Image && <Image value={content.value} />}
-            {content.type === ContentType.Decission && <Decission value={content.value} />}
-            {content.type === ContentType.Misc && <Smokingpit value={content.value} />}
-          </>
+    return props.groups.map((group, index) =>
+    <Fragment key={index}>
+      {(!group.character || group.character === character) && 
+      <InView threshold={0.5}>
+        {({ inView, ref, entry }) => (
+          <section ref={ref} key={index} className={`parallax__group ${group.background ? 'back' : ''} ${inView ? 'active' : ''}`}>
+            <Group {...group} />
+          </section>
         )}
-      </div>;
-
-    const chapterContent = 
-      contentList.map((content, index) =>
-        <div key={index} className={`parallax__layer parallax__layer--${content.layer}`}>
-          {content.type === ContentType.Text && <Text value={content.value} />}
-          {content.type === ContentType.Video && <Video value={content.value} />}
-          {content.type === ContentType.Image && <Image value={content.value} />}
-          {content.type === ContentType.Decission && <Decission value={content.value} />}
-          {content.type === ContentType.Misc && <Smokingpit value={content.value} />}
-        </div>);
-
-    return grouped ? chapterGroupContent : chapterContent
+      </InView>}
+    </Fragment>
+    )
   }
-
-  const setAudioRef = element => {
-    this.audio = element;
-  };
 
   return (
-    <div className='parallax'>
-      <div className='parallax__group parallax__header'>
-        <div className={`parallax__layer parallax__layer--base ${classes.chapter}`}>
-          <Title text={props.name} />
-          <audio controls loop>
-            <source src={"./assets/sounds/daheim.mp3"} type='audio/mpeg' />
-          </audio>
-          <div className='icon-scroll'></div>
-        </div>
+    <InView as="div">
+      <Sound
+        url={props.link === 'personen' ? `./assets/sounds/${props.link}_${character}.mp3` : `./assets/sounds/${props.link}.mp3`}
+        loop={true}
+        playStatus={Sound.status.PLAYING}
+      />
+      <div className='parallax'>
+        <Header {...props}/>
+        {props.groups && renderChapterGroups()}
       </div>
-      {props.groups && renderChapterGroups()}
-      </div>
+    </InView>
   );
 };
+export default Chapter;
