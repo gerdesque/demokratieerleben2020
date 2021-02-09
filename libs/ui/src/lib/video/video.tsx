@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import { VIDEO_SUFFIX } from '@gerdesque/data';
-
-
+import { SUBTITLE_SUFFIX, VIDEO_SUFFIX } from '@gerdesque/data';
 
 /* eslint-disable-next-line */
 export interface VideoProps {
@@ -11,7 +9,6 @@ export interface VideoProps {
 }
 
 export const Video = (props: VideoProps) => {
-  
   const [isPlaying, setPlaying] = useState(false);
 
   const playVideo = (playing) => {
@@ -23,6 +20,7 @@ export const Video = (props: VideoProps) => {
       <p>{props.title}</p>
       <video controls onPlaying={() => playVideo(true)} onPause={() => playVideo(false)}>
         <source type='video/mp4' src={"./assets/movies/"+props.value+VIDEO_SUFFIX}></source>
+        <track kind="subtitles" label="English" srcLang="en" src={"./assets/movies/"+props.value+SUBTITLE_SUFFIX} default/>
         Your browser does not support the video tag.
       </video>
     </div>);

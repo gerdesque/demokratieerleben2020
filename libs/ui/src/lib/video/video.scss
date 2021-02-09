@@ -4,6 +4,10 @@ video {
   box-shadow: 5px 5px 5px var(--color-text);
 }
 
+video::cue { 
+  font-size: 1rem;
+}
+
 .chapter_video {
   position: relative;
 }

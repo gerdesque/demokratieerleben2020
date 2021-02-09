@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { Language } from '../language/language';
 
 /* eslint-disable-next-line */
 export interface NavProps {
@@ -20,12 +20,15 @@ export const Nav = (props: NavProps) => {
   return (
     <nav className="app-nav">
       <ul className='navigation'>
+        <li>
+          <Language />
+        </li>
         <li className='navigation--item'>
           <NavLink exact to="/">Demokratie erLeben</NavLink>
         </li>
         {renderChapterNav()}
-    </ul>
-  </nav>
+      </ul>
+    </nav>
   );
 };
 

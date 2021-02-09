@@ -2,6 +2,7 @@ export const API_URL = 'http://localhost:3000';
 export const IMAGE_SUFFIX = '.webp';
 export const IMAGE_SUFFIX_ALTERNATE = '.png';
 export const VIDEO_SUFFIX = '.mp4';
+export const SUBTITLE_SUFFIX = '.vtt';
 
 export enum Layer {
   Fore = "fore",
