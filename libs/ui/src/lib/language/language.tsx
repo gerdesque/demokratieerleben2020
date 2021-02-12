@@ -1,14 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
+import { AppContext } from '../chapter/context';
 import './language.scss';
 
-/* eslint-disable-next-line */
-export interface LanguageProps {}
-
-let language = 'de';
-
-export const Language = (props: LanguageProps) => {
-  const changeLanguage = (lng) => {
-    language = lng;
+export const Language = () => {
+  const [,,language, setLanguage] = useContext(AppContext);
+  const changeLanguage = (language) => {
+    setLanguage(language)
   }
   return (
     <Fragment>

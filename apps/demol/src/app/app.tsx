@@ -8,14 +8,16 @@ import { Nav, Chapter, AppContext } from '@gerdesque/ui';
 import { ChapterProps } from '@gerdesque/data';
 import './app.scss';
 
-import app from './app.json';
+import appDe from './app.json';
+import appEn from './app_en.json';
 import { API_URL } from '@gerdesque/data';
 
 (window as any).soundManager.setup({debugMode: false});
 
 export const App = () => {
   const [character, setCharacter] = usePersistedState('character', 'default');
-  const [chapters, setChapters] = useState(app.chapters);
+  const [language, setLanguage] = usePersistedState('language', 'de');
+  const [chapters, setChapters] = useState(language === 'de' ? appDe.chapters : appEn.chapters);
 
   useEffect(() => {
     fetch(`${API_URL}/chapters`)
@@ -30,10 +32,10 @@ export const App = () => {
   }
 
   return (
-    <AppContext.Provider value={[character, setCharacter]}>
+    <AppContext.Provider value={[character, setCharacter, language, setLanguage]}>
     <BrowserRouter basename="/demokratieerleben2020"> 
       <div className="app">
-        <Nav chapters = {app.chapters}/>
+        <Nav chapters = {chapters}/>
         <ScrollIntoView>
         <div className="app-content">
           <Switch>
