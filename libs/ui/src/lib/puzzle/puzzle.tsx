@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
 import Sound from 'react-sound';
 
+/* eslint-disable-next-line */
+export interface PuzzleProps {
+  title: string;
+}
 
-
-class Puzzle extends Component {
+class Puzzle extends Component<PuzzleProps> {
   state = {
     pieces: [],
     shuffled: [],
@@ -83,7 +86,7 @@ class Puzzle extends Component {
         </div>
         {this.state.chance &&
           <>
-            <p>Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!</p>
+            <p>{this.props.title}</p>
             <Sound url={`./assets/sounds/game_lost.mp3`} playStatus={this.state.playStatus}
               onFinishedPlaying={() => this.setState({ playStatus: Sound.status.STOPPED })} />
           </>}

@@ -17,13 +17,17 @@ import { API_URL } from '@gerdesque/data';
 export const App = () => {
   const [character, setCharacter] = usePersistedState('character', 'default');
   const [language, setLanguage] = usePersistedState('language', 'de');
-  const [chapters, setChapters] = useState(language === 'de' ? appDe.chapters : appEn.chapters);
+  const [chapters, setChapters] = useState(appDe.chapters);
+  const [title, setTitle] = useState('Demokratie erleben');
 
   useEffect(() => {
+    setChapters(language === 'de' ? appDe.chapters : appEn.chapters);
+    setTitle(language === 'de' ? 'Demokratie erleben' : 'Living Democracy');
+    document.title = title;
     fetch(`${API_URL}/chapters`)
       .then(_ => _.json())
       .then(setChapters);
-  }, []);
+  }, [language, title]);
 
   const renderChapter = (routerProps) => {
     const chapterLink = routerProps.match.params.link
@@ -35,7 +39,7 @@ export const App = () => {
     <AppContext.Provider value={[character, setCharacter, language, setLanguage]}>
     <BrowserRouter basename="/demokratieerleben2020"> 
       <div className="app">
-        <Nav chapters = {chapters}/>
+        <Nav chapters = {chapters} title={title}/>
         <ScrollIntoView>
         <div className="app-content">
           <Switch>

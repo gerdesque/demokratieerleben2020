@@ -5,6 +5,7 @@ import { Language } from '../language/language';
 /* eslint-disable-next-line */
 export interface NavProps {
   chapters: any[];
+  title: string;
 }
 
 export const Nav = (props: NavProps) => {
@@ -24,7 +25,7 @@ export const Nav = (props: NavProps) => {
           <Language />
         </li>
         <li className='navigation--item'>
-          <NavLink exact to="/">Demokratie erLeben</NavLink>
+          <NavLink exact to="/">{props.title}</NavLink>
         </li>
         {renderChapterNav()}
       </ul>

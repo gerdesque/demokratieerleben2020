@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { DragDropContainer, DropTarget } from 'react-drag-drop-container';
 import shortid from 'shortid';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Image from "../image/image";
-
-
+import { AppContext } from "../chapter/context";
 
 /* eslint-disable-next-line */
 export interface DailyProps {}
 
-const dailyItems = ["Waschen und Baden", "Frühstück", "Wanderungen machen", "Sprechstunde des Lagerarztes", 
-"Lagerruhe - Post- und Zeitungsausgabe", "Tagung des Lagerparlaments", "Gemeinsame Veranstaltungen", "Zeltruhe"];
-const schedule = ["6 Uhr", "8 Uhr", "8 ½ – 12 Uhr ", "8 ½ – 9 ½", "12 ½ – 14 ½ ",
-"18 – 19 Uhr", "19 ½ – 21 Uhr", "21 Uhr"]
-
 export const Daily = (props: DailyProps) => {
-
+  const [,,language] = useContext(AppContext);
   const [result, setResult] = useState(false);
+
+  const dailyItems = language === 'de' ? 
+    ["Waschen und Baden", "Frühstück", "Wanderungen machen", "Sprechstunde des Lagerarztes", 
+    "Lagerruhe - Post- und Zeitungsausgabe", "Tagung des Lagerparlaments", "Gemeinsame Veranstaltungen", "Zeltruhe"] :
+    ["Washing and bathing", "Breakfast", "Hiking", "Consultation hours of the camp doctor", 
+    "Camp rest - mail and newspaper delivery", "Meeting of the camp parliament", "Common events", "Camp rest"];
+  const daily = language === 'de' ? "Tagesplan anzeigen!" : "Show daily schedule!";
 
   const handleClick = () => {
     setResult(true);
@@ -46,7 +47,7 @@ export const Daily = (props: DailyProps) => {
     return (
       <>
         <Box targetKey="box"/>
-        <p className="redirect" onClick={() => handleClick()}>Tagesplan anzeigen!</p>
+        <p className="redirect" onClick={() => handleClick()}>{daily}</p>
       </>
     )
   }
@@ -118,7 +119,11 @@ const Box = (props) => {
 }
 
 const BoxItem = (props) => {
-  
+  const [,,language] = useContext(AppContext);
+  const schedule = language === 'de' ? 
+  ["6 Uhr", "8 Uhr", "8 ½ – 12 Uhr", "8 ½ – 9 ½", "12 ½ – 14 ½ ", "18 – 19 Uhr", "19 ½ – 21 Uhr", "21 Uhr"] :
+  ["6 am", "8 am", "8.30 to 12 am", "8.30 to 9.30 am", "12.30 to 2.30 pm", "6 to 7 pm", "7.30 to 9 pm", "9 pm"]
+
   const handleDrop = (e) => {
     e.stopPropagation();
     props.swap(e.dragData.index, props.index, e.dragData);

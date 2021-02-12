@@ -345,7 +345,8 @@
             },
             {
               "type": "puzzle",
-              "value": "puzzle"
+              "value": "puzzle",
+              "title": "Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!"
             },
             {
               "type": "redirect",
@@ -368,7 +369,8 @@
             },
             {
               "type": "puzzle",
-              "value": "puzzle"
+              "value": "puzzle",
+              "title": "Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!"
             },
             {
               "type": "redirect",
@@ -392,7 +394,8 @@
             },
             {
               "type": "puzzle",
-              "value": "puzzle"
+              "value": "puzzle",
+              "title": "Der Weg scheint noch nicht ganz richtig. Versuch es noch einmal!"
             },
             {
               "type": "redirect",

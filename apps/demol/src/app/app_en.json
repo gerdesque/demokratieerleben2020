@@ -345,7 +345,8 @@
             },
             {
               "type": "puzzle",
-              "value": "puzzle"
+              "value": "puzzle",
+              "title": "The path doesn't seem quite right yet. Try it again!"
             },
             {
               "type": "redirect",
@@ -368,7 +369,8 @@
             },
             {
               "type": "puzzle",
-              "value": "puzzle"
+              "value": "puzzle",
+              "title": "The path doesn't seem quite right yet. Try it again!"
             },
             {
               "type": "redirect",
@@ -392,7 +394,8 @@
             },
             {
               "type": "puzzle",
-              "value": "puzzle"
+              "value": "puzzle",
+              "title": "The path doesn't seem quite right yet. Try it again!"
             },
             {
               "type": "redirect",

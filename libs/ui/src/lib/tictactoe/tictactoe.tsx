@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Sound from 'react-sound';
-
-
-
-/* eslint-disable-next-line */
-export interface TicTacToeProps {}
+import { AppContext } from "../chapter/context";
 
 const Square = ({ value, onClick }) => {
   return (
@@ -26,19 +22,22 @@ const lines = [
 const userSymbol = "X";
 const computerSymbol = "O";
 
-export const TicTacToe = (props: TicTacToeProps) => {
-
+export const TicTacToe = () => {
+  const [,, language] = useContext(AppContext);
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [playStatus, setPlayStatus] = useState(Sound.status.PLAYING);
   const winner = calculateWinner(squares);
+  const winLabel = language === 'de' ? "Du hast gewonnen!" : "You have won!";
+  const drawLabel = language === 'de' ? "Es ist ja nur ein Spiel!" : "It's just a game!";
+  const lostLabel = language === 'de' ? "Ein solidarisches Remis!" : "A draw in solidarity!";
 
   function getStatus() {
     if (winner) {
       document.querySelector('.result').scrollIntoView({ behavior: 'smooth' });
-      return winner === "X" ? "Du hast gewonnen!" : "Es ist ja nur ein Spiel!";
+      return winner === "X" ? winLabel : lostLabel;
     } else if (isBoardFull(squares)) {
       document.querySelector('.result').scrollIntoView({ behavior: 'smooth' });
-      return "Ein solidarisches Remis!";
+      return drawLabel;
     } else {
       return '';
     }

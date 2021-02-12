@@ -12,7 +12,7 @@ import {AppContext } from '../chapter/context';
 
 export const Suitcase = (props) => {
 
-  const [character, setCharacter] = useContext(AppContext);
+  const [character, setCharacter, language] = useContext(AppContext);
 
   const [drag, setDrag] = useState("");
   const [bagCounter, setBagCounter] = useState(0);
@@ -39,7 +39,8 @@ export const Suitcase = (props) => {
   const dropped = (e) => {
     e.containerElem.style.visibility = "hidden";
     setBagCounter(bagCounter +1);
-    setDrag(`${character} packt ${e.dragData.label} ein.`);
+    language === 'de' ? setDrag(`${character} packt ${e.dragData.label} ein.`) : 
+      setDrag(`${character} packs ${e.dragData.label}.`);
     setRightSound(true);
     if (bagCounter === 4) {
       setWinningSound(true);
@@ -48,7 +49,8 @@ export const Suitcase = (props) => {
   };
 
   const droppedFalseItem = (e) => {
-    setDrag(`${character} braucht ${e.dragData.label} wohl eher nicht.`);
+    language === 'de' ? setDrag(`${character} braucht ${e.dragData.label} wohl eher nicht.`) : 
+      setDrag(`${character} probably doesn't need ${e.dragData.label}.`);
     setLostSound(true);
     setFalseCounter(falseCounter+1);
   };
@@ -56,16 +58,16 @@ export const Suitcase = (props) => {
   return (
     <div className='suitcase'>
       <div className='items'>
-        <Items targetKey='bag' label='ein Hemd' image='suitcase_hemd' />
-        <Items targetKey='bag' label='eine Feldflasche' image='suitcase_feldflasche' />        
-        <Items targetKey='negative' label='ein Radio' image='suitcase_radio' />
-        <Items targetKey='bag' label='eine Seife' image='suitcase_seife' />
-        <Items targetKey='negative' label='ein Smartphone' image='suitcase_smartphone' />
-        <Items targetKey='bag' label='eine Zahnbürste' image='suitcase_zahnbürste' />
-        <Items targetKey='negative' label='eine Karaffe' image='suitcase_karaffe' />
-        <Items targetKey='negative' label='eine Topfpflanze' image='suitcase_topfpflanze' />
-        <Items targetKey='bag' label='einen Löffel' image='suitcase_löffel' />
-        <Items targetKey='negative' label='einen Hammer' image='suitcase_hammer' />
+        <Items targetKey='bag' labelDe='ein Hemd' labelEn='a shirt' image='suitcase_hemd' />
+        <Items targetKey='bag' labelDe='eine Feldflasche' labelEn='a water bottle' image='suitcase_feldflasche' />        
+        <Items targetKey='negative' labelDe='ein Radio' labelEn='a radio' image='suitcase_radio' />
+        <Items targetKey='bag' labelDe='eine Seife' labelEn='a soap' image='suitcase_seife' />
+        <Items targetKey='negative' labelDe='ein Smartphone' labelEn='a smartphone' image='suitcase_smartphone' />
+        <Items targetKey='bag' labelDe='eine Zahnbürste' labelEn='a toothbrush' image='suitcase_zahnbürste' />
+        <Items targetKey='negative' labelDe='eine Karaffe' labelEn='a carafe' image='suitcase_karaffe' />
+        <Items targetKey='negative' labelDe='eine Topfpflanze' labelEn='a pot plant' image='suitcase_topfpflanze' />
+        <Items targetKey='bag' labelDe='einen Löffel' labelEn='a spoon' image='suitcase_löffel' />
+        <Items targetKey='negative' labelDe='einen Hammer' labelEn='a hammer' image='suitcase_hammer' />
       </div>
       <DropTarget onHit={(e) => dropped(e)} targetKey='bag'>
         <DropTarget onHit={(e) => droppedFalseItem(e)} targetKey='negative'>
@@ -90,10 +92,11 @@ export const Suitcase = (props) => {
 }
 
 const Items = (props) => {
+  const [,, language] = useContext(AppContext);
   return (
     <DragDropContainer
       targetKey={props.targetKey}
-      dragData={{ label: props.label }}
+      dragData={{ label: language === 'de' ? props.labelDe : props.labelEn }}
       render={() => {
         return <Image value={props.image} />;
       }}
