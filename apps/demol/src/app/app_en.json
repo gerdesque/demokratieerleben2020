@@ -1,13 +1,13 @@
 {
   "chapters": [{
       "id": 1,
-      "name": "Zu Hause",
+      "name": "At Home",
       "link": "daheim",
       "groups": [{
           "grouped": false,
           "content": [{
               "type": "text",
-              "value": "Es ist Ende der 1920er Jahre. In der Weimarer Republik leben viele Kinder und Jugendliche, deren Eltern zur großen Arbeiterschaft gehören, die im Bergbau, in Webereien, Fabriken und Stahlwerken arbeiten. Dazu gehören Anna, Karl und Gerda.",
+              "value": "It's the late 1920s. In the Weimar Republic there are many children and young people whose parents belong to the large social group of workers who work in coal mining, weaving mills, factories and iron foundries. Among these young people are Anna, Karl and Gerda.",
               "layer": "fore",
               "option": "reveal"
             },
@@ -27,7 +27,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Anna und Karl sind 12 Jahre alt und ihr letztes Schuljahr steht bald bevor. Gerda ist 16 Jahre alt und macht eine Lehre in einer Buchbinderei."
+              "value": "Anna and Karl are 12 years old and their final school year is soon to come. Gerda is 16 years old and is doing an apprenticeship in a bookbindery."
             },
             {
               "type": "image",
@@ -36,7 +36,7 @@
             },
             {
               "type": "text",
-              "value": "Begleite die drei dabei, wie sie ihren Weg zu einer „Kinderrepublik“ der Reichsarbeitsgemeinschaft der Kinderfreunde finden und was sie dort erleben."
+              "value": "Accompany the three as they find their way to a so-called Children's Republic of the 'National working-group of the Friends of the Children' (Reichsarbeitsgemeinschaft der Kinderfreunde) and have a look what they are experiencing there."
             }
           ]
         },
@@ -44,7 +44,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Wen möchtest du auf diesem Weg begleiten?"
+              "value": "Who would you like to accompany on this journey?"
             },
             {
               "type": "image",
@@ -70,7 +70,7 @@
           "grouped": true,
           "character": "Anna",
           "content": [{
-              "value": "Anna lebt mit ihrer Familie im Ruhrgebiet. Sie ist gerade 12 Jahre alt geworden. Ihr Vater arbeitet unter Tage im Bergbau. Ihre Mutter kümmert sich um Anna, ihre 3 Geschwister sowie ihren alten Großvater. Der Lohn des Vaters reicht gerade aus, um sie alle zu versorgen.",
+              "value": "Anna is living with her family in the Ruhr area. She has just turned 12. Her father works underground in coal mining. Her mother takes care of Anna, her three siblings and her grandfather. The father's wages are just enough to support the family.",
               "type": "text"
             },
             {
@@ -84,7 +84,7 @@
           "grouped": true,
           "character": "Karl",
           "content": [{
-              "value": "Karl wohnt mit seiner Familie in Schlesien. Er ist 12 Jahre alt und wird bald 13. Seine Eltern arbeiten beide in einer der örtlichen Webereien. Der Lohn der beiden reicht gerade dafür aus, um Karl und seine 5 Geschwister sowie seine alte Großmutter zu versorgen.",
+              "value": "Karl is living with his family in Silesia. He is 12 years old and will soon turn 13. His parents both work in one of the local weaving mills. The wages of the two are just enough to take care of Karl and his five siblings as well as his grandmother.",
               "type": "text"
             },
             {
@@ -98,7 +98,7 @@
           "grouped": true,
           "character": "Gerda",
           "content": [{
-              "value": "Gerda ist 16 Jahre alt und lebt mit ihrer Mutter und ihren 2 kleineren Geschwistern in Leipzig. Sie macht seit 2 Jahren eine Ausbildung in einer Buchbinderei und kann damit etwas Geld zum Familieneinkommen beitragen. Ihre Mutter arbeitet in einer Fabrik für Elektroschaltgeräte.",
+              "value": "Gerda is 16 years old. With her two smaller siblings and her mother she is living in Leipzig. She has been doing an apprenticeship in a bookbindery for two years and can thus contribute some money to the family income. Her mother works in a factory for electrical switch gears.",
               "type": "text"
             },
             {
@@ -113,37 +113,37 @@
           "character": "Anna",
           "background": "daheim_familie2",
           "content": [{
-              "value": "Worüber möchtest du mehr erfahren?",
+              "value": "What would you like to learn more about?",
               "type": "text"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "3_Annas_Alltag_mit_Hühnern",
-              "title": "Annas Alltag"
+              "title": "Anna's daily life"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "4_Annas_Zuhause",
-              "title": "Annas Umfeld"
+              "title": "Anna's environment"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "2_Anna_Familie",
-              "title": "Annas Familie"
+              "title": "Anna's family"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "1_Anna_Großvater",
-              "title": "Annas Großvater"
+              "title": "Anna's grandfather"
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
-              "title": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
+              "title": "I don't care, I would like to know how she got to the Children's Republic."
             }
           ]
         },
@@ -152,37 +152,37 @@
           "character": "Karl",
           "background": "daheim_familie2",
           "content": [{
-              "value": "Worüber möchtest du mehr erfahren?",
+              "value": "What would you like to learn more about?",
               "type": "text"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "7_Karl_Alltag",
-              "title": "Karls_Alltag"
+              "title": "Karl's daily life"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "6_Karl_Familie",
-              "title": "Karls Familie"
+              "title": "Karl's family"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "5_Karl_Großmutter",
-              "title": "Karls Großmutter"
+              "title": "Karl's grandmother"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "8_Karls_Zuhause",
-              "title": "Karls Zuhause"
+              "title": "Karl's home"
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
-              "title": "Interessiert mich nicht, ich will wissen, wie er zur Kinderrepublik kommt."
+              "title": "I don't care, I would like to know how he got to the Children's Republic."
             }
           ]
         },
@@ -191,31 +191,31 @@
           "character": "Gerda",
           "background": "daheim_familie2",
           "content": [{
-              "value": "Worüber möchtest du mehr erfahren?",
+              "value": "What would you like to learn more about?",
               "type": "text"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "9_Gerdas_Familie",
-              "title": "Gerdas Familie"
+              "title": "Gerda's family"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "10_Gerdas_Alltag_mit_Musik",
-              "title": "Gerdas Alltag"
+              "title": "Gerda's daily life"
             },
             {
               "type": "video",
               "option": "fourth",
               "value": "11_Gerdas_Zuhause",
-              "title": "Gerdas Zuhause"
+              "title": "Gerda's home"
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
-              "title": "Interessiert mich nicht, ich will wissen, wie sie zur Kinderrepublik kommt."
+              "title": "I don't care, I would like to know how she got to the Children's Republic."
             }
           ]
         },
@@ -225,7 +225,7 @@
           "content": [{
             "type": "text",
             "layer": "base",
-            "value": "Eines Tages klingelt es an der Tür. Anna öffnet und davor stehen zwei Jugendliche, die nur wenige Jahre älter aussehen als sie. Sie heißen Erna und Hans. Die beiden erzählen ihr, dass sie sich in einem Verein namens 'Reichsarbeitsgemeinschaft der Kinderfreunde' engagieren und nach neuen Mitgliedern für die Ortsgruppe des Vereins suchen."
+            "value": "One day the doorbell rings. Anna opens and in front of the door are two young people who look only a few years older than her. Their names are Erna and Hans. The two are telling her that they are involved in an association called the 'National working-group of the Friends of the Children'. They are looking for new members for the local group of the association."
           }]
         },
         {
@@ -233,7 +233,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl hört seinen Brüdern manchmal zu, wenn sie über Politik diskutieren. Sie erklären ihm die Zusammenhänge zwischen dem Staat, der Demokratie, der Arbeit und der Lebenssituation ihrer Familie."
+              "value": "Karl sometimes listens to his brothers discussing politics. They explain to him the connections between the state, democracy, work and the living conditions of their family."
             },
             {
               "type": "image",
@@ -248,7 +248,7 @@
           "content": [{
             "type": "text",
             "layer": "base",
-            "value": "Gerda ist seit einiger Zeit bei der Sozialistischen Arbeiterjugend und hat bisher nur an Veranstaltungen teilgenommen. Nun soll jedoch für den Sommer ein großes demokratisches und großteils selbstorganisiertes Zeltlager der Kinderfreunde stattfinden."
+            "value": "Gerda has been attending events of the Socialist Workers' Youth for some time. Now, however, a large democratic and mainly self-organised tent camp of the 'Friends of the Children' is going to take place during the summer."
           }]
         },
         {
@@ -267,7 +267,7 @@
           "content": [{
             "type": "text",
             "layer": "base",
-            "value": "Anna hört ihnen interessiert zu. Sie erfährt, dass der Verein sich um die Arbeiterkinder kümmert. Die Ortsgruppe ist durch die Kinder und Jugendlichen weitestgehend selbst organisiert und veranstaltet Spielenachmittage, Zeltlager und Vorträge. Sie ist neugierig und verspricht den Beiden, morgen vorbeizuschauen."
+            "value": "Anna is listening to them with great interest. She learns that the association takes care of the working-class children. The local group is mainly organised by the children and young people themselves and organises game afternoons, tent camps and lectures. She is curious and promises the two of them to stop by tomorrow."
           }]
         },
         {
@@ -276,7 +276,7 @@
           "content": [{
               "type": "text",
               "option": "third",
-              "value": "Sie erzählen ihm auch von dem Verband, in dem sie Mitglieder sind: der Sozialistischen Arbeiterjugend."
+              "value": "They also tell him about the association of which they are members: the Socialist Workers' Youth."
             },
             {
               "type": "image",
@@ -291,7 +291,7 @@
           "background": "02_1455_(147)",
           "content": [{
               "type": "text",
-              "value": "Karl ist für diese Gruppe noch zu jung, aber es gibt auch eine sozialistische Vereinigung für Kinder: die Kinderfreunde, die auch eine Ortsgruppe in seiner Nähe haben. Karl will sich das einmal anschauen, denn bei den Kinderfreunden ist viel los. Es gibt Spielenachmittage, Zeltlager und auch Themennachmittage."
+              "value": "Karl is still too young for this group, but there is also a socialist association for children: the 'Friends of the Children', who also have a local group close by. Karl wants to to pay them a visit, because there is a lot going on in the local group of the 'Friends of the Children'. There are game afternoons, tent camps and also theme afternoons."
             },
             {
               "type": "image",
@@ -312,7 +312,7 @@
             {
               "type": "text",
               "layer": "base",
-              "value": "Die Kinderfreunde stehen der Sozialistischen Arbeiterjugend nahe und kümmern sich vor allem um die Jüngeren. Gerda hat zwar wenig Zeit, möchte aber gern anderen Arbeiterkindern dabei helfen, eine Ablenkung von ihrem tristen Alltag zu erleben. Deshalb meldet sie sich als freiwillige Helferin für die Organisation und Durchführung des Zeltlagers. Es soll als Kinderrepublik bezeichnet werden und Platz für Tausende Kinder aus der ganzen Weimarer Republik bieten."
+              "value": "The Friends of the Children are close to the Socialist Workers' Youth and take care of the younger ones. Gerda has little time, but she would like to help other working-class children to experience a distraction from their dreary everyday life. That's why she volunteers to help organise and run the tent camp. It should be called a Children's Republic and offer space for thousands of children from all over the Weimar Republic."
             }
           ]
         },
@@ -327,7 +327,7 @@
             {
               "type": "text",
               "layer": "base",
-              "value": "Zur Vorbereitung treffen sich die Helfer*innen bei der Ortsgruppe der Kinderfreunde. Das Treffen findet in Räumen der SPD statt, deren Mitglieder oft ebenfalls bei den Kinderfreunden oder der Sozialistischen Arbeiterjugend engagiert sind."
+              "value": "In preparation, the helpers meet at the local group of the Friends of the Children. The meeting takes place in a room of the Social Democratic Party of Germany, whose members are often also involved with the Friends of the Children or the Socialist Workers' Youth."
             }
           ]
         },
@@ -337,11 +337,11 @@
           "background": "02_1455_(147)",
           "content": [{
               "type": "text",
-              "value": "Anna hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
+              "value": "Anna has received a city map with the marked route to the local group. Unfortunately, it is torn into several pieces."
             },
             {
               "type": "text",
-              "value": "Hilf Anna, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel."
+              "value": "Help Anna to put it back together to get to the meeting point. To do this, drag the muddled map sections into the corresponding outlined field. If you have solved the puzzle correctly, you will move on to the next chapter."
             },
             {
               "type": "puzzle",
@@ -351,7 +351,7 @@
               "type": "redirect",
               "value": "ortsgruppe",
               "option": "primary",
-              "title": "Du kennst eine Abkürzung und überholst Anna auf dem Weg zur Ortsgruppe."
+              "title": "You know a shortcut and pass Anna on the way to the local group."
             }
           ]
         },
@@ -360,11 +360,11 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
+              "value": "Karl has received a city map with the marked route to the local group. Unfortunately, it is torn into several pieces."
             },
             {
               "type": "text",
-              "value": "Hilf Karl, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel."
+              "value": "Help Karl to put it back together to get to the meeting point. To do this, drag the muddled map sections into the corresponding outlined field. If you have solved the puzzle correctly, you will move on to the next chapter."
             },
             {
               "type": "puzzle",
@@ -374,7 +374,7 @@
               "type": "redirect",
               "value": "ortsgruppe",
               "option": "primary",
-              "title": "Du kennst eine Abkürzung und überholst Karl auf dem Weg zur Ortsgruppe."
+              "title": "You know a shortcut and pass Karl on the way to the local group."
             }
           ]
         },
@@ -384,11 +384,11 @@
           "background": "02_1455_(147)",
           "content": [{
               "type": "text",
-              "value": "Gerda hat einen Stadtplan mit dem eingezeichneten Weg zur Ortsgruppe bekommen. Nur leider ist dieser in mehrere Teile zerrissen."
+              "value": "Gerda has received a city map with the marked route to the local group. Unfortunately, it is torn into several pieces."
             },
             {
               "type": "text",
-              "value": "Hilf Gerda, ihn wieder zusammenzufügen, um zum Treffpunkt der Ortsgruppe zu gelangen. Ziehe dazu die durcheinandergewürfelten Kartenausschnitte in das entsprechende vorgezeichnete Feld. Wenn du das Puzzle richtig gelöst hast, kommst du zum nächsten Kapitel."
+              "value": "Help Gerda to put it back together to get to the meeting point. To do this, drag the muddled map sections into the corresponding outlined field. If you have solved the puzzle correctly, you will move on to the next chapter."
             },
             {
               "type": "puzzle",
@@ -398,7 +398,7 @@
               "type": "redirect",
               "value": "ortsgruppe",
               "option": "primary",
-              "title": "Du kennst eine Abkürzung und überholst Gerda auf dem Weg zur Ortsgruppe."
+              "title": "You know a shortcut and pass Gerda on the way to the local group."
             }
           ]
         }
@@ -406,7 +406,7 @@
     },
     {
       "id": 2,
-      "name": "Die Ortsgruppe",
+      "name": "Local Group",
       "link": "ortsgruppe",
       "groups": [{
           "grouped": true,
@@ -414,7 +414,7 @@
           "background": "02_2424_(2)",
           "content": [{
               "type": "text",
-              "value": "Anna betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Sie wird direkt von Erna und Hans begrüßt. Sie freuen sich, dass sie tatsächlich gekommen ist. ",
+              "value": "Anna enters the youth club of the Friends of the Children, where the local group meetings take place. She is welcomed immediately by Erna and Hans. They are happy that she actually came.",
               "option": "reveal"
             },
             {
@@ -423,7 +423,7 @@
               "value": "2_214_Seite142"
             },
             {
-              "value": "In dem Raum sind 17 Mädchen und Jungen versammelt. Einige von ihnen kennt sie aus ihrer Siedlung. Alle kommen wie Anna aus ärmlichen Verhältnissen und erhoffen sich durch die Betätigung in der Ortsgruppe etwas Ablenkung vom oft tristen Alltag.",
+              "value": "Seventeen girls and boys are gathered in the room. She knows some of them from her neighbourhood. Like Anna, they all come from poor families and hope to find some distraction from their depressing everyday life by joining the local group.",
               "type": "text"
             }
           ]
@@ -440,13 +440,13 @@
               "type": "redirect",
               "value": "gruppenvorbereitung",
               "option": "second",
-              "title": "Ich möchte noch mehr über Annas Ortsgruppe erfahren."
+              "title": "I would like to know more about Anna's local group."
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
               "option": "second",
-              "title": "Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen."
+              "title": "I'd rather come to the Children's Republic as soon as possible."
             }
           ]
         },
@@ -456,7 +456,7 @@
           "background": "02_2424_(2)",
           "content": [{
               "type": "text",
-              "value": "Karl betritt das Jugendheim der Kinderfreunde, wo die Treffen der Ortsgruppe stattfinden. Er wird direkt von zwei Kindern begrüßt, die sich als Erika und Otto vorstellen. Sie freuen sich, dass mal jemand neues dabei ist.",
+              "value": "Karl enters the youth club of the Friends of the Children, where the local group meetings are taking place. He is welcomed immidiately by two children who introduce themselves as Erika and Otto. They are happy that someone new is there.",
               "layer": "fore",
               "option": "reveal"
             },
@@ -471,7 +471,7 @@
           "grouped": true,
           "character": "Karl",
           "content": [{
-              "value": "In dem Raum sind 21 Mädchen und Jungen versammelt. Einige von ihnen kennt Karl aus dem Dorf. Die Gruppe diskutiert gerade über ein Zeltlager, dass im Sommer stattfinden soll und für das viel vorbereitet werden muss.",
+              "value": "Twenty-one girls and boys are gathered in the room. Karl knows some of them from the village. The group is currently discussing a tent camp that will take place during the summer and for which a lot has to be prepared.",
               "type": "text"
             },
             {
@@ -482,13 +482,13 @@
               "type": "redirect",
               "value": "gruppenvorbereitung",
               "option": "second",
-              "title": "Ich möchte noch mehr über Karls Ortsgruppe erfahren."
+              "title": "I would like to know more about Karl's local group."
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
               "option": "second",
-              "title": "Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen."
+              "title": "I'd rather come to the Children's Republic as soon as possible."
             }
           ]
         },
@@ -498,7 +498,7 @@
           "background": "02_2424_(2)",
           "content": [{
               "type": "text",
-              "value": "Gerda betritt den großen Raum, in dem sich bereits einige Dutzend Menschen versammelt haben. Darunter sind auch ein paar Jugendliche in ihrem Alter, die sie von den Treffen der SAJ kennt. Manche der Helfer*innen sind wesentlich älter als sie.",
+              "value": "Gerda enters the large room in which several dozen people have already gathered. Among them are a few young people of her own age whom she knows from meetings of the Socialist Worker's Youth. But some of the helpers are much older than her.",
               "option": "reveal"
             },
             {
@@ -507,7 +507,7 @@
               "value": "2-1781_Seite135"
             },
             {
-              "value": "Eine der älteren Helfer*innen ist Berta, die bis vor einigen Jahren mit Gerdas Mutter zusammen in der Fabrik gearbeitet hat. Sie wurde letztes Jahr gekündigt, weil sie angeblich zu langsam gearbeitet hätte. Da es in ihrem Alter schwierig ist, eine Anstellung zu finden, ist Berta arbeitslos.",
+              "value": "One of the older helpers is Berta, who used to work with Gerda's mother in the factory. Last year, however, she was fired for allegedly working too slowly. Since it is difficult to find a job at her age, Berta is unemployed.",
               "type": "text"
             }
           ]
@@ -516,7 +516,7 @@
           "grouped": true,
           "character": "Gerda",
           "content": [{
-              "value": "Berta engagiert sich seitdem bei den Kinderfreunden. Sie hofft damit einen Beitrag dafür zu leisten, dass ihre Kinder und Enkel es besser haben würden und ihre Rechte in der neuen Republik zu verteidigen lernten.",
+              "value": "Berta has been involved with the Friends of the Children ever since. With this commitment she hopes to make a contribution to a better future life of her children and grandchildren and help them to defend their rights in the new republic.",
               "type": "text"
             },
             {
@@ -525,7 +525,7 @@
               "value": "02_1455_(103)"
             },
             {
-              "value": "Die Helfer*innen teilen sich auf verschiedene Ortsgruppen auf und begleiten die Kinder bei ihren Vorbereitungen auf das Zeltlager. Die älteren und erfahreneren Helfer*innen organisieren die Fahrkarten, das benötigte Zeltmaterial sowie die Übernachtungen bei Genoss*innen auf dem Weg zur Kinderrepublik. ",
+              "value": "The helpers are volunteering in different local groups and accompanying the children in their preparations for the tent camp. The older and more experienced helpers organise the tickets, the necessary tent material as well as the overnight stays with comrades on the way to the Children's Republic.",
               "type": "text"
             }
           ]
@@ -534,7 +534,7 @@
           "grouped": true,
           "character": "Gerda",
           "content": [{
-              "value": "Gerda trifft sich fortan mit 26 Kindern sowie 4 anderen Helfer*innen, um sich auf das Zeltlager vorzubereiten.",
+              "value": "From now on, Gerda meets regularly with twenty-six children and four other helpers to prepare the tent camp.",
               "type": "text"
             },
             {
@@ -546,13 +546,13 @@
               "type": "redirect",
               "value": "gruppenvorbereitung",
               "option": "second",
-              "title": "Ich möchte noch mehr über die Arbeit der Ortsgruppe sowie über die Rolle der Helfer*innen erfahren."
+              "title": "I would like to learn more about the work of the local group and the role of the helpers."
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
               "option": "second",
-              "title": "Ich möchte lieber so schnell wie möglich zur Kinderrepublik kommen."
+              "title": "I'd rather come to the Children's Republic as soon as possible."
             }
           ]
         }
@@ -560,7 +560,7 @@
     },
     {
       "id": 3,
-      "name": "Die Arbeit der Ortsgruppe",
+      "name": "The Activities of the Local Group",
       "link": "gruppenvorbereitung",
       "groups": [{
           "grouped": true,
@@ -568,11 +568,11 @@
           "background": "02_1455_(90)",
           "content": [{
               "type": "text",
-              "value": "Annas Ortsgruppe trifft sich einmal pro Woche. Neben den Spiele- und Bildungsabenden, gibt es regelmäßige Gesangsrunden, in denen die Kinder gemeinsam mit den Helfer*innen Lieder singen. Dazu gehören Lieder wie 'Vorwärts ihr Frauen' oder 'Im blauen Hemd'. Letzteres ist die Hymne der Roten Falken.",
+              "value": "Anna's local group meets once a week. In addition to the games and educational evenings, there are regular singing rounds in which the children sing songs together with the helpers. These include songs like 'Vorwärts ihr Frauen' ('Onwards you women') or 'Im blauen Hemd' ('In the blue shirt'). The latter is the anthem of the Red Falcons.",
               "option": "reveal"
             },
             {
-              "value": "Als Rote Falken werden alle 12- bis 14-Jährigen im Verband der Kinderfreunde genannt.",
+              "value": "All 12 to 14 year-olds are named as Red Falcons in the association of the Friends of the Children.",
               "option": "third",
               "type": "text"
             },
@@ -582,7 +582,7 @@
               "value": "02_1455_(14)"
             },
             {
-              "value": "Anna ist stolz, ein 'Roter Falke' zu sein und ein blaues Hemd zu tragen. Endlich hat sie einen Ort gefunden, wo sie sich zugehörig und verstanden fühlt.",
+              "value": "Anna is proud to be a Red Falcon and to wear a blue shirt. She has finally found a place where she feels she belongs and is being understood.",
               "type": "text"
             }
           ]
@@ -591,7 +591,7 @@
           "grouped": true,
           "character": "Anna",
           "content": [{
-              "value": "Um noch mehr Mitglieder zu gewinnen, hat die Ortsgruppe der Kinderfreunde eine kleine Ausstellung vorbereitet. Die Roten Falken haben dafür Wandzeitungen gestaltet, gebastelt, Wimpel genäht und einige Gebrauchsgegenstände angefertigt. ",
+              "value": "To attract even more members, the local group of the Friends of the Children has prepared a small exhibition. The Red Falcons have designed wall newspapers, made handicrafts, sewed pennants and made some articles of daily use.",
               "type": "text"
             },
             {
@@ -600,7 +600,7 @@
               "value": "02_1455_(21)"
             },
             {
-              "value": "Die Ausstellung kann gegen einen Eintritt von 10 Pfennig besucht werden. Neben einigen Leuten von der örtlichen Presse kommen auch viele Eltern vorbei. Einige der Ausstellungsobjekte spendet die Ortsgruppe der Arbeiterwohlfahrt.",
+              "value": "The exhibition can be visited for an entrance fee of 10 Pfennig. Apart from some people from the local press, many parents come along. Some of the exhibits are donated by the local group of the Worker's Welfare Union.",
               "type": "text",
               "option": "fourth"
             },
@@ -614,9 +614,9 @@
         {
           "grouped": true,
           "character": "Anna",
-          "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
+          "info": "A 'class' refers to a group of people who have common social/economic interests and living conditions.",
           "content": [{
-              "value": "Die Bildungsabende beschäftigen sich neben politischen auch mit praktischen Themen, wie zum Beispiel der Hygiene.",
+              "value": "The educational evenings deal with both political and practical topics, such as hygiene.",
               "type": "text"
             },
             {
@@ -625,7 +625,7 @@
               "value": "2_30_2"
             },
             {
-              "value": "Anna lernt während eines Vortrags, dass das Elend der Arbeiterklasse oft durch mangelnde Sauberkeit und schlecht versorgte Wunden und Krankheiten verschärft wird. Die Sauberkeit des eigenen Körpers und des eigenen Heims sind dabei besonders wichtig. Auch der Umgang mit ansteckenden Krankheiten in der eigenen Familien wird dabei angesprochen.",
+              "value": "Anna learns during a lecture that the misery of the working class is often aggravated by a lack of cleanliness and poorly treated wounds and diseases. The cleanliness of a person's own body and home is particularly important. The handling of infectious diseases in one's own family is also addressed.",
               "type": "text"
             }
           ]
@@ -640,12 +640,12 @@
               "value": "2_31_h"
             },
             {
-              "value": "Inzwischen ist Anna schon über ein halbes Jahr regelmäßig zu den Treffen der Roten Falken gegangen. Für den Sommer ist ein großes Zeltlager unter dem Titel 'Kinderrepublik' geplant. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren. ",
+              "value": "By now Anna has been going to the Red Falcon meetings regularly for over half a year. For the summer a large tent camp is planned under the title 'Children's Republic'. There, thousands of children will organise themselves for three weeks.",
               "option": "third",
               "type": "text"
             },
             {
-              "value": "Das kostet natürlich viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
+              "value": "This of course costs a lot of money. In order to finance the Children's Republic, all local groups of the Kinderfreunde are busy collecting donations, selling symbolic building stones and even the smallest ones give away some of their pocket money.",
               "type": "text"
             }
           ]
@@ -654,7 +654,7 @@
           "grouped": true,
           "character": "Anna",
           "content": [{
-              "value": "Das Zeltlager soll in der Nähe von Kiel auf einem unbestellten Feld durchgeführt werden. Auf einer Karte hat Annas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
+              "value": "The tent camp will take place on an uncultivated field near Kiel. Anna's local group has marked on a map the cities of the Weimar Republic from which children and youth groups have registered for it.",
               "type": "text"
             },
             {
@@ -663,7 +663,7 @@
               "value": "02_1455_(92)"
             },
             {
-              "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
+              "value": "On the map you can see where the children come from.",
               "type": "text"
             }
           ]
@@ -679,7 +679,7 @@
               "type": "redirect",
               "value": "probezeltlager",
               "option": "primary",
-              "title": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+              "title": "Finally, the first test for the group: the trial camp."
             }
           ]
         },
@@ -689,12 +689,12 @@
           "background": "02_1455_(58)",
           "content": [{
               "type": "text",
-              "value": "Karl gehört in seiner Ortsgruppe der Kinderfreunde zu den 'Roten Falken'. Diese Bezeichnung wird für alle 12- bis 14-jährigen Mitglieder verwendet.",
+              "value": "Karl belongs to the Red Falcons within his local group of the Friends of the Children. This name is used for all 12 to 14 year old members.",
               "layer": "base",
               "title": "reveal"
             },
             {
-              "value": "Karls Falkengruppe trifft sich einmal in der Woche. Oft gibt es Bildungsabende, Liederrunden oder auch sportliche Gruppenaktivitäten.",
+              "value": "Karl’s local group of the Falcons meets once a week. Often there are educational evenings, song groups or sports activities.",
               "type": "text",
               "layer": "second"
             },
@@ -704,7 +704,7 @@
               "value": "02_1455_(14)"
             },
             {
-              "value": "Im Moment besteht die Hauptaufgabe der Gruppe darin, sich auf die bevorstehende 'Kinderrepublik', das große Zeltlager im Sommer, vorzubereiten. Dort sollen sich Tausende Kinder für 3 Wochen mehrheitlich selbst organisieren.",
+              "value": "At the moment, the main task of the group is to prepare for the upcoming 'Children's Republic', the big summer camp. There, thousands of children are to organise themselves for three weeks.",
               "type": "text",
               "layer": "third"
             }
@@ -719,7 +719,7 @@
               "value": "02_84_(7)"
             },
             {
-              "value": "Dafür nähen die Kinder Wimpel mit dem Symbol der 'Roten Falken' und sorgen dafür, dass jede*r genug Material für einen eigenen Schlafsack erhält. ",
+              "value": "The children sew pennants with the symbol of the Red Falcons and make sure that everyone gets enough material for their own sleeping bag.",
               "type": "text"
             }
           ]
@@ -728,7 +728,7 @@
           "grouped": true,
           "character": "Karl",
           "content": [{
-              "value": "Das Zeltlager kostet natürlich auch viel Geld. Um die 'Kinderrepublik' zu finanzieren, sammeln alle Ortsgruppen der Kinderfreunde fleißig Spenden, verkaufen symbolische Bausteine und selbst die Kleinsten geben einen Teil ihres Taschengeldes ab.",
+              "value": "Of course, the tent camp also costs a lot of money. In order to finance the Children's Republic, all local groups of the Friends of the Children are busy collecting donations, selling symbolic building stones and even the smallest ones give away some of their pocket money.",
               "type": "text"
             },
             {
@@ -742,11 +742,11 @@
           "grouped": true,
           "character": "Karl",
           "content": [{
-              "value": "Auch Karl beteiligt sich emsig und zieht mit einigen Freunden von Haus zu Haus, um Unterstützer*innen für die Kasse der 'Kinderrepublik' zu finden. Am Ende können sie 27 RM zum Guthaben der Ortsgruppe beisteuern.",
+              "value": "Karl also participates diligently and moves from house to house with some friends to find supporters for the fund of the Children's Republic. In the end they can contribute 27 Reichsmark to the local group's deposit.",
               "type": "text"
             },
             {
-              "value": "Inzwischen steht fest, an welchem Ort das Lager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Karls Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben.",
+              "value": "In the meantime it has been decided where the camp will be set up. Near the city of Kiel. Karl's local group has marked on a map the cities of the Weimar Republic from which children and youth groups have registered for it.",
               "type": "text"
             },
             {
@@ -760,7 +760,7 @@
           "grouped": true,
           "character": "Karl",
           "content": [{
-              "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
+              "value": "On the map you can see where the children come from.",
               "type": "text"
             },
             {
@@ -771,7 +771,7 @@
               "type": "redirect",
               "value": "probezeltlager",
               "option": "primary",
-              "title": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+              "title": "Finally, the first test for the group: the trial camp."
             }
           ]
         },
@@ -781,7 +781,7 @@
           "background": "02_1455_(58)",
           "content": [{
               "type": "text",
-              "value": "Gerda hat noch nie die Aktivitäten einer Kindergruppe organisiert. Um ihre Aufgaben besser zu kennen liest sie das Buch 'Im Zeltlager - ein technisches Handbuch für rote Falkenführer von Hermann Neddermayer. Das Buch wurde gerade erst herausgegeben und sammelt wertvolle Erfahrungen aus den bisherigen Zeltlagern der Kinderfreunde.",
+              "value": "Gerda has never organised the activities of a children's group before. To know her tasks better, she reads the book 'In the tent camp- a technical handbook for leaders of the Red Falcons' by Hermann Neddermayer. The book has just been published and collects valuable experiences from the previous camps of the Friends of the Children.",
               "option": "reveal"
             },
             {
@@ -795,7 +795,7 @@
           "grouped": true,
           "character": "Gerda",
           "content": [{
-              "value": "Gerda liest wissbegierig die pädagogischen Überlegungen. Daneben finden sich auch praktische Hinweise zur Gestaltung des Zeltdorfes, zur Struktur des Lagerparlamentes und zu den organisatorischen Abläufen in der 'Kinderrepublik'. Die Helfer*innen spielen dabei eine unterstützende, aber keine leitende Rolle.",
+              "value": "Gerda reads the pedagogical considerations inquisitively. In addition, there are also practical hints on the design of the tent village, the structure of the camp parliament and the organisational procedures in the Children's Republic. The helpers play a supporting, but not a leading role.",
               "type": "text",
               "option": "third"
             },
@@ -815,7 +815,7 @@
               "value": "PH-B_279_Löwenstein_in_Seekamp_1927"
             },
             {
-              "value": "In Leipzig wird für die Helfer*innen eine Schulungsreihe angeboten. Gerda kann sich so mit der sozialistischen Pädagogik der Kinderfreunde vertraut machen, denn vieles ist ihr neu. Sie nimmt an einem Wochenendkurs unter dem Titel 'Psychologie und sozialistische Pädagogik als Grundlage unserer Jugendarbeit' teil. Dieser wird von Dr. Kurt Löwenstein, dem Vorsitzenden der Reichsarbeitsgemeinschaft der Kinderfreunde, geleitet.",
+              "value": "In Leipzig, a training series is offered for the helpers. Gerda can thus familiarise herself with the socialist pedagogy of the Friends of the Children, because many things are new to her. She takes part in a weekend course entitled 'Psychology and socialist pedagogy as the basis of our youth work'. This course is led by Dr Kurt Löwenstein, the chairman of the 'National working-group of the Friends of the Children'.",
               "type": "text",
               "option": "third"
             }
@@ -824,9 +824,9 @@
         {
           "grouped": true,
           "character": "Gerda",
-          "info": "Eine Horde bezeichnet eine unbestimmte Gruppe von Menschen - ähnlich wie eine Herde bei Tieren.",
+          "info": "A horde refers to an undefined group of people - similar to a herd of animals.",
           "content": [{
-              "value": "Um sich praktisch zu bilden, nimmt Gerda zusätzlich an einer Schulung 'Methoden der Hordenarbeit' teil. Auch das 'Soziale Wandern' ist solch eine Methode, die in den Gruppen (auch 'Horden' genannt) oft genutzt wird. Dabei bildet das Wandern eine Möglichkeit, die Welt und fremde Gegenden zu erkunden und gleichzeitig die Lebens- und Wirtschaftsumstände der Menschen zu analysieren.",
+              "value": "In order to get practical training, Gerda also takes part in a training course on 'Methods of working in hordes'. 'Social hiking' is another such method, which is often used in groups (also called 'hordes'). Hiking is a way of exploring the world and foreign places and at the same time analysing the living and economic conditions of the local people.",
               "type": "text"
             },
             {
@@ -835,7 +835,7 @@
               "value": "02_1455_(49)"
             },
             {
-              "value": "Gerda sieht darin eine tiefgreifende Auseinandersetzung mit einem anderen Ort. Diese Methode wird sich daher auch gut für die Kinderrepublik eignen.",
+              "value": "Gerda sees this as a profound confrontation with another place. This method will therefore also be well suited to the Children's Republic.",
               "type": "text",
               "option": "third"
             }
@@ -845,7 +845,7 @@
           "grouped": true,
           "character": "Gerda",
           "content": [{
-            "value": "Der Verband hat Schwierigkeiten, insbesondere jugendliche Helfer*innen zu finden, die länger freiwillig mitarbeiten. Oft helfen sie nur einige Zeit und haben dann wichtigere Dinge zu tun. Daher organisiert der Verband regelmäßig Aktivitäten ausschließlich für die Helfer*innen, damit diese sich kennenlernen und neben den verantwortlichen Aufgaben auch den Zusammenhalt in der Gruppe der Helfer*innen erleben. ",
+            "value": "The association has difficulties in finding volunteers, especially young helpers, who are willing to volunteer for longer periods of time. They often only help for a short time and then have more important things to do. Therefore, the association regularly organises activities exclusively for the volunteers, so that they get to know each other and experience the cohesion within the group of volunteers in addition to the responsible tasks.",
             "type": "text"
           }]
         },
@@ -859,7 +859,7 @@
               "value": "02_2424_(1)"
             },
             {
-              "value": "Gerda nimmt an einer Wanderung teil, zu der alle Helfer*innen aus ihrer Stadt eingeladen sind. Am Ende sind sie immerhin 16 Jugendliche, die alle zwischen 15 und 18 Jahre alt sind. Die meisten von ihnen werden ebenfalls als Helfer*innen bei der 'Kinderrepublik' dabei sein. Gerda freut sich darauf, mit ihnen gemeinsam dorthin zu fahren.",
+              "value": "Gerda takes part in a hike to which all helpers from her town are invited. In the end they are sixteen young people, all between 15 and 18 years old. Most of them will also be helpers in the Children's Republic. Gerda is looking forward to going there together with them.",
               "type": "text"
             }
           ]
@@ -878,11 +878,11 @@
           "character": "Gerda",
           "background": "2_2593_(3)",
           "content": [{
-              "value": "Inzwischen steht auch fest, an welchem Ort das Zeltlager aufgebaut wird. In der Nähe der Stadt Kiel. Auf einer Karte hat Gerdas Ortsgruppe markiert, aus welchen Städten der Weimarer Republik sich Kinder- und Jugendgruppen angemeldet haben",
+              "value": "In the meantime, it has also been decided where the tent camp will be set up. Near the city of Kiel. Gerda's local group has marked on a map the towns of the Weimar Republic from which children and youth groups have registered for it.",
               "type": "text"
             },
             {
-              "value": "Auf der Karte kannst du dir ansehen, woher die Kinder kommen.",
+              "value": "On the map you can see where the children come from.",
               "type": "text"
             },
             {
@@ -896,7 +896,7 @@
           "grouped": true,
           "character": "Gerda",
           "content": [{
-              "value": "Wenige Wochen bevor die 'Kinderrepublik' stattfindet, haben die Kinderfreunde begonnen, eine Zeltlagerzeitung herauszugeben. Auch Gerdas Gruppe hat sich mit Artikeln und Bildern daran beteiligt. Die Zeitung soll alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten.",
+              "value": "A few weeks before the Children's Republic takes place, the Friends of the Children have started to publish a camp newspaper. Gerda's group has also participated with articles and pictures. The newspaper should prepare all participants, but also parents and other interested people for the camp.",
               "type": "text"
             },
             {
@@ -905,14 +905,14 @@
               "value": "02_12_(17)"
             },
             {
-              "value": "Außerdem dient sie dazu, Bauernhöfe und Bäckereien zur Kooperation zu gewinnen sowie zum Spenden von Lebensmitteln. Schließlich soll kein Kind während des Zeltlagers hungern müssen.",
+              "value": "It also serves to encourage farms and bakeries to cooperate and to donate food. After all, no child should have to be hungry during the camp.",
               "type": "text",
               "option": "third"
             },
             {
               "type": "redirect",
               "value": "probezeltlager",
-              "title": "Endlich geht es zur ersten Bewährungsprobe für die Gruppe: zum Probezeltlager."
+              "title": "Finally, the first test for the group: the trial camp."
             }
           ]
         }
@@ -920,7 +920,7 @@
     },
     {
       "id": 4,
-      "name": "Das Probezeltlager",
+      "name": "Camp on Trial",
       "link": "probezeltlager",
       "groups": [{
           "grouped": true,
@@ -932,7 +932,7 @@
             },
             {
               "type": "text",
-              "value": "Das Probezeltlager von Annas Ortsgruppe hat gut geklappt. Alle haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht. Nun fiebern alle der 'Kinderrepublik' entgegen.",
+              "value": "The trial camp of Anna's local group went well. Everybody got involved in the work with great joy, pitched tents, cooked, organised the evening programme and chose the hiking trails. Now everyone is eagerly awaiting the Children's Republic.",
               "option": "reveal"
             }
           ]
@@ -948,7 +948,7 @@
             {
               "type": "text",
               "option": "fourth",
-              "value": "Vor einigen Wochen haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem soll sie dazu dienen, Bauern und Bäcker zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle geben wird. Schließlich soll kein Kind während des Zeltlagers hungern müssen."
+              "value": "A few weeks ago, the children started to publish their own newspaper, which should prepare all participants, but also parents and interested people for the camp. It is also intended to encourage farmers and bakers to cooperate so that there will be enough food for everyone. After all, no child should have to be hungry during the camp."
             },
             {
               "type": "image",
@@ -957,7 +957,7 @@
             },
             {
               "type": "text",
-              "value": "Nun steht die Abreise endlich bevor. Anna muss ihre Sachen packen, damit sie die nächsten drei Wochen alles dabei hat, was sie braucht."
+              "value": "Now the departure is finally imminent. Anna has to pack her things so that she has everything she needs for the next three weeks."
             }
           ]
         },
@@ -965,16 +965,16 @@
           "grouped": true,
           "character": "Anna",
           "background": "02_278_(1)",
-          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
+          "info": "Tip: Some things are urgently needed in the Children's Republic, others did not even exist at the end of the 1920s.",
           "content": [{
               "type": "text",
               "option": "third",
-              "value": "Hilf Anna beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
+              "value": "Help Anna pack her backpack. What things will she need in the Children's Republic?"
             },
             {
               "type": "text",
               "option": "third",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              "value": "To pack an item, pull it directly onto the backpack. When you have finished packing, you will move on to the next chapter."
             },
             {
               "type": "suitcase",
@@ -983,7 +983,7 @@
             {
               "type": "redirect",
               "value": "ankunft",
-              "title": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Anna in der Kinderrepublik."
+              "title": "You have already gone ahead with another group and are waiting for Anna in the Children's Republic."
             }
           ]
         },
@@ -998,7 +998,7 @@
             },
             {
               "type": "text",
-              "value": "Das Probezeltlager von Karls Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht."
+              "value": "The trial camp of Karl's local group worked out quite well. Most of the children were happy to get involved in the work, setting up tents, cooking, organizing the evening programme and choosing the hiking trails."
             }
           ]
         },
@@ -1012,7 +1012,7 @@
             },
             {
               "type": "text",
-              "value": "Nur Kurt war mit wenig Interesse dabei, hat sich vor der Arbeit gedrückt und oft von der Gruppe entfernt. Die Gruppe hat daher einstimmig entschieden, dass Kurt nicht mehr an den Unternehmungen der Gruppe teilnehmen darf, wenn er nicht bereit ist, sich einzubringen."
+              "value": "Only Kurt was there with little interest, shirking work and often distancing himself from the group. The group therefore decided unanimously that Kurt was not allowed to participate in the group's activities if he was not willing to get involved."
             }
           ]
         },
@@ -1026,7 +1026,7 @@
             },
             {
               "type": "text",
-              "value": "Wenige Wochen vor der 'Kinderrepublik' haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem dient sie dazu, Bauernhöfe und Bäckerereien zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle gibt. Schließlich soll kein Kind während des Zeltlagers hungern müssen."
+              "value": "A few weeks before the beginning of the Children's Republic, the children started to publish their own newspaper, which should prepare all participants, but also parents and interested people for the camp. It also serves to encourage farms and bakeries to cooperate so that there is enough food for everyone. After all, no child should have to be hungry during the camp."
             }
           ]
         },
@@ -1040,7 +1040,7 @@
             },
             {
               "type": "text",
-              "value": "Nun steht die Abreise endlich bevor. Karl muss seine Sachen packen, damit er die nächsten drei Wochen alles dabei hat, was er braucht."
+              "value": "Now the departure is finally imminent. Karl has to pack his things so that he has everything he needs for the next three weeks."
             }
           ]
         },
@@ -1048,14 +1048,14 @@
           "grouped": true,
           "character": "Karl",
           "background": "02_2424_(1)",
-          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
+          "info": "Tip: Some things are urgently needed in the Children's Republic, others did not even exist at the end of the 1920s.",
           "content": [{
               "type": "text",
-              "value": "Hilf Karl beim Packen seines Rucksacks. Welche Dinge wird er in der Kinderrepublik benötigen?"
+              "value": "Help Karl pack his backpack. What things will he need in the Children's Republic?"
             },
             {
               "type": "text",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              "value": "To pack an item, pull it directly onto the backpack. When you have finished packing, you will move on to the next chapter."
             },
             {
               "type": "suitcase",
@@ -1064,7 +1064,7 @@
             {
               "type": "redirect",
               "value": "ankunft",
-              "title": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Karl in der Kinderrepublik."
+              "title": "You have already gone ahead with another group and are waiting for Karl in the Children's Republic."
             }
           ]
         },
@@ -1079,7 +1079,7 @@
             },
             {
               "type": "text",
-              "value": "Das Probezeltlager von Gerdas Ortsgruppe hat recht gut geklappt. Die meisten haben sich voller Freude in die Arbeit eingebracht, Zelte aufgebaut, gekocht, das Abendprogramm gestaltet und die Wanderwege herausgesucht."
+              "value": "The trial camp of Gerda's local group worked out quite well. Most of them were happy to get involved in the work, put up tents, cooked, arranged the evening programme and chose the hiking trails."
             }
           ]
         },
@@ -1093,7 +1093,7 @@
             },
             {
               "type": "text",
-              "value": "Gerda fand es trotzdem aufregend, da sie als Helferin auch die Verantwortung für das Wohlergehen der Kinder hatte. Zum Glück haben sich alle vorbildlich verhalten, niemand hat sich verletzt und es gab keinen Ärger zwischen den Kindern und Helfer*innen."
+              "value": "Gerda still found it exciting, because as a helper she also had the responsibility for the well-being of the children. Fortunately, everyone behaved in an exemplary manner, nobody was hurt and there was no trouble between the children and helpers."
             }
           ]
         },
@@ -1108,7 +1108,7 @@
             {
               "type": "text",
               "option": "fourth",
-              "value": "Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab."
+              "value": "Now Gerda still has to clarify with her master bookbinder whether she may stay away from work for three weeks. Gerda is very lucky. The master is himself a member of the Social Democratic Party and therefore happy about Gerda's commitment. He gives her the three weeks unpaid leave, but buys from Gerda a few more donation building stones in return."
             },
             {
               "type": "image",
@@ -1117,7 +1117,7 @@
             },
             {
               "type": "text",
-              "value": "Ihre Sachen hat Gerda auch noch nicht gepackt. 3 Wochen sind eine lange Zeit."
+              "value": "Gerda has not yet packed her things either. Three weeks is a long time."
             }
           ]
         },
@@ -1125,16 +1125,16 @@
           "grouped": true,
           "character": "Gerda",
           "background": "02_278_(1)",
-          "info": "Tipp: Manche Dinge werden in der Kinderrepublik dringend benötigt, andere gab es Ende der 1920er Jahre noch gar nicht.",
+          "info": "Tip: Some things are urgently needed in the Children's Republic, others did not even exist at the end of the 1920s.",
           "content": [{
               "type": "text",
               "option": "third",
-              "value": "Hilf Gerda beim Packen ihres Rucksacks. Welche Dinge wird sie in der Kinderrepublik benötigen?"
+              "value": "Help Gerda pack her backpack. What things will she need in the Children's Republic?"
             },
             {
               "type": "text",
               "option": "third",
-              "value": "Um einen Gegenstand einzupacken, ziehe ihn direkt auf den Rucksack. Wenn du fertig gepackt hast, kommst du zum nächsten Kapitel."
+              "value": "To pack an item, pull it directly onto the backpack. When you have finished packing, you will move on to the next chapter."
             },
             {
               "type": "suitcase",
@@ -1143,7 +1143,7 @@
             {
               "type": "redirect",
               "value": "ankunft",
-              "title": "Du bist schon mit einer anderen Gruppe voraus gefahren und wartest auf Gerda in der Kinderrepublik."
+              "title": "You have already gone ahead with another group and are waiting for Gerda in the Children's Republic."
             }
           ]
         }
@@ -1151,14 +1151,14 @@
     },
     {
       "id": 5,
-      "name": "Der Weg zur Kinderrepublik",
+      "name": "The Journey to the Children's Republic",
       "link": "reise",
       "groups": [{
           "grouped": true,
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Nachdem Anna fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Ihre Eltern und ihr Großvater sind etwas traurig, denn Anna war noch nie länger von zu Hause weg - und schon gar nicht allein.",
+              "value": "After Anna has finished packing, her backpack is full and heavy. She is very happy, because now it can finally start. Her parents and her grandfather are a bit sad, because Anna has never been away from home for a longer period of time - and certainly not alone.",
               "option": "reveal third"
             },
             {
@@ -1173,7 +1173,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Mit 35 anderen Kindern und einigen Helfer*innen als Begleitung fährt Anna im Zug Richtung Norden."
+              "value": "With thirty-five other children and a few helpers accompanying her, Anna takes the train northwards."
             },
             {
               "type": "image",
@@ -1182,7 +1182,7 @@
             },
             {
               "type": "text",
-              "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Anna möchte mit dir 'Drei gewinnt' spielen, weil ihr langweilig ist."
+              "value": "To pass the time, the children play various games. Anna wants to play 'noughts and crosses' with you because she is bored."
             }
           ]
         },
@@ -1192,7 +1192,7 @@
           "background": "02_12_(16)",
           "content": [{
               "type": "text",
-              "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Anna dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren."
+              "value": "To play, place your cross in one of the boxes by clicking into it. Then it's Anna's turn. To win, you must place three crosses in a horizontal, vertical or diagonal row."
             },
             {
               "type": "tictactoe",
@@ -1206,7 +1206,7 @@
             {
               "type": "text",
               "option": "fourth",
-              "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
+              "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
             }
           ]
         },
@@ -1215,7 +1215,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik."
+              "value": "On Sunday morning, all the children who have travelled to Kiel gather in Kiel's Northern Baltic Sea Hall, there are speeches and music. At the end the choir sings 'Brothers, to the Sun, to Freedom'. Now it's finally time to leave for the Children's Republic."
             },
             {
               "type": "image",
@@ -1224,13 +1224,13 @@
             },
             {
               "type": "text",
-              "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
+              "value": "The last part of the journey is done by steamer, while the tents have already been brought to their destination by car."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "option": "third",
-              "title": "Betrete die Kinderrepublik!"
+              "title": "Enter the Children's Republic!"
             }
           ]
         },
@@ -1240,7 +1240,7 @@
           "background": "02_12_(16)",
           "content": [{
               "type": "text",
-              "value": "Nachdem Karl fertig gepackt hat, ist sein Rucksack voll und schwer. Er freut sich riesig, denn nun kann es endlich losgehen. Seine Eltern und seine Großmutter sind etwas traurig, denn Karl war noch nie länger von zu Hause weg - und schon gar nicht allein."
+              "value": "After Karl has finished packing, his rucksack is full and heavy. He is very happy, because now it can finally start. His parents and grandmother are a bit sad, because Karl has never been away from home for a longer time - and certainly not alone."
             },
             {
               "type": "image",
@@ -1254,7 +1254,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Mit 42 anderen Kindern und einigen Helfer*innen als Begleitung fährt Karl im Zug Richtung Nordwesten."
+              "value": "With fourty-two other children and some helpers as companions, Karl travels northwest in the train."
             },
             {
               "type": "image",
@@ -1263,7 +1263,7 @@
             },
             {
               "type": "text",
-              "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Karl möchte mit dir 'Drei gewinnt' spielen, weil ihm langweilig ist."
+              "value": "To pass the time, the children play various games. Karl wants to play 'noughts and crosses' with you because he is bored."
             }
           ]
         },
@@ -1282,7 +1282,7 @@
           "background": "02_13_(7)",
           "content": [{
               "type": "text",
-              "value": "Um zu spielen, setze dein Kreuz in eines der Kästchen, indem du dort hinein klickst. Danach ist Karl dran. Um zu gewinnen, musst du drei Kreuze in einer waagerechten, senkrechten oder diagonalen Reihe platzieren."
+              "value": "To play, place your cross in one of the boxes by clicking into it. Then it's Karl's turn. To win, you must place three crosses in a horizontal, vertical or diagonal row."
             },
             {
               "type": "tictactoe",
@@ -1290,7 +1290,7 @@
             },
             {
               "type": "text",
-              "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
+              "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
             }
           ]
         },
@@ -1299,7 +1299,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik."
+              "value": "On Sunday morning, all the children who have travelled to Kiel gather in Kiel's Northern Baltic Sea Hall, there are speeches and music. At the end the choir sings 'Brothers, to the Sun, to Freedom'. Now it's finally time to leave for the Children's Republic."
             },
             {
               "type": "image",
@@ -1308,23 +1308,23 @@
             },
             {
               "type": "text",
-              "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
+              "value": "The last part of the journey is done by steamer, while the tents have already been brought to their destination by car."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "option": "second",
-              "title": "Betrete die Kinderrepublik!"
+              "title": "Enter the Children's Republic!"
             }
           ]
         },
         {
           "grouped": true,
           "character": "Gerda",
-          "info": "Schlafgänger/Schlafburschen waren Menschen, die für ein kleines Entgelt eine Schlafstelle (zumeist ein Bett in einer Wohnung) mieteten. Durch die Industrialisierung und die vielen Menschen in den Städten war Wohnraum meist knapp und teuer.",
+          "info": "Bed lodgers were people who rented a sleeping place (usually a bed in a flat) for a small fee. Due to industrialisation and the large number of people in the cities, living space was usually scarce and expensive.",
           "content": [{
               "type": "text",
-              "value": "Nachdem Gerda fertig gepackt hat, ist ihr Rucksack voll und schwer. Sie freut sich riesig, denn nun kann es endlich losgehen. Trotzdem hat sie ein schlechtes Gewissen, wenn sie ihre Mutter für drei Wochen allein mit ihren beiden Geschwistern lässt.",
+              "value": "After Gerda has finished packing, her backpack is full and heavy. She is very happy, because now it can finally start. Nevertheless, she has a bad conscience when she leaves her mother alone with her two siblings for three weeks.",
               "option": "reveal"
             },
             {
@@ -1335,7 +1335,7 @@
             {
               "type": "text",
               "option": "fourth",
-              "value": "Aber ihre Mutter hat ihr versichert, dass sie es schon schaffen wird. Und im Moment hat sie einen sehr höflichen und ordentlichen Schlafburschen, der ihr auch ab und zu im Haushalt zur Hand geht."
+              "value": "But her mother assured her that she will make it. And at the moment she has a very polite and orderly bed lodger, who also helps her out in the household from time to time."
             },
             {
               "type": "image",
@@ -1350,11 +1350,11 @@
           "content": [{
               "type": "text",
               "layer": "fore",
-              "value": "Nun sitzt Gerda mit 28 Kindern und einigen anderen Helfer*innen im Zug, der sich langsam Richtung Norden bewegt."
+              "value": "Now Gerda is sitting with twenty-eight children and some other helpers in the train, which is slowly moving north."
             },
             {
               "type": "text",
-              "value": "Um sich die Zeit zu vertreiben, spielen die Kinder verschiedene Spiele. Gerda hat dafür keine Zeit, denn sie muss ein Auge darauf haben, dass niemand sich zu weit aus dem Fenster lehnt und herausfällt.",
+              "value": "To pass the time, the children play various games. Gerda doesn't have time for that, because she has to keep an eye on that nobody leans too far out of the window and falls out.",
               "layer": "second"
             },
             {
@@ -1365,7 +1365,7 @@
             {
               "type": "text",
               "option": "fourth",
-              "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
+              "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
             },
             {
               "type": "image",
@@ -1380,7 +1380,7 @@
           "background": "02_12_(16)",
           "content": [{
               "type": "text",
-              "value": "Am Sonntagmorgen versammeln sich alle angereisten Kinder in der Kieler Nordostseehalle, es gibt Ansprachen und Musik. Am Ende singt der Chorverein „Brüder, zur Sonne, zur Freiheit“. Nun geht es endlich los zur Kinderrepublik."
+              "value": "On Sunday morning, all the children who have travelled to Kiel gather in Kiel's Northern Baltic Sea Hall, there are speeches and music. At the end the choir sings 'Brothers, to the Sun, to Freedom'. Now it's finally time to leave for the Children's Republic."
             },
             {
               "type": "image",
@@ -1389,13 +1389,13 @@
             },
             {
               "type": "text",
-              "value": "Den letzten Weg legen alle mit dem Dampfer zurück, während die Zelte bereits mit Autos zum Zielort gebracht wurden."
+              "value": "The last part of the journey is done by steamer, while the tents have already been brought to their destination by car."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "option": "second",
-              "title": "Betrete die Kinderrepublik!"
+              "title": "Enter the Children's Republic!"
             }
           ]
         }
@@ -1403,16 +1403,16 @@
     },
     {
       "id": 6,
-      "name": "Die Kinderrepublik",
+      "name": "The Children's Republic",
       "link": "ankunft",
       "option": "birds",
       "groups": [{
           "grouped": true,
           "character": "Anna",
-          "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
+          "info": "Chairmen or chairwomen are leaders of a small group/faction belonging to a larger organised group.",
           "content": [{
               "type": "text",
-              "value": "Anna ist jetzt endlich in der Kinderrepublik angekommen und hat ihr Zelt gemeinsam mit mehreren anderen Kindern bezogen. Sie verschafft sich sofort einen Überblick über das Gelände und das Lager.",
+              "value": "Anna has finally arrived in the Children's Republic and has moved into her tent together with several other children. She immediately gets an overview of the area and the camp.",
               "option": "reveal"
             },
             {
@@ -1427,7 +1427,7 @@
           "character": "Anna",
           "content": [{
             "type": "text",
-            "value": "Anna findet diese neue Aufgabe spannend und freut sich, dass sie sofort mithelfen kann. Ihre Zeltgemeinschaft ist dabei nur ein winziger Teil des Zeltlagers, aber trotzdem hat sie das Gefühl, ein wichtiger Teil der demokratischen Ordnung der Kinderrepublik zu sein."
+            "value": "Anna finds this new task exciting and is happy that she can help immediately. Her tent community is only a tiny part of the tent camp, but nevertheless she has the feeling that she is an important part of the democratic order of the Children's Republic."
           }]
         },
         {
@@ -1436,7 +1436,7 @@
           "background": "02_45_(7)",
           "content": [{
               "type": "text",
-              "value": "Karl ist jetzt endlich in der Kinderrepublik angekommen und hat sein Zelt gemeinsam mit mehreren anderen Kindern bezogen. Er verschafft sich sofort einen Überblick über das Gelände und das Lager.",
+              "value": "Karl has finally arrived in the Children's Republic and has moved into his tent together with several other children. He immediately gets an overview of the area and the camp.",
               "option": "reveal"
             },
             {
@@ -1449,10 +1449,10 @@
         {
           "grouped": true,
           "character": "Karl",
-          "info": "Obleute/Obpersonen sind Vertrauensleute oder Vorsitzende einer kleinen Gruppe/Fraktion, die zu einer größeren organisierten Gruppe dazugehört.",
+          "info": "Chairmen or chairwomen are leaders of a small group/faction belonging to a larger organised group.",
           "content": [{
               "type": "text",
-              "value": "Zehn bis zwanzig Zelte bilden ein Zeltdorf. Die Zeltobleute dieser Zelte sind damit die Gemeindevertretung (oder auch das 'Dorfparlament') des Zeltdorfs, an deren Spitze ein*e erwachsene*r Helfer*in als Bürgermeister*in ernannt wird. Zusätzlich unterstützen 3 Helfer*innen das Dorfparlament."
+              "value": "Ten to twenty tents form a tent village. The representatives of these tents are therefore the local council (or the 'village parliament') of the tent village, headed by an adult helper who is appointed mayor. Additionally three helpers support the village parliament."
             },
             {
               "type": "image",
@@ -1461,7 +1461,7 @@
             },
             {
               "type": "text",
-              "value": "Das Dorfparlament bespricht alle Angelegenheiten des Dorfes: Wanderungen, Wettkämpfe, Wachdienste und so weiter. Aus jedem dieser Gemeinderäte werden mehrere Kinder in das Lagerparlament gewählt. Und das Lagerparlament entscheidet über jene Dinge, die die ganze Kinderrepublik betreffen."
+              "value": "The village parliament discusses all village affairs: hikes, competitions, guard duties and so on. From each of these village councils, several children are elected to the camp parliament. And the camp parliament decides on those matters that concern the whole Children's Republic."
             }
           ]
         },
@@ -1475,7 +1475,7 @@
             },
             {
               "type": "text",
-              "value": "An der Spitze des Lagerparlamentes steht der/die Lagerpräsident*in. Außerdem gibt es Sachverwalter*innen für Ordnung, Material, Transport, Ernährung und andere Dinge."
+              "value": "The camp parliament is headed by the camp president. There are also administrators for order, material, transport, food and other things."
             }
           ]
         },
@@ -1489,7 +1489,7 @@
             },
             {
               "type": "text",
-              "value": "In der Kinderrepublik ist alles anders als zu Hause: der Tagesablauf, das Essen, die anderen Kinder und auch die verschiedenen Arbeitsgruppen. Es gibt hier also viel zu erleben und auszuprobieren."
+              "value": "Everything is different in the Children's Republic than at home: the daily routine, the food, the other children and also the various working groups. There is a lot to experience and try out here."
             }
           ]
         },
@@ -1498,7 +1498,7 @@
           "character": "Gerda",
           "content": [{
               "type": "text",
-              "value": "Gerda ist nun endlich mit ihrer Gruppe in der Kinderrepublik angekommen. Sie fangen sofort damit an, ihre Zelte aufzubauen und ihre Strohsäcke zu füllen. Das ist ein Durcheinander: Hunderte Kinder, die gleichzeitig mit Zeltstangen, Zeltbahnen und Stroh durcheinanderlaufen!",
+              "value": "Gerda has finally arrived with her group in the Children's Republic. They immediately start to pitch their tents and fill their palliasses. It's a mess: hundreds of children running around at the same time with tent poles, tent sheets and straw!",
               "option": "reveal"
             },
             {
@@ -1514,7 +1514,7 @@
           "background": "02_45_(7)",
           "content": [{
               "type": "text",
-              "value": "Nebenan sind Gruppen aus dem Ruhrgebiet und Schlesien, die ebenfalls emsig mit dem Aufbau ihrer Zeltdörfer beschäftigt sind. Gerda verschafft sich erst einmal einen Überblick über das Gelände und das Lager."
+              "value": "Next door are groups from the Ruhr area and Silesia, who are also busily building their tent villages. Gerda first gets an overview of the area and the camp."
             },
             {
               "type": "video",
@@ -1526,10 +1526,10 @@
         {
           "grouped": true,
           "character": "Gerda",
-          "info": "Latrine ist ein altes Wort für eine behelfsmäßige Toilette ohne Wasserspülung.",
+          "info": "Latrine is an old word for a makeshift toilet without flush.",
           "content": [{
             "type": "text",
-            "value": "Gerda hat sich von den anderen Helfer*innen erzählen lassen, wie der Aufbau und die Vorbereitung vor Ort abliefen. Die Zelte und Lebensmittel wurden von Genoss*innen mit Autos transportiert. Ebenso die Bücher für die Lagerbücherei und Baumaterial für die Latrinen und die Funktionszelte."
+            "value": "The other helpers told Gerda how the construction and preparation on site went. The tents and food were transported by comrades by car as well as the books for the camp library and building material for the latrines and the functional tents."
           }]
         },
         {
@@ -1538,7 +1538,7 @@
           "content": [{
               "type": "text",
               "option": "third",
-              "value": "Jede Ortsgruppe gibt zu Beginn ihre eingesammelten Spenden bei der Lagerkasse ab, die durch eine Helferin und drei Falken verwaltet wird. Davon werden zum Beispiel die Bäckereien bezahlt, die Brot an die Kinderrepublik liefern, oder die Fleischereien, die Wurst und Fleisch bereitstellen."
+              "value": "At the beginning each local group hands in their collected donations to the camp treasury, which is administered by a helper and three falcons. This money is used to pay the bakeries that deliver bread to the Children's Republic, for example, or the butcher's shops that provide sausage and meat."
             },
             {
               "type": "image",
@@ -1552,7 +1552,7 @@
           "character": "Gerda",
           "content": [{
               "type": "text",
-              "value": "Gerda hat unter den Helfer*innen auch Berta, eine Bekannte aus ihrer Ortsgruppe getroffen. Sie ist bereits einige Tage vor den Kindergruppen angereist, um beim Aufbau der Latrinen und der Funktionszelte zu helfen."
+              "value": "Gerda also met Berta, an acquaintance from her local group, among the helpers. She arrived a few days before the children's groups in order to help set up the latrines and the functional tents."
             },
             {
               "type": "image",
@@ -1566,7 +1566,7 @@
           "character": "Gerda",
           "content": [{
               "type": "text",
-              "value": "Berta hilft nun beim Brotdienst und schneidet Brote in Scheiben, die dann an die Kinder verteilt werden. Gerda freut sich, dass Berta dabei ist. Denn von ihrer Erfahrung bei den Kinderfreunden kann Gerda noch viel lernen."
+              "value": "Berta now helps with the bread service and cuts bread into slices, which are then distributed to the children. Gerda is happy that Berta is there. Because Gerda can still learn a lot from her experience with the Friends of the Children."
             },
             {
               "type": "video",
@@ -1580,35 +1580,35 @@
           "background": "02_167_(4)",
           "content": [{
               "type": "text",
-              "value": "In der Kinderrepublik gibt es viel zu entdecken. Was möchtest du als nächstes tun?"
+              "value": "There is much to discover in the Children's Republic. What would you like to do next?"
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             },
             {
               "type": "redirect",
               "value": "falken",
               "avatar": "Falken",
-              "title": "Ich möchte mehr über die Roten Falken erfahren."
+              "title": "I would like to know more about the Red Falcons."
             },
             {
               "type": "text",
-              "value": "Ich möchte andere Personen kennenlernen, die für die Kinderrepublik eine Bedeutung haben.",
+              "value": "I would like to get to know other people who are important for the Children's Republic.",
               "title": "Personen"
             }
           ]
@@ -1625,35 +1625,35 @@
               "value": "personen",
               "option": "full",
               "avatar": "Priester",
-              "title": "Priester"
+              "title": "Priest"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerfotograf",
-              "title": "Lagerfotograf"
+              "title": "Camp Photographer"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerarzt",
-              "title": "Lagerarzt"
+              "title": "Camp Doctor"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Genossen",
-              "title": "lokale Genoss*innen"
+              "title": "Local Comrades"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "full",
               "avatar": "Hitlerjugend",
-              "title": "Hitlerjugend"
+              "title": "Hitler Youth"
             }
           ]
         }
@@ -1661,7 +1661,7 @@
     },
     {
       "id": 7,
-      "name": "Die Roten Falken",
+      "name": "The Red Falcons",
       "link": "falken",
       "groups": [{
           "grouped": true,
@@ -1669,7 +1669,7 @@
           "background": "2_287_3",
           "content": [{
               "type": "text",
-              "value": "Alle Kinder, die sich auch als Rote Falken bezeichnen, müssen eine Reihe von Geboten und Regeln auswendig lernen und verinnerlichen."
+              "value": "All children, who also call themselves Red Falcons, must learn and internalise a number of commandments and rules by heart."
             },
             {
               "type": "image",
@@ -1678,25 +1678,25 @@
             },
             {
               "type": "text",
-              "value": "Das Ziel dieser Gebote ist es, dass aus den Kindern später einmal gute, hilfsbereite und engagierte Sozialdemokrat*innen werden. Diese Regeln und Gebote werden in der Kinderrepublik oft abends vor der Lagerruhe im Sprechchor aufgesagt."
+              "value": "The aim of these commandments is to ensure that the children later become good, helpful and committed social democrats. In the Children's Republic, these rules and commandments are often recited in the evening before the camp night's rest."
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             }
           ]
         },
@@ -1707,7 +1707,7 @@
             "type": "redirect",
             "value": "falken",
             "avatar": "Falken",
-            "title": "Anna hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+            "title": "Anna got lost and ended up at a falcon training. Would you like to know more about the Red Falcons?"
           }]
         },
         {
@@ -1717,7 +1717,7 @@
             "type": "redirect",
             "value": "falken",
             "avatar": "Falken",
-            "title": "Karl hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+            "title": "Karl got lost and ended up at a falcon training. Would you like to know more about the Red Falcons?"
           }]
         },
         {
@@ -1727,56 +1727,56 @@
             "type": "redirect",
             "value": "falken",
             "avatar": "Falken",
-            "title": "Gerda hat sich verlaufen und ist bei einer Falkenschulung gelandet. Möchtest du mehr über die Roten Falken erfahren?"
+            "title": "Gerda got lost and ended up at a falcon training. Would you like to know more about the Red Falcons?"
           }]
         }
       ]
     },
     {
       "id": 8,
-      "name": "Weitere Personen",
+      "name": "Other People",
       "link": "personen",
       "groups": [{
           "grouped": true,
           "character": "Gerda",
           "content": [{
               "type": "text",
-              "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
+              "value": "Do you want to know more about other people you can meet in the Children's Republic?"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Priester",
-              "title": "Priester"
+              "title": "Priest"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerfotograf",
-              "title": "Lagerfotograf"
+              "title": "Camp Photographer"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerarzt",
-              "title": "Lagerarzt"
+              "title": "Camp Doctor"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Genossen",
-              "title": "lokale Genoss*innen"
+              "title": "Local Comrades"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Hitlerjugend",
-              "title": "Hitlerjugend"
+              "title": "Hitler Youth"
             }
           ]
         },
@@ -1785,42 +1785,42 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
+              "value": "Do you want to know more about other people you can meet in the Children's Republic?"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Priester",
-              "title": "Priester"
+              "title": "Priest"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerfotograf",
-              "title": "Lagerfotograf"
+              "title": "Camp Photographer"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerarzt",
-              "title": "Lagerarzt"
+              "title": "Camp Doctor"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Genossen",
-              "title": "lokale Genoss*innen"
+              "title": "Local Comrades"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Hitlerjugend",
-              "title": "Hitlerjugend"
+              "title": "Hitler Youth"
             }
           ]
         },
@@ -1829,42 +1829,42 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Willst du mehr über andere Personen wissen, die man in der Kinderrepublik antreffen kann?"
+              "value": "Do you want to know more about other people you can meet in the Children's Republic?"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Priester",
-              "title": "Priester"
+              "title": "Priest"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerfotograf",
-              "title": "Lagerfotograf"
+              "title": "Camp Photographer"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Lagerarzt",
-              "title": "Lagerarzt"
+              "title": "Camp Doctor"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Genossen",
-              "title": "lokale Genoss*innen"
+              "title": "Local Comrades"
             },
             {
               "type": "redirect",
               "value": "personen",
               "option": "third",
               "avatar": "Hitlerjugend",
-              "title": "Hitlerjugend"
+              "title": "Hitler Youth"
             }
           ]
         },
@@ -1878,7 +1878,7 @@
             },
             {
               "type": "text",
-              "value": "Einer dieser Kirchenvertreter ist ein katholischer Priester aus der nahen Umgebung. Insbesondere die katholische Kirche lehnt das Prinzip der Koedukation, das die Kinderfreunde  propagieren, ab. Koedukation bedeutet, dass Mädchen und Jungen gemeinsam in der Gruppe aktiv sind. Vor allem die gemeinsam genutzten Zelte hält der Priester für moralisch verwerflich."
+              "value": "One of these church representatives is a Catholic priest from the surrounding area. The Catholic Church in particular rejects the principle of coeducation propagated by the Friends of the Children. Coeducation means that girls and boys are active together in the group. The priest considers the shared tents in particular to be morally reprehensible."
             }
           ]
         },
@@ -1897,7 +1897,7 @@
           "character": "Priester",
           "content": [{
               "type": "text",
-              "value": "In der Hinwendung der Kinder zum Sozialismus sieht er dabei ebenso einen Kampf gegen religiöse Erziehung, als auch eine 'geistige Zertrümmerung der Familie'. Die Kinderfreunde engagieren sich auch für einen Sexualkundeunterricht. Das halten sie für wichtig, da bis weit ins 20. Jahrhundert hinein Erwachsene durch eine falsch verstandene religiöse Sexualmoral keine Ahnung hatten, wie Kinder entstanden."
+              "value": "He sees the children's turn towards socialism as a fight against religious education as well as a 'spiritual destruction of the family'. The Friends of the Children are also committed to sex education. They consider this to be important because until far into the 20th century, adults had no idea how children were created due to a misunderstood religious sexual morality."
             },
             {
               "type": "image",
@@ -1911,25 +1911,25 @@
           "character": "Priester",
           "content": [{
               "type": "text",
-              "value": "Vieles, was die Kinderfreunde ausprobierten, war für die Gesellschaft neu. Die Idee einer besseren Welt, in der auch Arbeiterkinder Chancen und eine Zukunft haben sollten, machte manchmal eben auch jenen Angst, die zuvor jahrhundertelang in Machtpositionen waren. Dazu gehörte u.a. die Kirche, aber auch der beispielsweise der Adel."
+              "value": "Much of what the Friends of the Children tried out was new for society. The idea of a better world, in which children of workers would also have opportunities and a future, sometimes frightened those who had been in positions of power for centuries. These included the church, but also the nobility, for example."
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             }
           ]
         },
@@ -1938,12 +1938,12 @@
           "character": "Lagerfotograf",
           "content": [{
               "type": "text",
-              "value": "Im Zeltlager wird oft fotografiert. Obwohl bereits seit 1925 Kleinbildkameras serienmäßig produziert werden, besitzen die wenigsten Arbeiterfamilien Fotoapparate. Denn diese kosten oft den 4- bis 5-fachen Monatslohn eines Arbeiters. Erst 1930 gibt es erschwingliche Kameras - zwar mit größeren Rollfilmen, aber für nur 40 RM.",
+              "value": "Photographs are often taken at the tent camp. Although 35mm cameras have been in mass production since 1925, very few working class families own cameras. Because they often cost four to five times the monthly wage of a worker. It was not until 1930 that affordable cameras became available - with larger roll films, but for only 40 Reichsmark.",
               "option": "reveal"
             },
             {
               "type": "text",
-              "value": "Im Zeltlager gibt es nur wenige Personen, die eine Kamera bedienen können."
+              "value": "In the tent camp there are only a few people who can operate a camera."
             },
             {
               "type": "image",
@@ -1958,11 +1958,11 @@
           "background": "02_45_(21)",
           "content": [{
               "type": "text",
-              "value": "Walter (ein Helfer aus Berlin) hat in seiner Ortsgruppe vor zwei Jahren einen Fotografiekursus gegründet. Jetzt ist er der Lagerfotograf in der Kinderrepublik."
+              "value": "Walter (a helper from Berlin) founded a photography course in his local group two years ago. Now he is the camp photographer in the Children's Republic."
             },
             {
               "type": "text",
-              "value": "Er hält alle wichtigen Momente fest: Ausflüge, Aufführungen des legendären Lagerzirkus, die Essenausgabe, die Musikkapelle und natürlich auch alle anderen Situationen des Gruppenlebens."
+              "value": "He captures all the important moments: excursions, performances of the legendary camp circus, the food distribution, the music band and of course all other situations of group life."
             },
             {
               "type": "image",
@@ -1971,7 +1971,7 @@
             },
             {
               "type": "text",
-              "value": "Walter gehört mit einigen anderen Kindern zu den Verantwortlichen für die Zeltlagerzeitung. Irma, Georg und Lotte schreiben regelmäßig kurze Berichte für die Zeitung, die später auch als Andenken an die Zeit in der Kinderrepublik dienen soll."
+              "value": "Walter, together with some other children, is one of those responsible for the camp newspaper. Irma, Georg and Lotte regularly write short reports for the newspaper, which will later also serve as a souvenir of their time in the Children's Republic."
             }
           ]
         },
@@ -1985,13 +1985,13 @@
             },
             {
               "type": "summary",
-              "value": "Irmas Bericht",
-              "title": "08.08.\nUm 7.00 Uhr erscholl der Weckruf. Darauf klopften wir unsere Decken aus. Als wir damit fertig waren, wurde zur Gymnastik geblasen. Kurz darauf gingen wir zum Waschen. Nach dem Waschen frühstückten wir. Danach setzten wir unser Zelt instand. Zwischen 12.00 und 13.00 Uhr war Falkenvollversammlung. Der neue Lagerleiter hatte verschiedene Themen zu verhandeln, z.B.: der Besuchstag. Wir hatten nämlich Kindertag, da hatten die Helfer nichts zu sagen. Die mussten nachher auf Wanderung. Um 13.30 Uhr bekamen wir Mittagessen. Es gab nämlich Salzkartoffeln mit Rollmops. Nach dem Essen hatten wir Freizeit. Um 15.30 Uhr gab es Vesper. Nach der Vesper war Zirkus. Um 19.00 Uhr wurde zum Abendbrot geblasen. Darauf war Volkstanz. Auf einmal war auf der Straße ein Krach losgegangen. Es kamen nämlich Helfer von der Wanderung zurück. Die sollten nicht vor 12.00 Uhr ins Lager. Hermann Neddermeyer blies Lagerruhe, aber es wurde dagegen protestiert. Hermann erzählte von der Flucht aus England. Bald war Zeltruhe. Kaum lagen wir im Zelte, so wurde Helferalarm geblasen.\nFreundschaft.\nIrma"
+              "value": "Irma's Report",
+              "title": "8th August\nAt 7 am the wake-up call came. Then we beat the dust out of our blankets. When we were done with it, gymnastics was announced. Shortly afterwards we went to the washing. After washing we had breakfast. Then we repaired our tent. Between 12 o'clock and 1 pm was the Falcon's general assembly. The new camp leader had different topics to negotiate, for example: the visiting day. We had a children's day and the helpers had nothing to say. They had to go on a hike instead. At 1.30 pm we got lunch. There were boiled potatoes with a rollmop. After lunch we had free time. At 3.30 pm we had a snack. After the snack time there was a circus. At 7 pm we had dinner. After that there was a folk dance. All of a sudden a noise had started in the street. The helpers came back from the hike. They were not supposed to get to the camp before 12 o'clock. Hermann Neddermeyer announced camp silence, but there were protests. Hermann told about his escape from England. Soon there was the camp rest. As soon as we were in the tents, the helper’s alarm sounded.\nFriendship.\nIrma"
             },
             {
               "type": "summary",
-              "value": "Georgs Bericht",
-              "title": "01.08.\nWir wurden heute morgen durch das Spielen des Radios geweckt. Gleich darauf kam Ernst, unser Bürgermeister und brachte die Parole. Nach einer Weile standen wir auf, denn es hatte zum Aufstehen geblasen. Schnell schüttelten wir unsere Decken aus. Dann gingen wir zum Waschen. Nach dem Kaffeetrinken bleiben wir wieder im Zelt, denn es regnete. Heinz sagte uns, dass wir unsere Affen packen sollten, denn es könnte sein, dass wir heute noch ins Notquartier ziehen würden. Unser Lagerpräsident ist schon in die Stadt gegangen und fragt nach, ob wir einige Schulen für das Notquartier bekommen könnten. So packten wir den Vormittag unsere Taschen, um zum Abmarsch bereit zu sein.Bald gab es auch Mittagessen. Das Wetter wurde jetzt schon besser. Am Abend war noch eine Helfersitzung. Dort wurde nun alles besprochen. Es kam nun heraus, dass wir heute nicht mehr wegzogen. Wenn es aber regnet, wollten wir ins Notquartier ziehen. Am Abend spielten wir noch im Kreis. Nach der Lagerruhe schliefen wir bald ein.\nFreundschaft.\nGeorg"
+              "value": "Georg's Report",
+              "title": "1st August\nWe were woken up this morning by the sound of the radio. Immediately afterwards Ernst, our mayor, came and brought today's slogan. After a while we got up, because it had blown to get out of bed. We quickly shook out our blankets. Then we went to wash ourselves. After coffee we stayed in the tent again, because it was raining. Heinz told us that we should 'pack our monkeys', because it could be that we would move into the emergency quarters today. Our camp president has already gone to town and asks if we could use some school as emergency quarters. So we packed our bags in the morning to be ready to leave and soon we had lunch. The weather was already getting better. In the evening there was a meeting for helpers. There, everything was discussed. It turned out that we were not going to move away today. But, if it continues to rain, we will move to the emergency quarters. In the evening we played in a circle. After the night's rest we soon fell asleep.\nFriendship.\nGeorg"
             },
             {
               "type": "image",
@@ -2010,26 +2010,26 @@
             },
             {
               "type": "summary",
-              "value": "Lottes Bericht",
-              "title": "23.07.\nUm 7.00 Uhr erschallte das Signal zum Aufstehen. Wir standen gleich auf und klopften unsere Decken aus. Dann ging es gleich zur Gymnastik. Frieda leitete heute die Gymnastik. Wir machten uns gleich zum Waschen bereit, weil wir heute die Ersten waren. Nach dem Frühstück konnten wir spielen. Um 10.30 Uhr übten wir mit Willi einen Bewegungschor ein. Dann aßen wir zu Mittag. Es gab Pellkartoffeln, Senfsoße und zwei Eier. Nach dem Mittagessen wollten wir wandern, aber wir mussten erst abstimmen, weil einige nicht mitwollten. Schließlich gingen wir doch los. Wir gingen bis zum Aussichtsturm und pflückten Heidelbeeren. Als es anfing zu regnen, gingen wir zum Lager zurück. Wir kamen spät an. Um 21.00 Uhr war Lagerruhe.\nFreundschaft.\nLotte"
+              "value": "Lotte's Report",
+              "title": "23rd July\nAt 7 am the signal to get up was given. We got up immediately and shook out our blankets. Then we went straight to gymnastics. Frieda was in charge of gymnastics today. We got ready for washing right away, because we were the first ones today. After breakfast we could play. At 10.30 am we practised a movement choir with Willi. Then we had lunch. There were potatoes, mustard sauce and two eggs. After lunch we wanted to go hiking, but we had to vote first, because some did not want to join us. Finally, we started walking. We walked to the observation tower and picked blueberries. When it started to rain, we went back to the camp. We arrived late. Night's rest was at 9 pm.\nFriendship.\nLotte"
             },
             {
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             }
           ]
         },
@@ -2039,7 +2039,7 @@
           "background": "02_1455_(88)",
           "content": [{
             "type": "text",
-            "value": "Der Lagerarzt ist ein richtiger Arzt und hat normalerweise eine kleine Praxis in Bremen. Durch seine Arbeit sieht er regelmäßig, wie wichtig frische Luft, gute Ernährung und Sport für die Arbeiterkinder sind. Deswegen schließt er seine Praxis für einige Wochen, um ehrenamtlich die Kinderrepublik zu unterstützen.",
+            "value": "The camp doctor is a real doctor and usually has a small practice in Bremen. Through his work he regularly sees how important fresh air, good nutrition and sport are for the workers' children. Therefore, he closes his practice for a few weeks in order to support the Children's Republic on a voluntary basis.",
             "option": "reveal"
           }]
         },
@@ -2053,7 +2053,7 @@
             },
             {
               "type": "text",
-              "value": "Er versorgt in der Kinderrepublik verletzte und kranke Kinder. Obwohl jedes Kind vor der Reise ärztlich untersucht werden sollte, gibt es doch immer wieder Fälle von schweren Erkrankungen und Seuchen.",
+              "value": "He cares for injured and sick children in the Children's Republic. Although every child should be medically examined before travelling, there are always cases of serious illness and epidemics.",
               "option": "third"
             }
           ]
@@ -2063,7 +2063,7 @@
           "character": "Lagerarzt",
           "content": [{
               "type": "text",
-              "value": "Erst letzten Monat gab es Berichte von einem kleineren Zeltlager, das kurz vor der Schließung stand. Dort waren mehrere Fälle der lebensgefährlichen Krankheit Diphterie aufgetreten. Zum Glück konnten die betroffenen Kinder schnell isoliert und ins Krankenhaus gebracht werden. Die Ansteckung anderer Kinder wurde so verhindert."
+              "value": "Only last month there were reports of a smaller tent camp that was about to close. Several cases of the life-threatening disease diphtheria had occurred there. Fortunately, the affected children were quickly isolated and taken to hospital. The infection of other children was thus prevented."
             },
             {
               "type": "image",
@@ -2072,7 +2072,7 @@
             },
             {
               "type": "text",
-              "value": "Für die Helfer*innen bietet der Lagerarzt regelmäßig Bildungsabende zum Thema Hygiene an. Dieses Wissen ist wichtig, damit Krankheiten im Zeltlager keine Chance haben."
+              "value": "The camp doctor regularly offers educational evenings on the subject of hygiene for the helpers. This knowledge is important so that diseases in the camp have no chance."
             }
           ]
         },
@@ -2081,7 +2081,7 @@
           "character": "Lagerarzt",
           "content": [{
               "type": "text",
-              "value": "2 mal pro Woche leitet der Lagerarzt außerdem einen Erste-Hilfe-Kurs für die interessierten Kinder. Auch Karl nimmt an einer solchen Arbeitsgruppe teil."
+              "value": "Twice a week the camp doctor also conducts a first aid course for the interested children. Karl also participates in such a working group."
             },
             {
               "type": "video",
@@ -2097,19 +2097,19 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             }
           ]
         },
@@ -2119,12 +2119,12 @@
           "background": "02_1455_(96)",
           "content": [{
               "type": "text",
-              "value": "In den Dörfern um das Zeltlager herum gibt es viele Genoss*innen und Genossenschaften, die der Kinderrepublik Lebensmittel liefern. ",
+              "value": "In the villages around the tent camp there are many comrades and cooperatives who supply food to the Children's Republic.",
               "option": "reveal"
             },
             {
               "type": "text",
-              "value": "So gibt es zum Beispiel Bäckereien, die für die vielen Kinder Brote zu günstigen Preisen backen. Einige Konsumgenossenschaften liefern Gemüse. Manche Landwirte haben es den Helfer*innen und Kindern auch erlaubt, dass sie auf ihren Streuobstwiesen Augustäpfel pflücken dürfen.",
+              "value": "For example, there are bakeries that bake bread at low prices for the many children. Some consumer cooperatives supply vegetables. Some farmers have also allowed the helpers and children to pick apples on their orchards.",
               "layer": "fore"
             }
           ]
@@ -2135,7 +2135,7 @@
           "content": [{
               "type": "text",
               "option": "third",
-              "value": "Ein großer Gutshof liefert der Kinderrepublik Hammelfleisch."
+              "value": "A large estate supplies the Children's Republic with mutton."
             },
             {
               "type": "image",
@@ -2149,7 +2149,7 @@
           "character": "Genossen",
           "content": [{
               "type": "text",
-              "value": "Ohne die vielen wohlgesonnenen Bürger*innen im Umland könnte das Zeltlager nicht stattfinden. Und Lebensmittel für so viele Kinder in einem Laden zu kaufen wäre einerseits unmöglich und andererseits auch viel zu teuer."
+              "value": "Without the many well-disposed citizens in the surrounding area, the camp could not take place. And to buy food for so many children in one shop would be impossible on the one hand and on the other hand much too expensive."
             },
             {
               "type": "image",
@@ -2163,7 +2163,7 @@
           "character": "Genossen",
           "content": [{
               "type": "text",
-              "value": "Und wie schmeckt Anna und Karl das Essen in der Kinderrepublik?"
+              "value": "And how do Anna and Karl like the food in the Children's Republic?"
             },
             {
               "type": "video",
@@ -2179,19 +2179,19 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             }
           ]
         },
@@ -2206,7 +2206,7 @@
             },
             {
               "type": "text",
-              "value": "Vor ihnen stehen knapp 30 Kinder und Jugendliche mit leuchtenden Fackeln in den Händen. Sie brüllen irgendetwas von 'Sozialistenschweinen' und 'Vaterlandsverrätern' und rennen davon."
+              "value": "Nearly thirty children and young people stand in front of them with glowing torches in their hands. They shout something about 'socialist pigs' and 'traitors to the fatherland' and run away."
             }
           ]
         },
@@ -2216,7 +2216,7 @@
           "content": [{
               "type": "text",
               "option": "fourth",
-              "value": "Die Kinder des Zeltlagers sind erschrocken. Sie haben schon oft gehört, dass die Hitlerjugend Zeltlager von sozialistischen Verbänden gestürmt haben. Aber sie hatten sich sehr sicher gefühlt."
+              "value": "The children of the tent camp are terrified. They have often heard that the Hitler Youth stormed tent camps of socialist associations. But they had felt very safe."
             },
             {
               "type": "image",
@@ -2226,17 +2226,17 @@
             {
               "type": "text",
               "option": "fourth",
-              "value": "Die Helfer*innen setzen sich nun mit ihren jeweiligen Zeltgemeinschaften zusammen und besprechen das soeben Erlebte."
+              "value": "The helpers now sit down with their respective tent communities and discuss what they have just experienced."
             }
           ]
         },
         {
           "grouped": true,
           "character": "Hitlerjugend",
-          "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
+          "info": "A class refers to a group of people who have common social/economic interests and living conditions.",
           "content": [{
               "type": "text",
-              "value": "Der wichtigste Punkt für die Falken ist das Bekenntnis zur Arbeiterklasse und zu einer sozialistischen Gesellschaft."
+              "value": "The most important point for the Falcons is the commitment to the working class and to a socialist society."
             },
             {
               "type": "image",
@@ -2250,7 +2250,7 @@
           "character": "Hitlerjugend",
           "content": [{
             "type": "text",
-            "value": "Damit sahen sich die Kinderfreunde genauso wie die SPD und die KPD einer erstarkenden politischen Bewegung gegenüber: die Nationalsozialistische Deutsche Arbeiterpartei (NSDAP) bemühte sich nämlich ebenso um die Arbeiterschaft."
+            "value": "This meant that the Friends of the Children as well as the Social Democratic Party and the German Communist Party were confronted with a growing political movement: the National Socialist German Workers' Party (NSDAP) was making the same effort to court the favour of the workers."
           }]
         },
         {
@@ -2258,7 +2258,7 @@
           "character": "Hitlerjugend",
           "content": [{
               "type": "text",
-              "value": "Im Gegensatz zum Sozialismus stand der Nationalsozialismus aber nicht für ein friedliches Zusammenleben aller Menschen, sondern für Rassismus und Ausgrenzung von Menschen vor allem jüdischen Glaubens und die Stärkung der sogenannten Volksgemeinschaft. Auf diese Weise förderte der Nationalsozialismus den Krieg zwischen unterschiedlichen Ländern."
+              "value": "In contrast to Socialism, however, National Socialism did not stand for peaceful coexistence of all people, but for racism and exclusion of people, especially of the Jewish faith, and the strengthening of the so-called 'people's community', which meant a racially unified society. In this way, National Socialism promoted war between different countries."
             },
             {
               "type": "image",
@@ -2272,7 +2272,7 @@
           "character": "Hitlerjugend",
           "content": [{
               "type": "text",
-              "value": "Seit 1926 gab es mit der Hitlerjugend bereits eine Jugendorganisation der NSDAP, die für Kinder ähnlich attraktiv wirkte, wie die sozialistischen und sozialdemokratischen Verbände."
+              "value": "Since 1926 there had already been a youth organisation of the NSDAP, the Hitler Youth, which was just as attractive for children as the socialist and social democratic associations."
             },
             {
               "type": "video",
@@ -2288,19 +2288,19 @@
               "type": "redirect",
               "value": "weitermitanna",
               "avatar": "Anna",
-              "title": "Ich möchte (weiterhin) mit Anna die Kinderrepublik erkunden."
+              "title": "I would like to (continue to) explore the Children's Republic with Anna."
             },
             {
               "type": "redirect",
               "value": "weitermitkarl",
               "avatar": "Karl",
-              "title": "Ich möchte (weiter) schauen, was Karl erlebt."
+              "title": "I would like to (continue to) see what Karl experiences."
             },
             {
               "type": "redirect",
               "value": "ankunft",
               "avatar": "Gerda",
-              "title": "Ich möchte wissen, ob Gerda auch schon im Zeltlager angekommen ist."
+              "title": "I would like to know if Gerda has already arrived at the camp."
             }
           ]
         }
@@ -2308,7 +2308,7 @@
     },
     {
       "id": 9,
-      "name": "Annas Erlebnisse",
+      "name": "Anna's Experiences",
       "link": "weitermitanna",
       "groups": [{
         "grouped": true,
@@ -2317,7 +2317,7 @@
           "type": "redirect",
           "value": "weitermitanna",
           "avatar": "Anna",
-          "title": "Ich möchte mit Anna die Kinderrepublik erkunden."
+          "title": "I would like to explore the Children's Republic with Anna."
         }]
       },
       {
@@ -2327,7 +2327,7 @@
             "type": "redirect",
             "value": "weitermitanna",
             "avatar": "Anna",
-            "title": "Ich möchte mit Anna die Kinderrepublik erkunden."
+            "title": "I would like to explore the Children's Republic with Anna."
           }]
       },
       {
@@ -2336,7 +2336,7 @@
           "background": "02_1455_(55)",
           "content": [{
               "type": "text",
-              "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
+              "value": "In the Children's Republic it is necessary to fill many days with a programme, agree on activities and organise interest groups.",
               "option": "reveal"
             },
             {
@@ -2346,7 +2346,7 @@
             },
             {
               "type": "text",
-              "value": "Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan."
+              "value": "In order that all this can work for two thousand children, there is an exact daily schedule."
             }
           ]
         },
@@ -2356,7 +2356,7 @@
           "content": [{
               "type": "text",
               "option": "third",
-              "value": "Wie sieht der Tagesplan aus? Hilf Anna, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
+              "value": "What does the daily schedule look like? Help Anna to put the events of the day in the right order."
             },
             {
               "type": "image",
@@ -2371,7 +2371,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen."
+              "value": "To put the individual points of the day in the right order, simply drag them onto the poster. Click on 'View daily schedule!' to view the original daily schedule."
             },
             {
               "type": "daily",
@@ -2384,7 +2384,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Anna kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind. Es bereitet ihr große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat."
+              "value": "Anna can hardly believe that so many children and young people are gathered in one place here in the Children's Republic. It gives her great pleasure to meet new children every day, even if this sometimes has its difficulties."
             },
             {
               "type": "video",
@@ -2398,7 +2398,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Auch wenn die Kinder manchmal aneinander vorbei reden und unterschiedliche Wörter benutzen, gibt es doch eine Sache, die alle gleich gut verstehen und mögen: Kino."
+              "value": "Even if the children sometimes talk at cross purposes and use different words, there is one thing they all understand and like equally well: cinema."
             },
             {
               "type": "image",
@@ -2407,7 +2407,7 @@
             },
             {
               "type": "text",
-              "value": "Am Nachmittag haben die Helfer*innen eine Filmvorführung für die jungen Republikaner*innen in einem nahen Kino organisiert. In 2 Schichten schauen alle Kinder einen Stummfilm von Buster Keaton. Dafür braucht es keine Worte, denn diesen Humor verstehen alle."
+              "value": "In the afternoon, the helpers organised a film screening for the young republicans in a nearby cinema. In two shifts all children watch a silent movie by Buster Keaton. No words are needed for this, because everyone understands this humour."
             }
           ]
         },
@@ -2416,11 +2416,11 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Normalerweise finden Ausflüge und Arbeitsgruppen vor dem Mittagessen statt."
+              "value": "Usually, excursions and working groups take place before lunch."
             },
             {
               "type": "text",
-              "value": "Die ruhigeren Nachmittage können die Kinder selbst füllen, um ihren Neigungen und Interessen nachzugehen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben."
+              "value": "The quieter afternoons can be filled by the children themselves to pursue their interests. Many then spend the time reading and writing letters."
             },
             {
               "type": "image",
@@ -2434,7 +2434,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden. Die Kinder nennen diese Zeit auch 'Zausestunde', weil es oft rege Diskussionen gibt."
+              "value": "However, group matters sometimes need to be clarified during this time. The children also call this time 'tear-hair-hour' because there are often lively discussions."
             },
             {
               "type": "image",
@@ -2443,7 +2443,7 @@
             },
             {
               "type": "text",
-              "value": "Hin und wieder gibt es in den einzelnen Zeltdörfern naturkundliche Vorträge der Helfer*innen. Dadurch lernen die Kinder etwas über die Tiere und die Pflanzen der Umgebung."
+              "value": "Every now and then, the volunteers give natural history lectures in the individual tent villages. This helps the children learn about the animals and plants in the area."
             }
           ]
         },
@@ -2458,7 +2458,7 @@
             },
             {
               "type": "text",
-              "value": "An manchen Nachmittagen bewegt sich das ganze Zeltlager! Die Kinder lernen dann Volkstänze aus allen Teilen der Republik und sogar aus anderen Ländern. Dabei tanzen alle zusammen: Jungen und Mädchen."
+              "value": "Some afternoons the whole camp moves! The children then learn folk dances from all parts of the republic and even from other countries. They dance all together: Boys and girls."
             }
           ]
         },
@@ -2474,7 +2474,7 @@
             {
               "type": "text",
               "option": "third",
-              "value": "Abends gibt es manchmal Kulturveranstaltungen und gemeinsames Singen."
+              "value": "In the evenings there are sometimes cultural events and singsongs."
             }
           ]
         },
@@ -2483,7 +2483,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Fast alle Angelegenheiten werden demokratisch entschieden. Dennoch gibt es manchmal Situationen, in denen dies nichts nützt, denn..."
+              "value": "Almost all matters are decided democratically. Nevertheless, there are sometimes situations in which this is of no use, because..."
             },
             {
               "type": "video",
@@ -2497,7 +2497,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "In solchen Momenten muss die ganze Kinderrepublik an einem Strang ziehen. Jede*r hat eine Aufgabe."
+              "value": "In such moments, the whole Children's Republic has to pull together. Everyone has a task."
             },
             {
               "type": "image",
@@ -2507,7 +2507,7 @@
             {
               "type": "text",
               "option": "third",
-              "value": "Die Zelte müssen wieder aufgebaut werden, Löcher gestopft werden, abgebrochene Äste und Zweige müssen eingesammelt werden und über den matschigen Feldboden wird ein Holzweg gebaut."
+              "value": "The tents have to be put up again, holes have to be plugged, broken branches and twigs have to be collected and a wooden path is built over the muddy field floor."
             },
             {
               "type": "image",
@@ -2521,7 +2521,7 @@
           "character": "Anna",
           "content": [{
               "type": "text",
-              "value": "Anna hat von einigen Helfer*innen gehört, dass es vergangenen Sommer ein Zeltlager gegeben hat, bei dem es zwei Wochen lang ununterbrochen geregnet hat. Die Kinder waren dann die meiste Zeit im Zelt und die meisten Ausflüge und Aktivitäten fielen sprichwörtlich ins Wasser."
+              "value": "Anna heard from some volunteers that there was a camp last summer where it rained continuously for a fortnight. The children spent most of their time in the tent and most of the excursions and activities went literally down the drain."
             },
             {
               "type": "image",
@@ -2530,7 +2530,7 @@
             },
             {
               "type": "text",
-              "value": "Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen."
+              "value": "But it is not only after a storm that there is a lot to do for all the children at the camp. Everyone has to participate in the various work activities."
             }
           ]
         },
@@ -2544,7 +2544,7 @@
             },
             {
               "type": "text",
-              "value": "Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw."
+              "value": "This includes kitchen duty, guard duty, post office, camp newspaper, order duty, camp library, etc."
             }
           ]
         },
@@ -2558,19 +2558,19 @@
             },
             {
               "type": "text",
-              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?"
+              "value": "Would you like to know how Anna and Karl meet and what they experience together?"
             },
             {
               "type": "redirect",
               "value": "annameetskarl",
               "option": "third",
-              "title": "Ja, gern."
+              "title": "Yes, sure."
             },
             {
               "type": "redirect",
               "value": "annaundausflüge",
               "option": "third",
-              "title": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
+              "title": "No, I'd rather go on a few more excursions with Anna."
             }
           ]
         }
@@ -2578,7 +2578,7 @@
     },
     {
       "id": 10,
-      "name": "Karls Erlebnisse",
+      "name": "Karl's Experiences",
       "link": "weitermitkarl",
       "character": "Karl",
       "groups": [{
@@ -2588,7 +2588,7 @@
           "type": "redirect",
           "value": "weitermitkarl",
           "avatar": "Karl",
-          "title": "Ich möchte mit Karl die Kinderrepublik erkunden."
+          "title": "I would like to explore the Children's Republic with Karl."
         }]
       },
       {
@@ -2598,7 +2598,7 @@
             "type": "redirect",
             "value": "weitermitkarl",
             "avatar": "Karl",
-            "title": "Ich möchte mit Karl die Kinderrepublik erkunden."
+            "title": "I would like to explore the Children's Republic with Karl."
           }]
       },
       {
@@ -2607,7 +2607,7 @@
           "background": "02_45_(3)",
           "content": [{
               "type": "text",
-              "value": "In der Kinderrepublik gilt es, viele Tage mit Programm zu füllen, sich auf Unternehmungen zu einigen und Interessensgruppen zu organisieren.",
+              "value": "In the Children's Republic, it is important to fill many days with programmes, to agree on activities and to organise interest groups.",
               "option": "reveal"
             },
             {
@@ -2617,7 +2617,7 @@
             },
             {
               "type": "text",
-              "value": "Damit das alles für 2000 Kinder funktionieren kann, gibt es einen genauen Tagesplan."
+              "value": "To make it all work for two thousand children, there is a precise daily schedule."
             }
           ]
         },
@@ -2626,7 +2626,7 @@
           "character": "Karl",
           "content": [{
             "type": "text",
-            "value": "Wie sieht der Tagesplan aus? Hilf Karl, die einzelnen Tagesereignisse in die richtige Reihenfolge zu bringen."
+            "value": "What does the daily schedule look like? Help Karl to put the individual daily events in the right order."
           }]
         },
         {
@@ -2643,7 +2643,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Um die einzelnen Tagespunkte in die richtige Reihenfolge zu bringen, ziehe sie einfach auf das Plakat. Klicke auf 'Tagesplan anzeigen!', um dir den originalen Tagesablauf anzusehen."
+              "value": "To put the individual points of the day in the right order, simply drag them onto the poster. Click on 'Show daily schedule!' to see the original daily schedule."
             },
             {
               "type": "daily",
@@ -2656,7 +2656,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Ein Großteil des Tages besteht darin, dass die Kinder und Jugendlichen ihren eigenen Interessen nachgehen können und an einer der vielfältigen Arbeitsgruppen teilnehmen können. Oft organisieren die Kinder auch eigene Veranstaltungen oder Ausflüge."
+              "value": "A large part of the day consists of the children and young people being able to pursue their own interests and participate in one of the many different working groups. Often the children also organise their own events or excursions."
             },
             {
               "type": "image",
@@ -2670,7 +2670,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl kann sich vor lauter Möglichkeiten kaum entscheiden. Am Ende findet er doch etwas, was ihn interessiert."
+              "value": "Karl can hardly decide what to do because of all the possibilities. In the end, he finds something that interests him."
             },
             {
               "type": "video",
@@ -2684,7 +2684,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl kann es kaum glauben, dass hier in der Kinderrepublik so viele Kinder und Jugendliche auf einem Haufen versammelt sind."
+              "value": "Karl can scarcely believe that so many children and young people are gathered here in one heap in the Children's Republic."
             },
             {
               "type": "image",
@@ -2698,7 +2698,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Es bereitet ihm große Freude, jeden Tag neue Kinder kennenzulernen, auch wenn das manchmal so seine Tücken hat."
+              "value": "It gives him great pleasure to meet new children every day, even if this sometimes has its difficulties."
             },
             {
               "type": "video",
@@ -2713,7 +2713,7 @@
           "background": "02_1455_(25)",
           "content": [{
               "type": "text",
-              "value": "Ausflüge und die Arbeitsgruppen finden meist vor dem Mittagessen statt. Die ruhigeren Nachmittage können die Kinder selbst füllen. Viele verbringen die Zeit dann mit Lesen und Briefeschreiben."
+              "value": "Excursions and work groups usually take place before lunch. The quieter afternoons can be filled by the children themselves. Many then spend the time reading and writing letters."
             },
             {
               "type": "image",
@@ -2722,7 +2722,7 @@
             },
             {
               "type": "text",
-              "value": "Es müssen in dieser Zeit aber auch manchmal Gruppenangelegenheiten geklärt werden."
+              "value": "However, group matters sometimes have to be clarified during this time."
             }
           ]
         },
@@ -2736,7 +2736,7 @@
             },
             {
               "type": "text",
-              "value": "An manchen Nachmittagen tanzt das ganze Zeltlager, es gibt Zirkusaufführungen oder Theaterinszenierungen der Kinder und Helfer*innen."
+              "value": "On some afternoons, the whole camp dances, there are circus performances or theatre productions by the children and helpers."
             },
             {
               "type": "video",
@@ -2750,7 +2750,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Auch wenn im Zeltlager vieles gut organisiert ist und über fast alles demokratisch entschieden wird, gibt es auch hier Situationen, die niemand beeinflussen kann, denn..."
+              "value": "Even though many things are well organised at the camp and almost everything is decided democratically, there are situations here that no one can influence, because..."
             },
             {
               "type": "video",
@@ -2764,7 +2764,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Doch nicht nur nach einem Unwetter gibt es für alle Kinder im Zeltlager viel zu tun. Jede*r muss sich an den verschiedenen Arbeitsdiensten beteiligen. Dazu gehört der Küchendienst, der Wachdienst, die Post, die Lagerzeitung, der Ordnungsdienst, die Lagerbücherei, usw."
+              "value": "But it is not only after a storm that there is a lot to do for all the children at the camp. Everyone has to take part in the various work duties. This includes kitchen duty, guard duty, the post office, the camp newspaper, the security service, the camp library, etc."
             },
             {
               "type": "image",
@@ -2778,7 +2778,7 @@
           "character": "Karl",
           "content": [{
               "type": "text",
-              "value": "Karl hatte schon zweimal Wachdienst und einmal Küchendienst. Er findet es gut, dass er so eine sinnvolle Aufgabe übernehmen kann."
+              "value": "Karl has already had guard duty twice and kitchen duty once. He thinks it is good that he can take on such a meaningful task."
             },
             {
               "type": "image",
@@ -2787,19 +2787,19 @@
             },
             {
               "type": "text",
-              "value": "Willst du wissen, wie Anna und Karl sich kennenlernen und was sie gemeinsam erleben?"
+              "value": "Would you like to know how Anna and Karl meet and what they experience together?"
             },
             {
               "type": "redirect",
               "value": "annameetskarl",
               "option": "third",
-              "title": "Ja, gern."
+              "title": "Yes, sure."
             },
             {
               "type": "redirect",
               "value": "annaundausflüge",
               "option": "third",
-              "title": "Nein, ich möchte lieber mit Anna noch ein paar Ausflüge machen."
+              "title": "No, I'd rather go on a few more excursions with Anna."
             }
           ]
         }
@@ -2807,14 +2807,14 @@
     },
     {
       "id": 11,
-      "name": "Anna und die Ausflüge",
+      "name": "Anna and the excursions",
       "link": "annaundausflüge",
       "groups": [{
           "grouped": true,
           "background": "02_1455_(60)",
           "content": [{
               "type": "text",
-              "value": "Eine wichtige Beschäftigung während der Kinderrepublik ist auch das sogenannte 'soziale Wandern'.",
+              "value": "An important activity during the Children's Republic is also the so-called 'social hiking'.",
               "option": "reveal"
             },
             {
@@ -2824,7 +2824,7 @@
             },
             {
               "type": "text",
-              "value": "Dabei geht es nicht nur um das Wandern als sportliche Betätigung, sondern auch um das soziale und wirtschaftliche Lebensumfeld der Menschen vor Ort."
+              "value": "This is not only about hiking as a sports activity, but also about the social and economic living environment of the local people."
             }
           ]
         },
@@ -2837,7 +2837,7 @@
             },
             {
               "type": "text",
-              "value": "Annas Zeltdorf macht eine Wanderung zu einer nahen Ziegelei, die durch einige Arbeitersiedlungen führt. Dort wohnen viele Arbeiterfamilien in ärmlichen Verhältnissen. Sie erfahren in Gesprächen mit den Bewohner*innen, dass die meisten von ihnen in einer der nahen Werften und am Hafen arbeiten.",
+              "value": "Anna's tent village takes a hike to a nearby brickwork, which leads through some workers' settlements. Many working families live there in poor conditions. In conversations with the residents, they learn that most of them work in one of the nearby shipyards and at the harbour.",
               "layer": "fore"
             },
             {
@@ -2849,10 +2849,10 @@
         },
         {
           "grouped": true,
-          "info": "Eine Klasse bezeichnet eine Gruppe von Menschen, die gemeinsame soziale/wirtschaftliche Interessen und Lebensumstände haben.",
+          "info": "A class refers to a group of people who share common social/economic interests and circumstances.",
           "content": [{
               "type": "text",
-              "value": "Hier in der Gegend gibt es aber auch noch viele Bauerndörfer. Für Anna wirken manche Orte viel idyllischer als das, was sie von zu Hause kennt. Sie versteht aber, dass auch Kleinbauern oft arm sind und wenig zu essen haben."
+              "value": "But there are still many farming villages around here. For Anna, some places seem much more idyllic than what she knows from home. But she understands that even small farmers are often poor and have little to eat."
             },
             {
               "type": "video",
@@ -2865,7 +2865,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Anna hat in der Lagerbücherei Karl kennengelernt, mit dem sie sich gut versteht. Die beiden wohnen sogar in dem selben Zeltdorf."
+              "value": "In the camp library Anna met Karl, with whom she gets on well. They even live in the same tent village."
             },
             {
               "type": "image",
@@ -2874,12 +2874,12 @@
             },
             {
               "type": "text",
-              "value": "Anna versucht Karl für die parlamentarische Struktur der Kinderrepublik zu begeistern, die ihm bisher sehr kompliziert vorkommt."
+              "value": "Anna tries to get Karl interested in the parliamentary structure of the Children's Republic, which so far seems very complicated to him."
             },
             {
               "type": "redirect",
               "value": "gemeinsam",
-              "title": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
+              "title": "Karl and Anna mostly spend the last days of the camp together."
             }
           ]
         }
@@ -2887,14 +2887,14 @@
     },
     {
       "id": 12,
-      "name": "Anna und Karl",
+      "name": "Anna and Karl",
       "link": "annameetskarl",
       "groups": [{
           "grouped": true,
           "background": "02_1455_(13)",
           "content": [{
               "type": "text",
-              "value": "In der Lagerbücherei hat Anna Karl kennengelernt. Er kommt aus Schlesien und spricht einen Dialekt, den Anna noch nie gehört hat. Karl kommt regelmäßig, um neue Bücher auszuleihen.",
+              "value": "Anna met Karl in the camp library. He comes from Silesia and speaks a dialect that Anna has never heard. Karl comes regularly to borrow new books.",
               "layer": "fore"
             },
             {
@@ -2908,7 +2908,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Beide lesen aber auch gern Romane, die von Entdeckungsreisen und fantastischen Orten handeln. Karl hat bisher während des Zeltlagers schon zwei Bücher von Jules Verne gelesen. ",
+              "value": "But both also like to read novels about voyages of discovery and fantastic places. Karl has already read two books by Jules Verne during the camp.",
               "layer": "fore"
             },
             {
@@ -2923,7 +2923,7 @@
           "content": [{
               "type": "text",
               "layer": "fore",
-              "value": "Auch einige sehr neue Romane finden sich in der Lagerbücherei. Anna hat zum Beispiel 'Emil und die Detektive' von Erich Kästner gelesen und war begeistert."
+              "value": "There are also some very new novels in the camp library. Anna, for example, read 'Emil and the Detectives' by Erich Kästner and was thrilled."
             },
             {
               "type": "image",
@@ -2938,7 +2938,7 @@
           "content": [{
               "type": "text",
               "layer": "fore",
-              "value": "Es gibt aber auch Literatur, welche die geistige und moralische Haltung der Kinder stärken soll. Neben wichtigen Werken sozialistischer Autor*innen steht daher auch hochaktuelle Antikriegsliteratur, z.B. 'Im Westen nichts Neues' von Erich Maria Remarque."
+              "value": "However, there is also literature that is intended to strengthen the children's intellectual and moral attitude. Alongside important works by socialist authors, there is also highly topical anti-war literature, e.g. 'All Quiet on the Western Front' by Erich Maria Remarque."
             },
             {
               "type": "image",
@@ -2951,12 +2951,12 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Anna und Karl haben nicht nur ähnliche Interessen, sondern wohnen zufällig auch in dem selbem Zeltdorf. Dadurch verbringen sie inzwischen viel Zeit miteinander. Durch Anna und ihre Rolle als Zeltobfrau interessiert sich Karl jetzt auch mehr für die parlamentarische Arbeit in der Kinderrepublik."
+              "value": "Anna and Karl not only have similar interests, but also happen to live in the same tent village. As a result, they now spend a lot of time together. Through Anna and her role as tent chairwoman, Karl is now also more interested in the parliamentary work in the Children's Republic."
             },
             {
               "type": "redirect",
               "value": "gemeinsam",
-              "title": "Die letzten Tage des Zeltlagers verbringen Karl und Anna oft zusammen."
+              "title": "Karl and Anna mostly spend the last days of the camp together."
             }
           ]
         }
@@ -2964,13 +2964,13 @@
     },
     {
       "id": 13,
-      "name": "Gemeinsam in der Kinderrepublik",
+      "name": "Together in the Children's Republic",
       "link": "gemeinsam",
       "groups": [{
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "In Annas und Karls Zeltdorf haben sich mehrere Kinder zusammengefunden, die einen Antrag an das Lagerparlament stellen wollen. Sie wollen erreichen, dass die Gymnastik morgens nach dem Frühstück und nicht davor stattfindet. "
+              "value": "In Anna's and Karl's tent village, several children have come together to make a request to the camp parliament. They want to ensure that gymnastics takes place in the morning after breakfast and not before."
             },
             {
               "type": "image",
@@ -2979,7 +2979,7 @@
             },
             {
               "type": "text",
-              "value": "Nachdem sie die Mehrheit für diesen Vorschlag in ihrer Zeltgemeinschaft erhalten haben, reichen sie den Antrag an die Gemeindevertretung des Zeltdorfes weiter."
+              "value": "After receiving majority support for this proposal in their tent community, they submit the proposal to the tent village council."
             }
           ]
         },
@@ -2988,12 +2988,12 @@
           "background": "02_13_(1)",
           "content": [{
               "type": "text",
-              "value": "Die Gemeindevertretung besteht aus 15 Kindern sowie dem Bürgermeister. Der Bürgermeister gibt vor der Abstimmung zu bedenken, dass Sport mit vollem Bauch ungesund ist. Trotzdem stimmt die Mehrheit der Gemeindevertretung dem Antrag zu, denn den Kindern dauert die Zeit bis zum Frühstück oft zu lang."
+              "value": "The tent village council consists of fifteen children and the mayor. Before the vote, the mayor points out that sport with a full stomach is unhealthy. Nevertheless, the majority of the tent village council agrees to the motion, because the time until breakfast is often too long for the children."
             },
             {
               "type": "text",
               "option": "third",
-              "value": "Der Bürgermeister muss nun den Antrag an das Lagerparlament weiterreichen, sodass alle Vertreter*innen der Gemeinderäte darüber beraten und abstimmen können. Am Ende lehnt das Lagerparlament mit großer Mehrheit den Vorschlag ab."
+              "value": "The mayor must now pass the proposal on to the camp parliament so that all representatives of the tent village councils can discuss and vote on it. In the end, the camp parliament rejects the proposal with a large majority."
             },
             {
               "type": "image",
@@ -3012,7 +3012,7 @@
             {
               "type": "text",
               "option": "third",
-              "value": "Es begründet seine Entscheidung damit, dass der Küchendienst nach dem Aufstehen etwas Zeit braucht, um das Essen vorzubereiten und damit, dass Sport vor dem Essen gesünder sei als direkt danach."
+              "value": "It justifies its decision with the fact that the kitchen staff needs some time after getting up to prepare the meal and that sport before the meal is healthier than directly after."
             }
           ]
         },
@@ -3021,11 +3021,11 @@
           "background": "02_1455_(91)",
           "content": [{
               "type": "text",
-              "value": "Anna hat eingesehen, dass der Ablauf wirklich kompliziert ist. Um die ganze Lagerstruktur besser erklären zu können,  hat sie sich ein Spiel ausgedacht. Sie spielt es mit Karl, um auszuprobieren, ob es verständlich ist."
+              "value": "Anna realised that the process is really complicated. In order to better explain the whole camp structure, she made up a game. She plays it with Karl to see if it is understandable."
             },
             {
               "type": "text",
-              "value": "In diesem Aufdeck-Spiel geht es darum, gleiche Paare zu finden. Klicke einfach auf die Kärtchen, um zu sehen, was sich auf der Rückseite befindet. Zusammenpassende Paare bleiben aufgedeckt liegen."
+              "value": "In this game, the aim is to find identical pairs. Just click on the cards to see what is on the back. Matching pairs remain face up."
             }
           ]
         },
@@ -3033,7 +3033,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Wenn du das Spiel gewinnst, wird sich die Kinderrepublik langsam dem Ende nähern."
+              "value": "If you win the game, the Children's Republic will slowly come to an end."
             },
             {
               "type": "memory",
@@ -3043,7 +3043,7 @@
               "type": "redirect",
               "value": "endkapitel",
               "option": "full",
-              "title": "Du hast genug gespielt und hast langsam Heimweh...."
+              "title": "You've played enough and you're getting homesick..."
             }
           ]
         }
@@ -3051,7 +3051,7 @@
     },
     {
       "id": 14,
-      "name": "Das Ende der Kinderrepublik",
+      "name": "The End of the Children's Republic",
       "link": "endkapitel",
       "groups": [{
           "grouped": true,
@@ -3059,7 +3059,7 @@
           "content": [{
               "type": "text",
               "option": "reveal",
-              "value": "Gerda hat den beiden Kindern beim Spielen zugeschaut und findet Annas Idee großartig. Sie will das Spiel mit ihrer Ortsgruppe ausprobieren, wenn sie sich auf das nächste Zeltlager vorbereiten."
+              "value": "Gerda has watched the two children play and thinks Anna's idea is great. She wants to try out the game with her local group when they prepare for the next camp."
             },
             {
               "type": "image",
@@ -3068,7 +3068,7 @@
             },
             {
               "type": "text",
-              "value": "Da Gerda nur wenige Jahre älter als Anna und Karl ist, hat sie direkt einen guten Draht zu den beiden. Sie hören ihr gespannt zu, wie sie berichtet, wie sie zur Sozialistischen Arbeiterjugend gekommen ist und warum sie Helferin in der Kinderrepublik geworden ist. "
+              "value": "Since Gerda is only a few years older than Anna and Karl, she has a good connection to them. They listen eagerly as she tells them how she came to the Socialist Workers' Youth and why she became a helper in the Children's Republic."
             }
           ]
         },
@@ -3076,7 +3076,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Vielleicht haben Anna und Karl in ein paar Jahren ja auch Lust, als Helfer*in eine Kinderrepublik zu unterstützen. Genügend Erfahrungen gesammelt haben sie immerhin schon."
+              "value": "Maybe in a few years Anna and Karl will want to help out in a Children's Republic. After all, they have already gained enough experience."
             },
             {
               "type": "video",
@@ -3089,7 +3089,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Bis dahin nehmen sie sich jedoch vor, an einem der nächsten Arbeiterjugendtage teilzunehmen. Dieser findet alle ein bis zwei Jahre statt und wird voraussichtlich 1931 in Frankfurt am Main ausgetragen."
+              "value": "Until then, however, they plan to take part in one of the next Workers' Youth Days. This takes place every one or two years and is expected to be held in Frankfurt am Main in 1931."
             },
             {
               "type": "image",
@@ -3098,7 +3098,7 @@
             },
             {
               "type": "text",
-              "value": "Dort treffen sich Arbeiterkinder aus der ganzen Republik, bekunden ihre Solidarität und schmieden Pläne für eine bessere Zukunft."
+              "value": "Working-class children from all over the Weimar Republic meet there, express their solidarity and make plans for a better future."
             }
           ]
         },
@@ -3106,7 +3106,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Die Kinderrepublik nähert sich langsam dem Ende. Für Anna und Karl ist diese Zeit wie im Flug vergangen."
+              "value": "The Children's Republic is slowly coming to an end. For Anna and Karl, this time has flown by."
             },
             {
               "type": "image",
@@ -3115,7 +3115,7 @@
             },
             {
               "type": "text",
-              "value": "Sie haben viele neue Freund*innen gefunden. Viele davon werden, wie die beiden, bald eine Lehre in einer der großen Fabriken anfangen."
+              "value": "They have made many new friends. Many of them, as the two of them, will soon start an apprenticeship in one of the big factories."
             }
           ]
         },
@@ -3123,7 +3123,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Anna und Karl hoffen, dass sie sich vielleicht Briefe schreiben werden, falls sie nach der Arbeit dann noch Zeit und Kraft dafür finden werden. Auch mit Gerda wollen sie sich gern schreiben."
+              "value": "Anna and Karl hope that they will perhaps write letters to each other, if they can still find the time and energy to do so after work. They would also like to write to Gerda."
             },
             {
               "type": "image",
@@ -3136,7 +3136,7 @@
           "grouped": true,
           "content": [{
               "type": "text",
-              "value": "Zumindest aber fühlen sich Karl und Anna nicht mehr so allein, denn sie wissen nun, dass es viele Kinder und Jugendliche gibt, denen es ähnlich geht wie ihnen. Und sie alle hoffen auf eine bessere Zukunft für sich und ihre Familien."
+              "value": "But at least Karl and Anna no longer feel so alone, because they now know that there are many children and young people who are in a similar situation as they are. And they all hope for a better future for themselves and their families."
             },
             {
               "type": "image",
@@ -3147,7 +3147,7 @@
               "type": "redirect",
               "value": "ausblick",
               "option": "full",
-              "title": "Doch was ist nach den 1920er Jahren aus den Kindern geworden?"
+              "title": "But what became of the children after the 1920s?"
             }
           ]
         }
@@ -3155,14 +3155,14 @@
     },
     {
       "id": 15,
-      "name": "Das Ende der Republik",
+      "name": "The End of the Republic",
       "link": "ausblick",
       "groups": [{
         "grouped": true,
         "background": "PH_dig_205_Seite205",
         "content": [{
             "type": "text",
-            "value": "Viele der Kinder und Jugendlichen, die in den 1920er und 1930er Jahren an Zeltlagern der Kinderfreunde und der Sozialistischen Arbeiterjugend (SAJ) teilgenommen haben, wurden nach 1933 für ihr politisches Engagement verfolgt, inhaftiert und auch ermordet."
+            "value": "Many of the children and young people who took part in camps of the Friends of the Children and the Socialist Workers' Youth in the 1920s and 1930s were persecuted, imprisoned and also murdered for their political commitment after 1933."
           },
           {
             "type": "image",
@@ -3171,11 +3171,11 @@
           },
           {
             "type": "text",
-            "value": "Die hier verwendeten Bilder überlebten oft nur durch Zufall oder weil sie gut versteckt worden waren und wie ein Schatz gehütet wurden."
+            "value": "The images used here often survived only by chance or because they had been well hidden and kept like a treasure."
           },
           {
             "type": "text",
-            "value": "Ende"
+            "value": "The End"
           }
         ]
       }]
