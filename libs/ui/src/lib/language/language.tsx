@@ -3,14 +3,18 @@ import { AppContext } from '../chapter/context';
 import './language.scss';
 
 export const Language = () => {
-  const [,,language, setLanguage] = useContext(AppContext);
+  const [,,, setLanguage] = useContext(AppContext);
   const changeLanguage = (language) => {
     setLanguage(language)
   }
   return (
     <Fragment>
-      {language === 'en' && <button className='language' onClick={() => changeLanguage('de')}>DE</button>}
-      {language === 'de' && <button className='language' onClick={() => changeLanguage('en')}>EN</button>}
+      <label className='language-switcher'>
+        <input type='checkbox'/>
+        <span className='slider round'></span>
+        <span className='select-de' onClick={() => changeLanguage('de')}>DE</span>
+        <span className='select-en' onClick={() => changeLanguage('en')}>EN</span>
+      </label>
     </Fragment>
   );
 };
