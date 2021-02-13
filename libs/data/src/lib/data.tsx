@@ -20,8 +20,7 @@ export enum ContentType {
   Puzzle = "puzzle",
   Suitcase = "suitcase",
   TicTacToe = "tictactoe",
-  Daily = "daily",
-  Decission = "decission"
+  Daily = "daily"
 }
 
 export interface Content {

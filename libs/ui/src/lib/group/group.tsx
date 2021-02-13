@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import Video from '../video/video';
 import Image from '../image/image';
 import Text from '../text/text';
-import Decission from '../decission/decission';
 import Smokingpit from '../smokingpit/smokingpit';
 import Puzzle from '../puzzle/puzzle';
 import Memory from '../memory/memory';
@@ -29,8 +28,7 @@ const ContentType  = {
   suitcase: Suitcase,
   summary: Summary,
   tictactoe: TicTacToe,
-  daily: Daily,
-  decission: Decission
+  daily: Daily
 }
 
 export const Group = ({
