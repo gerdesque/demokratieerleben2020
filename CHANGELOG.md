@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.8](https://github.com/gerdesque/demokratieerleben2020/compare/v0.2.7...v0.2.8) (2021-02-14)
+
+
+### Features
+
+* **home:** add mail address ([44f5d5e](https://github.com/gerdesque/demokratieerleben2020/commit/44f5d5e4c1941b662cbf68b1c1498eba6de93e6c))
+* **i18n:** add english  translation for chapters and videos ([c1823ce](https://github.com/gerdesque/demokratieerleben2020/commit/c1823ce672fea9cb6e6172731cbcadbc328864cd))
+* **i18n:** add english translation for games ([1291db4](https://github.com/gerdesque/demokratieerleben2020/commit/1291db41c7fd9a9bb510ac430e18c51ce44756ee))
+* **i18n:** add english translation for home chapter ([6aa2b47](https://github.com/gerdesque/demokratieerleben2020/commit/6aa2b47b4f3ab9904c501f71019068755689da75))
+* **i18n:** add language handling for text/videos ([542efc3](https://github.com/gerdesque/demokratieerleben2020/commit/542efc3228bc12fb584d5a62eed8e9dbc21bdef1))
+* **i18n:** adjust language switch ([7d34aec](https://github.com/gerdesque/demokratieerleben2020/commit/7d34aecc6441975e560d9f02c1ac7821a9660252))
+* **layout:** adjust flex handling for image/text/video ([3390ccc](https://github.com/gerdesque/demokratieerleben2020/commit/3390ccc39c8a7ae286bc184efb482725fb479e2e))
+* **layout:** adjust margin handling + daily images ([07fd127](https://github.com/gerdesque/demokratieerleben2020/commit/07fd127c7dfc805fa5815005642f39d10288258c))
+
+
+### Bug Fixes
+
+* adjust video title ([a4bcac4](https://github.com/gerdesque/demokratieerleben2020/commit/a4bcac4274be73035c81ef9a0e37002896f74754))
+* remove decission and footer component ([d8e39ea](https://github.com/gerdesque/demokratieerleben2020/commit/d8e39ea423154e409e7f6ccca6ad7fe26f6cabd7))
+* upgrade json-server from 0.16.1 to 0.16.2 ([20389de](https://github.com/gerdesque/demokratieerleben2020/commit/20389deac1f6c64e7de17236b8a2656b69c91d1e))
+* upgrade multiple dependencies with Snyk ([8bdd9e6](https://github.com/gerdesque/demokratieerleben2020/commit/8bdd9e624c391a769e276357cdf9054496b38b7e))
+* upgrade ra-data-json-server from 3.4.1 to 3.5.3 ([427397b](https://github.com/gerdesque/demokratieerleben2020/commit/427397ba5e8b193f3e44fb7ad7f0f674f57f74be))
+* upgrade react-admin from 3.4.2 to 3.5.3 ([42c395b](https://github.com/gerdesque/demokratieerleben2020/commit/42c395bb8a7fa255ed4e5aecf4d80b6f4bbeb20d))
+* upgrade react-router from 5.1.2 to 5.2.0 ([9595f2f](https://github.com/gerdesque/demokratieerleben2020/commit/9595f2f4ca2c13e53148ef6a9bc2547b175f4ab2))
+* upgrade react-router-dom from 5.1.2 to 5.2.0 ([4d84b24](https://github.com/gerdesque/demokratieerleben2020/commit/4d84b24eb11055cbd95975c1e504f4df1dd2e583))
+
 ### [0.2.7](https://github.com/gerdesque/demokratieerleben2020/compare/v0.2.6...v0.2.7) (2020-07-01)
 
 
