@@ -1,5 +1,5 @@
 {
-  "chapters": [{
+  "kapitel": [{
       "id": 1,
       "name": "Zu Hause",
       "link": "daheim",
@@ -3183,5 +3183,3190 @@
         ]
       }]
     }
-  ]
+  ],
+  "chapters": [{
+        "id": 1,
+        "name": "At Home",
+        "link": "daheim",
+        "groups": [{
+            "grouped": false,
+            "content": [{
+                "type": "text",
+                "value": "It's the late 1920s. In the Weimar Republic there are many children and young people whose parents belong to the large social group of workers who work in coal mining, weaving mills, factories and iron foundries. Among these young people are Anna, Karl and Gerda.",
+                "layer": "fore",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "layer": "back",
+                "value": "daheim_karte"
+              },
+              {
+                "type": "smokingpit",
+                "layer": "base",
+                "value": "smokingpit"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "Anna and Karl are 12 years old and their final school year is soon to come. Gerda is 16 years old and is doing an apprenticeship in a bookbindery."
+              },
+              {
+                "type": "image",
+                "value": "daheim_kinder",
+                "option": "third"
+              },
+              {
+                "type": "text",
+                "value": "Accompany the three as they find their way to a so-called Children's Republic of the 'National working-group of the Friends of the Children' (Reichsarbeitsgemeinschaft der Kinderfreunde) and have a look what they are experiencing there."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "Who would you like to accompany on this journey?"
+              },
+              {
+                "type": "image",
+                "option": "third avatar",
+                "value": "daheim_karl",
+                "title": "Karl"
+              },
+              {
+                "type": "image",
+                "option": "third avatar",
+                "value": "daheim_gerda",
+                "title": "Gerda"
+              },
+              {
+                "type": "image",
+                "option": "third avatar",
+                "value": "daheim_anna",
+                "title": "Anna"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "value": "Anna is living with her family in the Ruhr area. She has just turned 12. Her father works underground in coal mining. Her mother takes care of Anna, her three siblings and her grandfather. The father's wages are just enough to support the family.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "daheim_familie"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "value": "Karl is living with his family in Silesia. He is 12 years old and will soon turn 13. His parents both work in one of the local weaving mills. The wages of the two are just enough to take care of Karl and his five siblings as well as his grandmother.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_1033_Seite58"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "value": "Gerda is 16 years old. With her two smaller siblings and her mother she is living in Leipzig. She has been doing an apprenticeship in a bookbindery for two years and can thus contribute some money to the family income. Her mother works in a factory for electrical switch gears.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_608_Seite112"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "daheim_familie2",
+            "content": [{
+                "value": "What would you like to learn more about?",
+                "type": "text"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "3_Annas_Alltag_mit_Hühnern",
+                "title": "Anna's daily life"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "4_Annas_Zuhause",
+                "title": "Anna's environment"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "2_Anna_Familie",
+                "title": "Anna's family"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "1_Anna_Großvater",
+                "title": "Anna's grandfather"
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "title": "I don't care, I would like to know how she got to the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "daheim_familie2",
+            "content": [{
+                "value": "What would you like to learn more about?",
+                "type": "text"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "7_Karl_Alltag",
+                "title": "Karl's daily life"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "6_Karl_Familie",
+                "title": "Karl's family"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "5_Karl_Großmutter",
+                "title": "Karl's grandmother"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "8_Karls_Zuhause",
+                "title": "Karl's home"
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "title": "I don't care, I would like to know how he got to the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "daheim_familie2",
+            "content": [{
+                "value": "What would you like to learn more about?",
+                "type": "text"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "9_Gerdas_Familie",
+                "title": "Gerda's family"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "10_Gerdas_Alltag_mit_Musik",
+                "title": "Gerda's daily life"
+              },
+              {
+                "type": "video",
+                "option": "fourth",
+                "value": "11_Gerdas_Zuhause",
+                "title": "Gerda's home"
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "title": "I don't care, I would like to know how she got to the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": false,
+            "character": "Anna",
+            "content": [{
+              "type": "text",
+              "layer": "base",
+              "value": "One day the doorbell rings. Anna opens and in front of the door are two young people who look only a few years older than her. Their names are Erna and Hans. The two are telling her that they are involved in an association called the 'National working-group of the Friends of the Children'. They are looking for new members for the local group of the association."
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Karl sometimes listens to his brothers discussing politics. They explain to him the connections between the state, democracy, work and the living conditions of their family."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "daheim_werbung"
+              }
+            ]
+          },
+          {
+            "grouped": false,
+            "character": "Gerda",
+            "content": [{
+              "type": "text",
+              "layer": "base",
+              "value": "Gerda has been attending events of the Socialist Workers' Youth for some time. Now, however, a large democratic and mainly self-organised tent camp of the 'Friends of the Children' is going to take place during the summer."
+            }]
+          },
+          {
+            "grouped": false,
+            "character": "Anna",
+            "content": [{
+              "type": "image",
+              "layer": "fore",
+              "option": "primary",
+              "value": "daheim_werbung"
+            }]
+          },
+          {
+            "grouped": false,
+            "character": "Anna",
+            "content": [{
+              "type": "text",
+              "layer": "base",
+              "value": "Anna is listening to them with great interest. She learns that the association takes care of the working-class children. The local group is mainly organised by the children and young people themselves and organises game afternoons, tent camps and lectures. She is curious and promises the two of them to stop by tomorrow."
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "option": "third",
+                "value": "They also tell him about the association of which they are members: the Socialist Workers' Youth."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2-1781_Seite135"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_1455_(147)",
+            "content": [{
+                "type": "text",
+                "value": "Karl is still too young for this group, but there is also a socialist association for children: the 'Friends of the Children', who also have a local group close by. Karl wants to to pay them a visit, because there is a lot going on in the local group of the 'Friends of the Children'. There are game afternoons, tent camps and also theme afternoons."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1945_SAJ_Frankenthal_1929"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "image",
+                "layer": "back",
+                "option": "second",
+                "value": "02_12_(4)"
+              },
+              {
+                "type": "text",
+                "layer": "base",
+                "value": "The Friends of the Children are close to the Socialist Workers' Youth and take care of the younger ones. Gerda has little time, but she would like to help other working-class children to experience a distraction from their dreary everyday life. That's why she volunteers to help organise and run the tent camp. It should be called a Children's Republic and offer space for thousands of children from all over the Weimar Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "daheim_werbung"
+              },
+              {
+                "type": "text",
+                "layer": "base",
+                "value": "In preparation, the helpers meet at the local group of the Friends of the Children. The meeting takes place in a room of the Social Democratic Party of Germany, whose members are often also involved with the Friends of the Children or the Socialist Workers' Youth."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_1455_(147)",
+            "content": [{
+                "type": "text",
+                "value": "Anna has received a city map with the marked route to the local group. Unfortunately, it is torn into several pieces."
+              },
+              {
+                "type": "text",
+                "value": "Help Anna to put it back together to get to the meeting point. To do this, drag the muddled map sections into the corresponding outlined field. If you have solved the puzzle correctly, you will move on to the next chapter."
+              },
+              {
+                "type": "puzzle",
+                "value": "puzzle",
+                "title": "The path doesn't seem quite right yet. Try it again!"
+              },
+              {
+                "type": "redirect",
+                "value": "ortsgruppe",
+                "option": "primary",
+                "title": "You know a shortcut and pass Anna on the way to the local group."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Karl has received a city map with the marked route to the local group. Unfortunately, it is torn into several pieces."
+              },
+              {
+                "type": "text",
+                "value": "Help Karl to put it back together to get to the meeting point. To do this, drag the muddled map sections into the corresponding outlined field. If you have solved the puzzle correctly, you will move on to the next chapter."
+              },
+              {
+                "type": "puzzle",
+                "value": "puzzle",
+                "title": "The path doesn't seem quite right yet. Try it again!"
+              },
+              {
+                "type": "redirect",
+                "value": "ortsgruppe",
+                "option": "primary",
+                "title": "You know a shortcut and pass Karl on the way to the local group."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_1455_(147)",
+            "content": [{
+                "type": "text",
+                "value": "Gerda has received a city map with the marked route to the local group. Unfortunately, it is torn into several pieces."
+              },
+              {
+                "type": "text",
+                "value": "Help Gerda to put it back together to get to the meeting point. To do this, drag the muddled map sections into the corresponding outlined field. If you have solved the puzzle correctly, you will move on to the next chapter."
+              },
+              {
+                "type": "puzzle",
+                "value": "puzzle",
+                "title": "The path doesn't seem quite right yet. Try it again!"
+              },
+              {
+                "type": "redirect",
+                "value": "ortsgruppe",
+                "option": "primary",
+                "title": "You know a shortcut and pass Gerda on the way to the local group."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Local Group",
+        "link": "ortsgruppe",
+        "groups": [{
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_2424_(2)",
+            "content": [{
+                "type": "text",
+                "value": "Anna enters the youth club of the Friends of the Children, where the local group meetings take place. She is welcomed immediately by Erna and Hans. They are happy that she actually came.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_214_Seite142"
+              },
+              {
+                "value": "Seventeen girls and boys are gathered in the room. She knows some of them from her neighbourhood. Like Anna, they all come from poor families and hope to find some distraction from their depressing everyday life by joining the local group.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "video",
+                "option": "primary",
+                "value": "12_Anna_Ortsgruppe"
+              },
+              {
+                "type": "redirect",
+                "value": "gruppenvorbereitung",
+                "option": "second",
+                "title": "I would like to know more about Anna's local group."
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "option": "second",
+                "title": "I'd rather come to the Children's Republic as soon as possible."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_2424_(2)",
+            "content": [{
+                "type": "text",
+                "value": "Karl enters the youth club of the Friends of the Children, where the local group meetings are taking place. He is welcomed immidiately by two children who introduce themselves as Erika and Otto. They are happy that someone new is there.",
+                "layer": "fore",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_12_(4)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "value": "Twenty-one girls and boys are gathered in the room. Karl knows some of them from the village. The group is currently discussing a tent camp that will take place during the summer and for which a lot has to be prepared.",
+                "type": "text"
+              },
+              {
+                "type": "video",
+                "value": "13_Karl_Ortsgruppe"
+              },
+              {
+                "type": "redirect",
+                "value": "gruppenvorbereitung",
+                "option": "second",
+                "title": "I would like to know more about Karl's local group."
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "option": "second",
+                "title": "I'd rather come to the Children's Republic as soon as possible."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_2424_(2)",
+            "content": [{
+                "type": "text",
+                "value": "Gerda enters the large room in which several dozen people have already gathered. Among them are a few young people of her own age whom she knows from meetings of the Socialist Worker's Youth. But some of the helpers are much older than her.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2-1781_Seite135"
+              },
+              {
+                "value": "One of the older helpers is Berta, who used to work with Gerda's mother in the factory. Last year, however, she was fired for allegedly working too slowly. Since it is difficult to find a job at her age, Berta is unemployed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "value": "Berta has been involved with the Friends of the Children ever since. With this commitment she hopes to make a contribution to a better future life of her children and grandchildren and help them to defend their rights in the new republic.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(103)"
+              },
+              {
+                "value": "The helpers are volunteering in different local groups and accompanying the children in their preparations for the tent camp. The older and more experienced helpers organise the tickets, the necessary tent material as well as the overnight stays with comrades on the way to the Children's Republic.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "value": "From now on, Gerda meets regularly with twenty-six children and four other helpers to prepare the tent camp.",
+                "type": "text"
+              },
+              {
+                "type": "video",
+                "option": "primary",
+                "value": "14_Gerda_Ortsgruppe"
+              },
+              {
+                "type": "redirect",
+                "value": "gruppenvorbereitung",
+                "option": "second",
+                "title": "I would like to learn more about the work of the local group and the role of the helpers."
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "option": "second",
+                "title": "I'd rather come to the Children's Republic as soon as possible."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "The Activities of the Local Group",
+        "link": "gruppenvorbereitung",
+        "groups": [{
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_1455_(90)",
+            "content": [{
+                "type": "text",
+                "value": "Anna's local group meets once a week. In addition to the games and educational evenings, there are regular singing rounds in which the children sing songs together with the helpers. These include songs like 'Vorwärts ihr Frauen' ('Onwards you women') or 'Im blauen Hemd' ('In the blue shirt'). The latter is the anthem of the Red Falcons.",
+                "option": "reveal"
+              },
+              {
+                "value": "All 12 to 14 year-olds are named as Red Falcons in the association of the Friends of the Children.",
+                "option": "third",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(14)"
+              },
+              {
+                "value": "Anna is proud to be a Red Falcon and to wear a blue shirt. She has finally found a place where she feels she belongs and is being understood.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "value": "To attract even more members, the local group of the Friends of the Children has prepared a small exhibition. The Red Falcons have designed wall newspapers, made handicrafts, sewed pennants and made some articles of daily use.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(21)"
+              },
+              {
+                "value": "The exhibition can be visited for an entrance fee of 10 Pfennig. Apart from some people from the local press, many parents come along. Some of the exhibits are donated by the local group of the Worker's Welfare Union.",
+                "type": "text",
+                "option": "fourth"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(49)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "info": "A 'class' refers to a group of people who have common social/economic interests and living conditions.",
+            "content": [{
+                "value": "The educational evenings deal with both political and practical topics, such as hygiene.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "fifth",
+                "value": "2_30_2"
+              },
+              {
+                "value": "Anna learns during a lecture that the misery of the working class is often aggravated by a lack of cleanliness and poorly treated wounds and diseases. The cleanliness of a person's own body and home is particularly important. The handling of infectious diseases in one's own family is also addressed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_1455_(58)",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "2_31_h"
+              },
+              {
+                "value": "By now Anna has been going to the Red Falcon meetings regularly for over half a year. For the summer a large tent camp is planned under the title 'Children's Republic'. There, thousands of children will organise themselves for three weeks.",
+                "option": "third",
+                "type": "text"
+              },
+              {
+                "value": "This of course costs a lot of money. In order to finance the Children's Republic, all local groups of the Kinderfreunde are busy collecting donations, selling symbolic building stones and even the smallest ones give away some of their pocket money.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "value": "The tent camp will take place on an uncultivated field near Kiel. Anna's local group has marked on a map the cities of the Weimar Republic from which children and youth groups have registered for it.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(92)"
+              },
+              {
+                "value": "On the map you can see where the children come from.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "image",
+                "value": "Karte_Weimarer_Republik"
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "option": "primary",
+                "title": "Finally, the first test for the group: the trial camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_1455_(58)",
+            "content": [{
+                "type": "text",
+                "value": "Karl belongs to the Red Falcons within his local group of the Friends of the Children. This name is used for all 12 to 14 year old members.",
+                "layer": "base",
+                "title": "reveal"
+              },
+              {
+                "value": "Karl’s local group of the Falcons meets once a week. Often there are educational evenings, song groups or sports activities.",
+                "type": "text",
+                "layer": "second"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(14)"
+              },
+              {
+                "value": "At the moment, the main task of the group is to prepare for the upcoming 'Children's Republic', the big summer camp. There, thousands of children are to organise themselves for three weeks.",
+                "type": "text",
+                "layer": "third"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_84_(7)"
+              },
+              {
+                "value": "The children sew pennants with the symbol of the Red Falcons and make sure that everyone gets enough material for their own sleeping bag.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "value": "Of course, the tent camp also costs a lot of money. In order to finance the Children's Republic, all local groups of the Friends of the Children are busy collecting donations, selling symbolic building stones and even the smallest ones give away some of their pocket money.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "fifth",
+                "value": "2_31_e"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "value": "Karl also participates diligently and moves from house to house with some friends to find supporters for the fund of the Children's Republic. In the end they can contribute 27 Reichsmark to the local group's deposit.",
+                "type": "text"
+              },
+              {
+                "value": "In the meantime it has been decided where the camp will be set up. Near the city of Kiel. Karl's local group has marked on a map the cities of the Weimar Republic from which children and youth groups have registered for it.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(92)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "value": "On the map you can see where the children come from.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "value": "Karte_Weimarer_Republik"
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "option": "primary",
+                "title": "Finally, the first test for the group: the trial camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_1455_(58)",
+            "content": [{
+                "type": "text",
+                "value": "Gerda has never organised the activities of a children's group before. To know her tasks better, she reads the book 'In the tent camp- a technical handbook for leaders of the Red Falcons' by Hermann Neddermayer. The book has just been published and collects valuable experiences from the previous camps of the Friends of the Children.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_167_(4)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "value": "Gerda reads the pedagogical considerations inquisitively. In addition, there are also practical hints on the design of the tent village, the structure of the camp parliament and the organisational procedures in the Children's Republic. The helpers play a supporting, but not a leading role.",
+                "type": "text",
+                "option": "third"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(14)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "PH-B_279_Löwenstein_in_Seekamp_1927"
+              },
+              {
+                "value": "In Leipzig, a training series is offered for the helpers. Gerda can thus familiarise herself with the socialist pedagogy of the Friends of the Children, because many things are new to her. She takes part in a weekend course entitled 'Psychology and socialist pedagogy as the basis of our youth work'. This course is led by Dr Kurt Löwenstein, the chairman of the 'National working-group of the Friends of the Children'.",
+                "type": "text",
+                "option": "third"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "info": "A horde refers to an undefined group of people - similar to a herd of animals.",
+            "content": [{
+                "value": "In order to get practical training, Gerda also takes part in a training course on 'Methods of working in hordes'. 'Social hiking' is another such method, which is often used in groups (also called 'hordes'). Hiking is a way of exploring the world and foreign places and at the same time analysing the living and economic conditions of the local people.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(49)"
+              },
+              {
+                "value": "Gerda sees this as a profound confrontation with another place. This method will therefore also be well suited to the Children's Republic.",
+                "type": "text",
+                "option": "third"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+              "value": "The association has difficulties in finding volunteers, especially young helpers, who are willing to volunteer for longer periods of time. They often only help for a short time and then have more important things to do. Therefore, the association regularly organises activities exclusively for the volunteers, so that they get to know each other and experience the cohesion within the group of volunteers in addition to the responsible tasks.",
+              "type": "text"
+            }]
+          },
+  
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_2424_(1)"
+              },
+              {
+                "value": "Gerda takes part in a hike to which all helpers from her town are invited. In the end they are sixteen young people, all between 15 and 18 years old. Most of them will also be helpers in the Children's Republic. Gerda is looking forward to going there together with them.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "grouped": false,
+            "character": "Gerda",
+            "content": [{
+              "type": "video",
+              "value": "18_Gerda_Vorbereitung",
+              "layer": "base"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "2_2593_(3)",
+            "content": [{
+                "value": "In the meantime, it has also been decided where the tent camp will be set up. Near the city of Kiel. Gerda's local group has marked on a map the towns of the Weimar Republic from which children and youth groups have registered for it.",
+                "type": "text"
+              },
+              {
+                "value": "On the map you can see where the children come from.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "value": "Karte_Weimarer_Republik",
+                "option": "third"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "value": "A few weeks before the Children's Republic takes place, the Friends of the Children have started to publish a camp newspaper. Gerda's group has also participated with articles and pictures. The newspaper should prepare all participants, but also parents and other interested people for the camp.",
+                "type": "text"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_12_(17)"
+              },
+              {
+                "value": "It also serves to encourage farms and bakeries to cooperate and to donate food. After all, no child should have to be hungry during the camp.",
+                "type": "text",
+                "option": "third"
+              },
+              {
+                "type": "redirect",
+                "value": "probezeltlager",
+                "title": "Finally, the first test for the group: the trial camp."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Camp on Trial",
+        "link": "probezeltlager",
+        "groups": [{
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "video",
+                "option": "second",
+                "value": "15_Anna_Probezeltlager"
+              },
+              {
+                "type": "text",
+                "value": "The trial camp of Anna's local group went well. Everybody got involved in the work with great joy, pitched tents, cooked, organised the evening programme and chose the hiking trails. Now everyone is eagerly awaiting the Children's Republic.",
+                "option": "reveal"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "02_2480_(1)"
+              },
+              {
+                "type": "text",
+                "option": "fourth",
+                "value": "A few weeks ago, the children started to publish their own newspaper, which should prepare all participants, but also parents and interested people for the camp. It is also intended to encourage farmers and bakers to cooperate so that there will be enough food for everyone. After all, no child should have to be hungry during the camp."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_12_(17)"
+              },
+              {
+                "type": "text",
+                "value": "Now the departure is finally imminent. Anna has to pack her things so that she has everything she needs for the next three weeks."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_278_(1)",
+            "info": "Tip: Some things are urgently needed in the Children's Republic, others did not even exist at the end of the 1920s.",
+            "content": [{
+                "type": "text",
+                "option": "third",
+                "value": "Help Anna pack her backpack. What things will she need in the Children's Republic?"
+              },
+              {
+                "type": "text",
+                "option": "third",
+                "value": "To pack an item, pull it directly onto the backpack. When you have finished packing, you will move on to the next chapter."
+              },
+              {
+                "type": "suitcase",
+                "value": "suitcase"
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "title": "You have already gone ahead with another group and are waiting for Anna in the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_278_(1)",
+            "content": [{
+                "type": "video",
+                "option": "second",
+                "value": "16_Karl_Probezeltlager"
+              },
+              {
+                "type": "text",
+                "value": "The trial camp of Karl's local group worked out quite well. Most of the children were happy to get involved in the work, setting up tents, cooking, organizing the evening programme and choosing the hiking trails."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_84_(9)"
+              },
+              {
+                "type": "text",
+                "value": "Only Kurt was there with little interest, shirking work and often distancing himself from the group. The group therefore decided unanimously that Kurt was not allowed to participate in the group's activities if he was not willing to get involved."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(50)"
+              },
+              {
+                "type": "text",
+                "value": "A few weeks before the beginning of the Children's Republic, the children started to publish their own newspaper, which should prepare all participants, but also parents and interested people for the camp. It also serves to encourage farms and bakeries to cooperate so that there is enough food for everyone. After all, no child should have to be hungry during the camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_12_(17)"
+              },
+              {
+                "type": "text",
+                "value": "Now the departure is finally imminent. Karl has to pack his things so that he has everything he needs for the next three weeks."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_2424_(1)",
+            "info": "Tip: Some things are urgently needed in the Children's Republic, others did not even exist at the end of the 1920s.",
+            "content": [{
+                "type": "text",
+                "value": "Help Karl pack his backpack. What things will he need in the Children's Republic?"
+              },
+              {
+                "type": "text",
+                "value": "To pack an item, pull it directly onto the backpack. When you have finished packing, you will move on to the next chapter."
+              },
+              {
+                "type": "suitcase",
+                "value": "rucksack"
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "title": "You have already gone ahead with another group and are waiting for Karl in the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_2424_(1)",
+            "content": [{
+                "type": "video",
+                "value": "17_Gerda_Probezeltlager",
+                "option": "second"
+              },
+              {
+                "type": "text",
+                "value": "The trial camp of Gerda's local group worked out quite well. Most of them were happy to get involved in the work, put up tents, cooked, arranged the evening programme and chose the hiking trails."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "02_84_(9)"
+              },
+              {
+                "type": "text",
+                "value": "Gerda still found it exciting, because as a helper she also had the responsibility for the well-being of the children. Fortunately, everyone behaved in an exemplary manner, nobody was hurt and there was no trouble between the children and helpers."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934"
+              },
+              {
+                "type": "text",
+                "option": "fourth",
+                "value": "Now Gerda still has to clarify with her master bookbinder whether she may stay away from work for three weeks. Gerda is very lucky. The master is himself a member of the Social Democratic Party and therefore happy about Gerda's commitment. He gives her the three weeks unpaid leave, but buys from Gerda a few more donation building stones in return."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(92)"
+              },
+              {
+                "type": "text",
+                "value": "Gerda has not yet packed her things either. Three weeks is a long time."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_278_(1)",
+            "info": "Tip: Some things are urgently needed in the Children's Republic, others did not even exist at the end of the 1920s.",
+            "content": [{
+                "type": "text",
+                "option": "third",
+                "value": "Help Gerda pack her backpack. What things will she need in the Children's Republic?"
+              },
+              {
+                "type": "text",
+                "option": "third",
+                "value": "To pack an item, pull it directly onto the backpack. When you have finished packing, you will move on to the next chapter."
+              },
+              {
+                "type": "suitcase",
+                "value": "suitcase"
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "title": "You have already gone ahead with another group and are waiting for Gerda in the Children's Republic."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "The Journey to the Children's Republic",
+        "link": "reise",
+        "groups": [{
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "After Anna has finished packing, her backpack is full and heavy. She is very happy, because now it can finally start. Her parents and her grandfather are a bit sad, because Anna has never been away from home for a longer period of time - and certainly not alone.",
+                "option": "reveal third"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(56)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "With thirty-five other children and a few helpers accompanying her, Anna takes the train northwards."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_2453_(1)"
+              },
+              {
+                "type": "text",
+                "value": "To pass the time, the children play various games. Anna wants to play 'noughts and crosses' with you because she is bored."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_12_(16)",
+            "content": [{
+                "type": "text",
+                "value": "To play, place your cross in one of the boxes by clicking into it. Then it's Anna's turn. To win, you must place three crosses in a horizontal, vertical or diagonal row."
+              },
+              {
+                "type": "tictactoe",
+                "value": "Drei gewinnt"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_278_(3)"
+              },
+              {
+                "type": "text",
+                "option": "fourth",
+                "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "On Sunday morning, all the children who have travelled to Kiel gather in Kiel's Northern Baltic Sea Hall, there are speeches and music. At the end the choir sings 'Brothers, to the Sun, to Freedom'. Now it's finally time to leave for the Children's Republic."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(61)"
+              },
+              {
+                "type": "text",
+                "value": "The last part of the journey is done by steamer, while the tents have already been brought to their destination by car."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "option": "third",
+                "title": "Enter the Children's Republic!"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_12_(16)",
+            "content": [{
+                "type": "text",
+                "value": "After Karl has finished packing, his rucksack is full and heavy. He is very happy, because now it can finally start. His parents and grandmother are a bit sad, because Karl has never been away from home for a longer time - and certainly not alone."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_45_(8)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "With fourty-two other children and some helpers as companions, Karl travels northwest in the train."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_2453_(1)"
+              },
+              {
+                "type": "text",
+                "value": "To pass the time, the children play various games. Karl wants to play 'noughts and crosses' with you because he is bored."
+              }
+            ]
+          },
+          {
+            "grouped": false,
+            "character": "Karl",
+            "content": [{
+              "type": "image",
+              "option": "second",
+              "value": "02_1455_(51)"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_13_(7)",
+            "content": [{
+                "type": "text",
+                "value": "To play, place your cross in one of the boxes by clicking into it. Then it's Karl's turn. To win, you must place three crosses in a horizontal, vertical or diagonal row."
+              },
+              {
+                "type": "tictactoe",
+                "value": "Drei gewinnt"
+              },
+              {
+                "type": "text",
+                "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "On Sunday morning, all the children who have travelled to Kiel gather in Kiel's Northern Baltic Sea Hall, there are speeches and music. At the end the choir sings 'Brothers, to the Sun, to Freedom'. Now it's finally time to leave for the Children's Republic."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(61)"
+              },
+              {
+                "type": "text",
+                "value": "The last part of the journey is done by steamer, while the tents have already been brought to their destination by car."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "option": "second",
+                "title": "Enter the Children's Republic!"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "info": "Bed lodgers were people who rented a sleeping place (usually a bed in a flat) for a small fee. Due to industrialisation and the large number of people in the cities, living space was usually scarce and expensive.",
+            "content": [{
+                "type": "text",
+                "value": "After Gerda has finished packing, her backpack is full and heavy. She is very happy, because now it can finally start. Nevertheless, she has a bad conscience when she leaves her mother alone with her two siblings for three weeks.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_1590_Seite_138"
+              },
+              {
+                "type": "text",
+                "option": "fourth",
+                "value": "But her mother assured her that she will make it. And at the moment she has a very polite and orderly bed lodger, who also helps her out in the household from time to time."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_2453_(1)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "text",
+                "layer": "fore",
+                "value": "Now Gerda is sitting with twenty-eight children and some other helpers in the train, which is slowly moving north."
+              },
+              {
+                "type": "text",
+                "value": "To pass the time, the children play various games. Gerda doesn't have time for that, because she has to keep an eye on that nobody leans too far out of the window and falls out.",
+                "layer": "second"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(51)"
+              },
+              {
+                "type": "text",
+                "option": "fourth",
+                "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_278_(3)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_12_(16)",
+            "content": [{
+                "type": "text",
+                "value": "On Sunday morning, all the children who have travelled to Kiel gather in Kiel's Northern Baltic Sea Hall, there are speeches and music. At the end the choir sings 'Brothers, to the Sun, to Freedom'. Now it's finally time to leave for the Children's Republic."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(61)"
+              },
+              {
+                "type": "text",
+                "value": "The last part of the journey is done by steamer, while the tents have already been brought to their destination by car."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "option": "second",
+                "title": "Enter the Children's Republic!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "The Children's Republic",
+        "link": "ankunft",
+        "option": "birds",
+        "groups": [{
+            "grouped": true,
+            "character": "Anna",
+            "info": "Chairmen or chairwomen are leaders of a small group/faction belonging to a larger organised group.",
+            "content": [{
+                "type": "text",
+                "value": "Anna has finally arrived in the Children's Republic and has moved into her tent together with several other children. She immediately gets an overview of the area and the camp.",
+                "option": "reveal"
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "32_Anna_Zeltobfrau"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+              "type": "text",
+              "value": "Anna finds this new task exciting and is happy that she can help immediately. Her tent community is only a tiny part of the tent camp, but nevertheless she has the feeling that she is an important part of the democratic order of the Children's Republic."
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_45_(7)",
+            "content": [{
+                "type": "text",
+                "value": "Karl has finally arrived in the Children's Republic and has moved into his tent together with several other children. He immediately gets an overview of the area and the camp.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "fifth",
+                "value": "2_8_Weg_zum_Zeltlager"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "info": "Chairmen or chairwomen are leaders of a small group/faction belonging to a larger organised group.",
+            "content": [{
+                "type": "text",
+                "value": "Ten to twenty tents form a tent village. The representatives of these tents are therefore the local council (or the 'village parliament') of the tent village, headed by an adult helper who is appointed mayor. Additionally three helpers support the village parliament."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_45_(20)"
+              },
+              {
+                "type": "text",
+                "value": "The village parliament discusses all village affairs: hikes, competitions, guard duties and so on. From each of these village councils, several children are elected to the camp parliament. And the camp parliament decides on those matters that concern the whole Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_0028_KR_Westerwald_1932_Lagerwahl"
+              },
+              {
+                "type": "text",
+                "value": "The camp parliament is headed by the camp president. There are also administrators for order, material, transport, food and other things."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "video",
+                "option": "primary",
+                "value": "39_Karl_Zeltobfrau"
+              },
+              {
+                "type": "text",
+                "value": "Everything is different in the Children's Republic than at home: the daily routine, the food, the other children and also the various working groups. There is a lot to experience and try out here."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "text",
+                "value": "Gerda has finally arrived with her group in the Children's Republic. They immediately start to pitch their tents and fill their palliasses. It's a mess: hundreds of children running around at the same time with tent poles, tent sheets and straw!",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_31_aa"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "background": "02_45_(7)",
+            "content": [{
+                "type": "text",
+                "value": "Next door are groups from the Ruhr area and Silesia, who are also busily building their tent villages. Gerda first gets an overview of the area and the camp."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "27_Gerda_Lageraufbau"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "info": "Latrine is an old word for a makeshift toilet without flush.",
+            "content": [{
+              "type": "text",
+              "value": "The other helpers told Gerda how the construction and preparation on site went. The tents and food were transported by comrades by car as well as the books for the camp library and building material for the latrines and the functional tents."
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "text",
+                "option": "third",
+                "value": "At the beginning each local group hands in their collected donations to the camp treasury, which is administered by a helper and three falcons. This money is used to pay the bakeries that deliver bread to the Children's Republic, for example, or the butcher's shops that provide sausage and meat."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_31_k"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "text",
+                "value": "Gerda also met Berta, an acquaintance from her local group, among the helpers. She arrived a few days before the children's groups in order to help set up the latrines and the functional tents."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(139)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "text",
+                "value": "Berta now helps with the bread service and cuts bread into slices, which are then distributed to the children. Gerda is happy that Berta is there. Because Gerda can still learn a lot from her experience with the Friends of the Children."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "26_Gerda_Küchenkommission"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "background": "02_167_(4)",
+            "content": [{
+                "type": "text",
+                "value": "There is much to discover in the Children's Republic. What would you like to do next?"
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              },
+              {
+                "type": "redirect",
+                "value": "falken",
+                "avatar": "Falken",
+                "title": "I would like to know more about the Red Falcons."
+              },
+              {
+                "type": "text",
+                "value": "I would like to get to know other people who are important for the Children's Republic.",
+                "title": "Personen"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_45_(12)"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "full",
+                "avatar": "Priester",
+                "title": "Priest"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Camp Photographer"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Camp Doctor"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "Local Comrades"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "full",
+                "avatar": "Hitlerjugend",
+                "title": "Hitler Youth"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "The Red Falcons",
+        "link": "falken",
+        "groups": [{
+            "grouped": true,
+            "character": "Falken",
+            "background": "2_287_3",
+            "content": [{
+                "type": "text",
+                "value": "All children, who also call themselves Red Falcons, must learn and internalise a number of commandments and rules by heart."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(144)"
+              },
+              {
+                "type": "text",
+                "value": "The aim of these commandments is to ensure that the children later become good, helpful and committed social democrats. In the Children's Republic, these rules and commandments are often recited in the evening before the camp night's rest."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Anna got lost and ended up at a falcon training. Would you like to know more about the Red Falcons?"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Karl got lost and ended up at a falcon training. Would you like to know more about the Red Falcons?"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+              "type": "redirect",
+              "value": "falken",
+              "avatar": "Falken",
+              "title": "Gerda got lost and ended up at a falcon training. Would you like to know more about the Red Falcons?"
+            }]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Other People",
+        "link": "personen",
+        "groups": [{
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+                "type": "text",
+                "value": "Do you want to know more about other people you can meet in the Children's Republic?"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Priester",
+                "title": "Priest"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Camp Photographer"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Camp Doctor"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "Local Comrades"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Hitlerjugend",
+                "title": "Hitler Youth"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "Do you want to know more about other people you can meet in the Children's Republic?"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Priester",
+                "title": "Priest"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Camp Photographer"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Camp Doctor"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "Local Comrades"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Hitlerjugend",
+                "title": "Hitler Youth"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Do you want to know more about other people you can meet in the Children's Republic?"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Priester",
+                "title": "Priest"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerfotograf",
+                "title": "Camp Photographer"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Lagerarzt",
+                "title": "Camp Doctor"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Genossen",
+                "title": "Local Comrades"
+              },
+              {
+                "type": "redirect",
+                "value": "personen",
+                "option": "third",
+                "avatar": "Hitlerjugend",
+                "title": "Hitler Youth"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Priester",
+            "content": [{
+                "type": "video",
+                "option": "second",
+                "value": "19_Besuchstag"
+              },
+              {
+                "type": "text",
+                "value": "One of these church representatives is a Catholic priest from the surrounding area. The Catholic Church in particular rejects the principle of coeducation propagated by the Friends of the Children. Coeducation means that girls and boys are active together in the group. The priest considers the shared tents in particular to be morally reprehensible."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Priester",
+            "background": "02_1455_(102)",
+            "content": [{
+              "type": "image",
+              "value": "02_84_(4)",
+              "option": "third"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Priester",
+            "content": [{
+                "type": "text",
+                "value": "He sees the children's turn towards socialism as a fight against religious education as well as a 'spiritual destruction of the family'. The Friends of the Children are also committed to sex education. They consider this to be important because until far into the 20th century, adults had no idea how children were created due to a misunderstood religious sexual morality."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(99)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Priester",
+            "content": [{
+                "type": "text",
+                "value": "Much of what the Friends of the Children tried out was new for society. The idea of a better world, in which children of workers would also have opportunities and a future, sometimes frightened those who had been in positions of power for centuries. These included the church, but also the nobility, for example."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerfotograf",
+            "content": [{
+                "type": "text",
+                "value": "Photographs are often taken at the tent camp. Although 35mm cameras have been in mass production since 1925, very few working class families own cameras. Because they often cost four to five times the monthly wage of a worker. It was not until 1930 that affordable cameras became available - with larger roll films, but for only 40 Reichsmark.",
+                "option": "reveal"
+              },
+              {
+                "type": "text",
+                "value": "In the tent camp there are only a few people who can operate a camera."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_0189_SAJ_Bielefeld_auf_dem_AJT_in_Hamburg,_1925,_Fotograf"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerfotograf",
+            "background": "02_45_(21)",
+            "content": [{
+                "type": "text",
+                "value": "Walter (a helper from Berlin) founded a photography course in his local group two years ago. Now he is the camp photographer in the Children's Republic."
+              },
+              {
+                "type": "text",
+                "value": "He captures all the important moments: excursions, performances of the legendary camp circus, the food distribution, the music band and of course all other situations of group life."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(108)"
+              },
+              {
+                "type": "text",
+                "value": "Walter, together with some other children, is one of those responsible for the camp newspaper. Irma, Georg and Lotte regularly write short reports for the newspaper, which will later also serve as a souvenir of their time in the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerfotograf",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(46)"
+              },
+              {
+                "type": "summary",
+                "value": "Irma's Report",
+                "title": "8th August\nAt 7 am the wake-up call came. Then we beat the dust out of our blankets. When we were done with it, gymnastics was announced. Shortly afterwards we went to the washing. After washing we had breakfast. Then we repaired our tent. Between 12 o'clock and 1 pm was the Falcon's general assembly. The new camp leader had different topics to negotiate, for example: the visiting day. We had a children's day and the helpers had nothing to say. They had to go on a hike instead. At 1.30 pm we got lunch. There were boiled potatoes with a rollmop. After lunch we had free time. At 3.30 pm we had a snack. After the snack time there was a circus. At 7 pm we had dinner. After that there was a folk dance. All of a sudden a noise had started in the street. The helpers came back from the hike. They were not supposed to get to the camp before 12 o'clock. Hermann Neddermeyer announced camp silence, but there were protests. Hermann told about his escape from England. Soon there was the camp rest. As soon as we were in the tents, the helper’s alarm sounded.\nFriendship.\nIrma"
+              },
+              {
+                "type": "summary",
+                "value": "Georg's Report",
+                "title": "1st August\nWe were woken up this morning by the sound of the radio. Immediately afterwards Ernst, our mayor, came and brought today's slogan. After a while we got up, because it had blown to get out of bed. We quickly shook out our blankets. Then we went to wash ourselves. After coffee we stayed in the tent again, because it was raining. Heinz told us that we should 'pack our monkeys', because it could be that we would move into the emergency quarters today. Our camp president has already gone to town and asks if we could use some school as emergency quarters. So we packed our bags in the morning to be ready to leave and soon we had lunch. The weather was already getting better. In the evening there was a meeting for helpers. There, everything was discussed. It turned out that we were not going to move away today. But, if it continues to rain, we will move to the emergency quarters. In the evening we played in a circle. After the night's rest we soon fell asleep.\nFriendship.\nGeorg"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(146)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerfotograf",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "02_45_(6)"
+              },
+              {
+                "type": "summary",
+                "value": "Lotte's Report",
+                "title": "23rd July\nAt 7 am the signal to get up was given. We got up immediately and shook out our blankets. Then we went straight to gymnastics. Frieda was in charge of gymnastics today. We got ready for washing right away, because we were the first ones today. After breakfast we could play. At 10.30 am we practised a movement choir with Willi. Then we had lunch. There were potatoes, mustard sauce and two eggs. After lunch we wanted to go hiking, but we had to vote first, because some did not want to join us. Finally, we started walking. We walked to the observation tower and picked blueberries. When it started to rain, we went back to the camp. We arrived late. Night's rest was at 9 pm.\nFriendship.\nLotte"
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerarzt",
+            "background": "02_1455_(88)",
+            "content": [{
+              "type": "text",
+              "value": "The camp doctor is a real doctor and usually has a small practice in Bremen. Through his work he regularly sees how important fresh air, good nutrition and sport are for the workers' children. Therefore, he closes his practice for a few weeks in order to support the Children's Republic on a voluntary basis.",
+              "option": "reveal"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerarzt",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "2_29_2_Seite85"
+              },
+              {
+                "type": "text",
+                "value": "He cares for injured and sick children in the Children's Republic. Although every child should be medically examined before travelling, there are always cases of serious illness and epidemics.",
+                "option": "third"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerarzt",
+            "content": [{
+                "type": "text",
+                "value": "Only last month there were reports of a smaller tent camp that was about to close. Several cases of the life-threatening disease diphtheria had occurred there. Fortunately, the affected children were quickly isolated and taken to hospital. The infection of other children was thus prevented."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_30_2"
+              },
+              {
+                "type": "text",
+                "value": "The camp doctor regularly offers educational evenings on the subject of hygiene for the helpers. This knowledge is important so that diseases in the camp have no chance."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerarzt",
+            "content": [{
+                "type": "text",
+                "value": "Twice a week the camp doctor also conducts a first aid course for the interested children. Karl also participates in such a working group."
+              },
+              {
+                "type": "video",
+                "option": "primary",
+                "value": "38_Karl_ErsteHilfe"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Lagerarzt",
+            "content": [{
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Genossen",
+            "background": "02_1455_(96)",
+            "content": [{
+                "type": "text",
+                "value": "In the villages around the tent camp there are many comrades and cooperatives who supply food to the Children's Republic.",
+                "option": "reveal"
+              },
+              {
+                "type": "text",
+                "value": "For example, there are bakeries that bake bread at low prices for the many children. Some consumer cooperatives supply vegetables. Some farmers have also allowed the helpers and children to pick apples on their orchards.",
+                "layer": "fore"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Genossen",
+            "content": [{
+                "type": "text",
+                "option": "third",
+                "value": "A large estate supplies the Children's Republic with mutton."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(2)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Genossen",
+            "content": [{
+                "type": "text",
+                "value": "Without the many well-disposed citizens in the surrounding area, the camp could not take place. And to buy food for so many children in one shop would be impossible on the one hand and on the other hand much too expensive."
+              },
+              {
+                "type": "image",
+                "option": "primary",
+                "value": "02_1455_(121)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Genossen",
+            "content": [{
+                "type": "text",
+                "value": "And how do Anna and Karl like the food in the Children's Republic?"
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "37_Karl_Essen"
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "31_Anna_Essen"
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "background": "02_1455_(127)",
+            "content": [{
+                "type": "video",
+                "option": "second",
+                "value": "21_Nächtlicher_Überfall"
+              },
+              {
+                "type": "text",
+                "value": "Nearly thirty children and young people stand in front of them with glowing torches in their hands. They shout something about 'socialist pigs' and 'traitors to the fatherland' and run away."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "content": [{
+                "type": "text",
+                "option": "fourth",
+                "value": "The children of the tent camp are terrified. They have often heard that the Hitler Youth stormed tent camps of socialist associations. But they had felt very safe."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(22)"
+              },
+              {
+                "type": "text",
+                "option": "fourth",
+                "value": "The helpers now sit down with their respective tent communities and discuss what they have just experienced."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "info": "A class refers to a group of people who have common social/economic interests and living conditions.",
+            "content": [{
+                "type": "text",
+                "value": "The most important point for the Falcons is the commitment to the working class and to a socialist society."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_31_t"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "content": [{
+              "type": "text",
+              "value": "This meant that the Friends of the Children as well as the Social Democratic Party and the German Communist Party were confronted with a growing political movement: the National Socialist German Workers' Party (NSDAP) was making the same effort to court the favour of the workers."
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "content": [{
+                "type": "text",
+                "value": "In contrast to Socialism, however, National Socialism did not stand for peaceful coexistence of all people, but for racism and exclusion of people, especially of the Jewish faith, and the strengthening of the so-called 'people's community', which meant a racially unified society. In this way, National Socialism promoted war between different countries."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_31_z"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "content": [{
+                "type": "text",
+                "value": "Since 1926 there had already been a youth organisation of the NSDAP, the Hitler Youth, which was just as attractive for children as the socialist and social democratic associations."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "25_Karl_Hitlerjugend"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Hitlerjugend",
+            "content": [{
+                "type": "redirect",
+                "value": "weitermitanna",
+                "avatar": "Anna",
+                "title": "I would like to (continue to) explore the Children's Republic with Anna."
+              },
+              {
+                "type": "redirect",
+                "value": "weitermitkarl",
+                "avatar": "Karl",
+                "title": "I would like to (continue to) see what Karl experiences."
+              },
+              {
+                "type": "redirect",
+                "value": "ankunft",
+                "avatar": "Gerda",
+                "title": "I would like to know if Gerda has already arrived at the camp."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Anna's Experiences",
+        "link": "weitermitanna",
+        "groups": [{
+          "grouped": true,
+          "character": "Karl",
+          "content": [{
+            "type": "redirect",
+            "value": "weitermitanna",
+            "avatar": "Anna",
+            "title": "I would like to explore the Children's Republic with Anna."
+          }]
+        },
+        {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+              "type": "redirect",
+              "value": "weitermitanna",
+              "avatar": "Anna",
+              "title": "I would like to explore the Children's Republic with Anna."
+            }]
+        },
+        {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_1455_(55)",
+            "content": [{
+                "type": "text",
+                "value": "In the Children's Republic it is necessary to fill many days with a programme, agree on activities and organise interest groups.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
+              },
+              {
+                "type": "text",
+                "value": "In order that all this can work for two thousand children, there is an exact daily schedule."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "option": "third",
+                "value": "What does the daily schedule look like? Help Anna to put the events of the day in the right order."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "layer": "base",
+                "value": "2_30_1"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "To put the individual points of the day in the right order, simply drag them onto the poster. Click on 'View daily schedule!' to view the original daily schedule."
+              },
+              {
+                "type": "daily",
+                "value": "daily"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "Anna can hardly believe that so many children and young people are gathered in one place here in the Children's Republic. It gives her great pleasure to meet new children every day, even if this sometimes has its difficulties."
+              },
+              {
+                "type": "video",
+                "option": "primary",
+                "value": "30_Anna_Dialekte"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "Even if the children sometimes talk at cross purposes and use different words, there is one thing they all understand and like equally well: cinema."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_31_c"
+              },
+              {
+                "type": "text",
+                "value": "In the afternoon, the helpers organised a film screening for the young republicans in a nearby cinema. In two shifts all children watch a silent movie by Buster Keaton. No words are needed for this, because everyone understands this humour."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "Usually, excursions and working groups take place before lunch."
+              },
+              {
+                "type": "text",
+                "value": "The quieter afternoons can be filled by the children themselves to pursue their interests. Many then spend the time reading and writing letters."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(135)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "However, group matters sometimes need to be clarified during this time. The children also call this time 'tear-hair-hour' because there are often lively discussions."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(97)"
+              },
+              {
+                "type": "text",
+                "value": "Every now and then, the volunteers give natural history lectures in the individual tent villages. This helps the children learn about the animals and plants in the area."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_1455_(81)",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_2453_(2)"
+              },
+              {
+                "type": "text",
+                "value": "Some afternoons the whole camp moves! The children then learn folk dances from all parts of the republic and even from other countries. They dance all together: Boys and girls."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "background": "02_1455_(81)",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "2_31_j"
+              },
+              {
+                "type": "text",
+                "option": "third",
+                "value": "In the evenings there are sometimes cultural events and singsongs."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "Almost all matters are decided democratically. Nevertheless, there are sometimes situations in which this is of no use, because..."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "29_Anna_Gewitter"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "In such moments, the whole Children's Republic has to pull together. Everyone has a task."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_45_(9)"
+              },
+              {
+                "type": "text",
+                "option": "third",
+                "value": "The tents have to be put up again, holes have to be plugged, broken branches and twigs have to be collected and a wooden path is built over the muddy field floor."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_8_Stegbau"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "text",
+                "value": "Anna heard from some volunteers that there was a camp last summer where it rained continuously for a fortnight. The children spent most of their time in the tent and most of the excursions and activities went literally down the drain."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(132)"
+              },
+              {
+                "type": "text",
+                "value": "But it is not only after a storm that there is a lot to do for all the children at the camp. Everyone has to participate in the various work activities."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(57)"
+              },
+              {
+                "type": "text",
+                "value": "This includes kitchen duty, guard duty, post office, camp newspaper, order duty, camp library, etc."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Anna",
+            "content": [{
+                "type": "video",
+                "option": "primary",
+                "value": "20_Anna_Lagerbücherei"
+              },
+              {
+                "type": "text",
+                "value": "Would you like to know how Anna and Karl meet and what they experience together?"
+              },
+              {
+                "type": "redirect",
+                "value": "annameetskarl",
+                "option": "third",
+                "title": "Yes, sure."
+              },
+              {
+                "type": "redirect",
+                "value": "annaundausflüge",
+                "option": "third",
+                "title": "No, I'd rather go on a few more excursions with Anna."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Karl's Experiences",
+        "link": "weitermitkarl",
+        "character": "Karl",
+        "groups": [{
+          "grouped": true,
+          "character": "Anna",
+          "content": [{
+            "type": "redirect",
+            "value": "weitermitkarl",
+            "avatar": "Karl",
+            "title": "I would like to explore the Children's Republic with Karl."
+          }]
+        },
+        {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
+              "type": "redirect",
+              "value": "weitermitkarl",
+              "avatar": "Karl",
+              "title": "I would like to explore the Children's Republic with Karl."
+            }]
+        },
+        {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_45_(3)",
+            "content": [{
+                "type": "text",
+                "value": "In the Children's Republic, it is important to fill many days with programmes, to agree on activities and to organise interest groups.",
+                "option": "reveal"
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_8_Kinder_am_Strand_in_Turnkleidung"
+              },
+              {
+                "type": "text",
+                "value": "To make it all work for two thousand children, there is a precise daily schedule."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+              "type": "text",
+              "value": "What does the daily schedule look like? Help Karl to put the individual daily events in the right order."
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+              "type": "image",
+              "option": "third",
+              "value": "2_30_1"
+            }]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "To put the individual points of the day in the right order, simply drag them onto the poster. Click on 'Show daily schedule!' to see the original daily schedule."
+              },
+              {
+                "type": "daily",
+                "value": "Tagesplan"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "A large part of the day consists of the children and young people being able to pursue their own interests and participate in one of the many different working groups. Often the children also organise their own events or excursions."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(16)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Karl can hardly decide what to do because of all the possibilities. In the end, he finds something that interests him."
+              },
+              {
+                "type": "video",
+                "option": "primary",
+                "value": "38_Karl_ErsteHilfe"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Karl can scarcely believe that so many children and young people are gathered here in one heap in the Children's Republic."
+              },
+              {
+                "type": "image",
+                "option": "primary",
+                "value": "2_8_5"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "It gives him great pleasure to meet new children every day, even if this sometimes has its difficulties."
+              },
+              {
+                "type": "video",
+                "option": "primary",
+                "value": "36_Karl_Dialekte"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "background": "02_1455_(25)",
+            "content": [{
+                "type": "text",
+                "value": "Excursions and work groups usually take place before lunch. The quieter afternoons can be filled by the children themselves. Many then spend the time reading and writing letters."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(135)"
+              },
+              {
+                "type": "text",
+                "value": "However, group matters sometimes have to be clarified during this time."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "2_31_v"
+              },
+              {
+                "type": "text",
+                "value": "On some afternoons, the whole camp dances, there are circus performances or theatre productions by the children and helpers."
+              },
+              {
+                "type": "video",
+                "option": "third",
+                "value": "22_Karl_Dialektabend"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Even though many things are well organised at the camp and almost everything is decided democratically, there are situations here that no one can influence, because..."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "35_Karl_Gewitter"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "But it is not only after a storm that there is a lot to do for all the children at the camp. Everyone has to take part in the various work duties. This includes kitchen duty, guard duty, the post office, the camp newspaper, the security service, the camp library, etc."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_8_Stegbau"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Karl",
+            "content": [{
+                "type": "text",
+                "value": "Karl has already had guard duty twice and kitchen duty once. He thinks it is good that he can take on such a meaningful task."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(57)"
+              },
+              {
+                "type": "text",
+                "value": "Would you like to know how Anna and Karl meet and what they experience together?"
+              },
+              {
+                "type": "redirect",
+                "value": "annameetskarl",
+                "option": "third",
+                "title": "Yes, sure."
+              },
+              {
+                "type": "redirect",
+                "value": "annaundausflüge",
+                "option": "third",
+                "title": "No, I'd rather go on a few more excursions with Anna."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Anna and the excursions",
+        "link": "annaundausflüge",
+        "groups": [{
+            "grouped": true,
+            "background": "02_1455_(60)",
+            "content": [{
+                "type": "text",
+                "value": "An important activity during the Children's Republic is also the so-called 'social hiking'.",
+                "option": "reveal"
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "34_Anna_Ausflug"
+              },
+              {
+                "type": "text",
+                "value": "This is not only about hiking as a sports activity, but also about the social and economic living environment of the local people."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(123)"
+              },
+              {
+                "type": "text",
+                "value": "Anna's tent village takes a hike to a nearby brickwork, which leads through some workers' settlements. Many working families live there in poor conditions. In conversations with the residents, they learn that most of them work in one of the nearby shipyards and at the harbour.",
+                "layer": "fore"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(64)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "info": "A class refers to a group of people who share common social/economic interests and circumstances.",
+            "content": [{
+                "type": "text",
+                "value": "But there are still many farming villages around here. For Anna, some places seem much more idyllic than what she knows from home. But she understands that even small farmers are often poor and have little to eat."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "24_Anna_Arbeiterklasse"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "In the camp library Anna met Karl, with whom she gets on well. They even live in the same tent village."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_2593_(2)"
+              },
+              {
+                "type": "text",
+                "value": "Anna tries to get Karl interested in the parliamentary structure of the Children's Republic, which so far seems very complicated to him."
+              },
+              {
+                "type": "redirect",
+                "value": "gemeinsam",
+                "title": "Karl and Anna mostly spend the last days of the camp together."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Anna and Karl",
+        "link": "annameetskarl",
+        "groups": [{
+            "grouped": true,
+            "background": "02_1455_(13)",
+            "content": [{
+                "type": "text",
+                "value": "Anna met Karl in the camp library. He comes from Silesia and speaks a dialect that Anna has never heard. Karl comes regularly to borrow new books.",
+                "layer": "fore"
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "23_Anna_und_Karl_mit_Musik"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "But both also like to read novels about voyages of discovery and fantastic places. Karl has already read two books by Jules Verne during the camp.",
+                "layer": "fore"
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_8_Lesende_Jungs_im_Zelt"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "layer": "fore",
+                "value": "There are also some very new novels in the camp library. Anna, for example, read 'Emil and the Detectives' by Erich Kästner and was thrilled."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_1455_(118)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "background": "02_167_(3)",
+            "content": [{
+                "type": "text",
+                "layer": "fore",
+                "value": "However, there is also literature that is intended to strengthen the children's intellectual and moral attitude. Alongside important works by socialist authors, there is also highly topical anti-war literature, e.g. 'All Quiet on the Western Front' by Erich Maria Remarque."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_1455_(91)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "Anna and Karl not only have similar interests, but also happen to live in the same tent village. As a result, they now spend a lot of time together. Through Anna and her role as tent chairwoman, Karl is now also more interested in the parliamentary work in the Children's Republic."
+              },
+              {
+                "type": "redirect",
+                "value": "gemeinsam",
+                "title": "Karl and Anna mostly spend the last days of the camp together."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Together in the Children's Republic",
+        "link": "gemeinsam",
+        "groups": [{
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "In Anna's and Karl's tent village, several children have come together to make a request to the camp parliament. They want to ensure that gymnastics takes place in the morning after breakfast and not before."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_8_Mädchen_in_Turnkleidung_am_Strand"
+              },
+              {
+                "type": "text",
+                "value": "After receiving majority support for this proposal in their tent community, they submit the proposal to the tent village council."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "background": "02_13_(1)",
+            "content": [{
+                "type": "text",
+                "value": "The tent village council consists of fifteen children and the mayor. Before the vote, the mayor points out that sport with a full stomach is unhealthy. Nevertheless, the majority of the tent village council agrees to the motion, because the time until breakfast is often too long for the children."
+              },
+              {
+                "type": "text",
+                "option": "third",
+                "value": "The mayor must now pass the proposal on to the camp parliament so that all representatives of the tent village councils can discuss and vote on it. In the end, the camp parliament rejects the proposal with a large majority."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_12_(1)"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "image",
+                "option": "third",
+                "value": "2_8_Junge_mit_Becher"
+              },
+              {
+                "type": "text",
+                "option": "third",
+                "value": "It justifies its decision with the fact that the kitchen staff needs some time after getting up to prepare the meal and that sport before the meal is healthier than directly after."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "background": "02_1455_(91)",
+            "content": [{
+                "type": "text",
+                "value": "Anna realised that the process is really complicated. In order to better explain the whole camp structure, she made up a game. She plays it with Karl to see if it is understandable."
+              },
+              {
+                "type": "text",
+                "value": "In this game, the aim is to find identical pairs. Just click on the cards to see what is on the back. Matching pairs remain face up."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "If you win the game, the Children's Republic will slowly come to an end."
+              },
+              {
+                "type": "memory",
+                "value": "Memory"
+              },
+              {
+                "type": "redirect",
+                "value": "endkapitel",
+                "option": "full",
+                "title": "You've played enough and you're getting homesick..."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "The End of the Children's Republic",
+        "link": "endkapitel",
+        "groups": [{
+            "grouped": true,
+            "background": "02_1455_(56)",
+            "content": [{
+                "type": "text",
+                "option": "reveal",
+                "value": "Gerda has watched the two children play and thinks Anna's idea is great. She wants to try out the game with her local group when they prepare for the next camp."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "2_31_ac"
+              },
+              {
+                "type": "text",
+                "value": "Since Gerda is only a few years older than Anna and Karl, she has a good connection to them. They listen eagerly as she tells them how she came to the Socialist Workers' Youth and why she became a helper in the Children's Republic."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "Maybe in a few years Anna and Karl will want to help out in a Children's Republic. After all, they have already gained enough experience."
+              },
+              {
+                "type": "video",
+                "option": "second",
+                "value": "28_Deutschfranzösisches_Zeltlager"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "Until then, however, they plan to take part in one of the next Workers' Youth Days. This takes place every one or two years and is expected to be held in Frankfurt am Main in 1931."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "value": "02_0016_AJT_in_Wien_1929"
+              },
+              {
+                "type": "text",
+                "value": "Working-class children from all over the Weimar Republic meet there, express their solidarity and make plans for a better future."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "The Children's Republic is slowly coming to an end. For Anna and Karl, this time has flown by."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "2_31_y"
+              },
+              {
+                "type": "text",
+                "value": "They have made many new friends. Many of them, as the two of them, will soon start an apprenticeship in one of the big factories."
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "Anna and Karl hope that they will perhaps write letters to each other, if they can still find the time and energy to do so after work. They would also like to write to Gerda."
+              },
+              {
+                "type": "image",
+                "option": "second",
+                "value": "02_0013_Lübecker_Bucht_1930_Briefkasten"
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "content": [{
+                "type": "text",
+                "value": "But at least Karl and Anna no longer feel so alone, because they now know that there are many children and young people who are in a similar situation as they are. And they all hope for a better future for themselves and their families."
+              },
+              {
+                "type": "image",
+                "value": "B41ABEA7-64DA-4D8E-8E1B-F55A38DD6E37",
+                "option": "third"
+              },
+              {
+                "type": "redirect",
+                "value": "ausblick",
+                "option": "full",
+                "title": "But what became of the children after the 1920s?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "The End of the Republic",
+        "link": "ausblick",
+        "groups": [{
+          "grouped": true,
+          "background": "PH_dig_205_Seite205",
+          "content": [{
+              "type": "text",
+              "value": "Many of the children and young people who took part in camps of the Friends of the Children and the Socialist Workers' Youth in the 1920s and 1930s were persecuted, imprisoned and also murdered for their political commitment after 1933."
+            },
+            {
+              "type": "image",
+              "option": "third",
+              "value": "02_1455_(19)"
+            },
+            {
+              "type": "text",
+              "value": "The images used here often survived only by chance or because they had been well hidden and kept like a treasure."
+            },
+            {
+              "type": "text",
+              "value": "The End"
+            }
+          ]
+        }]
+      }
+    ]
 }

@@ -8,25 +8,31 @@ import { Nav, Chapter, AppContext } from '@gerdesque/ui';
 import { ChapterProps } from '@gerdesque/data';
 import './app.scss';
 
-import appDe from './app.json';
-import appEn from './app_en.json';
+import app from './app.json';
 import { API_URL } from '@gerdesque/data';
 
 (window as any).soundManager.setup({debugMode: false});
 
 export const App = () => {
   const [character, setCharacter] = usePersistedState('character', 'default');
-  const [language, setLanguage] = usePersistedState('language', 'de');
-  const [chapters, setChapters] = useState(appDe.chapters);
+  const [language, setLanguage] = useState('de');
+  const [chapters, setChapters] = useState(app.chapters);
   const [title, setTitle] = useState('Demokratie erleben');
 
   useEffect(() => {
-    setChapters(language === 'de' ? appDe.chapters : appEn.chapters);
     setTitle(language === 'de' ? 'Demokratie erleben' : 'Living Democracy');
     document.title = title;
-    fetch(`${API_URL}/chapters`)
+    if (language === 'de') {
+    fetch(`${API_URL}/kapitel`)
       .then(_ => _.json())
-      .then(setChapters);
+      .then(setChapters)
+      .catch(_ => setChapters(app.kapitel));
+    } else {
+      fetch(`${API_URL}/chapters`)
+      .then(_ => _.json())
+      .then(setChapters)
+      .catch(_ => setChapters(app.chapters));
+    }
   }, [language, title]);
 
   const renderChapter = (routerProps) => {

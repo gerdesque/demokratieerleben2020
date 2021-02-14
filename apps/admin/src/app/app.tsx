@@ -20,6 +20,7 @@ export const Admin = () => {
       title="Demokratie erLeben Admin"
       i18nProvider={i18nProvider}
       dataProvider={dataProvider}>
+      <Resource name="kapitel" {...chapters} />
       <Resource name="chapters" {...chapters} />
     </ReactAdmin>
   );
