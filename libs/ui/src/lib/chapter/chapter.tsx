@@ -8,11 +8,9 @@ import {AppContext } from '../chapter/context';
 
 import { ChapterProps } from '@gerdesque/data';
 
-
-
 export const Chapter = (props: ChapterProps) => {
 
-  const [character, setCharacter] = useContext(AppContext);
+  const [character] = useContext(AppContext);
 
   const renderChapterGroups = () => {
     return props.groups.map((group, index) =>
