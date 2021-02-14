@@ -42,7 +42,8 @@ export const Daily = (props: DailyProps) => {
 
   const showStatus = () => {
     if (result) {
-      return <Image value='daily_result' />
+      const imgValue = language === 'de' ? 'daily_result_DE' : 'daily_result_EN';
+      return <Image value={imgValue} />
     }
     return (
       <>

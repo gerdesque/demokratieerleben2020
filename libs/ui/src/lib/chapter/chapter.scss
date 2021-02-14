@@ -25,18 +25,19 @@
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    padding: 0 16px;
 
     &--fore {
       transform: translateZ(90px) scale(.7);
       z-index: 1;
       align-content: baseline;
+      padding: 0 16px;
     }
 
     &--base {
       transform: translateZ(0);
       z-index: 4;
       background: 50% 50% / cover;
+      padding: 0 16px;
     }
 
     &--back {
@@ -96,6 +97,7 @@
 
 .fourth {
   flex: 0 25%;
+  padding: 5px;
 }
 
 .fifth {

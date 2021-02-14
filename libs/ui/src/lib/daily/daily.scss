@@ -29,13 +29,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 0.9rem;
   }
 
   img {
     height: auto;
     text-align: center;
-    width: 60%;
+    width: 100%;
     margin: 0 auto 0;
     justify-content: center;
     display: flex;
@@ -50,5 +50,6 @@
 @media (min-width: 600px) {
   .daily .component_box {
     height: 45vh;
+    font-size: 1.4rem;
   }
 }
