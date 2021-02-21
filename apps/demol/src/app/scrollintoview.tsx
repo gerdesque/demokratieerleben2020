@@ -6,8 +6,8 @@ const ScrollIntoView = ({ children, location }) => {
   const prevLocation = useRef();
 
   useEffect(() => {
+    document.querySelector('.parallax__header').scrollIntoView({ behavior: 'smooth' });
     if (prevLocation.current !== location.pathname) {
-      document.querySelector('.parallax__header').scrollIntoView({ behavior: 'smooth' });
       prevLocation.current = location.pathname;
     }
   }, [location]);

@@ -944,18 +944,13 @@
           "grouped": true,
           "character": "Anna",
           "content": [{
-              "type": "image",
-              "option": "third",
-              "value": "02_2480_(1)"
-            },
-            {
               "type": "text",
-              "option": "fourth",
+              "option": "second",
               "value": "Vor einigen Wochen haben die Kinder begonnen, ihre eigene Zeitung herauszugeben, die alle Teilnehmenden, aber auch Eltern und Interessierte auf das Zeltlager vorbereiten soll. Außerdem soll sie dazu dienen, Bauern und Bäcker zur Kooperation zu gewinnen, damit es auch genügend Lebensmittel für alle geben wird. Schließlich soll kein Kind während des Zeltlagers hungern müssen."
             },
             {
               "type": "image",
-              "option": "third",
+              "option": "second",
               "value": "02_12_(17)"
             },
             {
@@ -1103,14 +1098,10 @@
         {
           "grouped": true,
           "character": "Gerda",
-          "content": [{
-              "type": "image",
-              "option": "third",
-              "value": "03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934"
-            },
+          "content": [
             {
               "type": "text",
-              "option": "fourth",
+              "option": "second",
               "value": "Nun muss Gerda noch mit ihrem Meister klären, ob sie für 3 Wochen von der Arbeit fernbleiben darf. Gerda hat viel Glück. Ihr Buchbindermeister ist selbst bei der SPD und freut sich über Gerdas Einsatz. Er stellt sie für die drei Wochen unbezahlt frei, kauft Gerda dafür aber noch einige Spendenbausteine ab."
             },
             {
@@ -1208,7 +1199,7 @@
             },
             {
               "type": "text",
-              "option": "fourth",
+              "option": "second",
               "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
             }
           ]
@@ -1367,7 +1358,7 @@
             },
             {
               "type": "text",
-              "option": "fourth",
+              "option": "second",
               "value": "Nach einem halben Tag kommen die Kinder und Helfer*innen erschöpft, aber freudig in Kiel an, wo sie eine Nacht bei den Kieler Genoss*innen übernachten werden, bevor es am nächsten Tag gemeinsam mit allen anderen zum Zielort gehen soll."
             },
             {
@@ -3802,7 +3793,6 @@
           {
             "grouped": true,
             "character": "Anna",
-            "info": "A 'class' refers to a group of people who have common social/economic interests and living conditions.",
             "content": [{
                 "value": "The educational evenings deal with both political and practical topics, such as hygiene.",
                 "type": "text"
@@ -3833,7 +3823,7 @@
                 "type": "text"
               },
               {
-                "value": "This of course costs a lot of money. In order to finance the Children's Republic, all local groups of the Kinderfreunde are busy collecting donations, selling symbolic building stones and even the smallest ones give away some of their pocket money.",
+                "value": "This of course costs a lot of money. In order to finance the Children's Republic, all local groups of the Friends of the Children are busy collecting donations, selling symbolic building stones and even the smallest ones give away some of their pocket money.",
                 "type": "text"
               }
             ]
@@ -4089,15 +4079,20 @@
               },
               {
                 "type": "image",
-                "option": "third",
+                "option": "second",
                 "value": "02_12_(17)"
               },
               {
                 "value": "It also serves to encourage farms and bakeries to cooperate and to donate food. After all, no child should have to be hungry during the camp.",
                 "type": "text",
                 "option": "third"
-              },
-              {
+              }
+            ]
+          },
+          {
+            "grouped": true,
+            "character": "Gerda",
+            "content": [{
                 "type": "redirect",
                 "value": "probezeltlager",
                 "title": "Finally, the first test for the group: the trial camp."
@@ -4129,18 +4124,13 @@
             "grouped": true,
             "character": "Anna",
             "content": [{
-                "type": "image",
-                "option": "third",
-                "value": "02_2480_(1)"
-              },
-              {
                 "type": "text",
-                "option": "fourth",
+                "option": "second",
                 "value": "A few weeks ago, the children started to publish their own newspaper, which should prepare all participants, but also parents and interested people for the camp. It is also intended to encourage farmers and bakers to cooperate so that there will be enough food for everyone. After all, no child should have to be hungry during the camp."
               },
               {
                 "type": "image",
-                "option": "third",
+                "option": "second",
                 "value": "02_12_(17)"
               },
               {
@@ -4289,13 +4279,8 @@
             "grouped": true,
             "character": "Gerda",
             "content": [{
-                "type": "image",
-                "option": "third",
-                "value": "03_0046_Kurt_Löwenstein_bei_den_franz._Falken_1934"
-              },
-              {
                 "type": "text",
-                "option": "fourth",
+                "option": "second",
                 "value": "Now Gerda still has to clarify with her master bookbinder whether she may stay away from work for three weeks. Gerda is very lucky. The master is himself a member of the Social Democratic Party and therefore happy about Gerda's commitment. He gives her the three weeks unpaid leave, but buys from Gerda a few more donation building stones in return."
               },
               {
@@ -4393,7 +4378,7 @@
               },
               {
                 "type": "text",
-                "option": "fourth",
+                "option": "second",
                 "value": "After half a day, the children and helpers arrive exhausted but happy in Kiel, where they will spend one night with their local comrades before they are supposed to go to their destination the next day together with all the other participants."
               }
             ]
@@ -4640,7 +4625,7 @@
             "info": "Chairmen or chairwomen are leaders of a small group/faction belonging to a larger organised group.",
             "content": [{
                 "type": "text",
-                "value": "Ten to twenty tents form a tent village. The representatives of these tents are therefore the local council (or the 'village parliament') of the tent village, headed by an adult helper who is appointed mayor. Additionally three helpers support the village parliament."
+                "value": "Ten to twenty tents form a tent village. The representatives of these tents are called chairpersons and form therefore the local council (or the 'village parliament') of the tent village, headed by an adult helper who is appointed mayor. Additionally three helpers support the village parliament."
               },
               {
                 "type": "image",
@@ -5795,7 +5780,7 @@
             "background": "02_45_(3)",
             "content": [{
                 "type": "text",
-                "value": "In the Children's Republic, it is important to fill many days with programmes, to agree on activities and to organise interest groups.",
+                "value": "In the Children's Republic, it is important to fill many days with a programme, to agree on activities and to organise interest groups.",
                 "option": "reveal"
               },
               {
@@ -5813,18 +5798,17 @@
             "grouped": true,
             "character": "Karl",
             "content": [{
-              "type": "text",
-              "value": "What does the daily schedule look like? Help Karl to put the individual daily events in the right order."
-            }]
-          },
-          {
-            "grouped": true,
-            "character": "Karl",
-            "content": [{
-              "type": "image",
-              "option": "third",
-              "value": "2_30_1"
-            }]
+                "type": "text",
+                "option": "third",
+                "value": "What does the daily schedule look like? Help Karl to put the events of the day in the right order."
+              },
+              {
+                "type": "image",
+                "option": "third",
+                "layer": "base",
+                "value": "2_30_1"
+              }
+            ]
           },
           {
             "grouped": true,
@@ -6037,7 +6021,6 @@
           },
           {
             "grouped": true,
-            "info": "A class refers to a group of people who share common social/economic interests and circumstances.",
             "content": [{
                 "type": "text",
                 "value": "But there are still many farming villages around here. For Anna, some places seem much more idyllic than what she knows from home. But she understands that even small farmers are often poor and have little to eat."
