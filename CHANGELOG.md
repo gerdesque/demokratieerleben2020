@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.9](https://github.com/gerdesque/demokratieerleben2020/compare/v0.2.8...v0.2.9) (2021-02-21)
+
+
+### Features
+
+* **admin:** adjust admin ui chapter overview en/de ([652e1d3](https://github.com/gerdesque/demokratieerleben2020/commit/652e1d3e8fa61fbd33cb3b77ed10b067561b9166))
+
+
+### Bug Fixes
+
+* **i18n:** adjust english groups and redirecting to same chapter ([eaaca86](https://github.com/gerdesque/demokratieerleben2020/commit/eaaca86f57b03b7ce6196e5082ce1d989d1c39d6))
+* **layout:** adjust full/primary display ([a9746b9](https://github.com/gerdesque/demokratieerleben2020/commit/a9746b9625566d9d70d91d42ce08e46736e2896e))
+
 ### [0.2.8](https://github.com/gerdesque/demokratieerleben2020/compare/v0.2.7...v0.2.8) (2021-02-14)
 
 
