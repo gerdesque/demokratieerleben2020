@@ -36,7 +36,7 @@
   "dependencies": {
     "document-register-element": "1.14.3",
     "json-server": "^0.16.2",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "ra-data-json-server": "^3.5.3",
     "ra-language-german": "^2.1.2",
     "react": "16.14.0",
