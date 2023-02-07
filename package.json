@@ -43,7 +43,7 @@
     "react-admin": "^3.5.3",
     "react-dom": "16.14.0",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
     "@angular/forms": "*",
