@@ -5251,6 +5251,11 @@ classnames@^2.2.5, classnames@~2.2.5:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
+classnames@~2.3.1:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 clean-css@4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -9597,6 +9602,11 @@ inflection@~1.12.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.12.0.tgz#a200935656d6f5f6bc4dc7502e1aecb703228416"
   integrity sha1-ogCTVlbW9fa8TcdQLhrstwMihBY=
+
+inflection@~1.13.1:
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.13.4.tgz#65aa696c4e2da6225b148d7a154c449366633a32"
+  integrity sha512-6I/HUDeYFfuNCVS3td055BaXBwKYuzw7K3ExVMStBowKo9oOAMJIXIHvdyR3iboTCp1b+1i5DSkIZTcwIktuDw==
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -13986,13 +13996,27 @@ ra-core@^3.12.2:
     query-string "^5.1.1"
     reselect "~3.0.0"
 
-ra-data-json-server@^3.5.3:
-  version "3.12.2"
-  resolved "https://registry.yarnpkg.com/ra-data-json-server/-/ra-data-json-server-3.12.2.tgz#b681059acece123eab015a2ad5557877659a36ff"
-  integrity sha512-H/Z2C29KRruqaAedzKduzwgTS3h53q80EBQGHCdeiErRM8esDZT+4mgwvwecyBq8Nrh40K4YW3h67fcfkcVGBA==
+ra-core@^3.19.12:
+  version "3.19.12"
+  resolved "https://registry.yarnpkg.com/ra-core/-/ra-core-3.19.12.tgz#440afa96b18b5170c0b00965c3747a5223277b8d"
+  integrity sha512-E0cM6OjEUtccaR+dR5mL1MLiVVYML0Yf7aPhpLEq4iue73X3+CKcLztInoBhWgeevPbFQwgAtsXhlpedeyrNNg==
+  dependencies:
+    classnames "~2.3.1"
+    date-fns "^1.29.0"
+    eventemitter3 "^3.0.0"
+    inflection "~1.13.1"
+    lodash "~4.17.5"
+    prop-types "^15.6.1"
+    query-string "^5.1.1"
+    reselect "~3.0.0"
+
+ra-data-json-server@^3.19.12:
+  version "3.19.12"
+  resolved "https://registry.yarnpkg.com/ra-data-json-server/-/ra-data-json-server-3.19.12.tgz#1e7e9b13192863556cb5c4e02dfb8c027666abc4"
+  integrity sha512-SEa0ueZd9LUG6iuPnHd+MHWf7BTgLKjx3Eky16VvTsqf6ueHkMU8AZiH1pHzrdxV6ku5VL34MCYWVSIbm2iDnw==
   dependencies:
     query-string "^5.1.1"
-    ra-core "^3.12.2"
+    ra-core "^3.19.12"
 
 ra-i18n-polyglot@^3.12.2:
   version "3.12.2"
@@ -17688,9 +17712,9 @@ windows-release@^3.1.0:
     execa "^1.0.0"
 
 word-wrap@^1.0.3, word-wrap@~1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
-  integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.5.tgz#d2c45c6dd4fbce621a66f136cbe328afd0410b34"
+  integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
 wordwrap@^1.0.0:
   version "1.0.0"
